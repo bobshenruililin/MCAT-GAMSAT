@@ -369,5 +369,18 @@ Three riskiest:
 
 SCORE IMPACT: The next study hour can start, miss, classify, finish, resume, write S2, and read the ledger without a blank session or a lost draft — expected score still waits on the human sitting those hours and on official papers.
 
+## Merge all PRs onto main (2026-09-01)
+
+Stacked PRs #1–#10 were already a single ancestry. Fast-forwarded `main` from the initial commit to `334c308` (`cursor/complete-product-3760`). GitHub marked all ten MERGED. No conflict resolution. No additional product code in the merge itself.
+
+Failed: nothing. Open PR list is empty.
+
+Three riskiest:
+1. Human still has not sat — merge does not raise a percentile.
+2. B-013 unverified factory/pattern volume is now the default bootstrap.
+3. Local VMs that ran `demo:seed` still need `pnpm db:reset` before real study.
+
+SCORE IMPACT: The sitting path is now what `main` is — expected score still waits on the human opening localhost and answering items.
+
 
 
