@@ -176,4 +176,18 @@ Failed: the trap still has to be due — we do not pull future FSRS cards forwar
 
 SCORE IMPACT: When a classified trap is already due, the first minutes of the session hit that node instead of an older unrelated due, which is more score per hour of morning review.
 
+## DREAM cycle 5 — name a returning miss (2026-09-01)
+
+Gap: FSRS already brought the same card back, but the player treated it as a first meeting. The dream requires the trap they fell for to be recognized as back until it dies.
+
+Shipped:
+- `priorMissCount` from other non-demo sessions. Demo ignored. Current session ignored.
+- Next-item payload includes `priorMisses`. Player banner: "You missed this item N times before." Does not name error class before answer (no leak).
+- Item-level banner replaces the topic hunt banner when both apply.
+- Tests: 54. Green typecheck/lint.
+
+Failed: still silent until a real item is missed and later due.
+
+SCORE IMPACT: Re-seeing a known miss now flags that this exact card has beaten them before, so the minute spent on it is aimed at killing that item instead of treating it as new.
+
 
