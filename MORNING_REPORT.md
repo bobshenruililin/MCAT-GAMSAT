@@ -257,4 +257,28 @@ Three riskiest things to review:
 
 SCORE IMPACT: Study hours can now be retrieval across the whole exam map, including CARS/S1 passages and a timed S2 sitting, instead of twenty placeholder stems — expected score per hour still waits on the human actually running those hours and catching remaining AI errors.
 
+## PROMPT 2 — re-audit (2026-09-01)
+
+Question: did we miss Night Sprint 2/4 engine early on?
+
+Answer: No. Prompt 2 shipped (see the original section above and branch `cursor/night-sprint-02-3760`). The current tree still implements it. This session did not redesign the engine. Gaps were untested DoD edges, not missing scheduler/mastery/assembler/APIs.
+
+Evidence from the working tree:
+- `ts-fsrs` `^5.4.2` wrapped in `src/engine/reviewEngine.ts`: `schedule`, `getDueItems`, `getRetrievability`. Persist `fsrs_state`. Fuzz off. No hand-rolled FSRS math.
+- Attempt → grade in `src/engine/rating.ts`: incorrect→Again; correct conf 1–2→Hard; 3–4→Good; 5→Easy. Used by `recordAttempt`. Diagnostic sessions still skip FSRS (Prompt 3).
+- `src/engine/mastery.ts`: EWMA α=0.3, `0.6*C + 0.4*R`, unseen 0.3; parents rolled up by `exam_weight` (Prompt 2 / B-005; MINI_SPEC v1 still says no roll-up).
+- `src/engine/sessionAssembler.ts` is pure: defaults reviewCap 50, newCap 15, max 3 new/topic; dues first-class; new items from `(1-mastery)*exam_weight` (hunt-topic boost is later DREAM, not a Prompt 2 rewrite); interleave with `interleave_exceptions`.
+- API: POST `/api/sessions` daily assemble; GET `/api/sessions/:id/next` unanswered item with no answer leak; POST `/api/attempts` records answer+confidence+seconds+error_class, transactionally updates FSRS via `reviewEngine`, returns correctness + explanation + distractor rationales.
+- Tests that were already there: interval grows on Good/Easy; Again from Review → relearning; 100 random assemblies (consecutive clashes == exceptions); 20-item API session on a fresh DB; 90-day deterministic fixture (dues bounded, mastery up).
+- Tests added this session: rating map unit tests; new-item ranking + skip `exam_weight=0`; grouped due queue repairs to zero consecutive same-topic; GET next does not leak rationales; POST attempts returns `distractorRationales`; `getDueItems` skips empty new cards; `getRetrievability` is a ts-fsrs number after persist.
+
+Failed: nothing. `pnpm test` 71/71, `pnpm typecheck`, `pnpm lint` green. Integration path uses `MCAT_DB_PATH` on a temp migrated DB.
+
+Three riskiest things to review:
+1. B-005 still open: MINI_SPEC says new quota 8 and no parent roll-up; code follows Prompt 2.
+2. Greedy interleave can still log exceptions when one topic dominates the remaining queue (NORTH_STAR wants zero consecutive; assembler already counts that).
+3. `schedule`/`getDueItems`/`getRetrievability` take `db` as well as the prompt's args — required to persist; not a second FSRS implementation.
+
+SCORE IMPACT: The retrieval loop was already scheduling real attempts; this re-audit only locked the rating map and assembler ranking so later study hours keep using ts-fsrs and exam-weight priority instead of a silent drift — score still waits on the human sitting sessions.
+
 
