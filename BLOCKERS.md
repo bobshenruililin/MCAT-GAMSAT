@@ -46,6 +46,9 @@ The score-max factory emits 84,700 additional ingest-valid items (code-checked c
 ### B-014 — No pre-reveal hints (Khan conflict)
 Khan Academy often offers hints before the student commits an answer. NORTH_STAR requires confidence 1–5 before reveal; a hint is rereading and would leak the solution path. v1 refuses in-item hints, energy points, avatars, video-as-study, and classrooms. Human: keep this refusal, or name a hint format that cannot leak the key.
 
+### B-015 — True CARS consecutive-passage sitting vs interleave
+A real CARS/S1 paper is consecutive questions on one passage. NORTH_STAR forbids two consecutive same-topic items. v1 structure tests match sitting *coverage and section timing* (round-robin families, cap ~20, summary uses that family's seconds budget) and still run the existing interleave pass. They are not cloned AAMC/ACER papers and not same-topic bursts. Human: keep interleave on structure tests, or name a passage-locked sitting that still protects against rereading.
+
 
 
 

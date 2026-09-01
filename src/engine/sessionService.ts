@@ -1,4 +1,4 @@
-import { eq, isNull } from "drizzle-orm";
+import { eq, isNull, like } from "drizzle-orm";
 import type { AppDb } from "@/db/client";
 import {
   attempts,
@@ -24,17 +24,55 @@ import { isDemoConfig } from "./demoSeed";
 import { maybeSyncScoreboard } from "./scoreboard";
 import {
   assembleMasteryCheckSession,
+  assemblePatternEntry,
+  assemblePatternLadder,
   assembleSession,
   assembleSkillFocusSession,
+  assembleStructureSession,
   pickContrastTopicId,
   DEFAULT_ASSEMBLE_CONFIG,
+  STRUCTURE_CAP,
   type AssembleConfig,
   type AssemblerItem,
   type NewCandidate,
+  type TaggedCandidate,
 } from "./sessionAssembler";
 import { matchesTrack, parseTrack, type SectionFamily } from "./sectionBudget";
+import { isPatternTag, PATTERNS, patternById } from "@/patterns/catalog";
+import {
+  contrastPatternId,
+  decorateExplanation,
+  type PatternCard,
+} from "@/patterns/explain";
 
-export type SessionMode = "daily" | "skill" | "mastery_check";
+export type SessionMode =
+  | "daily"
+  | "skill"
+  | "mastery_check"
+  | "pattern_entry"
+  | "pattern_ladder"
+  | "structure";
+
+const SESSION_MODES: SessionMode[] = [
+  "daily",
+  "skill",
+  "mastery_check",
+  "pattern_entry",
+  "pattern_ladder",
+  "structure",
+];
+
+function parseSessionMode(mode: unknown): SessionMode {
+  if (typeof mode === "string" && (SESSION_MODES as string[]).includes(mode)) {
+    return mode as SessionMode;
+  }
+  return "daily";
+}
+
+function resolvePatternId(raw: unknown): string {
+  if (typeof raw === "string" && patternById(raw)) return raw;
+  return PATTERNS[0].id;
+}
 
 export type DailySessionConfig = SessionConfig & {
   reviewCap: number;
@@ -47,6 +85,8 @@ export type DailySessionConfig = SessionConfig & {
   mode?: SessionMode;
   skillTopicId?: string;
   contrastTopicId?: string;
+  patternId?: string;
+  contrastPatternId?: string;
 };
 
 export type DiagnosticSessionConfig = SessionConfig & {
@@ -61,6 +101,7 @@ export type DailyCaps = Partial<AssembleConfig> & {
   track?: SectionFamily | string;
   mode?: SessionMode;
   skillTopicId?: string;
+  patternId?: string;
 };
 export type DiagnosticCaps = Partial<{
   perCategory: number;
@@ -217,19 +258,77 @@ function extraScheduledItems(
     .map((row) => ({ id: row.id, conceptId: row.conceptId }));
 }
 
+function loadPatternPool(
+  db: AppDb,
+  track: SectionFamily | undefined,
+  applyTrack: boolean,
+): TaggedCandidate[] {
+  return db
+    .select({
+      id: items.id,
+      conceptId: items.conceptId,
+      skillTag: items.skillTag,
+      difficultyEst: items.difficultyEst,
+      examWeight: concepts.examWeight,
+    })
+    .from(items)
+    .innerJoin(concepts, eq(concepts.id, items.conceptId))
+    .where(like(items.skillTag, "PAT.%"))
+    .all()
+    .filter(
+      (row) =>
+        row.examWeight > 0 && (!applyTrack || matchesTrack(row.conceptId, track)),
+    )
+    .map((row) => ({
+      id: row.id,
+      conceptId: row.conceptId,
+      skillTag: row.skillTag,
+      difficultyEst: row.difficultyEst,
+      examWeight: row.examWeight,
+    }));
+}
+
+function attachExplanation(
+  db: AppDb,
+  item: { explanation: string; skillTag: string | null; conceptId: string },
+): { explanation: string; pattern: PatternCard | null } {
+  const concept = db
+    .select({ name: concepts.name })
+    .from(concepts)
+    .where(eq(concepts.id, item.conceptId))
+    .get();
+  return decorateExplanation({
+    explanation: item.explanation,
+    skillTag: item.skillTag,
+    conceptId: item.conceptId,
+    conceptName: concept?.name,
+  });
+}
+
 export function createDailySession(
   db: AppDb,
   now: Date,
   caps: DailyCaps = {},
 ): { sessionId: string; config: DailySessionConfig } {
-  const { track: trackRaw, mode, skillTopicId, ...assembleCaps } = caps;
+  const {
+    track: trackRaw,
+    mode,
+    skillTopicId,
+    patternId: patternIdRaw,
+    ...assembleCaps
+  } = caps;
   const track = parseTrack(trackRaw);
-  const sessionMode: SessionMode =
-    mode === "skill" || mode === "mastery_check" ? mode : "daily";
+  const sessionMode = parseSessionMode(mode);
   if (sessionMode === "skill" && !skillTopicId) {
     throw new Error("skill session requires skillTopicId");
   }
-  const applyTrack = sessionMode !== "skill";
+  const ladderPatternId =
+    sessionMode === "pattern_ladder" ? resolvePatternId(patternIdRaw) : undefined;
+  const ladderContrastId = ladderPatternId
+    ? contrastPatternId(ladderPatternId)
+    : undefined;
+  const applyTrack =
+    sessionMode !== "skill" && sessionMode !== "pattern_ladder";
   const assembleConfig = { ...DEFAULT_ASSEMBLE_CONFIG, ...assembleCaps };
   const due = getDueItems(db, now, assembleConfig.reviewCap)
     .map((d) => ({
@@ -269,13 +368,30 @@ export function createDailySession(
     difficultyEst: row.difficultyEst,
   }));
   const extraItems =
-    sessionMode === "daily"
+    sessionMode === "daily" ||
+    sessionMode === "pattern_entry" ||
+    sessionMode === "pattern_ladder"
       ? []
       : extraScheduledItems(db, seen, track, applyTrack);
 
   let assembled;
   let contrastTopicId: string | undefined;
-  if (sessionMode === "skill" && skillTopicId) {
+  if (sessionMode === "pattern_entry") {
+    assembled = assemblePatternEntry(loadPatternPool(db, track, applyTrack));
+  } else if (sessionMode === "pattern_ladder" && ladderPatternId && ladderContrastId) {
+    assembled = assemblePatternLadder(
+      loadPatternPool(db, undefined, false),
+      ladderPatternId,
+      ladderContrastId,
+    );
+  } else if (sessionMode === "structure") {
+    assembled = assembleStructureSession(
+      due,
+      candidates,
+      extraItems,
+      STRUCTURE_CAP,
+    );
+  } else if (sessionMode === "skill" && skillTopicId) {
     contrastTopicId = pickContrastTopicId(due, candidates, extraItems, skillTopicId);
     assembled = assembleSkillFocusSession(due, candidates, {
       skillTopicId,
@@ -316,6 +432,8 @@ export function createDailySession(
     ...(track && applyTrack ? { track } : {}),
     ...(skillTopicId && sessionMode === "skill" ? { skillTopicId } : {}),
     ...(contrastTopicId ? { contrastTopicId } : {}),
+    ...(ladderPatternId ? { patternId: ladderPatternId } : {}),
+    ...(ladderContrastId ? { contrastPatternId: ladderContrastId } : {}),
   };
   const sessionId = crypto.randomUUID();
   db.insert(sessions)
@@ -489,7 +607,7 @@ export function nextUnanswered(
       stem: item.stem,
       choices: item.choices,
       conceptId: item.conceptId,
-      skillTag: item.skillTag,
+      skillTag: isPatternTag(item.skillTag) ? null : item.skillTag,
       passage,
       hunting: huntSet.has(item.conceptId),
       priorMisses: priorMissesFromDb(db, item.id, sessionId),
@@ -502,6 +620,7 @@ export type GradeResult = {
   correctKey: string;
   explanation: string;
   distractorRationales: Record<string, string>;
+  pattern: PatternCard | null;
 };
 
 export function gradeItem(
@@ -527,11 +646,13 @@ export function gradeItem(
   if (!keys.includes(input.answeredKey)) {
     throw new Error("answeredKey is not a choice on this item");
   }
+  const decorated = attachExplanation(db, item);
   return {
     correct: item.correctKey === input.answeredKey,
     correctKey: item.correctKey,
-    explanation: item.explanation,
+    explanation: decorated.explanation,
     distractorRationales: item.distractorRationales,
+    pattern: decorated.pattern,
   };
 }
 
@@ -554,6 +675,7 @@ export function recordAttempt(
   distractorRationales: Record<string, string>;
   dueAt: string | null;
   fsrsState: string | null;
+  pattern: PatternCard | null;
 } {
   const session = db.select().from(sessions).where(eq(sessions.id, input.sessionId)).get();
   if (!session) throw new Error(`unknown session ${input.sessionId}`);
@@ -610,13 +732,15 @@ export function recordAttempt(
       ["new", "learning", "review", "relearning"][card.state] ?? "learning";
   }
 
+  const decorated = attachExplanation(db, item);
   return {
     attemptId,
     correct,
     correctKey: item.correctKey,
-    explanation: item.explanation,
+    explanation: decorated.explanation,
     distractorRationales: item.distractorRationales,
     dueAt,
     fsrsState: fsrsName,
+    pattern: decorated.pattern,
   };
 }

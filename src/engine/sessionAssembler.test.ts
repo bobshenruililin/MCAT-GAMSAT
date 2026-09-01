@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { assembleMasteryCheckSession, assembleSession, assembleSkillFocusSession, pickContrastTopicId, type AssemblerItem, type NewCandidate } from "./sessionAssembler";
+import { assembleMasteryCheckSession, assemblePatternEntry, assemblePatternLadder, assembleSession, assembleSkillFocusSession, assembleStructureSession, pickContrastTopicId, type AssemblerItem, type NewCandidate, type TaggedCandidate } from "./sessionAssembler";
 
 function mulberry32(seed: number) {
   return function rng() {
@@ -199,5 +199,115 @@ describe("assembleMasteryCheckSession", () => {
     const topics = new Set(result.items.map((i) => i.conceptId));
     expect(topics.size).toBe(4);
     expect(consecutiveSameTopic(result.items)).toBe(0);
+  });
+});
+
+describe("assemblePatternEntry", () => {
+  it("keeps only low-difficulty PAT tags and interleaves", () => {
+    const items: TaggedCandidate[] = [];
+    const tags = ["PAT.CARS.main_point", "PAT.CP.setup_equation", "PAT.BB.if_then"];
+    const topics = ["MCAT.CARS.FND.t1", "MCAT.FC4.4B.t1", "MCAT.FC1.1D.t3"];
+    for (let i = 0; i < 12; i++) {
+      items.push({
+        id: `easy-${i}`,
+        conceptId: topics[i % 3],
+        skillTag: tags[i % 3],
+        difficultyEst: 0.2 + (i % 3) * 0.05,
+        examWeight: 0.1,
+      });
+      items.push({
+        id: `hard-${i}`,
+        conceptId: topics[i % 3],
+        skillTag: tags[i % 3],
+        difficultyEst: 0.7,
+        examWeight: 0.1,
+      });
+      items.push({
+        id: `sirs-${i}`,
+        conceptId: topics[i % 3],
+        skillTag: "SIRS1",
+        difficultyEst: 0.2,
+        examWeight: 0.1,
+      });
+    }
+    const result = assemblePatternEntry(items, 12);
+    expect(result.items.length).toBe(12);
+    expect(result.items.every((i) => i.id.startsWith("easy-"))).toBe(true);
+    expect(result.items.every((i) => (i.difficultyEst ?? 0) <= 0.42)).toBe(true);
+    expect(consecutiveSameTopic(result.items)).toBe(result.interleaveExceptions);
+  });
+});
+
+describe("assemblePatternLadder", () => {
+  it("sorts the focus pattern by difficulty ascending and interleaves contrast", () => {
+    const items: TaggedCandidate[] = [];
+    for (let i = 0; i < 8; i++) {
+      items.push({
+        id: `focus-${i}`,
+        conceptId: "MCAT.CARS.FND.t1",
+        skillTag: "PAT.CARS.main_point",
+        difficultyEst: 0.9 - i * 0.08,
+        examWeight: 0.1,
+      });
+      items.push({
+        id: `contrast-${i}`,
+        conceptId: "MCAT.FC4.4B.t1",
+        skillTag: "PAT.CP.setup_equation",
+        difficultyEst: 0.2 + i * 0.05,
+        examWeight: 0.1,
+      });
+    }
+    const result = assemblePatternLadder(
+      items,
+      "PAT.CARS.main_point",
+      "PAT.CP.setup_equation",
+      8,
+    );
+    expect(result.items).toHaveLength(16);
+    const focus = result.items.filter((i) => i.skillTag === "PAT.CARS.main_point");
+    const contrast = result.items.filter((i) => i.skillTag === "PAT.CP.setup_equation");
+    expect(focus).toHaveLength(8);
+    expect(contrast).toHaveLength(8);
+    for (let i = 1; i < focus.length; i++) {
+      expect(focus[i].difficultyEst ?? 0).toBeGreaterThanOrEqual(focus[i - 1].difficultyEst ?? 0);
+    }
+    expect(consecutiveSameTopic(result.items)).toBe(result.interleaveExceptions);
+  });
+});
+
+describe("assembleStructureSession", () => {
+  it("builds an exam-shaped mix whose consecutive same-topic count equals exceptions", () => {
+    const due: AssemblerItem[] = [];
+    const news: NewCandidate[] = [];
+    const extras: AssemblerItem[] = [];
+    const topics = [
+      "MCAT.CARS.FND.t1",
+      "MCAT.FC1.1A.t1",
+      "MCAT.FC4.4A.t1",
+      "MCAT.FC6.6C.t1",
+      "GAMSAT.S3.bio.t1",
+    ];
+    for (const t of topics) {
+      for (let i = 0; i < 4; i++) {
+        news.push({
+          id: `${t}-${i}`,
+          conceptId: t,
+          mastery: 0.3,
+          examWeight: 0.1,
+        });
+      }
+    }
+    news.push({
+      id: "overlay",
+      conceptId: "MCAT.FC1.1A.t1",
+      mastery: 0,
+      examWeight: 0,
+    });
+    const result = assembleStructureSession(due, news, extras, 20);
+    expect(result.items.length).toBe(20);
+    expect(result.items.map((i) => i.id)).not.toContain("overlay");
+    expect(consecutiveSameTopic(result.items)).toBe(result.interleaveExceptions);
+    const families = new Set(result.items.map((i) => i.conceptId.split(".").slice(0, 2).join(".")));
+    expect(families.size).toBeGreaterThan(1);
   });
 });

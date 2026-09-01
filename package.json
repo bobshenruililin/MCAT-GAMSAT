@@ -17,7 +17,8 @@
     "ingest:all": "tsx src/ingest/ingestAll.ts",
     "demo:seed": "tsx src/db/demoSeed.ts",
     "scoreboard:sync": "tsx src/db/scoreboardSync.ts",
-    "factory:emit": "tsx src/factory/emit.ts"
+    "factory:emit": "tsx src/factory/emit.ts",
+    "patterns:emit": "tsx src/patterns/emit.ts"
   },
   "dependencies": {
     "better-sqlite3": "^12.4.1",

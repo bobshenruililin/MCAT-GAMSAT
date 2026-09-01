@@ -10,6 +10,7 @@ export async function POST(request: Request) {
     kind?: string;
     mode?: string;
     skillTopicId?: string;
+    patternId?: string;
     reviewCap?: number;
     newCap?: number;
     perCategory?: number;
@@ -44,19 +45,35 @@ export async function POST(request: Request) {
       });
     }
     const mode =
-      modeBody === "skill" || modeBody === "mastery_check" ? modeBody : "daily";
+      modeBody === "skill" ||
+      modeBody === "mastery_check" ||
+      modeBody === "pattern_entry" ||
+      modeBody === "pattern_ladder" ||
+      modeBody === "structure"
+        ? modeBody
+        : "daily";
     const caps: {
       reviewCap?: number;
       newCap?: number;
       track?: typeof track;
-      mode?: "daily" | "skill" | "mastery_check";
+      mode?:
+        | "daily"
+        | "skill"
+        | "mastery_check"
+        | "pattern_entry"
+        | "pattern_ladder"
+        | "structure";
       skillTopicId?: string;
+      patternId?: string;
     } = { mode };
     if (typeof body.reviewCap === "number") caps.reviewCap = body.reviewCap;
     if (typeof body.newCap === "number") caps.newCap = body.newCap;
     if (track) caps.track = track;
     if (mode === "skill" && typeof body.skillTopicId === "string") {
       caps.skillTopicId = body.skillTopicId;
+    }
+    if (mode === "pattern_ladder" && typeof body.patternId === "string") {
+      caps.patternId = body.patternId;
     }
     const created = createDailySession(db, now, caps);
     return Response.json({
@@ -70,6 +87,8 @@ export async function POST(request: Request) {
       track: created.config.track ?? null,
       skillTopicId: created.config.skillTopicId ?? null,
       contrastTopicId: created.config.contrastTopicId ?? null,
+      patternId: created.config.patternId ?? null,
+      contrastPatternId: created.config.contrastPatternId ?? null,
     });
   } catch (err) {
     return Response.json(

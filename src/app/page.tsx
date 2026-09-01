@@ -42,7 +42,8 @@ export default function TodayPage() {
       <h1 className="font-serif text-3xl tracking-tight">Today</h1>
       <p className="mt-1 text-sm text-zinc-600">
         Retrieval only. Confidence before reveal. The person walking into the room is the
-        product.
+        product. Past-paper moves are retrieved as questions (analog in the stem), then
+        ranked drills, then a structure sitting that still interleaves.
       </p>
       <DemoBanner show={Boolean(stats?.demo)} />
 

@@ -1,5 +1,6 @@
 import { wordCount } from "@/ingest/validate";
 import { KEYS, type FactoryItem, type Key } from "./types";
+import { defaultPatternId } from "@/patterns/fromDesign";
 
 export function hashStr(s: string): number {
   let h = 2166136261;
@@ -107,6 +108,7 @@ export function toIngestJson(item: FactoryItem): Record<string, unknown> {
     distractor_rationales: item.distractor_rationales,
     difficulty_est: item.difficulty_est,
   };
-  if (item.skill_tag) row.skill_tag = item.skill_tag;
+  const tag = item.skill_tag ?? defaultPatternId(item.concept_id);
+  if (tag) row.skill_tag = tag;
   return row;
 }

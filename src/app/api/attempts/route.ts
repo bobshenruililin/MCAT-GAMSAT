@@ -65,6 +65,7 @@ export async function POST(request: Request) {
       distractorRationales: result.distractorRationales,
       dueAt: result.dueAt,
       fsrsState: result.fsrsState,
+      pattern: result.pattern,
     });
   } catch (err) {
     return Response.json(

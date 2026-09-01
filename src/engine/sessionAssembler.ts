@@ -3,6 +3,8 @@ import { sectionFamily } from "./sectionBudget";
 export type AssemblerItem = {
   id: string;
   conceptId: string;
+  skillTag?: string | null;
+  difficultyEst?: number;
 };
 
 export type NewCandidate = AssemblerItem & {
@@ -248,4 +250,140 @@ export function assembleSession(
     huntTopicIds ?? [],
   );
   return interleaveItems([...due, ...news]);
+}
+
+export type TaggedCandidate = AssemblerItem & {
+  skillTag: string | null;
+  difficultyEst: number;
+  examWeight: number;
+};
+
+function byId(items: AssemblerItem[]): AssemblerItem[] {
+  const seen = new Set<string>();
+  const out: AssemblerItem[] = [];
+  for (const it of items) {
+    if (seen.has(it.id)) continue;
+    seen.add(it.id);
+    out.push(it);
+  }
+  return out;
+}
+
+/** Entry rungs: tagged pattern items at low difficulty, interleaved by topic. */
+export function assemblePatternEntry(
+  items: TaggedCandidate[],
+  cap = 12,
+): AssembleResult {
+  const entry = items
+    .filter(
+      (i) =>
+        i.examWeight > 0 &&
+        typeof i.skillTag === "string" &&
+        i.skillTag.startsWith("PAT.") &&
+        i.difficultyEst <= 0.42,
+    )
+    .sort((a, b) => a.difficultyEst - b.difficultyEst || a.id.localeCompare(b.id));
+  const byPattern = new Map<string, TaggedCandidate[]>();
+  for (const it of entry) {
+    const list = byPattern.get(it.skillTag ?? "") ?? [];
+    list.push(it);
+    byPattern.set(it.skillTag ?? "", list);
+  }
+  const picked: AssemblerItem[] = [];
+  const queues = [...byPattern.values()];
+  let guard = 0;
+  while (picked.length < cap && queues.some((q) => q.length > 0) && guard < cap * 8) {
+    guard += 1;
+    for (const q of queues) {
+      const next = q.shift();
+      if (!next) continue;
+      picked.push({ id: next.id, conceptId: next.conceptId, skillTag: next.skillTag, difficultyEst: next.difficultyEst });
+      if (picked.length >= cap) break;
+    }
+  }
+  return interleaveItems(byId(picked));
+}
+
+/** Difficulty ladder on one pattern, interleaved with a contrast pattern. */
+export function assemblePatternLadder(
+  items: TaggedCandidate[],
+  patternId: string,
+  contrastPatternId: string,
+  cap = 8,
+): AssembleResult {
+  const focus = items
+    .filter((i) => i.skillTag === patternId && i.examWeight > 0)
+    .sort((a, b) => a.difficultyEst - b.difficultyEst || a.id.localeCompare(b.id))
+    .slice(0, cap);
+  const contrast = items
+    .filter((i) => i.skillTag === contrastPatternId && i.examWeight > 0)
+    .sort((a, b) => a.difficultyEst - b.difficultyEst || a.id.localeCompare(b.id))
+    .slice(0, cap);
+  return interleaveItems(byId([...focus, ...contrast]));
+}
+
+export const STRUCTURE_CAP = 20;
+
+function examWeightOf(it: AssemblerItem | NewCandidate): number | undefined {
+  if ("examWeight" in it && typeof it.examWeight === "number") return it.examWeight;
+  return undefined;
+}
+
+/** Exam-shaped mix: round-robin families, then topics, then interleave. */
+export function assembleStructureSession(
+  dueItems: AssemblerItem[],
+  candidateNewItems: NewCandidate[],
+  extraItems: AssemblerItem[],
+  cap = STRUCTURE_CAP,
+): AssembleResult {
+  const pool: AssemblerItem[] = [];
+  const seen = new Set<string>();
+  for (const it of [...dueItems, ...candidateNewItems, ...extraItems]) {
+    const w = examWeightOf(it);
+    if (w !== undefined && w <= 0) continue;
+    if (seen.has(it.id)) continue;
+    seen.add(it.id);
+    pool.push({
+      id: it.id,
+      conceptId: it.conceptId,
+      skillTag: it.skillTag,
+      difficultyEst: it.difficultyEst,
+    });
+  }
+  const byFamily = new Map<string, Map<string, AssemblerItem[]>>();
+  for (const it of pool) {
+    const fam = sectionFamily(it.conceptId);
+    const topics = byFamily.get(fam) ?? new Map<string, AssemblerItem[]>();
+    const list = topics.get(it.conceptId) ?? [];
+    list.push(it);
+    topics.set(it.conceptId, list);
+    byFamily.set(fam, topics);
+  }
+  const familyQueues = [...byFamily.keys()]
+    .sort((a, b) => a.localeCompare(b))
+    .map((fam) => {
+      const topicQueues = [...(byFamily.get(fam)?.values() ?? [])];
+      const ordered: AssemblerItem[] = [];
+      let g = 0;
+      while (topicQueues.some((q) => q.length > 0) && g < cap * 20) {
+        g += 1;
+        for (const q of topicQueues) {
+          const next = q.shift();
+          if (next) ordered.push(next);
+        }
+      }
+      return ordered;
+    });
+  const picked: AssemblerItem[] = [];
+  let guard = 0;
+  while (picked.length < cap && familyQueues.some((q) => q.length > 0) && guard < cap * 20) {
+    guard += 1;
+    for (const q of familyQueues) {
+      const next = q.shift();
+      if (!next) continue;
+      picked.push(next);
+      if (picked.length >= cap) break;
+    }
+  }
+  return interleaveItems(picked);
 }

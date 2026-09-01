@@ -6,6 +6,8 @@ import { ingestAllBatches } from "@/ingest/ingestAll";
 import { removeCoveredPlaceholders } from "@/ingest/ingest";
 import { emitFactoryBatches } from "@/factory/emit";
 import { FACTORY_TARGET } from "@/factory/types";
+import { emitPatternBatches } from "@/patterns/emit";
+import { PATTERN_TARGET } from "@/patterns/generate";
 
 /**
  * Taxonomy + every real batch + 100× factory bank.
@@ -24,6 +26,15 @@ try {
       : Number(requested);
   if (Number.isFinite(target) && target > 0) {
     emitFactoryBatches(target);
+  }
+
+  const patternRequested = process.env.PATTERN_TARGET;
+  const patternTarget =
+    patternRequested === undefined || patternRequested === ""
+      ? PATTERN_TARGET
+      : Number(patternRequested);
+  if (Number.isFinite(patternTarget) && patternTarget > 0) {
+    emitPatternBatches(patternTarget);
   }
 
   const stats = ingestAllBatches();

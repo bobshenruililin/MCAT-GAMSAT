@@ -9,6 +9,7 @@ export type GradeResult = {
   correctKey: string;
   explanation: string;
   distractorRationales: Record<string, string>;
+  pattern?: { id: string; name: string; move: string } | null;
 };
 
 export type PlayerItem = {
@@ -290,7 +291,22 @@ export function ItemPlayer({
                   {calNote}
                 </p>
               ) : null}
-              <p className="text-sm leading-6">{grade.explanation}</p>
+              <p className="text-sm leading-6" data-testid="reveal-explanation">
+                {grade.explanation}
+              </p>
+              {grade.pattern ? (
+                <div
+                  className="rounded-md border border-zinc-200 bg-zinc-50 px-3 py-2"
+                  data-testid="pattern-reveal"
+                >
+                  <p className="text-xs uppercase tracking-wide text-zinc-500">
+                    Pattern after reveal
+                  </p>
+                  <p className="mt-1 text-sm font-medium">{grade.pattern.name}</p>
+                  <p className="mt-1 font-mono text-xs text-zinc-500">{grade.pattern.id}</p>
+                  <p className="mt-1 text-sm leading-6 text-zinc-800">{grade.pattern.move}</p>
+                </div>
+              ) : null}
               {Object.keys(grade.distractorRationales).length > 0 ? (
                 <div>
                   <p className="text-sm font-medium">Why the others are wrong</p>

@@ -28,7 +28,13 @@ export function SessionSummaryView({
           ? "skill session"
           : summary.mode === "mastery_check"
             ? "mastery check"
-            : `${summary.kind} session`}
+            : summary.mode === "pattern_entry"
+              ? "pattern entry"
+              : summary.mode === "pattern_ladder"
+                ? "pattern ladder"
+                : summary.mode === "structure"
+                  ? "structure test"
+                  : `${summary.kind} session`}
       </p>
       <h1 className="mt-1 text-2xl font-semibold">Session summary</h1>
 

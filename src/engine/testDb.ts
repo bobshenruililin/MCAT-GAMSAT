@@ -78,6 +78,7 @@ export function insertDiscrete(
   conceptId: string,
   correctKey = "A",
   difficultyEst = 0.4,
+  skillTag: string | null = null,
 ): void {
   db.insert(items)
     .values({
@@ -85,7 +86,7 @@ export function insertDiscrete(
       type: "discrete",
       passageId: null,
       conceptId,
-      skillTag: null,
+      skillTag,
       stem: `Stem ${id}`,
       choices: [
         { key: "A", text: "A" },

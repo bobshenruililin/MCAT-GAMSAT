@@ -324,5 +324,27 @@ Three riskiest:
 
 SCORE IMPACT: Study hours now land on the highest remaining exam-weight gap (or a hunt trap) instead of an undifferentiated mixed queue — same FSRS truth, less time wasted on already-familiar grains.
 
+## Elon first-principles past-paper path (2026-09-01)
+
+Question: how would you raise expected score per hour from first principles, given a past-paper method and unlimited generation?
+
+Answer: Do not ship notes. Ship (1) the recurring exam *moves* as retrieval entry — analog in the stem, still an answer; (2) a large difficulty-ranked bank of new instances tagged to those moves; (3) explanations that name content grain + pattern, only after confidence; (4) structure tests that match sitting coverage and clocks while keeping interleave.
+
+Shipped:
+- `src/patterns/catalog.ts`: 18 original `PAT.*` moves (CARS/C/P/B/B/P/S/S1/S2/S3) with worked analogs. Not AAMC/ACER clones.
+- Entry + apply generators; apply items are new instances (numbers, tables, original snippets), analog left in the stem as scaffolding. Target 2400 (`pnpm patterns:emit`, bootstrap `PATTERN_TARGET`). Factory `toIngestJson` default-tags remaining items.
+- Session modes `pattern_entry` / `pattern_ladder` / `structure` stay `kind=daily`. Ladder easy→hard on one pattern, interleaved with a contrast family. Structure: family round-robin, cap 20, still interleave (B-015).
+- Grade/attempt decorate explanations with Pattern + Content grain. GET `/next` nulls `PAT.*` skill tags. Today buttons: pattern entry, ladder, structure test.
+- Tests for catalog, ingest-valid bank, ladder sort, entry filter, structure interleave, decorate, API modes, ItemPlayer reveal-only pattern block.
+
+Failed: none of the lecture-page / official-clone / pre-reveal-pattern / CARS-burst substitutes.
+
+Three riskiest:
+1. Pattern apply templates recycle domains; volume is not 2400 hand-authored papers (same B-013 poison surface).
+2. Structure tests are not consecutive-passage CARS sittings (B-015).
+3. Local DBs without a pattern emit have no `PAT.*` rows until bootstrap/`patterns:emit` + ingest.
+
+SCORE IMPACT: Study hours can now retrieve the actual past-paper move on a new instance, then a ranked ladder of that move, then a mini sitting — instead of rereading a pattern handbook or grinding untagged volume. Percentile still waits on official papers and the human sitting the hours.
+
 
 

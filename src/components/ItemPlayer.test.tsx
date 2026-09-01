@@ -115,6 +115,40 @@ describe("ItemPlayer confidence-before-reveal gate", () => {
     expect(screen.queryByTestId("calibration-note")).toBeNull();
   });
 
+  it("shows pattern name and move only after reveal", async () => {
+    const user = userEvent.setup();
+    const onGrade = vi.fn().mockResolvedValue({
+      correct: true,
+      correctKey: "B",
+      explanation: "Pattern (PAT.CARS.main_point — Main point vs local colour): The key restates the passage's governing claim. Content grain (MCAT.CARS.FND.t1): Foundations.",
+      distractorRationales: { A: "too small" },
+      pattern: {
+        id: "PAT.CARS.main_point",
+        name: "Main point vs local colour",
+        move: "The key restates the passage's governing claim, not a vivid detail or a tone word.",
+      },
+    });
+    render(
+      <ItemPlayer
+        item={item}
+        position={0}
+        remaining={1}
+        total={1}
+        onGrade={onGrade}
+        onCommit={vi.fn()}
+      />,
+    );
+    expect(screen.queryByTestId("pattern-reveal")).toBeNull();
+    await user.click(screen.getByTestId("choice-B"));
+    await user.click(screen.getByTestId("confidence-3"));
+    await user.click(screen.getByTestId("submit-answer"));
+    expect(await screen.findByTestId("pattern-reveal")).toHaveTextContent(
+      /main point vs local colour/i,
+    );
+    expect(screen.getByTestId("pattern-reveal")).toHaveTextContent(/governing claim/i);
+    expect(screen.getByTestId("reveal-explanation")).toHaveTextContent(/Content grain/);
+  });
+
   it("names overconfidence on a high-confidence miss", async () => {
     const user = userEvent.setup();
     const onGrade = vi.fn().mockResolvedValue({

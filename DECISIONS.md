@@ -182,6 +182,11 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Newest prompt asked how Khan would adapt this repo for score and learning maximization. NORTH_STAR still wins: retrieval only, confidence before reveal, interleave, no unverified=true. Levels are a display/routing layer on the existing EWMA+FSRS mastery, not a second scheduler. Skill-as-daily keeps SCOREBOARD counting the hours.
 - Rejected: `sessions.kind = skill` (CHECK migration); same-topic KA bursts; hints before confidence; gamification; treating unseen prior 0.3 as course mastery.
 
+## 2026-09-01 — Past-paper pattern path: analog-in-stem retrieval, not a notes catalog
+- Decision: Effectiveness is retrieve-the-move-on-a-new-instance. v1 ships an 18-pattern catalog (`PAT.*` as `items.skill_tag`). Entry items put a worked analog in the stem and still require an answer. Apply items are difficulty-ranked new instances of the same move (target 2400 via `pnpm patterns:emit`). Factory emit also default-tags untagged items with `defaultPatternId`. Explanations name pattern + content grain only after reveal. Structure tests are mixed or track-scoped mini sittings (cap 20, family round-robin) that still interleave (B-015). `sessions.kind` stays `daily`. GET `/next` nulls `PAT.*` skill tags so the move is not leaked.
+- Rationale: Newest prompt: first-principles past-paper method — pattern analysis with examples, large ranked drills, explanations tied to content+pattern, overall structure tests. NORTH_STAR: retrieval only, no official clones, no pre-reveal hints, never `verified=true` in software. Unlimited generation is used for volume of original analogs, not for lecture pages.
+- Rejected: A markdown pattern handbook; cloned AAMC/ACER stems; same-topic CARS bursts as "structure"; `sessions.kind` migration; showing the pattern move before confidence.
+
 
 
 
