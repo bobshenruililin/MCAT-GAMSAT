@@ -17,6 +17,24 @@ type NextResponse = {
   error?: string;
 };
 
+async function parseApi<T>(res: Response): Promise<T> {
+  const text = await res.text();
+  let data: (T & { error?: string }) | null = null;
+  try {
+    data = JSON.parse(text) as T & { error?: string };
+  } catch {
+    throw new Error(
+      res.ok
+        ? "Server returned a non-JSON response"
+        : `Request failed (${res.status})`,
+    );
+  }
+  if (!res.ok) {
+    throw new Error(data.error ?? `Request failed (${res.status})`);
+  }
+  return data;
+}
+
 export default function SessionPage({
   params,
 }: {
@@ -29,53 +47,47 @@ export default function SessionPage({
   const [error, setError] = useState<string | null>(null);
 
   const loadNext = useCallback(async (sessionId: string) => {
-    const res = await fetch(`/api/sessions/${sessionId}/next`);
-    const data = (await res.json()) as NextResponse;
-    if (!res.ok) {
-      setError(data.error ?? "Failed to load item");
-      setLoading(false);
-      return;
-    }
-    setNext(data);
-    if (data.done) {
-      const sumRes = await fetch(`/api/sessions/${sessionId}/summary`);
-      const sum = (await sumRes.json()) as SessionSummaryData & { error?: string };
-      if (!sumRes.ok) {
-        setError(sum.error ?? "Failed to load summary");
-        setLoading(false);
-        return;
+    try {
+      const data = await parseApi<NextResponse>(
+        await fetch(`/api/sessions/${sessionId}/next`),
+      );
+      setNext(data);
+      if (data.done) {
+        const sum = await parseApi<SessionSummaryData>(
+          await fetch(`/api/sessions/${sessionId}/summary`),
+        );
+        setSummary(sum);
       }
-      setSummary(sum);
+      setError(null);
+      setLoading(false);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : String(err));
+      setLoading(false);
     }
-    setLoading(false);
   }, []);
 
   useEffect(() => {
     let cancelled = false;
     void (async () => {
-      const res = await fetch(`/api/sessions/${id}/next`);
-      const data = (await res.json()) as NextResponse;
-      if (cancelled) return;
-      if (!res.ok) {
-        setError(data.error ?? "Failed to load item");
-        setLoading(false);
-        return;
-      }
-      setNext(data);
-      if (data.done) {
-        const sumRes = await fetch(`/api/sessions/${id}/summary`);
-        const sum = (await sumRes.json()) as SessionSummaryData & {
-          error?: string;
-        };
+      try {
+        const data = await parseApi<NextResponse>(
+          await fetch(`/api/sessions/${id}/next`),
+        );
         if (cancelled) return;
-        if (!sumRes.ok) {
-          setError(sum.error ?? "Failed to load summary");
-          setLoading(false);
-          return;
+        setNext(data);
+        if (data.done) {
+          const sum = await parseApi<SessionSummaryData>(
+            await fetch(`/api/sessions/${id}/summary`),
+          );
+          if (cancelled) return;
+          setSummary(sum);
         }
-        setSummary(sum);
+        setLoading(false);
+      } catch (err) {
+        if (cancelled) return;
+        setError(err instanceof Error ? err.message : String(err));
+        setLoading(false);
       }
-      setLoading(false);
     })();
     return () => {
       cancelled = true;
@@ -88,17 +100,17 @@ export default function SessionPage({
     seconds: number;
   }): Promise<GradeResult> {
     if (!next?.item) throw new Error("no session");
-    const res = await fetch(`/api/sessions/${id}/grade`, {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({
-        itemId: next.item.id,
-        answeredKey: input.answeredKey,
-        confidence: input.confidence,
+    const data = await parseApi<GradeResult>(
+      await fetch(`/api/sessions/${id}/grade`, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          itemId: next.item.id,
+          answeredKey: input.answeredKey,
+          confidence: input.confidence,
+        }),
       }),
-    });
-    const data = (await res.json()) as GradeResult & { error?: string };
-    if (!res.ok) throw new Error(data.error ?? "grade failed");
+    );
     return data;
   }
 
@@ -109,20 +121,20 @@ export default function SessionPage({
     errorClass: ErrorClass | null;
   }): Promise<void> {
     if (!next?.item) throw new Error("no session");
-    const res = await fetch("/api/attempts", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({
-        sessionId: id,
-        itemId: next.item.id,
-        answeredKey: input.answeredKey,
-        confidence: input.confidence,
-        seconds: input.seconds,
-        errorClass: input.errorClass,
+    await parseApi<{ attemptId?: string }>(
+      await fetch("/api/attempts", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          sessionId: id,
+          itemId: next.item.id,
+          answeredKey: input.answeredKey,
+          confidence: input.confidence,
+          seconds: input.seconds,
+          errorClass: input.errorClass,
+        }),
       }),
-    });
-    const data = (await res.json()) as { error?: string };
-    if (!res.ok) throw new Error(data.error ?? "attempt failed");
+    );
     setLoading(true);
     await loadNext(id);
   }
@@ -146,6 +158,17 @@ export default function SessionPage({
 
   if (next.done && summary) {
     return <SessionSummaryView summary={summary} />;
+  }
+
+  if (next.done) {
+    return (
+      <main className="mx-auto max-w-lg p-8">
+        <p>Session is finished, but the summary could not be loaded.</p>
+        <Link href="/" className="mt-4 inline-block text-sm underline">
+          Back to Today
+        </Link>
+      </main>
+    );
   }
 
   if (!next.item || next.total === 0) {

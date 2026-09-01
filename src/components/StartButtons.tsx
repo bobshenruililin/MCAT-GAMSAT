@@ -125,6 +125,7 @@ export function StartButtons({
       <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
         <button
           type="button"
+          data-testid="start-daily"
           disabled={disabled || busy !== null}
           onClick={() => void start("daily")}
           className="rounded-md bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white disabled:cursor-not-allowed disabled:bg-zinc-400"
@@ -142,6 +143,7 @@ export function StartButtons({
         </button>
         <button
           type="button"
+          data-testid="start-diagnostic"
           disabled={disabled || busy !== null}
           onClick={() => void start("diagnostic")}
           className="rounded-md border border-zinc-300 bg-white px-4 py-2.5 text-sm font-medium text-zinc-900 disabled:cursor-not-allowed disabled:text-zinc-400"

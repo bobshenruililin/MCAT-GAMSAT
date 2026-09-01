@@ -42,6 +42,73 @@ export function shouldAutoSyncScoreboard(): boolean {
   return getDbPath().replace(/\\/g, "/").endsWith("/data/app.db");
 }
 
+export type OfficialScoreRow = {
+  date: string;
+  exam: string;
+  source: string;
+  section: string;
+  score: string;
+  percentile: string;
+};
+
+export function readScoreboardMarkdown(filePath = getScoreboardPath()): string {
+  try {
+    return readFileSync(filePath, "utf8");
+  } catch {
+    return "";
+  }
+}
+
+export function parseOfficialRows(markdown: string): OfficialScoreRow[] {
+  const section =
+    sectionBetween(markdown, "## Official scores", ["## Study log", "## Weekly verdict"]) ??
+    "";
+  const rows: OfficialScoreRow[] = [];
+  for (const line of section.split("\n")) {
+    if (!line.includes("|")) continue;
+    const parts = line
+      .split("|")
+      .slice(1, -1)
+      .map((c) => c.trim());
+    if (parts.length < 6) continue;
+    if (parts[0].toLowerCase() === "date") continue;
+    if (parts.every((p) => /^[-:]+$/.test(p))) continue;
+    if (parts.every((p) => p === "")) continue;
+    rows.push({
+      date: parts[0],
+      exam: parts[1],
+      source: parts[2],
+      section: parts[3],
+      score: parts[4],
+      percentile: parts[5],
+    });
+  }
+  return rows;
+}
+
+export function parseWeeklyVerdict(markdown: string): string {
+  return (
+    sectionBetween(markdown, "## Weekly verdict", []) ?? DEFAULT_WEEKLY
+  ).trim();
+}
+
+export type ScoreboardView = {
+  official: OfficialScoreRow[];
+  weekly: string;
+  stats: ScoreboardStats;
+  fileMissing: boolean;
+};
+
+export function getScoreboardView(db: AppDb, now: Date): ScoreboardView {
+  const existing = readScoreboardMarkdown();
+  return {
+    official: parseOfficialRows(existing),
+    weekly: parseWeeklyVerdict(existing),
+    stats: scoreboardStats(db, now),
+    fileMissing: existing.trim().length === 0,
+  };
+}
+
 export function scoreboardStats(db: AppDb, now: Date): ScoreboardStats {
   const sessionRows = db.select().from(sessions).all();
   const realIds = new Set<string>();

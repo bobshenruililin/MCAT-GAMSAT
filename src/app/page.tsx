@@ -5,6 +5,7 @@ import { getTodayStats } from "@/engine/today";
 import { StartButtons } from "@/components/StartButtons";
 import { CoverageBars } from "@/components/CoverageBars";
 import { DemoBanner } from "@/components/DemoBanner";
+import { OpenSessions } from "@/components/OpenSessions";
 import { UpNextCard } from "@/components/UpNextCard";
 
 export const runtime = "nodejs";
@@ -53,6 +54,8 @@ export default function TodayPage() {
 
       {stats ? (
         <>
+          <OpenSessions sessions={stats.openSessions} />
+
           <dl className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
             <div className="rounded-lg border border-zinc-200 bg-white p-4">
               <dt className="text-xs text-zinc-500">Course mastery</dt>
@@ -144,7 +147,16 @@ export default function TodayPage() {
           {emptyBank ? (
             <p className="mt-3 text-sm text-zinc-600">
               Item bank is empty. Run <span className="font-mono">pnpm bootstrap</span>{" "}
-              (taxonomy + real batches, no PLACEHOLDER items).
+              (taxonomy + real batches, no PLACEHOLDER items). Cap factory volume with{" "}
+              <span className="font-mono">FACTORY_TARGET=0</span> if the SQLite file would
+              be too large.
+            </p>
+          ) : null}
+          {stats.caughtUp ? (
+            <p className="mt-3 text-sm text-zinc-600" data-testid="caught-up">
+              Nothing is due and there are no unseen cards in this bank. Mixed Start
+              Session would be empty. Use a mastery check, pattern path, or structure
+              sitting if you still want retrieval today.
             </p>
           ) : null}
 

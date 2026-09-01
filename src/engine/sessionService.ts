@@ -414,11 +414,13 @@ export function createDailySession(
       huntTopicIds: huntIds,
     });
   }
-  if (assembled.items.length === 0 && sessionMode !== "daily") {
+  if (assembled.items.length === 0) {
     throw new Error(
       sessionMode === "skill"
         ? "no items available for that skill"
-        : "no items available for this session",
+        : sessionMode === "daily"
+          ? "nothing due and no new items for this block — try a mastery check, pattern path, or wait for reviews"
+          : "no items available for this session",
     );
   }
   const config: DailySessionConfig = {
@@ -498,6 +500,9 @@ export function createDiagnosticSession(
     recount,
     assembleConfig,
   );
+  if (assembled.items.length === 0) {
+    throw new Error("no items available for this diagnostic");
+  }
   const config: DiagnosticSessionConfig = {
     perCategory: assembleConfig.perCategory,
     cap: assembleConfig.cap,
@@ -516,6 +521,63 @@ export function createDiagnosticSession(
     })
     .run();
   return { sessionId, config };
+}
+
+export type OpenSession = {
+  id: string;
+  kind: string;
+  mode: string;
+  track: string | null;
+  startedAt: string;
+  answered: number;
+  remaining: number;
+  total: number;
+};
+
+export function listOpenSessions(db: AppDb, limit = 8): OpenSession[] {
+  const rows = db
+    .select()
+    .from(sessions)
+    .all()
+    .filter(
+      (s) =>
+        !s.endedAt &&
+        (s.kind === "daily" || s.kind === "diagnostic") &&
+        !isDemoConfig(s.config),
+    )
+    .sort((a, b) => b.startedAt.localeCompare(a.startedAt));
+
+  const out: OpenSession[] = [];
+  for (const session of rows) {
+    const itemIds = queuedItemIds(session.config);
+    if (itemIds.length === 0) continue;
+    const answered = new Set(
+      db
+        .select({ itemId: attempts.itemId })
+        .from(attempts)
+        .where(eq(attempts.sessionId, session.id))
+        .all()
+        .map((a) => a.itemId),
+    );
+    const remaining = itemIds.filter((id) => !answered.has(id)).length;
+    if (remaining <= 0) continue;
+    const modeRaw = session.config.mode;
+    const mode =
+      typeof modeRaw === "string" && modeRaw.length > 0 ? modeRaw : session.kind;
+    const trackRaw = session.config.track;
+    out.push({
+      id: session.id,
+      kind: session.kind,
+      mode,
+      track: typeof trackRaw === "string" ? trackRaw : null,
+      startedAt: session.startedAt,
+      answered: itemIds.length - remaining,
+      remaining,
+      total: itemIds.length,
+    });
+    if (out.length >= limit) break;
+  }
+  return out;
 }
 
 export type PassagePublic = {

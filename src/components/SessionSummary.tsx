@@ -156,9 +156,12 @@ export function SessionSummaryView({
         </section>
       ) : null}
 
-      <p className="mt-8">
+      <p className="mt-8 flex gap-4">
         <Link href="/" className="text-sm text-zinc-700 underline">
           Back to Today
+        </Link>
+        <Link href="/scoreboard" className="text-sm text-zinc-700 underline">
+          Scoreboard
         </Link>
       </p>
     </main>

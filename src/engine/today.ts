@@ -4,7 +4,7 @@ import { attempts, fsrsState, items } from "@/db/schema";
 import { getDueItems } from "./reviewEngine";
 import { hasDemoData } from "./demoSeed";
 import { addUtcDays, utcDayKey } from "./rng";
-import { huntTopicsFromDb } from "./sessionService";
+import { huntTopicsFromDb, listOpenSessions, type OpenSession } from "./sessionService";
 import { getProgressData } from "./progress";
 import { pickUpNext, type UpNextSkill } from "./upNext";
 import { formatPercent } from "./masteryLevel";
@@ -50,6 +50,8 @@ export type TodayStats = {
   proficientPlusShare: number;
   courseMasteryLabel: string;
   upNext: UpNextSkill | null;
+  openSessions: OpenSession[];
+  caughtUp: boolean;
 };
 
 function minutesFor(count: number): number {
@@ -161,5 +163,7 @@ export function getTodayStats(db: AppDb, now: Date): TodayStats {
     proficientPlusShare: progress.proficientPlusShare,
     courseMasteryLabel: formatPercent(progress.courseMastery),
     upNext,
+    openSessions: listOpenSessions(db),
+    caughtUp: dueCount === 0 && unseen === 0 && itemCount > 0,
   };
 }

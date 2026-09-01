@@ -1,5 +1,5 @@
 import { existsSync } from "node:fs";
-import { count } from "drizzle-orm";
+import { count, eq, like } from "drizzle-orm";
 import Link from "next/link";
 import { openDb } from "@/db/client";
 import { getDbPath } from "@/db/paths";
@@ -35,6 +35,8 @@ function loadHealth() {
       error: "database file missing — run pnpm db:migrate && pnpm bootstrap",
       path: getDbPath(),
       tables: [] as { name: string; rows: number }[],
+      verified: 0,
+      patternItems: 0,
     };
   }
   try {
@@ -43,20 +45,27 @@ function loadHealth() {
       name,
       rows: db.select({ n: count() }).from(table).get()?.n ?? 0,
     }));
+    const verified =
+      db.select({ n: count() }).from(items).where(eq(items.verified, true)).get()?.n ?? 0;
+    const patternItems =
+      db.select({ n: count() }).from(items).where(like(items.skillTag, "PAT.%")).get()?.n ?? 0;
     sqlite.close();
-    return { ok: true as const, error: null, path: getDbPath(), tables };
+    return { ok: true as const, error: null, path: getDbPath(), tables, verified, patternItems };
   } catch (err) {
     return {
       ok: false as const,
       error: err instanceof Error ? err.message : String(err),
       path: getDbPath(),
       tables: [] as { name: string; rows: number }[],
+      verified: 0,
+      patternItems: 0,
     };
   }
 }
 
 export default function HealthPage() {
   const health = loadHealth();
+  const itemRows = health.tables.find((t) => t.name === "items")?.rows ?? 0;
   return (
     <main className="mx-auto max-w-xl p-8">
       <h1 className="text-2xl font-semibold">MCAT-GAMSAT health</h1>
@@ -68,6 +77,24 @@ export default function HealthPage() {
         </span>
       </p>
       {health.error ? <p className="mt-2 text-sm text-red-700">{health.error}</p> : null}
+      {health.ok && itemRows === 0 ? (
+        <p className="mt-2 text-sm text-zinc-600">
+          Bank is empty. Run <span className="font-mono">pnpm bootstrap</span>.
+        </p>
+      ) : null}
+      {health.ok ? (
+        <p className="mt-2 text-sm text-zinc-600">
+          verified=true:{" "}
+          <span className="font-mono" data-testid="verified-count">
+            {health.verified}
+          </span>
+          {" · "}
+          PAT.* items:{" "}
+          <span className="font-mono" data-testid="pattern-count">
+            {health.patternItems}
+          </span>
+        </p>
+      ) : null}
       {health.tables.length > 0 ? (
         <table className="mt-6 w-full border-collapse text-left text-sm">
           <thead>

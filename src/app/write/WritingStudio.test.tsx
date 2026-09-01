@@ -1,15 +1,16 @@
 /** @vitest-environment jsdom */
 
 import "@testing-library/jest-dom/vitest";
-import { cleanup, render, screen } from "@testing-library/react";
+import { act, cleanup, fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { afterEach, describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import { WritingStudio } from "@/app/write/page";
 import { taskFor } from "@/write/prompts";
 
 afterEach(() => {
   cleanup();
   window.localStorage.clear();
+  vi.useRealTimers();
 });
 
 describe("WritingStudio", () => {
@@ -24,5 +25,24 @@ describe("WritingStudio", () => {
     const packB = taskFor("B");
     expect(screen.getByTestId("prompt-pack")).toHaveTextContent(packB.id);
     expect(screen.getByText(packB.quotes[0])).toBeInTheDocument();
+  });
+
+  it("autosaves the draft locally and names time-up without wiping it", async () => {
+    vi.useFakeTimers();
+    render(<WritingStudio />);
+    const packA = taskFor("A");
+    const area = screen.getByPlaceholderText(/write here/i);
+    fireEvent.change(area, { target: { value: "A comment on progress." } });
+    await act(async () => {
+      await vi.advanceTimersByTimeAsync(500);
+    });
+    expect(window.localStorage.getItem(`gamsat-s2-A-${packA.id}`)).toContain("progress");
+    fireEvent.click(screen.getByTestId("write-timer-toggle"));
+    await act(async () => {
+      await vi.advanceTimersByTimeAsync(30 * 60 * 1000);
+    });
+    expect(screen.getByTestId("write-times-up")).toHaveTextContent(/official s2 would have stopped/i);
+    expect(screen.getByTestId("write-timer")).toHaveTextContent("0:00");
+    expect(area).toHaveValue("A comment on progress.");
   });
 });

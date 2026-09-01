@@ -4,6 +4,8 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { attempts, sessions } from "@/db/schema";
 import {
+  parseOfficialRows,
+  parseWeeklyVerdict,
   renderScoreboard,
   scoreboardStats,
   writeScoreboard,
@@ -138,5 +140,28 @@ describe("scoreboard study log", () => {
     expect(written).toContain("AAMC FL1");
     expect(written).toContain("Study days: 2");
     close();
+  });
+
+  it("parses official rows and leaves an empty table empty", () => {
+    expect(
+      parseOfficialRows(`## Official scores
+
+| date | exam | source | section | score | percentile |
+|------|------|--------|---------|-------|------------|
+`),
+    ).toEqual([]);
+    expect(parseOfficialRows(`# SCOREBOARD\n\n${OFFICIAL_WITH_ROW}${WEEKLY}\n`)).toEqual([
+      {
+        date: "2026-08-01",
+        exam: "MCAT",
+        source: "AAMC FL1",
+        section: "C/P",
+        score: "127",
+        percentile: "90",
+      },
+    ]);
+    expect(parseWeeklyVerdict(`# SCOREBOARD\n\n${WEEKLY}\n`)).toContain(
+      "Week of 2026-08-31: FAIL (human). No study days.",
+    );
   });
 });

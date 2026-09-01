@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { ERROR_CLASSES, type ErrorClass } from "@/db/schema";
 import { calibrationNote, canProceedAfterReveal, canSubmit } from "@/engine/quizGate";
@@ -162,9 +163,14 @@ export function ItemPlayer({
           Item {position + 1} of {total}
           <span className="ml-2 text-zinc-400">({remaining} left)</span>
         </p>
-        <p className="font-mono tabular-nums" data-testid="timer">
-          {Math.floor(displaySeconds)}s
-        </p>
+        <div className="flex items-baseline gap-4">
+          <p className="font-mono tabular-nums" data-testid="timer">
+            {Math.floor(displaySeconds)}s
+          </p>
+          <Link href="/" className="text-xs underline" data-testid="leave-session">
+            Today
+          </Link>
+        </div>
       </div>
 
       <div className="flex flex-col gap-6 md:flex-row">
@@ -358,7 +364,8 @@ export function ItemPlayer({
 
           {error ? <p className="mt-3 text-sm text-red-700">{error}</p> : null}
           <p className="mt-4 text-xs text-zinc-500">
-            Keys: A–D answer, 1–5 confidence, Enter submit/next.
+            Keys: A–D answer, 1–5 confidence, Enter submit/next. Today keeps committed
+            answers; an uncommitted reveal is not saved.
           </p>
         </section>
       </div>

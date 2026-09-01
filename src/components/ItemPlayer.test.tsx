@@ -37,6 +37,7 @@ describe("ItemPlayer hunt banner", () => {
       />,
     );
     expect(screen.getByTestId("hunt-banner")).toHaveTextContent(/hunting this node/i);
+    expect(screen.getByTestId("leave-session")).toHaveAttribute("href", "/");
   });
 
   it("names a returning miss without leaking the error class", () => {

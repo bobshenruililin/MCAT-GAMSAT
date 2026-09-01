@@ -19,7 +19,7 @@ export const dynamic = "force-dynamic";
 
 function loadProgress() {
   if (!existsSync(getDbPath())) {
-    return { ok: false as const, error: "database file missing", data: null, insights: null };
+    return { ok: false as const, error: "database file missing — run pnpm db:migrate && pnpm bootstrap", data: null, insights: null };
   }
   try {
     const { sqlite, db } = openDb();

@@ -59,14 +59,27 @@ function WritingPane({ spec, task }: { spec: WritingTask; task: "A" | "B" }) {
   const [secondsLeft, setSecondsLeft] = useState(spec.minutes * 60);
   const [running, setRunning] = useState(false);
   const [checks, setChecks] = useState<Record<string, boolean>>({});
+  const [savedHint, setSavedHint] = useState(false);
 
   useEffect(() => {
     if (!running) return;
     const id = window.setInterval(() => {
-      setSecondsLeft((s) => (s <= 0 ? 0 : s - 1));
+      setSecondsLeft((s) => (s <= 1 ? 0 : s - 1));
     }, 1000);
     return () => window.clearInterval(id);
   }, [running]);
+
+  useEffect(() => {
+    if (secondsLeft === 0 && running) setRunning(false);
+  }, [secondsLeft, running]);
+
+  useEffect(() => {
+    const id = window.setTimeout(() => {
+      window.localStorage.setItem(storageKey, draft);
+      setSavedHint(true);
+    }, 400);
+    return () => window.clearTimeout(id);
+  }, [draft, storageKey]);
 
   const words = useMemo(
     () => draft.trim().split(/\s+/).filter(Boolean).length,
@@ -74,9 +87,11 @@ function WritingPane({ spec, task }: { spec: WritingTask; task: "A" | "B" }) {
   );
   const mm = Math.floor(secondsLeft / 60);
   const ss = String(secondsLeft % 60).padStart(2, "0");
+  const timedOut = secondsLeft === 0;
 
   function save() {
     window.localStorage.setItem(storageKey, draft);
+    setSavedHint(true);
   }
 
   return (
@@ -89,6 +104,7 @@ function WritingPane({ spec, task }: { spec: WritingTask; task: "A" | "B" }) {
         <div className="flex gap-2">
           <button
             type="button"
+            data-testid="write-timer-toggle"
             className="rounded-md border border-zinc-300 px-3 py-1.5"
             onClick={() => setRunning((r) => !r)}
           >
@@ -103,12 +119,27 @@ function WritingPane({ spec, task }: { spec: WritingTask; task: "A" | "B" }) {
           </button>
         </div>
       </div>
+      {timedOut ? (
+        <p
+          className="mt-3 rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-950"
+          data-testid="write-times-up"
+        >
+          Time. Official S2 would have stopped. You can keep writing — this pane is
+          practice, not a scored paper.
+        </p>
+      ) : null}
       <textarea
         className="mt-3 min-h-[320px] w-full resize-y rounded-md border border-zinc-300 p-3 font-serif text-[16px] leading-7"
         value={draft}
-        onChange={(e) => setDraft(e.target.value)}
+        onChange={(e) => {
+          setSavedHint(false);
+          setDraft(e.target.value);
+        }}
         placeholder="Write here. Retrieval of craft is the MCQs; this pane is the timed production."
       />
+      <p className="mt-1 text-xs text-zinc-500" data-testid="write-save-status">
+        {savedHint ? "Draft saved on this device." : "Autosaves locally as you type."}
+      </p>
       <h3 className="mt-4 text-sm font-medium">Self-rubric (not a score)</h3>
       <ul className="mt-2 space-y-2 text-sm">
         {RUBRIC.map((row) => (
