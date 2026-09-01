@@ -3,26 +3,36 @@ import Link from "next/link";
 import { openDb } from "@/db/client";
 import { getDbPath } from "@/db/paths";
 import { getProgressData } from "@/engine/progress";
+import { getInsightData } from "@/engine/progressInsights";
 import { TaxonomyTree } from "@/components/TaxonomyTree";
 import { WeakestTable } from "@/components/WeakestTable";
+import { DemoBanner } from "@/components/DemoBanner";
+import {
+  CalibrationChart,
+  MasteryTrendChart,
+  PacingChart,
+} from "@/components/InsightCharts";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 function loadProgress() {
   if (!existsSync(getDbPath())) {
-    return { ok: false as const, error: "database file missing", data: null };
+    return { ok: false as const, error: "database file missing", data: null, insights: null };
   }
   try {
     const { sqlite, db } = openDb();
-    const data = getProgressData(db, new Date());
+    const now = new Date();
+    const data = getProgressData(db, now);
+    const insights = getInsightData(db, now);
     sqlite.close();
-    return { ok: true as const, error: null, data };
+    return { ok: true as const, error: null, data, insights };
   } catch (err) {
     return {
       ok: false as const,
       error: err instanceof Error ? err.message : String(err),
       data: null,
+      insights: null,
     };
   }
 }
@@ -40,7 +50,38 @@ export default function ProgressPage() {
       <p className="mt-1 text-sm text-zinc-600">
         Gray dots are unseen (no attempts). Color runs red → green with mastery.
       </p>
+      <DemoBanner show={Boolean(loaded.insights?.demo)} />
       {loaded.error ? <p className="mt-4 text-sm text-red-700">{loaded.error}</p> : null}
+      {loaded.insights ? (
+        <section className="mt-8 grid gap-8 lg:grid-cols-2">
+          <div className="rounded-lg border border-zinc-200 bg-white p-4">
+            <h2 className="text-lg font-medium">Calibration</h2>
+            <p className="text-xs text-zinc-500">Confidence bucket vs actual accuracy.</p>
+            <div className="mt-3">
+              <CalibrationChart points={loaded.insights.calibration} />
+            </div>
+          </div>
+          <div className="rounded-lg border border-zinc-200 bg-white p-4">
+            <h2 className="text-lg font-medium">Pacing</h2>
+            <p className="text-xs text-zinc-500">Attempt duration vs section time budgets.</p>
+            <div className="mt-3">
+              <PacingChart
+                buckets={loaded.insights.pacingBuckets}
+                sections={loaded.insights.pacingSections}
+              />
+            </div>
+          </div>
+          <div className="rounded-lg border border-zinc-200 bg-white p-4 lg:col-span-2">
+            <h2 className="text-lg font-medium">14-day trend, 5 weakest attempted nodes</h2>
+            <div className="mt-3">
+              <MasteryTrendChart
+                dates={loaded.insights.trendDates}
+                series={loaded.insights.trendSeries}
+              />
+            </div>
+          </div>
+        </section>
+      ) : null}
       {loaded.data ? (
         <>
           <section className="mt-8">

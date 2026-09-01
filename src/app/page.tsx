@@ -4,6 +4,7 @@ import { openDb } from "@/db/client";
 import { getDbPath } from "@/db/paths";
 import { getTodayStats } from "@/engine/today";
 import { StartButtons } from "@/components/StartButtons";
+import { DemoBanner } from "@/components/DemoBanner";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -36,9 +37,10 @@ export default function TodayPage() {
   const emptyBank = stats ? stats.itemCount === 0 : true;
 
   return (
-    <main className="mx-auto max-w-lg px-4 py-8">
+    <main className="mx-auto max-w-3xl px-4 py-8">
       <h1 className="text-2xl font-semibold">Today</h1>
       <p className="mt-1 text-sm text-zinc-600">Retrieval only. Confidence before reveal.</p>
+      <DemoBanner show={Boolean(stats?.demo)} />
 
       {today.error ? (
         <p className="mt-4 text-sm text-red-700">{today.error}</p>
@@ -46,7 +48,7 @@ export default function TodayPage() {
 
       {stats ? (
         <>
-          <dl className="mt-6 grid grid-cols-2 gap-3">
+          <dl className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
             <div className="rounded-lg border border-zinc-200 bg-white p-4">
               <dt className="text-xs text-zinc-500">Due reviews</dt>
               <dd className="mt-1 text-2xl font-semibold">{stats.dueCount}</dd>
@@ -58,6 +60,28 @@ export default function TodayPage() {
               <dt className="text-xs text-zinc-500">New items available</dt>
               <dd className="mt-1 text-2xl font-semibold">{stats.newAvailable}</dd>
             </div>
+            <div className="rounded-lg border border-zinc-200 bg-white p-4">
+              <dt className="text-xs text-zinc-500">Streak</dt>
+              <dd className="mt-1 text-2xl font-semibold" data-testid="streak">
+                {stats.streak}
+              </dd>
+              <p className="mt-1 text-xs text-zinc-500">consecutive UTC days with attempts</p>
+            </div>
+            <div className="rounded-lg border border-zinc-200 bg-white p-4">
+              <dt className="text-xs text-zinc-500">Weakest attempted</dt>
+              {stats.weakest ? (
+                <>
+                  <dd className="mt-1 text-sm font-medium leading-5" data-testid="weakest-spotlight">
+                    {stats.weakest.name}
+                  </dd>
+                  <p className="mt-1 font-mono text-xs text-zinc-500">
+                    {stats.weakest.id} · {stats.weakest.mastery.toFixed(2)} · {stats.weakest.attempts} att
+                  </p>
+                </>
+              ) : (
+                <dd className="mt-1 text-sm text-zinc-500">None yet</dd>
+              )}
+            </div>
           </dl>
 
           <StartButtons disabled={emptyBank} />
@@ -68,12 +92,31 @@ export default function TodayPage() {
           ) : null}
 
           <section className="mt-8">
+            <h2 className="text-sm font-medium">Due forecast, next 7 days</h2>
+            <ul className="mt-3 divide-y divide-zinc-200 rounded-lg border border-zinc-200 bg-white">
+              {stats.dueForecast.map((day, i) => (
+                <li key={day.date} className="flex justify-between px-4 py-2 text-sm">
+                  <span className="font-mono text-zinc-600">
+                    {day.date}
+                    {i === 0 ? " (today, incl. overdue)" : ""}
+                  </span>
+                  <span>
+                    {day.count} due · ~{day.estimatedMinutes} min
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="mt-8">
             <h2 className="text-sm font-medium">Last 7 days</h2>
             <ul className="mt-3 divide-y divide-zinc-200 rounded-lg border border-zinc-200 bg-white">
               {stats.last7Days.map((day) => (
                 <li key={day.date} className="flex justify-between px-4 py-2 text-sm">
                   <span className="font-mono text-zinc-600">{day.date}</span>
-                  <span>{day.count} attempt{day.count === 1 ? "" : "s"}</span>
+                  <span>
+                    {day.count} attempt{day.count === 1 ? "" : "s"}
+                  </span>
                 </li>
               ))}
             </ul>
