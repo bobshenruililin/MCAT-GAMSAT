@@ -92,4 +92,19 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Hard-fail rubric is wrong key, two live keys, joke distractors, missing data, passage-independent passage questions, or explanations that do not reason. None met that bar on this pass. NORTH_STAR still forbids `verified=true` without a human or official anchor.
 - Rejected: Quarantining the ten least-certain items automatically; marking the bank verified.
 
+## 2026-09-01 — demo:seed is simulation-only and will not mix with real study
+- Decision: `pnpm demo:seed` writes `sessions.kind=simulation` with `config.demo=true` and a `[DEMO]` label. It refuses if any non-demo session exists. `pnpm db:reset` is the wipe for real use. SCOREBOARD.md is not written.
+- Rationale: NORTH_STAR treats attempt records as trusted. Mixing fake history into daily sessions would poison mastery, FSRS, and streak. A banner on Today and Progress names the source.
+- Rejected: Seeding `kind=daily`; silently appending demo attempts onto a real ledger.
+
+## 2026-09-01 — 14-day trend uses EWMA correctness, not live FSRS R
+- Decision: The weakest-five chart plots EWMA(correctness, α=0.3) as of each day. Live mastery remains 0.6C+0.4R.
+- Rationale: `fsrs_state` stores only the current card. Reconstructing historical retrievability would be invented math. EWMA from dated attempts is the honest historical series.
+- Rejected: Snapshot tables; backdating R from the current card.
+
+## 2026-09-01 — Pacing budgets 95 / 102 / 120 seconds
+- Decision: Histogram reference budgets are MCAT science 95s, CARS 102s, GAMSAT S3 120s. Logged as B-010.
+- Rationale: Stretch asked for section budgets. These are minutes-per-section divided by typical question counts, for pacing feedback only.
+- Rejected: A single 95s line for every exam; claiming official ACER/AAMC scoring.
+
 

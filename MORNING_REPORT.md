@@ -103,4 +103,23 @@ Three riskiest things to review:
 
 SCORE IMPACT: Retrieval can now run on tagged science items instead of PLACEHOLDERS, so study hours can start — expected score per hour still depends on the human actually sitting the sessions and on catching the remaining AI-item errors before they train a wrong memory.
 
+## STRETCH — demo history, insight charts, Today dashboard (2026-09-01)
+
+Gates: `pnpm typecheck`, `lint`, and `test` green; Prompts 1–4 present in this file.
+
+Shipped:
+- `pnpm demo:seed`: deterministic 14-day `kind=simulation` history (`config.demo=true`, `[DEMO]` label). Refuses if real sessions exist. Re-run replaces demo only. `pnpm db:reset` wipes it. Logged run: 14 sessions, 355 attempts (DEMO_SEED_NOW=2026-09-01T18:00:00Z).
+- `/progress`: calibration (confidence vs accuracy), pacing histogram + mean vs 95/102/120s budgets, 14-day EWMA trend for 5 weakest attempted nodes. DEMO banner.
+- Today: due forecast next 7 days, streak, weakest-node spotlight, DEMO banner.
+- Tests: 43. DEMO.md updated.
+
+Failed: nothing in the stretch DoD. Demo data is still not study.
+
+Three riskiest things to review:
+1. Do not copy demo attempts or the 14-day streak into SCOREBOARD.md.
+2. Trend is EWMA correctness, not full mastery (B-010 sibling: historical R not stored).
+3. Pacing budgets are heuristics (B-010).
+
+SCORE IMPACT: Charts let the human see calibration, pacing, and weak-node drift in one glance after a study week — but only real attempts raise score per hour; demo:seed is a display fixture, not practice.
+
 

@@ -31,4 +31,7 @@ Diagnostic summary ranks nodes by `mastery * exam_weight` ascending, skipping we
 ### B-009 — Starter bank is not the raw global top-40
 Prompt 4 asked for the 40 highest `exam_weight` topic nodes. That list is almost all CARS. v1 instead took a biochem-heavy spread: 10 FC1 topics, 6 FC5, 7 from FC2/3/4, 7 P/S (FC6–10), 10 GAMSAT S3, plus 3 passages (bio/biochem experiment, CARS, GAMSAT physics). See `content/batches/TARGET_TOPICS.json`. Human: confirm, or force a CARS-majority bank.
 
+### B-010 — Section time budgets for pacing
+Stretch pacing uses 95s (MCAT science), 102s (CARS, 90 min / 53), 120s (GAMSAT S3, 150 min / 75). These are study pacing heuristics, not official scoring rules. Human: replace with your preferred per-section budgets.
+
 

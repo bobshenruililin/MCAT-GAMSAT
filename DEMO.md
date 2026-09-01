@@ -2,53 +2,48 @@
 
 Bank is `ai_generated` / `verified=false`. This is not official AAMC/ACER content.
 
+**[DEMO] simulated attempts are not study.** Do not copy them into SCOREBOARD.md. `pnpm db:reset` wipes the database (demo and real).
+
 ## Before you click (once)
 
-From the repo root, if `data/app.db` is missing or still on PLACEHOLDERS:
+Charts need a 14-day history. From a clean tree:
 
 ```bash
 pnpm db:reset && pnpm seed
 for f in content/batches/0*.json; do pnpm ingest "$f"; done
 pnpm ingest --strip-placeholders
+pnpm demo:seed
 pnpm dev
 ```
 
-Expected ingest lines (logged 2026-09-01):
+Expected `demo:seed` (logged 2026-09-01 with `DEMO_SEED_NOW=2026-09-01T18:00:00.000Z`):
 
 ```
-ingest 01-fc1-proteins.json: 40 passed, 0 failed (inserted 40, skipped 0)
-ingest 02-fc1-metabolism.json: 40 passed, 0 failed (inserted 40, skipped 0)
-ingest 03-fc5-chem.json: 42 passed, 0 failed (inserted 42, skipped 0)
-ingest 04-fc2-fc4.json: 49 passed, 0 failed (inserted 49, skipped 0)
-ingest 05-psyc-soc.json: 49 passed, 0 failed (inserted 49, skipped 0)
-ingest 06-gamsat-s3a.json: 40 passed, 0 failed (inserted 40, skipped 0)
-ingest 07-gamsat-s3b.json: 40 passed, 0 failed (inserted 40, skipped 0)
-ingest 08-passages.json: 15 passed, 0 failed (inserted 15, skipped 0)
-removed 20 PLACEHOLDER items (real bank present)
+demo:seed 14 sessions, 355 attempts over 14 days
+[DEMO] simulated study — not real attempts. pnpm db:reset wipes this. Do not copy into SCOREBOARD.md.
 ```
 
-Health `/health` should then show **315** items, **3** passages, **0** verified.
+Health `/health`: **315** items, **3** passages, **0** verified, **14** simulation sessions, **355** attempts.
+
+To study for real: `pnpm db:reset && pnpm seed` then ingest (skip `demo:seed`). `demo:seed` refuses if a non-demo session already exists.
 
 ## Click-path (~5 minutes)
 
-1. Open `/` (Today). Confirm **New items available = 315**, due reviews 0, **Progress** link in the footer.
-2. Click **Progress**. Gray dots = unseen. Expand `MCAT.CARS` then a science FC. Table under **Topics, weakest first** has Mastery / Attempts / Weight; click a header to reverse sort. Click **Today**.
-3. Click **Start Session**. First cards are often CARS (highest `exam_weight`). Stem must **not** contain `PLACEHOLDER`. If it is a passage question, the left pane is the passage; the stem should be unanswerable without it.
-4. Keys: **A–D** choice, **1–5** confidence (required), **Enter** submit. After a miss, pick an error class before Next. Confirm the explanation is a real paragraph and “Why the others are wrong” lists the three distractors.
-5. Click **Next** once so the attempt is stored. Open **Progress** again: `MCAT.CARS` (or whichever node you hit) is no longer gray; mastery is a number. Return to Today; last-7-days should show **1 attempt** for today.
+1. Open `/` (Today). Yellow **[DEMO]** banner. Confirm **Streak = 14**, a **Weakest attempted** node with a mastery number, **Due forecast** for seven dates (today includes overdue), **Last 7 days** with ~24–26 attempts/day.
+2. Click **Progress**. Same DEMO banner. Check three charts: **Calibration** (confidence 1–5 vs accuracy, dashed = confidence/5), **Pacing** histogram plus mean-vs-budget table (95s / 102s / 120s), **14-day trend** for five weakest attempted topics. Scroll to the taxonomy tree (no longer all gray) and the weakest-first table.
+3. Click **Today** → **Start Session**. Due reviews should be non-zero after demo:seed (FSRS cards). Stem must **not** contain `PLACEHOLDER`. Keys: **A–D**, **1–5** confidence, **Enter**. Miss → error class → Next.
+4. Optional without demo data: skip `pnpm demo:seed`, start from an empty heatmap, run one real item as in prompt 4. Charts stay flat until attempts exist.
 
-Optional: **Start Diagnostic** — long; skip if you only have five minutes. `/health` is the row-count page.
+`/health` is the row-count page.
 
 ## Top 5 things needing human review
 
 These are the highest-risk items from `content/QC_REPORT.md`. None were auto-quarantined; all stay `verified=false`.
 
-1. **James–Lange after spinal transection** (`05-psyc-soc.json`, `MCAT.FC6.6C.t1`) — intensity drop is the textbook prediction; Cannon–Bard-flavored readings can still argue.
-2. **Arsenate and net ATP of anaerobic glycolysis** (`01-fc1-proteins.json`, `MCAT.FC1.1D.t3`) — PGK bypass vs pyruvate-kinase still paying ATP is easy to mis-count.
-3. **Compound P as “noncompetitive”** (`08-passages.json` enzyme table) — pure noncompetitive vs mixed inhibition with α = α′ is a nomenclature fight.
-4. **CARS “archive and the street”** (`08-passages.json`) — inference/function items are judgment calls; worth a human CARS pass.
-5. **Demographic transition stage 2** (`05-psyc-soc.json`, `MCAT.FC9.9B.t1`) — four-stage vs five-stage textbooks number the mortality-drop stage differently.
-
-Also in the QC ten: looking-glass vs theory of mind, Mg 24.32 u vs IUPAC mass, stenosis Bernoulli (ideal fluid), k_cat units from Vmax/site titer, pendulum T² vs L intercept.
+1. **James–Lange after spinal transection** (`05-psyc-soc.json`, `MCAT.FC6.6C.t1`)
+2. **Arsenate and net ATP of anaerobic glycolysis** (`01-fc1-proteins.json`, `MCAT.FC1.1D.t3`)
+3. **Compound P as “noncompetitive”** (`08-passages.json` enzyme table)
+4. **CARS “archive and the street”** (`08-passages.json`)
+5. **Demographic transition stage 2** (`05-psyc-soc.json`, `MCAT.FC9.9B.t1`)
 
 Do not set `verified=true` until you or an official source sign the item.
