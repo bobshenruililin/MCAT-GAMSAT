@@ -21,6 +21,7 @@ import { ratingFromAttempt } from "./rating";
 import { getDueItems, schedule } from "./reviewEngine";
 import { huntTopicIds } from "./hunt";
 import { isDemoConfig } from "./demoSeed";
+import { maybeSyncScoreboard } from "./scoreboard";
 import {
   assembleSession,
   DEFAULT_ASSEMBLE_CONFIG,
@@ -254,6 +255,9 @@ export function nextUnanswered(
         .run();
       if (session.kind === "diagnostic") {
         writeDiagnosticPriors(db, sessionId, now);
+      }
+      if (session.kind === "daily" || session.kind === "diagnostic") {
+        maybeSyncScoreboard(db, now);
       }
     }
     return {

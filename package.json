@@ -13,7 +13,8 @@
     "db:reset": "tsx src/db/reset.ts",
     "seed": "tsx src/db/seed.ts",
     "ingest": "tsx src/ingest/ingest.ts",
-    "demo:seed": "tsx src/db/demoSeed.ts"
+    "demo:seed": "tsx src/db/demoSeed.ts",
+    "scoreboard:sync": "tsx src/db/scoreboardSync.ts"
   },
   "dependencies": {
     "better-sqlite3": "^12.4.1",

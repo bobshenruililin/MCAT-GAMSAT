@@ -8,6 +8,8 @@ export function getDataDir(): string {
   return path.dirname(getDbPath());
 }
 
+export const SCOREBOARD_PATH = path.join(process.cwd(), "SCOREBOARD.md");
+
 export const MIGRATIONS_DIR = path.join(process.cwd(), "drizzle");
 export const TAXONOMY_PATH = path.join(
   process.cwd(),
