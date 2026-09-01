@@ -82,6 +82,10 @@ export default function TodayPage() {
       ) : null}
 
       <p className="mt-8 text-xs text-zinc-500">
+        <Link href="/progress" className="underline">
+          Progress
+        </Link>
+        {" · "}
         <Link href="/health" className="underline">
           Health
         </Link>
