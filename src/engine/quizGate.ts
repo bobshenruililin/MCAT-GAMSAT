@@ -14,6 +14,14 @@ export function canSubmit(
   );
 }
 
+export function overconfidenceNote(
+  correct: boolean,
+  confidence: number,
+): string | null {
+  if (correct || confidence < 4) return null;
+  return `You marked ${confidence}/5 and missed. Confidence and accuracy need to be the same number.`;
+}
+
 export function canProceedAfterReveal(opts: {
   revealed: boolean;
   correct: boolean | null;

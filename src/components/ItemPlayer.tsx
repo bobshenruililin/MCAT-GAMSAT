@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ERROR_CLASSES, type ErrorClass } from "@/db/schema";
-import { canProceedAfterReveal, canSubmit } from "@/engine/quizGate";
+import { canProceedAfterReveal, canSubmit, overconfidenceNote } from "@/engine/quizGate";
 
 export type GradeResult = {
   correct: boolean;
@@ -81,6 +81,10 @@ export function ItemPlayer({
     correct: grade?.correct ?? null,
     errorClass,
   });
+  const calNote =
+    grade && confidence !== null
+      ? overconfidenceNote(grade.correct, confidence)
+      : null;
 
   async function submit() {
     if (!submitReady || answeredKey === null || confidence === null || busy) return;
@@ -268,6 +272,14 @@ export function ItemPlayer({
               >
                 {grade.correct ? "Correct" : "Incorrect"} · answer {grade.correctKey}
               </p>
+              {calNote ? (
+                <p
+                  className="rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-950"
+                  data-testid="overconfidence-note"
+                >
+                  {calNote}
+                </p>
+              ) : null}
               <p className="text-sm leading-6">{grade.explanation}</p>
               {Object.keys(grade.distractorRationales).length > 0 ? (
                 <div>

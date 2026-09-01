@@ -95,5 +95,32 @@ describe("ItemPlayer confidence-before-reveal gate", () => {
     expect(onCommit).not.toHaveBeenCalled();
     await user.click(screen.getByTestId("error-content_gap"));
     expect(next).not.toBeDisabled();
+    expect(screen.queryByTestId("overconfidence-note")).toBeNull();
+  });
+
+  it("names overconfidence on a high-confidence miss", async () => {
+    const user = userEvent.setup();
+    const onGrade = vi.fn().mockResolvedValue({
+      correct: false,
+      correctKey: "B",
+      explanation: "Four.",
+      distractorRationales: { A: "too small" },
+    });
+    render(
+      <ItemPlayer
+        item={item}
+        position={0}
+        remaining={1}
+        total={1}
+        onGrade={onGrade}
+        onCommit={vi.fn()}
+      />,
+    );
+    await user.click(screen.getByTestId("choice-A"));
+    await user.click(screen.getByTestId("confidence-5"));
+    await user.click(screen.getByTestId("submit-answer"));
+    expect(await screen.findByTestId("overconfidence-note")).toHaveTextContent(
+      /confidence and accuracy need to be the same number/i,
+    );
   });
 });

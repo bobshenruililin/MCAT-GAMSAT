@@ -117,4 +117,9 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: NORTH_STAR measures success in SCOREBOARD.md. A ledger that stays at 0 after real study cannot be a trend line. Official percentiles are AAMC/ACER truth — software must not invent them.
 - Rejected: Counting demo:seed; writing fake official scores; failing a session if the markdown write errors.
 
+## 2026-09-01 — Overconfidence note on high-confidence misses only
+- Decision: After reveal, if the answer is wrong and confidence was 4 or 5, show a one-line note that confidence and accuracy need to be the same number. Do not show it on hits or on 1–3 misses.
+- Rationale: The dream is that confidence and accuracy are the same number. The Progress calibration chart is after-the-fact. The expensive miss is the sure-wrong one during the session.
+- Rejected: Nagging on every miss; blocking Next behind the note; changing the 1–5 confidence scale.
+
 

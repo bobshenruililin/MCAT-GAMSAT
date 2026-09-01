@@ -151,4 +151,17 @@ Failed: study days remain 0 until the human sits a real session.
 
 SCORE IMPACT: After each real session the study log shows days, attempts, and mean mastery of attempted topics, so the human can see whether this week's hours are actually moving the score ledger instead of guessing from chat.
 
+## DREAM cycle 3 — overconfidence on reveal (2026-09-01)
+
+Gap: calibration existed as a Progress chart the user sees after the week, not at the moment they marked 4–5 and missed.
+
+Shipped:
+- On reveal, a miss with confidence ≥ 4 shows: confidence and accuracy need to be the same number.
+- Confidence 1–3 misses stay silent (error class already required). Hits stay silent.
+- Tests: 51. `pnpm test`, typecheck, lint green.
+
+Failed: calibration still cannot equal accuracy until the human studies.
+
+SCORE IMPACT: The hour of study now includes an immediate correction when the user was sure and wrong, which is the miss that most poisons exam-day confidence.
+
 
