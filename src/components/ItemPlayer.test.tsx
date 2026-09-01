@@ -24,6 +24,23 @@ const item: PlayerItem = {
   ],
 };
 
+describe("ItemPlayer hunt banner", () => {
+  it("names a hunted node before answer", () => {
+    render(
+      <ItemPlayer
+        item={{ ...item, hunting: true }}
+        position={0}
+        remaining={1}
+        total={1}
+        onGrade={vi.fn()}
+        onCommit={vi.fn()}
+      />,
+    );
+    expect(screen.getByTestId("hunt-banner")).toHaveTextContent(/hunting this node/i);
+    expect(screen.queryByTestId("hunt-banner")).not.toBeNull();
+  });
+});
+
 describe("ItemPlayer confidence-before-reveal gate", () => {
   it("cannot submit without confidence", async () => {
     const user = userEvent.setup();

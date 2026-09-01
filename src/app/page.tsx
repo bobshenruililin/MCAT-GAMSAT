@@ -84,6 +84,29 @@ export default function TodayPage() {
             </div>
           </dl>
 
+          {stats.huntTopics.length > 0 ? (
+            <section className="mt-6">
+              <h2 className="text-sm font-medium">Hunting</h2>
+              <p className="mt-1 text-sm text-zinc-600">
+                Traps, content gaps, or twice-missed items that have not recovered.
+                New cards from these nodes fill today&apos;s new-item quota first.
+              </p>
+              <ul className="mt-3 space-y-2" data-testid="hunt-topics">
+                {stats.huntTopics.map((n) => (
+                  <li
+                    key={n.id}
+                    className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-medium text-amber-950"
+                  >
+                    {n.name}
+                    <span className="mt-0.5 block font-mono text-xs font-normal text-amber-800">
+                      {n.id}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+
           <StartButtons disabled={emptyBank} />
           {emptyBank ? (
             <p className="mt-3 text-sm text-zinc-600">

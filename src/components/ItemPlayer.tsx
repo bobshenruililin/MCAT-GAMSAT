@@ -18,6 +18,7 @@ export type PlayerItem = {
   choices: { key: string; text: string }[];
   conceptId: string;
   passage: { title: string; body: string } | null;
+  hunting?: boolean;
 };
 
 const ERROR_LABELS: Record<ErrorClass, string> = {
@@ -176,6 +177,15 @@ export function ItemPlayer({
             {item.type === "passage_question" ? "Passage question" : "Discrete"} ·{" "}
             {item.conceptId}
           </p>
+          {item.hunting ? (
+            <p
+              className="mt-2 rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-950"
+              data-testid="hunt-banner"
+            >
+              Hunting this node — recent trap, content-gap, or twice-missed item. It
+              comes back until it dies.
+            </p>
+          ) : null}
           <h1 className="mt-2 text-lg font-medium leading-7">{item.stem}</h1>
 
           <ul className="mt-4 space-y-2">

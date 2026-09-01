@@ -12,12 +12,14 @@ export type AssembleConfig = {
   reviewCap: number;
   newCap: number;
   maxNewPerTopic: number;
+  huntTopicIds?: string[];
 };
 
 export const DEFAULT_ASSEMBLE_CONFIG: AssembleConfig = {
   reviewCap: 50,
   newCap: 15,
   maxNewPerTopic: 3,
+  huntTopicIds: [],
 };
 
 export type AssembleResult = {
@@ -29,7 +31,9 @@ function pickNewItems(
   candidates: NewCandidate[],
   newCap: number,
   maxNewPerTopic: number,
+  huntTopicIds: string[] = [],
 ): AssemblerItem[] {
+  const hunt = new Set(huntTopicIds);
   const byTopic = new Map<string, NewCandidate[]>();
   for (const c of candidates) {
     if (c.examWeight <= 0) continue;
@@ -39,6 +43,9 @@ function pickNewItems(
   }
 
   const rankedTopics = [...byTopic.entries()].sort((a, b) => {
+    const ha = hunt.has(a[0]) ? 1 : 0;
+    const hb = hunt.has(b[0]) ? 1 : 0;
+    if (hb !== ha) return hb - ha;
     const pa = (1 - a[1][0].mastery) * a[1][0].examWeight;
     const pb = (1 - b[1][0].mastery) * b[1][0].examWeight;
     if (pb !== pa) return pb - pa;
@@ -74,7 +81,7 @@ export function interleaveItems(items: AssemblerItem[]): AssembleResult {
 
 /**
  * Pure assembler. Due reviews are first-class (all taken up to reviewCap, in given order).
- * New items come from (1-mastery)*exam_weight topics, max 3 per topic.
+ * New items: hunt topics first (error-driven), then (1-mastery)*exam_weight, max 3 per topic.
  * Combined queue is interleaved so consecutive items avoid the same topic when possible.
  */
 export function assembleSession(
@@ -82,11 +89,16 @@ export function assembleSession(
   candidateNewItems: NewCandidate[],
   config: Partial<AssembleConfig> = {},
 ): AssembleResult {
-  const { reviewCap, newCap, maxNewPerTopic } = {
+  const { reviewCap, newCap, maxNewPerTopic, huntTopicIds } = {
     ...DEFAULT_ASSEMBLE_CONFIG,
     ...config,
   };
   const due = dueItems.slice(0, reviewCap);
-  const news = pickNewItems(candidateNewItems, newCap, maxNewPerTopic);
+  const news = pickNewItems(
+    candidateNewItems,
+    newCap,
+    maxNewPerTopic,
+    huntTopicIds ?? [],
+  );
   return interleaveItems([...due, ...news]);
 }

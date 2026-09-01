@@ -19,6 +19,8 @@ import { toIso } from "./dates";
 import { masteryByNode } from "./mastery";
 import { ratingFromAttempt } from "./rating";
 import { getDueItems, schedule } from "./reviewEngine";
+import { huntTopicIds } from "./hunt";
+import { isDemoConfig } from "./demoSeed";
 import {
   assembleSession,
   DEFAULT_ASSEMBLE_CONFIG,
@@ -31,6 +33,7 @@ export type DailySessionConfig = SessionConfig & {
   maxNewPerTopic: number;
   itemIds: string[];
   interleave_exceptions: number;
+  huntTopicIds: string[];
 };
 
 export type DiagnosticSessionConfig = SessionConfig & {
@@ -45,6 +48,36 @@ function queuedItemIds(config: SessionConfig): string[] {
   return Array.isArray(ids)
     ? ids.filter((id): id is string => typeof id === "string")
     : [];
+}
+
+export function huntTopicsFromDb(db: AppDb, now: Date): string[] {
+  const rows = db
+    .select({
+      itemId: attempts.itemId,
+      conceptId: items.conceptId,
+      correct: attempts.correct,
+      errorClass: attempts.errorClass,
+      createdAt: attempts.createdAt,
+      sessionId: attempts.sessionId,
+    })
+    .from(attempts)
+    .innerJoin(items, eq(items.id, attempts.itemId))
+    .all();
+  const sessionRows = db.select({ id: sessions.id, config: sessions.config }).from(sessions).all();
+  const demoIds = new Set(
+    sessionRows.filter((s) => isDemoConfig(s.config)).map((s) => s.id),
+  );
+  return huntTopicIds(
+    rows.map((r) => ({
+      itemId: r.itemId,
+      conceptId: r.conceptId,
+      correct: r.correct,
+      errorClass: r.errorClass,
+      createdAt: r.createdAt,
+      demo: demoIds.has(r.sessionId),
+    })),
+    now,
+  );
 }
 
 export function createDailySession(
@@ -74,6 +107,7 @@ export function createDailySession(
     .filter((row) => !seen.has(row.id));
 
   const mastery = masteryByNode(db, now);
+  const huntIds = huntTopicsFromDb(db, now);
   const candidates = newRows.map((row) => ({
     id: row.id,
     conceptId: row.conceptId,
@@ -81,13 +115,17 @@ export function createDailySession(
     mastery: mastery[row.conceptId] ?? 0.3,
   }));
 
-  const assembled = assembleSession(due, candidates, assembleConfig);
+  const assembled = assembleSession(due, candidates, {
+    ...assembleConfig,
+    huntTopicIds: huntIds,
+  });
   const config: DailySessionConfig = {
     reviewCap: assembleConfig.reviewCap,
     newCap: assembleConfig.newCap,
     maxNewPerTopic: assembleConfig.maxNewPerTopic,
     itemIds: assembled.items.map((i) => i.id),
     interleave_exceptions: assembled.interleaveExceptions,
+    huntTopicIds: huntIds,
   };
   const sessionId = crypto.randomUUID();
   db.insert(sessions)
@@ -181,6 +219,7 @@ export type NextItemPublic = {
   conceptId: string;
   skillTag: string | null;
   passage: PassagePublic | null;
+  hunting: boolean;
 };
 
 export function nextUnanswered(
@@ -234,6 +273,12 @@ export function nextUnanswered(
     const p = db.select().from(passages).where(eq(passages.id, item.passageId)).get();
     if (p) passage = { title: p.title, body: p.body };
   }
+  const huntRaw = session.config.huntTopicIds;
+  const huntSet = new Set(
+    Array.isArray(huntRaw)
+      ? huntRaw.filter((id): id is string => typeof id === "string")
+      : [],
+  );
   return {
     done: false,
     position,
@@ -248,6 +293,7 @@ export function nextUnanswered(
       conceptId: item.conceptId,
       skillTag: item.skillTag,
       passage,
+      hunting: huntSet.has(item.conceptId),
     },
   };
 }

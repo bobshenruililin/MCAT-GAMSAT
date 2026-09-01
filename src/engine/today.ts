@@ -4,6 +4,7 @@ import { attempts, fsrsState, items } from "@/db/schema";
 import { getDueItems } from "./reviewEngine";
 import { hasDemoData } from "./demoSeed";
 import { addUtcDays, utcDayKey } from "./rng";
+import { huntTopicsFromDb } from "./sessionService";
 import { getProgressData } from "./progress";
 
 const AVG_SECONDS = 45;
@@ -26,6 +27,11 @@ export type WeakestSpotlight = {
   attempts: number;
 };
 
+export type HuntSpotlight = {
+  id: string;
+  name: string;
+};
+
 export type TodayStats = {
   dueCount: number;
   estimatedMinutes: number;
@@ -35,6 +41,7 @@ export type TodayStats = {
   dueForecast: DueForecastDay[];
   streak: number;
   weakest: WeakestSpotlight | null;
+  huntTopics: HuntSpotlight[];
   demo: boolean;
 };
 
@@ -112,6 +119,13 @@ export function getTodayStats(db: AppDb, now: Date): TodayStats {
       }
     : null;
 
+  const huntIds = huntTopicsFromDb(db, now);
+  const byId = new Map(progress.nodes.map((n) => [n.id, n]));
+  const huntTopics: HuntSpotlight[] = huntIds.map((id) => ({
+    id,
+    name: byId.get(id)?.name ?? id,
+  }));
+
   return {
     dueCount,
     estimatedMinutes: minutesFor(dueCount),
@@ -121,6 +135,7 @@ export function getTodayStats(db: AppDb, now: Date): TodayStats {
     dueForecast,
     streak: studyStreak(allAttemptDays, todayKey),
     weakest,
+    huntTopics,
     demo: hasDemoData(db),
   };
 }
