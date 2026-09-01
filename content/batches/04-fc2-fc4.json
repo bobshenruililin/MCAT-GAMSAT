@@ -1,0 +1,1523 @@
+{
+  "items": [
+    {
+      "concept_id": "MCAT.FC4.4B.t1",
+      "type": "discrete",
+      "stem": "An incompressible fluid flows at 0.20 m/s through a horizontal vessel of internal radius 2.0 mm. Focal narrowing reduces the radius to 1.0 mm. The speed in the constriction is closest to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.80 m/s"
+        },
+        {
+          "key": "B",
+          "text": "0.40 m/s"
+        },
+        {
+          "key": "C",
+          "text": "0.10 m/s"
+        },
+        {
+          "key": "D",
+          "text": "0.05 m/s"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The continuity equation for incompressible flow requires that volume flow rate A v stay constant along the vessel. Cross-sectional area scales with the square of radius, so halving the radius quarters the area and therefore quadruples the speed. Four times 0.20 m/s is 0.80 m/s. Using the radius ratio linearly (a factor of two) underestimates the change, and inverting either the radius or the area predicts a slower stream, which would not conserve volume through a rigid tube.",
+      "distractor_rationales": {
+        "B": "This doubles speed using the linear radius ratio instead of the area ratio. Continuity uses A, which is proportional to r squared, so the speed factor is four, not two.",
+        "C": "This inverts the linear radius ratio and predicts a slower stream in the narrower segment. Volume conservation requires the fluid to speed up where the lumen shrinks.",
+        "D": "This inverts the area ratio (one-fourth). That would apply if the vessel widened rather than narrowed."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC4.4B.t1",
+      "type": "discrete",
+      "stem": "Blood is modeled as an ideal incompressible fluid in a horizontal artery that enters a stenosis with half the upstream cross-sectional area. Compared with the wide segment, the stenosis has:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "lower speed and higher hydrostatic pressure"
+        },
+        {
+          "key": "B",
+          "text": "higher speed and lower hydrostatic pressure"
+        },
+        {
+          "key": "C",
+          "text": "higher speed and higher hydrostatic pressure"
+        },
+        {
+          "key": "D",
+          "text": "lower speed and lower hydrostatic pressure"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Continuity requires the product of area and speed to stay constant, so halving area doubles speed. Bernoulli's equation at constant height then says that an increase in dynamic pressure 1/2 rho v squared must be paid for by a decrease in hydrostatic pressure. The stenosis is therefore the fast, low-pressure region. The opposite pairing of speed and pressure would violate either continuity or energy conservation along a streamline.",
+      "distractor_rationales": {
+        "A": "Lower speed would require a larger area, not a stenosis. Higher pressure with lower speed can occur in a dilation, not a narrowing.",
+        "C": "Speed does rise in the stenosis, but Bernoulli then requires hydrostatic pressure to fall, not rise, at the same height.",
+        "D": "Speed does not fall where area falls. Continuity forces the opposite speed change."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC4.4B.t1",
+      "type": "discrete",
+      "stem": "An IV bag of saline (density 1000 kg/m^3) is hung so the free fluid surface is 80 cm above a venous catheter. Taking g = 10 m/s^2, the gauge pressure at the catheter due to the saline column is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "8.0 x 10^1 Pa"
+        },
+        {
+          "key": "B",
+          "text": "8.0 x 10^2 Pa"
+        },
+        {
+          "key": "C",
+          "text": "8.0 x 10^3 Pa"
+        },
+        {
+          "key": "D",
+          "text": "8.0 x 10^4 Pa"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Gauge hydrostatic pressure is rho g h. Convert 80 cm to 0.80 m, then 1000 times 10 times 0.80 equals 8000 Pa, or 8.0 x 10^3 Pa. Leaving h in centimeters without converting, omitting g, or treating the height as 8 m each shifts the answer by an order of magnitude. Atmospheric pressure is already excluded because the question asks for gauge pressure from the column alone.",
+      "distractor_rationales": {
+        "A": "This is far too small and usually comes from dropping both density conversion and g, or from treating 80 cm as 0.080 m and then dropping another factor.",
+        "B": "This matches rho times h with h in meters but omitting g (1000 x 0.80 = 800), or using g = 1 in SI.",
+        "D": "This is the result of using h = 8.0 m instead of 0.80 m (1000 x 10 x 8 = 8 x 10^4 Pa)."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC4.4B.t1",
+      "type": "discrete",
+      "stem": "A 4.0 x 10^-6 m^3 kidney stone is fully submerged in fluid of density 1000 kg/m^3. The magnitude of the buoyant force is (g = 10 m/s^2):",
+      "choices": [
+        {
+          "key": "A",
+          "text": "4.0 x 10^-5 N"
+        },
+        {
+          "key": "B",
+          "text": "4.0 x 10^-3 N"
+        },
+        {
+          "key": "C",
+          "text": "8.0 x 10^-2 N"
+        },
+        {
+          "key": "D",
+          "text": "4.0 x 10^-2 N"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Archimedes' principle says the buoyant force equals the weight of displaced fluid, rho_fluid V g, and does not depend on the object's own density while the object remains fully submerged. Substituting gives 1000 times 4.0 x 10^-6 times 10, which equals 4.0 x 10^-2 N. Using the stone's density instead of the fluid's, or dropping rho or g, produces the nearby distractors.",
+      "distractor_rationales": {
+        "A": "This is V g without density (4.0 x 10^-6 x 10). Buoyancy requires multiplying by the fluid density in SI units.",
+        "B": "This is rho V without g (1000 x 4.0 x 10^-6). In SI, weight-like forces still include g.",
+        "C": "This doubles the correct force, as if the object's density were 2000 kg/m^3 and that density replaced the fluid density in F_b. Displaced-fluid density is what enters Archimedes' law."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC4.4B.t1",
+      "type": "discrete",
+      "stem": "Laminar flow of an incompressible Newtonian fluid through a rigid cylindrical vessel obeys Poiseuille's law. If the radius is halved while pressure drop, length, and viscosity remain the same, the volume flow rate becomes:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1/16 of its original value"
+        },
+        {
+          "key": "B",
+          "text": "1/8 of its original value"
+        },
+        {
+          "key": "C",
+          "text": "1/4 of its original value"
+        },
+        {
+          "key": "D",
+          "text": "1/2 of its original value"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Poiseuille's law states that volume flow rate Q is proportional to r to the fourth, Q = (pi r^4 delta P) / (8 eta L). Halving r multiplies Q by (1/2)^4 = 1/16 if every other factor is held fixed. Resistance therefore rises sixteenfold. Scaling with r, r^2 (area), or r^3 (a common incomplete product of area and a single extra r) does not match the derived r^4 dependence of laminar pipe flow.",
+      "distractor_rationales": {
+        "B": "One-eighth would correspond to an r^3 scaling, which is not Poiseuille flow. The viscous solution of the Navier-Stokes pipe problem yields r^4.",
+        "C": "One-fourth is the area ratio. Flow rate for a viscous tube is not simply proportional to cross-sectional area at fixed driving pressure.",
+        "D": "One-half is the radius ratio. That would describe a linear geometric scale, not laminar resistance."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC4.4B.t1",
+      "type": "discrete",
+      "stem": "A horizontal artery widens into an aneurysm whose cross-sectional area is twice that of the adjacent vessel. For steady incompressible flow at constant height, the pressure inside the dilated segment is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "lower than adjacent pressure because speed is higher there"
+        },
+        {
+          "key": "B",
+          "text": "higher than adjacent pressure because speed is lower there"
+        },
+        {
+          "key": "C",
+          "text": "higher than adjacent pressure because speed is higher there"
+        },
+        {
+          "key": "D",
+          "text": "equal to adjacent pressure because the vessel is still horizontal"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Continuity forces speed to fall where area rises, so the aneurysm is a slow region. Bernoulli's relation at constant gravitational height then requires hydrostatic pressure to rise where dynamic pressure 1/2 rho v squared falls. The elevated transmural pressure, together with Laplace's law for wall tension, is why a dilation can progress. Equal height alone does not equalize pressure if speeds differ along the streamline.",
+      "distractor_rationales": {
+        "A": "Speed is lower, not higher, in the wider segment. A fast, low-pressure region describes a stenosis, the opposite geometry.",
+        "C": "This pairs the correct pressure change with the wrong speed change. Higher speed would lower pressure, not raise it.",
+        "D": "Horizontal flow removes the rho g h term from the comparison but does not cancel the 1/2 rho v^2 term. Pressure still tracks speed."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC4.4B.t1",
+      "type": "discrete",
+      "stem": "A large lipid droplet of density 900 kg/m^3 reaches mechanical equilibrium in cytosol of density 1000 kg/m^3. Surface tension is negligible. The fraction of the droplet's volume that is submerged is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.10"
+        },
+        {
+          "key": "B",
+          "text": "0.81"
+        },
+        {
+          "key": "C",
+          "text": "0.90"
+        },
+        {
+          "key": "D",
+          "text": "1.11"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "At floating equilibrium the droplet's weight equals the buoyant force on the submerged portion: rho_object V g = rho_fluid V_sub g. The submerged fraction is therefore rho_object / rho_fluid = 900/1000 = 0.90. The complementary 0.10 is the fraction still protruding. A ratio greater than 1 would mean the object is denser than the fluid and would sink fully; it is not an allowed submerged fraction for a floater.",
+      "distractor_rationales": {
+        "A": "This is the unsubmerged fraction (1 - 0.90), not the submerged fraction asked for.",
+        "B": "This is (0.90)^2, which has no basis in the force balance. Densities enter as a linear ratio.",
+        "D": "This inverts the density ratio. A value above 1 would describe a sinker that sits fully submerged, not a floating fraction."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "MCAT.FC4.4B.t3",
+      "type": "discrete",
+      "stem": "A flexible container holds a fixed amount of ideal gas at constant pressure. The absolute temperature is raised from 300 K to 360 K. The gas volume is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "multiplied by 300/360"
+        },
+        {
+          "key": "B",
+          "text": "unchanged, because pressure is fixed"
+        },
+        {
+          "key": "C",
+          "text": "multiplied by 360/27, using the Celsius temperatures"
+        },
+        {
+          "key": "D",
+          "text": "multiplied by 360/300"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Charles's law, or PV = nRT at constant n and P, requires V proportional to absolute temperature. The volume scale factor is therefore T2/T1 = 360/300 = 1.20. Celsius temperatures must not be inserted into V/T, and holding P fixed is what makes V change with T rather than what keeps V constant. Inverting the temperature ratio describes a constant-volume pressure drop, not this isobaric expansion.",
+      "distractor_rationales": {
+        "A": "This is T1/T2, the factor for an isobaric cooling or for inverted Charles's law. Temperature rose, so volume rises.",
+        "B": "Constant pressure is the condition that lets volume change with temperature. It does not freeze the volume.",
+        "C": "The ideal-gas temperature in PV = nRT is Kelvin, not Celsius. Using 87 C and 27 C as if they were absolute temperatures is invalid."
+      },
+      "difficulty_est": 0.33
+    },
+    {
+      "concept_id": "MCAT.FC4.4B.t3",
+      "type": "discrete",
+      "stem": "A 2.0 L dry flask at 310 K contains 0.080 mol N2 and 0.020 mol O2, treated as ideal gases. Using R = 0.082 L atm K^-1 mol^-1, the partial pressure of O2 is closest to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.25 atm"
+        },
+        {
+          "key": "B",
+          "text": "0.51 atm"
+        },
+        {
+          "key": "C",
+          "text": "1.3 atm"
+        },
+        {
+          "key": "D",
+          "text": "2.5 atm"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Dalton's law gives P_i = n_i RT / V for an ideal mixture. For oxygen, n = 0.020 mol, so nRT = 0.020 x 0.082 x 310 \u2248 0.51 atm L, and dividing by 2.0 L yields about 0.25 atm. Equivalently, the mole fraction of O2 is 0.20 and the total pressure is about 1.27 atm, so 0.20 x 1.27 \u2248 0.25 atm. Reporting nRT without dividing by volume, or reporting the total pressure, are the usual substitutions.",
+      "distractor_rationales": {
+        "B": "This is n_O2 RT without dividing by the 2.0 L volume, so it has units of atm L rather than the partial pressure.",
+        "C": "This is the total pressure of N2 plus O2 (n_tot RT / V \u2248 1.3 atm), not the oxygen partial pressure.",
+        "D": "This is approximately n_tot RT without dividing by volume, or a 10-fold arithmetic error on the oxygen term."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC4.4B.t3",
+      "type": "discrete",
+      "stem": "Two samples of the same ideal gas have identical molar mass. Sample B is at twice the absolute temperature of sample A. The rms molecular speed in B relative to A is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "the same, because rms speed depends only on molar mass"
+        },
+        {
+          "key": "B",
+          "text": "greater by a factor of sqrt(2)"
+        },
+        {
+          "key": "C",
+          "text": "greater by a factor of 2"
+        },
+        {
+          "key": "D",
+          "text": "greater by a factor of 4"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The kinetic-theory result is v_rms = sqrt(3RT/M). At fixed molar mass, v_rms scales as the square root of absolute temperature. Doubling T therefore multiplies rms speed by sqrt(2) \u2248 1.41, not by 2 or by 4. Molar mass sets the scale but does not cancel the temperature dependence, and mean-square speed (proportional to T) must not be confused with rms speed (proportional to sqrt(T)).",
+      "distractor_rationales": {
+        "A": "v_rms depends on both T and M. Equal molar mass still leaves the sqrt(T) factor.",
+        "C": "Linear scaling with T would apply to mean kinetic energy, (3/2) kT, not to the speed obtained from the square root of that energy.",
+        "D": "A factor of four would match T squared, which does not appear in v_rms."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC4.4B.t3",
+      "type": "discrete",
+      "stem": "A real gas is compressed to moderate pressure at a temperature near but above its boiling point. The compressibility factor Z = PV / nRT is less than 1. The dominant reason is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "finite molecular volume, which makes the measured volume larger than the ideal prediction"
+        },
+        {
+          "key": "B",
+          "text": "inelastic collisions that permanently lower the kinetic temperature of the sample"
+        },
+        {
+          "key": "C",
+          "text": "attractive intermolecular forces, which pull molecules closer together than the ideal model assumes"
+        },
+        {
+          "key": "D",
+          "text": "complete conversion of the sample to a solid, so that Z is identically zero"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Z < 1 means the product PV is smaller than nRT, so the gas is more compressible than ideal. Attractive forces (the van der Waals a term) reduce the pressure (or the volume at a given P) relative to the non-interacting model and are the usual cause of Z dipping below 1 at moderate density. Finite molecular volume (the b term) has the opposite sign and drives Z above 1 at very high density. Inelastic collisions do not steadily drain thermal energy from an isolated equilibrium sample, and a true solid would not be described as a compressed gas with a modest Z deficit.",
+      "distractor_rationales": {
+        "A": "Excluded volume increases the effective volume and tends to make Z > 1, the opposite of the observation.",
+        "B": "Equilibrium molecular collisions are elastic in the kinetic-theory energy-bookkeeping sense; they do not provide a continuing heat sink that would redefine T in PV = nRT.",
+        "D": "Z slightly below 1 is a real-gas correction, not evidence that the entire sample has frozen into a solid with vanishing gas volume."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "MCAT.FC4.4B.t3",
+      "type": "discrete",
+      "stem": "An air bubble trapped in a vein has volume 0.20 mL at 2.0 atm. It is carried to the lung, where the surrounding pressure is 1.0 atm. If temperature and the amount of gas are constant, the bubble volume becomes:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.050 mL"
+        },
+        {
+          "key": "B",
+          "text": "0.10 mL"
+        },
+        {
+          "key": "C",
+          "text": "0.20 mL"
+        },
+        {
+          "key": "D",
+          "text": "0.40 mL"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Boyle's law at constant n and T is P1 V1 = P2 V2. Halving the pressure doubles the volume: 2.0 atm times 0.20 mL equals 1.0 atm times V2, so V2 = 0.40 mL. The bubble expands as it moves to a lower-pressure region. Inverting the pressure ratio, or assuming volume is pressure-independent, is inconsistent with the ideal-gas law.",
+      "distractor_rationales": {
+        "A": "This quarters the volume, as if both P and V moved in the same direction or the pressure ratio were squared and inverted incorrectly.",
+        "B": "This halves the volume as pressure halves, which is the inverted Boyle relation (V proportional to P instead of 1/P).",
+        "C": "Volume is not invariant when pressure changes at fixed T and n; that would require a rigid container, not a bubble."
+      },
+      "difficulty_est": 0.32
+    },
+    {
+      "concept_id": "MCAT.FC4.4B.t3",
+      "type": "discrete",
+      "stem": "A decarboxylation evolves 250 mL of CO2 collected at 300 K and 0.80 atm over water-free conditions and treated as ideal. Using R = 0.082 L atm K^-1 mol^-1, the amount of CO2 is closest to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "8.1 mmol"
+        },
+        {
+          "key": "B",
+          "text": "0.81 mmol"
+        },
+        {
+          "key": "C",
+          "text": "12 mmol"
+        },
+        {
+          "key": "D",
+          "text": "81 mmol"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Rearrange PV = nRT to n = PV / RT. Convert 250 mL to 0.250 L, then n = (0.80 x 0.250) / (0.082 x 300) = 0.200 / 24.6 \u2248 0.0081 mol, which is 8.1 mmol. Ten-fold errors usually come from a misplaced milliliter-to-liter conversion. Using an inconsistent volume or dropping P from the numerator shifts the result toward the other distractors.",
+      "distractor_rationales": {
+        "B": "This is 10-fold too small and typically reflects treating 250 mL as 0.025 L, or an equivalent decimal-place error in V.",
+        "C": "This overestimates n, for example by using a smaller T in the denominator or a larger effective V or P than the stem gives.",
+        "D": "This is 10-fold too large, as if 250 mL were entered as 2.50 L."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC4.4B.t3",
+      "type": "discrete",
+      "stem": "Two identical flasks at the same temperature and pressure contain either pure helium (M = 4.0 g/mol) or pure oxygen (M = 32 g/mol). The density of the O2 sample divided by the density of the He sample is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2"
+        },
+        {
+          "key": "B",
+          "text": "8"
+        },
+        {
+          "key": "C",
+          "text": "16"
+        },
+        {
+          "key": "D",
+          "text": "28"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The ideal-gas density is rho = P M / RT. At equal P and T the density ratio equals the molar-mass ratio: 32 / 4.0 = 8. Effusion rates scale with 1/sqrt(M), which is a different experiment. Subtracting molar masses, or using atomic rather than molecular mass for oxygen, does not give mass per volume of the gas in the flask.",
+      "distractor_rationales": {
+        "A": "A factor of two has no basis in M_O2 / M_He. It may come from comparing 4 to 8 or from taking a square root twice.",
+        "C": "This is 32/2, as if helium were assigned M = 2 g/mol (H2) or oxygen were treated as atomic O in a 32/2 slip.",
+        "D": "This is the arithmetic difference 32 - 4, which is not how densities ratio when P and T are shared."
+      },
+      "difficulty_est": 0.34
+    },
+    {
+      "concept_id": "MCAT.FC4.4D.t2",
+      "type": "discrete",
+      "stem": "A phototherapy diode emits 450 nm photons. Compared with each 900 nm photon, each 450 nm photon has:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "half the energy and half the speed in vacuum"
+        },
+        {
+          "key": "B",
+          "text": "the same energy, because all photons travel at c"
+        },
+        {
+          "key": "C",
+          "text": "twice the energy and the same speed in vacuum"
+        },
+        {
+          "key": "D",
+          "text": "four times the energy, because E scales as 1/lambda^2"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Photon energy is E = hc / lambda, so halving wavelength doubles energy: 450 nm photons are twice as energetic as 900 nm photons. In vacuum every photon travels at c regardless of wavelength; frequency and wavelength trade off to keep c = f lambda. Intensity of a beam depends on photon number as well as E and is not asked here. Energy does not scale as 1/lambda squared for a free photon.",
+      "distractor_rationales": {
+        "A": "Energy is higher, not lower, at shorter wavelength, and vacuum speed is c for both photons.",
+        "B": "Equal speed does not imply equal energy. Energy tracks frequency (or 1/lambda), not c.",
+        "D": "E is inversely proportional to lambda, not to lambda squared. The extra power of lambda would apply to some intensity or diffraction formulas, not to a single photon's energy."
+      },
+      "difficulty_est": 0.35
+    },
+    {
+      "concept_id": "MCAT.FC4.4D.t2",
+      "type": "discrete",
+      "stem": "A ray traveling in aqueous humor (n = 1.33) strikes the anterior surface of the lens (n = 1.40) at 30 degrees to the normal. The transmitted ray:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "undergoes total internal reflection at this interface"
+        },
+        {
+          "key": "B",
+          "text": "bends away from the normal"
+        },
+        {
+          "key": "C",
+          "text": "is undeviated because both media are transparent"
+        },
+        {
+          "key": "D",
+          "text": "bends toward the normal"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Snell's law, n1 sin theta1 = n2 sin theta2, implies that when a ray enters a medium of higher index, theta2 is smaller than theta1: the ray bends toward the normal. Here n increases from 1.33 to 1.40. Total internal reflection requires incidence from the higher-index side beyond the critical angle, which is impossible when n2 > n1. Transparency does not forbid refraction; it only means some light is transmitted rather than absorbed.",
+      "distractor_rationales": {
+        "A": "TIR cannot occur going from lower n to higher n. The critical-angle construction is for the reverse direction.",
+        "B": "Bending away from the normal is the n2 < n1 case (for example, lens back into a lower-n medium at large angle).",
+        "C": "Different refractive indices produce refraction at the interface even though both tissues transmit visible light."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "MCAT.FC4.4D.t2",
+      "type": "discrete",
+      "stem": "Monochromatic light illuminates a single slit. The angular width of the central diffraction maximum increases when the experimenter:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "narrows the slit"
+        },
+        {
+          "key": "B",
+          "text": "widens the slit"
+        },
+        {
+          "key": "C",
+          "text": "switches to a shorter wavelength at the same slit width"
+        },
+        {
+          "key": "D",
+          "text": "moves the viewing screen closer, which changes the diffraction angles themselves"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Single-slit minima satisfy a sin theta \u2248 m lambda. The angular half-width of the central peak therefore scales as lambda / a. Decreasing slit width a increases that angle, spreading the central maximum. Shorter wavelength or a wider slit both narrow the angular pattern. Distance to the screen changes the linear size of the pattern but not the diffraction angles set by a and lambda.",
+      "distractor_rationales": {
+        "B": "A wider slit decreases lambda/a and therefore narrows the central peak, the opposite of the asked change.",
+        "C": "Smaller lambda decreases the angular width. This is how a diffraction-limited spot shrinks at shorter wavelength.",
+        "D": "Diffraction angles are set at the aperture. Screen distance maps those angles onto a larger or smaller spatial pattern without rewriting theta."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC4.4D.t2",
+      "type": "discrete",
+      "stem": "Unpolarized light of intensity I0 is incident on two ideal linear polarizers placed in series with their transmission axes perpendicular. The intensity after the second polarizer is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "I0 / 2"
+        },
+        {
+          "key": "B",
+          "text": "essentially zero"
+        },
+        {
+          "key": "C",
+          "text": "I0 / 4"
+        },
+        {
+          "key": "D",
+          "text": "I0"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "An ideal polarizer passes the component of the electric field along its axis. Unpolarized light exits the first polarizer with intensity I0 / 2 and with a definite polarization. Malus's law then gives I = (I0 / 2) cos^2 phi at the second polarizer. For perpendicular axes, phi = 90 degrees and cos phi = 0, so no field component remains to be transmitted. I0 / 4 would describe two 45-degree steps or two independent factors of 1/2 without the 90-degree geometry.",
+      "distractor_rationales": {
+        "A": "This is the intensity after a single polarizer acting on unpolarized light, before the crossed second polarizer extinguishes the beam.",
+        "C": "I0/4 is the crossed-polarizer result only if someone applies two factors of 1/2 and ignores that the second factor is cos^2 90 = 0, or if the axes were at 45 degrees twice in a different setup.",
+        "D": "Unpolarized light does not pass a pair of crossed polarizers at full intensity; the second polarizer is orthogonal to the field that leaves the first."
+      },
+      "difficulty_est": 0.39
+    },
+    {
+      "concept_id": "MCAT.FC4.4D.t2",
+      "type": "discrete",
+      "stem": "In a Young's double-slit experiment the spacing between adjacent bright fringes on a distant screen is lambda L / d. That spacing increases if:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "the slit separation d is increased at fixed lambda and L"
+        },
+        {
+          "key": "B",
+          "text": "the wavelength lambda is decreased at fixed d and L"
+        },
+        {
+          "key": "C",
+          "text": "the slit separation d is decreased at fixed lambda and L"
+        },
+        {
+          "key": "D",
+          "text": "the screen distance L is decreased at fixed lambda and d"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Fringe spacing Delta y = lambda L / d grows when the numerator grows or the denominator shrinks. Decreasing d therefore spreads the interference pattern. Increasing d or decreasing lambda or L all shrink Delta y. This is the small-angle geometry of two-source interference and does not require changing the brightness of the source.",
+      "distractor_rationales": {
+        "A": "Larger d reduces lambda L / d, packing fringes closer together rather than spreading them.",
+        "B": "Shorter wavelength reduces spacing. That is why blue fringes sit closer than red fringes in the same apparatus.",
+        "D": "A closer screen reduces L and therefore reduces linear fringe spacing, even though the angular spacing is unchanged."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "MCAT.FC4.4D.t2",
+      "type": "discrete",
+      "stem": "A 100 keV diagnostic X-ray photon is compared with a 2 eV visible photon, both in vacuum. The X-ray photon has:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "longer wavelength and greater speed"
+        },
+        {
+          "key": "B",
+          "text": "shorter wavelength and lower frequency"
+        },
+        {
+          "key": "C",
+          "text": "longer wavelength and higher frequency"
+        },
+        {
+          "key": "D",
+          "text": "shorter wavelength and the same speed"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Photon energy E = h f = hc / lambda, so a 100 keV photon has much higher frequency and much shorter wavelength than a 2 eV photon. In vacuum both travel at c; electromagnetic waves do not speed up because they are more energetic. Pairing short wavelength with low frequency, or long wavelength with high frequency, contradicts c = f lambda.",
+      "distractor_rationales": {
+        "A": "Higher energy means shorter, not longer, wavelength, and vacuum speed is c for both.",
+        "B": "Shorter wavelength is correct, but frequency is higher, not lower, because f = c / lambda.",
+        "C": "Higher frequency is correct for the X-ray, but that requires a shorter wavelength, not a longer one."
+      },
+      "difficulty_est": 0.31
+    },
+    {
+      "concept_id": "MCAT.FC4.4D.t2",
+      "type": "discrete",
+      "stem": "Photons of wavelength 620 nm strike a retinal chromophore. Using the approximation hc = 1240 eV nm, the energy of one photon is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2.0 eV"
+        },
+        {
+          "key": "B",
+          "text": "0.50 eV"
+        },
+        {
+          "key": "C",
+          "text": "1.0 eV"
+        },
+        {
+          "key": "D",
+          "text": "4.0 eV"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The photon energy is E = hc / lambda. Substituting the given product hc = 1240 eV nm and lambda = 620 nm yields 1240 / 620 = 2.0 eV, a typical visible-photon energy. Inverting the ratio gives 0.50 eV. Halving or doubling 2.0 eV produces the remaining traps and would correspond to 1240 nm or 310 nm light, not 620 nm.",
+      "distractor_rationales": {
+        "B": "This is lambda / hc rather than hc / lambda (620 / 1240). Energy must fall as wavelength rises, but the algebraic form is a reciprocal, not this inverted substitution.",
+        "C": "This is half the correct value, as if lambda were taken as 1240 nm or an extra factor of two were inserted in the denominator.",
+        "D": "This doubles the correct energy, corresponding to 310 nm photons, not 620 nm."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t1",
+      "type": "discrete",
+      "stem": "Ouabain blocks Na+/K+ ATPase in a neuron that still has Na+ and K+ leak pathways. Over the following minutes, the most direct effect is that:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "intracellular Na+ falls because extrusion of Na+ continues"
+        },
+        {
+          "key": "B",
+          "text": "the Na+ electrochemical gradient dissipates as Na+ leaks inward and is not pumped out"
+        },
+        {
+          "key": "C",
+          "text": "intracellular K+ rises above its usual steady-state value"
+        },
+        {
+          "key": "D",
+          "text": "the lipid bilayer becomes freely permeable to cytosolic proteins"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The pump continuously extrudes three Na+ ions and imports two K+ ions, maintaining steep gradients against leak. When the pump is blocked, leak is unopposed: Na+ runs down its gradient into the cell and K+ leaks out, so both gradients run down and the membrane slowly depolarizes. The bilayer's permeability to proteins is unchanged. Intracellular Na+ therefore rises rather than falls, and intracellular K+ falls rather than rises.",
+      "distractor_rationales": {
+        "A": "Extrusion of Na+ is what the ATPase does. Blocking it stops extrusion, so intracellular Na+ rises as Na+ leaks in.",
+        "C": "Without the pump, K+ is not reaccumulated; it leaks out, so intracellular K+ falls.",
+        "D": "Cardiac glycosides inhibit the pump protein; they do not punch nonspecific holes that dump macromolecules."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t1",
+      "type": "discrete",
+      "stem": "Human erythrocytes are suddenly suspended in distilled water. The most likely immediate outcome is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "crenation from net water efflux"
+        },
+        {
+          "key": "B",
+          "text": "no volume change, because water cannot cross plasma membranes"
+        },
+        {
+          "key": "C",
+          "text": "swelling and possible lysis from net water influx"
+        },
+        {
+          "key": "D",
+          "text": "Na+/K+ ATPase pumping water out fast enough to hold volume exactly constant"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Distilled water is profoundly hypotonic to cytoplasm. Water moves by osmosis (largely through aquaporins) toward the higher osmolarity inside the cell, so the erythrocyte swells and may lyse. Crenation is the hypertonic response. Plasma membranes are not water-impermeable, and the sodium pump transports Na+ and K+, not water as a primary substrate, so it cannot osmotically clamp a cell dropped into pure water.",
+      "distractor_rationales": {
+        "A": "Crenation occurs in hypertonic medium, when water leaves the cell. Distilled water is hypotonic.",
+        "B": "Erythrocyte membranes are highly water-permeable. Osmotic swelling is the classic demonstration.",
+        "D": "Na+/K+ ATPase moves ions, not bulk water, and cannot outrun osmotic influx from an infinite hypotonic bath."
+      },
+      "difficulty_est": 0.28
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t1",
+      "type": "discrete",
+      "stem": "Glucose entry into erythrocytes is saturable, strongly prefers D-glucose over L-glucose, and continues after cellular ATP is depleted. This process is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "simple diffusion through the hydrophobic core of the bilayer"
+        },
+        {
+          "key": "B",
+          "text": "primary active transport by a glucose ATPase"
+        },
+        {
+          "key": "C",
+          "text": "receptor-mediated endocytosis of free glucose"
+        },
+        {
+          "key": "D",
+          "text": "facilitated diffusion through a carrier protein"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Saturability and stereospecificity indicate a finite number of protein binding sites, which rules out dissolving through the lipid core. Independence from ATP rules out primary active transport. GLUT-mediated facilitated diffusion matches all three observations: passive net flux down a concentration gradient, carrier kinetics, and no direct energy coupling. Endocytosis is neither the physiologic route for erythrocyte glucose nor typically stereospecific in this way.",
+      "distractor_rationales": {
+        "A": "Simple diffusion through lipid is not saturable and does not distinguish D- from L-glucose at this level. Glucose is too polar for rapid uncatalyzed permeation.",
+        "B": "Primary active transport would slow or stop when ATP is depleted. The stem says uptake continues.",
+        "C": "Endocytosis is not how RBCs take up glucose and would not explain classic carrier saturation plus ATP independence in this assay."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t1",
+      "type": "discrete",
+      "stem": "Cholesterol is incorporated into a phospholipid bilayer held at 37 C, well above the phospholipids' gel-to-liquid transition temperature Tm. The most accurate description is that cholesterol:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "restricts phospholipid tail mobility and decreases fluidity of the already liquid bilayer"
+        },
+        {
+          "key": "B",
+          "text": "converts the bilayer into a detergent micelle"
+        },
+        {
+          "key": "C",
+          "text": "opens nonspecific aqueous pores so Na+ and K+ equilibrate freely"
+        },
+        {
+          "key": "D",
+          "text": "abolishes the hydrophobic interior so integral proteins can no longer embed"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Above Tm the bilayer is already in a liquid-crystalline state. Cholesterol's rigid steroid ring intercalates among fatty-acyl tails, reducing their conformational freedom and thereby decreasing fluidity and permeability of that liquid phase (while also broadening the transition). It does not turn a bilayer into a micelle, punch ion pores, or destroy the hydrophobic core that anchors transmembrane proteins. The opposite, fluidizing role of cholesterol is mainly in preventing tight packing below Tm, which is not this experiment's temperature regime.",
+      "distractor_rationales": {
+        "B": "Micelles form from single-tailed detergents in water. Cholesterol modulates a bilayer; it does not convert it into a micellar detergent phase at physiologic loading.",
+        "C": "Cholesterol generally decreases small-molecule permeability of a fluid bilayer; it is not an ion channel.",
+        "D": "The hydrophobic core remains. Cholesterol is itself hydrophobic and sits within that core."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t1",
+      "type": "discrete",
+      "stem": "Apical uptake of glucose against its concentration gradient in small-intestine epithelium uses the Na+-glucose cotransporter SGLT. If basolateral Na+/K+ ATPase is inhibited, that apical concentrative uptake:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "increases, because more ATP is then available for SGLT to hydrolyze"
+        },
+        {
+          "key": "B",
+          "text": "decreases, because the Na+ gradient that drives cotransport collapses"
+        },
+        {
+          "key": "C",
+          "text": "is unchanged, because SGLT itself does not bind or hydrolyze ATP"
+        },
+        {
+          "key": "D",
+          "text": "reverses solely because new glucose channels appear in the apical membrane"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "SGLT is secondary active transport: it couples uphill glucose influx to downhill Na+ influx. The Na+ gradient is restored by basolateral Na+/K+ ATPase. Blocking the pump lets Na+ accumulate inside, the inward Na+ driving force falls, and concentrative glucose uptake falls even though SGLT is not an ATPase. The trap is to treat 'no ATP hydrolysis at SGLT' as 'insensitive to pump blockade.' Secondary active transport is energetically parasitic on the primary pump.",
+      "distractor_rationales": {
+        "A": "SGLT does not hydrolyze ATP, so spare ATP is irrelevant, and the pump's inhibition removes the real driving gradient rather than helping uptake.",
+        "C": "It is true that SGLT does not hydrolyze ATP, but that does not make uptake independent of the Na+ gradient the pump maintains. This is the intended secondary-transport trap.",
+        "D": "Pump blockade does not magically insert apical glucose channels as the mechanism of reversal. The SGLT cycle simply loses its Na+ driving force."
+      },
+      "difficulty_est": 0.57
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t1",
+      "type": "discrete",
+      "stem": "A simultaneous pulse of dissolved O2 and of glucose is added outside a cell that lacks glucose transporters. After a few seconds of diffusion, the observation is that:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "neither solute enters the cell"
+        },
+        {
+          "key": "B",
+          "text": "glucose appears inside much faster than O2"
+        },
+        {
+          "key": "C",
+          "text": "O2 appears inside much faster than glucose"
+        },
+        {
+          "key": "D",
+          "text": "both solutes equilibrate at the same rate because both are small molecules"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Molecular oxygen is small and nonpolar, so it crosses the phospholipid bilayer by simple diffusion on a millisecond-to-second scale. Glucose is polar and hydrogen-bonding; without a GLUT or SGLT protein its permeability is very low. Small size alone does not grant bilayer access: polarity dominates. The cell is not a perfect seal against all gases, so O2 does enter, and it does so far faster than uncatalyzed glucose.",
+      "distractor_rationales": {
+        "A": "The plasma membrane is not a closed barrier to dissolved gases. O2 routinely equilibrates across membranes.",
+        "B": "This reverses the permeabilities. Polar glucose needs a transporter; O2 does not.",
+        "D": "Size is a poor predictor here. Hydrophobicity and the presence or absence of a transporter dominate over a vague 'small molecule' rule."
+      },
+      "difficulty_est": 0.33
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t1",
+      "type": "discrete",
+      "stem": "A toxin disrupts tight junctions in an otherwise intact intestinal epithelium. The most immediate functional consequence is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "conversion of apical microvilli into motile cilia"
+        },
+        {
+          "key": "B",
+          "text": "collapse of every mitochondrion in the sheet"
+        },
+        {
+          "key": "C",
+          "text": "extraction of all membrane cholesterol"
+        },
+        {
+          "key": "D",
+          "text": "increased paracellular flux of solutes between lumen and basolateral space"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Tight junctions (zonula occludens) seal the paracellular route and help maintain apical-basolateral polarity of the barrier. When they open, solutes and water can leak between cells rather than being forced through transcellular transporters. Microvilli, mitochondria, and cholesterol content are not the junction's direct structural products, so they are not the immediate readout of a tight-junction toxin.",
+      "distractor_rationales": {
+        "A": "Microvilli are actin-supported apical specializations. Tight-junction loss does not transdifferentiate them into axonemal cilia.",
+        "B": "Mitochondria are intracellular organelles; a junctional toxin does not globally collapse them as its primary action.",
+        "C": "Cholesterol is a bilayer lipid. Junction disruption is a protein-complex event, not a bulk delipidation."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t2",
+      "type": "discrete",
+      "stem": "Secretory cells receive a brief pulse of labeled amino acids followed by a chase with unlabeled amino acids. Label in a protein destined for exocytosis appears first in which sequence of compartments?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "rough ER, then Golgi, then secretory vesicles"
+        },
+        {
+          "key": "B",
+          "text": "Golgi, then rough ER, then cytosol"
+        },
+        {
+          "key": "C",
+          "text": "mitochondria, then nucleus, then plasma membrane"
+        },
+        {
+          "key": "D",
+          "text": "free cytosolic ribosomes, then peroxisomes, then lysosomes"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Classic pulse-chase autoradiography (Palade) showed that secretory proteins are co-translationally inserted into the rough ER, travel in vesicles to the Golgi for processing and sorting, and leave in secretory vesicles or granules for exocytosis. They are not made on free cytosolic ribosomes, nor do they transit mitochondria or the nucleoplasm as the default secretory route. Reversing ER and Golgi contradicts vesicular traffic from the early to the late secretory pathway.",
+      "distractor_rationales": {
+        "B": "This reverses the secretory pathway. Cargo moves ER to Golgi, not Golgi back to ER, as the biosynthetic default.",
+        "C": "Mitochondria and nuclei are not stations on the constitutive secretory route for exocytic proteins.",
+        "D": "Secreted proteins are translocated at the RER, not completed on free ribosomes and then sent through peroxisomes."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t2",
+      "type": "discrete",
+      "stem": "Hepatocytes are treated with a protonophore that dissipates the inner-mitochondrial-membrane proton gradient without chemically destroying electron-transport complexes. The expected immediate result is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "ATP synthesis rises and O2 consumption falls"
+        },
+        {
+          "key": "B",
+          "text": "ATP synthesis falls while O2 consumption continues or increases"
+        },
+        {
+          "key": "C",
+          "text": "electron transport stops because the complexes are irreversibly denatured"
+        },
+        {
+          "key": "D",
+          "text": "the outer mitochondrial membrane dissolves, releasing all matrix enzymes to the cytosol"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "ATP synthase requires the proton-motive force to drive phosphorylation. A protonophore lets H+ re-enter the matrix without passing through ATP synthase, so ATP production falls. Electron transport is no longer opposed by a steep gradient, so respiration (O2 use as the terminal acceptor) typically continues or accelerates and energy is lost as heat. Uncouplers are not general denaturants, and they do not specifically lyse the outer membrane.",
+      "distractor_rationales": {
+        "A": "This is the opposite of uncoupling. Blocking respiration (for example with cyanide) lowers O2 use; uncoupling does not raise ATP yield.",
+        "C": "The stem states that complexes are not destroyed. Uncoupling severs the gradient, not the hardware of the chain.",
+        "D": "Outer-membrane rupture is a different pathology (for example MOMP in apoptosis), not the definition of a protonophore."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t2",
+      "type": "discrete",
+      "stem": "Chloroquine is used to raise the pH of macrophage lysosomes. Acid hydrolases in the lysosomal lumen are expected to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "become more active, because they are optimized for alkaline pH"
+        },
+        {
+          "key": "B",
+          "text": "relocate to the nucleus and degrade genomic DNA as their primary effect"
+        },
+        {
+          "key": "C",
+          "text": "lose activity, because they are adapted to an acidic lumen"
+        },
+        {
+          "key": "D",
+          "text": "synthesize ATP by running the vacuolar ATPase in reverse as a synthase"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Lysosomal hydrolases have acidic pH optima matching the V-ATPase-acidified lumen. Raising pH moves them off their optimum, impairing degradation of endocytosed cargo (the basis of chloroquine's effect in this assay). They are not alkaline enzymes, they are not nuclear DNases as a first consequence of chloroquine, and the vacuolar ATPase is a proton pump that consumes ATP; it is not an ATP synthase in this setting.",
+      "distractor_rationales": {
+        "A": "Lysosomal enzymes are acid hydrolases. Alkalinization reduces, not increases, their activity.",
+        "B": "These enzymes are sequestered in lysosomes. Raising luminal pH does not retarget them to chromatin as the primary mechanism.",
+        "D": "V-ATPase hydrolyzes ATP to pump H+ in. Uncoupling or pH collapse does not turn it into the cell's ATP source."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t2",
+      "type": "discrete",
+      "stem": "A temperature-sensitive mutation blocks COPII-coated vesicle exit from the ER. Newly synthesized secretory proteins in these cells will:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "acquire mature Golgi N-glycan modifications on the normal schedule"
+        },
+        {
+          "key": "B",
+          "text": "be imported into mitochondria instead"
+        },
+        {
+          "key": "C",
+          "text": "be translated exclusively on mitochondrial ribosomes"
+        },
+        {
+          "key": "D",
+          "text": "remain in the early secretory pathway and fail to receive Golgi-specific modifications"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "COPII vesicles carry cargo from ER to Golgi. If they cannot form or fuse, secretory proteins remain ER-associated (or in an ER-Golgi intermediate) and do not encounter Golgi glycosyltransferases, so Golgi-dependent glycan maturation fails. Mitochondrial import uses different targeting peptides and translocons, and secretory proteins are made on cytosolic ribosomes docked at the ER, not on mitochondrial ribosomes. Mature Golgi sugars are precisely what should be missing.",
+      "distractor_rationales": {
+        "A": "Golgi modifications require arrival at the Golgi. Blocking ER exit prevents that arrival.",
+        "B": "ER-retained secretory proteins are not rerouted through TOM/TIM as a default.",
+        "C": "Mitochondrial ribosomes translate a handful of OXPHOS subunits, not the cell's secretory proteome."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t2",
+      "type": "discrete",
+      "stem": "Fibroblasts from a peroxisome-biogenesis disorder still carry out mitochondrial beta-oxidation of palmitate but accumulate very-long-chain fatty acids. The defective organelles normally:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "oxidize very-long-chain fatty acids and detoxify hydrogen peroxide via catalase"
+        },
+        {
+          "key": "B",
+          "text": "attach complex oligosaccharides to secretory proteins in the Golgi stack"
+        },
+        {
+          "key": "C",
+          "text": "generate the inner-membrane proton gradient used by ATP synthase"
+        },
+        {
+          "key": "D",
+          "text": "splice pre-mRNA inside the nucleus"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Peroxisomes shorten very-long-chain fatty acids and house catalase (and other H2O2-metabolizing enzymes). Mitochondria handle the bulk of long-chain (for example palmitate) beta-oxidation, so those pathways can remain intact when peroxisomes fail\u2014matching the stem. Golgi glycosylation, oxidative phosphorylation, and nuclear splicing are other organelles' jobs and would not specifically spare palmitate oxidation while stacking VLCFA.",
+      "distractor_rationales": {
+        "B": "N- and O-glycosylation of secretory proteins is a Golgi (and ER) function, not a peroxisomal one.",
+        "C": "The proton-motive force for ATP synthase is mitochondrial. The stem already implies mitochondria can still oxidize palmitate.",
+        "D": "Splicing is nuclear. Peroxisome failure does not present as a primary spliceosome defect with VLCFA buildup."
+      },
+      "difficulty_est": 0.49
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t2",
+      "type": "discrete",
+      "stem": "A labeled mRNA is transcribed in a cultured eukaryotic cell, then nuclear-pore export of that mRNA is blocked. The most likely observation is that:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "translation of that mRNA increases in the cytosol"
+        },
+        {
+          "key": "B",
+          "text": "the mRNA remains nuclear and protein produced from that mRNA falls"
+        },
+        {
+          "key": "C",
+          "text": "the mRNA is imported into mitochondria and translated on mitochondrial ribosomes"
+        },
+        {
+          "key": "D",
+          "text": "cytosolic ribosomes enter the nucleus and translate the mRNA on chromatin"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Eukaryotic mRNA must exit through nuclear pores to meet cytosolic ribosomes. Blocking export traps the transcript in the nucleus, so cytosolic translation of that message falls. Mitochondria do not import random nuclear mRNAs for translation, and cytosolic ribosomes do not routinely enter the nucleoplasm to translate chromatin-associated mRNA. Increased cytosolic translation would require successful export, the step that was blocked.",
+      "distractor_rationales": {
+        "A": "Without export, cytosolic ribosomes never see the mRNA, so translation of it cannot increase.",
+        "C": "Mitochondrial translation is reserved for the mitochondrial genome's own RNAs, not stranded nuclear mRNAs.",
+        "D": "Translation of nuclear-encoded mRNA is cytosolic. Pore blockade does not relocate the ribosome machinery onto DNA."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t2",
+      "type": "discrete",
+      "stem": "Protein A has a cleavable N-terminal ER signal sequence. Protein B is a cytosolic enzyme with no signal or transit peptide. During their synthesis in a eukaryotic cell:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "both are fully made in the cytosol, after which A is threaded into the nucleus as the default"
+        },
+        {
+          "key": "B",
+          "text": "B is translocated into the rough ER because all proteins enter the secretory pathway first"
+        },
+        {
+          "key": "C",
+          "text": "A is co-translationally translocated into the rough ER, while B is completed on free cytosolic ribosomes"
+        },
+        {
+          "key": "D",
+          "text": "A is made inside mitochondria because N-terminal signals always specify mitochondrial import"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "An N-terminal ER signal peptide is recognized by SRP, the ribosome is delivered to the ER translocon, and protein A is co-translationally inserted into the secretory pathway. Protein B lacks that address and is finished on free cytosolic ribosomes, remaining in the cytosol. Not every protein transits the ER, nuclear import uses different signals after cytosolic synthesis, and mitochondrial targeting peptides are a distinct sequence class recognized by TOM/TIM, not by SRP as a universal rule.",
+      "distractor_rationales": {
+        "A": "ER signal sequences divert A to the ER during translation; they are not nuclear-localization signals, and A is not completed fully in the cytosol as the default.",
+        "B": "The signal hypothesis is selective. Proteins without ER signals do not obligately enter the secretory pathway.",
+        "D": "Mitochondrial presequences differ from ER signal peptides. An ER signal does not send a protein into the matrix."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t1",
+      "type": "discrete",
+      "stem": "An action potential is initiated at the axon hillock of a typical multipolar neuron. Under physiologic conditions the impulse propagates:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "only backward through the dendritic tree, because axons cannot conduct toward terminals"
+        },
+        {
+          "key": "B",
+          "text": "as a standing wave occupying the entire axon in both directions indefinitely"
+        },
+        {
+          "key": "C",
+          "text": "only after the soma electrically depolarizes a skeletal muscle fiber without using an axon"
+        },
+        {
+          "key": "D",
+          "text": "toward the axon terminals; Na+ channels behind the active region are inactivated, so the spike does not reverse along that axon"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Orthodromic conduction runs from the trigger zone toward synaptic terminals. Voltage-gated Na+ channels inactivate shortly after opening, creating a refractory wake that prevents the regenerative depolarization from turning around on the same axon under normal conditions. Dendrites are not the primary regenerative path to the output synapse, a standing wave is not the Hodgkin-Huxley picture, and a CNS neuron does not skip its axon and dump current into a muscle fiber.",
+      "distractor_rationales": {
+        "A": "The functional output path is the axon to terminals, not exclusive antidromic invasion of dendrites.",
+        "B": "The AP is a traveling, self-limited wave with a refractory period, not a persistent bidirectional standing depolarization of the whole axon.",
+        "C": "Chemical synaptic transmission at a neuromuscular junction, when it occurs, still requires axonal conduction to the terminal; the soma does not directly pace muscle by volume conduction as the default."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t1",
+      "type": "discrete",
+      "stem": "A CNS axon loses myelin internodes in a demyelinating plaque. Conduction through the affected stretch:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "slows or fails because local-circuit current leaks across internodal membrane"
+        },
+        {
+          "key": "B",
+          "text": "speeds up because more axonal membrane is now exposed to ions"
+        },
+        {
+          "key": "C",
+          "text": "reverses its physiologic direction and travels only toward the soma"
+        },
+        {
+          "key": "D",
+          "text": "converts the axon into a chemical synapse in white matter as the default repair"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Myelin increases effective membrane resistance and decreases capacitance, so depolarizing current is funneled to the next node (saltatory conduction). When internodes are stripped, current leaks across the internodal axolemma, the length constant falls, and the next node may not reach threshold\u2014slowing or block. Simply exposing membrane does not speed conduction; it removes the specialization that made conduction fast. Direction reverse and wholesale conversion to a synapse are not the primary physiologic results of demyelination.",
+      "distractor_rationales": {
+        "B": "Exposed internodal membrane is a current sink, not a speed advantage. That is why demyelinating disease slows conduction.",
+        "C": "Demyelination does not invert the orthodromic rule. Block or slowing can occur in the original direction.",
+        "D": "A denuded internodal axon is not automatically a chemical synapse; synapses require active zones, vesicles, and postsynaptic receptors."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t1",
+      "type": "discrete",
+      "stem": "Acute hemorrhage lowers arterial pressure. The baroreceptor-reflex response includes:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "increased parasympathetic (vagal) output to the sinoatrial node"
+        },
+        {
+          "key": "B",
+          "text": "increased sympathetic output that raises heart rate and vascular tone"
+        },
+        {
+          "key": "C",
+          "text": "simultaneous shutdown of both autonomic divisions"
+        },
+        {
+          "key": "D",
+          "text": "primary restoration of pressure by somatic vasodilation in resting skeletal muscle"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Baroreceptors fire less when arterial stretch falls. That unloads nucleus-tractus-solitarius inhibition of sympathetic outflow and reduces vagal drive to the heart. The result is tachycardia and vasoconstriction that help restore pressure\u2014classic sympathetic dominance in hemorrhage. Increasing vagal output would slow the heart and worsen hypotension. Somatic motor neurons do not provide the rapid vascular compensation, and vasodilation in muscle would drop pressure further.",
+      "distractor_rationales": {
+        "A": "Vagal output to the SA node decreases, not increases, when pressure falls. Increased vagal tone is the high-pressure baroreflex.",
+        "C": "The two divisions are driven in opposite directions, not turned off together.",
+        "D": "Somatic vasodilation would lower TPR. Short-term rescue is autonomic, especially sympathetic vasoconstriction and cardiac stimulation."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t1",
+      "type": "discrete",
+      "stem": "A clinician taps the patellar tendon, stretching the quadriceps. The shortest-latency pathway that extends the knee is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Golgi tendon organ to cerebellum to contralateral cortex to spinal motor neuron"
+        },
+        {
+          "key": "B",
+          "text": "cutaneous nociceptor to brainstem to gamma motor neuron only"
+        },
+        {
+          "key": "C",
+          "text": "Ia afferent from the muscle spindle to the spinal cord to an alpha motor neuron innervating the same muscle"
+        },
+        {
+          "key": "D",
+          "text": "visual startle via cranial nerve II to extraocular muscles only"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The tendon tap stretches muscle spindles, firing Ia afferents that monosynaptically excite homonymous alpha motor neurons in the spinal cord\u2014the phasic stretch reflex. That loop does not require cortex or cerebellum for the shortest latency, is not a nociceptive withdrawal via gamma neurons alone, and is unrelated to CN II. Golgi tendon organs are in series with extrafusal fibers and are not the primary receptors for this brief stretch-of-spindle test.",
+      "distractor_rationales": {
+        "A": "Long-loop transcortical or cerebellar paths exist for some stretch responses but are not the shortest-latency knee jerk, which is spinal and Ia-driven.",
+        "B": "This is not a pain-withdrawal reflex, and gamma motor neurons alone do not extend the knee by contracting extrafusal fibers.",
+        "D": "Vision and extraocular muscles are irrelevant to a patellar tendon tap with the eyes uninvolved in the circuit."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t1",
+      "type": "discrete",
+      "stem": "An experimenter depolarizes the middle of an unmyelinated axon to threshold with an extracellular electrode. Action potentials:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "travel only toward the soma"
+        },
+        {
+          "key": "B",
+          "text": "travel only toward the synaptic terminal"
+        },
+        {
+          "key": "C",
+          "text": "fail to start, because spikes can be initiated only in dendrites"
+        },
+        {
+          "key": "D",
+          "text": "propagate in both directions away from the stimulus site"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "A patch of axon brought to threshold opens local voltage-gated Na+ channels and depolarizes both neighboring regions. There is no refractory wake yet on either side, so two action potentials travel away from the artificial site, one orthodromic and one antidromic. Physiologic initiation at the hillock looks unidirectional only because the soma/dendrite side is a poor regenerative axon and because a refractory region develops behind a naturally traveling spike. Dendrites are not the unique legal site of spike initiation, and the axon membrane itself is fully excitable.",
+      "distractor_rationales": {
+        "A": "Nothing about a mid-axon shock forbids the terminal-directed spike. Both directions are available at the instant of stimulation.",
+        "B": "The soma-directed (antidromic) spike also propagates on that axon; unidirectionality is not an intrinsic one-way valve in the membrane.",
+        "C": "Axons, especially the hillock and nodes, are the usual spike-initiation zones. Dendrites are not required to start this experimentally evoked AP."
+      },
+      "difficulty_est": 0.56
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t1",
+      "type": "discrete",
+      "stem": "A clean lesion of the ventral root of a spinal nerve, with the dorsal root left intact, most directly:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "blocks motor outflow in the corresponding myotome while sparing sensory inflow through that spinal level"
+        },
+        {
+          "key": "B",
+          "text": "blocks sensory inflow from the dermatome while sparing motor outflow"
+        },
+        {
+          "key": "C",
+          "text": "severs the dorsal-column nuclei in the medulla"
+        },
+        {
+          "key": "D",
+          "text": "destroys the contralateral primary motor cortex"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Ventral roots carry efferent axons (somatic motor and some autonomic) out of the cord. Dorsal roots carry afferents in. Cutting only the ventral root therefore weakens or paralyzes the myotome while leaving sensation from the dorsal root intact (a pattern historically associated with ventral-root lesions). The lesion is peripheral to the cord and does not ablate medullary nuclei or cerebral cortex.",
+      "distractor_rationales": {
+        "B": "This describes a dorsal-root lesion, the opposite root.",
+        "C": "Dorsal-column nuclei (gracile and cuneate) sit in the caudal medulla, not in a spinal ventral root.",
+        "D": "Motor cortex is intracranial. A spinal ventral root is a lower-motor-neuron outflow, not a cortical lesion."
+      },
+      "difficulty_est": 0.34
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t1",
+      "type": "discrete",
+      "stem": "A drug blocks nicotinic acetylcholine receptors in autonomic ganglia. The expected result is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "selective loss of parasympathetic output with fully intact sympathetic output"
+        },
+        {
+          "key": "B",
+          "text": "impaired transmission in both sympathetic and parasympathetic pathways"
+        },
+        {
+          "key": "C",
+          "text": "increased firing of both divisions' postganglionic neurons"
+        },
+        {
+          "key": "D",
+          "text": "blockade of steroid-hormone nuclear receptors in the adrenal cortex"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Both sympathetic and parasympathetic ganglia use acetylcholine onto nicotinic receptors on postganglionic neurons (the sympathetic adrenal medulla is a related nicotinic target). A ganglionic nicotinic blocker therefore hits both autonomic divisions. It is not selective for craniosacral outflow, it does not excite postganglionic cells, and nicotinic ACh receptors are ligand-gated ion channels, not nuclear steroid receptors.",
+      "distractor_rationales": {
+        "A": "Sympathetic ganglia are also nicotinic. Selectivity for parasympathetic only would require a different receptor distribution than the one that exists.",
+        "C": "Antagonists decrease, not increase, ganglionic transmission.",
+        "D": "This confuses nicotinic ion channels with intracellular steroid receptors, which are a different protein family and a different signaling logic."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t7",
+      "type": "discrete",
+      "stem": "A newly characterized hormone is hydrophobic, derived from cholesterol, and alters target-cell transcription over hours. It most likely:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "binds a Gs-coupled receptor and raises cAMP within seconds as its primary action"
+        },
+        {
+          "key": "B",
+          "text": "is stored for long periods in dense-core granules and released by exocytosis as its only option"
+        },
+        {
+          "key": "C",
+          "text": "diffuses across the plasma membrane and binds an intracellular receptor that regulates DNA transcription"
+        },
+        {
+          "key": "D",
+          "text": "cannot cross membranes and therefore must use a receptor tyrosine kinase"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Cholesterol-derived steroid hormones are lipophilic, are not stored in secretory granules in the peptide fashion, and classically bind intracellular (often nuclear) receptors that act as transcription factors. That genomic mode matches a lag of hours. Rapid Gs-cAMP signaling is the peptide/catecholamine membrane-receptor pattern. Hydrophobicity is why the hormone can cross the bilayer rather than why it would be barred from doing so.",
+      "distractor_rationales": {
+        "A": "Seconds-scale cAMP signaling is typical of hydrophilic hormones at GPCRs, not of classic steroid genomic action.",
+        "B": "Peptide hormones are granule-stored and exocytosed. Steroids are synthesized on demand from cholesterol and leave by diffusion.",
+        "D": "A hydrophobic cholesterol derivative can cross membranes; an RTK is the wrong receptor class for that chemistry."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t7",
+      "type": "discrete",
+      "stem": "Electron microscopy of a gland cell shows abundant secretory granules whose contents are dumped within minutes of a cytosolic Ca2+ rise. The stored messenger is most likely:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "cortisol, stored for weeks as a crystalline steroid"
+        },
+        {
+          "key": "B",
+          "text": "estradiol, stockpiled as free hormone dissolved in the cytosol"
+        },
+        {
+          "key": "C",
+          "text": "cholesterol itself, secreted as the finished circulating hormone"
+        },
+        {
+          "key": "D",
+          "text": "a peptide hormone packaged in vesicles after processing in the secretory pathway"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Peptide hormones are synthesized as preprohormones, processed in the ER/Golgi, and stored in dense-core granules until Ca2+-triggered exocytosis. Steroid hormones are not granule-stored in this way; they are made from cholesterol on demand and diffuse out. Cholesterol is a precursor, not the bioactive circulating steroid. A minutes-scale Ca2+-evoked dump of vesicular contents is therefore the peptide (or catecholamine) pattern, not the steroid pattern.",
+      "distractor_rationales": {
+        "A": "Cortisol is not warehoused for weeks in secretory granules; adrenal cortex synthesizes it as needed from cholesterol.",
+        "B": "Estradiol is not stockpiled as free cytosolic hormone in granules awaiting a Ca2+ spike in the peptide-exocytosis sense.",
+        "C": "Cholesterol is the precursor. The circulating hormones are specific steroids (or peptides), not bulk cholesterol dump."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t7",
+      "type": "discrete",
+      "stem": "A toxin constitutively locks Gs in the GTP-bound state in hepatocytes that use Gs-coupled receptors to mobilize glucose. The expected effect is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "persistent adenylyl cyclase activity, high cAMP, and increased glycogen breakdown"
+        },
+        {
+          "key": "B",
+          "text": "a fall in cAMP and net glycogen synthesis"
+        },
+        {
+          "key": "C",
+          "text": "cleavage of the insulin receptor as the toxin's only target"
+        },
+        {
+          "key": "D",
+          "text": "ligand-independent translocation of steroid receptors onto DNA"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Gs stimulates adenylyl cyclase while GTP is bound. A lock in the active state (as in cholera toxin on Gs) keeps cAMP high. In hepatocytes, cAMP-dependent protein kinase phosphorylates phosphorylase kinase and promotes glycogenolysis (the glucagon/epinephrine Gs pathway). That is the opposite of lowering cAMP and building glycogen. The toxin is not an insulin-receptor protease, and steroid-receptor nuclear entry is a separate, ligand-regulated path.",
+      "distractor_rationales": {
+        "B": "Active Gs raises, not lowers, cAMP. High cAMP in liver favors breakdown, not synthesis, of glycogen.",
+        "C": "Gs-directed toxins modify G proteins, not by default cleaving the insulin receptor as their sole action.",
+        "D": "Steroid receptors are not the Gs-cAMP module. Constitutive Gs does not substitute for steroid ligand in nuclear targeting."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t7",
+      "type": "discrete",
+      "stem": "Triiodothyronine (T3) acts on a hepatocyte. Its principal genomic mechanism is to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "open a plasma-membrane Na+ channel as its sole action"
+        },
+        {
+          "key": "B",
+          "text": "bind a nuclear receptor and alter transcription of target genes"
+        },
+        {
+          "key": "C",
+          "text": "raise cAMP via a Gs-coupled receptor as the main genomic path"
+        },
+        {
+          "key": "D",
+          "text": "be packaged as a stored peptide in secretory granules inside the target hepatocyte"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Thyroid hormones are amino-acid-derived yet act like steroids: they enter cells and bind nuclear receptors (THR) that regulate transcription, matching delayed genomic effects on metabolic enzymes. They are not primarily Gs-cAMP peptides, they are not stored in the target cell's granules as a peptide hormone would be, and opening a Na+ channel is not their defining genomic mechanism (even if some nongenomic effects exist, they do not replace nuclear receptor action as the principal genomic path).",
+      "distractor_rationales": {
+        "A": "A membrane ion channel is not the textbook genomic mechanism of T3 in hepatocytes.",
+        "C": "Gs-cAMP is the peptide/catecholamine pattern. Thyroid hormone receptors are nuclear transcription factors.",
+        "D": "The hepatocyte is the target, not a thyroid follicle storing thyroglobulin. T3 is not re-packaged there as a peptide granule hormone."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t7",
+      "type": "discrete",
+      "stem": "A patient takes high-dose exogenous glucocorticoid for ten days. Endogenous hypothalamic-pituitary-adrenal function is expected to show:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "increased CRH and ACTH with hypertrophy of the adrenal cortex"
+        },
+        {
+          "key": "B",
+          "text": "no change, because exogenous steroid cannot reach hypothalamic neurons"
+        },
+        {
+          "key": "C",
+          "text": "suppressed ACTH (and CRH) with possible atrophy of the cortisol-producing adrenal cortex"
+        },
+        {
+          "key": "D",
+          "text": "conversion of glucocorticoid receptors into Gs-coupled peptide receptors"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Cortisol and related glucocorticoids exert negative feedback on hypothalamus and anterior pituitary, lowering CRH and ACTH. Without ACTH trophic drive, the zona fasciculata can atrophy during prolonged exogenous therapy\u2014the reason withdrawal must be tapered. Exogenous steroid is exactly what the feedback sensors see. Receptors do not change protein class from nuclear transcription factors into GPCRs.",
+      "distractor_rationales": {
+        "A": "This is the response to cortisol deficiency (loss of feedback), not to glucocorticoid excess.",
+        "B": "Lipophilic steroids readily reach hypothalamic and pituitary cells; that access is why feedback works.",
+        "D": "Receptor family identity does not switch from nuclear receptor to GPCR because ligand concentration is high."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t7",
+      "type": "discrete",
+      "stem": "A peptide hormone binds a Gq-coupled receptor on a target cell. The most direct next membrane-associated event is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "activation of adenylyl cyclase and a rise in cAMP"
+        },
+        {
+          "key": "B",
+          "text": "diffusion of the hormone through the bilayer into the nucleus without any receptor"
+        },
+        {
+          "key": "C",
+          "text": "opening of a nuclear pore so the intact hormone can bind chromatin as a free ligand"
+        },
+        {
+          "key": "D",
+          "text": "activation of phospholipase C, producing IP3 and DAG from PIP2"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Gq activates phospholipase C-beta, which cleaves PIP2 into IP3 and DAG. IP3 releases ER Ca2+ stores and DAG activates protein kinase C. Adenylyl cyclase/cAMP is the Gs (or Gi) module, not Gq. Peptide hormones do not freely diffuse to chromatin; they remain extracellular ligands of membrane receptors. Nuclear pores do not import the peptide hormone as a transcription factor substitute.",
+      "distractor_rationales": {
+        "A": "Adenylyl cyclase is downstream of Gs (stimulatory) or Gi (inhibitory), not the defining Gq enzyme.",
+        "B": "Peptides are hydrophilic and do not cross the bilayer to the nucleus as the receptor-bypass mechanism.",
+        "C": "The hormone does not need a nuclear pore; its receptor is at the plasma membrane and the second messengers are intracellular."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t7",
+      "type": "discrete",
+      "stem": "Radiolabeled hormone X produces autoradiographic grains over nuclei of uterine cells. Hormone Y produces grains only at the plasma membrane of hepatocytes and never over nuclei. X and Y are most consistent with:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "X a steroid (or thyroid hormone) and Y a peptide"
+        },
+        {
+          "key": "B",
+          "text": "X a peptide and Y a steroid"
+        },
+        {
+          "key": "C",
+          "text": "both peptides that must enter the nucleus to work"
+        },
+        {
+          "key": "D",
+          "text": "both steroids that act only at membrane ion channels"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Nuclear accumulation is the classic autoradiographic signature of steroid or thyroid hormones bound to intracellular receptors. Peptide hormones bind plasma-membrane receptors and do not appear over nuclei as the intact labeled ligand. Swapping X and Y inverts that topology. Two peptides would both decorate membranes, and two steroids acting only as membrane-channel ligands would not concentrate over nuclei as X does.",
+      "distractor_rationales": {
+        "B": "This swaps the compartments. Nuclear grains belong to the lipophilic/nuclear-receptor class, not to peptides.",
+        "C": "Peptides do not have to enter the nucleus; they signal from the cell surface. Y's membrane-only pattern is the peptide pattern.",
+        "D": "X's nuclear grains contradict an only-at-the-membrane steroid model, and Y's membrane-only pattern is wrong for classic genomic steroids."
+      },
+      "difficulty_est": 0.48
+    }
+  ]
+}
