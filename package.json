@@ -11,7 +11,8 @@
     "test": "vitest run",
     "db:migrate": "tsx src/db/migrate.ts",
     "db:reset": "tsx src/db/reset.ts",
-    "seed": "tsx src/db/seed.ts"
+    "seed": "tsx src/db/seed.ts",
+    "ingest": "tsx src/ingest/ingest.ts"
   },
   "dependencies": {
     "better-sqlite3": "^12.4.1",
