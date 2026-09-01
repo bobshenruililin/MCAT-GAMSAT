@@ -1,0 +1,2174 @@
+{
+  "items": [
+    {
+      "concept_id": "MCAT.FC6.6A.t1",
+      "type": "discrete",
+      "stem": "A hand-therapy clinic maps just-noticeable differences for hidden grip-weights. Against a 200 g standard, patients first report a change when the increment is 6 g. Weber’s law is assumed to hold over this range. Which increment should be just noticeable against a 500 g standard?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "15 g, because the ratio of increment to standard intensity is constant"
+        },
+        {
+          "key": "B",
+          "text": "6 g, because the just-noticeable difference is a fixed mass independent of the standard"
+        },
+        {
+          "key": "C",
+          "text": "2.4 g, because sensitivity improves linearly as the standard grows"
+        },
+        {
+          "key": "D",
+          "text": "500 g, because the comparison must equal the standard before a difference can be felt"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Weber’s law states that the just-noticeable difference is a constant fraction of the standing intensity, ΔI/I = k. Here k = 6/200 = 0.03, so a 500 g standard requires about 15 g. Fechner later integrated that ratio into a logarithmic sensation scale, but the clinic’s prediction is the Weber fraction itself. Absolute threshold is detection from zero, not a difference from a standing weight. Signal-detection theory concerns hits and false alarms, not this ratio.",
+      "distractor_rationales": {
+        "B": "A constant absolute increment is the opposite of Weber’s law; the increment must scale with the standard.",
+        "C": "Weber’s law makes the absolute increment larger, not smaller, as intensity rises (k held constant).",
+        "D": "Equality with the standard would be a 100 percent change, far above a typical Weber fraction."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC6.6A.t1",
+      "type": "discrete",
+      "stem": "A radiology group installs a new computer-aided detection overlay. The same attendings read the same chest films. Hit rate for subtle nodules rises, but so does the false-alarm rate; a signal-detection analysis finds d′ unchanged. Which change in the decision process best accounts for the pattern?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Sensory discriminability improved, because more true nodules are now named"
+        },
+        {
+          "key": "B",
+          "text": "Readers adopted a more liberal criterion, accepting more yes responses at a fixed d′"
+        },
+        {
+          "key": "C",
+          "text": "The payoff matrix became more conservative, raising the criterion and cutting false alarms"
+        },
+        {
+          "key": "D",
+          "text": "Weber fractions for luminance shrank, so smaller density differences became detectable"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Signal-detection theory separates sensitivity (d′, distance between noise and signal-plus-noise distributions) from criterion (β or C). A liberal shift increases both hits and false alarms while leaving d′ unchanged, which is the overlay pattern. Improved discriminability would raise d′ and typically improve hits without a matched false-alarm rise. A conservative criterion does the opposite of what was observed. Weber’s law is a ratio of intensity increments, not a yes/no decision policy on films.",
+      "distractor_rationales": {
+        "A": "More hits with matching false alarms and flat d′ is a criterion shift, not a true sensitivity gain.",
+        "C": "A conservative criterion would lower, not raise, both hits and false alarms.",
+        "D": "Weber’s law does not describe yes/no nodule calls or ROC parameters on radiographs."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC6.6A.t2",
+      "type": "discrete",
+      "stem": "In a Hubel and Wiesel-style recording from cat striate cortex, a cell fires briskly to a thin bar of light at 30° in a small receptive field and is silent to the orthogonal bar in the same place. Diffuse illumination of the whole field also fails to drive it. The cell is most likely which kind of unit?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A retinal ganglion cell with an on-center, off-surround receptive field"
+        },
+        {
+          "key": "B",
+          "text": "A lateral geniculate relay cell summing concentric spots from one eye"
+        },
+        {
+          "key": "C",
+          "text": "A V1 simple cell whose elongated on-region is orientation-selective"
+        },
+        {
+          "key": "D",
+          "text": "A photoreceptor whose photopigment absorbs only 30° polarized light"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Hubel and Wiesel showed that many V1 simple cells have elongated, antagonistic subregions and fire to bars of a preferred orientation. Concentric center–surround fields dominate retina and LGN and would respond to a small spot or to a bar of any orientation that covers the center. Photoreceptors are not orientation-tuned in this way and do not require a cortical bar. Feature detection in primary visual cortex is the named mechanism that matches the recording.",
+      "distractor_rationales": {
+        "A": "Ganglion cells have concentric fields and would not show this sharp orientation tuning.",
+        "B": "LGN cells remain largely concentric and spot-like, not bar-and-orientation selective.",
+        "D": "Photoreceptors encode wavelength and intensity, not bar orientation in visual space."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC6.6A.t2",
+      "type": "discrete",
+      "stem": "After a watershed infarct, a patient names colors and shapes of objects on a table and can match them by appearance, but cannot follow which cup the examiner slides left versus right and misreaches in depth. Ungerleider and Mishkin’s two-stream account most directly implicates which pathway?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The ventral “what” stream through inferotemporal cortex, because naming is lost"
+        },
+        {
+          "key": "B",
+          "text": "The parvocellular geniculate layers alone, because they carry only motion"
+        },
+        {
+          "key": "C",
+          "text": "The optic chiasm, because only crossed fibers encode motion"
+        },
+        {
+          "key": "D",
+          "text": "The dorsal “where/how” stream through posterior parietal cortex, because spatial tracking and reaching fail while object identity is relatively spared"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Ungerleider and Mishkin dissociated a ventral occipitotemporal “what” pathway (object identity, color, form; parvo-biased) from a dorsal occipitoparietal “where/how” pathway (location, motion, visually guided reaching; magno-biased). Spared naming with failed tracking and depth-reaching is a dorsal-stream pattern. Parvocellular layers carry color and acuity, not motion as their specialty. Chiasmal lesions would produce field cuts, not this identity-versus-space split.",
+      "distractor_rationales": {
+        "A": "Ventral damage would impair identity and naming more than spatial tracking; the stem shows the reverse.",
+        "B": "Parvo layers are associated with color and form, not as the motion channel; magno/dorsal is the motion/space route.",
+        "C": "Chiasm lesions affect nasal-fiber crossing and fields, not a selective dorsal-stream visuospatial deficit."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "MCAT.FC6.6A.t3",
+      "type": "discrete",
+      "stem": "An audiology clinic sees an older patient with bilateral high-frequency sensorineural loss and absent otoacoustic emissions at 6–8 kHz, with better thresholds at 500 Hz. Place theory of the traveling wave, as developed from Békésy’s work, locates the damaged cochlear region where?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "At the base, near the oval window, where high-frequency traveling waves peak"
+        },
+        {
+          "key": "B",
+          "text": "At the apex, where the basilar membrane is widest and most compliant, because high frequencies peak there"
+        },
+        {
+          "key": "C",
+          "text": "Uniformly along the whole partition, because place coding is obsolete and only firing rate matters"
+        },
+        {
+          "key": "D",
+          "text": "In the middle ear ossicles, because place theory is a conductive, not cochlear, account"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Békésy’s traveling-wave measurements showed that high-frequency energy peaks at the stiff basal turn near the oval window, while low frequencies travel farther and peak at the floppy apex. Presbycusis and basal outer-hair-cell loss therefore hit high-frequency thresholds and otoacoustic emissions first. Frequency (timing) theory can contribute at low frequencies but does not relocate the high-frequency peak to the apex. Ossicular disease would be conductive, with emissions often preserved if the cochlea is intact.",
+      "distractor_rationales": {
+        "B": "The apex is the low-frequency end; placing 6–8 kHz there reverses the cochlear map.",
+        "C": "Place coding remains the main account of high-frequency analysis; it is not discarded for rate-only coding.",
+        "D": "Place theory is a cochlear-partition account, not a theory of ossicular leverage."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC6.6A.t3",
+      "type": "discrete",
+      "stem": "A drug trial reports loss of distortion-product otoacoustic emissions and a moderate threshold elevation, while auditory-nerve compound action potentials are still recordable at high levels. Which cochlear cell population is the primary generator of those emissions and of the cochlear amplifier?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Inner hair cells, which supply nearly all afferent fibers and therefore must generate emissions"
+        },
+        {
+          "key": "B",
+          "text": "Outer hair cells, whose electromotility (prestin) amplifies basilar-membrane motion and produces otoacoustic emissions"
+        },
+        {
+          "key": "C",
+          "text": "Spiral ganglion somata in the modiolus, which echo sound back to the canal"
+        },
+        {
+          "key": "D",
+          "text": "Vestibular hair cells of the saccule, which are evolutionarily older and leak sound into the cochlea"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Outer hair cells change length via prestin-mediated electromotility, feeding energy back into the partition (the cochlear amplifier) and generating otoacoustic emissions. Inner hair cells transduce displacement into most afferent spikes but are not the emission source. Spiral ganglion cells are downstream axons, not mechanical amplifiers. Saccular hair cells serve linear acceleration, not cochlear emissions. The dissociation—emissions gone, nerve still driven at high levels—is the classic outer-hair-cell pattern.",
+      "distractor_rationales": {
+        "A": "Inner hair cells are the main afferent transducers, not the electromotile amplifiers that produce OAEs.",
+        "C": "Ganglion cell bodies do not mechanically echo sound into the ear canal.",
+        "D": "Saccular receptors are vestibular; they are not the cochlear amplifier."
+      },
+      "difficulty_est": 0.56
+    },
+    {
+      "concept_id": "MCAT.FC6.6A.t4",
+      "type": "discrete",
+      "stem": "A vestibular lab spins a seated patient at constant angular velocity about a vertical axis for 30 seconds, then stops the chair abruptly. For several seconds the patient reports rotation in the opposite direction and shows post-rotary nystagmus. Which receptors, and which physical lag, produce that after-sensation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Otolith organs of the utricle and saccule detecting linear acceleration of the chair rails"
+        },
+        {
+          "key": "B",
+          "text": "Cochlear inner hair cells, because angular motion is encoded as a Doppler shift on the basilar membrane"
+        },
+        {
+          "key": "C",
+          "text": "Cristae in the horizontal semicircular canals, because endolymph inertia keeps the cupula deflected after the canal itself has stopped"
+        },
+        {
+          "key": "D",
+          "text": "Muscle spindles in the neck, because they are the only sensors that fire after motion ceases"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Semicircular-canal cristae encode angular acceleration via cupula deflection. During a sudden stop, the canal wall halts but endolymph continues, bending the cupula opposite the original spin and driving a false sense of counter-rotation plus nystagmus. Otolith maculae sense linear acceleration and head tilt, not this angular after-effect. Cochlear hair cells encode sound. Neck spindles contribute to proprioception but are not the mechanism of post-rotary nystagmus in this chair test.",
+      "distractor_rationales": {
+        "A": "Otoliths detect linear acceleration and gravity, not the angular after-sensation of a stopped yaw spin.",
+        "B": "The cochlea is not a gyroscope; it does not encode chair yaw as a traveling-wave Doppler shift.",
+        "D": "Cervical proprioception is not the generator of classic post-rotary nystagmus after an abrupt stop."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC6.6A.t4",
+      "type": "discrete",
+      "stem": "A pain clinic places transcutaneous electrical nerve stimulation pads over a painful lumbar dermatome and records a drop in reported intensity without a change in the noxious heat on the skin. Melzack and Wall’s gate-control theory locates the critical interaction where?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Only in the anterior cingulate, because gating is purely a cognitive relabeling of heat"
+        },
+        {
+          "key": "B",
+          "text": "At the free nerve ending, where TENS chemically destroys C-fiber peptides"
+        },
+        {
+          "key": "C",
+          "text": "In the olivary cochlea, because pain and hearing share a single thalamic nucleus"
+        },
+        {
+          "key": "D",
+          "text": "In the substantia gelatinosa of the dorsal horn, where large-fiber (Aβ) input can inhibit transmission of small-fiber nociceptive signals"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Gate-control theory (Melzack and Wall) proposes that the spinal dorsal horn, especially substantia gelatinosa, is a gate: large-diameter Aβ activity can close it and reduce projection of C and Aδ nociceptive traffic, while small-fiber activity opens it. TENS is taught as a clinical use of that large-fiber inhibition. Anterior cingulate modulates affect but is not the named spinal gate. TENS does not ablate peripheral peptides as its primary mechanism. Hearing pathways are anatomically separate.",
+      "distractor_rationales": {
+        "A": "Affective cortex can modulate pain, but Melzack and Wall located the gate in the dorsal horn, not only cingulate relabeling.",
+        "B": "TENS is not a chemical lesion of C-fiber terminals.",
+        "C": "Auditory olives are irrelevant to lumbar nociceptive gating."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "MCAT.FC6.6A.t5",
+      "type": "discrete",
+      "stem": "A perception lab shows three black “Pac-man” inducers whose mouths face inward. Most observers report a bright white triangle with sharp edges covering the gaps, even though no triangle is drawn. Which Gestalt principle, associated with Wertheimer’s grouping laws, most directly names this completion?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Closure (and Prägnanz), because the visual system completes a simple enclosed form from incomplete contours"
+        },
+        {
+          "key": "B",
+          "text": "Common fate, because the Pac-men appear to move as one flock"
+        },
+        {
+          "key": "C",
+          "text": "Absolute threshold, because the triangle is a real luminance increment at detection threshold"
+        },
+        {
+          "key": "D",
+          "text": "Place theory, because each inducer maps to a different cochlear position"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The Kanizsa triangle is a textbook illusory-contour display. Gestalt psychologists (Wertheimer, later Kanizsa) argued that perception organizes toward simple, closed, good forms (Prägnanz) and fills gaps (closure). No physical triangular luminance edge is required. Common fate groups by shared motion, which is not presented. Absolute threshold concerns detecting a weak real stimulus. Place theory is auditory frequency mapping and does not explain visual illusory contours.",
+      "distractor_rationales": {
+        "B": "Common fate requires common motion; the stem is a static grouping display.",
+        "C": "The triangle is constructed, not a near-threshold physical luminance patch.",
+        "D": "Place theory is a cochlear map, unrelated to visual contour completion."
+      },
+      "difficulty_est": 0.34
+    },
+    {
+      "concept_id": "MCAT.FC6.6A.t5",
+      "type": "discrete",
+      "stem": "Observers read a briefly flashed, degraded clinic note in which several letters are ink-smudged. They still report the intended words when the sentence is medically plausible, but they misread the same marks in a scrambled letter string. Richard Gregory’s constructivist account treats this as which kind of processing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Pure bottom-up feature detection, because Hubel and Wiesel cells finish the job before knowledge acts"
+        },
+        {
+          "key": "B",
+          "text": "Top-down processing, in which stored knowledge and context generate perceptual hypotheses that disambiguate incomplete sensory data"
+        },
+        {
+          "key": "C",
+          "text": "Gibsonian direct pickup of optic-array invariants, which needs no hypothesis testing"
+        },
+        {
+          "key": "D",
+          "text": "Weber scaling of ink density, which uniquely determines each letter"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Gregory argued that perception is hypothesis-testing: incomplete retinal data are interpreted using memory and context (top-down, constructivist). Sentence meaning helping smudged letters is that influence. Strict bottom-up feature detection would not improve once the same marks sit in a meaningful sentence. Gibson’s ecological theory emphasizes direct invariants and downplays such inference. Weber’s law scales intensity differences; it does not read words.",
+      "distractor_rationales": {
+        "A": "Context changing the percept of identical marks is the signature that bottom-up feature maps are not sufficient.",
+        "C": "Gibsonian direct perception denies the need for knowledge-driven hypotheses that the stem demonstrates.",
+        "D": "Weber fractions do not explain lexical restoration of smudged letters."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC6.6B.t1",
+      "type": "discrete",
+      "stem": "In a Cherry dichotic-listening setup, a student shadows a surgical podcast in the left ear and ignores a word list in the right. Afterward she cannot report the ignored list’s content, but she did notice her own name when it occurred once on the right (a Moray-type breakthrough). Which filter model best accommodates both results?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Broadbent’s early, all-or-none filter based only on physical channel, which predicts the name cannot be identified"
+        },
+        {
+          "key": "B",
+          "text": "Deutsch and Deutsch late selection only, which predicts full semantic analysis of every ignored word and thus full report of the list"
+        },
+        {
+          "key": "C",
+          "text": "Treisman’s attenuation model, in which unattended input is turned down but highly primed items (one’s name) can still exceed threshold"
+        },
+        {
+          "key": "D",
+          "text": "Kahneman’s capacity model, which claims there is no filter and therefore both ears are shadowed equally"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Broadbent’s filter drops the unattended channel before meaning, which fits poor list report but not name breakthrough. Treisman proposed attenuation: unattended signals are weakened, yet items with very low thresholds (own name) can still be perceived. Late-selection models expect more semantic report of the ignored list than the stem allows. Capacity models address resource limits in divided attention; they do not by themselves explain a selective name pop-out with otherwise empty report.",
+      "distractor_rationales": {
+        "A": "An uncompromising early filter cannot explain identifying the unattended name.",
+        "B": "Late selection overpredicts memory for ignored semantic content relative to the sparse report described.",
+        "D": "Equal shadowing of both ears is not what dichotic shadowing tasks produce."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "MCAT.FC6.6B.t1",
+      "type": "discrete",
+      "stem": "A driving simulator has residents keep a car in lane while simultaneously monitoring a second screen for a rare vital-sign alarm. Lane-keeping error jumps when the alarm task is added, even though both tasks are easy alone. Kahneman’s limited-capacity account of divided attention predicts which outcome?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Error should not change, because Broadbent’s filter fully protects the driving channel"
+        },
+        {
+          "key": "B",
+          "text": "Only late-selection theory predicts dual-task cost, and only if the alarm is physically identical to engine noise"
+        },
+        {
+          "key": "C",
+          "text": "Habituation of the orienting reflex will abolish lane error after one combined trial"
+        },
+        {
+          "key": "D",
+          "text": "The two tasks compete for a shared pool of attention, so dual-task costs appear when combined demand exceeds available capacity"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Kahneman treated attention as a limited, allocatable capacity. Two easy tasks can still interfere when their sum exceeds that pool, which is the classic dual-task cost. Broadbent’s filter is an account of selective, not divided, attention and does not guarantee a protected driving channel. Late selection concerns how far ignored messages are processed, not this resource trade-off. Habituation would reduce responding to a repeated irrelevant stimulus, not erase capacity competition in a first dual-task block.",
+      "distractor_rationales": {
+        "A": "A selective-attention filter does not imply cost-free divided attention between two attended tasks.",
+        "B": "Dual-task costs are the central prediction of capacity models, not a unique late-selection claim about physical identity.",
+        "C": "Habituation is non-associative waning to a repeated stimulus, not an explanation of divided-attention interference."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC6.6B.t2",
+      "type": "discrete",
+      "stem": "A five-year-old watches juice poured from a short wide beaker into a tall thin cylinder and insists there is now “more to drink.” Piaget’s stage account attributes the error to which limitation of the preoperational period?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Centration and irreversibility, so height is attended and the transformation cannot be mentally reversed"
+        },
+        {
+          "key": "B",
+          "text": "Failure of object permanence, as in the sensorimotor A-not-B error"
+        },
+        {
+          "key": "C",
+          "text": "Lack of hypothetical-deductive reasoning that defines the formal operational stage"
+        },
+        {
+          "key": "D",
+          "text": "An already-intact conservation operation that the child simply refuses to verbalize"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Conservation of liquid is a concrete-operational achievement (about 7–11 years). Preoperational children (about 2–7) fail it because they center on a salient dimension (height) and cannot reverse the pour in thought. Object permanence is a sensorimotor issue in infants, not this liquid task. Formal operations concern abstract hypothesis testing in adolescence, not beaker conservation. The child’s explicit “more” is a genuine conservation failure, not a hidden competence they decline to state.",
+      "distractor_rationales": {
+        "B": "Object permanence is a sensorimotor milestone; this is a conservation failure years later.",
+        "C": "Formal operations are not required for liquid conservation; concrete operations suffice.",
+        "D": "Piaget treats the typical five-year-old’s judgment as a real operational gap, not mere tacit knowledge."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC6.6B.t2",
+      "type": "discrete",
+      "stem": "After a widely televised air-ambulance crash, a premed clinic’s waiting-room survey shows patients now rate dying in a plane crash as likelier than dying in a car, despite contrary base rates. Tversky and Kahneman’s heuristics program names this bias as which process?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The representativeness heuristic, because the crash is judged similar to a prototype of “safe commercial aviation”"
+        },
+        {
+          "key": "B",
+          "text": "The availability heuristic, because easily retrieved vivid instances inflate judged probability"
+        },
+        {
+          "key": "C",
+          "text": "Anchoring on the first numeral of the flight number, which is the only named Tversky–Kahneman bias"
+        },
+        {
+          "key": "D",
+          "text": "Piagetian formal operations, which force statistical base-rate use"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Availability is judging frequency or probability by ease of retrieval. Media vividness makes the crash easy to bring to mind and inflates its subjective risk relative to mundane car fatalities. Representativeness is judging by similarity to a stereotype or prototype, not by media retrieval. Anchoring is undue influence of an initial number; no such number is supplied. Formal operations would, if anything, support using base rates, which these patients are ignoring.",
+      "distractor_rationales": {
+        "A": "Representativeness is similarity-to-prototype reasoning, not “what comes to mind after television.”",
+        "C": "Anchoring needs a starting value; the stem supplies vivid instances, not a numeric anchor.",
+        "D": "Formal-operational competence would predict better, not worse, use of base rates."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC6.6B.t3",
+      "type": "discrete",
+      "stem": "A sleep-lab montage 12 minutes after lights-out shows 12–14 Hz bursts, occasional high-amplitude biphasic waves, mixed-frequency EEG, moderate EMG, and no rapid eye movements. Which stage of non-REM sleep, in the standard Rechtschaffen–Kales / AASM mapping, is this?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "N1, defined by vertex waves and a purely theta background without spindles"
+        },
+        {
+          "key": "B",
+          "text": "N3 slow-wave sleep, defined by high-voltage delta occupying much of the epoch"
+        },
+        {
+          "key": "C",
+          "text": "N2, defined by sleep spindles and K-complexes"
+        },
+        {
+          "key": "D",
+          "text": "REM sleep, defined by low EMG, sawtooth EEG, and bursts of rapid eye movements"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Sleep spindles (about 12–14 Hz) and K-complexes are the defining graphoelements of N2 (formerly stage 2). N1 is light theta without those markers. N3 requires abundant delta. REM requires atonia, a wake-like low-voltage EEG, and REMs—the opposite of moderate EMG and no eye movements. Aserinsky and Kleitman described REM as a distinct state; this epoch is still non-REM N2, the stage that occupies much of a typical night after sleep onset.",
+      "distractor_rationales": {
+        "A": "N1 lacks the spindles and K-complexes listed in the montage.",
+        "B": "N3 is scored on delta percentage, not on spindles as the main features.",
+        "D": "REM requires eye movements and atonia, both absent here."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "MCAT.FC6.6B.t3",
+      "type": "discrete",
+      "stem": "Bilateral lesions of the suprachiasmatic nuclei in a hamster abolish circadian rhythmicity of wheel-running; activity fragments into short bouts across the 24-hour day even under a light–dark cycle. Retinas and pineal glands remain intact. This pattern most directly supports which claim about circadian architecture?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The pineal is the master pacemaker, so the finding is unexpected"
+        },
+        {
+          "key": "B",
+          "text": "Primary visual cortex is required to tell time of day from light"
+        },
+        {
+          "key": "C",
+          "text": "REM-on pontine cells are the clock, because dreams keep a 90-minute period even after SCN damage"
+        },
+        {
+          "key": "D",
+          "text": "The SCN is the master circadian oscillator; the pineal’s melatonin signal is downstream of it"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The suprachiasmatic nucleus is the mammalian master clock. Its destruction eliminates coherent circadian organization even when eyes can still sense light and the pineal can still make melatonin. Light reaches the SCN via the retinohypothalamic tract, not via V1. The pineal is a slave endocrine output, not the pacemaker. The 90-minute NREM–REM cycle is an ultradian oscillator in the brainstem/forebrain, distinct from the SCN’s near-24-hour clock.",
+      "distractor_rationales": {
+        "A": "Pineal melatonin is timed by the SCN; it is not the master oscillator.",
+        "B": "Circadian photoreception uses specialized retinal ganglion cells to the SCN, bypassing striate cortex.",
+        "C": "REM cycling is ultradian and does not substitute for the SCN as a 24-hour pacemaker."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "MCAT.FC6.6B.t4",
+      "type": "discrete",
+      "stem": "In a Baddeley working-memory clinic task, repeating “the, the, the” aloud (articulatory suppression) abolishes the phonological-similarity effect for visually presented letter strings, while Corsi block span is unchanged. Which component was occupied, and which was spared?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The phonological loop (articulatory rehearsal) was occupied; the visuospatial sketchpad was spared"
+        },
+        {
+          "key": "B",
+          "text": "The visuospatial sketchpad was occupied; the phonological loop was spared"
+        },
+        {
+          "key": "C",
+          "text": "Long-term episodic memory was occupied, which is why Corsi span survived"
+        },
+        {
+          "key": "D",
+          "text": "Sensory iconic memory was occupied, which is the only store Baddeley named"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Baddeley’s multicomponent model assigns verbal rehearsal to the phonological loop. Articulatory suppression fills that rehearsal process, removing phonological confusions among letters. Corsi blocks load the visuospatial sketchpad and the central executive’s spatial control, so they should survive a purely verbal suppressor. Long-term episodic memory is not the working-memory buffer under test. Iconic memory is a brief sensory register in the older modal model, not the named Baddeley loop.",
+      "distractor_rationales": {
+        "B": "The suppressor is verbal; it loads the loop, not the sketchpad.",
+        "C": "Corsi span is a working-memory spatial index, not proof that long-term memory was the occupied store.",
+        "D": "Baddeley’s model is loop, sketchpad, central executive (and later episodic buffer), not iconic memory alone."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "MCAT.FC6.6B.t4",
+      "type": "discrete",
+      "stem": "Witnesses to a clinic parking-lot collision later read a report that mentioned a yield sign. The intersection actually had a stop sign. At test, many now remember a yield sign. This Loftus-type misinformation effect is best taken as evidence for which view of memory?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Ebbinghaus’s pure decay of a photographic trace that can never be altered, only faded"
+        },
+        {
+          "key": "B",
+          "text": "Memory as a reconstructive process in which post-event information can be incorporated into the reported event"
+        },
+        {
+          "key": "C",
+          "text": "Atkinson–Shiffrin transfer into an infinite-capacity long-term store that is immune to suggestion"
+        },
+        {
+          "key": "D",
+          "text": "Baddeley’s phonological loop as the sole store of visuospatial accident details"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Loftus (and Palmer’s verb work) showed that memory reports are constructive: later language and details can blend into what people later “remember.” That undercuts a sealed photographic trace. Ebbinghaus documented forgetting over time but not this incorporation of planted details. Modal-model long-term store is not suggestion-proof. The phonological loop is a verbal working-memory buffer, not the account of altered eyewitness event memory.",
+      "distractor_rationales": {
+        "A": "A never-alterable decaying photograph cannot explain a new object (yield sign) entering the report.",
+        "C": "The misinformation effect is evidence against immunity of long-term reports to suggestion.",
+        "D": "A visuospatial accident is not stored only in the articulatory loop."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "MCAT.FC6.6B.t5",
+      "type": "discrete",
+      "stem": "A toddler who has heard only “went” and “went” nonetheless says “I goed to clinic.” Nativist accounts following Chomsky treat such overregularization as evidence for which claim?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Skinnerian verbal behavior: every utterance is a reinforced copy of a parental exemplar"
+        },
+        {
+          "key": "B",
+          "text": "Sapir–Whorf linguistic determinism: English past-tense morphology forces the child to invent travel"
+        },
+        {
+          "key": "C",
+          "text": "Children extract abstract grammatical rules (here, add -ed) that they apply beyond the input, consistent with a language-acquisition device and poverty of the stimulus"
+        },
+        {
+          "key": "D",
+          "text": "Wernicke’s area has myelinated, so comprehension errors must produce “goed”"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Overregularization shows children are not limited to echoing reinforced strings; they generalize a rule to irregulars they have not heard inflected that way. Chomsky argued that the input is too poor and error-riddled to explain such abstract competence without innate grammatical constraints (the LAD / universal grammar). Skinner’s account struggles with forms that were never reinforced. Whorf concerns thought following language categories, not past-tense invention. Wernicke’s area is an adult lesion story, not toddler morphology.",
+      "distractor_rationales": {
+        "A": "“Goed” is precisely a form that was not copied from adult input or obviously reinforced.",
+        "B": "Whorf does not explain overregularization of inflectional rules.",
+        "D": "Toddler overregularization is a developmental grammar phenomenon, not Wernicke aphasia."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC6.6B.t5",
+      "type": "discrete",
+      "stem": "After a left inferior-frontal infarct, a patient speaks in effortful telegraphic phrases, omits function words, and repeats poorly, but she follows two-step commands and points accurately to named objects. This profile is most consistent with which classical aphasia?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Wernicke’s (receptive) aphasia from superior temporal damage"
+        },
+        {
+          "key": "B",
+          "text": "Conduction aphasia from isolated arcuate-fasciculus damage with fluent speech and intact comprehension"
+        },
+        {
+          "key": "C",
+          "text": "Global aphasia with essentially no comprehension and no speech"
+        },
+        {
+          "key": "D",
+          "text": "Broca’s (expressive) aphasia from inferior frontal damage"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Broca’s aphasia (usually posterior inferior frontal gyrus, Broca’s area) is nonfluent, agrammatic, with relatively spared comprehension and poor repetition. Wernicke’s aphasia is fluent, paraphasic, and comprehension-poor. Conduction aphasia is fluent with good comprehension and disproportionately poor repetition. Global aphasia devastates both fluency and comprehension. The stem matches the Broca pattern and the named frontal lesion.",
+      "distractor_rationales": {
+        "A": "Wernicke’s aphasia would impair comprehension of commands and yield fluent but empty speech.",
+        "B": "Conduction aphasia is fluent; the stem is effortful and telegraphic.",
+        "C": "Spared two-step commands rule out global aphasia."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "MCAT.FC7.7A.t1",
+      "type": "discrete",
+      "stem": "In a Sperry–Gazzaniga split-brain examination, a key is flashed briefly in the left visual field of a patient with complete callosotomy. Speech is left-lateralized. Which outcome is expected?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "She cannot name the key, but her left hand can select the key from a hidden tray"
+        },
+        {
+          "key": "B",
+          "text": "She names the key immediately, because the left hemisphere saw it first"
+        },
+        {
+          "key": "C",
+          "text": "She cannot name the key, and neither hand can select it, because all vision is lost"
+        },
+        {
+          "key": "D",
+          "text": "She names the key only if it is also spoken by the examiner, illustrating Wernicke’s area as a callosal relay"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Left visual field projects to right striate cortex. After callosotomy the speaking left hemisphere does not receive that percept, so naming fails. The right hemisphere can still guide the left hand to the matching object. The left hemisphere sees the right visual field, not the left. Vision is not lost; it is disconnected from speech. Wernicke’s area is a language-comprehension region, not the explanation of this field-to-hand dissociation.",
+      "distractor_rationales": {
+        "B": "LVF information does not reach the speaking hemisphere after callosal section.",
+        "C": "The right hemisphere still sees the LVF and can steer the left hand.",
+        "D": "Naming does not require the examiner to speak the word; the issue is interhemispheric transfer, not Wernicke as a callosal relay."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "MCAT.FC7.7A.t1",
+      "type": "discrete",
+      "stem": "A construction-site reconstruction of the Gage injury is presented in clinic teaching: a tamping iron traverses ventromedial prefrontal cortex; language, gait, and basic sensation recover, but planning, social tact, and impulse control do not. Which conclusion about localization is most justified?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The cerebellum is the seat of personality, because Gage’s gait was briefly unsteady"
+        },
+        {
+          "key": "B",
+          "text": "Ventromedial prefrontal cortex contributes to social-executive control rather than to primary motor or classical language maps"
+        },
+        {
+          "key": "C",
+          "text": "Broca’s area was destroyed, because personality change is the definition of Broca’s aphasia"
+        },
+        {
+          "key": "D",
+          "text": "The mesolimbic dopamine path was cut, so extraversion must fall by Eysenck’s ARAS theory"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The historical Gage case, and modern vmPFC lesion series, link orbitofrontal/ventromedial prefrontal cortex to social judgment, planning, and inhibition, dissociable from primary motor and perisylvian language cortices. Cerebellar personality theories are not what the iron’s path demonstrates. Broca’s aphasia is a language-output syndrome, which recovered here. Eysenck’s extraversion–ARAS theory is a trait-arousal account, not a description of a vmPFC tamping-iron trajectory.",
+      "distractor_rationales": {
+        "A": "A brief gait issue does not relocate personality to cerebellum in this lesion.",
+        "C": "Broca’s aphasia is nonfluent speech, not a personality-change definition.",
+        "D": "Eysenck’s ARAS extraversion model is not the localization lesson of the Gage trajectory."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC7.7A.t2",
+      "type": "discrete",
+      "stem": "A premed who doubts her ability watches a near-peer master a difficult OSCE station, then raises her own practice time and her predicted score. Bandura’s social-cognitive theory names the reciprocal loop among person, behavior, and environment and would highlight which process here?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Oral-stage fixation in Freud’s psychosexual scheme, because watching is a feeding equivalent"
+        },
+        {
+          "key": "B",
+          "text": "Eysenckian extraversion driven by a chronically under-aroused ARAS"
+        },
+        {
+          "key": "C",
+          "text": "Observational learning and a rise in self-efficacy, within reciprocal determinism"
+        },
+        {
+          "key": "D",
+          "text": "Maslowian self-actualization as the only named cause of studying"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Bandura’s social-cognitive theory includes observational learning, self-efficacy, and reciprocal determinism (person ↔ behavior ↔ environment). Seeing a similar model succeed can raise efficacy and change study behavior, which then changes the environment of future exams. Freud’s oral stage does not describe OSCE modeling. Eysenck’s biological extraversion is a trait-arousal theory, not vicarious mastery. Maslow’s hierarchy is a need theory of motivation, not this modeling mechanism.",
+      "distractor_rationales": {
+        "A": "Psychosexual stages do not explain vicarious OSCE mastery.",
+        "B": "ARAS extraversion is not the process of watching a peer and then studying more.",
+        "D": "Self-actualization is not the specific social-cognitive mechanism named in the stem."
+      },
+      "difficulty_est": 0.39
+    },
+    {
+      "concept_id": "MCAT.FC7.7A.t2",
+      "type": "discrete",
+      "stem": "Mischel’s review of trait–behavior correlations (and the later person–situation debate) is presented to a personality journal club. Which statement best captures his critique of a strong global-trait view such as an uncritical Big Five-as-destiny reading?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Freud already proved traits are illusions, so Costa and McCrae’s inventory is invalid by definition"
+        },
+        {
+          "key": "B",
+          "text": "Situationism claims that heritability of extraversion is zero, contradicting all twin studies"
+        },
+        {
+          "key": "C",
+          "text": "Humanistic actualization (Rogers) is the only lawful predictor, so traits and situations are both irrelevant"
+        },
+        {
+          "key": "D",
+          "text": "Cross-situational consistency of behavior is often modest, so situations and person–situation interactions must be modeled, not only a five-factor score"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Mischel argued that personality coefficients across situations are typically modest; behavior depends on situational features and if–then signatures, not a single global trait score. That launched the person–situation debate; it did not prove Freud, nullify heritability, or crown Rogers as the only predictor. Costa and McCrae’s Big Five can still describe average tendencies; Mischel’s point is that those averages underpredict single-act consistency. Twin data still show genetic influence on traits.",
+      "distractor_rationales": {
+        "A": "Mischel’s critique is psychometric and situational, not a Freudian disproof of inventories.",
+        "B": "Situationism about single-act prediction is not a claim that extraversion heritability is zero.",
+        "C": "Rogers is not the punchline of the person–situation debate."
+      },
+      "difficulty_est": 0.57
+    },
+    {
+      "concept_id": "MCAT.FC7.7A.t3",
+      "type": "discrete",
+      "stem": "A first-episode psychosis service notes that a D2-blocking typical antipsychotic reduces auditory hallucinations and a dopamine agonist for restless legs briefly worsened them. Negative symptoms and cognition barely change. The classical dopamine hypothesis of schizophrenia most directly explains which part of this pattern?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Positive symptoms as mesolimbic hyperdopaminergia, which D2 blockade can blunt"
+        },
+        {
+          "key": "B",
+          "text": "Negative symptoms as the primary D2-excess state, which is why they melted away"
+        },
+        {
+          "key": "C",
+          "text": "The entire syndrome as a pure acetylcholine deficit, as in Alzheimer disease"
+        },
+        {
+          "key": "D",
+          "text": "Parkinsonism of the substantia nigra as the cause of hallucinations"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The classical dopamine hypothesis ties positive psychotic symptoms to excess mesolimbic D2 signaling; typical neuroleptics are D2 antagonists, and agonists can aggravate psychosis. Negative and cognitive symptoms are less well explained by that simple excess and may relate to prefrontal hypodopaminergia or NMDA hypofunction—hence their persistence. Alzheimer disease is a cholinergic/cortical-degeneration story. Nigrostriatal dopamine loss causes Parkinsonism, a side effect of typicals, not the source of the hallucinations.",
+      "distractor_rationales": {
+        "B": "Negative symptoms are not the symptoms that typical D2 blockers reliably erase.",
+        "C": "Alzheimer’s cholinergic deficit is a different disease model.",
+        "D": "Nigrostriatal loss produces Parkinsonism, not the core hallucinatory syndrome of schizophrenia."
+      },
+      "difficulty_est": 0.49
+    },
+    {
+      "concept_id": "MCAT.FC7.7A.t3",
+      "type": "discrete",
+      "stem": "A 72-year-old develops a resting pill-rolling tremor, festinating gait, and masked face; levodopa helps motor signs. Cognition is initially relatively spared. A second patient of the same age has progressive memory loss, hippocampal atrophy, and cortical amyloid plaques. Which pairing of diagnosis and hallmark pathophysiology is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "First patient Alzheimer disease because tremor is the defining DSM criterion"
+        },
+        {
+          "key": "B",
+          "text": "First patient Parkinson disease (nigrostriatal dopamine loss, Lewy bodies); second Alzheimer disease (amyloid plaques, neurofibrillary tangles, cholinergic deficit)"
+        },
+        {
+          "key": "C",
+          "text": "Second patient Parkinson disease because hippocampus is the substantia nigra"
+        },
+        {
+          "key": "D",
+          "text": "Both are typical-antipsychotic side effects rather than neurodegenerative diseases"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Parkinson disease is loss of substantia nigra pars compacta dopaminergic neurons with α-synuclein Lewy bodies; levodopa replaces dopamine and improves motor signs. Alzheimer disease is the amnestic cortical dementia with amyloid plaques, tau tangles, and nucleus-basalis cholinergic loss. Tremor is not an Alzheimer DSM hallmark. The hippocampus is not the nigra. Neurodegenerative histology, not a neuroleptic, is specified in the stem.",
+      "distractor_rationales": {
+        "A": "Alzheimer disease is not defined by resting tremor; that points to Parkinsonism.",
+        "C": "Hippocampal atrophy is an Alzheimer-pattern finding, not a renaming of the nigra.",
+        "D": "The stem describes two idiopathic neurodegenerative pictures, not drug-induced Parkinsonism plus plaques."
+      },
+      "difficulty_est": 0.35
+    },
+    {
+      "concept_id": "MCAT.FC7.7A.t4",
+      "type": "discrete",
+      "stem": "A surgical skills lab finds that a simple interrupted suture is performed fastest under high evaluative arousal, whereas a delicate microvascular anastomosis is most accurate at moderate arousal and degrades when the attending stares. This pattern is the Yerkes–Dodson law. Which statement captures it?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Performance is a strictly rising linear function of arousal for every task"
+        },
+        {
+          "key": "B",
+          "text": "Hull’s drive reduction predicts that only hunger, not evaluative arousal, can change skill"
+        },
+        {
+          "key": "C",
+          "text": "Performance follows an inverted U with arousal, and the optimal point is lower for more difficult tasks"
+        },
+        {
+          "key": "D",
+          "text": "Maslow’s hierarchy forbids any arousal effect until self-actualization is complete"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Yerkes and Dodson described an inverted-U relation between arousal and performance, with complex tasks peaking at lower arousal than simple ones. That matches fast simple suturing under high arousal and fragile fine anastomosis under an audience. A strictly linear “more arousal is always better” rule is the common trap. Hull’s drive-reduction theory concerns tissue deficits and habit strength, not this arousal–complexity interaction. Maslow’s need hierarchy does not ban arousal effects on motor skill.",
+      "distractor_rationales": {
+        "A": "The law is an inverted U, not a monotonic rise, especially for hard tasks.",
+        "B": "Drive reduction is a different motivational theory and does not uniquely own skill-arousal curves.",
+        "D": "Maslow does not prohibit Yerkes–Dodson effects in a skills lab."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC7.7A.t4",
+      "type": "discrete",
+      "stem": "A rat in a cooled chamber presses a bar that turns on a heat lamp; pressing falls once core temperature is restored. A second, sated rat in a warm cage still works for highly palatable sucrose. Which pairing of theory to finding is most accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Both findings are only instinct theory (James/McDougall), because no learning is involved"
+        },
+        {
+          "key": "B",
+          "text": "Both findings refute all need-based theories, including Maslow"
+        },
+        {
+          "key": "C",
+          "text": "Yerkes–Dodson uniquely predicts sucrose pressing because sugar is a difficult cognitive task"
+        },
+        {
+          "key": "D",
+          "text": "Heat-seeking illustrates Hull-style drive reduction; sucrose-seeking in a sated animal illustrates incentive motivation that can operate without a tissue deficit"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Drive-reduction (Hull) says behavior is reinforced by lowering a tissue need; heat that restores temperature fits. Incentive theories (and related optimal-arousal/incentive-salience ideas) say external rewards can pull behavior even without a deficit, as palatable sucrose does in a sated rat. Instinct theory names innate tendencies, not this learned bar-press distinction. Maslow is not refuted by a heat lamp. Yerkes–Dodson is an arousal–performance curve, not a theory of why sated animals work for sucrose.",
+      "distractor_rationales": {
+        "A": "Bar-pressing for heat or sucrose is learned operant behavior, not a pure Jamesian instinct.",
+        "B": "Heat-seeking actually supports a need-reduction account; it does not bury Maslow.",
+        "C": "Sucrose work is about incentive value, not task difficulty on an inverted-U curve."
+      },
+      "difficulty_est": 0.59
+    },
+    {
+      "concept_id": "MCAT.FC7.7A.t5",
+      "type": "discrete",
+      "stem": "In a Festinger and Carlsmith-style replication, students complete a dull OSCE paperwork hour, then are paid either $1 or $20 to tell the next student it was fascinating. Who should later rate the hour itself as more enjoyable, and why?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The $1 group, because insufficient external justification produces cognitive dissonance that is reduced by changing the attitude"
+        },
+        {
+          "key": "B",
+          "text": "The $20 group, because larger rewards create stronger attitudes by classical conditioning"
+        },
+        {
+          "key": "C",
+          "text": "Neither group, because Bem’s self-perception theory forbids any attitude change after induced compliance"
+        },
+        {
+          "key": "D",
+          "text": "Only students high in self-monitoring, because dissonance theory applies solely to impression management"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Festinger’s cognitive dissonance theory says holding “I said it was fun” and “it was dull” plus “I was barely paid” is inconsistent; the cheap lie lacks sufficient justification, so people shift the attitude to reduce dissonance. The $20 payment provides external justification, so the attitude can stay negative. Counterintuitively, smaller payment yields more positive ratings. Classical conditioning by cash would predict the opposite. Self-perception is an alternative account, but it does not forbid the effect. Dissonance is not restricted to high self-monitors.",
+      "distractor_rationales": {
+        "B": "Larger pay is sufficient justification and should produce less, not more, genuine attitude change.",
+        "C": "Self-perception can predict a similar pattern; it does not forbid the classic result.",
+        "D": "Festinger’s induced-compliance effect is not limited to high self-monitors."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC7.7A.t5",
+      "type": "discrete",
+      "stem": "A student health campaign first asks residents to sign a one-sentence hand-hygiene pledge at a table, then a week later asks them to staff a four-hour influenza-shot drive. Compliance with the large request is higher among those who signed. This is which sequential technique, as in Freedman and Fraser’s work?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Door-in-the-face (Cialdini): a huge request first, then retreat to a smaller one"
+        },
+        {
+          "key": "B",
+          "text": "Foot-in-the-door: a small granted request raises the chance of a later larger one, often via self-perception of being “the kind of person who helps”"
+        },
+        {
+          "key": "C",
+          "text": "Low-balling: the cost is revealed only after commitment to an unchanged request"
+        },
+        {
+          "key": "D",
+          "text": "Cognitive dissonance from a $1 lie about an OSCE, which is the same operational procedure"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Foot-in-the-door (Freedman and Fraser) is a small yes followed by a larger related request. Self-perception (Bem) or consistency motives are the usual mediators. Door-in-the-face is the reverse sequence: extreme request refused, then a moderate target. Low-ball changes the cost after a commitment. Festinger’s $1/$20 paradigm is induced compliance with a counter-attitudinal speech, not this two-request campaign.",
+      "distractor_rationales": {
+        "A": "Door-in-the-face starts large, not with a one-sentence pledge.",
+        "C": "The large request is a new, openly described task, not a hidden-price change of the same deal.",
+        "D": "Insufficient-justification dissonance is a different experimental recipe than sequential requests."
+      },
+      "difficulty_est": 0.33
+    },
+    {
+      "concept_id": "MCAT.FC7.7B.t2",
+      "type": "discrete",
+      "stem": "A cohesive hospital credentials committee, isolated from outside reviewers, hears the chair state a preferred outcome in the opening minute. Dissenters stay silent; the group later misses a cluster of complications that a devil’s advocate would have flagged. Janis’s groupthink analysis most directly emphasizes which process?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A shift toward a more extreme average preference after open debate (group polarization)"
+        },
+        {
+          "key": "B",
+          "text": "Social loafing, because each member’s vote was unidentifiable on a secret ballot"
+        },
+        {
+          "key": "C",
+          "text": "Premature concurrence-seeking under high cohesion, directive leadership, and insulation, with self-censorship and an illusion of unanimity"
+        },
+        {
+          "key": "D",
+          "text": "Deindividuation in a crowd, which requires anonymity and arousal in a street mob"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Janis defined groupthink as concurrence-seeking that suppresses realistic appraisal in cohesive, insulated groups with directive leaders. Symptoms include self-censorship, mindguards, and an illusion of unanimity—the silence after the chair’s cue. Group polarization is a different phenomenon: the group mean becomes more extreme after discussion. Social loafing is reduced effort on additive tasks. Deindividuation is loss of self-awareness in aroused anonymous crowds, not a boardroom consensus failure.",
+      "distractor_rationales": {
+        "A": "Polarization is an extremity shift after discussion, not the suppressed dissent Janis named.",
+        "B": "The stem does not describe unidentifiable additive effort; it describes concurrence-seeking.",
+        "D": "Deindividuation is a crowd-anonymity process, not credentials-committee insulation."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC7.7B.t2",
+      "type": "discrete",
+      "stem": "Mock jurors who individually lean slightly toward conviction become, after deliberation, much more confident that the defendant is guilty. Stoner’s risky shift was an early case of the same family of findings. Which label and mechanism best fit?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Groupthink: the jury must have had a mindguard and an illusion of invulnerability, which is required for any extremity shift"
+        },
+        {
+          "key": "B",
+          "text": "Normative social influence as in Asch, which always produces a moderate, never more extreme, consensus"
+        },
+        {
+          "key": "C",
+          "text": "Social facilitation (Zajonc): mere presence of co-actors multiplies the dominant conviction response without discussion"
+        },
+        {
+          "key": "D",
+          "text": "Group polarization: discussion amplifies the group’s already-favored pole via persuasive arguments and social comparison"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Group polarization is the finding that like-minded discussion makes the average position more extreme in the initially favored direction. Persuasive-arguments and social-comparison accounts (and the older risky-shift literature Stoner began) explain it. Groupthink is defective decision quality from suppressed dissent, not the same as a lawful extremity shift. Asch conformity can yield a wrong majority, but it is not defined as extremity amplification. Zajonc’s mere-presence facilitation does not require deliberation and is not a jury-discussion theory.",
+      "distractor_rationales": {
+        "A": "Groupthink is not a required diagnosis for every polarization finding.",
+        "B": "Asch-style conformity does not imply that group means cannot become more extreme.",
+        "C": "Mere presence without argument exchange is social facilitation, not deliberative polarization."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC7.7B.t3",
+      "type": "discrete",
+      "stem": "A premed still endorses the cultural goal of a physician’s income and prestige but, facing a bottleneck of seats, begins selling stolen exam banks. In Merton’s strain (anomie) typology, this adaptation is which cell?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Innovation: accepting the cultural goal while rejecting legitimate means"
+        },
+        {
+          "key": "B",
+          "text": "Ritualism: rejecting the goal while clinging to legitimate means (endless MCAT retakes with no career aim)"
+        },
+        {
+          "key": "C",
+          "text": "Retreatism: rejecting both goals and means (dropping out into isolation)"
+        },
+        {
+          "key": "D",
+          "text": "Rebellion: substituting a new goal–means pair (founding an alternative school)"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Merton’s strain theory says anomie arises when culturally approved goals (here, professional success) are not matched by equally available legitimate means. Innovation keeps the goal and uses illegitimate means—the stolen banks. Ritualism is going through the motions without the goal. Retreatism abandons both. Rebellion replaces both with a new set. Conformity, the fifth cell, would keep both goals and legal means. Durkheim’s broader anomie idea is the parent of this typology, but the named cells are Merton’s.",
+      "distractor_rationales": {
+        "B": "Ritualism drops the success goal; this student still wants the prestige.",
+        "C": "Retreatism would abandon the career goal, not cheat toward it.",
+        "D": "Rebellion would try to change the goal–means framework, not privately cheat within it."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC7.7B.t3",
+      "type": "discrete",
+      "stem": "A teenager’s first shoplifting is treated as a one-off (Lemert’s primary deviance). After a public “delinquent” label at school, she is excluded from teams, joins a labeled peer set, and steals more. Becker’s labeling approach and Lemert’s secondary deviance most directly claim which causal order?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The later crime is caused only by a biological atavism in Lombroso’s sense, so labels are epiphenomena"
+        },
+        {
+          "key": "B",
+          "text": "Societal reaction can stabilize an outsider identity, making further deviance a career rather than a leftover act"
+        },
+        {
+          "key": "C",
+          "text": "Durkheim proved that labeling reduces crime by clarifying boundaries, so secondary deviance cannot occur"
+        },
+        {
+          "key": "D",
+          "text": "Mertonian rebellion is the only process that can follow a school label"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Labeling theory (Becker’s Outsiders; Lemert’s primary vs secondary deviance) argues that official and informal reactions can transform an isolated act into a master status and a deviant career. The stem’s exclusion and peer realignment are that mechanism. Lombroso’s atavism is a 19th-century biological theory, not this sequence. Durkheim did argue that some punishment clarifies norms, but that is not a denial of secondary deviance. Merton’s rebellion is one strain adaptation, not the labeling claim.",
+      "distractor_rationales": {
+        "A": "Lombroso does not explain identity change after a school label.",
+        "C": "Durkheim’s functions of crime do not entail that labels cannot amplify careers in deviance.",
+        "D": "Labeling does not require Merton’s rebel cell as the only sequel."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "MCAT.FC7.7B.t4",
+      "type": "discrete",
+      "stem": "A preschooler “plays doctor” by putting on a coat and giving a stuffed animal a shot (one role at a time). A year later she plays a clinic game in which she coordinates nurse, parent, and patient and refers to “what the doctor is supposed to do.” Mead’s stages of self development treat the later game as the emergence of which structure?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The preparatory stage of mere imitation, which already contains the generalized other"
+        },
+        {
+          "key": "B",
+          "text": "The play stage only, because multiple roles still mean there is no “me”"
+        },
+        {
+          "key": "C",
+          "text": "The game stage, in which the child takes the organized perspective of the generalized other"
+        },
+        {
+          "key": "D",
+          "text": "Freud’s superego, which Mead defined as identical to the I"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Mead distinguished preparatory imitation, play (taking one significant other’s role), and the game (organizing multiple roles into the generalized other—the attitude of the community). The clinic game with “what the doctor is supposed to do” is that organized perspective, which becomes the “me.” The “I” is the spontaneous subject responding to the “me.” Freud’s superego is a different architecture; Mead did not equate it with the I. Preparatory imitation lacks this coordination.",
+      "distractor_rationales": {
+        "A": "Preparatory imitation is earlier and does not yet hold the generalized other.",
+        "B": "Play is single-role; coordinating a clinic is Mead’s game.",
+        "D": "Mead’s I is not Freud’s superego."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC7.7B.t4",
+      "type": "discrete",
+      "stem": "A first-year resident notices that her table manners and first language came from family dinners, while her habit of arriving ten minutes early and not interrupting attendings was drilled by years of school bells and “raise your hand.” Which claim about agents of socialization is most accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Only peers socialize after age 6, so family and school effects must be spurious"
+        },
+        {
+          "key": "B",
+          "text": "Media are the sole primary agent in industrial societies according to Mead"
+        },
+        {
+          "key": "C",
+          "text": "Bureaucracy (Weber) replaces all socialization agents once someone enters a hospital"
+        },
+        {
+          "key": "D",
+          "text": "Family is typically the primary agent; school is a major secondary agent that also transmits a hidden curriculum of punctuality and deference"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Primary socialization, usually in the family, lays down language, manners, and basic identities. Secondary agents—school, peers, media, workplace—continue the process. Schools famously transmit a hidden curriculum of time-discipline and authority relations (later emphasized by Bowles and Gintis). Peers matter, especially in adolescence, but they do not erase family and school. Mead did not make mass media the sole primary agent. Weberian bureaucracy structures organizations; it does not cancel prior socialization.",
+      "distractor_rationales": {
+        "A": "Peer influence is real but not exclusive after age 6.",
+        "B": "Mead’s primary social world is significant others and the generalized other, not “media only.”",
+        "C": "Entering a bureaucracy does not nullify family and school as agents."
+      },
+      "difficulty_est": 0.32
+    },
+    {
+      "concept_id": "MCAT.FC7.7C.t1",
+      "type": "discrete",
+      "stem": "An infant-cognition lab (looking-time methods in the Fantz/Baillargeon tradition) presents the same face for eight trials; looking declines. A new face restores looking. After the new face, the original face is shown again and looking briefly rises relative to the last familiar-face trial. Which pair of non-associative processes is illustrated?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Habituation to the repeated face and dishabituation (recovery) when the stimulus changes"
+        },
+        {
+          "key": "B",
+          "text": "Classical conditioning to the face, then operant kicking for the new face"
+        },
+        {
+          "key": "C",
+          "text": "Sensory receptor fatigue only, which cannot recover to a new face that uses the same retina"
+        },
+        {
+          "key": "D",
+          "text": "Vicarious reinforcement in Bandura’s sense, because the infant watched the experimenter look"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Habituation is a decrease in response to a repeated, unchanging stimulus that is not explained by receptor fatigue or motor exhaustion. Dishabituation is recovery when a new stimulus appears (or, in some designs, when a novel interpolating event restores responding to the original). Infant looking-time exploits that pair to ask what babies discriminate. No CS–US pairing or response–reinforcer contingency is described. Bandura’s vicarious reinforcement is observational learning of a model’s consequences, not waning looking.",
+      "distractor_rationales": {
+        "B": "No US or reinforcer is paired with looking; this is non-associative.",
+        "C": "Recovery to a new face, and often to the original after a novel event, is used to argue against pure receptor fatigue.",
+        "D": "The infant is not learning from a model’s rewarded action."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC7.7C.t1",
+      "type": "discrete",
+      "stem": "A startle lab repeatedly presents a 1 kHz tone; blink magnitude falls (Sokolov-type waning of the orienting/startle response). A single tap on the cage restores a large blink to the next tone. This restoration is best classified as which process?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Spontaneous recovery after extinction of a Pavlovian CS, because the tone was a CS for shock"
+        },
+        {
+          "key": "B",
+          "text": "Dishabituation: a novel interpolating stimulus recovers responding to the original habituated stimulus"
+        },
+        {
+          "key": "C",
+          "text": "Stimulus generalization of fear from the tap to all frequencies"
+        },
+        {
+          "key": "D",
+          "text": "A Weber-fraction change in loudness that permanently resets threshold"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "When responding to a repeated stimulus has waned, a different, often startling, event can restore responding to the original stimulus—dishabituation—supporting a central, not purely receptor, account (Sokolov’s orienting model is the classic physiological framing). Spontaneous recovery is return of an extinguished CR after time, and the stem includes no US or extinction schedule. Generalization would be responding to similar tones, not recovery after a tap. Weber’s law does not name this restoration.",
+      "distractor_rationales": {
+        "A": "No shock US or extinction curve is described; this is non-associative recovery.",
+        "C": "The next trial is the original tone, not a new frequency along a generalization gradient.",
+        "D": "A tap does not rewrite the auditory Weber fraction as the named mechanism."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "MCAT.FC7.7C.t2",
+      "type": "discrete",
+      "stem": "In a Pavlovian clinic analog, a metronome (CS) is paired with a sour spray (US) until it elicits a swallow (CR). After a block of metronome-alone trials the swallow vanishes. The next morning the first metronome trial again elicits a swallow. Pavlov’s analysis names the overnight return as which phenomenon?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acquisition, because the CS–US association is formed for the first time in the morning"
+        },
+        {
+          "key": "B",
+          "text": "Extinction as permanent unlearning, which forbids any later swallow"
+        },
+        {
+          "key": "C",
+          "text": "Spontaneous recovery of the extinguished CR after a rest"
+        },
+        {
+          "key": "D",
+          "text": "Latent inhibition, because preexposure to the metronome occurred overnight"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Pavlov distinguished acquisition (CS–US pairing builds the CR), extinction (CS-alone presentations reduce the CR), and spontaneous recovery (the CR returns after a delay following extinction). Recovery shows extinction is not identical to erasing the association. Acquisition already happened in the pairing phase. Latent inhibition is slower conditioning after CS-preexposure, not overnight return of an extinguished swallow. The morning swallow is the named recovery effect.",
+      "distractor_rationales": {
+        "A": "The association was acquired in the pairing phase, not created de novo by a rest.",
+        "B": "Spontaneous recovery is evidence that extinction is not permanent destruction of the CR.",
+        "D": "Latent inhibition is a CS-preexposure effect on later acquisition, not recovery after extinction."
+      },
+      "difficulty_est": 0.34
+    },
+    {
+      "concept_id": "MCAT.FC7.7C.t2",
+      "type": "discrete",
+      "stem": "Rats drink novel saccharin and, hours later, receive lithium that produces nausea; they later avoid saccharin. The same rats do not readily associate a click with nausea, nor saccharin with immediate footshock. Garcia and Koelling’s preparedness result most directly challenges which assumption of early Pavlovian/Skinnerian theory?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The existence of operant schedules, because variable-ratio is still most extinction-resistant"
+        },
+        {
+          "key": "B",
+          "text": "That taste can ever be a CS, because only auditory CSs work"
+        },
+        {
+          "key": "C",
+          "text": "Bandura’s claim that rats cannot learn without a live model"
+        },
+        {
+          "key": "D",
+          "text": "Equipotentiality: any CS can be equally associated with any US given temporal contiguity"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Garcia showed one-trial, long-delay taste–illness learning and selectivity: tastes pair with nausea more readily than clicks do, and audiovisual cues pair more readily with shock. That violates the equipotentiality assumption that the CS–US slot is content-free and that close contiguity is always required. Operant schedule rankings are a different chapter of associative learning. Tastes clearly can be CSs. Bandura’s observational learning is not the target of the bait-shyness experiments.",
+      "distractor_rationales": {
+        "A": "VR extinction resistance is true but is not what Garcia’s selective associations challenge.",
+        "B": "The point is that taste is an especially good CS for illness, not that taste cannot be a CS.",
+        "C": "Garcia’s rats learned without observation of a model; Bandura is not the foil here."
+      },
+      "difficulty_est": 0.62
+    },
+    {
+      "concept_id": "MCAT.FC7.7C.t3",
+      "type": "discrete",
+      "stem": "In a Bandura Bobo-doll replication, preschoolers watch an adult punch and verbally insult the doll. Children who saw the adult rewarded later produce more of those acts, including some novel aggressive variants, than children who saw the adult punished. Which process is essential to Bandura’s account?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Observational learning plus vicarious reinforcement, so the model’s consequences change the child’s performance"
+        },
+        {
+          "key": "B",
+          "text": "Direct classical pairing of the doll with a US in the child’s own skin"
+        },
+        {
+          "key": "C",
+          "text": "A fixed instinct to aggress that is independent of modeled consequences"
+        },
+        {
+          "key": "D",
+          "text": "Habituation of startle to the doll, which looks like punching"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Bandura’s social-learning theory holds that people acquire responses by watching models (attention, retention, reproduction, motivation) and that seeing the model rewarded or punished alters performance (vicarious reinforcement/punishment). Novel aggressive variants show that children learned a script, not a single reinforced muscle twitch. No CS–US pairing with the child as the subject is required. Instinct theories do not predict the reward-versus-punishment split. Habituation is response waning, not imitative punching.",
+      "distractor_rationales": {
+        "B": "The child did not receive the adult’s US; learning was vicarious.",
+        "C": "An invariant instinct cannot explain more copying after a rewarded model.",
+        "D": "Habituation decreases responding; the children increased modeled aggression."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC7.7C.t3",
+      "type": "discrete",
+      "stem": "A macaque F5 neuron fires both when the monkey grasps a syringe and when it watches an experimenter make the same grasp. Rizzolatti’s group called such cells mirror neurons. For MCAT-level observational learning, their hypothesized contribution is which function?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Proof that Bandura’s Bobo experiments were physiologically impossible"
+        },
+        {
+          "key": "B",
+          "text": "A neural substrate that could map observed actions onto the observer’s motor repertoire, supporting imitation"
+        },
+        {
+          "key": "C",
+          "text": "The only cells that encode variable-interval schedules in Skinner’s box"
+        },
+        {
+          "key": "D",
+          "text": "Replacement of the phonological loop in Baddeley’s working-memory model"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Mirror neurons fire during both execution and observation of similar acts, offering a candidate mechanism for matching seen actions to motor programs—hence a possible substrate for imitation and vicarious understanding. They do not falsify Bandura; they are often cited as compatible neural hardware. They are not schedule-parameter encoders in operant theory. They are not a working-memory buffer in Baddeley’s sense. The MCAT-relevant link is observational learning, not those substitutions.",
+      "distractor_rationales": {
+        "A": "Mirror neurons are offered as support for, not a refutation of, observational learning.",
+        "C": "VI schedules are operant timing, not the mirror-neuron claim.",
+        "D": "Baddeley’s loop is a verbal rehearsal system, not F5 grasping cells."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "MCAT.FC8.8A.t2",
+      "type": "discrete",
+      "stem": "A 17-year-old patient has switched intended majors three times, dropped two friend groups, and says “I still don’t know who I am supposed to be.” According to Erikson’s psychosocial stages, this crisis is which stage, and which nearby stage is not yet the central task?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Industry versus inferiority (school age); identity is already finished"
+        },
+        {
+          "key": "B",
+          "text": "Generativity versus stagnation, because career indecision is a midlife problem by definition"
+        },
+        {
+          "key": "C",
+          "text": "Identity versus role confusion (adolescence); intimacy versus isolation is the subsequent young-adult task that presupposes a clearer identity"
+        },
+        {
+          "key": "D",
+          "text": "Trust versus mistrust, because all identity problems reduce to oral feeding"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Erikson placed identity versus role confusion in adolescence: integrating values, occupations, and groups into a coherent self, or remaining diffuse. Intimacy versus isolation is the young-adult stage that, in his sequence, is harder without a prior identity. Industry versus inferiority is the school-age competence stage. Generativity is midlife care for the next generation. Trust versus mistrust is infancy. The named 17-year-old presentation is the identity crisis, not those others.",
+      "distractor_rationales": {
+        "A": "Industry/inferiority is earlier; the stem is an adolescent identity problem.",
+        "B": "Generativity is not the adolescent identity stage.",
+        "D": "Infant trust is not the developmental task described."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "MCAT.FC8.8A.t2",
+      "type": "discrete",
+      "stem": "A resident is sure her team sees her as “the awkward one,” feels shame, and withdraws, although 360-degree comments are actually warm. Cooley’s looking-glass self explains the self-feeling as arising from which sequence?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Mead’s “I” spontaneously emits shame without any imagined other"
+        },
+        {
+          "key": "B",
+          "text": "Marcia’s foreclosure: she has committed without exploration because a parent ordered the shame"
+        },
+        {
+          "key": "C",
+          "text": "Piagetian conservation failure, so she cannot reverse the team’s comments"
+        },
+        {
+          "key": "D",
+          "text": "We imagine our appearance to others, imagine their judgment, and the imagined judgment produces a self-feeling (here, shame)—even if the imagination is inaccurate"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Cooley’s looking-glass self is the three-step process: imagined appearance, imagined judgment, and resulting self-feeling. The “glass” can distort; what matters is the imagined view, which matches the warm comments plus unwarranted shame. Mead’s “I” is the novel, subject pole of the self, not a shame generator that skips the other. Marcia’s identity statuses (foreclosure, moratorium, achievement, diffusion) classify exploration/commitment, not this reflected-appraisal mechanism. Conservation is a physical-quantity operation, not social self-feeling.",
+      "distractor_rationales": {
+        "A": "Mead’s I is not Cooley’s reflected-appraisal sequence.",
+        "B": "Foreclosure is premature commitment, not a misread 360 review.",
+        "C": "Piaget’s conservation does not explain imagined social judgment."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC8.8B.t1",
+      "type": "discrete",
+      "stem": "In a Jones and Harris-style design, clerks read essays that were assigned to be pro- or anti-a hospital merger; they still rate the assigned-pro authors as personally in favor of the merger. This correspondence bias is the fundamental attribution error. Which description is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Observers overweight dispositional causes and underweight situational constraints (here, the assignment)"
+        },
+        {
+          "key": "B",
+          "text": "Actors explain their own success by the situation and their failure by traits (self-serving bias)"
+        },
+        {
+          "key": "C",
+          "text": "People always use Kelley’s high-consensus information, which forces an external attribution here"
+        },
+        {
+          "key": "D",
+          "text": "The just-world hypothesis requires that merger views be attributed to luck only"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The fundamental attribution error (Jones and Harris’s correspondence bias) is the observer’s tendency to infer a corresponding attitude even when the writer had no choice. Situational constraint is underused. Self-serving bias is a different pattern about one’s own outcomes. Kelley’s covariation model would, with an assignment (high consensus, situational demand), point external—exactly what FAE violators fail to do. Just-world thinking is a justice motive, not this essay-constraint finding.",
+      "distractor_rationales": {
+        "B": "Self-serving bias concerns actors’ own successes and failures, not observers of assigned essays.",
+        "C": "FAE is a failure to use the situational/consensus information Kelley would highlight.",
+        "D": "Just-world theory is not the Jones–Harris result."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "MCAT.FC8.8B.t1",
+      "type": "discrete",
+      "stem": "A friend laughs at one comedian: everyone in the room laughs (high consensus), she rarely laughs at other comedians (high distinctiveness), and she always laughs at this one (high consistency). Kelley’s covariation model points to which attribution?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Internal: she is a chronically giggly person"
+        },
+        {
+          "key": "B",
+          "text": "External: something about this comedian/situation elicits laughter"
+        },
+        {
+          "key": "C",
+          "text": "Always internal when consistency is high, regardless of consensus and distinctiveness"
+        },
+        {
+          "key": "D",
+          "text": "Fundamental attribution error as a prescriptive rule: ignore consensus by design"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Kelley’s covariation rules: high consensus, high distinctiveness, and high consistency yield an external (stimulus/situation) attribution—the comedian is funny. Low consensus, low distinctiveness, high consistency yield an internal attribution (a giggly person). High consistency alone is not diagnostic. FAE is a bias that underuses such situational patterns; it is not Kelley’s prescribed algebra. The stem is the textbook external cell.",
+      "distractor_rationales": {
+        "A": "A person attribution needs low consensus and low distinctiveness, not the pattern given.",
+        "C": "Consistency must be combined with consensus and distinctiveness; it is not sufficient for an internal call.",
+        "D": "Kelley’s model uses consensus; FAE is the error of neglecting it."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "MCAT.FC8.8B.t2",
+      "type": "discrete",
+      "stem": "In a Robbers Cave-style camp, two cabin groups become hostile during tournaments. Eating together does not help. Repairing a shared water tank that neither cabin can fix alone reduces hostility. Sherif’s realistic-conflict account plus the later contact hypothesis most directly credits which ingredient?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Mere proximity, which Allport said is sufficient by itself"
+        },
+        {
+          "key": "B",
+          "text": "Scapegoating as in Dollard’s frustration–aggression theory, which predicts more hostility after the tank is fixed"
+        },
+        {
+          "key": "C",
+          "text": "Superordinate goals that create interdependence, plus contact under cooperative, equal-status conditions"
+        },
+        {
+          "key": "D",
+          "text": "Goffman’s front-stage manners, which dissolve prejudice without changing goals"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Sherif’s realistic conflict theory says competition for scarce prizes produces intergroup hostility; superordinate goals that require cooperation reduce it. Allport’s contact hypothesis adds that contact works when it is equal-status, cooperative, and supported by norms—not mere cafeteria proximity, which failed at Robbers Cave. Frustration–aggression/scapegoating would not uniquely predict the tank’s success. Dramaturgy is impression management, not the named conflict-reduction mechanism.",
+      "distractor_rationales": {
+        "A": "Mere contact without cooperation failed in Sherif’s study and is not Allport’s full recipe.",
+        "B": "Fixing the tank reduced, rather than increased, hostility, opposite a simple scapegoat prediction.",
+        "D": "Goffman does not replace Sherif’s superordinate-goal finding."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC8.8B.t2",
+      "type": "discrete",
+      "stem": "A dermatology clinic serves patients with highly visible port-wine stains. Several describe “passing” in dim light and dreading disclosure in a gown. Goffman’s analysis of stigma would classify the mark as which kind of spoiled identity, and which emotion-laden process is central?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Ethnocentrism toward one’s own ethnic in-group, which is identical to stigma"
+        },
+        {
+          "key": "B",
+          "text": "Stereotype threat on a GRE, which is the only named stigma process"
+        },
+        {
+          "key": "C",
+          "text": "Institutional discrimination by ZIP code, which Goffman defined as a personal blemish"
+        },
+        {
+          "key": "D",
+          "text": "A discredited stigma when visible, managed by information control when it can be hidden; shame and audience management are central, not a Sherif tournament"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Goffman distinguished discredited stigmas (already visible) from discreditable ones (concealable, managed by passing and information control). A port-wine stain can shift between those as lighting and clothing change. The self is “spoiled” in the eyes of a virtual audience, producing shame and careful impression work. Ethnocentrism is in-group/out-group cultural ranking. Stereotype threat is a performance decrement in a evaluated domain. Institutional discrimination is structural, not Goffman’s interactional stigma vocabulary.",
+      "distractor_rationales": {
+        "A": "Ethnocentrism is not Goffman’s definition of a spoiled personal identity.",
+        "B": "Steele’s stereotype threat is a different, test-performance literature.",
+        "C": "Goffman analyzed face-to-face stigma, not ZIP-code allocation rules."
+      },
+      "difficulty_est": 0.6
+    },
+    {
+      "concept_id": "MCAT.FC8.8B.t3",
+      "type": "discrete",
+      "stem": "Black students in Steele and Aronson’s paradigm perform worse on a verbal test described as diagnostic of intelligence than on the same items described as a laboratory puzzle; the gap shrinks in the nondiagnostic framing. Which mechanism is the intended account?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Stereotype threat: situational pressure not to confirm a negative group stereotype consumes working memory and depresses performance"
+        },
+        {
+          "key": "B",
+          "text": "A stable genetic gap that appears only when the word “intelligence” is printed"
+        },
+        {
+          "key": "C",
+          "text": "Self-fulfilling prophecy in Rosenthal’s teacher-expectancy sense, which requires a teacher who was randomly labeled a bloomer"
+        },
+        {
+          "key": "D",
+          "text": "Realistic conflict over exam seats, as in Sherif’s camp"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Steele and Aronson showed that making a negative stereotype relevant (diagnostic framing) can impair performance in the stereotyped group even when ability is matched; removing the diagnostic label reduces the gap. The mechanism is situational threat and cognitive load, not a sudden genetic change. Rosenthal’s Pygmalion effect is another’s expectancy shaping a target over time in a classroom. Sherif’s conflict is intergroup competition for prizes, not a test-label manipulation.",
+      "distractor_rationales": {
+        "B": "A framing that turns the gap on and off is the opposite of a fixed genetic account.",
+        "C": "No teacher was given false bloomer information; this is the target’s own stereotype-relevant evaluation.",
+        "D": "No intergroup tournament for scarce camp prizes is described."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC8.8B.t3",
+      "type": "discrete",
+      "stem": "Teachers are told, randomly, that certain pupils are “late bloomers.” Those children later gain more on an IQ test. Rosenthal and Jacobson’s Pygmalion study is a classroom instance of which process Merton named?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Stereotype threat, because the children feared confirming a negative label of “ordinary”"
+        },
+        {
+          "key": "B",
+          "text": "A self-fulfilling prophecy: a false definition (the bloomer label) evokes behavior that makes the false definition come true"
+        },
+        {
+          "key": "C",
+          "text": "Fundamental attribution error about the teachers’ essays"
+        },
+        {
+          "key": "D",
+          "text": "Groupthink in the faculty lounge, which raises children’s IQ without expectancy"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Merton’s self-fulfilling prophecy (building on the Thomas theorem) is a false public definition that elicits behavior confirming it. Rosenthal and Jacobson randomly labeled children; teachers’ expectancies then altered interaction and measured IQ—the prophecy fulfilled. Stereotype threat is the target’s worry about confirming a negative stereotype on a diagnostic test, a different design. FAE is an observer’s dispositional bias. Groupthink is concurrence-seeking in cohesive decision groups, not a teacher-expectancy effect.",
+      "distractor_rationales": {
+        "A": "The manipulation was a positive teacher label, not a diagnostic-test threat to the child.",
+        "C": "No essay-constraint attribution task is involved.",
+        "D": "Faculty concurrence-seeking is not the Pygmalion mechanism."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "MCAT.FC8.8C.t1",
+      "type": "discrete",
+      "stem": "A new hospital’s bylaws specify a hierarchy of offices, hiring by credentials, written standard procedures, and impersonal application of rules to all applicants. Weber’s ideal-typical bureaucracy is being approximated. Which additional claim is most consistent with his analysis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bureaucracy maximizes traditional charismatic authority and minimizes written files"
+        },
+        {
+          "key": "B",
+          "text": "Durkheim’s mechanical solidarity is identical to this formal hierarchy"
+        },
+        {
+          "key": "C",
+          "text": "Technical competence, hierarchy, and files increase calculable efficiency, at the risk of an “iron cage” of disenchanted routine"
+        },
+        {
+          "key": "D",
+          "text": "Michels’s iron law of oligarchy denies that any hierarchy of offices can exist"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Weber’s ideal type of bureaucracy includes hierarchy, written rules, impersonality, and expert qualification—tools of rational-legal authority that make action calculable. He also feared the iron cage of rationalization. Charismatic and traditional authority are other types, not the file-based office. Mechanical solidarity is Durkheim’s likeness-based cohesion in simple societies, not a hospital bylaws chart. Michels argued that organizations tend toward elite capture; he did not deny that bureaucratic hierarchy exists.",
+      "distractor_rationales": {
+        "A": "Charisma and the absence of files are the opposite of Weber’s bureaucratic type.",
+        "B": "Mechanical solidarity is sameness in undifferentiated groups, not rational-legal offices.",
+        "D": "Michels theorized oligarchic drift inside organizations, not the impossibility of offices."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "MCAT.FC8.8C.t1",
+      "type": "discrete",
+      "stem": "A chief resident is expected, in that single status, to be both a rapid discharger of patients and an unrushed listener. Separately, the same person is on call as resident while also being the parent of a febrile toddler. Goode’s and Merton’s role vocabulary would label those two tensions how?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Both are role exit, because she is leaving medicine"
+        },
+        {
+          "key": "B",
+          "text": "Both are master-status racial ascription, which is the only role term Merton used"
+        },
+        {
+          "key": "C",
+          "text": "Both are primary-group bonds in Cooley’s sense, which abolish roles"
+        },
+        {
+          "key": "D",
+          "text": "In-role incompatible demands are role strain; conflict between resident and parent statuses is role conflict"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Role strain is tension among expectations attached to one status (the resident torn between speed and listening). Role conflict is tension between two statuses (resident vs parent). Role exit is leaving a status, not described here. A master status is a dominating identity (race, disability, occupation in some settings), not the name of these two tensions. Cooley’s primary groups are intimate, enduring associations; they do not erase role analysis.",
+      "distractor_rationales": {
+        "A": "Nothing in the stem describes leaving the profession.",
+        "B": "Master status is not Merton’s term for strain versus conflict.",
+        "C": "Primary groups do not make role strain/conflict unstatable."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "MCAT.FC8.8C.t2",
+      "type": "discrete",
+      "stem": "Surgeons joke and drop formality in the lounge, then adopt a composed, technical demeanor as soon as a family enters the OR corridor. Goffman’s dramaturgical analysis treats this shift as which distinction?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Back-stage versus front-stage regions of performance, with impression management tailored to the audience"
+        },
+        {
+          "key": "B",
+          "text": "Looking-glass self, which is about regions of a theater rather than imagined judgment"
+        },
+        {
+          "key": "C",
+          "text": "Deindividuation, which requires a mob and anonymity"
+        },
+        {
+          "key": "D",
+          "text": "Wernicke’s fluent speech as the only front-stage tool"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Goffman’s Presentation of Self analogizes interaction to theater: front stage is the public performance maintained for an audience; back stage is where the performer can relax the role and prepare. Moving from lounge to family corridor is that regional shift, a core impression-management practice. Cooley’s looking-glass is reflected self-feeling, not theater regions. Deindividuation is crowd anonymity. Aphasia localization is unrelated to dramaturgy.",
+      "distractor_rationales": {
+        "B": "Looking-glass self is Cooley’s imagined judgment, not Goffman’s front/back regions.",
+        "C": "A lounge-to-corridor shift is not a deindividuated mob.",
+        "D": "Language areas do not define dramaturgical regions."
+      },
+      "difficulty_est": 0.31
+    },
+    {
+      "concept_id": "MCAT.FC8.8C.t2",
+      "type": "discrete",
+      "stem": "In a residency interview, an applicant uses flattery of the program (ingratiation) and mentions first-author papers (self-promotion), then looks concerned when describing a patient’s death (exemplification of virtue). Jones and Pittman’s taxonomy of impression-management strategies would classify this as which overall project?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Unconscious Freudian displacement of oral drives onto the interviewer"
+        },
+        {
+          "key": "B",
+          "text": "Strategic self-presentation: selecting behaviors to shape an attributed identity (likable, competent, moral)"
+        },
+        {
+          "key": "C",
+          "text": "Asch conformity to a wrong line length"
+        },
+        {
+          "key": "D",
+          "text": "Mere exposure (Zajonc) to the interviewer’s face as the sole cause of liking"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Impression management is the attempt to control attributed identities. Jones and Pittman distinguished ingratiation (liking), self-promotion (competence), exemplification (moral worth), intimidation, and supplication. The applicant’s mix is strategic self-presentation, compatible with Goffman’s broader dramaturgy. Displacement is a defense mechanism, not this taxonomy. Asch is majority influence on a perceptual judgment. Mere exposure is liking from repeated neutral exposure, not a one-shot interview script.",
+      "distractor_rationales": {
+        "A": "Psychodynamic displacement is not Jones and Pittman’s strategy list.",
+        "C": "No confederate majority on line lengths is present.",
+        "D": "Mere exposure does not explain flattery and CV displays as tactics."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC8.8C.t3",
+      "type": "discrete",
+      "stem": "In Ainsworth’s Strange Situation, a 12-month-old plays using the parent as a base, cries at separation, and is readily comforted at reunion, then returns to play. This pattern is which attachment classification?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Insecure-avoidant (Type A): little distress, avoidance at reunion"
+        },
+        {
+          "key": "B",
+          "text": "Insecure-resistant/ambivalent (Type C): distress not soothed, angry clinging"
+        },
+        {
+          "key": "C",
+          "text": "Secure (Type B)"
+        },
+        {
+          "key": "D",
+          "text": "Disorganized (Main and Solomon): freeze/collapse as the only possible secure pattern"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Ainsworth’s secure infants use the caregiver as a secure base, protest separation, and settle at reunion. Avoidant infants show muted distress and avoid contact on return. Resistant/ambivalent infants are distressed and not easily soothed, often with anger. Disorganized infants show contradictory or freezing behavior and were added later by Main and Solomon; they are not the secure pattern. Bowlby’s attachment theory supplies the evolutionary-ethological frame for why a secure base matters.",
+      "distractor_rationales": {
+        "A": "Avoidant reunion behavior is avoidance, not ready comfort and return to play.",
+        "B": "Resistant infants do not soothe readily; the stem’s child does.",
+        "D": "Disorganized is not the definition of secure attachment."
+      },
+      "difficulty_est": 0.3
+    },
+    {
+      "concept_id": "MCAT.FC8.8C.t3",
+      "type": "discrete",
+      "stem": "A ground squirrel is more likely to give a predator alarm when nearby listeners are close female kin than when they are unrelated. Hamilton’s rule is offered as the explanation. Which inequality, and which concept, is being invoked?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Trivers’s reciprocal altruism, which requires the named sisters to repay the alarm next week as a contract"
+        },
+        {
+          "key": "B",
+          "text": "Wynne-Edwards group selection as the MCAT-preferred substitute for relatedness"
+        },
+        {
+          "key": "C",
+          "text": "Harlow’s contact comfort, because cloth mothers alarm-call"
+        },
+        {
+          "key": "D",
+          "text": "rB > C: inclusive fitness/kin selection can favor a costly alarm when relatedness times benefit to recipients exceeds the cost to the caller"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Hamilton’s inclusive-fitness rule says a social behavior is favored when rB > C: relatedness times the benefit to recipients exceeds the actor’s cost. Alarm calling that tracks kinship is a classic illustration. Reciprocal altruism (Trivers) can explain aid among nonkin given later repayment, which the stem does not require. Naive group-selection accounts are not the standard MCAT mechanism here. Harlow showed infants prefer cloth comfort to a wire feeder; that is attachment, not kin-selected alarms.",
+      "distractor_rationales": {
+        "A": "The stem varies relatedness, not a repayment contract.",
+        "B": "MCAT-level evolutionary social behavior uses inclusive fitness, not Wynne-Edwards as the preferred engine.",
+        "C": "Harlow’s surrogate mothers are a different literature."
+      },
+      "difficulty_est": 0.56
+    },
+    {
+      "concept_id": "MCAT.FC8.8C.t4",
+      "type": "discrete",
+      "stem": "A landlord privately endorses hostile stereotypes about a tenant group (prejudice) but, fearing a fair-housing suit, rents to the first qualified applicant. Merton’s typology of prejudice and discrimination would call this person which type?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A timid bigot (prejudiced non-discriminator), whose behavior does not match the negative attitude"
+        },
+        {
+          "key": "B",
+          "text": "An all-weather bigot, who both hates and discriminates"
+        },
+        {
+          "key": "C",
+          "text": "An all-weather liberal, who has neither prejudice nor discrimination"
+        },
+        {
+          "key": "D",
+          "text": "A fair-weather liberal, who is unprejudiced but discriminates under social pressure"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Prejudice is an attitude (often with affective and cognitive components); discrimination is unequal treatment. They can dissociate. Merton’s timid bigot holds the prejudice but does not discriminate when situational costs are high—the lawsuit-fearing landlord. The all-weather bigot would also refuse to rent. The all-weather liberal has neither. The fair-weather liberal discriminates despite lacking prejudice, under pressure. The stem is attitude without the behavior.",
+      "distractor_rationales": {
+        "B": "An all-weather bigot would act on the hostility, not comply with fair housing.",
+        "C": "Hostile stereotypes mean prejudice is present.",
+        "D": "A fair-weather liberal lacks prejudice and still discriminates; this landlord has prejudice and does not discriminate."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC8.8C.t4",
+      "type": "discrete",
+      "stem": "A hospital scheduling algorithm shortens appointment slots for ZIP codes that historically overlap with redlined districts, with no individual clerk expressing hostility. Outcome data show longer waits for Black patients. This pattern is best labeled how?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Individual discrimination only, because an algorithm cannot be institutional"
+        },
+        {
+          "key": "B",
+          "text": "Institutional discrimination: organizational rules or routines producing systematic unequal treatment, even without a bigoted actor at the desk"
+        },
+        {
+          "key": "C",
+          "text": "Prejudice without discrimination, because no clerk used a slur"
+        },
+        {
+          "key": "D",
+          "text": "Goffman stigma only, which is defined as a ZIP-code variable"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Institutional (structural) discrimination is unequal outcomes built into policies, algorithms, or standard operating procedures, and it does not require a prejudiced individual at the moment of action. Individual discrimination is a particular person treating another unequally. The algorithm produces extra wait—discrimination in behavior/outcome—not a mere private attitude. Goffman’s stigma is interactional identity spoilage, not a geocoded slot-length rule. Carmichael and Hamilton’s discussion of institutional racism is the usual MCAT contrast with individual bias.",
+      "distractor_rationales": {
+        "A": "Institutions can discriminate through routines and code; a smiling clerk is not required.",
+        "C": "Unequal waits are discriminatory outcomes, not prejudice-only.",
+        "D": "Stigma is not defined as a ZIP-code scheduler."
+      },
+      "difficulty_est": 0.49
+    },
+    {
+      "concept_id": "MCAT.FC9.9A.t1",
+      "type": "discrete",
+      "stem": "Researchers studying a teaching hospital ask how chaplaincy, billing, and the residency each contribute to the equilibrium of the whole organization and to social order, analogizing to organs in a body. Which theoretical approach, associated with Durkheim and later Parsons, is this?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Conflict theory in the Marxian sense, emphasizing surplus extraction by a bourgeois board"
+        },
+        {
+          "key": "B",
+          "text": "Symbolic interactionism (Blumer), which refuses any analysis above a dyad’s gestures"
+        },
+        {
+          "key": "C",
+          "text": "Structural functionalism: institutions are analyzed by the functions they perform for system stability"
+        },
+        {
+          "key": "D",
+          "text": "Rational-choice theory, which treats the hospital as a single utility-maximizing shopper"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Functionalism, from Durkheim’s social facts and organic solidarity through Parsons’s AGIL systems, analyzes institutions by the functions they serve for cohesion and equilibrium—the organ analogy is textbook. Marxian conflict theory would ask which class benefits and how contradictions drive change. Symbolic interactionism (Mead/Blumer) inspects meaning in face-to-face interaction, not system organs. Rational choice models individual utility, not a hospital-as-organism metaphor.",
+      "distractor_rationales": {
+        "A": "A board extracting surplus is conflict analysis, not the equilibrium-organ frame.",
+        "B": "Blumer’s premises are about meaning, not societal organs.",
+        "D": "A utility-maximizing shopper is not Durkheim’s functional analysis."
+      },
+      "difficulty_est": 0.35
+    },
+    {
+      "concept_id": "MCAT.FC9.9A.t1",
+      "type": "discrete",
+      "stem": "An ethnographer sits in a diabetes clinic and records how “compliance” is negotiated turn by turn: what a glucometer reading is taken to mean, how a missed dose is excused, how identities of “good patient” are performed. Which pair of approaches is most tightly fitted to this micro-meaning project?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Marxist conflict theory, because only class fractions can speak in a clinic"
+        },
+        {
+          "key": "B",
+          "text": "Durkheimian functionalism, because the ethnographer is measuring organic solidarity with a dynamometer"
+        },
+        {
+          "key": "C",
+          "text": "Feminist theory only if no men are present, which is its defining axiom"
+        },
+        {
+          "key": "D",
+          "text": "Symbolic interactionism (Mead, Blumer) and social constructionism (Berger and Luckmann), which treat meanings and “facts” of illness as produced in interaction and institutionalization"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Symbolic interactionism holds that people act toward things on the basis of meanings that arise in interaction (Blumer’s premises, from Mead). Social constructionism (Berger and Luckmann) extends that insight: realities, including illness categories, are built and sedimented through social processes. A turn-by-turn clinic study is that program. Conflict theory can study clinics but is not this meaning-negotiation method. Functionalism’s system needs are not measured by dyadic excuses. Feminist theory is not defined by the absence of men.",
+      "distractor_rationales": {
+        "A": "Class analysis is not implied merely by recording conversational meaning.",
+        "B": "Organic solidarity is a macrosocial cohesion type, not a dynamometer reading of excuses.",
+        "C": "Feminist approaches analyze gendered power; they are not “no men in the room.”"
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "MCAT.FC9.9A.t2",
+      "type": "discrete",
+      "stem": "A patient with influenza stays home from the wards, is not blamed for being ill, is expected to try to get well, and is expected to seek competent medical advice. Parsons’s sick role, as an account of medicine as an institution, includes which pair of rights and obligations?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Exemption from normal duties and from blame, plus obligations to want recovery and to seek help"
+        },
+        {
+          "key": "B",
+          "text": "A right to remain ill indefinitely with no obligation to consult a physician"
+        },
+        {
+          "key": "C",
+          "text": "Marx’s claim that medicine exists only to reproduce labor power, which forbids any sick-role rights"
+        },
+        {
+          "key": "D",
+          "text": "The hidden curriculum of K–12 schooling as the definition of the sick role"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Parsons modeled the sick role as a patterned, socially controlled deviation: the sick person is exempt from ordinary roles and not held responsible for the condition, but must treat illness as undesirable and cooperate with technically competent healers. That is how medicine as an institution manages illness. Unlimited right to remain ill without help contradicts those obligations. Marxian critiques of medicine are a different theoretical register. The hidden curriculum is a schooling concept (Jackson; Bowles and Gintis), not the sick role.",
+      "distractor_rationales": {
+        "B": "Parsons required the obligation to seek help and to want to get well.",
+        "C": "Conflict critiques do not erase Parsons’s named four-part role as the standard MCAT account.",
+        "D": "Hidden curriculum belongs to education, not the influenza sick role."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC9.9A.t2",
+      "type": "discrete",
+      "stem": "A school rewards sitting still, raising a hand, and deferring to the teacher’s clock more consistently than it rewards unusual scientific curiosity. Bowles and Gintis interpret this hidden curriculum as which institutional function of education?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A purely meritocratic filter that Davis and Moore would say is unrelated to class"
+        },
+        {
+          "key": "B",
+          "text": "Correspondence with workplace authority relations, reproducing class structure through schooling as an institution"
+        },
+        {
+          "key": "C",
+          "text": "Weber’s Protestant ethic as the official math syllabus"
+        },
+        {
+          "key": "D",
+          "text": "Parsons’s sick role applied to children who sit still"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The hidden curriculum is the unofficial lessons of school (punctuality, obedience, hierarchy). Bowles and Gintis’s correspondence principle claims those lessons mirror capitalist workplace relations and thus contribute to social reproduction. Davis–Moore functionalist meritocracy is the rival story this critique targets. Weber’s Protestant ethic is a thesis about capitalism’s cultural origins, not a math syllabus. The sick role is a medical-institution concept, not a description of classroom docility.",
+      "distractor_rationales": {
+        "A": "Bowles and Gintis deny that school is a class-neutral merit sieve.",
+        "C": "The Protestant ethic is not the hidden-curriculum claim.",
+        "D": "Sitting still in class is not Parsons’s influenza role."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC9.9A.t3",
+      "type": "discrete",
+      "stem": "A hospital deploys a new mRNA platform within months, while consent templates, kinship rules about stored samples, and malpractice doctrine lag by years. Ogburn’s concept that names this gap is which of the following?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Culture shock, which is a society-level legal delay rather than an individual’s strain in a new culture"
+        },
+        {
+          "key": "B",
+          "text": "McDonaldization (Ritzer) as a synonym for delayed ethics committees"
+        },
+        {
+          "key": "C",
+          "text": "Cultural lag: material culture (technology) changes faster than nonmaterial culture (norms, laws, meanings)"
+        },
+        {
+          "key": "D",
+          "text": "Assimilation, because lag is defined as English-only signage"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Ogburn’s cultural lag is the delay of nonmaterial culture behind material invention—the classic cars-before-traffic-laws example, here mRNA before updated consent and kinship norms. Culture shock is an individual’s disorientation in an unfamiliar culture. Ritzer’s McDonaldization is efficiency, calculability, predictability, and control, not lag per se. Assimilation is absorption of a minority into a dominant culture, not a technology–norm gap.",
+      "distractor_rationales": {
+        "A": "Culture shock is not Ogburn’s macrosocial lag of laws behind gadgets.",
+        "B": "McDonaldization is a rationalization thesis, not the name of the delay.",
+        "D": "Assimilation is a different cultural process than material/nonmaterial mismatch."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC9.9A.t3",
+      "type": "discrete",
+      "stem": "A city closes bilingual clinics and posts English-only wayfinding so that “everyone uses the same system.” Advocates of multiculturalism object. Which contrast is most accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The policy is culture shock, a legal term for bilingualism"
+        },
+        {
+          "key": "B",
+          "text": "The policy is a subculture of hospital engineers, which is the definition of assimilation"
+        },
+        {
+          "key": "C",
+          "text": "Sapir–Whorf linguistic determinism requires English-only signs for thought to occur"
+        },
+        {
+          "key": "D",
+          "text": "The policy is assimilation (melting-pot pressure toward a dominant pattern); multiculturalism would maintain legitimate cultural pluralism in institutions"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Assimilation is the process of taking on the dominant group’s language and institutions, historically imaged as a melting pot. Multiculturalism (cultural pluralism) values persistence of distinct cultural streams within a shared polity. English-only clinics are assimilationist. Culture shock is individual strain abroad. A subculture is a group with distinct norms inside a larger culture, not the definition of this city policy. Sapir–Whorf concerns language shaping thought, not a requirement for monolingual signage to think.",
+      "distractor_rationales": {
+        "A": "Culture shock is not the name of an English-only ordinance.",
+        "B": "Subculture ≠ assimilationist city policy.",
+        "C": "Whorf does not legislate English-only wayfinding as a condition of thought."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC9.9B.t2",
+      "type": "discrete",
+      "stem": "In a four-stage demographic-transition teaching model, a country’s crude death rate falls from 30 to 12 per 1,000 over two decades while the birth rate remains near 38. Population grows rapidly. Which stage is this, and what typically drives the death-rate drop?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Stage 2: mortality falls first (sanitation, nutrition, basic medicine) while fertility stays high"
+        },
+        {
+          "key": "B",
+          "text": "Stage 1: both rates still high, so growth remains near zero"
+        },
+        {
+          "key": "C",
+          "text": "Stage 3: fertility has already fallen to match mortality"
+        },
+        {
+          "key": "D",
+          "text": "Stage 4: both rates are low and the boom is over"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "In the standard four-stage demographic transition, stage 1 has high birth and death rates. Stage 2 is the mortality decline—public health, food, and infectious-disease control—while fertility remains high, producing explosive growth. Stage 3 is the later fertility decline. Stage 4 is low-low with slower growth. Five-stage variants add a possible stage-5 below-replacement fertility; they do not relocate the first mortality drop out of the early-transition boom described here.",
+      "distractor_rationales": {
+        "B": "Stage 1 would not show a collapsed death rate with a still-high birth rate.",
+        "C": "Stage 3 is when births fall, which has not yet happened in the stem.",
+        "D": "Stage 4 is low fertility and low mortality, not a 38 birth rate."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC9.9B.t2",
+      "type": "discrete",
+      "stem": "Two tenant groups want the same repair ordinance. Group A is furious but has no office, lawyers, or mailing list. Group B is only moderately aggrieved but has a funded staff and ties to a citywide coalition. Resource-mobilization theory (McCarthy and Zald) predicts which outcome, relative to a pure relative-deprivation account (Gurr)?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Only Group A can succeed, because anger is necessary and sufficient"
+        },
+        {
+          "key": "B",
+          "text": "Group B is more likely to become an effective social movement, because organization and resources, not grievance intensity alone, convert unrest into action"
+        },
+        {
+          "key": "C",
+          "text": "Wirth’s urbanism thesis forbids any tenant movement in cities"
+        },
+        {
+          "key": "D",
+          "text": "Demographic transition stage 2 will automatically pass the ordinance"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Relative deprivation emphasizes felt grievance as the spark of movements. Resource-mobilization theory replies that grievances are common; what varies is money, staff, networks, and organization. A moderately angry but resourced group can outperform a furious unorganized one. Wirth’s urbanism is about city social psychology (blase attitude, segmental roles), not a ban on movements. Demographic transition is a fertility–mortality model, not an ordinance generator.",
+      "distractor_rationales": {
+        "A": "Resource mobilization denies that intensity of anger is sufficient.",
+        "C": "Urban sociology does not entail that tenant movements are impossible.",
+        "D": "Stage 2 of the transition is a population-growth phase, not a housing-law mechanism."
+      },
+      "difficulty_est": 0.57
+    },
+    {
+      "concept_id": "MCAT.FC10.10A.t2",
+      "type": "discrete",
+      "stem": "Two applicants have identical GPAs. The one who can talk museum internships, chamber music, and “concerted cultivation” interview banter (Lareau) is rated more “collegial” on the MMI. Bourdieu would treat that edge as which kind of resource, and to what reproductive effect?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Marxian raw labor power only, which is identical to knowing Brahms"
+        },
+        {
+          "key": "B",
+          "text": "Davis–Moore functionalist proof that the rating is a pure scarcity rent for talent"
+        },
+        {
+          "key": "C",
+          "text": "Cultural capital: embodied tastes and institutional credentials that schools and professions reward, reproducing class advantage beyond wages"
+        },
+        {
+          "key": "D",
+          "text": "Weberian party membership in a political machine, which is the only capital Bourdieu named"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Bourdieu distinguished economic, social, and cultural capital. Cultural capital (embodied habitus, objectified goods, institutionalized degrees) is converted into advantages in educational and professional fields, a mechanism of social reproduction. Marx’s labor power is not exhausted by high-culture fluency, though conflict theory more broadly cares about class. Davis–Moore would read unequal reward as functional for talent allocation—the view Bourdieu opposes here. Weber’s class/status/party triad is related stratification language, but “cultural capital” is Bourdieu’s term.",
+      "distractor_rationales": {
+        "A": "Knowing Brahms is not “labor power” in Marx’s technical sense.",
+        "B": "The identical-GPA design is meant to show a non-merit, class-cultured bonus.",
+        "D": "Bourdieu named cultural (and social, economic) capital, not only party."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "MCAT.FC10.10A.t2",
+      "type": "discrete",
+      "stem": "Marmot’s Whitehall studies found a stepwise gradient in coronary mortality across British civil-service grades, even though all groups had access to the National Health Service. Which conclusion about class and health is most justified?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Only the unemployed are unhealthy; employed grades should be identical"
+        },
+        {
+          "key": "B",
+          "text": "Weber denied that status can affect the body, so Whitehall refutes Weber"
+        },
+        {
+          "key": "C",
+          "text": "The gradient proves Davis–Moore meritocracy causes infarctions by justice"
+        },
+        {
+          "key": "D",
+          "text": "A socioeconomic gradient in health can persist above poverty and despite universal access, implicating status, control, and related class-linked conditions—not access alone"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The socioeconomic gradient in health is the graded, not binary, association of SES with morbidity and mortality. Whitehall is famous because it appears among employed, NHS-covered civil servants, so “no insurance” and “absolute destitution” cannot be the whole story. Control, hierarchy, and other class-linked exposures are implicated. Weber actually made status a distinct stratification dimension, compatible with a gradient. Davis–Moore does not claim justice of infarcts as functional necessity.",
+      "distractor_rationales": {
+        "A": "Whitehall’s point is the gradient among the employed, not a healthy-worker plateau.",
+        "B": "Weber included status and life chances; Whitehall does not refute him.",
+        "C": "Functional meritocracy is not the cardiologic mechanism Marmot described."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC10.10A.t3",
+      "type": "discrete",
+      "stem": "A rural county has the state’s highest diabetes prevalence and amputation rate and the fewest endocrinologists and diabetes educators per capita. Tudor Hart’s inverse care law names which relationship?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The availability of good medical care tends to vary inversely with the need of the population served"
+        },
+        {
+          "key": "B",
+          "text": "Care is always proportional to need in market systems, so the county is a measurement error"
+        },
+        {
+          "key": "C",
+          "text": "Only individual prejudice by named endocrinologists can produce a shortage"
+        },
+        {
+          "key": "D",
+          "text": "Whitehall already proved rurality is protective, contradicting the amputation rate"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Hart’s inverse care law (1971) states that good medical care is least available where it is most needed, especially where market forces dominate. High-need, low-supply counties are the illustration. It is an empirical regularity about distribution, not a claim that measurement must be wrong. Institutional and market allocation can produce shortages without a single prejudiced specialist. Whitehall is an occupational-grade gradient in Britain, not a finding that rural high-need areas are protected.",
+      "distractor_rationales": {
+        "B": "The law is precisely that need and supply often run opposite, not in proportion.",
+        "C": "Structural maldistribution does not require a named bigoted clinician.",
+        "D": "Whitehall does not cancel rural amputations as a disparity signal."
+      },
+      "difficulty_est": 0.39
+    },
+    {
+      "concept_id": "MCAT.FC10.10A.t3",
+      "type": "discrete",
+      "stem": "Undocumented patients delay ED care until a surgical emergency. Link and Phelan’s fundamental-cause theory of health disparities would emphasize which point?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Once germ theory is known, social position cannot affect infectious risk"
+        },
+        {
+          "key": "B",
+          "text": "SES and socially excluded legal status are flexible resources (money, power, knowledge, beneficial social connections, freedom to choose) that keep reproducing unequal health even as specific diseases and mechanisms change"
+        },
+        {
+          "key": "C",
+          "text": "Only genetic ancestry, not exclusion from insurance, can delay presentation"
+        },
+        {
+          "key": "D",
+          "text": "Parsons’s sick role requires undocumented patients to be blamed for symptoms"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Link and Phelan argue that socioeconomic status is a fundamental cause of disease: it commands flexible resources that can be used to avoid risks and minimize consequences no matter which mechanisms are currently salient. Legal exclusion and social exclusion restrict those resources, producing delayed care and worse outcomes. Germ theory did not erase class gradients; mechanisms were replaced. Genetics does not exhaust presentation delay when insurance and deportation fear operate. Parsons’s sick role is a functionalist ideal, not a requirement to blame excluded patients.",
+      "distractor_rationales": {
+        "A": "Fundamental-cause theory exists because gradients survive mechanism change, including after germ theory.",
+        "C": "Access barriers are exactly the sort of resource restriction the theory highlights.",
+        "D": "The sick role’s “not responsible” clause is not a license to blame undocumented patients."
+      },
+      "difficulty_est": 0.61
+    }
+  ]
+}
