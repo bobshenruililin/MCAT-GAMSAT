@@ -193,6 +193,8 @@ export const fsrsState = sqliteTable(
     reps: integer("reps").notNull(),
     lapses: integer("lapses").notNull(),
     state: text("state").notNull().$type<FsrsCardState>(),
+    scheduledDays: real("scheduled_days").notNull().default(0),
+    learningSteps: integer("learning_steps").notNull().default(0),
   },
   (t) => [
     index("fsrs_state_due_at_idx").on(t.dueAt),

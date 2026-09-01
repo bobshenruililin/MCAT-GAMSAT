@@ -120,6 +120,8 @@ One row per reviewed or queued item. Scheduler is **ts-fsrs**; these columns sto
 | reps | integer not null | >= 0 |
 | lapses | integer not null | >= 0 |
 | state | text not null | `new` \| `learning` \| `review` \| `relearning` |
+| scheduled_days | real not null | ts-fsrs Card.scheduled_days; default 0 |
+| learning_steps | integer not null | ts-fsrs Card.learning_steps; default 0 |
 
 Index: `due_at`.
 
