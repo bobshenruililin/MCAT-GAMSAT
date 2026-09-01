@@ -46,14 +46,20 @@ describe("90-day FSRS fixture", () => {
     for (let day = 0; day < 90; day++) {
       const now = new Date(start.getTime() + day * 24 * 60 * 60 * 1000);
       dueCounts.push(getDueItems(db, now, 1000).length);
-      const { sessionId, config } = createDailySession(db, now, {
-        reviewCap: 50,
-        newCap: 15,
-      });
-      for (const itemId of config.itemIds) {
+      let created: ReturnType<typeof createDailySession>;
+      try {
+        created = createDailySession(db, now, {
+          reviewCap: 50,
+          newCap: 15,
+        });
+      } catch (err) {
+        if (String(err).includes("nothing due and no new items")) continue;
+        throw err;
+      }
+      for (const itemId of created.config.itemIds) {
         const correct = rng() > 0.15;
         recordAttempt(db, {
-          sessionId,
+          sessionId: created.sessionId,
           itemId,
           answeredKey: correct ? "A" : "B",
           confidence: correct ? 4 : 2,

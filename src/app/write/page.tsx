@@ -64,14 +64,16 @@ function WritingPane({ spec, task }: { spec: WritingTask; task: "A" | "B" }) {
   useEffect(() => {
     if (!running) return;
     const id = window.setInterval(() => {
-      setSecondsLeft((s) => (s <= 1 ? 0 : s - 1));
+      setSecondsLeft((s) => {
+        if (s <= 1) {
+          window.clearInterval(id);
+          return 0;
+        }
+        return s - 1;
+      });
     }, 1000);
     return () => window.clearInterval(id);
   }, [running]);
-
-  useEffect(() => {
-    if (secondsLeft === 0 && running) setRunning(false);
-  }, [secondsLeft, running]);
 
   useEffect(() => {
     const id = window.setTimeout(() => {
@@ -105,10 +107,11 @@ function WritingPane({ spec, task }: { spec: WritingTask; task: "A" | "B" }) {
           <button
             type="button"
             data-testid="write-timer-toggle"
-            className="rounded-md border border-zinc-300 px-3 py-1.5"
+            className="rounded-md border border-zinc-300 px-3 py-1.5 disabled:cursor-not-allowed disabled:text-zinc-400"
+            disabled={timedOut}
             onClick={() => setRunning((r) => !r)}
           >
-            {running ? "Pause" : "Start timer"}
+            {timedOut ? "Time up" : running ? "Pause" : "Start timer"}
           </button>
           <button
             type="button"
