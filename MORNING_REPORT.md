@@ -238,4 +238,23 @@ DREAM GAP: none reachable without the human
 
 SCORE IMPACT: none this cycle — the person walking into the room is now the bottleneck, which is the product.
 
+## Real exam bank — replace PLACEHOLDER, cover the map (2026-09-01)
+
+Shipped:
+- Deleted PLACEHOLDER seed. `pnpm seed` = taxonomy. `pnpm bootstrap` = taxonomy + every numbered batch + strip leftovers.
+- Numbered batches 09–25: 847 items, 25 original passages, 0 PLACEHOLDER, 0 verified, 0 schema rejects. All 290 weighted topics have ≥1 item.
+- CARS depth: census, musicology, conservation, urban commons, checkpoint courtesy (plus earlier archive/street). GAMSAT S1: cartoon+letter, paired ferry poems, lockout tram, news-verb table, memorial, borrowed-coat narrative.
+- GAMSAT S3 data passages (vesicle scatter, HA titration, decay counts) with `skill_tag` on rfd overlay skills (B-003 still weight 0 for newCap).
+- Today: section-block picker (Mixed / CARS / B/B / C/P / P/S / S1 / S2 / S3). Coverage bars on Today and Progress. Parchment shell. `/write` with 5 rotating packs per task.
+- Tests 63. Typecheck/lint green.
+
+Failed: items are still unverified AI; SCOREBOARD study log 0 until the human sits; overlays unscheduled by weight.
+
+Three riskiest things to review:
+1. CARS/S1 inference and weaken items (QC 11–15).
+2. Section tracks deferring other-family dues (B-012).
+3. Volume: 847 unverified cards can poison if studied blindly.
+
+SCORE IMPACT: Study hours can now be retrieval across the whole exam map, including CARS/S1 passages and a timed S2 sitting, instead of twenty placeholder stems — expected score per hour still waits on the human actually running those hours and catching remaining AI errors.
+
 

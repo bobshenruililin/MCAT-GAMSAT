@@ -147,4 +147,25 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Feature litmus is score per study hour this month. Study days are 0 on a 315-item unverified bank. More AI content fails trust. S2 craft is not retrieval MCQ. Three consecutive audits found no unblocked gap.
 - Rejected: Painting the heatmap with unverified CARS; treating demo streak as study; a fourth scheduling tweak that the user would not feel on exam morning.
 
+## 2026-09-01 — Kill PLACEHOLDER seed; bootstrap the real bank
+- Decision: `pnpm seed` loads taxonomy only. `pnpm bootstrap` ingests every numbered `content/batches/NN-*.json`. Leftover PLACEHOLDER stems are stripped. Study UI tells the human to bootstrap, not to live on placeholders.
+- Rationale: NORTH_STAR forbids unverified=true, not real tagged items. A seed bank whose stems are `[PLACEHOLDER]` trains nothing. Newest prompt: replace placeholders with the real thing.
+- Rejected: Keeping twenty PLACEHOLDER rows so Today is never empty; setting verified=true in software.
+
+## 2026-09-01 — Expand the bank despite DREAM cycle 8–10 stop
+- Decision: Cover every exam_weight>0 topic with original AI items through ingest+critic. Deepen CARS and GAMSAT S1 with additional original passages. Do not copy AAMC/ACER. Do not mark verified.
+- Rationale: Conflict rule: newest prompt wins on scope; NORTH_STAR wins on values. The DREAM stop was a scope choice against more unverified cards. The human then asked for a real bank with range and depth.
+- Rejected: Leaving 263 topics empty; flipping the bank to CARS-majority item count (B-009 still open); official-looking stems cloned from released papers.
+
+## 2026-09-01 — Section-track daily and diagnostic sessions
+- Decision: Today can start Mixed (exam-weight ranking) or a named family (CARS, B/B, C/P, P/S, S1, S2, S3). Assembler and diagnostic candidate lists filter by `sectionFamily`. Other-section dues wait (B-012).
+- Rationale: Exam morning is a sitting, not a mixed trivia hour. CARS and S3 clocks differ. A block raises expected score per hour for the paper you are actually training.
+- Rejected: A second scheduler; pulling future FSRS cards across sections; mid-question pacing nags.
+
+## 2026-09-01 — S2 studio with rotating quote packs
+- Decision: Keep S2 craft MCQs in the bank. `/write` is timed production, self-rubric, localStorage drafts, five Task A and five Task B packs rotating by UTC date (B-011).
+- Rationale: The real paper is 30 minutes of writing. Retrieval of craft is not the same as producing under the clock. Rotating packs prevent one memorised quote set.
+- Rejected: Auto-scoring essays; claiming ACER percentiles; forbidding the studio because NORTH_STAR says retrieval (the MCQ bank still is).
+
+
 
