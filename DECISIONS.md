@@ -132,4 +132,9 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: The dream is that the trap comes back until it dies. Naming "you missed this before" raises care on retrieval. Naming "trap" before answer would leak the trick.
 - Rejected: Showing error class before reveal; counting demo:seed; a separate leech queue.
 
+## 2026-09-01 — Underconfidence note on low-confidence hits
+- Decision: After reveal, if the answer is right and confidence was 1 or 2, show a one-line note that a low rating brings the card back sooner than memory needs. Hits at 3–5 stay silent. FSRS mapping is unchanged (still Hard).
+- Rationale: ratingFromAttempt maps correct+conf≤2 to FSRS Hard. That burns future study hours on cards already retrieved. The dream wants confidence and accuracy to be the same number in both directions.
+- Rejected: Changing the FSRS mapping; forcing a confidence edit after reveal; nagging on confidence 3.
+
 

@@ -190,4 +190,16 @@ Failed: still silent until a real item is missed and later due.
 
 SCORE IMPACT: Re-seeing a known miss now flags that this exact card has beaten them before, so the minute spent on it is aimed at killing that item instead of treating it as new.
 
+## DREAM cycle 6 — underconfidence on low-confidence hits (2026-09-01)
+
+Gap: confidence and accuracy were nudged only when the user was sure and wrong. A correct answer marked 1–2 still trains FSRS Hard, so known cards return too soon and steal later study hours.
+
+Shipped:
+- Reveal note when correct and confidence ≤ 2: same-number calibration, and that a low rating brings the card back sooner than memory needs.
+- Confidence 3–5 hits stay silent. Tests: 55. Green typecheck/lint.
+
+Failed: calibration still cannot match accuracy until the human studies.
+
+SCORE IMPACT: Study hours later in the week are less likely to be spent re-reviewing cards the user already knew, because today's low-confidence hits are named as a scheduling mistake.
+
 
