@@ -122,4 +122,9 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: The dream is that confidence and accuracy are the same number. The Progress calibration chart is after-the-fact. The expensive miss is the sure-wrong one during the session.
 - Rejected: Nagging on every miss; blocking Next behind the note; changing the 1–5 confidence scale.
 
+## 2026-09-01 — Hunt-topic due reviews keep relative order but go first
+- Decision: Inside the existing due set (up to reviewCap), hunt-topic items are sorted ahead of other dues. ts-fsrs due timestamps are not changed. Cards that are not yet due stay unscheduled.
+- Rationale: Cycle 1 hunted with new items only. A trap that FSRS already marked due could still wait behind an older unrelated due. Reordering dues is error-driven remediation; pulling future cards forward would be a hand-rolled scheduler.
+- Rejected: Overriding FSRS due dates; dropping non-hunt dues; a second session type for leeches.
+
 

@@ -164,4 +164,16 @@ Failed: calibration still cannot equal accuracy until the human studies.
 
 SCORE IMPACT: The hour of study now includes an immediate correction when the user was sure and wrong, which is the miss that most poisons exam-day confidence.
 
+## DREAM cycle 4 — hunt-topic dues first (2026-09-01)
+
+Gap: sister new items from hunted nodes ranked first, but a due review of the same trap still sat behind earlier-due unrelated cards, so the session could burn the fresh hour on the wrong node.
+
+Shipped:
+- Daily assemble stable-sorts due reviews so hunt-topic cards come first (dueAt order preserved within hunt / non-hunt). FSRS due dates unchanged; no due card dropped.
+- Tests: 52. Green typecheck/lint.
+
+Failed: the trap still has to be due — we do not pull future FSRS cards forward.
+
+SCORE IMPACT: When a classified trap is already due, the first minutes of the session hit that node instead of an older unrelated due, which is more score per hour of morning review.
+
 
