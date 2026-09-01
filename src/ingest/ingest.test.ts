@@ -122,4 +122,34 @@ describe("ingest validation", () => {
     expect(db.select({ n: count() }).from(items).get()?.n).toBe(1);
     close();
   });
+
+  it("removes leftover PLACEHOLDERs on uncovered topics once any real item exists", () => {
+    const { db, close } = tempMigratedDb();
+    seedFromFile(db, TAXONOMY_PATH);
+    ingestFileContents(db, JSON.stringify({ items: [discrete()] }), "a.json");
+    db.insert(items)
+      .values({
+        id: "ph-cars",
+        type: "discrete",
+        passageId: null,
+        conceptId: "MCAT.CARS.FND.t1",
+        skillTag: null,
+        stem: "[PLACEHOLDER] CARS leftover",
+        choices: [
+          { key: "A", text: "a" },
+          { key: "B", text: "b" },
+        ],
+        correctKey: "A",
+        explanation: "placeholder",
+        distractorRationales: { B: "x" },
+        difficultyEst: 0.4,
+        source: "ai_generated",
+        verified: false,
+        createdAt: "2026-09-01T00:00:00.000Z",
+      })
+      .run();
+    expect(removeCoveredPlaceholders(db)).toBe(1);
+    expect(db.select({ n: count() }).from(items).get()?.n).toBe(1);
+    close();
+  });
 });

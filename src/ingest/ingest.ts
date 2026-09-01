@@ -112,15 +112,23 @@ export function ingestFileContents(
   };
 }
 
-/** Delete PLACEHOLDER items whose topic now has at least one real item. */
+/**
+ * Delete PLACEHOLDER items once a real bank exists.
+ * Covered-topic rows always go. Leftover uncovered PLACEHOLDERs also go if
+ * any real item is present — otherwise high-weight CARS placeholders would
+ * be scheduled before the starter bank (NORTH_STAR: do not study fakes).
+ */
 export function removeCoveredPlaceholders(db: AppDb): number {
   const all = db.select().from(items).all();
+  const hasReal = all.some((row) => !row.stem.includes("PLACEHOLDER"));
   const realByTopic = new Set(
     all.filter((row) => !row.stem.includes("PLACEHOLDER")).map((row) => row.conceptId),
   );
-  const doomed = all.filter(
-    (row) => row.stem.includes("PLACEHOLDER") && realByTopic.has(row.conceptId),
-  );
+  const doomed = all.filter((row) => {
+    if (!row.stem.includes("PLACEHOLDER")) return false;
+    if (realByTopic.has(row.conceptId)) return true;
+    return hasReal;
+  });
   const passageIds = new Set(
     doomed.map((row) => row.passageId).filter((id): id is string => Boolean(id)),
   );
@@ -203,7 +211,7 @@ function main() {
     const { sqlite, db } = openDb();
     try {
       const n = removeCoveredPlaceholders(db);
-      console.log(`removed ${n} PLACEHOLDER items whose topics now have real items`);
+      console.log(`removed ${n} PLACEHOLDER items (real bank present)`);
     } finally {
       sqlite.close();
     }
