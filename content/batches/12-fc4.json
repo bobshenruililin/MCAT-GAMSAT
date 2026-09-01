@@ -1,0 +1,1244 @@
+{
+  "items": [
+    {
+      "concept_id": "MCAT.FC4.4A.t1",
+      "type": "discrete",
+      "stem": "A 2 kg laboratory cart is at rest on a level air track. A constant net force then gives it a uniform acceleration of 2 m/s^2 for 5 s. How far does the cart travel during those 5 s?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "10 m"
+        },
+        {
+          "key": "B",
+          "text": "25 m"
+        },
+        {
+          "key": "C",
+          "text": "50 m"
+        },
+        {
+          "key": "D",
+          "text": "5 m"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "From rest, displacement under constant acceleration is x = (1/2) a t^2. Substituting a = 2 m/s^2 and t = 5 s gives x = (1/2)(2)(25) = 25 m. Equivalently, the final speed is v = a t = 10 m/s, so the average speed is 5 m/s and x = 5 m/s times 5 s = 25 m. Using the final speed in x = v t doubles the distance to 50 m, and dropping the factor of one-half or using t instead of t^2 undercounts the displacement.",
+      "distractor_rationales": {
+        "A": "This is a t = 10 m, which omits the 1/2 in x = (1/2) a t^2, or it is the change in speed rather than the distance traveled.",
+        "C": "This is v_final t = 50 m. That would be correct only if the cart had traveled at 10 m/s for the entire interval; it started from rest, so the average speed is 5 m/s.",
+        "D": "This is (1/2) a t = 5 m, treating t as if it were t^2. Time must be squared in the rest-start displacement formula."
+      },
+      "difficulty_est": 0.32
+    },
+    {
+      "concept_id": "MCAT.FC4.4A.t1",
+      "type": "discrete",
+      "stem": "A sprinter moving at a constant 10 m/s begins to slow with uniform acceleration and comes to rest after covering 20 m. The sprinter's acceleration during the slowing interval is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "-0.50 m/s^2"
+        },
+        {
+          "key": "B",
+          "text": "-2.5 m/s^2"
+        },
+        {
+          "key": "C",
+          "text": "-5.0 m/s^2"
+        },
+        {
+          "key": "D",
+          "text": "-10 m/s^2"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The time-independent kinematic relation is v^2 = v0^2 + 2 a x. With v = 0, v0 = 10 m/s, and x = 20 m this is 0 = 100 + 2 a (20), so 40 a = -100 and a = -2.5 m/s^2. The negative sign means the acceleration is opposite the original velocity. The same result follows from v_avg = 5 m/s, t = 20/5 = 4 s, and a = Delta v / t = -10/4 = -2.5 m/s^2.",
+      "distractor_rationales": {
+        "A": "This is -v/x = -10/20. Acceleration is Delta v / t, not Delta v / x; you need the factor of 2 in v^2 = v0^2 + 2 a x.",
+        "C": "This is -v^2 / x = -100/20, which drops the 2 in 2 a x. That overstates the magnitude of the deceleration.",
+        "D": "This is simply -v0 with the units changed, or -v^2 / (2 x) evaluated with x = 5 m. It does not satisfy the kinematic equation for a 20 m stop from 10 m/s."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC4.4A.t2",
+      "type": "discrete",
+      "stem": "A 2 kg block rests on a rough horizontal table. A horizontal 10 N force is applied, and kinetic friction on the block is 4 N while it slides. The acceleration of the block is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "3 m/s^2"
+        },
+        {
+          "key": "B",
+          "text": "5 m/s^2"
+        },
+        {
+          "key": "C",
+          "text": "7 m/s^2"
+        },
+        {
+          "key": "D",
+          "text": "2 m/s^2"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Newton's second law uses the net force, not the applied force alone. Horizontal forces are 10 N forward and 4 N of kinetic friction backward, so F_net = 6 N. Then a = F_net / m = 6 N / 2 kg = 3 m/s^2 in the direction of the 10 N pull. Vertical forces cancel (normal force balances weight), so they do not contribute to the horizontal acceleration. Ignoring friction or adding the friction force both produce a wrong net force.",
+      "distractor_rationales": {
+        "B": "This is 10 N / 2 kg, which treats the table as frictionless. The 4 N kinetic friction must be subtracted before dividing by mass.",
+        "C": "This is (10 + 4)/2, adding friction to the pull as if both forces pointed the same way. Kinetic friction opposes sliding, so it reduces F_net.",
+        "D": "This is 4 N / 2 kg, using only the friction force. Friction is not the net force while a larger applied force acts forward."
+      },
+      "difficulty_est": 0.34
+    },
+    {
+      "concept_id": "MCAT.FC4.4A.t2",
+      "type": "discrete",
+      "stem": "A 2 kg point mass sits at x = 0 and a 6 kg point mass sits at x = 4 m, both on the x-axis and otherwise isolated. The x-coordinate of the system's center of mass is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1 m"
+        },
+        {
+          "key": "B",
+          "text": "2 m"
+        },
+        {
+          "key": "C",
+          "text": "3 m"
+        },
+        {
+          "key": "D",
+          "text": "4 m"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The center of mass of two point masses is the mass-weighted average x_cm = (m1 x1 + m2 x2) / (m1 + m2). Substituting gives (2 kg)(0) + (6 kg)(4 m) all over 8 kg, which is 24/8 = 3 m. The center of mass therefore lies closer to the heavier 6 kg mass than to the 2 kg mass, as expected, but it is not at the 6 kg mass itself. Equal-mass averaging would put it at the geometric midpoint 2 m, which does not apply here.",
+      "distractor_rationales": {
+        "A": "This inverts the mass weighting or uses (2/8)*4 m. The heavier mass should pull x_cm toward 4 m, not toward 0.",
+        "B": "This is the geometric midpoint, correct only if the two masses were equal. The 6 kg mass outweighs the 2 kg mass three to one.",
+        "D": "The center of mass coincides with a mass only if the other mass is zero or is located at the same point. The 2 kg mass still shifts x_cm left of 4 m."
+      },
+      "difficulty_est": 0.3
+    },
+    {
+      "concept_id": "MCAT.FC4.4A.t3",
+      "type": "discrete",
+      "stem": "A rigid, massless board is balanced on a fulcrum. A 2 kg mass sits 3 m to the left of the fulcrum. What mass placed 1 m to the right of the fulcrum produces static equilibrium? Take g = 10 m/s^2.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2 kg"
+        },
+        {
+          "key": "B",
+          "text": "3 kg"
+        },
+        {
+          "key": "C",
+          "text": "6 kg"
+        },
+        {
+          "key": "D",
+          "text": "8 kg"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Static equilibrium of a rigid body requires zero net torque about the fulcrum (and zero net force, which the fulcrum can supply). Taking counterclockwise as positive, (2 kg)(10 m/s^2)(3 m) = m (10 m/s^2)(1 m), so m = 6 kg. Gravity cancels, leaving the lever rule m1 d1 = m2 d2. A smaller mass on a longer arm balances a larger mass on a shorter arm: 2 kg at 3 m matches 6 kg at 1 m.",
+      "distractor_rationales": {
+        "A": "Equal masses would balance only if the lever arms were equal. The left arm is three times the right arm, so the right-hand mass must be three times 2 kg.",
+        "B": "This averages the given numbers or uses 2 kg times 3 m / 2 m. Torque balance uses the actual 1 m right-hand arm, not an invented 2 m.",
+        "D": "This adds 2 + 3 + 3 or otherwise combines the given figures without using torque = force times perpendicular lever arm."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC4.4A.t3",
+      "type": "discrete",
+      "stem": "A 10 N force is applied to a door at a point 2 m from the hinge. The angle between the position vector from the hinge to that point and the force vector is 30 degrees. The magnitude of the torque about the hinge is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "10 N·m"
+        },
+        {
+          "key": "B",
+          "text": "20 N·m"
+        },
+        {
+          "key": "C",
+          "text": "17 N·m"
+        },
+        {
+          "key": "D",
+          "text": "5 N·m"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Torque magnitude is τ = r F sin θ, where θ is the angle between r and F. Here r = 2 m, F = 10 N, and θ = 30°, so sin 30° = 1/2 and τ = (2)(10)(1/2) = 10 N·m. Only the component of force perpendicular to the lever arm produces torque; that component is F sin 30° = 5 N, and 5 N times 2 m is again 10 N·m. Using sin 90° treats the force as fully perpendicular and doubles the torque.",
+      "distractor_rationales": {
+        "B": "This is r F with sin θ omitted, as if the force were perpendicular to the door. The 30° angle cuts the perpendicular component in half.",
+        "C": "This uses sin 60° or cos 30° (about 0.87) in place of sin 30°. The problem defines θ as the angle between r and F, whose sine is 1/2.",
+        "D": "This is (1/2) F or r sin 30° without multiplying by the remaining factor, giving half of the already-halved result."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC4.4A.t4",
+      "type": "discrete",
+      "stem": "A constant 10 N force acts on an object that undergoes a 2 m displacement. The force is directed at 60° to the displacement. The work done by this force is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "20 J"
+        },
+        {
+          "key": "B",
+          "text": "0 J"
+        },
+        {
+          "key": "C",
+          "text": "17 J"
+        },
+        {
+          "key": "D",
+          "text": "10 J"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Work by a constant force is W = F d cos θ, where θ is the angle between force and displacement. Cos 60° = 1/2, so W = (10 N)(2 m)(1/2) = 10 J. Only the component of force along the displacement, F cos 60° = 5 N, does work; 5 N through 2 m is 10 J. Work is zero only for a perpendicular force (θ = 90°, cos 90° = 0), not for 60°. Using sine in place of cosine is the complementary-angle trap.",
+      "distractor_rationales": {
+        "A": "This is F d with the cosine omitted, as if the force were parallel to the displacement (θ = 0°, cos 0° = 1).",
+        "B": "Work is zero when force is perpendicular to displacement. Sixty degrees is not 90 degrees, so a nonzero parallel component remains.",
+        "C": "This is F d sin 60° (or F d cos 30°), swapping sine and cosine. The work formula uses the cosine of the given angle between F and d."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC4.4A.t4",
+      "type": "discrete",
+      "stem": "A 2 kg object starts from rest. A net force does 100 J of work on it. The object's speed after that work is done is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "5 m/s"
+        },
+        {
+          "key": "B",
+          "text": "7 m/s"
+        },
+        {
+          "key": "C",
+          "text": "10 m/s"
+        },
+        {
+          "key": "D",
+          "text": "50 m/s"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The work–energy theorem states that net work equals the change in kinetic energy. The object starts at rest, so W_net = (1/2) m v^2 = 100 J. With m = 2 kg this is (1/2)(2) v^2 = v^2 = 100, hence v = 10 m/s. The mass factor 1/2 m equals 1 kg, so the speed in m/s is simply the square root of the work in joules. Forgetting the 1/2 or treating KE as m v rather than (1/2) m v^2 produces the slower distractors.",
+      "distractor_rationales": {
+        "A": "This is W/m divided by something extra, or v = sqrt(W/m)/sqrt(2). Solving (1/2) m v^2 = 100 with m = 2 kg does not yield 5 m/s.",
+        "B": "This is about sqrt(50), which appears if KE is taken as m v^2 without the 1/2: 2 v^2 = 100 gives v = sqrt(50) ≈ 7 m/s.",
+        "D": "This is W/m = 50, as if work were equal to m v or to m a with a confused for v. Energy has a squared speed, so the square root is required."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC4.4A.t5",
+      "type": "discrete",
+      "stem": "A 2 kg stone is released from rest 10 m above the ground. Take g = 10 m/s^2 and neglect air resistance. The speed of the stone just before it hits the ground is closest to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "10 m/s"
+        },
+        {
+          "key": "B",
+          "text": "14 m/s"
+        },
+        {
+          "key": "C",
+          "text": "20 m/s"
+        },
+        {
+          "key": "D",
+          "text": "200 m/s"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Mechanical energy is conserved: gravitational potential energy converts entirely into kinetic energy. mgh = (1/2) m v^2, so v = sqrt(2 g h) = sqrt(2 × 10 × 10) = sqrt(200) ≈ 14.1 m/s. The mass cancels, which is why a 2 kg stone and a 1 kg stone hit at the same speed from the same height in vacuum. Using v = g t with an incorrect time, or forgetting the square root of 2 g h, misses this value.",
+      "distractor_rationales": {
+        "A": "This is sqrt(g h) or the numerical value of g (or of the 10 m height). The free-fall identity is v = sqrt(2 g h), which includes the 2.",
+        "C": "This is g t with t = 2 s, but the actual time from rest is t = sqrt(2 h/g) = sqrt(2) s ≈ 1.4 s, giving v ≈ 14 m/s, not 20 m/s.",
+        "D": "This is 2 g h without taking the square root. Speed is the square root of 200 m^2/s^2, not 200 m/s."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC4.4A.t5",
+      "type": "discrete",
+      "stem": "A winch pulls a crate horizontally at a constant 2 m/s. The tension in the cable is a constant 10 N. The instantaneous mechanical power delivered by the tension is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0 W, because kinetic energy is not changing"
+        },
+        {
+          "key": "B",
+          "text": "5 W"
+        },
+        {
+          "key": "C",
+          "text": "20 W"
+        },
+        {
+          "key": "D",
+          "text": "40 W"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Instantaneous power delivered by a force is P = F · v = F v when force and velocity are parallel. Here P = (10 N)(2 m/s) = 20 W. Constant speed means the net force on the crate is zero, so friction (or another opposing force) cancels the 10 N and net work is zero, but the tension still does positive work at rate F v. The opposing force does an equal negative work, which is why KE stays constant. Over any 1 s interval the tension does 20 J of work, which is 20 W of power from that one force.",
+      "distractor_rationales": {
+        "A": "Zero net work (and unchanging KE) does not mean every force delivers zero power. Tension does +20 W; the opposing force does −20 W.",
+        "B": "This is F/v = 10/2. Power is the product F v, not the quotient; N/(m/s) is not a watt.",
+        "D": "This is 2 F v, perhaps inserting a leftover 2 from (1/2) m v^2. That factor does not belong in P = F v."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC4.4A.t6",
+      "type": "discrete",
+      "stem": "A simple pendulum of length 10 m and bob mass 2 kg executes small-amplitude oscillations. Take g = 10 m/s^2. If the bob is replaced by a 4 kg bob of the same size, the period is closest to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2.0 s"
+        },
+        {
+          "key": "B",
+          "text": "3.1 s"
+        },
+        {
+          "key": "C",
+          "text": "6.3 s"
+        },
+        {
+          "key": "D",
+          "text": "12.6 s"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "For small angles the simple-pendulum period is T = 2π sqrt(L/g), which does not depend on mass. With L = 10 m and g = 10 m/s^2, sqrt(L/g) = 1 s and T = 2π ≈ 6.3 s. Doubling the bob from 2 kg to 4 kg therefore leaves T unchanged. The result also does not depend on amplitude provided the motion stays in the small-angle regime. Omitting the 2π, using π only, or doubling T with mass are the usual errors.",
+      "distractor_rationales": {
+        "A": "This is sqrt(L/g) with the 2π omitted, or T = 2 s from a misremembered T = 2 sqrt(L). The full factor is 2π.",
+        "B": "This is π sqrt(L/g) ≈ 3.1 s, missing a factor of two. The period of a simple pendulum is 2π sqrt(L/g), not π sqrt(L/g).",
+        "D": "This doubles 6.3 s on the (incorrect) idea that T scales with mass, or it is 4π sqrt(L/g). Mass cancels in the pendulum derivation."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC4.4A.t6",
+      "type": "discrete",
+      "stem": "A string of length 2.0 m is fixed at both ends. Transverse waves on the string travel at 10 m/s. The frequency of the fundamental standing wave is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1.25 Hz"
+        },
+        {
+          "key": "B",
+          "text": "2.5 Hz"
+        },
+        {
+          "key": "C",
+          "text": "5.0 Hz"
+        },
+        {
+          "key": "D",
+          "text": "20 Hz"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "A string fixed at both ends has a node at each end, so the fundamental fits one-half wavelength into the string: λ/2 = L, or λ = 2L = 4.0 m. Frequency and wavelength are related by v = f λ, so f = v/λ = 10 m/s / 4.0 m = 2.5 Hz. Equivalently, f_n = n v / (2 L) with n = 1 gives 10 / 4 = 2.5 Hz. A closed air column uses v/(4L) for its fundamental, which is a different boundary condition and does not apply to this string.",
+      "distractor_rationales": {
+        "A": "This is v/(4L), the closed-pipe (node–antinode) fundamental. Both ends of the string are nodes, so the fundamental is v/(2L), not v/(4L).",
+        "C": "This is v/L = 5 Hz, which would be the n = 2 harmonic (one full wavelength on the string), not the fundamental.",
+        "D": "This is v L or 2 v L with scrambled units. Frequency is speed divided by wavelength, and λ_fundamental = 2L = 4 m, not a product of v and L."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC4.4B.t2",
+      "type": "discrete",
+      "stem": "In the systemic circulation, the mean speed of blood is lowest in the capillaries. The best physical reason is that capillaries, taken as a bed:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "have the smallest individual radii, and Poiseuille's law then forces speed to be lowest in the narrowest tubes"
+        },
+        {
+          "key": "B",
+          "text": "have the largest total cross-sectional area, so continuity (Q = A v) requires the lowest mean speed"
+        },
+        {
+          "key": "C",
+          "text": "have the highest hydrostatic pressure, which stalls erythrocytes between heartbeats"
+        },
+        {
+          "key": "D",
+          "text": "contain one-way valves that bring flow to zero in diastole"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Cardiac output is the volume flow rate through the systemic circuit as a whole. Continuity then says Q = A_total v_mean is the same (in series-averaged terms) along the circuit, so the bed with the largest total cross-sectional area has the smallest mean speed. Millions of capillaries in parallel give that maximum area, even though each capillary is individually narrow. Hydrostatic pressure is highest in the aorta, not the capillaries, and one-way valves are a venous feature, not a capillary one. Poiseuille's r^4 law governs resistance of a single tube; it does not by itself set the speed ranking across the vascular tree.",
+      "distractor_rationales": {
+        "A": "An individual capillary is narrow, but the capillary bed is a huge parallel network. Continuity uses total area, which is largest—not smallest—at the capillaries, so mean speed is lowest there.",
+        "C": "Hydrostatic pressure falls along the arterial tree and is not highest in capillaries; the aorta is the high-pressure vessel. High pressure would not by itself minimize speed.",
+        "D": "Valves that prevent retrograde flow sit in veins, not capillaries. Capillary flow is slow and relatively steady; it is not gated to zero each diastole by valves."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC4.4B.t2",
+      "type": "discrete",
+      "stem": "Along a typical systemic pathway, the largest drop in blood pressure occurs across the arterioles. This is because arterioles:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "are the principal resistance vessels: they present the greatest frictional drop for a given cardiac output"
+        },
+        {
+          "key": "B",
+          "text": "are the highest-pressure vessels in the circuit, so more of the pressure head is spent there by definition"
+        },
+        {
+          "key": "C",
+          "text": "have the smallest total cross-sectional area, producing the highest linear speed and therefore the largest Bernoulli pressure drop"
+        },
+        {
+          "key": "D",
+          "text": "contain one-way valves, so pressure must fall to zero on the downstream side of each valve"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "In a series circuit the pressure drop across a segment is ΔP = Q R. Cardiac output Q is the same through aorta, arteries, arterioles, capillaries, and veins; the segment with the largest resistance therefore takes the largest ΔP. Arterioles combine modest radii with muscular walls that set tone, making them the main resistance vessels and the site of the steepest pressure fall. The aorta, not the arteriole, is the highest-pressure vessel. Total area is smallest and speed greatest in the aorta, so a Bernoulli argument aimed at arterioles is pointed at the wrong segment. Venous valves do not explain the arteriolar pressure drop.",
+      "distractor_rationales": {
+        "B": "The aorta and large arteries are the high-pressure reservoir. Pressure is already lower as blood enters the arterioles; what is distinctive is the drop across them, not a peak value inside them.",
+        "C": "Total cross-sectional area is smallest in the aorta, where speed is greatest. Arterioles are not the Bernoulli-fast segment, and the physiologic pressure drop is resistive (Poiseuille), not a reversible Bernoulli trade.",
+        "D": "One-way valves are in veins (and lymphatics), not arterioles. They prevent backflow; they are not the reason arterial pressure falls."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC4.4C.t1",
+      "type": "discrete",
+      "stem": "Two point charges in vacuum exert a repulsive force of 16 N when they are 1.0 m apart. If the same charges are moved to 2.0 m apart, the force is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "4 N"
+        },
+        {
+          "key": "B",
+          "text": "8 N"
+        },
+        {
+          "key": "C",
+          "text": "32 N"
+        },
+        {
+          "key": "D",
+          "text": "64 N"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Coulomb's law is F = k |q1 q2| / r^2, so force scales as the inverse square of separation. Doubling r multiplies F by 1/4: 16 N / 4 = 4 N. The force remains repulsive because the product q1 q2 does not change sign. Inverse-linear scaling (halving to 8 N) would apply to electric potential, which goes as 1/r, not to force. Increasing the force when charges move apart would violate the inverse-square dependence.",
+      "distractor_rationales": {
+        "B": "This halves the force, as if F were proportional to 1/r (the scaling of potential V). Force and field scale as 1/r^2.",
+        "C": "This doubles the force. Separating like charges reduces the repulsive force; it does not increase it.",
+        "D": "This multiplies by 4, inverting the inverse-square law (using r^2 in the numerator). Doubling distance must quarter the Coulomb force."
+      },
+      "difficulty_est": 0.34
+    },
+    {
+      "concept_id": "MCAT.FC4.4C.t1",
+      "type": "discrete",
+      "stem": "A uniform electric field of 10 N/C is directed from plate L toward plate R. The plates are 2.0 m apart. Which statement is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Plate R is at the higher potential, and |ΔV| between the plates is 20 V."
+        },
+        {
+          "key": "B",
+          "text": "Plate L is at the higher potential, and |ΔV| between the plates is 20 V."
+        },
+        {
+          "key": "C",
+          "text": "Plate L is at the higher potential, and |ΔV| between the plates is 5 V."
+        },
+        {
+          "key": "D",
+          "text": "The plates are at equal potential because a uniform field means potential does not change with position."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "By definition E points from higher electric potential toward lower potential, so plate L (where the field originates in this description) is at the higher V. In a uniform field the magnitude of the potential difference is |ΔV| = E d = (10 N/C)(2.0 m) = 20 V. A uniform field means E is constant, not that V is constant: V still drops linearly along the field. Dividing E by d instead of multiplying inverts the relation between field and potential difference.",
+      "distractor_rationales": {
+        "A": "The field direction is high V to low V, so L, not R, is the high-potential plate. The 20 V magnitude is right but assigned to the wrong plate.",
+        "C": "L is the high-potential plate, but |ΔV| = E d = 20 V, not E/d = 5 V. Field is potential drop per meter, so you multiply by the 2 m gap.",
+        "D": "A uniform field is a constant slope of V versus position, not a flat potential. Only E = 0 would make the plates equipotential."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "MCAT.FC4.4C.t2",
+      "type": "discrete",
+      "stem": "A 10 V battery with negligible internal resistance is connected to two 2 Ω resistors. The current drawn from the battery is largest when the resistors are arranged so that:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "they are in series, because then Req = 4 Ω and I = 2.5 A"
+        },
+        {
+          "key": "B",
+          "text": "they are in series, because then voltages add and I = 10 A"
+        },
+        {
+          "key": "C",
+          "text": "they are in parallel, because then Req = 1 Ω and I = 10 A"
+        },
+        {
+          "key": "D",
+          "text": "they are in parallel, because then Req = 4 Ω and I = 2.5 A"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Battery current is I = V / Req. Two equal 2 Ω resistors in series have Req = 4 Ω, so I = 10/4 = 2.5 A. In parallel, 1/Req = 1/2 + 1/2, so Req = 1 Ω and I = 10/1 = 10 A. The parallel hookup therefore draws the larger current because it presents the smaller equivalent resistance. Series resistors add; they do not produce I = V/R of a single 1 Ω or a free 10 A from 'adding voltages.' Parallel resistors combine as a reciprocal sum, which for two equal resistors is half of one resistor, not the series sum.",
+      "distractor_rationales": {
+        "A": "The series numbers are computed correctly (Req = 4 Ω, I = 2.5 A), but that current is smaller than the parallel current, not larger.",
+        "B": "Series voltages across the two resistors add to 10 V, but that does not make I = 10 A. Current is V/Req = 10/4 = 2.5 A.",
+        "D": "Parallel combination of two 2 Ω resistors is 1 Ω, not 4 Ω. Four ohms is the series sum, which would give the smaller current."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "MCAT.FC4.4C.t2",
+      "type": "discrete",
+      "stem": "A uniform metal wire has resistance 8 Ω. It is drawn through a die so that its length doubles while its volume remains the same. The resistance of the stretched wire is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "4 Ω"
+        },
+        {
+          "key": "B",
+          "text": "8 Ω"
+        },
+        {
+          "key": "C",
+          "text": "16 Ω"
+        },
+        {
+          "key": "D",
+          "text": "32 Ω"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Resistance is R = ρ L / A. Volume V = A L is conserved, so doubling L forces A to halve. The new resistance is therefore R' = ρ (2L) / (A/2) = 4 (ρ L / A) = 4 R = 32 Ω. Length in the numerator and area in the denominator each contribute a factor of two. Resistivity ρ is a material property and does not change merely because the wire is longer. Treating only L as doubled while holding A fixed undercounts the increase (16 Ω instead of 32 Ω).",
+      "distractor_rationales": {
+        "A": "This halves the original resistance, as if stretching made the wire a better conductor. Both the longer path and the thinner cross-section raise R.",
+        "B": "Volume and mass are unchanged, but resistance depends on geometry (L/A), which did change. Unchanged ρ is not the same as unchanged R.",
+        "C": "This doubles R using only L' = 2L and holding A fixed. Drawing the wire conserves volume, so A also halves and R scales by four, not two."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "MCAT.FC4.4C.t3",
+      "type": "discrete",
+      "stem": "A proton moves parallel to a uniform magnetic field. The magnetic force on the proton is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "zero, because F = q v B sin θ and sin 0° = 0"
+        },
+        {
+          "key": "B",
+          "text": "maximum in magnitude and always perpendicular to v"
+        },
+        {
+          "key": "C",
+          "text": "parallel to v, so the proton speeds up"
+        },
+        {
+          "key": "D",
+          "text": "antiparallel to v, so the proton slows down"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The magnetic force on a charge is F = q v B sin θ, with θ the angle between velocity and B. Parallel motion means θ = 0°, sin 0° = 0, and F = 0. When the force is not zero it is always perpendicular to v, so magnetic forces never change a charge's speed—only its direction. That perpendicular force is simply absent in this geometry. There is no magnetic analog of a parallel electric force that would accelerate the proton along the field lines.",
+      "distractor_rationales": {
+        "B": "The maximum force is q v B, which occurs at θ = 90°, not at θ = 0°. Parallel velocity produces no magnetic force at all.",
+        "C": "A magnetic force, when it exists, is perpendicular to v and does no work, so it cannot increase speed. Parallel v and B yield F = 0 besides.",
+        "D": "Magnetic forces do not act as drag along v. They are either perpendicular to v or zero; they do not reverse the velocity vector by slowing the particle."
+      },
+      "difficulty_est": 0.32
+    },
+    {
+      "concept_id": "MCAT.FC4.4C.t3",
+      "type": "discrete",
+      "stem": "A straight wire of length 10 m carries a current of 2 A perpendicular to a uniform 1.0 T magnetic field. The magnitude of the magnetic force on the wire is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.20 N"
+        },
+        {
+          "key": "B",
+          "text": "2.0 N"
+        },
+        {
+          "key": "C",
+          "text": "12 N"
+        },
+        {
+          "key": "D",
+          "text": "20 N"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "A current-carrying wire in a magnetic field feels F = I L B sin θ. With I = 2 A, L = 10 m, B = 1.0 T, and θ = 90° (sin 90° = 1), F = (2)(10)(1) = 20 N. The direction would be given by a right-hand rule, but the question asks only for magnitude. Dropping the length or the current undercounts by a factor of 10 or 2. The formula is linear in I, L, and B; there is no extra trigonometric factor once the current is already perpendicular to B.",
+      "distractor_rationales": {
+        "A": "This looks like I B / L or a units slip that buried the 10 m. F = I L B uses the product, so the 10 m length raises the force, not lowers it.",
+        "B": "This is I B with L omitted (or L taken as 1 m). A 10 m wire has ten times the current-length product of a 1 m wire in the same field.",
+        "C": "This combination of 10 + 2 or 10 × 1 + 2 is dimensional nonsense. All three of I, L, and B multiply."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC4.4C.t4",
+      "type": "discrete",
+      "stem": "In a spontaneous galvanic cell, electrons travel through the external wire from:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "cathode to anode; reduction occurs at the anode"
+        },
+        {
+          "key": "B",
+          "text": "anode to cathode; oxidation occurs at the anode"
+        },
+        {
+          "key": "C",
+          "text": "anode to cathode; oxidation occurs at the cathode"
+        },
+        {
+          "key": "D",
+          "text": "cathode to anode; in a galvanic cell the anode is the positive terminal"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Oxidation (loss of electrons) is defined to occur at the anode, so electrons are liberated there and travel through the external circuit toward the cathode, where reduction (gain of electrons) occurs. In a galvanic cell this process is spontaneous: the anode is the negative terminal and the cathode is positive, which is why electrons flow anode → cathode in the wire. Reversing either the electron direction or the oxidation/reduction assignment contradicts those definitions. The electrolytic sign convention (anode positive) does not apply to a galvanic cell.",
+      "distractor_rationales": {
+        "A": "Electrons do not leave the cathode in the external wire; they arrive there to drive reduction. Oxidation is the anodic process, not a cathodic one.",
+        "C": "Electron flow anode → cathode is correct, but oxidation is not a cathode process. The cathode is where reduction occurs.",
+        "D": "In a galvanic cell the anode is negative, not positive (the electrolytic cell reverses the signs). Electrons still originate at the anode."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC4.4C.t4",
+      "type": "discrete",
+      "stem": "A current of 10 A is passed for 9650 s through molten NaCl in an electrolytic cell. Taking Faraday's constant as 96,500 C/mol, the amount of sodium metal produced at the cathode is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.10 mol"
+        },
+        {
+          "key": "B",
+          "text": "0.50 mol"
+        },
+        {
+          "key": "C",
+          "text": "1.0 mol"
+        },
+        {
+          "key": "D",
+          "text": "2.0 mol"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Charge delivered is Q = I t = (10 A)(9650 s) = 96,500 C, which is exactly one mole of electrons. Cathodic reduction of sodium ion is Na+ + e− → Na, a one-electron process, so one mole of electrons deposits one mole of Na metal. Faraday's constant converts coulombs to moles of electrons; no extra factor of 2 appears unless the ion were M2+. Using two electrons per Na, or dropping a power of ten in I t, produces the nearby distractors.",
+      "distractor_rationales": {
+        "A": "This drops a factor of ten, as if Q were 9650 C rather than 10 × 9650 C. Current in amperes already is coulombs per second.",
+        "B": "This would be appropriate for a two-electron cathode reaction such as Mg2+ + 2 e− → Mg. Sodium ion is Na+, so n = 1.",
+        "D": "This doubles the result, perhaps from writing 2 NaCl as if two moles of Na formed per mole of electrons, or from using 2 F for a one-electron reduction."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC4.4C.t5",
+      "type": "discrete",
+      "stem": "Myelination of a peripheral axon increases conduction speed primarily because myelin:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "decreases membrane resistance and increases membrane capacitance, so local-circuit current leaks more readily through internodes"
+        },
+        {
+          "key": "B",
+          "text": "increases membrane resistance and decreases membrane capacitance, forcing depolarizing current to jump between nodes of Ranvier"
+        },
+        {
+          "key": "C",
+          "text": "replaces voltage-gated Na+ channels uniformly along the internodal membrane, producing a continuous (non-saltatory) wave of depolarization"
+        },
+        {
+          "key": "D",
+          "text": "converts the axon into a gap-junction electrical synapse that no longer requires ion channels to propagate an impulse"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Myelin is a high-resistance, low-capacitance wrapping. Higher internodal membrane resistance reduces transverse leak, so axial current travels farther; lower capacitance means less charge is needed to depolarize the internodal membrane. Voltage-gated Na+ channels concentrate at the unmyelinated nodes of Ranvier, and the action potential is regenerated there—saltatory conduction. The internodes are not paved with Na+ channels, and the axon remains an excitable membrane, not a gap-junction synapse. The opposite cable changes (low Rm, high C) would slow conduction.",
+      "distractor_rationales": {
+        "A": "Those cable changes are what myelin prevents. Decreasing Rm and increasing C would increase leak and the charge needed per unit length, slowing—not speeding—propagation.",
+        "C": "Internodal membrane is poor in voltage-gated Na+ channels; the channels cluster at nodes. Conduction is saltatory, not a continuous internodal Hodgkin cycle.",
+        "D": "Myelin does not turn the axon into an electrical synapse. Propagation still depends on local-circuit current and nodal Na+ influx."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC4.4C.t5",
+      "type": "discrete",
+      "stem": "Demyelination of a central axon, as in multiple sclerosis, is most likely to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "raise internodal membrane resistance and thereby increase conduction velocity"
+        },
+        {
+          "key": "B",
+          "text": "leave membrane capacitance unchanged but permanently eliminate nodes of Ranvier, which speeds continuous conduction"
+        },
+        {
+          "key": "C",
+          "text": "increase internodal capacitance and ionic leak, slowing or blocking saltatory propagation"
+        },
+        {
+          "key": "D",
+          "text": "increase axon diameter enough that continuous unmyelinated conduction becomes faster than the original myelinated fiber"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Losing myelin strips away the high-resistance, low-capacitance internodal wrapping. Exposed internodal membrane then behaves more like a leaky capacitor: more current is lost across the membrane and more charge is required to change membrane potential, so the local-circuit current may fail to bring the next node to threshold. The result is slowed or blocked saltatory conduction, which is the physiologic basis of many MS deficits. Demyelination does not raise Rm, does not remove the anatomic nodes in a way that helps, and does not enlarge axon diameter as a compensatory speed mechanism.",
+      "distractor_rationales": {
+        "A": "Myelin is what raises internodal Rm. Removing it lowers resistance to leak and slows conduction rather than speeding it.",
+        "B": "Nodes remain as specialized axonal domains; the problem is the internodes. Capacitance of the denuded membrane increases, which is not 'unchanged,' and conduction does not speed up.",
+        "D": "Demyelination does not hypertrophy the axon into a giant unmyelinated fiber. Even if diameter were unchanged, losing myelin slows the impulse relative to the myelinated state."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "MCAT.FC4.4D.t1",
+      "type": "discrete",
+      "stem": "The sound intensity level at a point rises from 20 dB to 40 dB. The sound intensity I (in W/m^2) is multiplied by a factor of:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2"
+        },
+        {
+          "key": "B",
+          "text": "20"
+        },
+        {
+          "key": "C",
+          "text": "100"
+        },
+        {
+          "key": "D",
+          "text": "400"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Sound intensity level is β = 10 log10(I / I0), so a change is Δβ = 10 log10(I2 / I1). Here Δβ = 20 dB, therefore log10(I2 / I1) = 2 and I2 / I1 = 10^2 = 100. Each +10 dB is a tenfold intensity increase, so +20 dB is a hundredfold increase. The decibel is logarithmic; a 20 dB rise is not a factor of 20 in I, nor a factor of 2. Squaring 20 to get 400 confuses the 10 log relation with an amplitude-squared identity applied to the decibel number itself.",
+      "distractor_rationales": {
+        "A": "A factor of 2 would be only about +3 dB, not +20 dB. Linear doubling of intensity is a small step on the decibel scale.",
+        "B": "The decibel difference is 20, but I2/I1 is 10^(Δβ/10) = 10^2, not 20. The 10 in 10 log10 is what converts 20 dB into two factors of ten.",
+        "D": "This squares 20, perhaps mixing I ∝ amplitude^2 with the dB number. The correct map is 10 dB → ×10 in I, hence 20 dB → ×100."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC4.4D.t1",
+      "type": "discrete",
+      "stem": "A Doppler ultrasound transducer emits 2.0 MHz ultrasound into tissue. Blood in an artery is moving toward the transducer. Compared with 2.0 MHz, the frequency of the echo returning from that blood is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "lower, because a moving reflector always lengthens the received wavelength"
+        },
+        {
+          "key": "B",
+          "text": "higher, because motion of the reflector toward the detector shortens the received wavelength"
+        },
+        {
+          "key": "C",
+          "text": "unchanged, because soft tissue is a linear medium and cannot shift frequency"
+        },
+        {
+          "key": "D",
+          "text": "higher only if the blood speed exceeds the speed of sound in tissue"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Doppler shift for a reflector moving toward the source/detector raises the received frequency: the blood acts first as a moving observer (higher frequency intercepted) and then as a moving source (higher frequency re-radiated). Equivalently, successive wavefronts are compressed, so λ decreases and f = v/λ increases. Soft tissue being approximately linear does not cancel first-order Doppler physics; the shift is how clinical Doppler estimates flow toward or away from the probe. The blood speed is much less than the ~1540 m/s tissue sound speed; no sonic-boom threshold is required for a frequency increase.",
+      "distractor_rationales": {
+        "A": "A reflector receding from the probe would lower frequency. Motion toward the probe compresses, rather than stretches, the returning wavelength.",
+        "C": "Linearity of tissue means waves superpose without generating new harmonics as the first approximation; it does not forbid a Doppler shift from a moving reflector.",
+        "D": "The ordinary Doppler formula applies at speeds far below the speed of sound. Exceeding the tissue sound speed is neither necessary nor physiologic for a higher echo frequency."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC4.4D.t3",
+      "type": "discrete",
+      "stem": "Which infrared feature most reliably distinguishes a carboxylic acid from a ketone of similar molar mass?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A sharp peak near 1700 cm^-1 present only in the ketone"
+        },
+        {
+          "key": "B",
+          "text": "A broad O–H stretch spanning roughly 2500–3300 cm^-1 together with a C=O stretch, present for the acid but not the ketone"
+        },
+        {
+          "key": "C",
+          "text": "An N–H stretch near 3300 cm^-1 that appears only in the carboxylic acid"
+        },
+        {
+          "key": "D",
+          "text": "The complete absence of any absorption above 1500 cm^-1 in the acid"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Both ketones and carboxylic acids contain a carbonyl, so both show a strong C=O stretch near 1700 cm^-1; that peak does not uniquely identify either family. Carboxylic acids additionally display a very broad O–H stretch (hydrogen-bonded dimer) from about 2500 to 3300 cm^-1, which ketones lack. An N–H stretch would indicate an amide or amine, not a carboxylic acid. Acids certainly absorb above 1500 cm^-1: they have both the carbonyl and the broad hydroxyl envelope. The paired broad O–H plus C=O pattern is the standard IR signature used to call an acid.",
+      "distractor_rationales": {
+        "A": "Ketones and acids both have C=O stretches near 1700 cm^-1. A carbonyl peak by itself does not distinguish them.",
+        "C": "Carboxylic acids have O–H, not N–H. An N–H stretch would suggest an amide or amine instead of an acid-versus-ketone contrast.",
+        "D": "Acids absorb strongly above 1500 cm^-1 (C=O and the broad O–H). Absence of high-wavenumber bands would argue against an acid, not for one."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC4.4D.t3",
+      "type": "discrete",
+      "stem": "In the 1H NMR spectrum of bromoethane (CH3CH2Br), the signal for the CH3 group is a:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "singlet, because methyl protons do not couple"
+        },
+        {
+          "key": "B",
+          "text": "doublet, because the methyl group has one neighboring carbon"
+        },
+        {
+          "key": "C",
+          "text": "triplet, because the methyl protons have two equivalent neighbors on the CH2Br carbon (n+1 rule)"
+        },
+        {
+          "key": "D",
+          "text": "quartet, because there are four hydrogens in the ethyl fragment"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Vicinal 1H–1H coupling follows the n+1 rule for first-order spectra: a proton (or equivalent set) with n equivalent neighbors appears as n+1 lines. The CH3 protons of bromoethane have two equivalent neighbors on the methylene carbon, so the methyl signal is a triplet (2+1). The CH2Br protons have three methyl neighbors and appear as a quartet; that pattern belongs to the downfield methylene, not the methyl. Coupling is to neighboring hydrogens, not to 'number of carbons' or the molecule's total hydrogen count. Methyl protons do couple when an adjacent CH2 is present.",
+      "distractor_rationales": {
+        "A": "Methyl singlets occur when there are no neighboring hydrogens (for example a tert-butyl or an isolated methoxy). Adjacent CH2Br protons split the CH3 of bromoethane.",
+        "B": "The n in n+1 is the number of equivalent neighboring hydrogens, not the number of neighboring carbons. One adjacent carbon that bears two hydrogens gives a triplet, not a doublet.",
+        "D": "A quartet is the CH2Br resonance (three methyl neighbors). Total hydrogen count in the ethyl group is not what the n+1 rule uses."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC4.4D.t4",
+      "type": "discrete",
+      "stem": "A thin converging lens has focal length 10 cm. An object stands 20 cm to the left of the lens. The image is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "real, inverted, and the same size as the object, 20 cm to the right of the lens"
+        },
+        {
+          "key": "B",
+          "text": "virtual, upright, and enlarged, 20 cm to the left of the lens"
+        },
+        {
+          "key": "C",
+          "text": "real, inverted, and half the size of the object, 10 cm to the right of the lens"
+        },
+        {
+          "key": "D",
+          "text": "real, upright, and the same size as the object, 20 cm to the right of the lens"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The thin-lens equation is 1/f = 1/o + 1/i. With f = +10 cm (converging) and o = +20 cm, 1/10 = 1/20 + 1/i, so 1/i = 1/20 and i = +20 cm: a real image on the opposite side of the lens. Magnification m = −i/o = −20/20 = −1, so the image is inverted and the same size as the object. This is the classic object-at-2f geometry, which places the image at 2f. A single converging lens does not produce a real upright image; upright images from this lens are virtual and occur only for o < f.",
+      "distractor_rationales": {
+        "B": "A virtual upright enlarged image is the o < f (magnifying-glass) case. Here the object is at 2f, outside the focal point, so the image is real and inverted.",
+        "C": "An image at f with |m| = 1/2 would require a different object distance (o = 2f is same-size, not half-size). Solving 1/f = 1/o + 1/i with these numbers gives i = 20 cm, not 10 cm.",
+        "D": "The location and size are right, but a real image formed by a single converging lens is inverted. Upright and real together would require a second lens or a more elaborate optical system."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC4.4D.t4",
+      "type": "discrete",
+      "stem": "Light traveling in glass (n = 2.0) strikes a glass–air interface. The critical angle for total internal reflection is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "15°"
+        },
+        {
+          "key": "B",
+          "text": "30°"
+        },
+        {
+          "key": "C",
+          "text": "45°"
+        },
+        {
+          "key": "D",
+          "text": "60°"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Total internal reflection can occur only when light in a higher-index medium meets a lower-index medium, as in glass to air. The critical angle satisfies n1 sin θc = n2 sin 90°, so sin θc = n2 / n1 = 1.0 / 2.0 = 1/2 and θc = 30°. At angles of incidence larger than 30° there is no transmitted ray in air. The 45° value is the critical angle for n = √2, a common memorized special case that does not match n = 2. Sixty degrees would be 90° minus 30° or arcsin(√3/2), not arcsin(1/2).",
+      "distractor_rationales": {
+        "A": "This is half of 30° without a physical basis. The inverse sine of 1/2 is 30°, not 15°.",
+        "C": "sin 45° = 1/√2, which would be θc if n1 were √2. For n = 2 the sine of the critical angle is 1/2, not 1/√2.",
+        "D": "This is 90° − 30° or the angle whose sine is √3/2. Snell's law at the critical angle uses sin θc = n2/n1 = 1/2, which is 30°."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC4.4E.t1",
+      "type": "discrete",
+      "stem": "A sample contains 80 g of a pure radioisotope whose half-life is 2 days. The mass of that isotope remaining after 6 days is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "10 g"
+        },
+        {
+          "key": "B",
+          "text": "20 g"
+        },
+        {
+          "key": "C",
+          "text": "40 g"
+        },
+        {
+          "key": "D",
+          "text": "8 g"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Each half-life halves the remaining quantity of the parent isotope. Six days is 6/2 = 3 half-lives, so the remaining mass is 80 × (1/2)^3 = 80 × 1/8 = 10 g. Daughter nuclides may accumulate, but the question asks for the mass of the original isotope, which follows the exponential decay law. One half-life would leave 40 g and two would leave 20 g; stopping at those counts undercounts the elapsed half-lives. Linear subtraction (for example 80 − 10 × 6) is not how half-life works.",
+      "distractor_rationales": {
+        "B": "This is two half-lives (80 → 40 → 20). Six days at 2 days per half-life is three halvings, not two.",
+        "C": "This is a single half-life (2 days), not 6 days. Remaining parent after one t1/2 is 40 g; after three it is 10 g.",
+        "D": "This divides 80 by 10 rather than by 2 three times. Half-life is a factor of 1/2 per interval, which is 1/8 overall, not 1/10."
+      },
+      "difficulty_est": 0.28
+    },
+    {
+      "concept_id": "MCAT.FC4.4E.t1",
+      "type": "discrete",
+      "stem": "A parent nucleus with mass number A = 238 and atomic number Z = 92 emits an alpha particle. The daughter nucleus has:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A = 238, Z = 93"
+        },
+        {
+          "key": "B",
+          "text": "A = 234, Z = 92"
+        },
+        {
+          "key": "C",
+          "text": "A = 234, Z = 90"
+        },
+        {
+          "key": "D",
+          "text": "A = 236, Z = 90"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "An alpha particle is a helium nucleus with A = 4 and Z = 2, so alpha emission decreases the mass number by 4 and the atomic number by 2. Starting from A = 238 and Z = 92, the daughter is A = 234 and Z = 90. Beta-minus emission would instead raise Z by 1 and leave A unchanged (the A = 238, Z = 93 option). Changing only A, or decreasing A by 2 as if a deuteron were emitted, does not describe alpha decay. Gamma emission would change neither A nor Z.",
+      "distractor_rationales": {
+        "A": "This is beta-minus decay (Z increases by 1, A unchanged), not alpha decay. An alpha particle removes two protons, so Z must fall.",
+        "B": "A decreases by 4 as required, but Z is unchanged. The alpha particle carries away two protons, so Z must be 90, not 92.",
+        "D": "Z is correctly reduced by 2, but A is reduced by only 2. An alpha particle has mass number 4, not 2."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC4.4E.t2",
+      "type": "discrete",
+      "stem": "In the photoelectric effect, monochromatic light already above the metal's threshold frequency has its intensity doubled while frequency is held fixed. The principal result is that:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "the maximum kinetic energy of ejected electrons doubles"
+        },
+        {
+          "key": "B",
+          "text": "the number of electrons ejected per second doubles, while KE_max is unchanged"
+        },
+        {
+          "key": "C",
+          "text": "the work function of the metal is halved"
+        },
+        {
+          "key": "D",
+          "text": "KE_max drops to zero because intensity, not frequency, now governs the effect"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Each photoelectron's maximum kinetic energy is KE_max = h f − φ, which depends on photon frequency and the metal's work function, not on intensity. Intensity at fixed frequency is photon flux, so doubling intensity doubles the number of photons arriving per second and therefore doubles the number of electrons ejected per second (above threshold). The work function is a property of the metal surface; shining brighter light does not change φ. Below threshold, raising intensity still ejects no electrons, but this beam is already above threshold, so rate scales with intensity and KE_max does not.",
+      "distractor_rationales": {
+        "A": "KE_max is set by photon energy h f minus φ. Intensity does not appear in that equation, so doubling brightness does not double electron kinetic energy.",
+        "C": "The work function is characteristic of the metal (and its surface condition), not of the lamp brightness. Intensity does not retune φ.",
+        "D": "Above threshold, intensity controls rate, not whether electrons have kinetic energy. KE_max remains h f − φ and is unchanged at fixed f."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC4.4E.t2",
+      "type": "discrete",
+      "stem": "A hydrogen atom emits a photon in the n = 2 → n = 1 transition. Using E_n = −13.6 eV / n^2, the photon energy is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "3.4 eV"
+        },
+        {
+          "key": "B",
+          "text": "6.8 eV"
+        },
+        {
+          "key": "C",
+          "text": "10.2 eV"
+        },
+        {
+          "key": "D",
+          "text": "13.6 eV"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Bohr energies are E_1 = −13.6 eV and E_2 = −13.6/4 = −3.4 eV. When the electron falls from n = 2 to n = 1, the atom loses 10.2 eV and that energy leaves as a photon: 13.6 − 3.4 = 10.2 eV. Equivalently the photon energy is 13.6 (1/1^2 − 1/2^2) = 13.6 (1 − 1/4) = 10.2 eV. This is the first Lyman line, not the ionization energy from n = 1 (13.6 eV) and not the n = 2 binding energy (3.4 eV) by itself.",
+      "distractor_rationales": {
+        "A": "3.4 eV is |E_2|, the ionization energy from n = 2, not the photon for a jump down to n = 1.",
+        "B": "This is 13.6/2, as if energy scaled as 1/n rather than 1/n^2, or a half-difference that is not the Bohr formula.",
+        "D": "13.6 eV ionizes ground-state hydrogen (n = 1 → continuum). The n = 2 → n = 1 photon is smaller by the 3.4 eV still stored at n = 2."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC4.4E.t3",
+      "type": "discrete",
+      "stem": "An atom has the ground-state valence configuration 4s^2 4p^5. This element is best classified as:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "a halogen (group 17)"
+        },
+        {
+          "key": "B",
+          "text": "an alkaline earth metal (group 2)"
+        },
+        {
+          "key": "C",
+          "text": "a noble gas (group 18)"
+        },
+        {
+          "key": "D",
+          "text": "a d-block transition metal"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Valence 4s^2 4p^5 means seven valence electrons in period 4, which is the halogen configuration (group 17); the element is bromine. Alkaline earth metals are ns^2 only (here that would be 4s^2 with an empty 4p). Noble gases are ns^2 np^6 (4s^2 4p^6 would be krypton). Transition metals place electrons in (n−1)d subshells; a configuration quoted as 4s^2 4p^5 is p-block, not d-block. Group number for the p-block follows the valence count: 5 + 2 = 7 valence electrons → group 17.",
+      "distractor_rationales": {
+        "B": "Alkaline earth atoms are ns^2 (two valence electrons), for example 4s^2 for calcium. The additional 4p^5 puts this atom in the p-block halogens.",
+        "C": "Noble gases have filled np^6. This configuration is one electron short of 4p^6, which is exactly the halogen pattern.",
+        "D": "Transition metals are d-block (incomplete (n−1)d). A 4p^5 count is a main-group p-block element, not a transition metal."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC4.4E.t3",
+      "type": "discrete",
+      "stem": "Which statement correctly classifies calcium and iron by block and family?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Both are s-block main-group metals."
+        },
+        {
+          "key": "B",
+          "text": "Calcium is an alkaline-earth (s-block) metal; iron is a d-block transition metal."
+        },
+        {
+          "key": "C",
+          "text": "Both are d-block transition metals."
+        },
+        {
+          "key": "D",
+          "text": "Calcium is a halogen; iron is an alkali metal."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Calcium is [Ar] 4s^2, a group 2 alkaline-earth metal in the s-block. Iron is [Ar] 4s^2 3d^6, a d-block transition metal with a partially filled d subshell and the variable oxidation states that classification implies. Calling both s-block ignores iron's 3d electrons; calling both transition metals ignores that Ca has no d electrons in its ground-state valence set. Calcium is not a halogen (halogens are p-block, group 17), and iron is not an alkali metal (alkali metals are group 1, ns^1).",
+      "distractor_rationales": {
+        "A": "Calcium is s-block, but iron's distinguishing electrons occupy 3d. Iron is not a main-group s-block metal.",
+        "C": "Iron is a transition metal; calcium is not. Group 2 elements are main-group alkaline earths, not d-block.",
+        "D": "Calcium is group 2, not a halogen. Iron is group 8/d-block, not group 1. Both family assignments are swapped into the wrong columns."
+      },
+      "difficulty_est": 0.28
+    },
+    {
+      "concept_id": "MCAT.FC4.4E.t4",
+      "type": "discrete",
+      "stem": "Among the isoelectronic species O2-, F-, Na+, and Mg2+, the ionic radius is largest for:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Mg2+, because it has the most protons pulling on the electron cloud"
+        },
+        {
+          "key": "B",
+          "text": "Na+, because sodium is an alkali metal and alkali cations are always the largest isoelectronic species"
+        },
+        {
+          "key": "C",
+          "text": "O2-, because it has the smallest nuclear charge acting on the same number of electrons"
+        },
+        {
+          "key": "D",
+          "text": "F-, because fluorine is the most electronegative element"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "These four ions all have 10 electrons (the neon configuration). For a fixed electron count, radius decreases as nuclear charge Z increases, because the same cloud is pulled inward more strongly. Oxygen (Z = 8) has the fewest protons of the set, so O2- is the largest; then F- (Z = 9), then Na+ (Z = 11), then Mg2+ (Z = 12), which is the smallest. Electronegativity of the neutral atom is not the ranking tool for isoelectronic ionic radii, and extra protons shrink rather than expand the ion.",
+      "distractor_rationales": {
+        "A": "More protons at fixed electron number shrink the ion. Mg2+ is the smallest member of this isoelectronic series, not the largest.",
+        "B": "Alkali-metal parentage does not override Zeff. Na+ is smaller than both O2- and F- because sodium has more protons (11) than O or F.",
+        "D": "Fluorine's high electronegativity describes the atom's pull on bonding electrons; it does not make F- the largest 10-electron ion. O2- has still fewer protons."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC4.4E.t4",
+      "type": "discrete",
+      "stem": "The first ionization energy of oxygen is lower than that of nitrogen. The best explanation is that:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "oxygen has a greater nuclear charge, which always lowers ionization energy across a period"
+        },
+        {
+          "key": "B",
+          "text": "nitrogen has a half-filled 2p^3 subshell; oxygen's extra 2p electron shares an orbital (2p^4) and is easier to remove"
+        },
+        {
+          "key": "C",
+          "text": "oxygen atoms are larger than nitrogen atoms, so the valence electron is farther from the nucleus"
+        },
+        {
+          "key": "D",
+          "text": "nitrogen lacks a filled 2s subshell, whereas oxygen has 2s^2 and is therefore harder to ionize"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Across a period, first ionization energy generally rises with Zeff, so one would expect O > N, but the measured order is N > O. Nitrogen's 2p^3 configuration places one electron in each 2p orbital (Hund's rule), a half-filled subshell. Oxygen's fourth 2p electron must pair in an already occupied orbital; electron–electron repulsion in that pair lowers the energy needed to remove it. Both N and O have filled 2s^2, and oxygen is smaller than nitrogen, so neither size nor a missing 2s shell explains the dip. Greater nuclear charge usually raises, rather than lowers, IE.",
+      "distractor_rationales": {
+        "A": "Greater nuclear charge across a period generally increases ionization energy. That main trend is what the N > O exception interrupts, so this reason points the wrong way.",
+        "C": "Atomic radius decreases from N to O. Oxygen is not larger, and a size increase is not the origin of the IE dip.",
+        "D": "Both atoms have 2s^2. The relevant difference is 2p^3 versus 2p^4 pairing, not the 2s subshell."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "MCAT.FC4.4E.t5",
+      "type": "discrete",
+      "stem": "Hydrogen and oxygen react according to 2 H2 + O2 → 2 H2O. A vessel is charged with 2 mol H2 and 2 mol O2, and the reaction goes to completion. Afterward the vessel contains:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2 mol H2O and 1 mol O2 remaining"
+        },
+        {
+          "key": "B",
+          "text": "4 mol H2O and no leftover gas"
+        },
+        {
+          "key": "C",
+          "text": "2 mol H2O and 1 mol H2 remaining"
+        },
+        {
+          "key": "D",
+          "text": "1 mol H2O and 1 mol O2 remaining"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The stoichiometric ratio is 2 mol H2 per 1 mol O2. Starting with 2 mol H2 therefore requires only 1 mol O2 and produces 2 mol H2O; hydrogen is limiting. One mole of the original 2 mol O2 is left unreacted. Treating the recipe as 1:1 because the vessel was filled with equal moles of each gas overconsumes oxygen and invents 4 mol of water, which would have needed 4 mol H2. Swapping the limiting reagent leaves leftover hydrogen instead of leftover oxygen. The coefficients, not the equal starting moles, decide the leftover.",
+      "distractor_rationales": {
+        "B": "Producing 4 mol H2O would require 4 mol H2 and 2 mol O2. Only 2 mol H2 are present, so water cannot exceed 2 mol.",
+        "C": "This treats O2 as limiting. Two moles of O2 would need 4 mol H2; extra oxygen remains, not extra hydrogen.",
+        "D": "A 1:1:1 reading of the equation ignores the coefficient 2 on H2 and on H2O. Two moles of H2 yield two moles of water, not one."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC4.4E.t5",
+      "type": "discrete",
+      "stem": "The oxidation number of chromium in dichromate, Cr2O7^2-, is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "+3"
+        },
+        {
+          "key": "B",
+          "text": "+6"
+        },
+        {
+          "key": "C",
+          "text": "+7"
+        },
+        {
+          "key": "D",
+          "text": "+12"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Oxygen is assigned −2 in this oxide, and the ion's net charge is −2. For two chromium atoms, 2x + 7(−2) = −2, so 2x − 14 = −2, 2x = 12, and x = +6. Each Cr is +6, which matches the usual assignment in dichromate and chromate. The value +7 is permanganate's manganese, not chromium here. Leaving the result as +12 counts the total chromium oxidation contribution without dividing by the two Cr atoms. Chromium(III) is +3, the product of dichromate reduction in acid, not the oxidation number in Cr2O7^2- itself.",
+      "distractor_rationales": {
+        "A": "+3 is Cr in Cr3+ or in many reduced chromium products. In dichromate before reduction, the algebra gives +6, not +3.",
+        "C": "+7 is the oxidation number of Mn in MnO4-. Chromium in Cr2O7^2- is +6; do not import the permanganate count.",
+        "D": "+12 is the combined contribution of both chromium atoms (2x = 12). The oxidation number is the per-atom value +6."
+      },
+      "difficulty_est": 0.38
+    }
+  ]
+}
