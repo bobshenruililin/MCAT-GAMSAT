@@ -26,3 +26,19 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Decision: Official AAMC and ACER scores (human-entered, ingested) are the only percentile truth. The system schedules those exams and stores their results. Internal mocks never calibrate percentiles.
 - Rationale: NORTH_STAR: this system never replaces official materials; they are the only percentile truth.
 - Rejected: Treating in-app or unofficial mock percentiles as calibration.
+
+## 2026-09-01 — Three-level taxonomy mapping
+- Decision: `concepts.level` stays `section | category | topic`. `section` = Foundational Concept (or CARS/SIRS/GAMSAT section). `category` = content category. `topic` = AAMC topic heading. Exam sections (B/B, C/P, P/S, CARS) are not rows; their 0.25 shares live in `exam_weight`.
+- Rationale: Prompt froze the three-level enum. Narrowest mapping that still uses IDs like `MCAT.FC5.5D.t2`. Logged as B-001.
+- Rejected: Adding a fourth level; duplicating FC1 under both B/B and C/P.
+
+## 2026-09-01 — exam_weight from current AAMC PDF, equal split below FC
+- Decision: B/B FC1/2/3 = 55/20/25; C/P FC4/5 = 40/60; P/S FC6–10 = 25/35/20/15/5; each MCAT section 0.25 of the exam. GAMSAT (S1+S2+2×S3)/4; S3 bio/chem/phys 40/40/20. Categories split parent weight equally; topics split parent equally.
+- Rationale: Current AAMC "What's on the MCAT Exam" PDF (fetched this session) superseded the prompt's ~65% B/B FC1 example. AAMC does not publish per-topic percents. Logged as B-002 and B-004.
+- Rejected: Using 2015 B/B FC1 65% / C/P mixed-FC weights; inventing unequal topic priors.
+
+## 2026-09-01 — Overlay trees have exam_weight 0
+- Decision: `MCAT.SIRS` and `GAMSAT.S3.rfd` (reasoning from data) have exam_weight 0. New-item quota uses `(1-mastery)*exam_weight` on content topics. SIRS attaches via `items.skill_tag`.
+- Rationale: These skills overlay every science item; a non-zero quota would steal new items from content nodes. Logged as B-003.
+- Rejected: Giving SIRS/rfd a positive share of the new-item budget in v1.
+
