@@ -1,0 +1,1306 @@
+{
+  "items": [
+    {
+      "concept_id": "MCAT.FC5.5B.t1",
+      "type": "discrete",
+      "stem": "CO2 is nonpolar while SO2 is polar, even though both molecules contain polar bonds from oxygen to a group-16 atom. Which structural difference accounts for the polarity contrast?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "CO2 is linear (C is sp), so the two C=O bond dipoles cancel; SO2 is bent because sulfur has a lone pair, so the S–O dipoles do not cancel."
+        },
+        {
+          "key": "B",
+          "text": "CO2 has ionic bonds and SO2 has covalent bonds, so only SO2 can be polar."
+        },
+        {
+          "key": "C",
+          "text": "Sulfur is less electronegative than carbon, which forces SO2 to be linear and therefore polar."
+        },
+        {
+          "key": "D",
+          "text": "Both molecules are tetrahedral; SO2 is polar only because it has a larger molar mass."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Carbon dioxide has two electron domains around carbon, so the carbon is sp hybridized and the molecule is linear. Equal C=O bond dipoles point in opposite directions and cancel, giving a zero molecular dipole. Sulfur dioxide has three electron domains around sulfur (two bonding pairs and one lone pair), so VSEPR predicts a bent geometry. The S–O bond dipoles then have a nonzero resultant. Bond type is covalent in both molecules, and molar mass does not determine whether dipoles cancel.",
+      "distractor_rationales": {
+        "B": "Both CO2 and SO2 are covalently bonded molecular species; polarity here is a geometry question, not an ionic-versus-covalent classification.",
+        "C": "Electronegativity differences create bond dipoles, but they do not force SO2 to be linear. The extra lone pair on sulfur is what bends the molecule.",
+        "D": "Neither molecule is tetrahedral (that would require four electron domains). Mass is irrelevant to whether vector dipoles cancel."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t1",
+      "type": "discrete",
+      "stem": "A peptide (amide) C–N bond does not rotate freely at room temperature, so the six atoms of the amide unit lie in a plane. Which hybridization statement best explains that restricted rotation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The carbonyl carbon is sp3 and the nitrogen is sp3, producing a purely sigma C–N bond that happens to be short."
+        },
+        {
+          "key": "B",
+          "text": "Only hydrogen bonding between N–H and C=O, not orbital hybridization, can prevent C–N rotation."
+        },
+        {
+          "key": "C",
+          "text": "The carbonyl carbon is sp and the nitrogen is unhybridized, producing a linear C–N–H array."
+        },
+        {
+          "key": "D",
+          "text": "Resonance donation from nitrogen into the carbonyl makes both the carbonyl carbon and the amide nitrogen sp2, giving the C–N linkage partial double-bond character."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The amide resonance contributor that places a lone pair from nitrogen into the C=O π* orbital gives a C=N double-bond picture with charge-separated O− and N+. Both the carbonyl carbon and the nitrogen therefore have three electron domains and are treated as sp2, and the C–N bond order is between 1 and 2. Partial double-bond character creates a substantial rotational barrier, which is why the peptide unit is planar. Hydrogen bonding can stabilize secondary structure, but it is not required to explain the amide rotational barrier in a simple peptide bond.",
+      "distractor_rationales": {
+        "A": "An sp3–sp3 single bond would rotate freely and would not force planarity of the six amide atoms.",
+        "B": "Hydrogen bonding is important in proteins but is not the origin of the amide C–N rotational barrier; isolated amides are still planar.",
+        "C": "An sp carbonyl carbon would be linear (as in ketene or CO2), which does not match the trigonal planar amide carbon."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t1",
+      "type": "discrete",
+      "stem": "Sulfur tetrafluoride, SF4, has a steric number of 5 at sulfur. What molecular geometry (the arrangement of the four fluorines) does VSEPR predict?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Tetrahedral"
+        },
+        {
+          "key": "B",
+          "text": "Square planar"
+        },
+        {
+          "key": "C",
+          "text": "Seesaw"
+        },
+        {
+          "key": "D",
+          "text": "Trigonal bipyramidal"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Sulfur in SF4 has four bonding pairs and one lone pair, so five electron domains occupy a trigonal bipyramidal electron geometry. The lone pair occupies an equatorial site to minimize 90° lone-pair–bond-pair repulsions. The four fluorine atoms then occupy the remaining two axial positions and two equatorial positions, which is the seesaw molecular shape. Tetrahedral describes four electron domains, square planar describes XeF4 (four bonds plus two axial lone pairs), and trigonal bipyramidal would be the molecular shape only if there were five bonding pairs and no lone pair, as in PF5.",
+      "distractor_rationales": {
+        "A": "Tetrahedral molecular geometry requires four electron domains and no extra lone pair, as in CH4 or SiF4, not steric number 5.",
+        "B": "Square planar is the molecular geometry of XeF4, which has two lone pairs opposite each other, not SF4’s single lone pair.",
+        "D": "Trigonal bipyramidal is the electron-domain geometry of SF4 and the molecular geometry of PF5, but it is not the molecular shape once one equatorial site is a lone pair."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t1",
+      "type": "discrete",
+      "stem": "Infrared and X-ray data show that the two C–O bonds of the acetate anion, CH3CO2−, are equal in length and intermediate between a typical C–O single bond and a C=O double bond. Which bonding description accounts for that observation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The anion contains one C–O single bond and one C=O double bond that rapidly tautomerize by proton transfer."
+        },
+        {
+          "key": "B",
+          "text": "Both oxygens are sp3 hybridized and form only sigma bonds to carbon, so the lengths must be identical single bonds."
+        },
+        {
+          "key": "C",
+          "text": "The methyl carbon conjugates with the carboxylate, giving three equivalent C–C bonds."
+        },
+        {
+          "key": "D",
+          "text": "The negative charge is delocalized by resonance over both oxygens, so each C–O bond has a bond order of 1.5."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Acetate is described by two equivalent resonance structures in which the C=O double bond and the negative charge swap between the two oxygen atoms. The actual ion is a hybrid: the π electrons are delocalized, each C–O bond order is 1.5, and the bond lengths are equal and intermediate. There is no proton on the carboxylate oxygens to tautomerize, the carbonyl carbon is sp2 with a π system, and the methyl group is not part of that delocalized π system. Equal bond lengths are the structural signature of that resonance hybrid.",
+      "distractor_rationales": {
+        "A": "Acetate is not a rapidly tautomerizing mixture of localized single and double C–O bonds; spectroscopy sees one averaged structure, not two isomers exchanging by proton transfer.",
+        "B": "If both C–O links were ordinary single bonds, the carbon would not have a π system and the C–O lengths would match alcohols, not the intermediate carboxylate length.",
+        "C": "The methyl carbon is sp3 and is not conjugated into the carboxylate π system, so it does not equalize C–C bonds."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t1",
+      "type": "discrete",
+      "stem": "Nitronium ion, NO2+, is linear, whereas nitrite, NO2−, is bent. Which pair of hybridizations at nitrogen is consistent with those shapes?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "NO2+: nitrogen is sp (two electron domains); NO2−: nitrogen is sp2 (three electron domains, including a lone pair)."
+        },
+        {
+          "key": "B",
+          "text": "Both nitrogens are sp3, and the extra charge on nitrite simply compresses the bond angle below 109°."
+        },
+        {
+          "key": "C",
+          "text": "NO2+: nitrogen is sp3d; NO2−: nitrogen is sp, so nitrite should be linear."
+        },
+        {
+          "key": "D",
+          "text": "Both nitrogens are sp, so both ions must be linear; packing in the lattice bends nitrite."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Count electron domains at nitrogen. In NO2+ the nitrogen is bonded to two oxygens with no remaining lone pair (the ion is isoelectronic with CO2), so two domains imply sp hybridization and a 180° bond angle. In NO2− nitrogen has two bonding domains plus one lone pair, so three domains imply sp2 hybridization and a bent geometry. Expanding the octet to sp3d is unnecessary for these second-period nitrogen species, and a lattice cannot turn a linear isolated ion into a persistently bent one in the gas-phase or solution description used here.",
+      "distractor_rationales": {
+        "B": "sp3 would imply four electron domains and a pyramidal or tetrahedral arrangement, which matches neither the linear cation nor the bent anion with only three domains.",
+        "C": "This assignment reverses the domain counts and would predict a linear nitrite, contradicting the bent structure.",
+        "D": "Nitrite is bent as an isolated ion because of the nitrogen lone pair, not because of crystal packing."
+      },
+      "difficulty_est": 0.61
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t1",
+      "type": "discrete",
+      "stem": "In the conventional Lewis structure of nitrate, NO3−, nitrogen is bonded to three oxygens (one double bond and two single bonds in a given contributor) and has no lone pairs. What is the formal charge on nitrogen?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0"
+        },
+        {
+          "key": "B",
+          "text": "+1"
+        },
+        {
+          "key": "C",
+          "text": "−1"
+        },
+        {
+          "key": "D",
+          "text": "+2"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Formal charge equals valence electrons minus nonbonding electrons minus half of the bonding electrons. Nitrogen has five valence electrons. In this Lewis contributor it has zero nonbonding electrons and eight bonding electrons (four bonds), so the formal charge is 5 − 0 − 4 = +1. Each oxygen that is singly bonded with three lone pairs carries −1, and the doubly bonded oxygen is 0, so the charges sum to the ion’s −1. A formal charge of 0 on nitrogen would describe a structure with only three bonds and a lone pair, which is not the octet-complete nitrate contributor.",
+      "distractor_rationales": {
+        "A": "A formal charge of 0 on nitrogen would fit a structure with three bonds and one lone pair (5 − 2 − 3 = 0), not the four-bond, no-lone-pair nitrogen of this nitrate contributor.",
+        "C": "−1 is the formal charge on each singly bonded oxygen in this contributor, not on nitrogen.",
+        "D": "+2 would require subtracting only three bonding pairs (as if nitrogen had three bonds and no lone pair without counting the double bond fully), which miscounts the four bonds."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t1",
+      "type": "discrete",
+      "stem": "Terminal alkyne C–H bonds (as in acetylene) are substantially more acidic than alkene or alkane C–H bonds. Which orbital argument best accounts for the lower pKa of the alkyne hydrogen?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The conjugate-base lone pair of an acetylide sits in an sp orbital, which has 50% s-character and holds electron density closer to the nucleus than sp2 or sp3 orbitals."
+        },
+        {
+          "key": "B",
+          "text": "Alkyne carbons are sp3 hybridized, so they have weaker bonds and lose hydrogen more easily."
+        },
+        {
+          "key": "C",
+          "text": "Acetylene has London dispersion forces that stabilize the acetylide anion in water."
+        },
+        {
+          "key": "D",
+          "text": "The alkyne hydrogen is more acidic because the C≡C bond is longer than a C–C single bond, so the H is farther from carbon."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Acidity of a C–H bond tracks stability of the conjugate-base anion. In an acetylide the lone pair occupies an sp hybrid (50% s-character). Greater s-character concentrates that pair closer to the carbon nucleus, lowering the energy of the anion relative to an sp2 vinyl anion (~33% s) or an sp3 alkyl anion (25% s). That is why typical pKa values run roughly 25 (alkyne), 44 (alkene), and 50 (alkane). The alkyne carbon is sp, not sp3; the C≡C bond is shorter, not longer, than a single bond; and dispersion forces do not explain the hybridization trend.",
+      "distractor_rationales": {
+        "B": "Alkyne carbons of a terminal C–H are sp, not sp3. An sp3 description would predict the opposite acidity ranking.",
+        "C": "London forces are weak intermolecular attractions among neutral molecules; they do not stabilize a specific conjugate-base orbital.",
+        "D": "A C≡C triple bond is shorter than a C–C single bond. Bond length is not the reason the alkyne proton is more acidic."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t2",
+      "type": "discrete",
+      "stem": "A tetrahedral carbon has Cahn–Ingold–Prelog priorities 1 = Br, 2 = CH2OH, 3 = CH3, and 4 = H. With H pointing away from the observer, moving from Br to CH2OH to CH3 traces a counterclockwise path. What is the configuration?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "S"
+        },
+        {
+          "key": "B",
+          "text": "R"
+        },
+        {
+          "key": "C",
+          "text": "E"
+        },
+        {
+          "key": "D",
+          "text": "The carbon is achiral, so neither R nor S applies."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "When the lowest-priority substituent (H) points away, a counterclockwise 1→2→3 sequence is the definition of the S configuration. Clockwise would be R. E/Z nomenclature describes relative positions of higher-priority groups on a double bond, not a tetrahedral stereocenter. The carbon here has four different substituents (Br, CH2OH, CH3, H), so it is a stereocenter and is chiral. Reversing the assignment because H is already away is the usual error; no extra reversal is needed in this viewing geometry.",
+      "distractor_rationales": {
+        "B": "R corresponds to a clockwise 1→2→3 path with H away. The path given is counterclockwise, so the label is S.",
+        "C": "E is an alkene descriptor (higher CIP groups on opposite sides of a C=C), not a label for a saturated stereocenter.",
+        "D": "Four different substituents make this carbon stereogenic; it is not achiral."
+      },
+      "difficulty_est": 0.33
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t2",
+      "type": "discrete",
+      "stem": "In 3-methyl-2-pentene the double-bond carbons are C2 (attached to CH3 and H) and C3 (attached to CH2CH3 and CH3). If the C2 methyl and the C3 ethyl group lie on the same side of the double bond, the isomer is designated:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Z"
+        },
+        {
+          "key": "B",
+          "text": "E"
+        },
+        {
+          "key": "C",
+          "text": "R"
+        },
+        {
+          "key": "D",
+          "text": "meso"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "E/Z assignment uses CIP priorities at each alkene carbon, not whether the identical-looking alkyl groups happen to be trans in a casual sense. At C2, CH3 outranks H. At C3, CH2CH3 outranks CH3 because the first point of difference is a carbon versus hydrogen. The two higher-priority groups are therefore the C2 methyl and the C3 ethyl. When those two groups are on the same side, the isomer is Z (from zusammen). E would require those higher-priority groups on opposite sides. R/S and meso do not describe this alkene geometry.",
+      "distractor_rationales": {
+        "B": "E means the two higher-priority groups are on opposite sides. Same-side higher-priority groups are Z.",
+        "C": "R/S labels tetrahedral stereocenters, not the cis/trans relationship of an alkene.",
+        "D": "Meso refers to an achiral member of a set of stereoisomers that also includes chiral diastereomers, typically with two stereocenters; it is not an alkene configuration label."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t2",
+      "type": "discrete",
+      "stem": "(2R,3R)-tartaric acid and (2S,3S)-tartaric acid rotate plane-polarized light in opposite directions. (2R,3S)-tartaric acid, however, shows [α] = 0. Which statement explains the optical inactivity of the (2R,3S) isomer?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The (2R,3S) isomer is a racemic mixture of the (2R,3R) and (2S,3S) enantiomers."
+        },
+        {
+          "key": "B",
+          "text": "The (2R,3S) isomer decomposes immediately in water, so no rotation can be measured."
+        },
+        {
+          "key": "C",
+          "text": "Any molecule with two stereocenters is optically inactive because the two centers cancel."
+        },
+        {
+          "key": "D",
+          "text": "The (2R,3S) isomer is meso: the two stereocenters are identically substituted and of opposite configuration, so an internal mirror plane makes the molecule achiral."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Tartaric acid’s two carbons each bear CO2H, OH, H, and the other stereocenter. When the configurations are opposite (R,S), a mirror plane (or inversion center) relates the two halves, producing a meso compound that is superposable on its mirror image and therefore optically inactive as a single stereoisomer. It is not a 1:1 mixture of the (R,R) and (S,S) enantiomers; those are a separate racemate. The (R,R) and (S,S) diastereomers lack that internal plane and are optically active. Having two stereocenters does not automatically cancel rotation.",
+      "distractor_rationales": {
+        "A": "A racemate is an equimolar mixture of enantiomers. Meso-tartaric acid is one achiral stereoisomer, not a mixture of (R,R) and (S,S).",
+        "B": "Meso-tartaric acid is a stable, isolable compound; optical inactivity is a symmetry property, not a result of decomposition.",
+        "C": "The chiral (R,R) and (S,S) tartaric acids have two stereocenters and are optically active; cancellation requires a symmetry element, not merely two centers."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t2",
+      "type": "discrete",
+      "stem": "How many stereoisomers exist for 2-bromo-3-chlorobutane, CH3CHBrCHClCH3?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2"
+        },
+        {
+          "key": "B",
+          "text": "3"
+        },
+        {
+          "key": "C",
+          "text": "4"
+        },
+        {
+          "key": "D",
+          "text": "8"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "C2 and C3 are both stereocenters, and they are not identically substituted (one bears Br, the other Cl). The 2^n rule therefore gives 2^2 = 4 stereoisomers: a pair of enantiomers with the (2R,3R)/(2S,3S) relative configuration and a second diastereomeric pair (2R,3S)/(2S,3R). There is no meso form because the two centers are different, so none of the four is achiral. Two would describe a single stereocenter; three is the count for a molecule such as 2,3-dibromobutane that has a meso isomer; eight would require three independent stereocenters.",
+      "distractor_rationales": {
+        "A": "Two stereoisomers would be expected for a molecule with only one stereocenter (a single enantiomeric pair).",
+        "B": "Three is the stereoisomer count for 2,3-dibromobutane, which has two identically substituted centers and therefore one meso form plus one enantiomeric pair.",
+        "D": "Eight stereoisomers would require three unrelated stereocenters (2^3). This chain has only two."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t2",
+      "type": "discrete",
+      "stem": "A chemist measures the specific rotation of enantiopure (R)-2-butanol as −13.9°. A second sample of 2-butanol is prepared as a 1:1 mixture of the R and S enantiomers. What optical rotation is expected for the second sample under the same conditions?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "−13.9°"
+        },
+        {
+          "key": "B",
+          "text": "+13.9°"
+        },
+        {
+          "key": "C",
+          "text": "0°"
+        },
+        {
+          "key": "D",
+          "text": "−27.8°"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Enantiomers rotate plane-polarized light by equal magnitudes in opposite directions. In a racemate the two enantiomers are present in equal concentration, so the rotations cancel and the observed rotation is zero. The mixture is not optically active even though each molecule is chiral. The −13.9° value is the rotation of the pure R enantiomer; the S enantiomer would read +13.9°; doubling to −27.8° has no physical basis. Optical purity (ee) of zero is the defining optical property of a racemic mixture.",
+      "distractor_rationales": {
+        "A": "That is the rotation of enantiopure (R)-2-butanol, not of a racemate.",
+        "B": "That would be the rotation of enantiopure (S)-2-butanol, not of an equal mixture.",
+        "D": "Rotations of enantiomers cancel rather than add; a racemate does not double the magnitude."
+      },
+      "difficulty_est": 0.28
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t2",
+      "type": "discrete",
+      "stem": "(2R,3R)-2,3-dibromobutane and (2R,3S)-2,3-dibromobutane are compared. Which statement about their physical properties is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They are enantiomers, so they have identical melting points and identical magnitudes of optical rotation."
+        },
+        {
+          "key": "B",
+          "text": "They are constitutional isomers, so they have different atom connectivities."
+        },
+        {
+          "key": "C",
+          "text": "They are identical (the same compound), so every physical constant matches."
+        },
+        {
+          "key": "D",
+          "text": "They are diastereomers, so they can have different melting points, boiling points, and dipole moments; only the chiral (2R,3R) isomer is optically active."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Both compounds share the same connectivity (2,3-dibromobutane) but differ at only one of two stereocenters, so they are diastereomers. Diastereomers are different compounds: they pack differently in crystals and have different intermolecular interactions, hence different melting points, boiling points, and often different dipole moments. The (2R,3S) isomer of this symmetric molecule is meso and optically inactive, while (2R,3R) is chiral. Enantiomers would require opposite configuration at every stereocenter, as in (2R,3R) versus (2S,3S). The connectivity is the same, so they are not constitutional isomers.",
+      "distractor_rationales": {
+        "A": "Enantiomers differ at every stereocenter. These two differ at only one center (and one is meso), so they are diastereomers, not enantiomers.",
+        "B": "Constitutional isomers differ in connectivity (for example 1,2- versus 2,3-dibromobutane). Both structures here are 2,3-dibromobutane.",
+        "C": "Different CIP labels at C3 mean they are not the same compound."
+      },
+      "difficulty_est": 0.62
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t2",
+      "type": "discrete",
+      "stem": "A sample of (S)-2-chlorobutane is 80% enantiomeric excess (20% of the material is racemate). If enantiopure (S)-2-chlorobutane has [α] = +12.0°, what is the expected specific rotation of the sample?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "+12.0°"
+        },
+        {
+          "key": "B",
+          "text": "+9.6°"
+        },
+        {
+          "key": "C",
+          "text": "+2.4°"
+        },
+        {
+          "key": "D",
+          "text": "0°"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Observed specific rotation equals enantiomeric excess times the rotation of the pure enantiomer (same sign as the major enantiomer). Here ee = 0.80, so [α]obs = 0.80 × (+12.0°) = +9.6°. Equivalently, the sample is 90% S and 10% R: the 10% R cancels 10% of the S, leaving 80% of the full rotation. +12.0° would describe 100% ee; 0° would describe a racemate; +2.4° would correspond to 20% ee, which confuses the racemate fraction with the excess.",
+      "distractor_rationales": {
+        "A": "+12.0° is the rotation of enantiopure material (100% ee), not 80% ee.",
+        "C": "+2.4° is 0.20 × 12.0°, which treats the 20% racemate fraction as if it were the ee.",
+        "D": "Zero rotation requires a racemate (ee = 0), not a scalemic sample with 80% excess of one enantiomer."
+      },
+      "difficulty_est": 0.57
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t3",
+      "type": "discrete",
+      "stem": "Ethanol (CH3CH2OH) and dimethyl ether (CH3OCH3) are isomers, yet ethanol boils at 78 °C while dimethyl ether boils at −24 °C. Which intermolecular-force difference is the principal reason?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Ethanol is ionic and dimethyl ether is covalent."
+        },
+        {
+          "key": "B",
+          "text": "Only London forces operate in ethanol, whereas dimethyl ether is hydrogen bonded at oxygen."
+        },
+        {
+          "key": "C",
+          "text": "Dimethyl ether has a much larger surface area, so it should actually boil higher; the listed boiling points must be reversed."
+        },
+        {
+          "key": "D",
+          "text": "Ethanol molecules form O–H···O hydrogen bonds; dimethyl ether can exert only dipole–dipole and London forces."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Both compounds have similar molar mass, so London forces are comparable. Ethanol has an O–H bond, so it can donate and accept hydrogen bonds, which are much stronger than the dipole–dipole contacts available to the ether. Extra thermal energy is required to separate hydrogen-bonded ethanol molecules, raising the boiling point by about 100 °C. Dimethyl ether’s oxygen can accept a hydrogen bond from water but cannot donate one to another ether molecule. Neither isomer is ionic, and the ether does not have a larger elongated surface that would reverse the boiling-point order.",
+      "distractor_rationales": {
+        "A": "Both compounds are neutral covalent molecules; ethanol’s elevated boiling point is hydrogen bonding, not an ionic lattice.",
+        "B": "This reverses the hydrogen-bond donor ability: the alcohol, not the ether, has the O–H needed for H-bonding between like molecules.",
+        "C": "The isomers have similar size; the ether is not the higher-boiling compound. The experimental order is ethanol >> ether."
+      },
+      "difficulty_est": 0.31
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t3",
+      "type": "discrete",
+      "stem": "Among the hydrogen halides, HF boils at 20 °C while HCl boils at −85 °C, even though HCl has the larger molar mass. What is the best explanation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "HCl is ionic in the liquid, so it should boil higher; the data are anomalous and unexplained."
+        },
+        {
+          "key": "B",
+          "text": "London forces increase from HF to HCl enough to invert the boiling points, so HF is expected to boil lower."
+        },
+        {
+          "key": "C",
+          "text": "HF forms strong hydrogen bonds (H attached to highly electronegative F); HCl’s intermolecular attractions are mainly dipole and London forces, which are weaker despite HCl’s greater polarizability."
+        },
+        {
+          "key": "D",
+          "text": "HF has a larger molecular surface area than HCl, increasing dispersion forces."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Boiling point among similar covalent hydrides usually tracks polarizability (London forces), which is why HCl, HBr, and HI increase in boiling point with molar mass. HF is the exception: fluorine’s high electronegativity and small size make HF···HF hydrogen bonds unusually strong, so liquid HF is more associated than liquid HCl. That extra cohesive energy outweighs HCl’s larger London forces. Neither liquid is an ionic melt, and HF is smaller than HCl, so surface area cannot explain HF’s higher boiling point.",
+      "distractor_rationales": {
+        "A": "Hydrogen chloride is a covalent molecular liquid, not an ionic melt. The HF/HCl inversion is a standard hydrogen-bonding effect.",
+        "B": "London forces do increase down the group, which is why HCl < HBr < HI, but they do not overcome HF’s hydrogen bonding.",
+        "D": "HF is smaller than HCl, so it has less surface area and weaker dispersion; hydrogen bonding, not surface area, raises HF’s boiling point."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t3",
+      "type": "discrete",
+      "stem": "n-Pentane (bp 36 °C) boils higher than its isomer 2,2-dimethylpropane (neopentane, bp 9 °C). Which statement correctly links shape to intermolecular forces?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The more spherical neopentane has less surface contact, so London forces are weaker and the boiling point is lower."
+        },
+        {
+          "key": "B",
+          "text": "n-Pentane hydrogen-bonds through its terminal methyl groups, while neopentane cannot."
+        },
+        {
+          "key": "C",
+          "text": "Neopentane is ionic; n-pentane is covalent."
+        },
+        {
+          "key": "D",
+          "text": "Branching always raises boiling point because branched isomers pack more tightly in the liquid."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Both isomers are nonpolar hydrocarbons, so the only significant intermolecular forces are London dispersions. Dispersion strength increases with polarizable surface area in contact. The compact, nearly spherical neopentane molecule presents less surface to neighbors than the elongated n-pentane chain, so the attractions are weaker and less heat is needed to vaporize it. Hydrocarbons do not hydrogen-bond, neither isomer is ionic, and branching generally lowers boiling points of alkanes for this surface-area reason (while often raising melting points because of packing in the solid).",
+      "distractor_rationales": {
+        "B": "C–H bonds are not hydrogen-bond donors; alkane boiling-point trends are dispersion, not hydrogen bonding.",
+        "C": "Both compounds are neutral hydrocarbons.",
+        "D": "Branching typically lowers alkane boiling points by reducing surface contact. Tight crystal packing can raise melting points, which is a different phase change."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t3",
+      "type": "discrete",
+      "stem": "At 1 atm, F2 and Cl2 are gases, Br2 is a liquid, and I2 is a solid. Which interaction is primarily responsible for that trend?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hydrogen bonding, which grows stronger as the halogen atoms become larger."
+        },
+        {
+          "key": "B",
+          "text": "Ion–ion forces in the elemental halogens."
+        },
+        {
+          "key": "C",
+          "text": "London dispersion forces, which increase with electron count and polarizability from F2 to I2."
+        },
+        {
+          "key": "D",
+          "text": "Covalent bond strength of X–X, which determines the boiling point of the element."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The elemental halogens are nonpolar X2 molecules, so they cannot hydrogen-bond and they are not ionic. Their intermolecular attractions are London forces, which scale with the number of electrons and with polarizability. Iodine has the most electrons and the most polarizable electron cloud, so I2 has the strongest intermolecular attractions and is a solid at room temperature, while F2 is a gas. The intramolecular X–X bond enthalpy is a separate issue: boiling and melting concern disrupting molecule–molecule contacts, not breaking the covalent bond inside X2.",
+      "distractor_rationales": {
+        "A": "F2, Cl2, Br2, and I2 have no hydrogen atoms and cannot hydrogen-bond.",
+        "B": "Elemental halogens are molecular, not ionic lattices of X+ and X−.",
+        "D": "Boiling separates intact X2 molecules. X–X bond strength would matter for dissociation temperatures, not for the liquid–gas trend of the elements."
+      },
+      "difficulty_est": 0.29
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t3",
+      "type": "discrete",
+      "stem": "Glycerol (HOCH2CH(OH)CH2OH) is a viscous liquid with a boiling point near 290 °C, far above that of 1-propanol (bp 97 °C). What is the best explanation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Glycerol has three hydroxyl groups, so it forms an extensive hydrogen-bond network; 1-propanol has only one hydroxyl group."
+        },
+        {
+          "key": "B",
+          "text": "Glycerol is a salt; 1-propanol is a molecular liquid."
+        },
+        {
+          "key": "C",
+          "text": "Glycerol has a much smaller molar mass, so it should be a gas; viscosity is unrelated to intermolecular forces."
+        },
+        {
+          "key": "D",
+          "text": "Only London forces operate in glycerol because the OH groups are intramolecularly satisfied."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Each glycerol molecule can donate three hydrogen bonds and accept several more, producing a three-dimensional hydrogen-bond network in the liquid. That network both raises the enthalpy of vaporization (high boiling point) and resists flow (high viscosity). 1-Propanol, with a single OH, forms only linear or loosely associated hydrogen-bonded chains and is far less associated. Glycerol is a neutral triol, not a salt, and its molar mass is larger than 1-propanol’s, not smaller. Intramolecular hydrogen bonds, if present, do not eliminate the many remaining intermolecular OH contacts.",
+      "distractor_rationales": {
+        "B": "Glycerol is a covalent polyol, not an ionic compound.",
+        "C": "Glycerol’s molar mass is higher than 1-propanol’s, and viscosity is a direct macroscopic consequence of strong intermolecular attractions.",
+        "D": "The three OH groups are the hydrogen-bond sites; they are not “used up” intramolecularly to the exclusion of intermolecular bonding."
+      },
+      "difficulty_est": 0.35
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t3",
+      "type": "discrete",
+      "stem": "Acetone (CH3COCH3, bp 56 °C) and 2-propanol (CH3CH(OH)CH3, bp 82 °C) have similar molar masses. Why is the alcohol’s boiling point higher?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acetone is more polar, so it should boil higher; the alcohol’s higher boiling point is due to its slightly larger mass alone."
+        },
+        {
+          "key": "B",
+          "text": "2-Propanol can donate and accept hydrogen bonds, whereas acetone can only accept hydrogen bonds and otherwise relies on dipole–dipole and London forces between ketone molecules."
+        },
+        {
+          "key": "C",
+          "text": "Acetone ionizes in the liquid, lowering its boiling point."
+        },
+        {
+          "key": "D",
+          "text": "The C=O bond of acetone is stronger than the C–O bond of the alcohol, so acetone molecules are harder to separate."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Boiling separates molecules, so intermolecular forces—not intramolecular bond strengths—set the boiling point. 2-Propanol has an O–H group and therefore hydrogen-bonds to itself. Acetone is polar and can accept a hydrogen bond from a donor, but a pair of acetone molecules cannot form O–H···O hydrogen bonds. The extra cohesion in the alcohol raises its boiling point despite nearly identical molar mass. Acetone does not ionize as a bulk liquid, and the strong C=O covalent bond is not broken on vaporization.",
+      "distractor_rationales": {
+        "A": "Acetone is polar but lacks an H-bond donor. The boiling-point gap is much larger than the tiny mass difference would suggest.",
+        "C": "Acetone is a molecular liquid; it does not dissociate into ions in the neat liquid in a way that would control boiling point.",
+        "D": "Vaporization does not break the carbonyl double bond. Intramolecular bond strength is the wrong comparison."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "MCAT.FC5.5B.t3",
+      "type": "discrete",
+      "stem": "Acetic acid (bp 118 °C) boils substantially higher than ethanol (bp 78 °C) even though their molar masses are similar (60 vs 46 g/mol). In nonpolar solvents, acetic acid is known to form cyclic dimers. Which description best links that dimerization to the elevated boiling point of neat acetic acid?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Each dimer is held by two O–H···O hydrogen bonds, so more energy is required to produce separated gas-phase monomers than for ethanol’s single-donor hydrogen bonding."
+        },
+        {
+          "key": "B",
+          "text": "Acetic acid dimers are covalently fused into a new compound with twice the molecular weight, and covalent dimers cannot evaporate."
+        },
+        {
+          "key": "C",
+          "text": "Ethanol cannot hydrogen-bond at all, so any carboxylic acid will boil higher for reasons unrelated to dimers."
+        },
+        {
+          "key": "D",
+          "text": "The dimers are ionic pairs of acetate and hydronium, producing salt-like boiling points."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Carboxylic acids in the liquid and in the vapor near the boiling point are strongly associated as cyclic dimers, each pair sharing two hydrogen bonds. Breaking that association to reach a gas of monomers (or of still-associated but fewer contacts) costs more enthalpy than disrupting ethanol’s singly donated hydrogen bonds. The dimers are still molecular hydrogen-bonded pairs, not new covalent molecules and not acetate–hydronium salts. Ethanol does hydrogen-bond, which is why it already boils well above propane; acetic acid’s extra donor–acceptor pair in the dimer pushes the boiling point higher still.",
+      "distractor_rationales": {
+        "B": "Dimerization is a reversible hydrogen-bonding equilibrium, not formation of a new covalently bonded C–C or C–O framework that cannot vaporize.",
+        "C": "Ethanol is a classic hydrogen-bonding liquid; the comparison is dimer versus single H-bond, not H-bond versus none.",
+        "D": "Neat acetic acid is a molecular liquid of largely undissociated dimers, not an ionic melt of hydronium acetate."
+      },
+      "difficulty_est": 0.64
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t1",
+      "type": "discrete",
+      "stem": "A buffer is prepared from acetic acid (pKa = 4.74) with [CH3CO2−] = 0.30 M and [CH3CO2H] = 0.030 M. What is the pH?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "3.74"
+        },
+        {
+          "key": "B",
+          "text": "4.74"
+        },
+        {
+          "key": "C",
+          "text": "5.74"
+        },
+        {
+          "key": "D",
+          "text": "7.00"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Henderson–Hasselbalch gives pH = pKa + log([A−]/[HA]). The ratio 0.30/0.030 = 10, and log10(10) = 1, so pH = 4.74 + 1 = 5.74. Equal concentrations would have given pH = pKa = 4.74. The value 3.74 would correspond to inverting the ratio (tenfold excess acid). Neutrality (pH 7) is not required for a buffer; this acetate buffer is mildly acidic, as expected near pKa 4.74 with excess conjugate base pulling the pH one unit above pKa.",
+      "distractor_rationales": {
+        "A": "3.74 is pKa − 1, which would apply if [HA]/[A−] were 10 rather than [A−]/[HA] = 10. The logarithm was inverted.",
+        "B": "4.74 is the pKa and is the pH only when [A−] = [HA], which is not the case here.",
+        "D": "pH 7 is neutrality of pure water, not the pH of a carboxylate buffer with pKa 4.74."
+      },
+      "difficulty_est": 0.34
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t1",
+      "type": "discrete",
+      "stem": "Lactic acid has pKa = 3.86. In a solution buffered at pH 5.86, which statement about the lactic acid / lactate pair is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The acid form predominates by a factor of 100."
+        },
+        {
+          "key": "B",
+          "text": "The two forms are present in equal concentration."
+        },
+        {
+          "key": "C",
+          "text": "The lactate (conjugate base) form predominates by a factor of 100."
+        },
+        {
+          "key": "D",
+          "text": "Virtually all of the material is fully protonated because pH is still less than 7."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Henderson–Hasselbalch: pH = pKa + log([A−]/[HA]), so log([A−]/[HA]) = 5.86 − 3.86 = 2, hence [A−]/[HA] = 10^2 = 100. Two pH units above pKa, the deprotonated form is 100-fold more abundant. Equal concentrations occur only at pH = pKa. Predominance of HA would require pH below pKa. Neutrality (pH 7) is irrelevant to the HA/A− ratio; that ratio is fixed by pH − pKa, not by whether the solution is “acidic” relative to 7. For physiological acids this is the same reasoning used for blood buffers.",
+      "distractor_rationales": {
+        "A": "A 100-fold excess of HA would require pH = pKa − 2 (about 1.86), not pH 5.86.",
+        "B": "Equal concentrations require pH = pKa = 3.86.",
+        "D": "pH 5.86 is still below 7 but is two units above this pKa, so the base form dominates. Comparison to 7 is the wrong reference."
+      },
+      "difficulty_est": 0.39
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t1",
+      "type": "discrete",
+      "stem": "A 0.20 M solution of the weak acid HA has Ka = 2.0 × 10^−6. Neglecting water autoionization and using the x ≪ [HA] approximation, what is the pH?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "3.20"
+        },
+        {
+          "key": "B",
+          "text": "0.70"
+        },
+        {
+          "key": "C",
+          "text": "5.70"
+        },
+        {
+          "key": "D",
+          "text": "6.80"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "For a weak acid, [H+] ≈ √(Ka C) = √(2.0 × 10^−6 × 0.20) = √(4.0 × 10^−7) = 6.3 × 10^−4, so pH = 3.20. Equivalently, pH = ½ pKa − ½ log C with pKa = 5.70 and log(0.20) = −0.70, giving ½(5.70 + 0.70) = 3.20. The approximation x/C ≈ 0.003 is well under 5%. pH = 0.70 would treat HA as a strong acid (−log C). pH = 5.70 is the pKa, not the pH of the unbuffered weak acid. 6.80 is not the result of the square-root expression.",
+      "distractor_rationales": {
+        "B": "0.70 is −log(0.20), the pH if HA were a strong acid that fully dissociated.",
+        "C": "5.70 is −log(Ka) = pKa, which is the pH of a 1:1 buffer of HA and A−, not of HA alone.",
+        "D": "6.80 does not follow from √(Ka C) or from the half-pKa formula; it may come from incorrectly averaging pKa with 14 or with −log C."
+      },
+      "difficulty_est": 0.66
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t1",
+      "type": "discrete",
+      "stem": "Ammonia has Kb = 1.8 × 10^−5. What is Ka of ammonium ion, NH4+, at 25 °C (Kw = 1.0 × 10^−14)?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1.8 × 10^−5"
+        },
+        {
+          "key": "B",
+          "text": "1.8 × 10^−9"
+        },
+        {
+          "key": "C",
+          "text": "5.6 × 10^−10"
+        },
+        {
+          "key": "D",
+          "text": "1.0 × 10^−14"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "For a conjugate pair, Ka(acid) × Kb(base) = Kw. Therefore Ka(NH4+) = Kw / Kb(NH3) = (1.0 × 10^−14) / (1.8 × 10^−5) = 5.6 × 10^−10. That small Ka identifies NH4+ as a weak acid, which is why solutions of NH4Cl are slightly acidic. Copying Kb as Ka ignores the conjugate relationship. 1.8 × 10^−9 is an off-by-factor arithmetic error (dividing by 10^−5 incorrectly). Kw itself is not Ka of ammonium.",
+      "distractor_rationales": {
+        "A": "1.8 × 10^−5 is Kb of ammonia, not Ka of ammonium. The conjugate acid must have Ka = Kw/Kb.",
+        "B": "1.8 × 10^−9 would be Kw/Kb with an incorrect power of ten (as if Kw were 10^−14 and Kb were 10^−5 but 1.8 were placed wrong).",
+        "D": "1.0 × 10^−14 is Kw, the autoionization constant of water, not Ka of NH4+."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t1",
+      "type": "discrete",
+      "stem": "Aspartic acid has approximate pKa values 2.0 (α-COOH), 4.0 (side-chain COOH), and 10.0 (α-NH3+). What is the net charge of aspartic acid at pH 7.0?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "+1"
+        },
+        {
+          "key": "B",
+          "text": "0"
+        },
+        {
+          "key": "C",
+          "text": "−1"
+        },
+        {
+          "key": "D",
+          "text": "−2"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "At a given pH, each group is deprotonated if pH > pKa and protonated if pH < pKa. At pH 7 both carboxylic acids (pKa 2 and 4) are deprotonated (−1 each) while the ammonium (pKa 10) is still protonated (+1). The net charge is −1. The fully protonated form (+1) exists only far below pKa 2. The zwitterion with net 0 is not the major form at pH 7 because the side-chain acid is also deprotonated. Net −2 requires deprotonating the ammonium as well, which occurs only above pH ~10.",
+      "distractor_rationales": {
+        "A": "+1 is the charge of fully protonated aspartic acid (both COOH and NH3+), which dominates only at very low pH.",
+        "B": "Net 0 would describe a form with one carboxylate and one ammonium and a still-protonated side chain, which is not favored at pH 7 (two units above the side-chain pKa).",
+        "D": "−2 is the fully deprotonated form (two carboxylates and NH2), major only when pH exceeds the ammonium pKa."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t1",
+      "type": "discrete",
+      "stem": "Human blood is buffered near pH 7.4 largely by carbonic acid (effective pKa1 ≈ 6.1 for dissolved CO2/H2CO3) and bicarbonate. Which statement follows from Henderson–Hasselbalch for this pair at pH 7.4?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "[H2CO3] ≈ [HCO3−], because blood is near neutrality."
+        },
+        {
+          "key": "B",
+          "text": "Blood pH 7.4 is too far from any carbonic pKa for bicarbonate to function as a buffer."
+        },
+        {
+          "key": "C",
+          "text": "The relevant buffer pair at pH 7.4 is HCO3−/CO3^2− (pKa2 ≈ 10.3), because that pKa is closer to 7.4 than 6.1 is."
+        },
+        {
+          "key": "D",
+          "text": "[HCO3−]/[H2CO3] ≈ 20, so the conjugate base is in large excess and the system sits on the basic side of pKa1."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "For H2CO3/HCO3−, pH = 6.1 + log([HCO3−]/[H2CO3]). At pH 7.4 the log term is 1.3, so the ratio is about 20:1 in favor of bicarbonate. A buffer still functions when the ratio is not 1:1; the open CO2/bicarbonate system is the physiological buffer near 7.4. The HCO3−/CO3^2− pair has pKa ≈ 10.3, three units away, so carbonate is negligible at 7.4. Neutrality does not force equal HA and A−, and being 1.3 units from pKa1 is still within a usable (if uneven) buffer window, especially with continuous CO2 control.",
+      "distractor_rationales": {
+        "A": "Equal concentrations require pH = pKa ≈ 6.1, not pH 7.4.",
+        "B": "The 20:1 bicarbonate/carbonic acid ratio is the classic demonstration that this pair does buffer arterial blood.",
+        "C": "pKa2 ≈ 10.3 is much farther from 7.4 than pKa1 is; essentially no CO3^2− is present, so that pair is not the blood buffer."
+      },
+      "difficulty_est": 0.59
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t1",
+      "type": "discrete",
+      "stem": "A biochemist wants a buffer at pH 7.2. Which weak acid is the most appropriate starting point (effective buffering is typically pKa ± 1)?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Imidazole, pKa ≈ 7.0"
+        },
+        {
+          "key": "B",
+          "text": "Acetic acid, pKa = 4.76"
+        },
+        {
+          "key": "C",
+          "text": "Phenol, pKa = 10.0"
+        },
+        {
+          "key": "D",
+          "text": "HCl, which has no pKa in water because it is strong"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "A buffer resists pH change best when pH is within about one unit of pKa, because both HA and A− are then present in useful amounts. Imidazole’s pKa near 7.0 matches the target pH 7.2, so the ratio [A−]/[HA] is close to 1.6 and both species are abundant. Acetic acid’s pKa 4.76 is 2.4 units away, so the acid would be almost fully deprotonated and the buffer capacity at 7.2 would be poor. Phenol’s pKa 10 is similarly too far. A strong acid such as HCl is fully dissociated and does not establish a conjugate pair with a useful pKa in water.",
+      "distractor_rationales": {
+        "B": "Acetic acid buffers near pH 4–6. At pH 7.2 it is almost entirely acetate, so added acid or base changes pH sharply.",
+        "C": "Phenol buffers near pH 9–11, not 7.2; at pH 7.2 it is almost fully protonated.",
+        "D": "Strong acids do not form buffers; there is no undissociated HA reservoir in water to absorb added base."
+      },
+      "difficulty_est": 0.32
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t2",
+      "type": "discrete",
+      "stem": "A 0.10 M solution of HF (Ka = 6.8 × 10^−4) has [H3O+] ≈ 8.2 × 10^−3 M. Solid NaF is then dissolved to make the solution 0.10 M in F− as well (volume change negligible). What happens to [H3O+]?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It increases because NaF is a strong electrolyte that adds extra H3O+."
+        },
+        {
+          "key": "B",
+          "text": "It decreases because the added fluoride (common ion) shifts HF ⇌ H+ + F− toward undissociated HF."
+        },
+        {
+          "key": "C",
+          "text": "It is unchanged because Ka is a constant."
+        },
+        {
+          "key": "D",
+          "text": "It decreases to zero because fluoride completely consumes H3O+."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Le Chatelier’s principle applied to HF ⇌ H3O+ + F− says that adding F− from NaF drives the equilibrium left, lowering [H3O+] and decreasing the percent ionization of HF. After the addition, [H3O+] ≈ Ka [HF]/[F−] ≈ 6.8 × 10^−4, about an order of magnitude below the original 8.2 × 10^−3 M. Ka itself is unchanged; concentrations adjust so that the quotient again equals Ka. NaF is a salt, not a source of H3O+. Residual acid remains, so [H3O+] does not fall to zero.",
+      "distractor_rationales": {
+        "A": "Na+ and F− are the ions of a salt; fluoride is a base, not an acid, and does not add H3O+.",
+        "C": "Ka is constant, but that does not freeze [H3O+]. The ratio [H3O+][F−]/[HF] stays equal to Ka while the individual concentrations change.",
+        "D": "The common-ion shift reduces [H3O+] but leaves a weak-acid equilibrium with a small, nonzero [H3O+]."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t2",
+      "type": "discrete",
+      "stem": "The Ksp of AgCl is 1.8 × 10^−10. Compared with pure water, the molar solubility of AgCl in 0.10 M NaCl is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "higher, because extra chloride complexes all of the silver and pulls more AgCl into solution."
+        },
+        {
+          "key": "B",
+          "text": "unchanged, because Ksp depends only on temperature."
+        },
+        {
+          "key": "C",
+          "text": "lower, because the common chloride ion appears in Ksp = [Ag+][Cl−], so [Ag+] must fall when [Cl−] is already 0.10 M."
+        },
+        {
+          "key": "D",
+          "text": "lower because Na+ precipitates NaCl and removes chloride."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "AgCl(s) ⇌ Ag+ + Cl− has Ksp = [Ag+][Cl−]. In 0.10 M NaCl, [Cl−] is fixed near 0.10 M, so [Ag+] = Ksp/[Cl−] ≈ 1.8 × 10^−9 M, which is also the molar solubility. In pure water the solubility is √Ksp ≈ 1.3 × 10^−5 M, about 10^4-fold higher. The common-ion effect therefore decreases solubility. Ksp is unchanged with added NaCl at constant temperature; what changes is how that product is partitioned between [Ag+] and [Cl−]. Dilute chloride does not create enough [AgCl2]− here to reverse the effect, and NaCl is already dissolved, not precipitating.",
+      "distractor_rationales": {
+        "A": "High [Cl−] can form [AgCl2]− at much larger chloride concentrations, but the standard common-ion result at 0.10 M is suppressed solubility, not enhancement.",
+        "B": "Ksp is constant at a given T, but solubility is not; added Cl− changes the equilibrium position.",
+        "D": "NaCl is highly soluble; Na+ does not precipitate and remove the common ion under these conditions."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t2",
+      "type": "discrete",
+      "stem": "In aqueous solution, Li+ has a larger hydrated radius and a more negative hydration enthalpy than Cs+, even though the bare Li+ ion is smaller. Which explanation is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Li+ has higher charge density, so it orients and holds more water molecules more tightly via ion–dipole forces."
+        },
+        {
+          "key": "B",
+          "text": "Li+ is less polarizing, so water binds more loosely and the hydrated radius expands."
+        },
+        {
+          "key": "C",
+          "text": "Cs+ hydrolyzes water to H3O+ while Li+ does not, shrinking the cesium hydration shell."
+        },
+        {
+          "key": "D",
+          "text": "Hydration enthalpy tracks only mass, so the heavier Cs+ must have the more negative hydration enthalpy."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Ion–dipole attraction scales with charge density (charge/volume). Li+ is much smaller than Cs+ at the same +1 charge, so the electric field at its surface is stronger. Water dipoles pack more tightly and in greater number around Li+, producing a larger hydrodynamic (hydrated) radius despite the smaller ionic radius, and a more exothermic hydration enthalpy. Cs+ is weakly hydrated. Hydrolysis to H3O+ is characteristic of small, highly charged metal ions such as Al3+, not of Cs+. Mass alone does not set hydration enthalpy.",
+      "distractor_rationales": {
+        "B": "Li+ is more polarizing, not less; tighter—not looser—water binding is the point.",
+        "C": "Neither alkali cation is a strong hydrolyzing acid in water; that description fits Al3+ or Fe3+ aquo ions.",
+        "D": "Heavier Cs+ is less strongly hydrated. Hydration enthalpy correlates with charge density, not with mass in this pair."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t2",
+      "type": "discrete",
+      "stem": "Which 0.10 M salt solution is expected to be acidic because the cation hydrolyzes coordinated water?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "NaNO3"
+        },
+        {
+          "key": "B",
+          "text": "KCl"
+        },
+        {
+          "key": "C",
+          "text": "Al(NO3)3"
+        },
+        {
+          "key": "D",
+          "text": "NaCH3CO2"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Al3+ in water exists as [Al(H2O)6]3+. The high charge density of Al3+ withdraws electron density from coordinated water, making those O–H bonds acidic: [Al(H2O)6]3+ ⇌ [Al(H2O)5OH]2+ + H3O+. A 0.10 M Al(NO3)3 solution is therefore acidic. Na+ and K+ are weakly polarizing and do not hydrolyze water; NO3− and Cl− are conjugate bases of strong acids and are pH-neutral spectators. Acetate is the conjugate base of a weak acid, so NaCH3CO2 is basic, not acidic.",
+      "distractor_rationales": {
+        "A": "Na+ does not hydrolyze water and NO3− is the conjugate base of strong HNO3, so NaNO3 is pH-neutral.",
+        "B": "KCl is a salt of a strong acid and a strong base and is pH-neutral.",
+        "D": "Acetate hydrolyzes as a weak base (CH3CO2− + H2O ⇌ CH3CO2H + OH−), so this solution is basic."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t2",
+      "type": "discrete",
+      "stem": "At 25 °C, Kw = [H3O+][OH−] = 1.0 × 10^−14. In an aqueous solution with [H3O+] = 2.0 × 10^−3 M, what is [OH−]?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2.0 × 10^−3 M"
+        },
+        {
+          "key": "B",
+          "text": "5.0 × 10^−12 M"
+        },
+        {
+          "key": "C",
+          "text": "1.0 × 10^−14 M"
+        },
+        {
+          "key": "D",
+          "text": "2.0 × 10^−17 M"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Autoionization of water always supplies the product [H3O+][OH−] = Kw at a given temperature. With [H3O+] fixed at 2.0 × 10^−3 M by added acid, [OH−] = Kw/[H3O+] = 1.0 × 10^−14 / 2.0 × 10^−3 = 5.0 × 10^−12 M. Hydronium and hydroxide are not equal except in pure water. Kw is the product, not the hydroxide concentration. Multiplying Kw by [H3O+] instead of dividing is a common inversion error that yields a nonsensical 10^−17 M.",
+      "distractor_rationales": {
+        "A": "Equal [H3O+] and [OH−] holds only for pure water (or strictly neutral solutions), not for a solution already 2 × 10^−3 M in hydronium.",
+        "C": "1.0 × 10^−14 M is Kw, a product of two concentrations, not [OH−] itself.",
+        "D": "2.0 × 10^−17 M is Kw × [H3O+], the inverse of the correct operation."
+      },
+      "difficulty_est": 0.27
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t2",
+      "type": "discrete",
+      "stem": "Which ion is amphiprotic in water, able both to donate a proton to water and to accept a proton from water?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cl−"
+        },
+        {
+          "key": "B",
+          "text": "HCO3−"
+        },
+        {
+          "key": "C",
+          "text": "Na+"
+        },
+        {
+          "key": "D",
+          "text": "ClO4−"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Bicarbonate can act as an acid (HCO3− + H2O ⇌ CO3^2− + H3O+) or as a base (HCO3− + H2O ⇌ H2CO3 + OH−). That dual behavior is amphiprotic and is why NaHCO3 solutions are mildly basic (the Kb path is stronger than the Ka path for this ion). Cl− and ClO4− are conjugate bases of strong acids and have negligible basicity and no proton to donate. Na+ is neither a proton donor nor a meaningful proton acceptor in water; it is a spectator cation.",
+      "distractor_rationales": {
+        "A": "Chloride has no proton to donate and is such a weak base that it does not accept protons from water to a measurable extent.",
+        "C": "Sodium ion is a closed-shell spectator; it is not amphiprotic.",
+        "D": "Perchlorate is the conjugate base of superacidic HClO4 and neither donates nor accepts protons in water."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t2",
+      "type": "discrete",
+      "stem": "When crystalline NaCl dissolves in water, the process is driven largely by interactions that replace the Na+···Cl− lattice contacts. Which solute–solvent interaction is the principal stabilizing force for the separated ions?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hydrogen bonds between Na+ ions"
+        },
+        {
+          "key": "B",
+          "text": "Covalent Na–O bonds that destroy the identity of the sodium ion"
+        },
+        {
+          "key": "C",
+          "text": "London forces between uncharged NaCl molecules and water"
+        },
+        {
+          "key": "D",
+          "text": "Ion–dipole attractions between Na+ or Cl− and the partial charges on water"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Dissolution of an ionic solid in water is a competition between lattice energy and hydration. Water is polar: the oxygen (δ−) orients toward Na+ and the hydrogens (δ+) toward Cl−. Those ion–dipole contacts, plus the hydrogen-bond network among water molecules in the hydration shells, stabilize free ions enough to overcome much of the lattice energy. Na+ ions do not hydrogen-bond to each other. Solid NaCl is ionic, not a lattice of covalent NaCl molecules held by London forces. Hydration is electrostatic, not formation of covalent Na–O bonds that would reduce sodium’s oxidation state.",
+      "distractor_rationales": {
+        "A": "Hydrogen bonding requires H attached to N, O, or F. Bare Na+ ions cannot hydrogen-bond to one another.",
+        "B": "Aqueous sodium remains Na+; water ligands are coordinated electrostatically, not by covalent neutralization of the ion.",
+        "C": "NaCl does not dissolve as intact nonpolar molecules; it separates into ions. London forces are secondary for this salt."
+      },
+      "difficulty_est": 0.3
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t4",
+      "type": "discrete",
+      "stem": "25.0 mL of 0.10 M acetic acid (pKa = 4.74) is titrated with 0.10 M NaOH. At the equivalence point, which statement about the solution is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The pH is 7.00 because moles of acid equal moles of base."
+        },
+        {
+          "key": "B",
+          "text": "The pH is greater than 7 because the solution is aqueous sodium acetate, and acetate hydrolyzes to produce OH−."
+        },
+        {
+          "key": "C",
+          "text": "The pH equals 4.74 because that is the pKa of acetic acid."
+        },
+        {
+          "key": "D",
+          "text": "The pH is less than 7 because leftover acetic acid still dominates."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Equivalence for this 1:1 titration occurs at 25.0 mL of NaOH, when essentially all CH3CO2H has been converted to CH3CO2−. The flask then contains a solution of the conjugate base of a weak acid. Acetate reacts with water (CH3CO2− + H2O ⇌ CH3CO2H + OH−), so the equivalence-point pH is basic (typically ~8.7 for these concentrations), not 7. pH 7 is the equivalence pH only for a strong acid–strong base titration. pH = pKa occurs at the half-equivalence point, not at equivalence. No significant free acetic acid remains at equivalence.",
+      "distractor_rationales": {
+        "A": "Equal moles mean neutralization of HA to A−, not a neutral pH, when A− is a weak base.",
+        "C": "pH = pKa at half-equivalence, where [HA] = [A−], not at equivalence.",
+        "D": "At equivalence the weak acid has been consumed; leftover HA is the situation before equivalence."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t4",
+      "type": "discrete",
+      "stem": "The same acetic acid sample (25.0 mL of 0.10 M; pKa = 4.74) is titrated with 0.10 M NaOH. After 12.5 mL of NaOH has been added, the pH is closest to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "4.74"
+        },
+        {
+          "key": "B",
+          "text": "2.87"
+        },
+        {
+          "key": "C",
+          "text": "7.00"
+        },
+        {
+          "key": "D",
+          "text": "8.72"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Initial millimoles of acetic acid = 2.50. After 12.5 mL of 0.10 M NaOH, 1.25 mmol of HA has been converted to acetate, leaving 1.25 mmol HA. That is the half-equivalence point, where [HA] = [A−] (volumes cancel in the ratio). Henderson–Hasselbalch then gives pH = pKa = 4.74. 2.87 is the approximate starting pH of 0.10 M acetic acid before any base. 7.00 would be a strong-acid equivalence point. 8.72 is the ballpark equivalence pH after a full 25.0 mL of NaOH, not after half that volume.",
+      "distractor_rationales": {
+        "B": "2.87 estimates the pH of untitrated 0.10 M acetic acid (√(Ka C)), not the half-neutralized buffer.",
+        "C": "pH 7 is not a special point on a weak-acid titration curve except by coincidence; half-equivalence is at pKa.",
+        "D": "≈8.7 is the equivalence-point pH after 25.0 mL of NaOH, when the solute is acetate alone."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t4",
+      "type": "discrete",
+      "stem": "For the weak acid–strong base titration above, the steep jump at equivalence is centered near pH 8.7. Which indicator is appropriate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Methyl orange (color change ≈ pH 3.1–4.4)"
+        },
+        {
+          "key": "B",
+          "text": "Bromophenol blue (color change ≈ pH 3.0–4.6)"
+        },
+        {
+          "key": "C",
+          "text": "Phenolphthalein (color change ≈ pH 8.2–10.0)"
+        },
+        {
+          "key": "D",
+          "text": "An indicator is unnecessary because the equivalence pH is 7.0 and the eye can detect neutrality."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "An indicator is a weak acid whose color change interval should overlap the steep portion of the titration curve. For acetic acid/NaOH that jump lies in the alkaline region around pH 8–10, which matches phenolphthalein’s window. Methyl orange and bromophenol blue change in the acidic range, well before equivalence, so they would signal an endpoint after only partial neutralization (near the buffer region). The equivalence pH is not 7, and visual “neutrality” is not a substitute for an indicator whose pKa matches the jump.",
+      "distractor_rationales": {
+        "A": "Methyl orange would change color in the acetic acid buffer region, far before the true equivalence point.",
+        "B": "Bromophenol blue likewise changes while substantial HA remains; it is used for some strong-acid endpoints, not this weak-acid case.",
+        "D": "Equivalence is basic, not pH 7, and unassisted vision cannot locate a specific pH."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t4",
+      "type": "discrete",
+      "stem": "25.0 mL of 0.10 M HCl is titrated with 0.10 M NaOH. At the equivalence point the pH is 7.0, and the curve is nearly vertical from about pH 4 to 10. Which statement correctly contrasts this curve with the acetic acid titration curve?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Both curves have a half-equivalence buffer plateau at pH = pKa of the acid being titrated; for HCl that pKa is 7."
+        },
+        {
+          "key": "B",
+          "text": "The strong-acid curve starts near pH 1, has no weak-acid buffer region, and the equivalence pH is 7 because the salt is NaCl, which does not hydrolyze."
+        },
+        {
+          "key": "C",
+          "text": "The strong-acid curve starts near pH 5 and is identical to the weak-acid curve after the first 1 mL of base."
+        },
+        {
+          "key": "D",
+          "text": "Strong-acid titrations have two equivalence points because HCl is diprotic."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "0.10 M HCl has pH 1.0 at the start. As NaOH is added, [H3O+] falls, but there is no HA/A− buffer plateau because HCl is fully dissociated. At equivalence the solute is NaCl; Cl− is the conjugate of a strong acid and Na+ is the conjugate of a strong base, so the pH is 7. The vertical region is wider than for a weak acid, which is why many indicators work. HCl is monoprotic and has no aqueous pKa near 7. The acetic acid curve, by contrast, starts near pH 3, buffers around pH 4.7, and ends basic at equivalence.",
+      "distractor_rationales": {
+        "A": "HCl has no useful weak-acid pKa in water and no half-equivalence buffer at pH 7. pH 7 is the equivalence point, not a pKa.",
+        "C": "The strong-acid start is pH 1, not 5, and the early part of the curve is not a weak-acid buffer.",
+        "D": "HCl donates one proton; diprotic curves (H2SO4, H2CO3) are a different class."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t4",
+      "type": "discrete",
+      "stem": "A diprotic acid H2A (pKa1 = 2.0, pKa2 = 7.0) is titrated with strong base. Which description of the titration curve is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A single steep equivalence jump at pH 7, because the average of the two pKa values is 4.5 and that is irrelevant."
+        },
+        {
+          "key": "B",
+          "text": "No buffer regions, because diprotic acids are always strong in both protons."
+        },
+        {
+          "key": "C",
+          "text": "Three equivalence points, one for each hydrogen in H2A plus the solvent."
+        },
+        {
+          "key": "D",
+          "text": "Two buffer regions (near pH 2 and near pH 7) and two equivalence points: the first converts H2A to HA− and the second converts HA− to A2−."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "A diprotic acid with well-separated pKa values (here five units apart) shows two distinct neutralization stages. Halfway to the first equivalence point, pH ≈ pKa1 and the buffer is H2A/HA−. At the first equivalence point the principal species is HA− (amphiprotic; pH ≈ ½(pKa1 + pKa2) ≈ 4.5). Halfway to the second equivalence, pH ≈ pKa2 with buffer HA−/A2−. The second equivalence point is a solution of A2− and is basic. There are two, not three, acidic protons to neutralize. Neither proton is strong given these pKa values.",
+      "distractor_rationales": {
+        "A": "Two separated pKa values produce two jumps, not one. pH 7 is the second buffer region (pKa2), not a unique single equivalence.",
+        "B": "pKa 2 and 7 describe a weak first proton and a weaker second proton; both generate buffer plateaus.",
+        "C": "H2A has two titratable protons, hence two equivalence points (solvent water is not a third analyte proton here)."
+      },
+      "difficulty_est": 0.68
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t4",
+      "type": "discrete",
+      "stem": "25.0 mL of 0.10 M NH3 (pKb = 4.74) is titrated with 0.10 M HCl. At the equivalence point the solution contains 0.050 M NH4+. Which statement is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The pH is 7.00 because moles of acid equal moles of base."
+        },
+        {
+          "key": "B",
+          "text": "The pH is less than 7 because NH4+ is a weak acid (Ka = Kw/Kb ≈ 5.6 × 10^−10) and hydrolyzes to produce H3O+."
+        },
+        {
+          "key": "C",
+          "text": "The pH equals 9.26, the pKa of NH4+, because that is always the equivalence pH."
+        },
+        {
+          "key": "D",
+          "text": "The pH is greater than 7 because leftover ammonia dominates."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Equivalence converts NH3 completely to NH4+. The flask holds an aqueous ammonium salt, a weak acid. Ka(NH4+) = Kw/Kb = 5.6 × 10^−10, so [H3O+] ≈ √(Ka C) = √(5.6 × 10^−10 × 0.050) ≈ 5.3 × 10^−6 and pH ≈ 5.3, acidic. Equal moles do not imply pH 7 when the product ion hydrolyzes. pH = pKa = 9.26 is the half-equivalence point of this titration (buffer NH3/NH4+), not equivalence. Leftover NH3 would make the solution basic only before equivalence.",
+      "distractor_rationales": {
+        "A": "Neutralization to NH4Cl does not yield a pH-neutral solution; ammonium is acidic.",
+        "C": "9.26 is pKa of NH4+ and is the pH at half-equivalence, where [NH3] = [NH4+].",
+        "D": "At equivalence ammonia has been consumed; excess NH3 is the pre-equivalence (basic) region."
+      },
+      "difficulty_est": 0.56
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t4",
+      "type": "discrete",
+      "stem": "On a weak-acid + strong-base titration curve, which region is nearly flat (small ΔpH per mL of titrant) and why?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The initial point only, because no acid has reacted yet."
+        },
+        {
+          "key": "B",
+          "text": "The far-basic plateau after equivalence, which is flat because the solution is a perfect buffer of NaOH and water."
+        },
+        {
+          "key": "C",
+          "text": "The vertical equivalence jump, which is flat by definition."
+        },
+        {
+          "key": "D",
+          "text": "The buffer region around the half-equivalence point, where added OH− converts HA to A− without large pH change while both species remain."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Buffer action is maximal when [HA] and [A−] are both substantial, which occurs between the start and the equivalence point and is centered at half-equivalence (pH = pKa). Added strong base is consumed by HA, so pH = pKa + log([A−]/[HA]) changes only as the log ratio changes—slowly. The equivalence region is the opposite: a tiny increment of titrant swings the pH through many units (steep, not flat). After equivalence the curve tracks excess NaOH and rises, but that is not the HA/A− buffer. The initial weak-acid point is not a buffer until some A− has been generated.",
+      "distractor_rationales": {
+        "A": "The starting weak-acid solution has almost no A− and is not well buffered; the first additions of base change pH faster than in the mid-buffer region.",
+        "B": "Excess strong base is not a conventional buffer; pH still changes with each added milliliter, though more slowly than at equivalence.",
+        "C": "The equivalence jump is the steepest part of the curve, used to locate the endpoint, not a flat region."
+      },
+      "difficulty_est": 0.49
+    }
+  ]
+}
