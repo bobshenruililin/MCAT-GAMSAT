@@ -80,7 +80,7 @@ Newest prompt wins on scope: replace PLACEHOLDER seed with a real bank. Taxonomy
 | 23-cars-depth.json | 25 | 5 more CARS passages (skills FND/RWT/RBT) |
 | 24-gamsat-s1-depth.json | 30 | cartoon, paired poems, history, verb table, memorial, borrowed-coat |
 | 25-gamsat-s3-data.json | 15 | 3 data passages; `skill_tag` on S3 rfd overlay |
-| **total** | **847** | 25 passages; 120 passage questions |
+| **total** | **847** | 25 passages; 120 passage questions; unique concept+stem
 
 Every `exam_weight > 0` topic (290) has ≥1 item. Overlays (SIRS, S3 `rfd.*`) stay weight 0 (B-003); rfd is practised as `skill_tag` on S3 data items, not as a new-item quota.
 

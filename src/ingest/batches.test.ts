@@ -52,4 +52,29 @@ describe("exam bank files", () => {
     const missing = weighted.filter((t) => !covered.has(t.id)).map((t) => t.id);
     expect(missing).toEqual([]);
   });
+
+  it("has unique concept+stem pairs so ingest does not skip duplicates", () => {
+    const seen = new Map<string, string>();
+    const files = readdirSync(BATCH_DIR)
+      .filter((name) => /^\d+-.*\.json$/.test(name))
+      .sort();
+    for (const name of files) {
+      const result = validateIngestFile(
+        readFileSync(path.join(BATCH_DIR, name), "utf8"),
+        TAXONOMY_PATH,
+      );
+      const rows = [
+        ...result.items.map((i) => ({ conceptId: i.conceptId, stem: i.stem })),
+        ...result.passages.flatMap((p) =>
+          p.questions.map((q) => ({ conceptId: q.conceptId, stem: q.stem })),
+        ),
+      ];
+      for (const row of rows) {
+        const key = `${row.conceptId}\n${row.stem}`;
+        expect(seen.has(key), `${name} duplicates ${seen.get(key)}`).toBe(false);
+        seen.set(key, name);
+      }
+    }
+    expect(seen.size).toBeGreaterThanOrEqual(847);
+  });
 });
