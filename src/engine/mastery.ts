@@ -1,6 +1,6 @@
 import { asc, eq } from "drizzle-orm";
 import type { AppDb } from "@/db/client";
-import { attempts, concepts, items } from "@/db/schema";
+import { attempts, concepts, items, masteryPriors } from "@/db/schema";
 import { getRetrievability } from "./reviewEngine";
 
 const ALPHA = 0.3;
@@ -8,7 +8,7 @@ const UNSEEN = 0.3;
 
 export type MasteryMap = Record<string, number>;
 
-function ewmaCorrectness(values: number[]): number {
+export function ewmaCorrectness(values: number[]): number {
   let c = UNSEEN;
   for (const v of values) {
     c = ALPHA * v + (1 - ALPHA) * c;
@@ -52,7 +52,14 @@ function topicMastery(
       ? UNSEEN
       : retrievabilities.reduce((s, n) => s + n, 0) / retrievabilities.length;
 
-  if (attemptRows.length === 0 && retrievabilities.length === 0) return UNSEEN;
+  if (attemptRows.length === 0 && retrievabilities.length === 0) {
+    const prior = db
+      .select({ value: masteryPriors.value })
+      .from(masteryPriors)
+      .where(eq(masteryPriors.conceptId, conceptId))
+      .get();
+    return prior?.value ?? UNSEEN;
+  }
   return 0.6 * C + 0.4 * R;
 }
 

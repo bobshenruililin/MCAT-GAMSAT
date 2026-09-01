@@ -4,11 +4,17 @@ import {
   attempts,
   concepts,
   items,
+  passages,
   fsrsState,
   sessions,
   type ErrorClass,
   type SessionConfig,
 } from "@/db/schema";
+import {
+  assembleDiagnostic,
+  DEFAULT_DIAGNOSTIC_CONFIG,
+  writeDiagnosticPriors,
+} from "./diagnostic";
 import { toIso } from "./dates";
 import { masteryByNode } from "./mastery";
 import { ratingFromAttempt } from "./rating";
@@ -26,6 +32,20 @@ export type DailySessionConfig = SessionConfig & {
   itemIds: string[];
   interleave_exceptions: number;
 };
+
+export type DiagnosticSessionConfig = SessionConfig & {
+  perCategory: number;
+  cap: number;
+  itemIds: string[];
+  interleave_exceptions: number;
+};
+
+function queuedItemIds(config: SessionConfig): string[] {
+  const ids = config.itemIds;
+  return Array.isArray(ids)
+    ? ids.filter((id): id is string => typeof id === "string")
+    : [];
+}
 
 export function createDailySession(
   db: AppDb,
@@ -82,6 +102,77 @@ export function createDailySession(
   return { sessionId, config };
 }
 
+export function createDiagnosticSession(
+  db: AppDb,
+  now: Date,
+  caps: Partial<{ perCategory: number; cap: number }> = {},
+): { sessionId: string; config: DiagnosticSessionConfig } {
+  const assembleConfig = { ...DEFAULT_DIAGNOSTIC_CONFIG, ...caps };
+  const topicRows = db
+    .select({
+      id: items.id,
+      conceptId: items.conceptId,
+      parentId: concepts.parentId,
+    })
+    .from(items)
+    .innerJoin(concepts, eq(concepts.id, items.conceptId))
+    .all();
+  const categories = db.select().from(concepts).all();
+  const catById = new Map(categories.map((c) => [c.id, c]));
+
+  const diagnosticItems = [];
+  for (const row of topicRows) {
+    const cat = row.parentId ? catById.get(row.parentId) : undefined;
+    if (!cat || cat.level !== "category" || cat.examWeight <= 0) continue;
+    diagnosticItems.push({
+      id: row.id,
+      conceptId: row.conceptId,
+      categoryId: cat.id,
+    });
+  }
+
+  const attemptRows = db
+    .select({ conceptId: items.conceptId })
+    .from(attempts)
+    .innerJoin(items, eq(items.id, attempts.itemId))
+    .all();
+  const recount: Record<string, number> = {};
+  for (const row of attemptRows) {
+    const topic = catById.get(row.conceptId);
+    const catId = topic?.parentId;
+    if (!catId) continue;
+    recount[catId] = (recount[catId] ?? 0) + 1;
+  }
+
+  const assembled = assembleDiagnostic(
+    diagnosticItems,
+    recount,
+    assembleConfig,
+  );
+  const config: DiagnosticSessionConfig = {
+    perCategory: assembleConfig.perCategory,
+    cap: assembleConfig.cap,
+    itemIds: assembled.items.map((i) => i.id),
+    interleave_exceptions: assembled.interleaveExceptions,
+  };
+  const sessionId = crypto.randomUUID();
+  db.insert(sessions)
+    .values({
+      id: sessionId,
+      kind: "diagnostic",
+      startedAt: toIso(now),
+      endedAt: null,
+      config,
+    })
+    .run();
+  return { sessionId, config };
+}
+
+export type PassagePublic = {
+  title: string;
+  body: string;
+};
+
 export type NextItemPublic = {
   id: string;
   type: string;
@@ -89,6 +180,7 @@ export type NextItemPublic = {
   choices: { key: string; text: string }[];
   conceptId: string;
   skillTag: string | null;
+  passage: PassagePublic | null;
 };
 
 export function nextUnanswered(
@@ -99,12 +191,13 @@ export function nextUnanswered(
   done: boolean;
   position: number;
   remaining: number;
+  total: number;
+  kind: string;
   item: NextItemPublic | null;
 } {
   const session = db.select().from(sessions).where(eq(sessions.id, sessionId)).get();
   if (!session) throw new Error(`unknown session ${sessionId}`);
-  const config = session.config as DailySessionConfig;
-  const itemIds = config.itemIds ?? [];
+  const itemIds = queuedItemIds(session.config);
   const answered = new Set(
     db
       .select({ itemId: attempts.itemId })
@@ -120,16 +213,33 @@ export function nextUnanswered(
         .set({ endedAt: toIso(now) })
         .where(eq(sessions.id, sessionId))
         .run();
+      if (session.kind === "diagnostic") {
+        writeDiagnosticPriors(db, sessionId, now);
+      }
     }
-    return { done: true, position: itemIds.length, remaining: 0, item: null };
+    return {
+      done: true,
+      position: itemIds.length,
+      remaining: 0,
+      total: itemIds.length,
+      kind: session.kind,
+      item: null,
+    };
   }
   const itemId = itemIds[position];
   const item = db.select().from(items).where(eq(items.id, itemId)).get();
   if (!item) throw new Error(`queued item missing ${itemId}`);
+  let passage: PassagePublic | null = null;
+  if (item.passageId) {
+    const p = db.select().from(passages).where(eq(passages.id, item.passageId)).get();
+    if (p) passage = { title: p.title, body: p.body };
+  }
   return {
     done: false,
     position,
     remaining: itemIds.length - position,
+    total: itemIds.length,
+    kind: session.kind,
     item: {
       id: item.id,
       type: item.type,
@@ -137,7 +247,46 @@ export function nextUnanswered(
       choices: item.choices,
       conceptId: item.conceptId,
       skillTag: item.skillTag,
+      passage,
     },
+  };
+}
+
+export type GradeResult = {
+  correct: boolean;
+  correctKey: string;
+  explanation: string;
+  distractorRationales: Record<string, string>;
+};
+
+export function gradeItem(
+  db: AppDb,
+  input: {
+    sessionId: string;
+    itemId: string;
+    answeredKey: string;
+    confidence: number;
+    now: Date;
+  },
+): GradeResult {
+  if (input.confidence < 1 || input.confidence > 5) {
+    throw new Error("confidence must be 1-5");
+  }
+  const next = nextUnanswered(db, input.sessionId, input.now);
+  if (next.done || next.item?.id !== input.itemId) {
+    throw new Error("item is not the next unanswered item in this session");
+  }
+  const item = db.select().from(items).where(eq(items.id, input.itemId)).get();
+  if (!item) throw new Error(`unknown item ${input.itemId}`);
+  const keys = item.choices.map((c) => c.key);
+  if (!keys.includes(input.answeredKey)) {
+    throw new Error("answeredKey is not a choice on this item");
+  }
+  return {
+    correct: item.correctKey === input.answeredKey,
+    correctKey: item.correctKey,
+    explanation: item.explanation,
+    distractorRationales: item.distractorRationales,
   };
 }
 
@@ -158,13 +307,12 @@ export function recordAttempt(
   correctKey: string;
   explanation: string;
   distractorRationales: Record<string, string>;
-  dueAt: string;
-  fsrsState: string;
+  dueAt: string | null;
+  fsrsState: string | null;
 } {
   const session = db.select().from(sessions).where(eq(sessions.id, input.sessionId)).get();
   if (!session) throw new Error(`unknown session ${input.sessionId}`);
-  const config = session.config as DailySessionConfig;
-  const itemIds: string[] = config.itemIds ?? [];
+  const itemIds = queuedItemIds(session.config);
   if (!itemIds.includes(input.itemId)) {
     throw new Error("item is not in this session");
   }
@@ -203,12 +351,19 @@ export function recordAttempt(
     })
     .run();
 
-  const card = schedule(
-    db,
-    input.itemId,
-    ratingFromAttempt(correct, input.confidence),
-    input.now,
-  );
+  let dueAt: string | null = null;
+  let fsrsName: string | null = null;
+  if (session.kind !== "diagnostic") {
+    const card = schedule(
+      db,
+      input.itemId,
+      ratingFromAttempt(correct, input.confidence),
+      input.now,
+    );
+    dueAt = toIso(card.due);
+    fsrsName =
+      ["new", "learning", "review", "relearning"][card.state] ?? "learning";
+  }
 
   return {
     attemptId,
@@ -216,7 +371,7 @@ export function recordAttempt(
     correctKey: item.correctKey,
     explanation: item.explanation,
     distractorRationales: item.distractorRationales,
-    dueAt: toIso(card.due),
-    fsrsState: ["new", "learning", "review", "relearning"][card.state] ?? "learning",
+    dueAt,
+    fsrsState: fsrsName,
   };
 }

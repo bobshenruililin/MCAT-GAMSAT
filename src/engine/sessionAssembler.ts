@@ -56,7 +56,7 @@ function pickNewItems(
   return picked;
 }
 
-function interleave(items: AssemblerItem[]): AssembleResult {
+export function interleaveItems(items: AssemblerItem[]): AssembleResult {
   const remaining = [...items];
   const out: AssemblerItem[] = [];
   let interleaveExceptions = 0;
@@ -88,5 +88,5 @@ export function assembleSession(
   };
   const due = dueItems.slice(0, reviewCap);
   const news = pickNewItems(candidateNewItems, newCap, maxNewPerTopic);
-  return interleave([...due, ...news]);
+  return interleaveItems([...due, ...news]);
 }
