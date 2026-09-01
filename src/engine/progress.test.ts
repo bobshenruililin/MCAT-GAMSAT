@@ -73,4 +73,17 @@ describe("progress heatmap data", () => {
     expect(masterySwatch(false, 0.2)).not.toBe("#d4d4d8");
     expect(masterySwatch(false, 0.9)).not.toBe(masterySwatch(false, 0.2));
   });
+
+  it("coverage bars count weighted topics only, not overlay rfd/SIRS", () => {
+    const { db, close } = tempMigratedDb();
+    seedFromFile(db, TAXONOMY_PATH);
+    insertDiscrete(db, "s3-1", "GAMSAT.S3.bio.t1", "A");
+    const data = getProgressData(db, new Date("2026-09-01T00:00:00.000Z"));
+    const s3 = data.coverage.find((c) => c.family === "GAMSAT S3");
+    expect(s3?.topics).toBe(84);
+    expect(s3?.withItems).toBe(1);
+    const cars = data.coverage.find((c) => c.family === "MCAT CARS");
+    expect(cars?.topics).toBe(14);
+    close();
+  });
 });

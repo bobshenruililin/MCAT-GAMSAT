@@ -109,7 +109,9 @@ export function getProgressData(db: AppDb, now: Date): ProgressData {
     .sort((a, b) => a.mastery - b.mastery || b.examWeight - a.examWeight);
 
   const coverage: TrackCoverage[] = COVERAGE_TRACKS.map((family) => {
-    const track = topics.filter((t) => sectionFamily(t.id) === family);
+    const track = topics.filter(
+      (t) => sectionFamily(t.id) === family && t.examWeight > 0,
+    );
     return {
       family,
       topics: track.length,

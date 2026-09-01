@@ -246,7 +246,7 @@ Shipped:
 - CARS depth: census, musicology, conservation, urban commons, checkpoint courtesy (plus earlier archive/street). GAMSAT S1: cartoon+letter, paired ferry poems, lockout tram, news-verb table, memorial, borrowed-coat narrative.
 - GAMSAT S3 data passages (vesicle scatter, HA titration, decay counts) with `skill_tag` on rfd overlay skills (B-003 still weight 0 for newCap).
 - Today: section-block picker (Mixed / CARS / B/B / C/P / P/S / S1 / S2 / S3). Coverage bars on Today and Progress. Parchment shell. `/write` with 5 rotating packs per task.
-- Tests 64. Typecheck/lint green.
+- Tests 65. Typecheck/lint green.
 
 Failed: items are still unverified AI; SCOREBOARD study log 0 until the human sits; overlays unscheduled by weight.
 
