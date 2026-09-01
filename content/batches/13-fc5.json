@@ -1,0 +1,1306 @@
+{
+  "items": [
+    {
+      "concept_id": "MCAT.FC5.5A.t3",
+      "type": "discrete",
+      "stem": "The Ksp of CaF2 is 4.0 × 10^−11 at 25 °C. Solid CaF2 is stirred with 0.020 M NaF until equilibrium is reached (volume change from the solid is negligible). What is the equilibrium [Ca2+]?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2.2 × 10^−4 M, from 4s^3 = Ksp as if the solid dissolved in pure water"
+        },
+        {
+          "key": "B",
+          "text": "1.0 × 10^−7 M, from [Ca2+] = Ksp / [F−]^2 with [F−] ≈ 0.020 M"
+        },
+        {
+          "key": "C",
+          "text": "2.0 × 10^−9 M, from [Ca2+] = Ksp / [F−]"
+        },
+        {
+          "key": "D",
+          "text": "6.3 × 10^−6 M, from [Ca2+] = √Ksp"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Calcium fluoride dissolves as CaF2(s) ⇌ Ca2+ + 2 F−, so Ksp equals [Ca2+][F−]^2. The 0.020 M fluoride supplied by NaF dwarfs the fluoride that comes from dissolving the salt, so [F−] remains 0.020 M. The dissolved calcium concentration is therefore the molar solubility: [Ca2+] = Ksp / (0.020)^2 = 4.0 × 10^−11 / 4.0 × 10^−4 = 1.0 × 10^−7 M. The pure-water 4s^3 expression ignores the common ion. Taking a square root treats CaF2 as a 1:1 salt. Dividing by [F−] only once uses the wrong stoichiometric exponent.",
+      "distractor_rationales": {
+        "A": "4s^3 = Ksp is the mass-action expression in pure water. Added NaF fixes [F−] near 0.020 M, so that cubic relation no longer applies.",
+        "C": "Ksp = [Ca2+][F−]^2, not [Ca2+][F−]. Using a single power of fluoride undercounts the common-ion suppression.",
+        "D": "√Ksp would be the solubility of an MX salt. CaF2 releases two fluoride ions per formula unit, and the common ion further changes the algebra."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC5.5A.t3",
+      "type": "discrete",
+      "stem": "A saturated aqueous suspension of AgBr(s) is divided into four flasks. Which added reagent increases the molar solubility of AgBr, and by what chemical process?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "NaBr, because extra bromide complexes silver and pulls AgBr into solution"
+        },
+        {
+          "key": "B",
+          "text": "AgNO3, because extra silver ion shifts AgBr(s) ⇌ Ag+ + Br− to the right"
+        },
+        {
+          "key": "C",
+          "text": "Aqueous NH3, because formation of [Ag(NH3)2]+ lowers free [Ag+] and shifts dissolution forward"
+        },
+        {
+          "key": "D",
+          "text": "HNO3, because AgBr is the salt of a weak acid and acid always consumes the anion"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Silver ion is a Lewis acid that binds ammonia to give the linear complex [Ag(NH3)2]+. Removing free Ag+ from the Ksp equilibrium AgBr(s) ⇌ Ag+ + Br− forces more solid to dissolve; the net reaction is AgBr(s) + 2 NH3 ⇌ [Ag(NH3)2]+ + Br−. Added bromide or added silver is a common ion and lowers solubility. HBr is a strong acid, so Br− is not protonated in dilute nitric acid and acidification does not dissolve AgBr the way it dissolves Mg(OH)2 or CaCO3.",
+      "distractor_rationales": {
+        "A": "Bromide is the common ion in Ksp = [Ag+][Br−]. Extra NaBr decreases, rather than increases, AgBr solubility at ordinary concentrations.",
+        "B": "Le Chatelier applied to AgBr(s) ⇌ Ag+ + Br− says extra Ag+ drives the equilibrium left, precipitating more solid.",
+        "D": "Br− is the conjugate base of a strong acid and is not consumed by H+. Acid-assisted dissolution applies to salts of weak acids such as hydroxides, carbonates, and sulfides."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC5.5C.t1",
+      "type": "discrete",
+      "stem": "An ethereal solution contains equimolar benzoic acid (pKa ≈ 4.2), 4-methylphenol (pKa ≈ 10.3), and naphthalene. The solution is shaken with saturated aqueous NaHCO3 and the layers are separated. Which species is found predominantly in the aqueous layer?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Sodium benzoate, because bicarbonate is basic enough to deprotonate the carboxylic acid but not the phenol"
+        },
+        {
+          "key": "B",
+          "text": "Sodium 4-methylphenolate, because phenols are stronger acids than carboxylic acids"
+        },
+        {
+          "key": "C",
+          "text": "Naphthalene, because it is the least polar and therefore prefers water"
+        },
+        {
+          "key": "D",
+          "text": "All three solutes, because NaHCO3 is a general organic-soluble detergent"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Aqueous bicarbonate is a weak base whose conjugate acid (carbonic acid) has pKa near 6.4. Proton transfer HA + HCO3− ⇌ A− + H2CO3 is favorable only when pKa(HA) is below that value. Benzoic acid meets that criterion and is extracted as water-soluble benzoate. 4-Methylphenol (pKa ≈ 10) is not deprotonated by bicarbonate and remains in ether, as does non-ionizable naphthalene. The complementary extraction of the phenol requires a stronger base such as NaOH. Carboxylic acids are stronger acids than phenols, not the reverse.",
+      "distractor_rationales": {
+        "B": "Phenols are weaker acids than carboxylic acids (pKa ~10 vs ~4–5). Bicarbonate does not generate phenolate in useful amounts.",
+        "C": "Naphthalene is a nonpolar hydrocarbon and partitions into ether, not into aqueous bicarbonate.",
+        "D": "Bicarbonate is not a detergent that solubilizes all organics; it ionizes only sufficiently acidic solutes."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC5.5C.t1",
+      "type": "discrete",
+      "stem": "A polar, water-soluble alkaloid has a boiling point of 255 °C at 1 atm and begins to polymerize above 190 °C. It is contaminated only with nonvolatile inorganic salts. Which purification method is most appropriate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Simple distillation at atmospheric pressure, because salts are nonvolatile"
+        },
+        {
+          "key": "B",
+          "text": "Fractional distillation at atmospheric pressure, because a fractionating column always prevents thermal decomposition"
+        },
+        {
+          "key": "C",
+          "text": "Steam distillation, because every high-boiling organic is carried over with water near 100 °C"
+        },
+        {
+          "key": "D",
+          "text": "Vacuum distillation, because lowering the external pressure lowers the boiling temperature below the decomposition threshold"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "A liquid boils when its vapor pressure equals the applied pressure. Reducing the pressure therefore lowers the boiling temperature (Clausius–Clapeyron), so the alkaloid can distill below 190 °C and avoid polymerization. Atmospheric simple or fractional distillation still requires the flask to reach 255 °C. Steam distillation relies on two immiscible liquids each contributing vapor pressure; a water-soluble polar alkaloid does not form that two-phase system, so steam is the wrong tool here. The nonvolatile salts remain in the pot under reduced pressure as well.",
+      "distractor_rationales": {
+        "A": "Atmospheric simple distillation still boils the compound at 255 °C, well above the 190 °C decomposition onset.",
+        "B": "A fractionating column improves separation of close-boiling volatiles; it does not lower the boiling temperature of a single compound at 1 atm.",
+        "C": "Steam distillation is for water-immiscible high-boiling organics. A water-soluble polar alkaloid will not codistill by that mechanism."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC5.5C.t2",
+      "type": "discrete",
+      "stem": "A reverse-phase C18 HPLC column is equilibrated in 95:5 water/acetonitrile and then eluted with a gradient of increasing acetonitrile. Two peptides are injected: KKKKK (all lysine) and FFFFF (all phenylalanine). Which elution order is expected, and why?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "FFFFF first, because reverse-phase stationary phases retain polar solutes more strongly than nonpolar ones"
+        },
+        {
+          "key": "B",
+          "text": "KKKKK first, because the hydrophobic C18 phase retains the aromatic peptide while the highly charged oligolysine prefers the aqueous mobile phase"
+        },
+        {
+          "key": "C",
+          "text": "They coelute, because HPLC cannot distinguish peptides of equal residue count"
+        },
+        {
+          "key": "D",
+          "text": "KKKKK first, because C18 silica is a cation-exchange resin that binds lysine and therefore must be eluted last"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Reverse-phase chromatography uses a nonpolar stationary phase (typically C18-bonded silica) and a polar aqueous mobile phase. Hydrophobic solutes partition into the alkyl chains and require more organic modifier to elute. Penta-phenylalanine is aromatic and poorly hydrated, so it is retained. Penta-lysine is polycationic and highly water-soluble at acidic or near-neutral pH, so it spends little time on C18 and emerges early in a water-rich gradient. Residue count alone does not set retention. C18 is not an ion-exchange resin; sulfonated or carboxylate resins are.",
+      "distractor_rationales": {
+        "A": "That statement describes normal-phase (polar) chromatography. Reverse-phase retains hydrophobics, not polars.",
+        "C": "Equal length does not imply equal hydrophobicity; lysine and phenylalanine side chains interact very differently with C18.",
+        "D": "C18 is a hydrophobic bonded phase, not a cation exchanger. Oligolysine elutes first because it is polar, not because it is ionically stuck."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "MCAT.FC5.5C.t2",
+      "type": "discrete",
+      "stem": "A mixture of a 180 kDa homotetramer, a 25 kDa monomer, and free tyrosine is loaded onto a size-exclusion (gel-filtration) column whose fractionation range is 3–80 kDa. The column is eluted isocratically with buffer. What is the elution order (first to last)?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Tyrosine, then 25 kDa, then 180 kDa, because small molecules travel fastest through the beads"
+        },
+        {
+          "key": "B",
+          "text": "25 kDa, then 180 kDa, then tyrosine, because only proteins in the middle of the range can enter pores"
+        },
+        {
+          "key": "C",
+          "text": "180 kDa, then 25 kDa, then tyrosine, because larger species are excluded from the internal pore volume and travel a shorter path"
+        },
+        {
+          "key": "D",
+          "text": "All three emerge together in the void volume, because gel filtration does not resolve by mass"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Size-exclusion beads contain pores accessible to molecules below a cutoff. The 180 kDa tetramer exceeds the 80 kDa upper limit, is confined to the interstitial (void) volume, and therefore elutes first. The 25 kDa monomer explores a fraction of the internal pore volume and is delayed. Tyrosine enters essentially all pores and has the longest path, so it elutes last. This order is the opposite of SDS-PAGE, where small proteins migrate faster through a mesh. Gel filtration does resolve by hydrodynamic size when the species span the fractionation range and the void.",
+      "distractor_rationales": {
+        "A": "That order confuses gel filtration with SDS-PAGE. In a porous bead column, small solutes take the long path through the pores and elute late.",
+        "B": "The 180 kDa species is fully excluded and must precede, not follow, the 25 kDa protein.",
+        "D": "Only fully excluded species share the void. The 25 kDa protein and tyrosine are included to different extents and separate."
+      },
+      "difficulty_est": 0.33
+    },
+    {
+      "concept_id": "MCAT.FC5.5C.t3",
+      "type": "discrete",
+      "stem": "A secreted heterodimer consists of a 22 kDa chain and a 38 kDa chain joined by a single interchain disulfide. SDS-PAGE is run on identical samples with or without dithiothreitol (DTT). Which banding pattern is expected?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Without DTT, one band near 60 kDa; with DTT, bands near 22 kDa and 38 kDa"
+        },
+        {
+          "key": "B",
+          "text": "Both gels show only 22 kDa and 38 kDa bands, because SDS oxidatively cleaves disulfides"
+        },
+        {
+          "key": "C",
+          "text": "Without DTT, bands at 22 kDa and 38 kDa; with DTT, a new 60 kDa cross-link appears"
+        },
+        {
+          "key": "D",
+          "text": "Both gels show a single 22 kDa band, because SDS equalizes all protein masses"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "SDS denatures polypeptides and coats them with a nearly uniform negative charge per mass, so mobility reports polypeptide mass, not native charge. SDS does not reduce cystine. Without DTT the covalent heterodimer remains intact and migrates near 22 + 38 = 60 kDa. DTT reduces the interchain disulfide, releasing the two chains, which then migrate at 22 kDa and 38 kDa. DTT does not create a larger cross-link, and SDS does not magically assign every protein the same mass.",
+      "distractor_rationales": {
+        "B": "SDS is a denaturing detergent, not a reductant. Disulfides survive SDS unless a thiol such as DTT or β-mercaptoethanol is added.",
+        "C": "This reverses the chemistry: DTT breaks, rather than forms, disulfides. The 60 kDa species is the oxidized covalent dimer.",
+        "D": "SDS equalizes charge-to-mass ratio, not mass itself. Different chain lengths still separate."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC5.5C.t3",
+      "type": "discrete",
+      "stem": "A protein of isoelectric point 5.4 is focused to equilibrium in an immobilized pH gradient from 3 (anode) to 10 (cathode). Separately, the same protein is dissolved in pH 7.4 buffer. Which description is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It focuses at the anode (pH 3) because acidic proteins always migrate to positive electrodes in IEF"
+        },
+        {
+          "key": "B",
+          "text": "It focuses at the cathode (pH 10) because its pI is less than 7"
+        },
+        {
+          "key": "C",
+          "text": "It focuses at pH 7.4, the pH of blood, regardless of the gradient"
+        },
+        {
+          "key": "D",
+          "text": "It focuses at the pH 5.4 zone of the gradient; in pH 7.4 buffer its net charge is negative"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "In isoelectric focusing a protein is cationic when the local pH is below its pI and anionic when the local pH is above its pI, so it migrates until pH = pI and the net charge is zero. This protein therefore stops at pH 5.4, not at either electrode and not at 7.4. At pH 7.4, which is two units above the pI, acidic side chains are deprotonated in excess of the remaining cationic groups, so the protein carries a net negative charge and would migrate toward the anode in a uniform-pH gel.",
+      "distractor_rationales": {
+        "A": "IEF does not park every acidic protein on the anode. Migration stops where pH equals pI, here 5.4.",
+        "B": "A pI of 5.4 is acidic, so the protein is not driven to the basic (cathode) end. High-pI proteins focus near the cathode.",
+        "C": "The focusing pH is the protein’s pI, a property of its titratable groups, not the pH of a later buffer experiment."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "MCAT.FC5.5C.t4",
+      "type": "discrete",
+      "stem": "A chemist needs one enantiomer of 2-phenylpropanoic acid from a racemate. Which procedure can produce an enantioenriched free acid?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Simple distillation, because the R and S acids have different boiling points"
+        },
+        {
+          "key": "B",
+          "text": "Treat the racemate with enantiopure (S)-1-phenylethanamine, crystallize one diastereomeric salt, and regenerate the acid by aqueous HCl"
+        },
+        {
+          "key": "C",
+          "text": "Pass plane-polarized light through the melt so that only one enantiomer crystallizes"
+        },
+        {
+          "key": "D",
+          "text": "Extract with achiral diethyl ether and water, because enantiomers have different partition coefficients"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Enantiomers are identical in an achiral environment, so they share boiling point, ordinary solubility, and ether/water partition. They cannot be separated by simple distillation or by achiral extraction, and a polarimeter measures rotation rather than physically sorting molecules. Reaction with an enantiopure amine creates two diastereomeric salts, which differ in lattice energy and solubility. Crystallizing one salt and then protonating the carboxylate returns an enantioenriched acid. This is classical resolution via diastereomers.",
+      "distractor_rationales": {
+        "A": "Enantiomers have identical boiling points. Distillation does not resolve a racemate.",
+        "C": "Polarized light is an analytical tool for optical rotation; it does not selectively crystallize one enantiomer under ordinary laboratory conditions.",
+        "D": "Partition coefficients in achiral solvent pairs are identical for enantiomers, so the extraction does not enrich either isomer."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC5.5C.t4",
+      "type": "discrete",
+      "stem": "Racemic 1-phenylethanol shows a single spot on ordinary silica TLC and a single peak on an achiral GC column. Which statement best explains those observations and how the enantiomers can still be separated?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The sample is actually a meso compound, so there are not two stereoisomers to separate"
+        },
+        {
+          "key": "B",
+          "text": "Enantiomers have different Rf values on silica but identical GC retention; only GC can fail"
+        },
+        {
+          "key": "C",
+          "text": "Enantiomers interact identically with achiral silica and achiral GC phases; a chiral stationary phase or a chiral derivatizing agent is required"
+        },
+        {
+          "key": "D",
+          "text": "Racemates always decompose on silica, so the single spot is a decomposition product"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Ordinary silica and ordinary GC stationary phases are achiral. Each enantiomer of 1-phenylethanol therefore experiences the same adsorption energy and the same vapor pressure, giving one TLC spot and one GC peak. The molecule has a single stereocenter and is not meso. Separation requires a chiral environment: a chiral GC or HPLC stationary phase, or conversion to diastereomeric esters with an enantiopure acid chloride that then differ in Rf or retention. A single spot is the intact racemate, not a decomposition artifact.",
+      "distractor_rationales": {
+        "A": "1-Phenylethanol has one stereocenter and no internal mirror plane; a racemate is a 1:1 mixture of enantiomers, not a meso form.",
+        "B": "Achiral silica does not distinguish enantiomers any more than an achiral GC column does; both methods fail for the same reason.",
+        "D": "A racemic alcohol is chromatographically stable on silica under standard TLC conditions; a single spot is the expected, not decomposed, result."
+      },
+      "difficulty_est": 0.35
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t1",
+      "type": "discrete",
+      "stem": "During DNA chain elongation the 3′ end of the primer attacks an incoming dNTP. Which description of the organic chemistry is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The primer 3′-OH performs nucleophilic substitution at the α-phosphate of the dNTP, releasing pyrophosphate from the β and γ phosphates"
+        },
+        {
+          "key": "B",
+          "text": "The primer 5′-OH attacks the incoming dNTP, so chains grow 3′→5′"
+        },
+        {
+          "key": "C",
+          "text": "The nucleobase of the primer displaces pyrophosphate in an SN1 reaction at carbon"
+        },
+        {
+          "key": "D",
+          "text": "The incoming dNTP’s 3′-OH attacks a 5′-monophosphate on the primer, and no pyrophosphate is released"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "DNA polymerases catalyze nucleophilic attack by the primer’s terminal 3′-hydroxyl on the α-phosphorus of a complementary dNTP. The leaving group is pyrophosphate (the β and γ phosphates), and a new 3′–5′ phosphodiester is formed. That geometry forces 5′→3′ growth. A free 5′-OH on the primer is not the nucleophile, the base is not the nucleophile, and the electrophilic site is phosphorus, not a carbon of the sugar. Hydrolysis of the released PPi by pyrophosphatase pulls the equilibrium toward polymerization.",
+      "distractor_rationales": {
+        "B": "Primers present a 3′-OH, not a nucleophilic 5′-OH, and biological DNA synthesis is 5′→3′, not 3′→5′.",
+        "C": "The nucleophile is an alcohol oxygen, and the electrophilic atom is phosphorus. This is not an SN1 reaction at carbon.",
+        "D": "The electrophile is a triphosphate, not a primer 5′-monophosphate, and pyrophosphate is the obligatory leaving group."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t1",
+      "type": "discrete",
+      "stem": "A researcher compares UTP used by RNA polymerase with dTTP used by DNA polymerase. Which structural statement is accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "UTP and dTTP are the same molecule; the polymerases merely name them differently"
+        },
+        {
+          "key": "B",
+          "text": "UTP is 2′-deoxy and carries thymine, whereas dTTP is a ribonucleotide that carries uracil"
+        },
+        {
+          "key": "C",
+          "text": "Both sugars are 2′-deoxy; the only difference is the C5 methyl group on uracil versus thymine"
+        },
+        {
+          "key": "D",
+          "text": "UTP has a 2′-OH on ribose and a uracil base that lacks the C5 methyl present on thymine in dTTP, which is 2′-deoxy"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Ribonucleoside triphosphates contain D-ribose (hydroxyls at both C2′ and C3′). Deoxyribonucleoside triphosphates lack the C2′ hydroxyl. UTP is therefore a ribose nucleotide; dTTP is a 2′-deoxy nucleotide. The bases also differ: uracil is 2,4-dioxopyrimidine, whereas thymine is 5-methyluracil. RNA polymerases incorporate UTP opposite adenine; DNA polymerases incorporate dTTP. Swapping the sugar identities or claiming the two NTPs are identical contradicts those definitions.",
+      "distractor_rationales": {
+        "A": "The sugar (ribose vs 2′-deoxyribose) and the pyrimidine (U vs 5-methylU) both differ; the names are not interchangeable.",
+        "B": "This inverts both differences: UTP is a ribonucleotide with uracil, and dTTP is 2′-deoxy with thymine.",
+        "C": "UTP is not 2′-deoxy. The 2′-OH is the chemical hallmark of RNA building blocks and the reason RNA is alkali-labile relative to DNA."
+      },
+      "difficulty_est": 0.34
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t2",
+      "type": "discrete",
+      "stem": "Benzaldehyde is treated with NH4Cl and KCN, and the isolated aminonitrile is heated in aqueous acid. What is the organic product, and what is its stereochemical character?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Enantiopure (S)-phenylglycine, because cyanide approaches only the Re face of the imine"
+        },
+        {
+          "key": "B",
+          "text": "Racemic phenylglycine (2-amino-2-phenylacetic acid), because the uncatalyzed Strecker sequence generates a new stereocenter without facial control"
+        },
+        {
+          "key": "C",
+          "text": "A β-amino acid, because cyanide adds to the carbonyl carbon that becomes C3"
+        },
+        {
+          "key": "D",
+          "text": "Benzylamine, because the nitrile is reduced rather than hydrolyzed in acid"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "In the Strecker synthesis an aldehyde is converted to an imine (or iminium), which is attacked by cyanide to give an α-aminonitrile. Acidic hydrolysis then converts the nitrile into a carboxylic acid, producing an α-amino acid whose side chain was the aldehyde’s R group—here phenylglycine. The imine is achiral, and cyanide adds to both faces equally, so the product is racemic unless a chiral catalyst or auxiliary is introduced. The new carbon is the α-carbon, not a β-carbon, and aqueous acid hydrolyzes nitriles rather than reducing them to amines.",
+      "distractor_rationales": {
+        "A": "Without a chiral catalyst or enzyme, both faces of the imine are equivalent. Classic Strecker chemistry is racemic.",
+        "C": "Cyanide adds to the imine carbon that becomes C2 (the α-carbon) of the amino acid, not C3.",
+        "D": "Hot aqueous acid hydrolyzes the nitrile to a carboxylic acid. Reduction to an amine would require a reductant such as LiAlH4, which is not present."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t2",
+      "type": "discrete",
+      "stem": "Potassium phthalimide is alkylated with 1-bromobutane, and the product is then cleaved with hydrazine (Ing–Manske). Why does this Gabriel sequence give butan-1-amine without substantial di- and trialkylamine contamination that plagues the reaction of 1-bromobutane with ammonia?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The phthalimide nitrogen can be alkylated only once; hydrazinolysis then releases a primary amine and leaves no nucleophilic nitrogen on the alkyl chain to react further"
+        },
+        {
+          "key": "B",
+          "text": "Phthalimide is so nucleophilic that it performs E2 exclusively, so no substitution products form until hydrazine is added"
+        },
+        {
+          "key": "C",
+          "text": "The method works only with tertiary alkyl halides, which cannot be dialkylated"
+        },
+        {
+          "key": "D",
+          "text": "Hydrazine reduces the alkyl halide to butane and the amine arises from phthalimide hydrolysis alone"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Phthalimide’s N–H is acidic, and the imide anion is an excellent nucleophile for SN2 on a primary alkyl halide. After that single alkylation the nitrogen has no remaining hydrogen and is no longer nucleophilic toward a second equivalent of alkyl halide. Hydrazine (or strong acid/base hydrolysis) then opens the imide and releases a primary amine. Direct alkylation of NH3 fails because the 1° amine product is more nucleophilic than ammonia and continues to 2° and 3° amines. The halide here is primary, as required for SN2; tertiary halides would eliminate.",
+      "distractor_rationales": {
+        "B": "The imide anion undergoes SN2 at a primary carbon, not exclusive E2. The N-butylphthalimide is an isolable substitution product.",
+        "C": "Gabriel alkylation requires an SN2-active (usually primary) halide. Tertiary halides favor elimination and are the wrong substrates.",
+        "D": "Hydrazine cleaves the imide C–N bonds (Ing–Manske); it does not reduce 1-bromobutane to butane as the source of the amine carbon."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t3",
+      "type": "discrete",
+      "stem": "Transfer of a hydrophobic side chain from water into the protein core is favorable near room temperature even though the side chain loses conformational freedom. Which statement best identifies the dominant thermodynamic contribution?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Exposed hydrophobics form stronger hydrogen bonds to water than they do in the core, so burial is enthalpy-driven by those H-bonds"
+        },
+        {
+          "key": "B",
+          "text": "The protein backbone gains a large amount of conformational entropy upon folding, which outweighs all other terms"
+        },
+        {
+          "key": "C",
+          "text": "Ordered water in the solvation layer is released into bulk solvent, increasing solvent entropy enough to outweigh the solute’s entropy loss"
+        },
+        {
+          "key": "D",
+          "text": "Van der Waals contacts with water are stronger than packing interactions in the core, so burial is never entropy-driven"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Hydrophobic side chains in water induce a more ordered hydrogen-bond network (the solvation or clathrate layer). Burial of those side chains releases that water into bulk solvent, producing a large positive ΔS for the solvent. That solvent-entropy gain is the classical hydrophobic effect and typically dominates ΔG of transferring nonpolar groups out of water near room temperature. The chain itself loses entropy on folding, which opposes folding. Hydrophobic groups do not hydrogen-bond strongly to water, and core packing van der Waals contacts are at least as favorable as those with solvent.",
+      "distractor_rationales": {
+        "A": "Aliphatic side chains do not donate or accept strong hydrogen bonds. Any H-bond advantage belongs to polar groups, not to the hydrophobic effect.",
+        "B": "Folding restricts backbone and side-chain rotamers, decreasing the protein’s conformational entropy. That term opposes, rather than drives, folding.",
+        "D": "Close packing in the core provides favorable van der Waals contacts. The distinctive driving force of hydrophobicity is solvent entropy, not weaker core packing."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t3",
+      "type": "discrete",
+      "stem": "A secreted enzyme’s native fold contains two disulfides that are required for activity. The protein is unfolded in 6 M guanidinium chloride plus 5 mM DTT. The guanidinium is then dialyzed away at pH 8 while 5 mM DTT remains and oxygen is excluded. What is the most likely outcome?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Fully native, active enzyme, because sequence alone always rebuilds native cystines once the chaotrope is gone"
+        },
+        {
+          "key": "B",
+          "text": "Noncovalent collapse can occur, but the cystines remain reduced, so the disulfide-locked native active structure cannot be completed"
+        },
+        {
+          "key": "C",
+          "text": "The backbone is hydrolyzed by DTT, yielding free amino acids"
+        },
+        {
+          "key": "D",
+          "text": "Random incorrect disulfides form immediately because DTT is an oxidant"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Guanidinium chloride disrupts noncovalent structure (hydrophobic effect and hydrogen bonds). DTT reduces cystines to thiols. Removing only the chaotrope allows hydrophobic collapse and secondary-structure formation encoded by the sequence, but as long as excess DTT is present and O2 is excluded the thiols cannot oxidize to disulfides. For a secreted enzyme that needs those cystines, the active native fold is therefore not completed. DTT is a reductant, not an oxidant or a protease, so it neither creates random disulfides nor hydrolyzes peptide bonds under these conditions.",
+      "distractor_rationales": {
+        "A": "Anfinsen’s experiment required removal of reductant and air oxidation (or a reshuffling catalyst) to form the native disulfides. Excess DTT blocks that step.",
+        "C": "DTT is a thiol reductant. It does not hydrolyze the polypeptide backbone to amino acids.",
+        "D": "DTT keeps cysteines reduced. Random disulfides appear when thiols are oxidized in denaturant without kinetic control, the opposite of this anaerobic DTT setup."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t4",
+      "type": "discrete",
+      "stem": "A missense mutation replaces a glycine in a collagen Gly–X–Y repeat with arginine. The mutant chains are still hydroxylated and secreted, but the triple helix melts below 37 °C. Why is glycine uniquely required at every third residue?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Glycine’s side-chain carboxylate forms salt bridges that lock the three chains together"
+        },
+        {
+          "key": "B",
+          "text": "Only glycine can be hydroxylated by prolyl hydroxylase, so arginine blocks all Hyp formation"
+        },
+        {
+          "key": "C",
+          "text": "Glycine is the only residue that forms disulfide-bonded collagen dimers"
+        },
+        {
+          "key": "D",
+          "text": "Glycine has no β-carbon, so it fits the sterically crowded interior of the triple helix; arginine’s bulky side chain clashes and unscrews the helix"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "In tropocollagen each chain is a left-handed polyproline-II-type helix, and three chains wrap into a right-handed triple helix. The residue at every third position packs against the other two chains in a space that can accommodate only hydrogen as a side chain. Glycine uniquely lacks a β-carbon and occupies that interior site. Arginine’s long, charged side chain sterically and electrostatically disrupts packing, lowering the melting temperature even if hydroxylation of Pro/Lys at X and Y still occurs. Glycine is not a carboxylate, is not the substrate of prolyl hydroxylase, and does not form disulfides.",
+      "distractor_rationales": {
+        "A": "Glycine’s side chain is a hydrogen, not a carboxylate. Salt-bridge chemistry belongs to residues such as Glu, Asp, Lys, and Arg at other positions.",
+        "B": "Prolyl hydroxylase acts on proline (and lysyl hydroxylase on lysine) in the Y (and X) positions, not on glycine.",
+        "C": "Glycine has no thiol. Collagen’s covalent cross-links after secretion are derived mainly from lysine/hydroxylysine, not from glycine disulfides."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t4",
+      "type": "discrete",
+      "stem": "Adult hemoglobin (α2β2) binds 2,3-bisphosphoglycerate in a central cavity lined by cationic residues including βHis143. Fetal hemoglobin (α2γ2) has serine at the analogous γ position and binds 2,3-BPG more weakly. What is the physiological consequence of that binding difference?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Fetal Hb has higher O2 affinity than adult Hb at the same 2,3-BPG concentration, favoring O2 transfer from maternal to fetal blood"
+        },
+        {
+          "key": "B",
+          "text": "Fetal Hb has lower O2 affinity, so the fetus unloads oxygen into maternal blood"
+        },
+        {
+          "key": "C",
+          "text": "2,3-BPG is oxidized by fetal heme to 3-phosphoglycerate, a glycolytic intermediate, so HbF is an enzyme"
+        },
+        {
+          "key": "D",
+          "text": "Serine covalently phosphorylates 2,3-BPG, irreversibly locking fetal Hb in the T state"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "2,3-BPG is a polyanion that binds deoxyhemoglobin and stabilizes the low-affinity T state, shifting the O2 isotherm to the right. Weaker binding to HbF therefore leaves fetal hemoglobin closer to the high-affinity R-like curve of stripped Hb. At a shared PO2 in the placenta, maternal HbA (more 2,3-BPG-stabilized) unloads oxygen that HbF can bind. This is a reversible allosteric binding function, not catalysis of 2,3-BPG oxidation or a covalent phosphorylation of the effector by serine.",
+      "distractor_rationales": {
+        "B": "Weaker 2,3-BPG binding raises, rather than lowers, O2 affinity. Transfer is from mother to fetus, not the reverse.",
+        "C": "Hemoglobin’s job here is reversible O2 transport modulated by a ligand. It does not metabolize 2,3-BPG to 3-phosphoglycerate as its primary function.",
+        "D": "Serine143 is a substitution that removes a cation; it does not phosphorylate 2,3-BPG or covalently lock the T state."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t5",
+      "type": "discrete",
+      "stem": "Hot aqueous NaOH is used in an attempt to convert each of the following lipids into water-soluble carboxylate soaps. Which compound does not yield fatty-acid soaps under those saponification conditions?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Glyceryl tristearate (a triacylglycerol)"
+        },
+        {
+          "key": "B",
+          "text": "1,2-Dipalmitoylphosphatidylcholine"
+        },
+        {
+          "key": "C",
+          "text": "Unesterified cholesterol"
+        },
+        {
+          "key": "D",
+          "text": "Cetyl palmitate (a wax ester)"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Saponification is nucleophilic acyl substitution of an ester by hydroxide, releasing carboxylate salts (soaps). Triacylglycerols contain three fatty-acyl esters and produce three soaps plus glycerol. Glycerophospholipids similarly have two fatty-acyl esters that hydrolyze. Wax esters such as cetyl palmitate are also saponifiable. Free cholesterol is a sterol alcohol (a 3β-OH on a tetracyclic nucleus) and contains no fatty-acyl ester unless it has been separately esterified. Hydroxide therefore cannot liberate a fatty-acid soap from unesterified cholesterol.",
+      "distractor_rationales": {
+        "A": "Triacylglycerols are the textbook saponifiable fats; hot NaOH yields three carboxylates and glycerol.",
+        "B": "The two fatty-acyl chains of phosphatidylcholine are esters and saponify; soaps still form even though the phosphodiester head group is a different linkage.",
+        "D": "Waxes are long-chain esters and undergo the same hydroxide-mediated ester hydrolysis as triglycerides."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t5",
+      "type": "discrete",
+      "stem": "Three 18-carbon fatty acids are compared as free acids: stearic (18:0), elaidic (18:1 trans-Δ9), and oleic (18:1 cis-Δ9). Which melting-point order is expected, and what packing principle explains it?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Oleic > elaidic > stearic, because cis double bonds pack more tightly than trans or saturated chains"
+        },
+        {
+          "key": "B",
+          "text": "Stearic > elaidic > oleic, because saturation and trans geometry allow tighter van der Waals packing, whereas a cis kink disrupts the lattice"
+        },
+        {
+          "key": "C",
+          "text": "All three melt at the same temperature because melting point depends only on carbon count"
+        },
+        {
+          "key": "D",
+          "text": "Elaidic melts lowest, because trans alkenes cannot pack at all"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Fatty-acid melting points track how well hydrocarbon chains pack into a crystalline lattice. Stearic acid is fully saturated and linear, maximizing van der Waals contact, so it melts highest (about 70 °C). A trans-Δ9 alkene is still nearly linear and packs reasonably well, so elaidic acid melts far above oleic acid. The cis-Δ9 kink in oleic acid prevents efficient packing and drops the melting point below room temperature. Carbon number is the same here, so unsaturation geometry, not chain length, is the discriminating variable. Trans fats therefore behave more like saturated fats than like cis unsaturated fats.",
+      "distractor_rationales": {
+        "A": "Cis double bonds disrupt packing and lower melting point; they do not pack more tightly than saturated chains.",
+        "C": "With chain length fixed, unsaturation and cis/trans geometry strongly shift melting point.",
+        "D": "Trans-elaidic acid packs well and melts much higher than cis-oleic acid; it is not the lowest-melting isomer."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t6",
+      "type": "discrete",
+      "stem": "Freshly dissolved α-D-glucopyranose mutarotates in water until [α]D reaches the equilibrium value of the anomeric mixture. Methyl α-D-glucopyranoside, dissolved in the same neutral water, shows a constant specific rotation for hours. Why?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The methyl glycoside is an acetal at C1; the ring cannot open to the aldehyde without acid-catalyzed hydrolysis, so anomers cannot interconvert"
+        },
+        {
+          "key": "B",
+          "text": "Methyl glycosides are aldehydes that racemize instantly, so rotation is already zero"
+        },
+        {
+          "key": "C",
+          "text": "The methyl group inverts configuration at C5, destroying the D series and freezing rotation"
+        },
+        {
+          "key": "D",
+          "text": "Glycosides have no stereocenters, so they cannot be optically active in the first place"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Mutarotation of glucose proceeds by reversible ring opening of the hemiacetal to the open-chain aldehyde, which can reclose to either the α or the β anomer. A methyl glycoside is a full acetal: the anomeric carbon bears two C–O bonds (the ring oxygen and OMe). Acetals are stable in neutral or basic water and open only when acid catalyzes hydrolysis. Without access to the aldehyde, the anomeric configuration is locked and [α] does not drift. The glycoside remains chiral (multiple stereocenters) and optically active; methylation does not invert C5 or erase stereochemistry.",
+      "distractor_rationales": {
+        "B": "A glycoside is an acetal, not an aldehyde. Instant racemization to zero rotation is not observed; the rotation is simply constant.",
+        "C": "The methyl is attached to the anomeric oxygen at C1. C5, which defines the D/L series, is untouched.",
+        "D": "Methyl glucopyranoside has five stereocenters and a large specific rotation; it is optically active but configurationally locked at C1."
+      },
+      "difficulty_est": 0.39
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t6",
+      "type": "discrete",
+      "stem": "D-Glucose and D-galactose are both aldohexoses. They differ in configuration at a single carbon, C4. Which term correctly names that relationship?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Enantiomers"
+        },
+        {
+          "key": "B",
+          "text": "Anomers"
+        },
+        {
+          "key": "C",
+          "text": "Constitutional isomers"
+        },
+        {
+          "key": "D",
+          "text": "C4 epimers (diastereomers)"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Epimers are diastereomers that differ in configuration at exactly one stereocenter. D-Glucose and D-galactose share the D configuration at C5 and differ only at C4, so they are C4 epimers. Enantiomers would invert every stereocenter (D-glucose versus L-glucose). Anomers are a special pair of epimers that differ only at the anomeric carbon (C1 of an aldose in cyclic form), as in α-D-glucose versus β-D-glucose. Constitutional isomers differ in connectivity, not merely in configuration; both sugars are 2,3,4,5,6-pentahydroxyhexanals.",
+      "distractor_rationales": {
+        "A": "Enantiomers are mirror images. Galactose is not the mirror image of glucose; L-glucose is.",
+        "B": "Anomers differ at C1 (the hemiacetal carbon), not at C4. α/β-D-glucose are anomers of each other.",
+        "C": "The two sugars have the same connectivity. The difference is stereochemical at C4."
+      },
+      "difficulty_est": 0.28
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t7",
+      "type": "discrete",
+      "stem": "A keto ester must have its ketone preserved while the ester is reduced to a primary alcohol with LiAlH4. Which protecting-group sequence succeeds, and why?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Use 0.5 equivalent of LiAlH4; ketones always reduce more slowly than esters, so the ketone survives"
+        },
+        {
+          "key": "B",
+          "text": "Convert the ketone to a cyclic acetal with ethylene glycol and acid, reduce the ester with LiAlH4, then hydrolyze the acetal with aqueous acid"
+        },
+        {
+          "key": "C",
+          "text": "Use NaBH4 in methanol, because borohydride reduces esters rapidly and leaves ketones untouched"
+        },
+        {
+          "key": "D",
+          "text": "Form the acetal, then reduce with LiAlH4, which also cleaves acetals, simultaneously freeing the ketone as an alcohol"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "LiAlH4 reduces both ketones and esters, so an unprotected ketone would be destroyed. A cyclic acetal (1,3-dioxolane) is formed under acid catalysis from the ketone and ethylene glycol. Acetals are stable to hydride and to basic nucleophiles, so LiAlH4 then reduces only the ester to the alcohol. Mild aqueous acid hydrolyzes the acetal back to the ketone. NaBH4 actually shows the opposite chemoselectivity: it reduces ketones much faster than esters. Acetals are not cleaved by LiAlH4; that is why they are useful protecting groups.",
+      "distractor_rationales": {
+        "A": "Ketones are generally more electrophilic than esters and are reduced at least as readily by LiAlH4. Half an equivalent will not spare the ketone.",
+        "C": "NaBH4 reduces aldehydes and ketones, not ordinary esters. That reagent would destroy the ketone and leave the ester.",
+        "D": "Hydride does not hydrolyze acetals. Acidic water, not LiAlH4, is what restores the ketone after reduction."
+      },
+      "difficulty_est": 0.57
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t7",
+      "type": "discrete",
+      "stem": "Acetone is deprotonated with one equivalent of LDA at −78 °C, benzaldehyde is added, and the reaction is quenched with mild aqueous acid without heating. What is the principal carbon–carbon bond-forming pathway and product class?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Benzaldehyde’s enolate attacks acetone, giving a β-hydroxy aldehyde"
+        },
+        {
+          "key": "B",
+          "text": "Cannizzaro disproportionation of benzaldehyde, with acetone as an uninvolved spectator"
+        },
+        {
+          "key": "C",
+          "text": "The acetone enolate adds to benzaldehyde in a crossed aldol, giving a β-hydroxy ketone"
+        },
+        {
+          "key": "D",
+          "text": "No addition occurs, because LDA destroys both carbonyls by over-reduction"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "LDA is a strong, bulky, non-nucleophilic base that irreversibly generates the kinetic enolate of acetone. Benzaldehyde has no enolizable α-hydrogen, so it cannot form an enolate and cannot undergo Cannizzaro chemistry under these aprotic, strongly basic but hydride-free conditions. The acetone enolate therefore adds to the aldehyde carbonyl in a crossed aldol addition. Mild, unheated workup protonates the alkoxide to a β-hydroxy ketone (4-hydroxy-4-phenylbutan-2-one) rather than forcing dehydration to the enone. LDA is a base, not a hydride reductant like LiAlH4.",
+      "distractor_rationales": {
+        "A": "Benzaldehyde has no α-hydrogen, so it cannot form an enolate. Acetone is the only competent enolate precursor here.",
+        "B": "Cannizzaro requires a non-enolizable aldehyde plus hydroxide and no other electrophile; it is not the pathway when a preformed ketone enolate is added to benzaldehyde.",
+        "D": "LDA deprotonates; it does not reduce carbonyls the way aluminum hydrides do. The aldol addition proceeds."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t8",
+      "type": "discrete",
+      "stem": "1-Pentanol is oxidized in two separate flasks: flask P with PCC in anhydrous CH2Cl2, and flask J with CrO3 in aqueous H2SO4 (Jones conditions). What are the principal organic products?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "P: pentanal; J: pentanoic acid, because in water the aldehyde hydrate is further oxidized by chromic acid"
+        },
+        {
+          "key": "B",
+          "text": "P: pentanoic acid; J: pentanal, because PCC is the stronger aqueous oxidant"
+        },
+        {
+          "key": "C",
+          "text": "Both flasks give pentane, because chromium reagents reduce alcohols to alkanes"
+        },
+        {
+          "key": "D",
+          "text": "Neither flask oxidizes a primary alcohol; only secondary alcohols react with Cr(VI)"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Primary alcohols are oxidized by Cr(VI) to aldehydes. Under anhydrous PCC conditions the aldehyde is not hydrated and is not rapidly oxidized further, so pentanal is isolated. Jones reagent is aqueous: the aldehyde forms a gem-diol (hydrate) that behaves like a secondary alcohol equivalent and is oxidized to the carboxylic acid. Chromium(VI) is an oxidant, not a reductant, and it certainly oxidizes primary alcohols. The solvent, not a mysterious difference in ‘strength’ of PCC versus Jones as named reagents, is what decides aldehyde versus acid.",
+      "distractor_rationales": {
+        "B": "This swaps the products. PCC in dry CH2Cl2 is the aldehyde reagent; aqueous chromic acid over-oxidizes to the acid.",
+        "C": "Cr(VI) oxidizes alcohols to carbonyls (or acids). It does not deoxygenate them to alkanes (that would be a reduction such as Wolff–Kishner).",
+        "D": "Primary and secondary alcohols both react with Cr(VI). Tertiary alcohols lack a C–H on the carbinol carbon and typically do not oxidize."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t8",
+      "type": "discrete",
+      "stem": "Enantiopure (R)-butan-2-ol is treated with TsCl and pyridine, and the isolated tosylate is then heated with NaCN in DMSO. What is the stereochemical outcome at the stereocenter?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Retention in both steps, giving (R)-2-methylbutanenitrile as if the C–O bond never changed"
+        },
+        {
+          "key": "B",
+          "text": "Inversion in the tosylation and inversion in the cyanide step, returning the R nitrile"
+        },
+        {
+          "key": "C",
+          "text": "Racemization in the tosylation because TsCl ionizes the alcohol to a planar carbocation"
+        },
+        {
+          "key": "D",
+          "text": "Retention during tosylate formation (S–Cl, not C–O, is broken) followed by SN2 inversion by cyanide, yielding the S nitrile"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Tosyl chloride activates alcohols by forming an S–O bond; the C–O bond of the alcohol is not broken, so the stereocenter retains its configuration in the tosylate. Cyanide in dipolar aprotic DMSO is a good nucleophile and displaces tosylate, an excellent leaving group, by SN2, which inverts the stereocenter. For 2-butyl derivatives both the OH/OTs oxygen and the CN carbon are the highest CIP priority, so R alcohol maps to S nitrile. Secondary 2-butyl cations are not formed under TsCl/pyridine conditions, so the first step is not a racemizing SN1.",
+      "distractor_rationales": {
+        "A": "The second step is SN2 at carbon and must invert. Two retentions would describe a process that never breaks the C–O/C–X bond at the stereocenter.",
+        "B": "Tosylation does not invert carbon. Two inversions would return R, but only the displacement inverts.",
+        "C": "Pyridine/TsCl is not an SN1 ionization of a secondary alcohol. The tosylate is formed with retention and remains optically active."
+      },
+      "difficulty_est": 0.62
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t9",
+      "type": "discrete",
+      "stem": "Measured pKa values: acetic acid 4.76, chloroacetic acid 2.87, dichloroacetic acid 1.35. Which explanation accounts for the trend?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Chlorine donates electron density by resonance into the carboxylate, making the acid weaker as more Cl is added"
+        },
+        {
+          "key": "B",
+          "text": "Each chlorine withdraws electron density inductively through the σ framework, stabilizing the conjugate base and lowering pKa"
+        },
+        {
+          "key": "C",
+          "text": "Chlorinated acids are strong mineral acids like HCl, so pKa collapses to that of hydrochloric acid"
+        },
+        {
+          "key": "D",
+          "text": "Chlorine increases the hydrophobicity of the acid, which always increases pKa in water"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Carboxylic-acid strength in this series is controlled by inductive stabilization of the conjugate base. Electronegative chlorines pull electron density through the C–C σ bonds toward themselves, dispersing the negative charge on the carboxylate and favoring dissociation. More chlorines, or chlorines closer to the carboxyl, give a larger effect, matching the stepwise drop in pKa. Resonance donation from Cl into the carboxylate would raise pKa, which is the opposite of the data. These are still weak organic acids, not fully dissociated mineral acids, and hydrophobicity is not the parameter that tracks this halogen trend.",
+      "distractor_rationales": {
+        "A": "Inductive withdrawal, not resonance donation, is the dominant substituent effect of alkyl chlorides on aliphatic acids. The data show stronger, not weaker, acids.",
+        "C": "Even dichloroacetic acid is not HCl. It remains an equilibrium weak acid, albeit a relatively strong one among carboxylic acids.",
+        "D": "Adding chlorines lowers pKa here. A generic ‘hydrophobic acids are weaker’ rule does not explain the observed trend."
+      },
+      "difficulty_est": 0.32
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t9",
+      "type": "discrete",
+      "stem": "3-Oxobutanoic acid (acetoacetic acid) evolves CO2 on gentle warming and leaves acetone. Hexanoic acid is unchanged under the same conditions. Which mechanistic feature explains the difference?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Every carboxylic acid decarboxylates below 100 °C; hexanoic acid is simply slower for steric reasons"
+        },
+        {
+          "key": "B",
+          "text": "Only acids with a quaternary α-carbon can lose CO2, and hexanoic acid is secondary at C2"
+        },
+        {
+          "key": "C",
+          "text": "The β-ketone permits a six-membered cyclic transition state that transfers the carboxyl proton to the ketone oxygen as C–C cleavage releases CO2, giving an enol that tautomerizes to acetone"
+        },
+        {
+          "key": "D",
+          "text": "The ketone is reduced to an alcohol by the departing CO2, a redox decarboxylation unique to fatty acids"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "β-Keto acids decarboxylate thermally through a cyclic, concerted transition state: the carboxyl hydrogen hydrogen-bonds to the β-carbonyl oxygen as the Cα–CO2H bond breaks, producing CO2 and a ketone enol that tautomerizes to acetone. Hexanoic acid lacks a β-carbonyl and cannot form that six-membered array, so it does not lose CO2 on gentle heating. Ordinary fatty acids require much harsher conditions or enzymatic activation (as in metabolic decarboxylations) to lose carbon dioxide. The α-carbon need not be quaternary, and the process is not a reduction of the ketone by CO2.",
+      "distractor_rationales": {
+        "A": "Simple alkanoic acids do not decarboxylate on a steam bath. The β-keto functional group is essential for the mild thermal reaction.",
+        "B": "Malonic acid and acetoacetic acid decarboxylate with primary or secondary α-carbons. Quaternary substitution is not the requirement.",
+        "D": "The ketone oxidation state is preserved: the product is acetone, not an alcohol. CO2 is not a reductant in this reaction."
+      },
+      "difficulty_est": 0.49
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t10",
+      "type": "discrete",
+      "stem": "Relative rates of hydrolysis (neutral water, 25 °C) decrease in the order acetyl chloride ≫ acetic anhydride > ethyl acetate ≫ acetamide. Which analysis best explains that ranking?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Better leaving groups and less n→π* donation into the carbonyl make the acyl carbon more electrophilic: Cl− > RCO2− > RO− > R2N−"
+        },
+        {
+          "key": "B",
+          "text": "Amides hydrolyze fastest because nitrogen is more electronegative than chlorine"
+        },
+        {
+          "key": "C",
+          "text": "Esters cannot undergo nucleophilic acyl substitution at all, so the ranking is an artifact"
+        },
+        {
+          "key": "D",
+          "text": "Acid chlorides are the least electrophilic because chlorine is a π donor as strong as NH2"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Nucleophilic acyl substitution rate tracks two coupled effects. First, resonance donation from the heteroatom into the carbonyl (n→π*) is strongest for nitrogen, weaker for oxygen, and weakest for chlorine, so the acyl carbon of an amide is the least electrophilic. Second, the leaving group in the tetrahedral intermediate must depart: Cl− is an excellent leaving group, carboxylate is fair, alkoxide is poor, and amide anion is very poor. Those trends place acid chlorides at the top of the reactivity scale and amides at the bottom. Esters do hydrolyze, just more slowly than anhydrides and chlorides. Nitrogen is less electronegative than chlorine, not more.",
+      "distractor_rationales": {
+        "B": "Nitrogen is less electronegative than chlorine and donates more strongly by resonance. Amides are the least, not most, reactive common carboxylic derivatives.",
+        "C": "Esters undergo nucleophilic acyl substitution (saponification, acid hydrolysis, transesterification); they are simply slower than anhydrides and acid chlorides.",
+        "D": "Chlorine is a weak resonance donor compared with NH2. Acid chlorides are the most, not least, electrophilic in this series."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t10",
+      "type": "discrete",
+      "stem": "Penicillin’s antibacterial activity depends on acylation of a serine in bacterial D-alanine transpeptidase. Ordinary unstrained amides do not acylate that serine at a useful rate. Which property of the β-lactam is most responsible?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The β-lactam is actually an ester, and esters always outrun amides in nucleophilic acyl substitution"
+        },
+        {
+          "key": "B",
+          "text": "The four-membered ring is aromatic (4n+2), so it behaves like an acid chloride"
+        },
+        {
+          "key": "C",
+          "text": "The lactam nitrogen is so basic that it deprotonates serine before any acyl transfer"
+        },
+        {
+          "key": "D",
+          "text": "Ring strain and reduced amide resonance (the nitrogen cannot be fully coplanar with the carbonyl) make the lactam carbonyl unusually electrophilic"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "A normal amide is unreactive because the nitrogen lone pair conjugates with the carbonyl, lowering electrophilicity and making R2N− a terrible leaving group. In a fused β-lactam the four-membered ring prevents that geometry: the N–C(O) system cannot be fully planar, resonance is diminished, and opening the ring relieves angle strain. The serine hydroxyl can therefore perform nucleophilic acyl substitution, covalently inactivating the transpeptidase. The functional group remains an amide, not an ester; it is not aromatic (4 π electrons would be 4n, anti-aromatic if planar); and the chemistry is acyl transfer, not a preliminary deprotonation of serine by the lactam nitrogen as a base.",
+      "distractor_rationales": {
+        "A": "Penicillin’s reactive carbonyl is a cyclic amide (β-lactam), not an ester. Strain, not a change of functional-group class to ester, is the key.",
+        "B": "Hückel aromaticity requires 4n+2 π electrons in a planar conjugated loop. A saturated β-lactam is not an aromatic ring.",
+        "C": "Amide nitrogens are poor bases (the lone pair is tied up, even if less so in a β-lactam). The lethal step is acylation of serine, not acid–base deprotonation."
+      },
+      "difficulty_est": 0.56
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t11",
+      "type": "discrete",
+      "stem": "Phenol (pKa ≈ 10.0) is insoluble in water and in aqueous NaHCO3 but dissolves in aqueous NaOH. Benzoic acid (pKa ≈ 4.2) dissolves in both NaHCO3 and NaOH. Which acid–base analysis is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Phenol is a stronger acid than benzoic acid, so only NaOH, the weaker base, can deprotonate it"
+        },
+        {
+          "key": "B",
+          "text": "Bicarbonate is a stronger base than hydroxide, which is why it fails with phenol"
+        },
+        {
+          "key": "C",
+          "text": "Hydroxide (pKa of H2O ≈ 15.7) deprotonates phenol, but bicarbonate (pKa of H2CO3 ≈ 6.4) does not; benzoic acid is strong enough to be deprotonated by either base"
+        },
+        {
+          "key": "D",
+          "text": "Phenol dissolves in NaOH because it is reduced to phenoxide by hydride transfer, not because of a proton transfer"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "An acid is deprotonated by a base when the conjugate acid of that base is a weaker acid (higher pKa) than the substrate. Water’s pKa near 16 lies above phenol’s pKa of 10, so hydroxide generates phenoxide and pulls phenol into water as a salt. Carbonic acid’s pKa near 6.4 lies below 10, so the equilibrium PhOH + HCO3− ⇌ PhO− + H2CO3 lies far to the left and phenol remains neutral and ether-soluble. Benzoic acid’s pKa of 4.2 lies below both 6.4 and 16, so both bases extract it. Phenol is the weaker acid, not the stronger, and the process is proton transfer, not reduction.",
+      "distractor_rationales": {
+        "A": "Carboxylic acids (pKa ~4–5) are stronger than phenols (pKa ~10). That is why bicarbonate distinguishes them.",
+        "B": "Hydroxide is a far stronger base than bicarbonate. If the ranking were reversed, NaHCO3 would deprotonate phenol and NaOH would not.",
+        "D": "NaOH is not a hydride donor. Solubility tracks formation of ionic phenoxide by Brønsted deprotonation."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t11",
+      "type": "discrete",
+      "stem": "Ubiquinone (coenzyme Q) shuttles reducing equivalents in the inner mitochondrial membrane. Which description of its organic redox chemistry is accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The quinone is a peptide cofactor that is hydrolyzed to amino acids when it is ‘reduced’"
+        },
+        {
+          "key": "B",
+          "text": "The para-benzoquinone head accepts two electrons and two protons to give a hydroquinone (ubiquinol), a reversible phenol/quinone redox pair"
+        },
+        {
+          "key": "C",
+          "text": "Reduction of Q requires oxidative cleavage of the isoprenoid tail to acetate"
+        },
+        {
+          "key": "D",
+          "text": "Q is identical to NAD+; both are water-soluble hydride acceptors with nicotinamide rings"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Ubiquinone is a lipid-soluble 2,3-dimethoxy-5-methyl-6-polyprenyl-1,4-benzoquinone. Two-electron, two-proton reduction converts the quinone into a p-hydroquinone (ubiquinol), the same phenol/quinone couple that appears in synthetic quinone chemistry and in vitamin K. A one-electron intermediate (semiquinone radical) is also accessible, which is why Q can bridge NADH-like two-electron chemistry and heme/Fe–S one-electron chemistry. The isoprenoid tail is a membrane anchor, not a redox substrate. Q is not a peptide and is not nicotinamide; NAD+ is a hydrophilic hydride acceptor.",
+      "distractor_rationales": {
+        "A": "CoQ is a small-molecule quinone, not a polypeptide. Reduction does not mean proteolysis.",
+        "C": "The polyprenyl chain remains intact during Q/QH2 cycling; redox chemistry is confined to the quinone ring.",
+        "D": "NAD+ is a water-soluble nicotinamide nucleotide that accepts a hydride. CoQ is a membrane quinone with a different mechanism and solubility."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t12",
+      "type": "discrete",
+      "stem": "Pyridine is readily protonated by dilute aqueous acid (pKa of pyridinium ≈ 5.2), whereas pyrrole is not (pKa of the conjugate acid ≈ −4). Which orbital analysis explains the difference?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Pyridine’s nitrogen lone pair occupies an sp2 orbital in the plane of the ring and is not part of the 6π aromatic sextet, so it can bind H+ without destroying aromaticity; pyrrole’s lone pair is part of the sextet"
+        },
+        {
+          "key": "B",
+          "text": "Pyrrole is more basic because its nitrogen is sp3 and has a higher-energy lone pair"
+        },
+        {
+          "key": "C",
+          "text": "Neither heterocycle is aromatic, so basicity tracks only the electronegativity of nitrogen"
+        },
+        {
+          "key": "D",
+          "text": "Pyridine is not aromatic; protonation creates aromaticity, which is why it is basic"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Both rings are aromatic with 6π electrons (Hückel 4n+2). In pyridine the nitrogen contributes one electron to the π system from its p orbital, exactly as a CH group would; the lone pair sits in an sp2 orbital in the plane and is available for protonation. In pyrrole the nitrogen already contributes two electrons (the lone pair) to the π sextet. Protonating pyrrole on nitrogen would remove those two electrons from conjugation and destroy aromaticity, so pyrrole is an extremely weak base (and is instead weakly acidic at N–H). Pyrrole’s nitrogen is not sp3 in the aromatic structure.",
+      "distractor_rationales": {
+        "B": "Pyrrole is far less basic than pyridine. Its nitrogen is planar and sp2, with the lone pair in the aromatic π system.",
+        "C": "Both are aromatic. Electronegativity alone cannot explain a ~9-unit pKa gap between two azine/azole nitrogens.",
+        "D": "Pyridine is already aromatic before protonation. Aromaticity is preserved, not created, when the in-plane lone pair binds H+."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC5.5D.t12",
+      "type": "discrete",
+      "stem": "Which statement correctly classifies the nitrogenous bases of nucleic acids as aromatic heterocycles?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Adenine and guanine are monocyclic pyrimidines; cytosine, thymine, and uracil are bicyclic purines"
+        },
+        {
+          "key": "B",
+          "text": "All five bases are porphyrins, the same macrocycle found in heme"
+        },
+        {
+          "key": "C",
+          "text": "Adenine is an indole, matching the side chain of tryptophan"
+        },
+        {
+          "key": "D",
+          "text": "Adenine and guanine are bicyclic purines (fused pyrimidine + imidazole); cytosine, thymine, and uracil are monocyclic pyrimidines"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Purine is a 6–5 fused heterocycle (pyrimidine fused to imidazole). Adenine (6-aminopurine) and guanine (2-amino-6-oxopurine) are purines and attach to C1′ of the sugar at N9. Cytosine, uracil, and thymine (5-methyluracil) are single six-membered pyrimidine rings and attach at N1. The mnemonic that pyrimidines are the smaller bases matches the monocyclic structures. Porphyrin is a different tetrapyrrole macrocycle used in heme and chlorophyll. Indole is the fused benzene–pyrrole of tryptophan, not of adenine.",
+      "distractor_rationales": {
+        "A": "This inverts the classification. Purines (A, G) are bicyclic; pyrimidines (C, T, U) are monocyclic.",
+        "B": "Porphyrins are 18π tetrapyrrole macrocycles. Nucleic-acid bases are purines and pyrimidines, not porphyrins.",
+        "C": "Indole is Trp’s side chain. Adenine is a purine; the two bicyclic systems are not the same heterocycle."
+      },
+      "difficulty_est": 0.3
+    },
+    {
+      "concept_id": "MCAT.FC5.5E.t1",
+      "type": "discrete",
+      "stem": "An inhibitor I is added to a Michaelis–Menten enzyme. Apparent Km falls from 2.0 mM to 1.0 mM and apparent Vmax falls from 80 to 40 μM s−1 (the Lineweaver–Burk slope Km/Vmax is unchanged). Which inhibition mode is indicated, and why can extra substrate not restore Vmax?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Competitive: I and S bind the same site, so high [S] must restore Vmax; the data are misread"
+        },
+        {
+          "key": "B",
+          "text": "Uncompetitive: I binds only the ES complex, lowering both Km and Vmax by the same factor; extra S creates more ES–I rather than free E"
+        },
+        {
+          "key": "C",
+          "text": "Pure noncompetitive: I binds E and ES equally, so Km is unchanged; the reported Km drop must be experimental error"
+        },
+        {
+          "key": "D",
+          "text": "Irreversible active-site alkylation, which always leaves Km unchanged and cannot produce parallel Lineweaver–Burk lines"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Uncompetitive inhibitors bind ES exclusively. Sequestration of ES pulls E + S ⇌ ES to the right, so the apparent substrate affinity increases (Km app decreases) while the amount of productive ES that can proceed to product falls (Vmax app decreases). When both parameters are scaled by the same factor, Km/Vmax is constant and Lineweaver–Burk lines are parallel. Adding more substrate makes more ES and therefore more ES–I; it cannot outcompete an inhibitor that does not bind free E. Competitive inhibition raises Km at constant Vmax. Pure noncompetitive inhibition lowers Vmax at constant Km.",
+      "distractor_rationales": {
+        "A": "Competitive inhibition increases Km and leaves Vmax unchanged. These data show both parameters falling, the opposite pattern.",
+        "C": "Pure noncompetitive inhibition (equal affinity for E and ES) does not change Km. A halved Km with halved Vmax is uncompetitive, not noncompetitive.",
+        "D": "Covalent inactivation typically decreases the amount of active enzyme (Vmax down) without systematically halving Km in a parallel-line pattern diagnostic of uncompetitive inhibition."
+      },
+      "difficulty_est": 0.66
+    },
+    {
+      "concept_id": "MCAT.FC5.5E.t1",
+      "type": "discrete",
+      "stem": "Hexokinase catalyzes glucose + ATP → glucose-6-phosphate + ADP. To which Enzyme Commission class does this reaction belong, and why is ‘ligase’ the wrong label?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hydrolase, because water is the phosphoryl acceptor"
+        },
+        {
+          "key": "B",
+          "text": "Lyase, because ATP is cleaved without transferring a group to glucose"
+        },
+        {
+          "key": "C",
+          "text": "Transferase (phosphotransferase): a phosphoryl group is transferred from ATP to glucose; ligases join two substrates with concurrent NTP hydrolysis rather than transferring a preexisting group onto one of them"
+        },
+        {
+          "key": "D",
+          "text": "Oxidoreductase, because the aldehyde of glucose is oxidized to a phosphate ester"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The six EC classes are oxidoreductase, transferase, hydrolase, lyase, isomerase, and ligase. Hexokinase moves the γ-phosphoryl of ATP onto glucose’s C6 hydroxyl, which is group transfer (EC 2.7). Ligases (EC 6) catalyze joining of two molecules coupled to NTP hydrolysis, typically forming new C–C, C–O, C–N, or C–S bonds (DNA ligase, glutamine synthetase, pyruvate carboxylase). Water is not the acceptor, so it is not a hydrolase. A lyase would add or remove groups from double bonds without ATP as a phosphoryl donor. The aldehyde of glucose is not oxidized; C6 is a primary alcohol.",
+      "distractor_rationales": {
+        "A": "A hydrolase would transfer the phosphoryl to water (ATPase). Glucose, not water, is the acceptor in the hexokinase reaction.",
+        "B": "A lyase does not use ATP as a phosphoryl donor to an alcohol. The phosphoryl is transferred, not merely eliminated.",
+        "D": "No redox change occurs at carbon. Phosphorylation of an alcohol is not oxidation of an aldehyde."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC5.5E.t2",
+      "type": "discrete",
+      "stem": "For ATP hydrolysis, ΔG°′ = −30.5 kJ mol−1. In a resting myocyte the mass-action ratio Q = [ADP][Pi]/[ATP] is much smaller than Keq, and RT ln Q = −22 kJ mol−1 at the relevant temperature. What is ΔG, and what does the comparison to ΔG°′ mean?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "ΔG = −52.5 kJ mol−1; hydrolysis is more exergonic than the standard-state value because Q ≪ 1"
+        },
+        {
+          "key": "B",
+          "text": "ΔG is always equal to ΔG°′ = −30.5 kJ mol−1, because Q cannot affect a standard free energy"
+        },
+        {
+          "key": "C",
+          "text": "ΔG = +8.5 kJ mol−1; a small Q makes the reaction endergonic"
+        },
+        {
+          "key": "D",
+          "text": "ΔG = 0, because any reaction with a defined Keq is at equilibrium in cells"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The living-cell driving force is ΔG = ΔG°′ + RT ln Q, not ΔG°′ alone. Substituting the given values yields −30.5 + (−22) = −52.5 kJ mol−1. A Q far below Keq (high ATP relative to ADP and Pi) makes RT ln Q negative and therefore makes hydrolysis more exergonic than the 1 M standard state. ΔG°′ is the value at Q = 1; it does not freeze ΔG in a cell. A negative RT ln Q cannot flip the sign to endergonic here, and cells maintain ATP hydrolysis far from equilibrium (ΔG ≠ 0) so that the reaction can do useful work.",
+      "distractor_rationales": {
+        "B": "ΔG°′ is defined at Q = 1. Cellular Q is not 1, so ΔG differs from ΔG°′ by RT ln Q.",
+        "C": "RT ln Q is negative, so it adds to the already negative ΔG°′ rather than canceling it. The reaction is more, not less, exergonic.",
+        "D": "Keq being large does not place the cell at equilibrium. Homeostasis holds Q ≪ Keq so that ΔG remains strongly negative."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "MCAT.FC5.5E.t2",
+      "type": "discrete",
+      "stem": "Standard reduction potentials: NAD+ / NADH, E°′ = −0.32 V; a typical enzyme-bound FAD / FADH2, E°′ = 0.00 V; ½ O2 / H2O, E°′ = +0.82 V. Using ΔG°′ = −nFΔE°′ with n = 2, which statement follows for oxidation of the two carriers by O2?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "FADH2 oxidation is more exergonic because its E°′ is closer to that of oxygen"
+        },
+        {
+          "key": "B",
+          "text": "The two oxidations have identical ΔG°′ because both ultimately reduce O2"
+        },
+        {
+          "key": "C",
+          "text": "NADH cannot reduce oxygen because its potential is negative"
+        },
+        {
+          "key": "D",
+          "text": "NADH oxidation has the larger ΔE°′ (1.14 V vs 0.82 V) and therefore the more negative ΔG°′, consistent with NADH electrons entering the chain at a higher-energy (more reducing) level than FADH2"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Electrons flow from the more negative to the more positive couple. For NADH to O2, ΔE°′ = 0.82 − (−0.32) = 1.14 V. For FADH2 to O2, ΔE°′ = 0.82 − 0.00 = 0.82 V. Because ΔG°′ = −nFΔE°′, the larger ΔE°′ makes NADH oxidation more exergonic. That extra free energy is why NADH feeds Complex I and supports more proton pumping than FADH2, which enters at Complex II. A negative E°′ for NAD+/NADH means NADH is a strong reductant, not that it is forbidden from reducing oxygen through the chain. Sharing O2 as the terminal acceptor does not equalize ΔE°′.",
+      "distractor_rationales": {
+        "A": "A smaller gap to oxygen means a smaller ΔE°′ and a less negative ΔG°′. FADH2 is the lower-energy reductant.",
+        "B": "The donor potentials differ, so ΔE°′ and ΔG°′ differ even though both paths end at O2.",
+        "C": "A negative E°′ identifies a good reductant. NADH reduces the chain, and ultimately oxygen, with a large positive ΔE°′."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "MCAT.FC5.5E.t3",
+      "type": "discrete",
+      "stem": "Unfolding of a small protein is characterized by ΔH = +160 kJ mol−1 and ΔS = +400 J mol−1 K−1, both approximately temperature-independent in this range. At which temperatures is unfolding spontaneous (ΔG < 0)?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "At all temperatures, because ΔS is positive"
+        },
+        {
+          "key": "B",
+          "text": "Only above 400 K, where TΔS exceeds ΔH so that ΔG = ΔH − TΔS is negative"
+        },
+        {
+          "key": "C",
+          "text": "Only below 400 K, because endothermic processes are spontaneous at low temperature"
+        },
+        {
+          "key": "D",
+          "text": "Never, because a positive ΔH forbids spontaneity at any T"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Spontaneity is decided by ΔG = ΔH − TΔS, not by ΔH or ΔS alone. Here both signs are positive (endothermic unfolding that increases disorder), so −TΔS becomes more negative as temperature rises. Setting ΔG = 0 gives T = ΔH/ΔS = 160 kJ mol−1 / 0.400 kJ mol−1 K−1 = 400 K. Above 400 K, TΔS > ΔH and unfolding is spontaneous; below 400 K the folded state is favored. A positive ΔS does not guarantee spontaneity at low T, and a positive ΔH does not forbid it at high T. This is the same pattern as ice melting or N2O4 dissociating to NO2.",
+      "distractor_rationales": {
+        "A": "At low T the ΔH term dominates a ΔH > 0, ΔS > 0 process. Positive entropy does not override enthalpy at every temperature.",
+        "C": "Endothermic, entropy-increasing reactions are the high-temperature-spontaneous class, not the low-temperature class (that class is ΔH < 0, ΔS < 0).",
+        "D": "Positive ΔH forbids spontaneity only if ΔS is also negative. Here ΔS > 0 opens a high-T window."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC5.5E.t3",
+      "type": "discrete",
+      "stem": "In a coffee-cup calorimeter, 2.00 g of KNO3 (101.1 g mol−1) dissolves in 50.0 g of water. The temperature falls from 25.00 °C to 22.60 °C. Take the solution mass as 52.0 g and c = 4.18 J g−1 °C−1. What is ΔH_soln per mole of KNO3?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "−26.4 kJ mol−1, because any temperature change in a calorimeter is reported as a negative enthalpy"
+        },
+        {
+          "key": "B",
+          "text": "+52.2 kJ mol−1, using q = m c ΔT without dividing by moles"
+        },
+        {
+          "key": "C",
+          "text": "+26.4 kJ mol−1, because dissolution absorbed heat from the solution (endothermic) and q_rxn = −q_solution"
+        },
+        {
+          "key": "D",
+          "text": "+13.2 kJ mol−1, from accidentally doubling the number of moles"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "A coffee-cup calorimeter operates at constant pressure, so q_p = ΔH for the process inside. The solution’s temperature drop means the solution lost heat: q_solution = (52.0 g)(4.18 J g−1 °C−1)(−2.40 °C) = −522 J. Heat conservation requires q_rxn = −q_solution = +522 J, so dissolution is endothermic. Dividing by n = 2.00/101.1 = 0.0198 mol gives ΔH = +26.4 kJ mol−1. The sign tracks the observed cooling; omitting the mole conversion or doubling n produces the numeric traps.",
+      "distractor_rationales": {
+        "A": "The calorimeter cools, which means the chemical process absorbed heat. ΔH_soln is positive, not negative.",
+        "B": "q_rxn ≈ +522 J is the enthalpy change for 2.00 g, not for one mole. Molar ΔH requires division by 0.0198 mol.",
+        "D": "Using n = 0.0396 mol (as if the formula weight were applied twice) halves the molar enthalpy to 13.2 kJ mol−1."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "MCAT.FC5.5E.t4",
+      "type": "discrete",
+      "stem": "1,3-Butadiene treated with 1 equivalent of HBr at −80 °C yields mostly 3-bromobut-1-ene. After the same mixture is warmed to 40 °C and allowed to equilibrate, 1-bromobut-2-ene predominates. Which analysis is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Low temperature selects the 1,2-adduct because it forms faster (kinetic control); heat allows equilibration to the more substituted 1,4-alkene (thermodynamic control)"
+        },
+        {
+          "key": "B",
+          "text": "The 1,4-adduct is always the kinetic product because allylic cations always react at the far end first"
+        },
+        {
+          "key": "C",
+          "text": "Temperature cannot change product ratios for a reaction with a single mechanism"
+        },
+        {
+          "key": "D",
+          "text": "HBr cannot add to conjugated dienes; both products must arise from radical substitution on butane"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Protonation of 1,3-butadiene gives an allylic cation that can be captured at C2 (1,2-addition) or C4 (1,4-addition). The 1,2-path has the lower activation energy and wins when the first-formed alkyl bromide cannot revert, i.e., at low temperature under kinetic control. The 1,4-product is a more substituted (internal) alkene and is thermodynamically more stable. At higher temperature the addition is reversible, the system reaches equilibrium, and the thermodynamic product accumulates. This is the textbook illustration that the fastest product and the most stable product need not be the same species.",
+      "distractor_rationales": {
+        "B": "The kinetic product in this system is the 1,2-adduct, isolated at −80 °C. The 1,4-alkene is the thermodynamic product.",
+        "C": "When two products form from a common intermediate and one path is reversible only at higher T, the ratio is strongly temperature-dependent.",
+        "D": "Electrophilic addition of HBr to conjugated dienes is a standard polar reaction of alkenes, not a free-radical substitution on an alkane."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "MCAT.FC5.5E.t4",
+      "type": "discrete",
+      "stem": "The gas-phase equilibrium A ⇌ B is exothermic and has a substantial activation energy in both directions. The mixture is already at equilibrium at temperature T1. The flask is then rapidly heated to a higher T2 and held there. Which pair of statements is correct once the new equilibrium is reached?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Keq increases and the time required to re-equilibrate increases, because heat always favors products and slows motion"
+        },
+        {
+          "key": "B",
+          "text": "Keq is unchanged; only the Arrhenius rate constants change, because equilibrium constants never depend on temperature"
+        },
+        {
+          "key": "C",
+          "text": "A catalyst must have been produced by heating, so Keq increases while rates stay the same"
+        },
+        {
+          "key": "D",
+          "text": "Keq decreases (Le Chatelier / van ’t Hoff: heat is a product of an exothermic reaction) while both forward and reverse rate constants increase (Arrhenius), so the new, less product-rich equilibrium is reached faster"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Thermodynamics and kinetics must be separated. For an exothermic reaction van ’t Hoff and Le Chatelier agree that raising T shifts the equilibrium toward reactants, so Keq falls. Independently, Arrhenius behavior says k = A e^(−Ea/RT) increases with T for both the forward and reverse elementary rates (the reverse Ea is larger by |ΔH|, so k_reverse grows more, which is how K = k_f/k_r falls). The system therefore re-equilibrates more quickly to a composition that contains less B. Heating does not invent a catalyst, and Keq is temperature-dependent whenever ΔH ≠ 0.",
+      "distractor_rationales": {
+        "A": "Heat favors reactants for an exothermic equilibrium, so Keq decreases. Rates increase with T; they do not slow.",
+        "B": "Keq depends on T through ΔH (van ’t Hoff: d ln K / dT = ΔH / RT^2). Keq is temperature-independent only when ΔH = 0, not for this exothermic reaction.",
+        "C": "Temperature is not a catalyst. A catalyst would speed both directions without changing Keq; here Keq itself changes."
+      },
+      "difficulty_est": 0.6
+    }
+  ]
+}

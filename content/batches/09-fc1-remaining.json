@@ -1,0 +1,1120 @@
+{
+  "items": [
+    {
+      "concept_id": "MCAT.FC1.1A.t3",
+      "type": "discrete",
+      "stem": "Primary dermal fibroblasts are cultured in ascorbate-free medium and pulse-chased with 14C-proline. Labeled collagen still appears in the medium, but the secreted protein is digested by pepsin at 20 °C and fails to assemble 67-nm D-banded fibrils. Which molecular explanation is most accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Ascorbate is the copper-site reductant for lysyl oxidase, so tropocollagen cannot leave the ER and no labeled protein should appear extracellularly."
+        },
+        {
+          "key": "B",
+          "text": "Without ascorbate the signal peptide is not cleaved, trapping preprocollagen as an unfolded cytosolic monomer that is never secreted."
+        },
+        {
+          "key": "C",
+          "text": "Prolyl and lysyl hydroxylases require ascorbate; underhydroxylated chains form thermally labile triple helices that remain pepsin-sensitive and pack poorly into fibrils."
+        },
+        {
+          "key": "D",
+          "text": "Ascorbate is required only to N-glycosylate asparagines; without sugar, calnexin retains all collagen indefinitely, contradicting the appearance of medium label."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Vitamin C keeps the nonheme iron of prolyl and lysyl hydroxylases in the active Fe2+ state so that X-Y-Gly repeats can be hydroxylated in the ER. Hydroxyproline stabilizes the triple helix by hydrogen bonding and stereoelectronic effects, raising the melting temperature above 37 °C. In ascorbate deficiency the chains remain underhydroxylated, helices unravel near room temperature, pepsin gains access, and D-period packing fails. Secretion is not absolutely blocked, which is why pulse label still reaches the medium. Lysyl oxidase is a copper enzyme that acts after secretion; signal-peptide cleavage and calnexin glycoprotein quality control do not explain pepsin-labile secreted collagen.",
+      "distractor_rationales": {
+        "A": "Lysyl oxidase is extracellular and copper-dependent; it is not the ascorbate step that thermally destabilizes newly secreted collagen, and the stem shows that labeled protein is secreted.",
+        "B": "Signal-peptidase cleavage does not require ascorbate, and a cytosolic trap would prevent any medium label.",
+        "D": "Collagen hydroxylation, not N-glycosylation of asparagine, is the ascorbate-dependent modification; calnexin retention would also prevent secretion of labeled chains."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t3",
+      "type": "discrete",
+      "stem": "A neutralizing monoclonal IgG binds a repeating viral glycoprotein with Kd = 2 nM. Limited papain digestion yields Fab fragments that still bind the same epitope with a nearly identical Kd in a monovalent ELISA, yet they neither agglutinate virions nor fix C1q. Which conclusion is most consistent with antibody structure?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Antigen specificity resides in the Fc domain, so an intact Fc is required for the observed nanomolar Kd."
+        },
+        {
+          "key": "B",
+          "text": "Each Fab retains the original combining site, so monovalent affinity is largely unchanged, but bivalent avidity, agglutination, and Fc-dependent effector functions are lost."
+        },
+        {
+          "key": "C",
+          "text": "Papain destroys complementarity-determining loops, so the Kd in the ELISA must have increased by several orders of magnitude."
+        },
+        {
+          "key": "D",
+          "text": "C1q binds the antigen-combining site; without intact IgG the viral epitope itself is chemically altered and can no longer be recognized."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Papain cleaves IgG above the hinge, releasing two monovalent Fab fragments and an Fc fragment. The variable domains that form the paratope remain in each Fab, so the intrinsic Kd for a single epitope is essentially unchanged, matching the ELISA. What is lost is simultaneous engagement of two epitopes on one particle (avidity), lattice formation that produces agglutination, and Fc clustering that recruits C1q. Specificity is not encoded in Fc, an unchanged Kd shows that CDRs were not destroyed, and C1q binds Fc rather than the combining site or the viral antigen itself.",
+      "distractor_rationales": {
+        "A": "The antigen-binding site is formed by VH and VL CDRs in Fab, not by Fc; Fc is dispensable for monovalent Kd.",
+        "C": "The stem states that monovalent Kd is nearly identical, so the combining site survived papain cleavage.",
+        "D": "C1q docks on clustered Fc regions; it does not occupy the paratope or chemically modify the viral epitope."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t2",
+      "type": "discrete",
+      "stem": "A temperature-sensitive E. coli ligA mutant is shifted to 42 °C during rapid growth. After a brief 3H-thymidine pulse, alkaline sucrose-gradient centrifugation places the radioactivity in ~1000–2000 nucleotide pieces rather than in chromosomal-length DNA. Return to 30 °C chases the label into high-molecular-weight DNA. Which interpretation is most accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Lagging-strand Okazaki fragments are synthesized but cannot be sealed at 42 °C; alkaline denaturation reveals the nicks that ligase would otherwise close."
+        },
+        {
+          "key": "B",
+          "text": "Helicase denatures at 42 °C, so both strands are copied only as abortive RNA primers that ligase later joins into chromosomal DNA."
+        },
+        {
+          "key": "C",
+          "text": "DNA polymerase III loses 5′→3′ polymerase activity at 42 °C, leaving only initiator RNAs that become 1000-nucleotide DNA after the downshift."
+        },
+        {
+          "key": "D",
+          "text": "DNA gyrase cannot decatenate daughters at 42 °C, mechanically shearing chromosomes into gene-sized pieces independently of ligation."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "DNA ligase seals nicks after polymerase I has removed RNA primers and filled Okazaki fragments on the lagging strand. At the nonpermissive temperature those fragments remain unjoined. Alkaline sucrose gradients denature duplexes, converting nicked molecules into single strands whose length matches bacterial Okazaki pieces. Restoring ligase activity at 30 °C allows sealing and a chase into chromosomal DNA. Helicase failure, loss of Pol III catalytic activity, or a decatenation defect would not produce this reversible pile-up of discrete, pulse-labeled fragments of Okazaki length.",
+      "distractor_rationales": {
+        "B": "Helicase failure would halt fork progression rather than generate a reversible pool of DNA-length Okazaki pieces that chase after ligase is restored.",
+        "C": "The pulse labels DNA, not RNA primers, and the mutation is in ligase, not the Pol III polymerase site.",
+        "D": "Decatenation acts on fully replicated circles; it does not create a pulse-labeled 1–2 kb nascent-DNA ladder that chases when ligase is restored."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t2",
+      "type": "discrete",
+      "stem": "A linear eukaryotic chromosome is replicated in a telomerase-null cell. After the terminal RNA primer on the extreme 5′ end of a newly made lagging strand is removed, conventional DNA polymerases cannot fill the resulting gap. Which statement best describes why, and the long-term consequence?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "DNA polymerases synthesize 3′→5′ when dNTP concentrations are high, so the gap is filled and ends do not shorten."
+        },
+        {
+          "key": "B",
+          "text": "The parental 3′ overhang is used as a primer that extends the recessed 5′ end, lengthening the chromosome each S phase."
+        },
+        {
+          "key": "C",
+          "text": "RNA primers on the leading strand cannot be replaced, so both ends grow until the cell senesces from excess telomeric DNA."
+        },
+        {
+          "key": "D",
+          "text": "DNA polymerases require a primer and add nucleotides only to a 3′-OH, so they cannot fill a 5′-terminal gap after primer removal; repeated cycles shorten the chromosome."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Replicative DNA polymerases cannot initiate chains de novo and add dNTPs only onto an existing 3′-OH in the 5′→3′ direction. Removal of the terminal lagging-strand RNA primer leaves a 5′ gap with no downstream primer terminus to extend. Each S phase therefore shortens chromosome ends unless telomerase, a specialized reverse transcriptase, extends the 3′ G-overhang using its internal RNA template. Polymerases never synthesize 3′→5′, the parental overhang is not a primer for the recessed 5′ end, and leading-strand priming is not the source of progressive end erosion in this end-replication problem.",
+      "distractor_rationales": {
+        "A": "Template-dependent DNA polymerases elongate exclusively 5′→3′; raising dNTPs does not reverse polarity or fill a 5′ terminal gap.",
+        "B": "A 3′ overhang cannot prime DNA synthesis on the recessed 5′ end; polymerases need a 3′-OH on the strand being extended.",
+        "C": "The unreplicated terminus is a lagging-strand 5′ gap after primer removal; ends shorten rather than grow in telomerase-null cells."
+      },
+      "difficulty_est": 0.57
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t3",
+      "type": "discrete",
+      "stem": "In wild-type E. coli, MutH nicks the unmethylated strand of a hemimethylated GATC near a mismatch shortly after replication. A dam-null strain lacks GATC methylation entirely and shows a strong mutator phenotype. Which mechanism best explains the increased mutation rate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "MutH becomes hyperactive and double-nicks every GATC, killing cells that then mutate only during SOS repair of the resulting double-strand breaks."
+        },
+        {
+          "key": "B",
+          "text": "Without a methylation mark, MutH cannot discriminate parental from daughter DNA, so mismatch repair fails to nick the correct strand or nicks randomly, allowing mutations to be fixed on either strand."
+        },
+        {
+          "key": "C",
+          "text": "Dam methylase is the endonuclease that excises mismatches; its absence leaves MutS permanently bound and blocks all replication forks."
+        },
+        {
+          "key": "D",
+          "text": "Unmethylated DNA cannot be transcribed, so error-prone translesion polymerases become the only remaining polymerases and mutagenize the genome uniformly."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Immediately after replication, GATC sites are hemimethylated: the parental strand carries Dam methylation and the daughter strand does not. MutS/MutL activate MutH to nick the unmethylated strand, directing excision to the newly synthesized DNA so that the parental sequence is used as template. In a dam-null cell both strands lack the mark, strand discrimination collapses, and mismatches are either left unrepaired or repaired using the wrong strand, producing a mutator phenotype. Dam is a methyltransferase, not the mismatch endonuclease, and unmethylated DNA is still a competent template for transcription and high-fidelity replication.",
+      "distractor_rationales": {
+        "A": "The dam-null mutator reflects loss of strand discrimination, not obligatory lethal double-nicking at every GATC followed by SOS mutagenesis as the sole source of mutations.",
+        "C": "Dam methylates GATC adenines; MutH is the nicking endonuclease. Replication is not globally blocked in dam mutants.",
+        "D": "Transcription and replicative polymerases do not require GATC methylation; translesion polymerases are not the default genome-wide polymerase in dam-null cells."
+      },
+      "difficulty_est": 0.61
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t3",
+      "type": "discrete",
+      "stem": "Fibroblasts from a xeroderma pigmentosum patient are irradiated at 254 nm. Relative to wild-type cells they accumulate cyclobutane pyrimidine dimers, show little unscheduled DNA synthesis in non-S-phase nuclei, and fail to release an oligonucleotide containing the dimer. Which pathway is defective?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Photolyase-dependent photoreactivation, the principal dimer-reversal pathway operating in human skin in the dark."
+        },
+        {
+          "key": "B",
+          "text": "Base-excision repair initiated by uracil-DNA glycosylase, which recognizes thymine dimers as if they were deaminated cytosines."
+        },
+        {
+          "key": "C",
+          "text": "Nucleotide-excision repair, in which dual incisions remove an oligomer spanning the bulky dimer and DNA polymerase fills the gap."
+        },
+        {
+          "key": "D",
+          "text": "Mismatch repair directed by MutS homologs, which scans for UV-induced A–T mismatches rather than helix-distorting dimers."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "UV light generates bulky cyclobutane pyrimidine dimers and 6–4 photoproducts that distort the double helix. Nucleotide-excision repair, the pathway mutated in xeroderma pigmentosum, makes dual incisions, excises an oligonucleotide containing the lesion, and fills the gap. Gap filling outside S phase is detected as unscheduled DNA synthesis, which is deficient in these cells. Photoreactivation by photolyase is not the primary dark-repair pathway in human fibroblasts and would reverse dimers to monomers without oligomer excision. BER glycosylases do not remove intact thymine dimers as their main substrate, and mismatch repair does not excise UV photoproducts as dual-incision patches.",
+      "distractor_rationales": {
+        "A": "Human XP cells are defective in NER, not in a dominant dark photolyase pathway; photoreactivation would monomerize dimers without releasing an excised oligomer.",
+        "B": "Uracil-DNA glycosylase removes uracil, not cyclobutane thymine dimers; BER does not produce the dual-incision oligomer lost in XP assays.",
+        "D": "Mismatch repair corrects replication errors, not bulky UV photoproducts, and would not explain missing unscheduled DNA synthesis after UV."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t4",
+      "type": "discrete",
+      "stem": "A purified tRNA^Ile bears the anticodon 5′-IAU-3′. In a reconstituted translation system it supports isoleucine incorporation in response to AUU, AUC, and AUA but not AUG. Which statement best explains this codon set?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Inosine at the wobble (5′) position of the anticodon pairs with U, C, or A at the third position of the codon, reading the three Ile codons; AUG is Met and would require a G that inosine does not stably pair with."
+        },
+        {
+          "key": "B",
+          "text": "The genetic code is overlapping, so a single IAU anticodon slides across a window that includes AUG as an isoleucine codon."
+        },
+        {
+          "key": "C",
+          "text": "Inosine is attached to isoleucine by a mischarging event that converts Met-tRNA to Ile-tRNA, allowing the ribosome to skip AUG."
+        },
+        {
+          "key": "D",
+          "text": "Each isoleucine codon is recognized only by a perfectly matched anticodon, so the IAU tRNA can read solely AUA."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Wobble pairing occurs between the 5′ base of the anticodon and the 3′ base of the codon. Inosine, produced by deamination of adenosine, hydrogen-bonds with U, C, or A, so anticodon 5′-IAU-3′ decodes AUU, AUC, and AUA—the three isoleucine codons. It does not decode AUG, which specifies methionine and presents a 3′ G that is not a standard inosine wobble partner. The code is nonoverlapping and commaless from a fixed start. Inosine is a tRNA nucleoside modification, not a misacylation of initiator tRNA, and degeneracy plus wobble exist precisely so that one tRNA species can read multiple synonymous codons.",
+      "distractor_rationales": {
+        "B": "Codons are nonoverlapping triplets; the ribosome advances three nucleotides and does not slide IAU across AUG as Ile.",
+        "C": "Inosine is in the anticodon loop of tRNA^Ile; it is not a charging defect that converts Met-tRNA into an Ile carrier.",
+        "D": "Wobble exists so that a single tRNA can read several third-position variants; restriction to AUA alone contradicts the incorporation data."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t4",
+      "type": "discrete",
+      "stem": "An investigator inserts a single extra nucleotide immediately after the AUG start codon of a bacterial ORF that previously encoded a 300-residue protein. No compensating mutation is present. Which outcome is most likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Every amino acid remains identical because degeneracy lets the ribosome skip extra bases at wobble positions."
+        },
+        {
+          "key": "B",
+          "text": "Translation initiates at the next in-frame AUG, producing a protein that lacks only the N-terminal residue."
+        },
+        {
+          "key": "C",
+          "text": "The insertion is spliced out of the bacterial transcript as a nuclear intron, restoring the original frame."
+        },
+        {
+          "key": "D",
+          "text": "The reading frame shifts by one nucleotide, so downstream codons are systematically misread until a stop is encountered, typically yielding a truncated nonfunctional polypeptide."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The genetic code is read as nonoverlapping triplets from a fixed initiation codon. Inserting one nucleotide immediately after AUG regroups every subsequent base, so all downstream codons differ from the original frame. Premature stop codons appear frequently in the new frame, truncating the chain well before 300 residues. Degeneracy does not authorize skipping nucleotides. There is no general mechanism that simply reinitiates at the next AUG to rescue a one-base frameshift across a long ORF, and typical bacterial protein-coding sequences are not spliced by a nuclear spliceosome.",
+      "distractor_rationales": {
+        "A": "Degeneracy and wobble affect synonymous third-position pairing; they do not cause the ribosome to ignore an inserted nucleotide.",
+        "B": "A +1 insertion after the start does not leave the remainder of the original ORF in frame, so the product is not a single-residue N-terminal truncation.",
+        "C": "Bacteria lack the nuclear spliceosome that removes eukaryotic introns from pre-mRNA; a genomic +1 insertion remains in the mRNA."
+      },
+      "difficulty_est": 0.31
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t6",
+      "type": "discrete",
+      "stem": "Puromycin, a structural analog of the 3′ end of aminoacyl-tRNA, is added to actively elongating ribosomes. Nascent chains are released as peptidyl-puromycin. Which mechanistic description is most accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Puromycin binds the E site and hydrolyzes the P-site ester by mimicking release factor RF3 GTPase."
+        },
+        {
+          "key": "B",
+          "text": "Puromycin occupies the A site; the peptidyl transferase center forms a peptide bond to its amino group, but puromycin is not tethered by codon–anticodon pairing, so the chain dissociates."
+        },
+        {
+          "key": "C",
+          "text": "Puromycin covalently cross-links 16S rRNA to the Shine–Dalgarno sequence, aborting initiation without affecting elongating ribosomes."
+        },
+        {
+          "key": "D",
+          "text": "Puromycin inhibits aminoacyl-tRNA synthetases, so ribosomes stall with empty A sites and RF1 then cleaves the P-site chain."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Puromycin’s amino-nucleoside mimics the 3′ aminoacyl end of tRNA and binds in the ribosomal A site without mRNA decoding. The peptidyl transferase ribozyme (23S or 28S rRNA) transfers the nascent chain to puromycin’s free amino group, forming a genuine peptide bond. Because puromycin is not held by codon–anticodon pairing or a full tRNA body, peptidyl-puromycin drops off, terminating elongation. It does not act in the E site as an RF3 mimic, does not specifically freeze initiation via 16S–Shine–Dalgarno crosslinking in this assay, and does not primarily empty the A site by blocking synthetases.",
+      "distractor_rationales": {
+        "A": "Release factors promote hydrolysis in the peptidyl transferase center; puromycin is an A-site acceptor substrate, not an E-site GTPase mimic.",
+        "C": "The classic puromycin reaction releases nascent chains from elongating ribosomes; it is not an initiation-only 16S cross-link.",
+        "D": "Peptidyl-puromycin formation shows that the chain is transferred to the drug, not hydrolyzed by RF1 after a charging blockade."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t6",
+      "type": "discrete",
+      "stem": "A point mutation in the Shine–Dalgarno sequence of a bacterial mRNA reduces complementarity to the 3′ end of 16S rRNA. Ribosome profiling shows fewer 30S subunits at the authentic AUG and increased use of a downstream AUG in a different frame. Which explanation is best?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bacteria use 5′-cap scanning as the default mechanism; the mutation merely shortens the 5′ UTR so the first AUG is skipped."
+        },
+        {
+          "key": "B",
+          "text": "The Shine–Dalgarno sequence encodes N-formylmethionine; mutating it changes the initiator amino acid without affecting initiation frequency."
+        },
+        {
+          "key": "C",
+          "text": "Base-pairing between the Shine–Dalgarno sequence and 16S rRNA positions the 30S subunit so that fMet-tRNA^fMet can bind the start codon in the P site; weaker pairing permits alternative AUG selection."
+        },
+        {
+          "key": "D",
+          "text": "Elongation factor EF-G requires the Shine–Dalgarno sequence to translocate after every peptide bond, so elongation rather than initiation is primarily affected."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The 3′ end of 16S rRNA base-pairs with the Shine–Dalgarno motif in the 5′ UTR, docking the 30S subunit so that the start AUG occupies the P site for fMet-tRNA^fMet. Weakening that pairing reduces authentic initiation and allows 30S subunits to occupy other AUGs, including out-of-frame starts, matching the profiling result. Bacteria do not rely on eukaryotic 5′-cap scanning as the default. The Shine–Dalgarno sequence is a ribosome-binding RNA motif, not a codon for fMet. EF-G drives translocation during elongation and does not reread the initiation Shine–Dalgarno sequence at every codon.",
+      "distractor_rationales": {
+        "A": "Cap-dependent scanning is eukaryotic; bacterial start-site selection is driven by 16S–Shine–Dalgarno pairing and initiator tRNA, not by 5′ cap recognition.",
+        "B": "fMet is encoded by AUG (or occasionally GUG/UUG) and is carried by tRNA^fMet; the Shine–Dalgarno sequence is not translated as fMet.",
+        "D": "The phenotype is altered start-codon occupancy by 30S subunits, an initiation defect, not an EF-G translocation requirement at each codon."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t7",
+      "type": "discrete",
+      "stem": "Limited micrococcal nuclease digestion of eukaryotic chromatin, followed by deproteinization, yields a DNA ladder with a ~147 bp core and, under milder cutting, a ~200 bp repeat. Extraction of histone H1 converts 30-nm-scale fibers toward a beads-on-a-string 10-nm filament without changing 147 bp core protection. Which interpretation is most consistent with nucleosome structure?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "An H2A/H2B/H3/H4 octamer wraps ~147 bp; H1 binds linker DNA and stabilizes higher-order folding, so H1 removal lengthens nuclease-accessible linker without unwrapping the core particle."
+        },
+        {
+          "key": "B",
+          "text": "H1 is the sole histone in the octamer; its extraction must destroy 147 bp protection, contradicting the data unless the assay failed."
+        },
+        {
+          "key": "C",
+          "text": "Micrococcal nuclease cuts inside the nucleosome core first, so the 147 bp fragment is unprotected linker DNA rather than histone-bound DNA."
+        },
+        {
+          "key": "D",
+          "text": "Telomeric DNA uniquely lacks nucleosomes, so the ladder can arise only from centromeric satellite repeats."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The nucleosome core particle is an H3/H4 tetramer plus two H2A/H2B dimers wrapping 147 bp of DNA. Linker histone H1 binds DNA at the entry and exit of the core and stabilizes folding toward 30-nm-scale fibers. Micrococcal nuclease first cleaves accessible linker DNA, producing ~200 bp repeats that include linker, then trims to the nuclease-resistant 147 bp core. Removing H1 increases linker accessibility and unfolds higher-order structure without dismantling the octamer, so core protection persists. H1 is not an octamer histone, the enzyme does not preferentially cut inside the core first, and nucleosome ladders are genome-wide.",
+      "distractor_rationales": {
+        "B": "The octamer is H2A, H2B, H3, and H4; H1 is the linker histone, and the stem shows that 147 bp protection survives H1 extraction.",
+        "C": "The core DNA is protected from nuclease; 147 bp is the wrapped core fragment, not naked linker.",
+        "D": "Nucleosomes package most of the nuclear genome, including euchromatin; telomeres and centromeres are not the sole source of the ladder."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t7",
+      "type": "discrete",
+      "stem": "A chromosomal domain is marked by histone H3 lysine-9 trimethylation, HP1 binding, late replication, and low RNA polymerase II occupancy. Forced histone hyperacetylation of the same domain increases DNase I sensitivity and nascent transcription. Which statement best describes the original state?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The domain is euchromatin packaged with acetylated histones that recruit HP1 to activate transcription."
+        },
+        {
+          "key": "B",
+          "text": "The domain is a nucleosome-free enhancer; H3K9me3 is a canonical mark of active promoters."
+        },
+        {
+          "key": "C",
+          "text": "The domain is a prokaryotic nucleoid region, and HP1 functions there as a sigma initiation factor."
+        },
+        {
+          "key": "D",
+          "text": "The domain is heterochromatin; H3K9me3 and HP1 compact chromatin and silence transcription, whereas acetylation loosens histone–DNA contacts and favors expression."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Constitutive and many facultative heterochromatic regions carry H3K9me3, which is read by HP1 proteins that oligomerize, compact chromatin, delay replication timing, and exclude RNA polymerase II. Histone acetylation neutralizes lysine charge, weakens histone–DNA interaction, and correlates with DNase-sensitive euchromatin and transcription. Forced hyperacetylation therefore switches the domain toward an open, transcribed state, matching the experiment. HP1 is not recruited by acetylation as an activator, H3K9me3 is a silencing mark rather than an active-promoter modification, and this histone code is a feature of eukaryotic nuclei, not of a bacterial nucleoid.",
+      "distractor_rationales": {
+        "A": "Acetylated euchromatin is transcriptionally permissive and does not use H3K9me3–HP1 as an activation module.",
+        "B": "H3K9me3 is associated with compact, late-replicating heterochromatin, not with nucleosome-free active enhancers or promoters.",
+        "C": "HP1 and histone octamers are eukaryotic; bacteria lack this chromatin-silencing system and do not use HP1 as sigma factor."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t8",
+      "type": "discrete",
+      "stem": "Four otherwise identical E. coli cultures are grown with: (1) glucose only, (2) glucose plus lactose, (3) lactose only, or (4) no utilizable carbon source. lacZYA mRNA is quantified during exponential growth (or, for culture 4, during carbon starvation). Which culture has the highest lac transcription, and why?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Culture 1, because glucose is the inducer that binds LacI and catabolite repression activates the operon."
+        },
+        {
+          "key": "B",
+          "text": "Culture 2, because both sugars must occupy the operator simultaneously before RNA polymerase can bind."
+        },
+        {
+          "key": "C",
+          "text": "Culture 3, because allolactose inactivates the lac repressor while high cAMP allows the cAMP–CAP complex to recruit RNA polymerase at the lac promoter."
+        },
+        {
+          "key": "D",
+          "text": "Culture 4, because ppGpp alone fully induces every catabolic operon in the absence of any sugar."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The lac repressor binds the operator and blocks polymerase unless allolactose (from lactose) occupies LacI and lowers operator affinity. Independently, glucose starvation raises cAMP so that cAMP–CAP binds upstream of the lac promoter and strongly activates transcription. Maximal expression therefore requires lactose present (repressor off) and glucose absent (CAP on), which is culture 3. Glucose alone leaves the repressor bound. Glucose plus lactose yields only CAP-independent, lower transcription. Starvation without lactose leaves LacI on the operator; stringent-response ppGpp does not replace allolactose and CAP at lac.",
+      "distractor_rationales": {
+        "A": "Glucose is the preferred carbon source that lowers cAMP and causes catabolite repression; it is not the lac inducer, and LacI remains bound without lactose.",
+        "B": "Neither sugar binds the operator DNA. Glucose plus lactose is the induced but CAP-off condition, not the expression maximum.",
+        "D": "Without lactose the repressor still occupies the operator; carbon starvation does not constitutively fire lacZYA via ppGpp alone."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t8",
+      "type": "discrete",
+      "stem": "In the trp operon leader, a short ORF contains tandem Trp codons. When charged tRNA^Trp is abundant the ribosome translates the leader without stalling and a terminator hairpin forms; when tryptophan is scarce the ribosome stalls and an antiterminator RNA structure forms. Both leader Trp codons are mutated to alanine. Which phenotype is expected when tryptophan is low but alanine is plentiful?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Attenuation still occurs because the ribosome does not stall at alanine codons, the terminator hairpin forms, and trp structural genes remain under-expressed despite tryptophan starvation."
+        },
+        {
+          "key": "B",
+          "text": "The operon is transcribed constitutively at high levels because the trp aporepressor can no longer bind tryptophan."
+        },
+        {
+          "key": "C",
+          "text": "Translation of TrpE initiates at the leader alanine codons, producing a functional TrpE fusion enzyme that bypasses regulation."
+        },
+        {
+          "key": "D",
+          "text": "Uncharged tRNA^Ala stalls the ribosome whenever tryptophan is low, fully relieving attenuation whenever the cell is starved for tryptophan."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "trp attenuation couples translation of the leader peptide to a choice between terminator and antiterminator RNA hairpins. Tandem Trp codons stall the ribosome only when charged tRNA^Trp is scarce, favoring the antiterminator and transcription into trpEDCBA. Replacing those codons with alanine removes the tryptophan-specific stall. If alanine-tRNA is available, the ribosome translates the leader smoothly even during tryptophan starvation, the terminator hairpin still forms, and the biosynthetic genes remain attenuated—exactly when the cell needs them. The mutation is in the leader ORF, not in TrpR’s tryptophan-binding site, does not create a TrpE fusion, and does not charge or uncharge tRNA^Ala in response to tryptophan.",
+      "distractor_rationales": {
+        "B": "TrpR corepression is a separate input; changing leader Trp codons to Ala does not prevent the repressor from binding tryptophan.",
+        "C": "The leader peptide is not fused in-frame to TrpE by this codon swap, and attenuation acts on transcription termination, not on creating a new enzyme.",
+        "D": "Alanine charging is independent of tryptophan levels, so tRNA^Ala does not stall the leader ribosome specifically when Trp is low."
+      },
+      "difficulty_est": 0.66
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t9",
+      "type": "discrete",
+      "stem": "A CpG island at a tumor-suppressor promoter is densely methylated on cytosine. A DNA methyltransferase inhibitor reduces 5-methylcytosine at this island, increases local histone acetylation, and restores mRNA. Which mechanism is most consistent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cytosine methylation is required for RNA polymerase II binding at CpG islands, so removing it should silence rather than activate the gene."
+        },
+        {
+          "key": "B",
+          "text": "Methylated CpG is recognized by complexes that recruit histone acetyltransferases, so demethylation would decrease acetylation."
+        },
+        {
+          "key": "C",
+          "text": "Methyl-CpG-binding proteins recruit histone deacetylases and compacting factors; demethylation releases this silencing, permitting HAT activity and transcription-factor access."
+        },
+        {
+          "key": "D",
+          "text": "DNA methylation in animals occurs only on adenine; the drug must therefore be acting on contaminating bacteria rather than the tumor-suppressor gene."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "In vertebrates, methylation of cytosine in promoter CpG islands is a stable silencing mark. Methyl-CpG-binding proteins recruit histone deacetylases and other corepressors, compacting chromatin and blocking transcription-factor and polymerase access. Inhibiting DNA methyltransferase allows passive loss of 5-methylcytosine through replication, dissociation of the silencing complex, histone acetylation by HATs, and restoration of tumor-suppressor mRNA, matching the experiment. Methylation does not promote Pol II recruitment at these promoters, and it does not primarily recruit HATs. Cytosine, not adenine, is the predominant DNA methylation target in mammalian genomes.",
+      "distractor_rationales": {
+        "A": "Promoter CpG methylation correlates with silencing, not with obligatory Pol II recruitment; demethylation restored mRNA in the stem.",
+        "B": "Methyl-CpG readers typically recruit deacetylases, not acetyltransferases; acetylation rose after demethylation, the opposite of this prediction.",
+        "D": "Mammalian DNA methylation is primarily 5-methylcytosine at CpG dinucleotides, not N6-methyladenine as the dominant gene-silencing mark."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t9",
+      "type": "discrete",
+      "stem": "A microRNA is complementary to the 3′ UTR of a growth-factor receptor mRNA. Overexpression of the miRNA decreases receptor protein with little change in pre-mRNA transcription. Argonaute immunoprecipitation recovers the mature receptor mRNA. Which mechanism is most likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The miRNA is reverse-transcribed into repressor DNA that methylates the receptor promoter as its sole mode of action."
+        },
+        {
+          "key": "B",
+          "text": "The miRNA guides an RNA-induced silencing complex to the 3′ UTR, causing translational repression and/or mRNA destabilization without requiring a change in transcription initiation."
+        },
+        {
+          "key": "C",
+          "text": "The miRNA splices the receptor’s signal sequence out of the pre-mRNA as a nuclear intron, so no protein is made."
+        },
+        {
+          "key": "D",
+          "text": "The miRNA aminoacylates tRNA so that the receptor’s codons cannot be translated because of a global charging defect."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Animal microRNAs are processed to ~22-nt RNAs loaded onto Argonaute in the RNA-induced silencing complex. Partial complementarity to a 3′ UTR represses translation and often destabilizes the mRNA via deadenylation, lowering protein output without a required change in transcription initiation. Recovery of the receptor mRNA in Argonaute immunoprecipitates supports this cytoplasmic, post-transcriptional mechanism and fits the unchanged pre-mRNA transcription. miRNAs are not routinely reverse-transcribed into promoter-methylating DNA as their primary mode, they do not act as spliceosomes for signal peptides, and they do not aminoacylate tRNAs.",
+      "distractor_rationales": {
+        "A": "Unchanged pre-mRNA transcription and Argonaute recovery of the mature mRNA point to cytoplasmic RISC action, not promoter methylation as the sole mechanism.",
+        "C": "miRNAs do not catalyze nuclear splicing of signal-sequence exons; RISC acts on mature mRNAs, consistent with the IP result.",
+        "D": "A global charging defect would collapse translation of many proteins, not specifically the receptor whose 3′ UTR matches the miRNA."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t10",
+      "type": "discrete",
+      "stem": "A PCR is designed to amplify a 400 bp genomic target using two oligonucleotide primers. In one tube the reverse primer is omitted. After 30 thermal cycles, that tube is compared with a complete reaction by agarose electrophoresis. Which result is most likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Exponential amplification still occurs because Taq polymerase synthesizes both strands from a single primer by looping the template."
+        },
+        {
+          "key": "B",
+          "text": "The yield of the 400 bp band is identical because primers are needed only to set melting temperature, not to prime DNA synthesis."
+        },
+        {
+          "key": "C",
+          "text": "A bright smear of random genomic fragments appears because Taq initiates de novo at every nick independently of primers."
+        },
+        {
+          "key": "D",
+          "text": "Exponential amplification of the defined 400 bp amplicon fails; at best, linear copying from the remaining primer produces heterogeneous products that do not accumulate as a discrete band."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Exponential PCR requires two primers that anneal to opposite strands so that each newly made strand becomes a template for the other primer in the next cycle. With only the forward primer, Taq can copy the original template in a linear fashion, generating single-stranded products of heterogeneous length that do not define a uniformly accumulating 400 bp duplex. Taq cannot loop to copy both strands from one primer, primers are 3′-OH substrates rather than mere Tm sensors, and primer-independent de novo initiation at nicks does not produce a specific, exponentially amplified target band.",
+      "distractor_rationales": {
+        "A": "Taq extends a primer 5′→3′ on a linear template; it does not convert one primer into a two-strand exponential engine by looping.",
+        "B": "Without both primers there is no geometric amplification of a defined amplicon; Tm is a property of duplexes, not a substitute for priming.",
+        "C": "Taq is primer-dependent under PCR conditions; random nick initiation would not specifically explain loss of the 400 bp product relative to the complete reaction."
+      },
+      "difficulty_est": 0.28
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t10",
+      "type": "discrete",
+      "stem": "A eukaryotic gene is cloned in two forms, each placed downstream of a lac promoter in a plasmid: (i) a cDNA prepared from poly(A)+ mRNA with reverse transcriptase and oligo(dT), and (ii) the corresponding genomic interval containing all introns. Only the cDNA construct yields the authentic protein in E. coli. Which explanation is best?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bacteria lack a spliceosome, so intron-containing genomic DNA cannot produce a continuous ORF; cDNA is reverse-transcribed from already spliced mRNA and can be translated as one coding sequence."
+        },
+        {
+          "key": "B",
+          "text": "Reverse transcriptase automatically adds a Shine–Dalgarno sequence and fMet codon to every cDNA, whereas genomic DNA can never be transcribed from a lac promoter."
+        },
+        {
+          "key": "C",
+          "text": "cDNA remains double-stranded RNA that bacterial ribosomes translate directly, bypassing transcription."
+        },
+        {
+          "key": "D",
+          "text": "Genomic inserts are degraded by restriction enzymes that are chemically unable to cleave cDNA of the same sequence."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Eukaryotic primary transcripts contain introns that are removed in the nucleus by the spliceosome. E. coli has no spliceosome, so a genomic clone that retains those introns cannot produce a correct continuous open reading frame even when a lac promoter drives transcription. cDNA is reverse-transcribed from mature poly(A)+ mRNA and therefore already lacks introns; the continuous coding sequence can be transcribed and translated if bacterial expression signals are supplied. Reverse transcriptase does not install a Shine–Dalgarno sequence, cloning cDNA is DNA not ribosome-translated dsRNA, and type II restriction enzymes cut specific DNA sequences regardless of whether the insert originated as cDNA or genomic DNA.",
+      "distractor_rationales": {
+        "B": "cDNA cloning does not automatically furnish bacterial ribosome-binding sites, and a lac promoter can transcribe a genomic insert; the block is splicing, not an absolute inability to transcribe DNA.",
+        "C": "Reverse transcriptase produces DNA; expression in this experiment is from a DNA plasmid via transcription, not direct translation of dsRNA.",
+        "D": "Restriction endonucleases recognize DNA palindromes independently of whether the molecule was copied from mRNA or from a chromosome."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC1.1C.t1",
+      "type": "discrete",
+      "stem": "Heat-killed smooth (encapsulated) pneumococci are extracted. The extract transforms live rough cells to smooth, virulent cells. Transforming activity survives protease and RNase treatments but is abolished by DNase. Which conclusion follows most directly?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Protein is the genetic material, because the extract came from heat-killed cells in which proteases were inactivated."
+        },
+        {
+          "key": "B",
+          "text": "Capsular polysaccharide is the gene, because smoothness is a carbohydrate phenotype and sugars survive DNase."
+        },
+        {
+          "key": "C",
+          "text": "DNA is required for heritable transformation in this system; protein and RNA are dispensable for the transforming principle."
+        },
+        {
+          "key": "D",
+          "text": "Transformation in this assay requires simultaneous bacteriophage infection, as later shown by Hershey and Chase using the same pneumococcal extracts."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Griffith showed that a heat-stable principle from killed smooth pneumococci can heritably transform rough cells. Avery, MacLeod, and McCarty fractionated that extract and found that DNase destroyed transforming activity whereas protease and RNase did not. The direct inference is that DNA, not protein or RNA, is required for transformation in this assay. Residual activity after proteases argues against protein as the genetic material. The capsule is the transformed phenotype, not the transforming molecule. The experiment did not involve phage infection of pneumococci, which is a different system from Hershey and Chase’s T2 work.",
+      "distractor_rationales": {
+        "A": "Protease treatment of the extract left transforming activity intact, which is evidence against protein as the hereditary substance.",
+        "B": "Smoothness is the phenotype conferred by capsule genes; DNase sensitivity of the extract shows that DNA, not the polysaccharide itself, carries the heritable information.",
+        "D": "Avery’s transformation used cell extracts without phage; Hershey and Chase later used labeled T2 bacteriophage, not pneumococcal extracts."
+      },
+      "difficulty_est": 0.32
+    },
+    {
+      "concept_id": "MCAT.FC1.1C.t1",
+      "type": "discrete",
+      "stem": "T2 bacteriophage are labeled in one culture with 32P and in another with 35S. Each preparation infects unlabeled E. coli. After a blender shears empty phage coats from the cells, radioactivity is tracked in pellet versus supernatant. Which result supported DNA as the genetic material?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "35S entered the cells and 32P remained in the supernatant, showing that protein injects the hereditary substance."
+        },
+        {
+          "key": "B",
+          "text": "32P (DNA) was found predominantly in the bacterial pellet and appeared in progeny phage, whereas 35S (capsid protein) remained largely extracellular."
+        },
+        {
+          "key": "C",
+          "text": "Both isotopes entered the cells in equal amounts, proving that genes are nucleoprotein with a 1:1 DNA-to-protein mass ratio."
+        },
+        {
+          "key": "D",
+          "text": "Neither isotope entered the cells; heredity was transferred by a heat-stable polysaccharide remaining in the medium."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "T2 phage injects its genome into E. coli while the protein coat remains outside. DNA contains phosphorus and no sulfur; phage protein contains sulfur in cysteine and methionine and no phosphorus. After adsorption, blending shears empty coats away from infected cells. 32P sedimented with the bacterial pellet and was recovered in progeny phage, whereas 35S remained in the supernatant with the ghosts. That differential entry showed that DNA, not capsid protein, is the hereditary substance transferred. Equal entry of both labels, entry of only protein, or entry of neither isotope was not the observed pattern.",
+      "distractor_rationales": {
+        "A": "This is the opposite of Hershey–Chase: protein (35S) stayed outside and DNA (32P) entered.",
+        "C": "The isotopes did not enter equally; the point of the blender experiment was the differential association of 32P with infected cells.",
+        "D": "32P did enter, and T2 heredity is not a medium polysaccharide; the phage genome is DNA."
+      },
+      "difficulty_est": 0.39
+    },
+    {
+      "concept_id": "MCAT.FC1.1C.t2",
+      "type": "discrete",
+      "stem": "An autosomal dominant disorder has 70% penetrance. An affected heterozygous parent, genotype confirmed by sequencing, has a child with an unaffected, unrelated partner who does not carry the mutant allele. Assuming no de novo mutation, what is the probability that the child is clinically affected?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.35, because the child has a 1/2 chance of inheriting the mutant allele and, if so, a 0.70 chance of expressing the phenotype."
+        },
+        {
+          "key": "B",
+          "text": "0.70, because penetrance replaces Mendelian segregation and every child of an affected parent is at the full penetrance risk."
+        },
+        {
+          "key": "C",
+          "text": "0.50, because complete dominance guarantees that every heterozygote is affected regardless of the stated penetrance."
+        },
+        {
+          "key": "D",
+          "text": "0.25, the Mendelian fraction of affected offspring from a heterozygous recessive cross."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The child inherits the known mutant allele from the heterozygous parent with probability 1/2; the unrelated partner contributes only wild-type alleles. Incomplete penetrance means that only 70% of heterozygotes manifest the phenotype, so the joint probability of inheriting the allele and expressing disease is 0.5 × 0.70 = 0.35. Penetrance is a conditional probability given genotype; it does not cancel segregation. Dominance describes the phenotype of heterozygotes who do express the trait, not a guarantee of 100% expression when penetrance is 70%. The 0.25 figure applies to affected homozygotes from two heterozygotes for a recessive trait, which this pedigree is not.",
+      "distractor_rationales": {
+        "B": "Each child still has only a 50% chance of inheriting the mutant allele; 0.70 applies only among those who inherit it.",
+        "C": "If penetrance were complete the risk would be 0.50, but the stem specifies 70% penetrance, so many heterozygotes are clinically unaffected.",
+        "D": "This mating is dominant with an unaffected noncarrier partner, not a recessive het × het cross."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC1.1C.t2",
+      "type": "discrete",
+      "stem": "A plant pigment gene has alleles CR (red) and CW (white). Heterozygotes are uniformly pink. Crossing two pink plants yields red : pink : white progeny in a ratio near 1 : 2 : 1. Which inheritance pattern is illustrated, and why is this not complete dominance?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Codominance of two fully expressed pigments; a 1:2:1 phenotypic ratio would be impossible under any single-locus model."
+        },
+        {
+          "key": "B",
+          "text": "Incomplete dominance: heterozygotes have an intermediate phenotype because one functional copy does not produce a full red dose, so genotypic segregation 1:2:1 is visible as three phenotypes."
+        },
+        {
+          "key": "C",
+          "text": "Recessive epistasis at a second locus converting a 9:3:4 ratio into 1:2:1 among the progeny of two heterozygotes at one locus."
+        },
+        {
+          "key": "D",
+          "text": "Independent assortment of two genes each segregating 3:1, which multiplies to a 1:2:1 ratio."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "When heterozygotes display a phenotype intermediate between the two homozygotes, neither allele is completely dominant. Intercrossing those heterozygotes yields the genotypic ratio 1 CRCR : 2 CRCW : 1 CWCW, which is visible as red : pink : white because pigment dosage in the heterozygote is insufficient for a full red color. Complete dominance would have collapsed CRCR and CRCW into one red class (3:1). Codominance would display both parental phenotypes at once (for example patches of red and white), not a blended pink. Recessive epistasis and two-gene 3:1 assortment produce different characteristic ratios, not a single-locus 1:2:1 from a heterozygote × heterozygote cross.",
+      "distractor_rationales": {
+        "A": "Codominance shows both alleles’ products simultaneously; a blended intermediate plus a 1:2:1 ratio is the hallmark of incomplete dominance, which is still a single-locus Mendelian pattern.",
+        "C": "Recessive epistasis modifies dihybrid ratios (classically 9:3:4); it is not needed to explain 1:2:1 from a monohybrid cross.",
+        "D": "Two independent 3:1 ratios give 9:3:3:1, not 1:2:1."
+      },
+      "difficulty_est": 0.34
+    },
+    {
+      "concept_id": "MCAT.FC1.1C.t3",
+      "type": "discrete",
+      "stem": "A child with trisomy 21 carries two maternal copies of chromosome 21 that are heterozygous at all centromere-flanking markers, plus one paternal chromosome 21. Which meiotic error is most consistent with this marker pattern?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Paternal meiosis II nondisjunction, because sister chromatids failed to separate in the father."
+        },
+        {
+          "key": "B",
+          "text": "A maternal mitotic error in the early zygote, which would yield mosaic trisomy rather than uniform trisomy that still includes a paternal homolog."
+        },
+        {
+          "key": "C",
+          "text": "Maternal meiosis I nondisjunction: homologous chromosomes 21 failed to disjoin, so both distinct maternal homologs entered the egg and fertilization added the paternal chromosome."
+        },
+        {
+          "key": "D",
+          "text": "Maternal meiosis II nondisjunction: sister chromatids of one homolog failed to separate, which would make the two maternal copies homozygous at centromeric markers."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "In meiosis I, homologous chromosomes disjoin. Failure at that division packages both distinct maternal homologs of chromosome 21 into one gamete. Those homologs differ at polymorphisms flanking the centromere, matching the child’s two heterozygous maternal copies; fertilization then adds the paternal chromosome. Meiosis II errors separate sister chromatids of a single homolog and therefore produce two maternal copies that are identical (homozygous) at centromere-proximal markers. A paternal MII error would duplicate a paternal chromosome, not two maternal ones. A postzygotic mitosis more often produces mosaicism rather than this nonmosaic parental-origin pattern.",
+      "distractor_rationales": {
+        "A": "The extra chromosomes are maternal; a paternal MII error would add two paternal sisters, not two heterozygous maternal homologs.",
+        "B": "Mitotic nondisjunction after fertilization typically creates mosaics and would not specifically generate two different maternal homologs plus one paternal chromosome in every cell as described.",
+        "D": "MII nondisjunction yields sister chromatids that are homozygous near the centromere, the opposite of the heterozygous centromeric markers in the stem."
+      },
+      "difficulty_est": 0.59
+    },
+    {
+      "concept_id": "MCAT.FC1.1C.t3",
+      "type": "discrete",
+      "stem": "A pathogenic mtDNA mutation is heteroplasmic. An affected mother has both affected and unaffected sons and daughters; an affected father has no affected children. Which statement is most accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Mitochondrial genomes in humans are transmitted through sperm mitochondria that dominate the zygote, so fathers should transmit the trait."
+        },
+        {
+          "key": "B",
+          "text": "mtDNA is maternally inherited; random partitioning of heteroplasmic mitochondria during oogenesis can produce different mutant loads among offspring, and paternal mtDNA is typically not transmitted."
+        },
+        {
+          "key": "C",
+          "text": "The pedigree is X-linked recessive, which also spares all children of affected fathers and affects sons and daughters of affected mothers equally."
+        },
+        {
+          "key": "D",
+          "text": "Crossing over between mitochondrial chromosomes during paternal meiosis eliminates the mutation from sperm, which is why fathers do not transmit it."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Human mtDNA is transmitted through the oocyte; sperm mitochondria are generally eliminated and do not set the child’s mtDNA genotype, so fathers do not transmit the trait. Heteroplasmy is a mixture of mutant and wild-type genomes. During oogenesis, random partitioning of mitochondria (vegetative segregation) can produce eggs with different mutant loads and thus both affected and unaffected sons and daughters. X-linked recessive inheritance can spare children of affected fathers in some respects, but affected mothers typically produce affected sons and carrier daughters rather than both sexes affected by a cytoplasmic genome. Paternal meiotic crossing over is not how mtDNA transmission is blocked.",
+      "distractor_rationales": {
+        "A": "Paternal mitochondria do not determine the zygote’s mtDNA in humans; the observed pattern is maternal transmission.",
+        "C": "X-linked recessive disease in children of a heterozygous mother predominantly affects sons, not sons and daughters similarly, and does not explain heteroplasmic mtDNA genetics.",
+        "D": "Absence of paternal transmission reflects destruction or exclusion of sperm mitochondria, not meiotic recombination that ‘cleanses’ mtDNA in sperm."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "MCAT.FC1.1C.t4",
+      "type": "discrete",
+      "stem": "An autosomal recessive disease occurs in 1/10,000 newborns in a large, randomly mating population that meets Hardy–Weinberg assumptions. What is the expected frequency of heterozygous carriers?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1/10,000, equal to the incidence of affected homozygotes."
+        },
+        {
+          "key": "B",
+          "text": "Approximately 1/50, because q^2 = 10^−4 so q = 0.01 and 2pq ≈ 2(1)(0.01) = 0.02."
+        },
+        {
+          "key": "C",
+          "text": "1/100, equal to the allele frequency q rather than the heterozygote frequency 2pq."
+        },
+        {
+          "key": "D",
+          "text": "1/200, because Hardy–Weinberg counting includes only half of the heterozygotes."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Under Hardy–Weinberg equilibrium the frequency of affected homozygotes is q^2. If q^2 = 1/10,000, then q = 0.01. For a rare allele p ≈ 1, so the heterozygote (carrier) frequency 2pq ≈ 2 × 0.01 = 0.02, or 1 in 50. The incidence of affected births is q^2, not the carrier rate. The allele frequency q is 0.01 (1/100), which is not 2pq. There is no Hardy–Weinberg convention of counting only half of heterozygotes; 2pq already is the full heterozygote frequency.",
+      "distractor_rationales": {
+        "A": "1/10,000 is q^2, the affected homozygote frequency, not the much larger pool of heterozygous carriers.",
+        "C": "q = 0.01 is the recessive allele frequency; carriers are 2pq ≈ 0.02.",
+        "D": "2pq already counts all heterozygotes; there is no extra factor of 1/2 in the standard carrier calculation."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "MCAT.FC1.1C.t4",
+      "type": "discrete",
+      "stem": "A three-point testcross of a trihybrid in coupling (ABC/abc × abc/abc) yields eight progeny classes. The two rarest classes are AbC and aBc. Which gene is in the middle of the map?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A is in the middle, because double-crossover classes always retain the parental configuration of the middle locus."
+        },
+        {
+          "key": "B",
+          "text": "C is in the middle, because the rare classes differ from the parentals only at locus C."
+        },
+        {
+          "key": "C",
+          "text": "The three genes are unlinked; the rarity of two complementary classes is sampling error around 12.5% each."
+        },
+        {
+          "key": "D",
+          "text": "B is in the middle, because a double crossover replaces only the middle locus’s allele relative to the parental combination, producing AbC and aBc from ABC and abc."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Parental (nonrecombinant) chromosomes are ABC and abc. A double crossover changes the allele of only the middle locus relative to those parentals. The rarest classes are the double crossovers: AbC and aBc differ from ABC/abc solely at B, so the order is A–B–C with B in the middle. If A were middle, the double-crossover pair would be aBC and Abc; if C were middle it would be ABc and abC. Unlinked loci would not produce two specifically rare complementary classes whose configuration matches a double crossover of a defined middle gene.",
+      "distractor_rationales": {
+        "A": "Double crossovers change, rather than retain, the middle marker relative to the parental combination; A as middle would give aBC and Abc.",
+        "B": "AbC/aBc differ from ABC/abc at B, not only at C; C in the middle would produce ABc and abC.",
+        "C": "Eight classes with two rare complementary types is the signature of a linked three-point cross, not of independent assortment at 1/8 each."
+      },
+      "difficulty_est": 0.68
+    },
+    {
+      "concept_id": "MCAT.FC1.1C.t5",
+      "type": "discrete",
+      "stem": "A mainland bird population is reduced to 12 individuals by a hurricane, then recovers numerically. Neutral heterozygosity and allelic richness remain far below pre-crash values for many generations despite random mating and no detectable change in relative fitness among remaining genotypes. Which process best explains the genetic outcome?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A population bottleneck caused genetic drift that lost or fixed alleles; subsequent growth does not restore diversity until mutation or migration replenishes it."
+        },
+        {
+          "key": "B",
+          "text": "Directional selection favored homozygotes during the storm, and that selection continues to purge heterozygotes after recovery."
+        },
+        {
+          "key": "C",
+          "text": "Gene flow from a divergent island population immediately restored heterozygosity, which contradicts the persistently low diversity."
+        },
+        {
+          "key": "D",
+          "text": "Heterozygote advantage intensified during the crash, which would raise, not lower, heterozygosity at the affected loci."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "A sharp reduction in census size samples only a few genomes. Alleles are lost or fixed by chance (drift), lowering heterozygosity and allelic richness at neutral loci. When the population later expands, it still carries only the gene pool of the survivors; random mating among them does not recreate lost alleles. Mutation and migration restore diversity only slowly, matching the long-lasting deficit. The stem states that relative fitness among remaining genotypes did not change, so ongoing selection against heterozygotes is unsupported. Gene flow or heterozygote advantage would not leave diversity depressed for generations after numerical recovery.",
+      "distractor_rationales": {
+        "B": "The stem specifies no fitness differences among remaining genotypes and a deficit at neutral diversity measures, which is drift after a bottleneck, not continued directional selection.",
+        "C": "Immigration would introduce alleles and raise heterozygosity; the observation is that diversity stayed low.",
+        "D": "Heterozygote advantage maintains polymorphism; it does not explain a crash-associated, lasting loss of allelic richness."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "MCAT.FC1.1C.t5",
+      "type": "discrete",
+      "stem": "A quantitative trait (beak depth) is measured before and after a drought. Surviving birds are those with either very shallow or very deep beaks; intermediates die. After several generations the phenotypic variance increases and the distribution becomes bimodal. Which mode of selection occurred?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Stabilizing selection, which removes extremes and shrinks variance about an intermediate optimum."
+        },
+        {
+          "key": "B",
+          "text": "Directional selection, which shifts the mean toward one extreme without favoring both tails."
+        },
+        {
+          "key": "C",
+          "text": "Disruptive (diversifying) selection, which favors both extremes over the mean and can increase variance and bimodality."
+        },
+        {
+          "key": "D",
+          "text": "Sexual selection based on heterozygosity at MHC loci, which does not act on beak depth during a drought."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Stabilizing selection culls both tails and reduces variance about an intermediate optimum. Directional selection favors one tail and shifts the mean. Disruptive selection favors both extremes over the intermediate, which is what the drought did for beak depth. After several generations, increased variance and a bimodal distribution are the expected phenotypic signatures and can contribute to divergence if mating becomes assortative. MHC-based mate choice is not indicated by survival as a function of beak depth during a resource crash.",
+      "distractor_rationales": {
+        "A": "Stabilizing selection would have favored intermediate beaks and decreased variance, the opposite of the survival pattern and the later bimodality.",
+        "B": "Directional selection would enrich only one tail (deeper or shallower), not both, and would move the mean rather than split the distribution.",
+        "D": "The fitness function is explicitly beak depth under drought; MHC sexual selection is an unrelated mechanism."
+      },
+      "difficulty_est": 0.49
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t1",
+      "type": "discrete",
+      "stem": "Glutamine synthetase catalyzes glutamate + NH4+ + ATP → glutamine + ADP + Pi. The uncoupled condensation glutamate + NH4+ → glutamine + H2O has ΔG°′ ≈ +14 kJ/mol, whereas ATP hydrolysis has ΔG°′ ≈ −30.5 kJ/mol. Which statement is most accurate in the cell?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The unfavorable glutamine-forming step cannot occur even when coupled, because ΔG°′ is a state function that forbids any positive partial reaction."
+        },
+        {
+          "key": "B",
+          "text": "Coupling phosphoryl transfer from ATP makes the net standard free-energy change negative (≈ −16 kJ/mol), and a high [ATP]/[ADP][Pi] ratio further drives ΔG negative, allowing net glutamine synthesis."
+        },
+        {
+          "key": "C",
+          "text": "Enzymes rewrite ΔG°′ of the uncoupled condensation to a negative value without chemical coupling to ATP."
+        },
+        {
+          "key": "D",
+          "text": "Because ΔG°′ of ATP hydrolysis is negative, every ATP-dependent reaction runs to completion regardless of mass-action ratios."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Standard free energy is path-independent for a defined chemical change, but cells couple an unfavorable process to a favorable one so that the net reaction has negative ΔG°′. Adding +14 kJ/mol to −30.5 kJ/mol yields about −16 kJ/mol for glutamate + ATP + NH4+ → glutamine + ADP + Pi. Actual ΔG also depends on mass action; a high [ATP]/[ADP][Pi] ratio makes ΔG even more negative. Enzymes accelerate approach to equilibrium; they do not change ΔG°′ without changing the reaction stoichiometry, and they do not force every ATP-dependent reaction to completion independent of Q.",
+      "distractor_rationales": {
+        "A": "A positive ΔG°′ for an isolated step is allowed if it is coupled into a net reaction with negative ΔG°′; metabolism routinely uses such coupling.",
+        "C": "Catalysts do not alter standard free-energy differences of a given reaction; coupling changes the reaction that is actually catalyzed.",
+        "D": "ΔG = ΔG°′ + RT ln Q; mass action can reverse or stall ATP-dependent reactions when products accumulate or ATP is low."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t1",
+      "type": "discrete",
+      "stem": "Succinate dehydrogenase oxidizes succinate (fumarate/succinate E°′ ≈ +0.03 V) using a covalently bound FAD rather than NAD+. NAD+/NADH has E°′ = −0.32 V. Which thermodynamic reason is most compelling?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "FADH2 always has a more negative E°′ than NADH, so FAD is required as a stronger reductant to reduce NAD+."
+        },
+        {
+          "key": "B",
+          "text": "NAD+ is a poorer electron acceptor from succinate than enzyme-bound FAD, whose potential can be tuned near the succinate/fumarate couple; electrons then enter the chain via ubiquinone."
+        },
+        {
+          "key": "C",
+          "text": "NAD+ cannot enter the mitochondrial matrix, whereas free FAD diffuses in as a substrate of Complex II."
+        },
+        {
+          "key": "D",
+          "text": "Only flavoproteins can pump protons; NAD-linked dehydrogenases cannot, so succinate oxidation must use FAD to contribute to the proton-motive force."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "A redox reaction is thermodynamically favorable when the acceptor’s E°′ is more positive than the donor’s. NAD+ at −0.32 V is a poor acceptor from the succinate/fumarate couple at about +0.03 V, so ΔE°′ for succinate → NAD+ is negative. Protein-bound FAD can have its potential raised near or above that of succinate, allowing oxidation; the resulting FADH2 then reduces ubiquinone. NAD+ is abundant in the matrix; impermeability is not the issue. Bound FAD is not a more negative couple than NADH in the sense that would make it a stronger reductant used to reduce NAD+, and proton pumping is a property of Complexes I, III, and IV, not a unique feature of all flavoproteins. Complex II itself does not pump protons.",
+      "distractor_rationales": {
+        "A": "NADH is the stronger reductant (more negative E°′). Succinate dehydrogenase uses FAD because NAD+ is too poor an acceptor, not to reduce NAD+.",
+        "C": "NAD+ is present in the matrix and is the acceptor for many matrix dehydrogenases; Complex II’s FAD is a prosthetic group, not a freely diffusing substrate that replaces impermeable NAD+.",
+        "D": "Complex I is NAD-linked and pumps protons; Complex II is FAD-linked and does not pump protons, so this rationale inverts the bioenergetics."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t2",
+      "type": "discrete",
+      "stem": "Equal millimolar solutions of maltose, lactose, and sucrose are tested with Benedict’s reagent. Maltose and lactose yield a brick-red Cu2O precipitate; sucrose does not, unless first boiled with dilute acid. Which structural explanation is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Maltose and lactose each have a free anomeric carbon that can open to an aldehyde and reduce Cu(II); in sucrose both anomeric carbons (Glc α1↔2β Fru) are tied in the glycosidic bond until hydrolysis."
+        },
+        {
+          "key": "B",
+          "text": "Sucrose contains only ketoses, which can never reduce Cu(II) even after hydrolysis to monomers."
+        },
+        {
+          "key": "C",
+          "text": "Benedict’s reagent oxidizes peptide bonds; sucrose is the only one of the three that lacks nitrogen and therefore cannot react."
+        },
+        {
+          "key": "D",
+          "text": "Maltose is a β-1,4 glucan like cellulose and is reducing only because of α-1,6 branching that sucrose lacks."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "A sugar is reducing if it has a free anomeric carbon that can open to an aldehyde (or, for a ketose after tautomerization, an enediol). Maltose (Glc α1→4 Glc) and lactose (Gal β1→4 Glc) each leave one anomeric carbon free. Sucrose is Glc α1↔2β Fru, so both anomeric carbons are locked in the glycosidic bond until acid or sucrase hydrolyzes it, after which glucose and fructose both react with Benedict’s reagent. Fructose can reduce Cu(II) after isomerization, so ‘ketoses never reduce’ is false. Benedict’s test is for reducing sugars, not peptide bonds, and maltose is an unbranched α-1,4 disaccharide, not cellulose.",
+      "distractor_rationales": {
+        "B": "Acid hydrolysis of sucrose releases fructose, which is reducing via tautomerization to an aldose; the intact disaccharide is nonreducing because both anomers are tied up, not because ketoses are intrinsically nonreducing.",
+        "C": "These molecules are carbohydrates, not peptides; Benedict’s reagent reports a free anomeric carbon, not nitrogen content.",
+        "D": "Maltose is Glc α1→4 Glc without cellulose-like β-1,4 chains or glycogen-like branching; reducing character comes from the free anomeric carbon."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t2",
+      "type": "discrete",
+      "stem": "Glycogen and cellulose are both homopolymers of D-glucose. Glycogen is readily mobilized by glycogen phosphorylase in animals; cellulose is not digested by human enzymes and forms rigid fibrils. Which chemical difference is most responsible?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cellulose uses α-1,6 branches every 8–12 residues; glycogen is an unbranched β-1,4 polymer."
+        },
+        {
+          "key": "B",
+          "text": "Cellulose is composed of galactose, the C4 epimer of glucose; glycogen uses glucose, so only glycogen matches phosphorylase specificity."
+        },
+        {
+          "key": "C",
+          "text": "Glycogen has α-1,4 chains with α-1,6 branches, producing a helical, hydrated polymer with many nonreducing ends; cellulose has β-1,4 linkages that form straight, hydrogen-bonded sheets resistant to human amylases and phosphorylase."
+        },
+        {
+          "key": "D",
+          "text": "The two polymers are chemically identical; only the organism of origin determines whether human enzymes can hydrolyze them."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Glycosidic stereochemistry dictates polymer conformation and enzyme specificity. α-1,4 linkages in glycogen curve the chain into a hydrated helix, and α-1,6 branches create many nonreducing ends for phosphorylase. β-1,4 linkages in cellulose produce extended chains that hydrogen-bond into fibrils; human amylases and glycogen phosphorylase do not hydrolyze β-1,4 glucans. Both polymers are poly-D-glucose, not galactose. Branching is a glycogen feature, not a cellulose feature, and digestibility is a chemical-recognition issue rather than a mere label of plant versus animal origin.",
+      "distractor_rationales": {
+        "A": "This swaps the architectures: glycogen is the branched α polymer; cellulose is unbranched β-1,4.",
+        "B": "Cellulose is a glucose homopolymer; galactose is not the repeating unit, and C4 epimerization is not the glycogen/cellulose distinction.",
+        "D": "The polymers differ in anomeric configuration and branching; those chemical differences, not the source organism alone, explain enzyme resistance."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t4",
+      "type": "discrete",
+      "stem": "In hepatocytes, glucagon signaling via cAMP-dependent protein kinase phosphorylates the bifunctional enzyme PFK-2/FBPase-2, lowering fructose-2,6-bisphosphate. What is the immediate consequence for glycolysis versus gluconeogenesis at the PFK-1/FBPase-1 substrate cycle?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "F2,6BP activates fructose-1,6-bisphosphatase, so lowering F2,6BP stimulates glycolysis."
+        },
+        {
+          "key": "B",
+          "text": "F2,6BP allosterically activates PFK-1 and inhibits FBPase-1; lowering F2,6BP therefore slows glycolysis and favors gluconeogenesis."
+        },
+        {
+          "key": "C",
+          "text": "Glucagon dephosphorylates glycogen phosphorylase, so glucose-6-phosphate rises and mass action alone reverses PFK-1."
+        },
+        {
+          "key": "D",
+          "text": "F2,6BP is the substrate of aldolase; lowering it directly depletes GAP and DHAP without affecting PFK-1."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Fructose-2,6-bisphosphate is the principal feed-forward activator of hepatic PFK-1 and an inhibitor of FBPase-1, so it toggles the fructose-6-phosphate / fructose-1,6-bisphosphate substrate cycle. Glucagon-driven PKA phosphorylation of liver PFK-2/FBPase-2 stimulates the phosphatase activity of the bifunctional enzyme, lowering F2,6BP. PFK-1 therefore loses its activator and FBPase-1 loses its inhibitor, slowing glycolysis and favoring gluconeogenesis. F2,6BP does not activate FBPase-1. Glucagon phosphorylates, rather than dephosphorylates, the glycogenolytic cascade. Aldolase’s substrate is fructose-1,6-bisphosphate, not F2,6BP.",
+      "distractor_rationales": {
+        "A": "F2,6BP inhibits FBPase-1 and activates PFK-1; lowering it cannot stimulate glycolysis via FBPase-1 activation.",
+        "C": "Glucagon/PKA phosphorylates phosphorylase kinase and thereby activates phosphorylase; it does not dephosphorylate phosphorylase, and the F2,6BP effect on PFK-1/FBPase-1 is allosteric, not a mass-action reversal by G6P alone.",
+        "D": "Aldolase cleaves fructose-1,6-bisphosphate; F2,6BP is a regulator, not the aldolase substrate."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t4",
+      "type": "discrete",
+      "stem": "Skeletal muscle glycogen phosphorylase is allosterically activated by AMP and is converted to phosphorylase a by phosphorylase kinase, itself activated by PKA and by Ca2+–calmodulin. Liver phosphorylase is less AMP-sensitive and is inhibited by glucose. After a sprint, muscle [AMP] and sarcoplasmic Ca2+ rise, but blood glucagon is unchanged. Which statement is most accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Muscle cannot break down glycogen without glucagon receptors, so the sprint does not mobilize muscle glycogen."
+        },
+        {
+          "key": "B",
+          "text": "Glucose inhibition of liver phosphorylase causes muscle to export glucose-6-phosphate into blood as the sprint’s fuel."
+        },
+        {
+          "key": "C",
+          "text": "Only the liver enzyme responds to Ca2+, so muscle glycogen is spared during contraction."
+        },
+        {
+          "key": "D",
+          "text": "Muscle glycogenolysis is stimulated independently of glucagon by AMP and by Ca2+-activated phosphorylase kinase, supplying G6P for glycolysis in situ; muscle lacks glucose-6-phosphatase, so free glucose is not released to blood."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Contracting muscle generates AMP from the adenylate kinase reaction and releases sarcoplasmic Ca2+ for contraction. AMP allosterically activates phosphorylase b, and Ca2+–calmodulin activates phosphorylase kinase even without a rise in glucagon, producing glucose-6-phosphate for muscle glycolysis. Muscle lacks glucose-6-phosphatase, so it does not export free glucose. Glucagon receptors are not required for this local response. Liver-specific glucose inhibition of phosphorylase does not cause muscle to dump G6P into the circulation, and Ca2+ activation of phosphorylase kinase is a central feature of muscle, not an exclusively hepatic mechanism.",
+      "distractor_rationales": {
+        "A": "Muscle glycogenolysis during exercise is driven by AMP, Ca2+, and epinephrine/neural inputs; it does not require glucagon.",
+        "B": "Muscle does not export G6P or free glucose; liver glucose inhibition of phosphorylase is a hepatic, not a muscle-export, control.",
+        "C": "Ca2+–calmodulin activation of phosphorylase kinase is especially important in contracting muscle, so glycogen is mobilized, not spared."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t8",
+      "type": "discrete",
+      "stem": "After a 24-hour fast, blood insulin is low and glucagon is high. Which tissue-specific fuel pattern is most accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Liver glycogen is depleted and the liver performs gluconeogenesis and ketogenesis; skeletal muscle oxidizes fatty acids and ketone bodies but does not export glucose; adipose tissue hydrolyzes triacylglycerol, releasing fatty acids and glycerol."
+        },
+        {
+          "key": "B",
+          "text": "Muscle glycogen is converted to free glucose by glucose-6-phosphatase and becomes the main source of blood glucose."
+        },
+        {
+          "key": "C",
+          "text": "The brain switches entirely to fatty acid oxidation and ceases using glucose or ketone bodies."
+        },
+        {
+          "key": "D",
+          "text": "Adipose tissue esterifies fatty acids under glucagon, storing additional triacylglycerol throughout the fast."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "After a day without food, hepatic glycogen is largely exhausted. High glucagon and low insulin induce hepatic gluconeogenesis and, as β-oxidation raises acetyl-CoA, ketogenesis. Adipose hormone-sensitive lipase releases fatty acids and glycerol. Skeletal muscle oxidizes fatty acids and ketones and can break down its own glycogen only for local use; without glucose-6-phosphatase it cannot supply blood glucose. The brain continues to consume glucose and increasingly uses ketone bodies; it does not run on fatty acids. Glucagon does not drive net fat esterification, which is an insulin/fed-state program.",
+      "distractor_rationales": {
+        "B": "Muscle lacks glucose-6-phosphatase, so glycogenolysis there feeds glycolysis, not blood glucose; hepatic gluconeogenesis maintains glycemia after liver glycogen is gone.",
+        "C": "The brain cannot oxidize fatty acids at a meaningful rate; it uses glucose and, during fasting, ketone bodies.",
+        "D": "Glucagon and low insulin promote lipolysis, not net triacylglycerol synthesis, in adipose tissue."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t8",
+      "type": "discrete",
+      "stem": "In adipocytes and myocytes, insulin binding activates PI3K–Akt. Which coordinated metabolic response follows?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "GLUT2 is translocated to the muscle plasma membrane, and hormone-sensitive lipase is phosphorylated by PKA."
+        },
+        {
+          "key": "B",
+          "text": "Glycogen synthase is phosphorylated and inactivated, matching the glucagon/epinephrine phosphorylation program."
+        },
+        {
+          "key": "C",
+          "text": "GLUT4 vesicles fuse with the plasma membrane, protein phosphatase-1 dephosphorylates glycogen synthase (activating it) and phosphorylase (inactivating it), and hormone-sensitive lipase activity falls, promoting glucose uptake, glycogen synthesis, and fat storage."
+        },
+        {
+          "key": "D",
+          "text": "cAMP rises, PKA phosphorylates hepatic PFK-2, and ketogenesis accelerates in muscle."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Insulin signaling through PI3K–Akt in fat and muscle translocates GLUT4 to the membrane, increasing glucose uptake. Akt-linked pathways activate protein phosphatase-1, which dephosphorylates glycogen synthase (activating it) and glycogen phosphorylase (inactivating it). Insulin also opposes PKA-driven lipolysis, lowering hormone-sensitive lipase activity. The net program is glucose uptake, glycogen synthesis, and fat storage. GLUT2 is the liver/β-cell transporter, not the insulin-responsive muscle/fat carrier. Phosphorylation of glycogen synthase and a rise in cAMP are glucagon/epinephrine programs. Muscle is not a ketogenic organ, and insulin lowers rather than raises cAMP-dependent fasting pathways.",
+      "distractor_rationales": {
+        "A": "Insulin-responsive uptake in muscle and fat uses GLUT4, not GLUT2, and insulin reduces rather than PKA-activates hormone-sensitive lipase.",
+        "B": "Insulin promotes dephosphorylation and activation of glycogen synthase; phosphorylation/inactivation is the glucagon pathway.",
+        "D": "Insulin lowers cAMP-dependent signaling; ketogenesis is hepatic in the fasted state, not an insulin-driven muscle pathway."
+      },
+      "difficulty_est": 0.5
+    }
+  ]
+}

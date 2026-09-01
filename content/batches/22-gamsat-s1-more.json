@@ -1,0 +1,265 @@
+{
+  "passages": [
+    {
+      "concept_id": "GAMSAT.S1.humanities.t2",
+      "title": "On keeping a promise to a stranger",
+      "body": "When the magistrate asked why he had returned the purse, the clerk did not say honesty. He said habit. He had been taught, in a household that measured virtue by small repetitions, that a found object remains someone else's until the world has been given a fair chance to reclaim it. The purse contained little money and a letter, unsealed, beginning: I will not be there when you arrive. He did not finish it. To finish it, he thought, would convert a duty into a story, and stories have a way of making the finder important.\n\nPhilosophers like to treat this as a puzzle about property and knowledge. If he does not know the owner, is the duty weaker? If the letter would have saved a marriage, does withholding it become a harm? The clerk would have found the questions indecent. He was not refusing knowledge so much as refusing a role. The city had clerks for lost property; it did not have clerks for other people's farewells.\n\nA later commentator, writing after the clerk was dead, praised him as a Kantian saint: he acted from a maxim he could will as universal. The praise is too clean. The clerk's maxim was local and slightly ashamed. He did not want to be the man who had read the letter. Shame, not universality, kept his eyes off the page. That is not a lesser ethics. It is an ethics that knows how quickly curiosity dresses itself as concern.\n\nThe owner collected the purse the next morning and did not thank him. In the commentary this becomes a test of whether virtue needs recognition. The clerk, if asked, would have said only that the counter was busy.",
+      "questions": [
+        {
+          "concept_id": "GAMSAT.S1.humanities.t2",
+          "type": "passage_question",
+          "stem": "The commentator who calls the clerk a “Kantian saint” is presented as",
+          "choices": [
+            { "key": "A", "text": "faithfully capturing the clerk's own account of his motive" },
+            { "key": "B", "text": "imposing a tidy philosophical costume on a more local, shame-based restraint" },
+            { "key": "C", "text": "proving that the clerk acted to save a marriage" },
+            { "key": "D", "text": "arguing that unsealed letters are public documents" }
+          ],
+          "correct_key": "B",
+          "explanation": "The narrator says the Kantian praise is too clean and contrasts universality with the clerk's local, slightly ashamed maxim: he did not want to be the man who had read the letter. Shame, not a universal law, kept his eyes off the page. The passage therefore treats the commentator as dressing a smaller ethics in a grand theory. The clerk never claims Kant; he did not finish the letter, so he cannot be saving a marriage; and the text does not make the letter public.",
+          "distractor_rationales": {
+            "A": "The clerk's motive is habit and shame, not the commentator's Kantian maxim.",
+            "C": "He refused to finish the letter; the marriage-saving hypothesis is exactly what he will not test.",
+            "D": "The passage never treats the letter as a public document; he withholds it."
+          },
+          "difficulty_est": 0.48
+        },
+        {
+          "concept_id": "GAMSAT.S1.understand.t2",
+          "type": "passage_question",
+          "stem": "Which paraphrase of “stories have a way of making the finder important” best fits the passage?",
+          "choices": [
+            { "key": "A", "text": "Narrating a found letter tends to centre the finder rather than the owner" },
+            { "key": "B", "text": "Fiction is more legally binding than lost-property rules" },
+            { "key": "C", "text": "The clerk wanted celebrity for returning the purse" },
+            { "key": "D", "text": "All letters in purses are fictional" }
+          ],
+          "correct_key": "A",
+          "explanation": "The clerk stops reading because finishing the letter would convert a duty into a story that makes the finder important. The paraphrase must keep that shift from anonymous duty to self-centred narrative. He is not seeking celebrity; he is avoiding a role. Legal ranking of fiction and a claim that the letters are fake are not in the text.",
+          "distractor_rationales": {
+            "B": "No comparison of fiction to law is made.",
+            "C": "He refuses the story that would make him important.",
+            "D": "The letter is treated as real correspondence, not a fiction."
+          },
+          "difficulty_est": 0.36
+        },
+        {
+          "concept_id": "GAMSAT.S1.understand.t3",
+          "type": "passage_question",
+          "stem": "In the sentence “That is not a lesser ethics,” “that” refers to",
+          "choices": [
+            { "key": "A", "text": "the magistrate's question about honesty" },
+            { "key": "B", "text": "an ethics grounded in shame and refusal of a role, not in universal maxims" },
+            { "key": "C", "text": "the owner's failure to say thank you" },
+            { "key": "D", "text": "Kantian universality as stated by the later commentator" }
+          ],
+          "correct_key": "B",
+          "explanation": "The immediately preceding sentences contrast Kantian universality with the clerk's shame-based, local restraint. “That is not a lesser ethics” defends this shame-ethics against the implication that only the Kantian reading counts. The owner's manners and the magistrate's wording are nearby but not the antecedent of “that.”",
+          "distractor_rationales": {
+            "A": "The magistrate appears earlier; “that” points to the shame-ethics just described.",
+            "C": "The thank-you arrives in the next paragraph as a different test.",
+            "D": "The sentence is defending the non-Kantian ethics, not the commentator's reading."
+          },
+          "difficulty_est": 0.44
+        },
+        {
+          "concept_id": "GAMSAT.S1.tone.t1",
+          "type": "passage_question",
+          "stem": "The speaker's attitude toward the clerk is best described as",
+          "choices": [
+            { "key": "A", "text": "ironic contempt for a man who will not read" },
+            { "key": "B", "text": "respectful attention that resists turning him into a moral mascot" },
+            { "key": "C", "text": "clinical neutrality with no evaluative language" },
+            { "key": "D", "text": "sentimental praise of his poverty" }
+          ],
+          "correct_key": "B",
+          "explanation": "The narrator grants the clerk a serious ethics while refusing the commentator's saint-making. Evaluative language is present (“too clean,” “indecent”) but aimed at theory and curiosity, not at sneering at the clerk. There is no portrait of poverty, and the tone is not purely clinical.",
+          "distractor_rationales": {
+            "A": "The clerk is defended, not held in contempt.",
+            "C": "Words like indecent and too clean are evaluative.",
+            "D": "Poverty is not a theme; the purse has little money, but that is not the praise."
+          },
+          "difficulty_est": 0.42
+        },
+        {
+          "concept_id": "GAMSAT.S1.humanities.t3",
+          "type": "passage_question",
+          "stem": "The later commentator is used, historically, to show",
+          "choices": [
+            { "key": "A", "text": "how a small civic act is rewritten after the fact in the language of a school" },
+            { "key": "B", "text": "that Kant visited the lost-property desk" },
+            { "key": "C", "text": "that archives always preserve the clerk's own words" },
+            { "key": "D", "text": "that magistrates in that city were trained as philosophers" }
+          ],
+          "correct_key": "A",
+          "explanation": "The commentator writes after the clerk is dead and assigns a Kantian costume. That is a historical-commentary move: posterity interprets. The passage never places Kant at the desk, never says the clerk's words were archived intact, and never trains magistrates as philosophers.",
+          "distractor_rationales": {
+            "B": "Kant is a label in a later essay, not a visitor.",
+            "C": "The clerk's own account is habit, which the commentator overwrites.",
+            "D": "No claim is made about magistrates' training."
+          },
+          "difficulty_est": 0.4
+        },
+        {
+          "concept_id": "GAMSAT.S1.humanities.t1",
+          "type": "passage_question",
+          "stem": "The unsealed letter functions in the narrative primarily as",
+          "choices": [
+            { "key": "A", "text": "proof that the owner committed a crime" },
+            { "key": "B", "text": "a temptation that would turn the clerk from agent of return into reader of a private plot" },
+            { "key": "C", "text": "a legal will that must be executed" },
+            { "key": "D", "text": "comic relief about marriage" }
+          ],
+          "correct_key": "B",
+          "explanation": "The letter's first line and the clerk's refusal to finish it create a fork: duty versus becoming the protagonist of someone else's farewell. That is a literary device, not evidence of crime or a will. The tone around marriage is grave, not comic.",
+          "distractor_rationales": {
+            "A": "No crime is alleged.",
+            "C": "It is a personal letter, not a will.",
+            "D": "The possible saved marriage is a serious counterfactual, not a joke."
+          },
+          "difficulty_est": 0.38
+        },
+        {
+          "concept_id": "GAMSAT.S1.humanities.t4",
+          "type": "passage_question",
+          "stem": "The passage's closing image of a busy counter most nearly suggests",
+          "choices": [
+            { "key": "A", "text": "that civic routine can eclipse the demand for moral theatre" },
+            { "key": "B", "text": "that the clerk was punished with extra work" },
+            { "key": "C", "text": "that lost property should be privatised" },
+            { "key": "D", "text": "that the owner was lying about the letter" }
+          ],
+          "correct_key": "A",
+          "explanation": "Asked about recognition, the clerk would say the counter was busy: ordinary work refuses the test of whether virtue needs thanks. That is a cultural-critical shrug at moral theatre, not a labour-discipline plot, a policy pitch, or an accusation that the owner lied.",
+          "distractor_rationales": {
+            "B": "Busy is the clerk's understatement, not a punishment.",
+            "C": "No privatisation argument is made.",
+            "D": "The owner collecting the purse does not make the letter a lie."
+          },
+          "difficulty_est": 0.5
+        }
+      ]
+    },
+    {
+      "concept_id": "GAMSAT.S1.compare.t2",
+      "title": "Two ways of hearing a census",
+      "body": "Poem (untitled, 2019)\n\nWe counted rooms as if rooms were people.\nThe spare one kept its coat on.\nIn the column for language we wrote the kettle.\nNobody asked the stairs their age.\n\nCommentary by L. Okonkwo, catalogue essay for an exhibition of household inventories:\nThe poem is easy to misread as anti-data. It is not. It notices that a census already poetizes: it decides what may stand for a life (rooms, language, age) and what must remain downstairs, unasked. The coat on the spare room is not a joke about furniture. It is a figure for surplus — the part of a household that official forms cannot rent. When the poem puts a kettle in the language column, it is not claiming kettles speak. It is showing how quickly a form will accept a proxy if the proxy is small and warm.\n\nA table printed beside the poem in the gallery listed visitors by hour and by whether they photographed the stairs:\nHour 10: 14 visitors, 2 photographed stairs\nHour 11: 31 visitors, 18 photographed stairs\nHour 12: 9 visitors, 0 photographed stairs (docent talk in progress)\nThe curator captioned the table: Attention is not the same as attendance.\n\nA radio host later called the exhibition “political because it made a kettle into a citizen.” Okonkwo's essay had already refused that flattening. The political cut, for her, is not enfranchising objects. It is noticing which human details a state is willing to miss.",
+      "questions": [
+        {
+          "concept_id": "GAMSAT.S1.compare.t2",
+          "type": "passage_question",
+          "stem": "Relative to the poem, Okonkwo's commentary mainly",
+          "choices": [
+            { "key": "A", "text": "translates images into an argument about what official forms can and cannot rent" },
+            { "key": "B", "text": "accuses the poet of not understanding kettles" },
+            { "key": "C", "text": "provides the missing census data the poem omitted" },
+            { "key": "D", "text": "agrees with the radio host that objects should vote" }
+          ],
+          "correct_key": "A",
+          "explanation": "The commentary reads the coat and the kettle as figures for surplus and for proxy, and it names the census's decisions about what may stand for a life. That mapping turns images into an argument. She does not fill census numbers or repeat the radio host's slogan about objects voting.",
+          "distractor_rationales": {
+            "B": "She defends the kettle image as showing proxy, not as a mistake.",
+            "C": "She does not fill in census numbers; the table is about gallery visitors.",
+            "D": "She refuses the host's flattening."
+          },
+          "difficulty_est": 0.46
+        },
+        {
+          "concept_id": "GAMSAT.S1.compare.t3",
+          "type": "passage_question",
+          "stem": "Taken together, the poem, the essay, the table, and the radio line most strongly invite the reader to",
+          "choices": [
+            { "key": "A", "text": "treat every quoted voice as saying the same thing about citizenship" },
+            { "key": "B", "text": "watch how a figure (kettle, stairs, surplus room) is reused and argued over across genres" },
+            { "key": "C", "text": "compute the exact population of the building" },
+            { "key": "D", "text": "discard the table as unrelated decoration" }
+          ],
+          "correct_key": "B",
+          "explanation": "GAMSAT comparison items ask you to track a motif across quote-sets. Stairs, kettle, and surplus room recur in poem, essay, table, and radio, with disagreement (host vs Okonkwo). The set is not a single slogan, not a census of residents, and the table is thematically tied by the caption on attention.",
+          "distractor_rationales": {
+            "A": "The host and Okonkwo explicitly diverge.",
+            "C": "No building population is given.",
+            "D": "The table is captioned into the argument about attention."
+          },
+          "difficulty_est": 0.5
+        },
+        {
+          "concept_id": "GAMSAT.S1.visual.t2",
+          "type": "passage_question",
+          "stem": "The visitor table, read with its caption, most nearly supports which claim?",
+          "choices": [
+            { "key": "A", "text": "Hour 11 had both more people and more photographs of stairs than hour 10, while hour 12's talk coincides with zero stair photographs" },
+            { "key": "B", "text": "Photography always rises with attendance" },
+            { "key": "C", "text": "The docent talk caused the 31 visitors at hour 11" },
+            { "key": "D", "text": "No one came at hour 12" }
+          ],
+          "correct_key": "A",
+          "explanation": "Hour 10: 14 and 2; hour 11: 31 and 18; hour 12: 9 and 0 with a talk. That is what the table states. Photography does not always rise with attendance if we only have three rows, but hour 12 already breaks a naive monotone if someone claimed more people always means more photos — actually 12 has fewer people. The key is the accurate reading. B overgeneralizes. C reverses time. D contradicts 9 visitors.",
+          "distractor_rationales": {
+            "B": "Three points do not establish always; hour 12 complicates any simple rule.",
+            "C": "The talk is listed at hour 12, not as the cause of hour 11's crowd.",
+            "D": "Nine visitors came at hour 12."
+          },
+          "difficulty_est": 0.34
+        },
+        {
+          "concept_id": "GAMSAT.S1.social.t1",
+          "type": "passage_question",
+          "stem": "Okonkwo's sociological point about the census is that it",
+          "choices": [
+            { "key": "A", "text": "already selects which details may represent a life, leaving other household facts unasked" },
+            { "key": "B", "text": "should be abolished in favour of poetry" },
+            { "key": "C", "text": "accurately records the age of stairs" },
+            { "key": "D", "text": "is written by kettles" }
+          ],
+          "correct_key": "A",
+          "explanation": "She says a census already poetizes by deciding what may stand for a life and what remains unasked. That is a sociological claim about classification. She does not abolish counts, and the poem's joke is that stairs are not asked their age — the census does not record that.",
+          "distractor_rationales": {
+            "B": "She says the poem is not anti-data.",
+            "C": "The poem notes that nobody asked the stairs their age.",
+            "D": "The kettle is a proxy image, not an author."
+          },
+          "difficulty_est": 0.36
+        },
+        {
+          "concept_id": "GAMSAT.S1.social.t2",
+          "type": "passage_question",
+          "stem": "The radio host's remark is politically flattened, according to Okonkwo, because it",
+          "choices": [
+            { "key": "A", "text": "treats the exhibit as giving objects the vote instead of asking which human details the state misses" },
+            { "key": "B", "text": "correctly restates her essay" },
+            { "key": "C", "text": "focuses on the table's hour 12 talk" },
+            { "key": "D", "text": "denies that any exhibition can be political" }
+          ],
+          "correct_key": "A",
+          "explanation": "The host says the show is political because it made a kettle into a citizen. Okonkwo refuses enfranchising objects; the political cut is noticing which human details a state is willing to miss. The host does not restate her, does not discuss the table, and does call the show political.",
+          "distractor_rationales": {
+            "B": "The passage says the essay had already refused that flattening.",
+            "C": "The host is not described as talking about hour 12.",
+            "D": "The host does call it political; the dispute is about why."
+          },
+          "difficulty_est": 0.45
+        },
+        {
+          "concept_id": "GAMSAT.S1.social.t3",
+          "type": "passage_question",
+          "stem": "The caption “Attention is not the same as attendance” uses gallery language to",
+          "choices": [
+            { "key": "A", "text": "separate showing up from actually looking, a media-literate distinction the table's photo counts dramatize" },
+            { "key": "B", "text": "prove that hour 11 did not happen" },
+            { "key": "C", "text": "advertise a new census form" },
+            { "key": "D", "text": "scold visitors for using language" }
+          ],
+          "correct_key": "A",
+          "explanation": "Attendance is visitor counts; attention is indexed, roughly, by photographing the stairs. Hour 12 has attendees and a talk but zero stair photos. That is a media/language point about what counts as looking. It does not erase hour 11 or sell census stationery.",
+          "distractor_rationales": {
+            "B": "Hour 11 is the peak row.",
+            "C": "The caption is curatorial, not a government form.",
+            "D": "Language is not the target; looking versus mere presence is."
+          },
+          "difficulty_est": 0.4
+        }
+      ]
+    }
+  ]
+}

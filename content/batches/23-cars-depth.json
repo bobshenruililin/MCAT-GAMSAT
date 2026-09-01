@@ -1,0 +1,814 @@
+{
+  "passages": [
+    {
+      "concept_id": "MCAT.CARS.FND.t1",
+      "title": "The census of the uncounted",
+      "body": "Political arithmetic began as a courtly hobby: a way of estimating how many subjects a prince could tax, feed, or send to war. Its early practitioners treated people as a kind of harvest. What could be enumerated could be extracted. What could not be enumerated was, for administrative purposes, a rumor.\n\nThe modern census inherited the appetite and dressed it as representation. To be counted is now advertised as a civic right, a way of appearing in the distribution of schools, clinics, and parliamentary seats. The advertisement is not false. Under-counted neighborhoods do lose clinics. The advertisement is incomplete. A census is also a machine for deciding which kinds of life will be treated as facts and which will remain anecdotes told to a volunteer with a clipboard.\n\nConsider the category. Every census must invent boxes. The boxes are not discovered in nature; they are negotiated among ministries, churches, and, later, identity movements. A person who lives in two houses, or in none, or who works in a language the form does not print, must be forced into a box or dropped. Dropping looks like a clerical mishap. It is often a theory of the state: some lives are too expensive to verify, too mobile to locate, too politically inconvenient to add to a total that will be used against the ministry next year.\n\nStatisticians reply that they already know this, that they publish coverage estimates and post-enumeration surveys, that the professional ethic is to name the error. Naming the error is not the same as refusing the uses of the total. A coverage estimate can become a footnote that licenses the headline number. The public hears fifty million; the appendix whispers that the fifty million is a compromise among several less flattering models. Compromise is not a crime. Treating the compromise as a photograph is.\n\nThere is a further twist. Groups that have been historically erased often demand better counting, and they are right to. Visibility in a dataset can be a precondition of funds. Yet the same groups may later discover that a sharper count is also a sharper target: for policing, for debt collection, for the allocation of blame when a service fails. The census does not choose the policy. It does make the policy cheaper to aim.\n\nNone of this is an argument for ignorance. A state that refuses to count will invent its numbers in the back room and call the invention common sense. The argument is for a less enchanted relationship to the table. Read the boxes as arguments. Read the missing as a constituency. And when a politician says the numbers speak for themselves, notice that speech is exactly what numbers cannot do until someone supplies a sentence.",
+      "questions": [
+        {
+          "concept_id": "MCAT.CARS.FND.t1",
+          "type": "passage_question",
+          "stem": "Which of the following best captures the author's primary purpose?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "To prove that all censuses should be abolished because counting is inherently a form of wartime extraction."
+            },
+            {
+              "key": "B",
+              "text": "To urge a less enchanted reading of census totals: boxes and omissions are political decisions, even when counting is also a civic demand and a technical craft."
+            },
+            {
+              "key": "C",
+              "text": "To instruct ministries in the correct post-enumeration survey protocol so that coverage error can be driven to zero."
+            },
+            {
+              "key": "D",
+              "text": "To argue that historically erased groups should refuse all counting because visibility always increases policing."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The passage grants that counting funds clinics and that statisticians name error, then insists boxes are invented, omissions can be a theory of the state, and totals are used. It refuses both abolition and a photograph-like faith in the headline. Choice B keeps the double movement. A overreads the opening harvest metaphor into abolition. C turns a concession about surveys into a how-to. D ignores the claim that groups are right to demand better counts even as targeting risk is named.",
+          "distractor_rationales": {
+            "A": "The last movement explicitly denies an argument for ignorance or refusal to count; extraction is the origin story, not the proposed policy.",
+            "C": "Post-enumeration surveys are cited as a professional ethic, not as a protocol the author is teaching, and zero error is never promised.",
+            "D": "The author says historically erased groups are right to demand better counting; targeting is a later risk, not a command to refuse the count."
+          },
+          "difficulty_est": 0.4
+        },
+        {
+          "concept_id": "MCAT.CARS.FND.t3",
+          "type": "passage_question",
+          "stem": "The claim that dropping a person from a census “is often a theory of the state” most nearly implies that",
+          "choices": [
+            {
+              "key": "A",
+              "text": "omission is usually a random clerical mishap that reveals nothing about ministries."
+            },
+            {
+              "key": "B",
+              "text": "some absences from the count express judgments about whose lives are worth the cost of verification or are inconvenient to total."
+            },
+            {
+              "key": "C",
+              "text": "every uncounted person has formally petitioned to be excluded on philosophical grounds."
+            },
+            {
+              "key": "D",
+              "text": "states publish coverage estimates only when they intend to abolish categories."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The third paragraph says dropping looks like a mishap and then reclassifies it as a theory: some lives are too expensive, mobile, or inconvenient. The implication is that omission can embody a judgment, not that every omission is a petition or that surveys signal abolition. A restates the appearance the author is rejecting. C invents a formal opt-out. D confuses later remarks about coverage estimates with a motive to abolish boxes.",
+          "distractor_rationales": {
+            "A": "The sentence contrasts the look of a mishap with a political theory of whose lives get verified.",
+            "C": "The passage never describes petitions for exclusion; the forced box or drop is an administrative squeeze.",
+            "D": "Coverage estimates are the statisticians' ethic of naming error, not a prelude to abolishing categories."
+          },
+          "difficulty_est": 0.48
+        },
+        {
+          "concept_id": "MCAT.CARS.RWT.t2",
+          "type": "passage_question",
+          "stem": "Which statement, if true, would most weaken the author's warning that a sharper count can become a sharper target?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Neighborhoods with historically better census coverage still lose clinics at the same rate as under-counted ones."
+            },
+            {
+              "key": "B",
+              "text": "Once a group is accurately enumerated, statutes forbid using that file for policing or debt collection, and audits show the ban is kept."
+            },
+            {
+              "key": "C",
+              "text": "Early political arithmetic was used to estimate tax yields for princes."
+            },
+            {
+              "key": "D",
+              "text": "Identity movements sometimes lobby for new census boxes."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The targeting warning says a sharper count makes policies of policing and debt cheaper to aim. A binding, kept prohibition on those uses would undercut the mechanism. A attacks a different claim about clinics. C restates the opening history, which the author already grants. D is consistent with the negotiation of boxes and does not touch targeting. Weakening items must hit the causal story actually told, which is cheap aiming rather than the mere existence of categories.",
+          "distractor_rationales": {
+            "A": "Clinic loss supports the civic-right advertisement, a different thread from the targeting twist.",
+            "C": "The harvest origin is already the author's setup, not a counterexample to modern targeting.",
+            "D": "Lobbying for boxes is part of the author's account of negotiated categories, not a rebuttal of later targeting."
+          },
+          "difficulty_est": 0.52
+        },
+        {
+          "concept_id": "MCAT.CARS.RWT.t3",
+          "type": "passage_question",
+          "stem": "In the sentence “A coverage estimate can become a footnote that licenses the headline number,” the author is primarily",
+          "choices": [
+            {
+              "key": "A",
+              "text": "accusing statisticians of fabricating the fifty million figure out of whole cloth."
+            },
+            {
+              "key": "B",
+              "text": "describing how an honest error model can still function rhetorically as permission to treat a compromise as a photograph."
+            },
+            {
+              "key": "C",
+              "text": "claiming that appendices are illegal unless read aloud in parliament."
+            },
+            {
+              "key": "D",
+              "text": "denying that post-enumeration surveys ever occur."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The paragraph grants that professionals name error, then shows the public-facing split: fifty million in the ear, a compromise in the appendix. Licensing is rhetorical permission, not a charge of invention from nothing. The photograph metaphor is the author's name for that misuse. A ignores the grant that compromise is not a crime. C invents a legal rule. D contradicts the explicit mention of surveys. The argumentative move is to separate technical candor from public enchantment.",
+          "distractor_rationales": {
+            "A": "The author calls the total a compromise among models, not a fabrication, and says compromise is not a crime.",
+            "C": "No legal requirement about reading appendices is proposed.",
+            "D": "Post-enumeration surveys are cited as part of the professional ethic the author is distinguishing from headline use."
+          },
+          "difficulty_est": 0.44
+        },
+        {
+          "concept_id": "MCAT.CARS.RBT.t2",
+          "type": "passage_question",
+          "stem": "Suppose a government publishes a real-time mobility dashboard, updated from phone pings, with no category boxes, and uses it to send clinics to whichever grid cell shows density. How would the author most likely respond?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "This dissolves the problem, because the absence of boxes means no political decisions remain."
+            },
+            {
+              "key": "B",
+              "text": "The dashboard still decides which lives become facts; a ping is another invented trace, and aiming services (or blame) can become cheaper still."
+            },
+            {
+              "key": "C",
+              "text": "The author would refuse to comment, having limited the critique to paper forms printed by churches."
+            },
+            {
+              "key": "D",
+              "text": "Phone pings would be praised as the photograph the passage wants totals to become."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The thesis is that counting systems decide which lives are facts and make policy cheaper to aim, not that paper boxes are the only sin. A ping without boxes still selects a trace and a grid. The author already says the census does not choose the policy but makes aiming cheaper; a density dashboard is that logic intensified. A treats missing boxes as missing politics. C is false: ministries and identity movements already sit beside churches. D inverts the warning against treating totals as photographs.",
+          "distractor_rationales": {
+            "A": "The author treats boxes as one invented instrument, not as the sole site of political decision.",
+            "C": "The passage's actors already include ministries and movements, not only churches.",
+            "D": "Photograph-like faith in a number is exactly what the author wants to disenchant."
+          },
+          "difficulty_est": 0.56
+        }
+      ]
+    },
+    {
+      "concept_id": "MCAT.CARS.RWT.t1",
+      "title": "What the metronome cannot hear",
+      "body": "Musicology has a long habit of treating the score as the work and the performance as a more or less obedient copy. The habit is understandable. Paper sits still. It can be compared, edited, and taught in rooms where no instrument is present. A performance disappears as it occurs, leaving only memory, a recording, or an argument.\n\nYet the stillness of paper is not neutrality. Notation is a technology with a history: it captures some relations (pitch against a staff, duration against a beat) and lets others leak away (the weight of a bow, the delay before a singer accepts a consonant, the social fact of who is allowed to ornament). When a textbook says a movement is “in three,” it is reporting a notational decision that a village dance may never have made in those terms. The metronome, arriving later still, offers a fantasy that time is a ruler laid beside sound. Dancers know otherwise. So do jazz rhythm sections, whose time is a negotiation, not a grid that failed.\n\nScholars who defend the score-as-work often point to the composer’s authority and to the need for a shared object of study. Without a text, they say, we are left with impressions. The worry is real in a university. It is less real in a tradition that already treats the night’s playing as the work, and the paper, if paper exists, as a prompt. To call that tradition incomplete because it will not sit still is to confuse the archive’s convenience with the art’s ontology.\n\nRecordings seemed to solve the disappearance problem. They created a new paper: a fixed take that can be looped, transcribed, and worshipped. The solution smuggles in its own politics. Which night was recorded, from which seat, with which microphone aiming at which social center of the band? A “definitive” recording can freeze a hierarchy that a living scene would have kept in motion. The fan who owns every take may know more facts than a player and still know less about what the music is for.\n\nThe practical upshot is not to burn scores. Scores are superb tools, as maps are superb tools. The upshot is to stop calling the map the territory in order to make seminars easier to grade. A pedagogy that can only hear what the metronome can hear will keep producing excellent accountants of pitch and a thin audience for everything else. If musicology wants to study music rather than the paperwork of music, it will have to tolerate objects that do not hold still, and to admit that some of the most precise information arrives as a glance between players that no staff line was built to hold.",
+      "questions": [
+        {
+          "concept_id": "MCAT.CARS.FND.t5",
+          "type": "passage_question",
+          "stem": "Which paraphrase best captures the author's view of notation without turning it into a call to abolish scores?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Notation is a historically specific technology that captures some relations and leaks others; scores remain tools, not the work's ontology."
+            },
+            {
+              "key": "B",
+              "text": "All written music is a fraud, so conservatories should teach only unrecorded improvisation."
+            },
+            {
+              "key": "C",
+              "text": "The metronome proved that village dances were secretly in three all along."
+            },
+            {
+              "key": "D",
+              "text": "Recordings have finally made the score unnecessary because microphones are neutral."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The passage attacks score-as-work while saying the upshot is not to burn scores: maps are superb, the crime is calling the map the territory. Notation captures and leaks. That is A. B inflates critique into abolition the last paragraph denies. C inverts the village-dance remark. D ignores the politics of which night and which microphone. A good paraphrase keeps the tool/ontology split rather than picking a pole the author refused.",
+          "distractor_rationales": {
+            "B": "The author explicitly says the practical upshot is not to burn scores.",
+            "C": "“In three” is a notational decision a dance may never have made; the metronome is a later fantasy of a ruler.",
+            "D": "Recordings are a new paper with their own aiming and hierarchy, not a neutral replacement."
+          },
+          "difficulty_est": 0.38
+        },
+        {
+          "concept_id": "MCAT.CARS.FND.t4",
+          "type": "passage_question",
+          "stem": "In the phrase “confuse the archive’s convenience with the art’s ontology,” ontology most nearly means",
+          "choices": [
+            {
+              "key": "A",
+              "text": "the cataloguing software used by university libraries."
+            },
+            {
+              "key": "B",
+              "text": "what the art is taken to be, as opposed to what is easiest to store and grade."
+            },
+            {
+              "key": "C",
+              "text": "the legal copyright in a composer's estate."
+            },
+            {
+              "key": "D",
+              "text": "the physical weight of paper scores in an archive box."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The contrast is convenience (still paper, gradable seminars) versus what the work is in a tradition that treats the night’s playing as the work. Ontology here is the status of the object, not software, copyright, or mass. Context is the sentence about calling a living tradition incomplete because it will not sit still. Vocabulary-in-context items should prefer the contrast the author actually draws, which is ease of study versus the kind of thing music is.",
+          "distractor_rationales": {
+            "A": "No library software is mentioned; archive here is the still, comparable paper object.",
+            "C": "Composer authority is a scholars' defense of the score, not the meaning of ontology in this sentence.",
+            "D": "Physical weight is not in play; stillness versus disappearance is."
+          },
+          "difficulty_est": 0.34
+        },
+        {
+          "concept_id": "MCAT.CARS.RWT.t5",
+          "type": "passage_question",
+          "stem": "Which pair of claims does the passage hold together without treating them as a contradiction?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Scores should be burned, and recordings are the true work."
+            },
+            {
+              "key": "B",
+              "text": "The worry about impressionistic study without a text is real in a university, and some traditions still rightly treat the night’s playing as the work."
+            },
+            {
+              "key": "C",
+              "text": "Jazz time is a failed metronome grid, and village dances were always in three."
+            },
+            {
+              "key": "D",
+              "text": "Microphones are neutral, and fans who own every take therefore know what the music is for."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Paragraph three grants the university’s need for a shared object and immediately limits the grant: the worry is less real where the night is the work. That is a qualification, not a collapse. The last paragraph repeats the pattern with maps. A, C, and D assemble positions the author rejects. Internal consistency here is the author’s habit of granting a real institutional problem without letting it dictate ontology.",
+          "distractor_rationales": {
+            "A": "Both burning scores and treating recordings as the true work are refused.",
+            "C": "Jazz time is a negotiation, not a failed grid; dances may never have been “in three.”",
+            "D": "Recordings smuggle politics; owning takes can multiply facts while missing purpose."
+          },
+          "difficulty_est": 0.5
+        },
+        {
+          "concept_id": "MCAT.CARS.RBT.t4",
+          "type": "passage_question",
+          "stem": "The author suggests that a pedagogy that “can only hear what the metronome can hear” will most likely",
+          "choices": [
+            {
+              "key": "A",
+              "text": "produce technically precise pitch-accountants and a thin audience for what notation leaks."
+            },
+            {
+              "key": "B",
+              "text": "replace all universities with dance halls."
+            },
+            {
+              "key": "C",
+              "text": "eliminate jazz because rhythm sections refuse to negotiate."
+            },
+            {
+              "key": "D",
+              "text": "make recordings illegal in seminars."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The last paragraph names the consequence: excellent accountants of pitch and a thin audience for everything else—the leaked, unstill information. That is an implication of a pedagogy indexed to the metronome. B and D invent institutional abolitions. C misreads jazz rhythm sections, which the passage treats as evidence of negotiation rather than as a target for elimination. Extrapolation should stay inside the practical upshot the author actually draws.",
+          "distractor_rationales": {
+            "B": "No replacement of universities is proposed; seminars are asked not to confuse maps with territory.",
+            "C": "Jazz rhythm sections illustrate living time, not a genre the pedagogy should wipe out.",
+            "D": "Recordings are criticised as a new paper, not banned."
+          },
+          "difficulty_est": 0.36
+        },
+        {
+          "concept_id": "MCAT.CARS.RWT.t1",
+          "type": "passage_question",
+          "stem": "How does the recording paragraph function relative to the opening claim that paper sits still while performance disappears?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "It abandons the opening claim, because a recording proves performance never disappeared."
+            },
+            {
+              "key": "B",
+              "text": "It extends the claim: a fixed take is a new stillness that solves disappearance only by freezing a particular night, seat, and social aim."
+            },
+            {
+              "key": "C",
+              "text": "It is an unrelated complaint about fan culture and merchandise."
+            },
+            {
+              "key": "D",
+              "text": "It argues that scores and recordings are identical technologies with identical politics."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The opening contrast is stillness versus disappearance. Recordings seem to solve disappearance and then recreate stillness as a loopable take with its own aiming. That is integration: same problem, new paper. A treats the seeming solution as a refutation. C ignores the microphone-and-hierarchy analysis. D over-identifies two tools the author compares without equating; scores capture pitch and duration, recordings freeze a night. The paragraph exists to stop the reader from thinking technology ended the ontology problem.",
+          "distractor_rationales": {
+            "A": "The author says recordings seemed to solve disappearance, then shows the smuggled politics of a fixed take.",
+            "C": "Fans appear as an epistemic example, not a merchandise aside.",
+            "D": "Recordings are “a new paper,” analogous but not identical; the politics of the microphone are specified."
+          },
+          "difficulty_est": 0.46
+        }
+      ]
+    },
+    {
+      "concept_id": "MCAT.CARS.FND.t2",
+      "title": "The museum as a verb",
+      "body": "Conservation used to mean stopping time. A painting was a patient; varnish was a bandage; the ideal was to return the object to a single authentic hour and then prevent further hours from occurring. That ideal had a hidden historiography. It assumed the authentic hour was already known, usually as the artist’s last brushstroke, and that later repairs, soot, liturgy, and even damage were noise.\n\nA newer conservation talk prefers verbs. To museum an object is to keep choosing which traces will remain legible. Cleaning is not the removal of history; it is the promotion of one history over another. The nineteenth-century restorer who “completed” a medieval panel was not more ideological than the twenty-first-century restorer who leaves the lacuna as a paler mute. Both are editors. They differ in which audience they imagine and in how proudly they sign the edit.\n\nCritics of reversible methods sometimes complain that visible fills and honest seams break the spell. They want the old miracle: an untouched past that happens to hang at eye level under LEDs. The complaint is aesthetically sincere and philosophically confused. The spell was always produced with scaffolding, attributions, and lighting. Reversibility is not a refusal of beauty. It is a refusal to trap the next generation inside today’s certainty about what the object “really” was.\n\nThere is a colonial edge. Objects that arrived by seizure were often cleaned into a style that made them readable as art in the receiving capital, which is to say, cleaned of the uses that had made them un-museumlike. To restore the pigment without restoring the right of refusal is to complete the seizure in a gentler font. Some institutions now consult source communities about smoke, wear, and whether an object should be seen at all. Consultation is slow and can be theater. It is still a different verb from rescue.\n\nIf this sounds like relativism, notice what it does not say. It does not say that all edits are equal, or that pigment chemistry is a matter of taste. It says that technical competence cannot supply the missing decision about which past is being kept available. The decision will be made. Calling it science does not make it less a decision. Calling it care does not either. The more honest museum is the one that can show its verbs.",
+      "questions": [
+        {
+          "concept_id": "MCAT.CARS.FND.t2",
+          "type": "passage_question",
+          "stem": "According to the passage, what did the older conservation ideal assume about the “authentic hour”?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "That it was already known, usually as the artist’s last brushstroke, with later traces treated as noise."
+            },
+            {
+              "key": "B",
+              "text": "That it could only be determined by source-community consultation."
+            },
+            {
+              "key": "C",
+              "text": "That it was identical to whatever a nineteenth-century restorer completed."
+            },
+            {
+              "key": "D",
+              "text": "That pigment chemistry is a matter of taste."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The first paragraph states the hidden historiography: the authentic hour was assumed known, usually the last brushstroke, and later repairs, soot, liturgy, and damage were noise. That is retrieval. B projects the later colonial-consultation paragraph backward. C confuses a later example of completing a panel with the old ideal’s definition of authenticity. D is what the last paragraph denies. Information-retrieval items should track the sentence that actually defines the older ideal.",
+          "distractor_rationales": {
+            "B": "Consultation appears later as a newer institutional verb, not as the old ideal’s method.",
+            "C": "The nineteenth-century completion is offered as one editorial style, not as the definition of the authentic hour.",
+            "D": "The closing paragraph denies that pigment chemistry is taste; that is not the old ideal’s assumption as stated."
+          },
+          "difficulty_est": 0.3
+        },
+        {
+          "concept_id": "MCAT.CARS.RWT.t4",
+          "type": "passage_question",
+          "stem": "The author’s attitude toward “the old miracle: an untouched past that happens to hang at eye level under LEDs” is best described as",
+          "choices": [
+            {
+              "key": "A",
+              "text": "unqualified nostalgia for a spell that modern methods cruelly break."
+            },
+            {
+              "key": "B",
+              "text": "acknowledgment of aesthetic sincerity paired with a charge of philosophical confusion, because the spell was always produced."
+            },
+            {
+              "key": "C",
+              "text": "contempt for all viewers who enjoy beauty."
+            },
+            {
+              "key": "D",
+              "text": "technical indifference to lighting and attribution."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The third paragraph calls the complaint aesthetically sincere and philosophically confused, then notes scaffolding, attributions, and lighting. Tone is diagnostic, not sneering at beauty and not nostalgic. Reversibility is a refusal to trap the next generation, not a war on pleasure. C invents contempt. D contradicts the attention to LEDs, lighting, and attributions. Tone questions should hear the paired concession and critique rather than flatten to mockery or endorsement.",
+          "distractor_rationales": {
+            "A": "The author does not want the miracle back; the spell is described as produced, not lost innocence.",
+            "C": "Beauty is not mocked; reversibility is explicitly not a refusal of beauty.",
+            "D": "Lighting and attributions are named as part of how the spell is produced."
+          },
+          "difficulty_est": 0.42
+        },
+        {
+          "concept_id": "MCAT.CARS.RBT.t1",
+          "type": "passage_question",
+          "stem": "A city museum digitizes a seized drum, equalizes the audio of a 1960s field tape to concert-hall norms, and files the file under “world music.” Applying the passage, the author would most likely say this",
+          "choices": [
+            {
+              "key": "A",
+              "text": "is a purely technical rescue that completes nothing, because digits have no font."
+            },
+            {
+              "key": "B",
+              "text": "can complete the seizure in a gentler font: readability as art in the receiving capital without restoring a right of refusal."
+            },
+            {
+              "key": "C",
+              "text": "is identical to leaving a lacuna as a paler mute on a medieval panel."
+            },
+            {
+              "key": "D",
+              "text": "proves consultation is always theater and should stop."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The colonial paragraph says cleaning into a style that makes objects readable as art in the receiving capital completes the seizure in a gentler font, especially without a right of refusal. Concert-hall equalization and a “world music” file are that readability. A denies the paragraph. C analogizes to a different editorial aesthetic without the colonial mechanism. D overreads the theater warning into abolition of consultation. Application should carry the seizure-and-readability principle, not a random conservation technique.",
+          "distractor_rationales": {
+            "A": "The author treats technical rescue without restored refusal as completion of seizure, font or no font.",
+            "C": "Leaving a lacuna is an editorial honesty example, not the colonial-readability mechanism.",
+            "D": "Consultation may be theater and is still called a different verb from rescue; the author does not end it."
+          },
+          "difficulty_est": 0.54
+        },
+        {
+          "concept_id": "MCAT.CARS.RBT.t3",
+          "type": "passage_question",
+          "stem": "Which hypothetical is most analogous to the author’s comparison of the nineteenth-century “completing” restorer and the restorer who leaves a lacuna?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Two translators, one smoothing a joke into local slang and one leaving a footnote that a joke depended on an untranslatable feast day; both are editing for an imagined reader."
+            },
+            {
+              "key": "B",
+              "text": "A chemist who measures pigment and a chemist who refuses to measure because taste rules."
+            },
+            {
+              "key": "C",
+              "text": "A thief and a conservator, because all museums are theft."
+            },
+            {
+              "key": "D",
+              "text": "A metronome and a census box, because both are paper."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The author says both restorers are editors who differ in imagined audience and in how they sign the edit, not that one is science and the other ideology. Translators smoothing versus footnoting replay that structure. B reintroduces the taste mistake the last paragraph rejects. C collapses the colonial edge into a slogan the passage does not universalize. D grabs other essays’ props. Analogy items should map the relation (two edits, different audiences) rather than the topic (paint).",
+          "distractor_rationales": {
+            "B": "The passage denies that pigment chemistry is taste and denies that all edits are equal.",
+            "C": "Seizure is a specific edge, not a claim that every museum act is theft.",
+            "D": "No such identification is made; the analogy would be empty."
+          },
+          "difficulty_est": 0.5
+        },
+        {
+          "concept_id": "MCAT.CARS.FND.t1",
+          "type": "passage_question",
+          "stem": "The last paragraph’s statement that “technical competence cannot supply the missing decision about which past is being kept available” functions mainly to",
+          "choices": [
+            {
+              "key": "A",
+              "text": "concede that conservation science is useless."
+            },
+            {
+              "key": "B",
+              "text": "block the charge of relativism by locating a non-optional decision that science and “care” cannot replace."
+            },
+            {
+              "key": "C",
+              "text": "prove that source communities always know the authentic hour."
+            },
+            {
+              "key": "D",
+              "text": "recommend hiding verbs from the public so spells can survive."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The paragraph opens by saying what the view does not say (all edits equal; chemistry as taste), then names the missing decision. That is a main-claim clarification against relativism, and it matches the honest museum that shows its verbs. A overreads. C is not claimed; consultation is a different verb, sometimes theater. D inverts the closing line. Purpose here is boundary-drawing: competence is real, and it still does not choose which past stays available.",
+          "distractor_rationales": {
+            "A": "Chemistry is explicitly not a matter of taste; competence is granted.",
+            "C": "Source communities are not assigned infallible knowledge of an authentic hour.",
+            "D": "The honest museum shows its verbs rather than hiding them to preserve a spell."
+          },
+          "difficulty_est": 0.45
+        }
+      ]
+    },
+    {
+      "concept_id": "MCAT.CARS.RBT.t1",
+      "title": "The ledger of the commons",
+      "body": "When a city puts a park on a map, it appears to have given something away: land that could have been lots, hours that could have been tolls. Developers are not wrong that the gift has a price. They are wrong when they treat the price as a leak from an otherwise watertight private order. The private order is already subsidized by streets, courts, pipes, and the patience of people who do not sue every time a stranger walks past a porch. A park is not the exception to property. It is one of the ways a dense city remains inhabitable enough for property to be worth wanting.\n\nAccountants prefer a ledger in which every square metre has a named owner and a yield. Parks embarrass the ledger because their yield is a crowd that does not pay at the gate, a cooling that does not send an invoice, a child who learns a city can include her without a purchase. The embarrassment produces two crude policies. One is to fence and ticket until the park behaves like a venue. The other is to neglect the park until the crowd looks like a problem that only private security can solve. Both policies claim to be realistic. Both are ways of refusing to count the effects that made the park rational in the first place.\n\nFriends of the park sometimes answer with a poetry of the unowned. The poetry is moving and strategically weak. A commons that cannot speak in maintenance budgets will lose to a spreadsheet that can. The more adult defense is to insist that the ledger is incomplete, not that ledgers are evil. Planting, lighting, toilets, and a gardener who is paid in winter are not betrayals of openness. They are how openness lasts past a ribbon-cutting.\n\nThere is a further honesty. Parks are not innocent. They have been used to raise adjacent rents, to move unhoused people out of sight, to display a city’s kindness to visitors who will never need the toilets. Naming those uses does not hand the land to the highest bidder. It prevents the park’s defenders from pretending that green on a map is already justice. Justice would be a park whose ledger includes the people who were priced off the blocks around it.\n\nIf urban politics cannot hold that thought, it will keep oscillating between the venue and the ruin, and calling the oscillation pragmatism.",
+      "questions": [
+        {
+          "concept_id": "MCAT.CARS.FND.t1",
+          "type": "passage_question",
+          "stem": "The author's central claim is best stated as",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Parks should be ticketed like venues so the ledger can finally close."
+            },
+            {
+              "key": "B",
+              "text": "A park is not a leak from private order but a condition of urban inhabitability; defend it with a more complete ledger, including maintenance and the people priced off adjacent blocks, rather than with mere poetry of the unowned."
+            },
+            {
+              "key": "C",
+              "text": "Ledgers are evil, and gardeners in winter betray the commons."
+            },
+            {
+              "key": "D",
+              "text": "Developers are wrong that parks have any price."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The opening denies that a park is a leak, the middle rejects fencing-or-neglect and weak poetry, and the close demands maintenance plus the displaced neighbors. B holds those parts. A is the crude policy attacked. C inverts the adult defense. D ignores the grant that developers are not wrong about a price. Main idea answers must include both the inhabitability thesis and the incomplete-ledger politics, not only a slogan about green space.",
+          "distractor_rationales": {
+            "A": "Ticketing until the park behaves like a venue is named as a crude refusal to count the park's effects.",
+            "C": "The author says planting, toilets, and a winter gardener are how openness lasts, not betrayals.",
+            "D": "The first paragraph says developers are not wrong that the gift has a price."
+          },
+          "difficulty_est": 0.4
+        },
+        {
+          "concept_id": "MCAT.CARS.RWT.t2",
+          "type": "passage_question",
+          "stem": "Which of the following, according to the passage, supports the claim that private order is already subsidized?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Streets, courts, pipes, and the patience of people who do not sue every stranger at a porch."
+            },
+            {
+              "key": "B",
+              "text": "Gate receipts from fenced venues."
+            },
+            {
+              "key": "C",
+              "text": "The poetry of the unowned."
+            },
+            {
+              "key": "D",
+              "text": "A child who learns that cities require a purchase."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The support is listed in the first paragraph as the existing subsidies of private order. That is the evidence for “not a leak.” B is the venue policy. C is a weak defense the author sets aside. D inverts the child example, which is of inclusion without purchase. Relevance items should pick the listed subsidy, not a neighboring theme.",
+          "distractor_rationales": {
+            "B": "Fencing and ticketing are a crude policy, not the subsidy evidence.",
+            "C": "Poetry is called moving and strategically weak, not evidence of subsidy.",
+            "D": "The child learns inclusion without purchase; the option reverses it."
+          },
+          "difficulty_est": 0.32
+        },
+        {
+          "concept_id": "MCAT.CARS.RBT.t4",
+          "type": "passage_question",
+          "stem": "If adjacent rents rise after a park is planted, the author implies that defenders should",
+          "choices": [
+            {
+              "key": "A",
+              "text": "admit the park is therefore not justice yet, without handing the land to the highest bidder."
+            },
+            {
+              "key": "B",
+              "text": "immediately convert the park to lots, since rents prove the ledger was right all along."
+            },
+            {
+              "key": "C",
+              "text": "stop paying gardeners, because maintenance caused the rents."
+            },
+            {
+              "key": "D",
+              "text": "deny that parks have ever been used to raise rents."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The further-honesty paragraph says parks raise adjacent rents and that naming those uses does not hand land to the bidder; justice would include people priced off surrounding blocks. The implication for defenders is to drop the pretense that green is already justice. B takes the fact as a deed transfer. C blames maintenance, which the author treats as how openness lasts. D contradicts the named use. Implications stay inside that honesty-without-surrender move.",
+          "distractor_rationales": {
+            "B": "Naming rent effects is explicitly not a transfer to the highest bidder.",
+            "C": "Winter gardeners are part of the adult defense, not the cause to be punished.",
+            "D": "The passage states that parks have been used to raise adjacent rents."
+          },
+          "difficulty_est": 0.46
+        },
+        {
+          "concept_id": "MCAT.CARS.RWT.t3",
+          "type": "passage_question",
+          "stem": "The oscillation “between the venue and the ruin” is presented as the result of",
+          "choices": [
+            {
+              "key": "A",
+              "text": "an inability to hold the thought that a park can be both non-innocent and still not for sale to the highest bidder."
+            },
+            {
+              "key": "B",
+              "text": "a shortage of metronomes in urban planning departments."
+            },
+            {
+              "key": "C",
+              "text": "too many toilets."
+            },
+            {
+              "key": "D",
+              "text": "developers suddenly denying that parks have a price."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The last sentence says that if politics cannot hold “that thought”—the preceding honesty about rents, displacement, and kindness as display—it will oscillate between venue and ruin. The structure is: failure to hold a complex defense yields two crude policies already named. B is noise. C inverts the maintenance list. D contradicts the opening grant. Logic questions should tie the closing consequence to the thought the previous paragraph asked the city to hold.",
+          "distractor_rationales": {
+            "B": "Metronomes belong to another argument; they are not in this passage.",
+            "C": "Toilets are listed as how openness lasts, not as a cause of ruin.",
+            "D": "Developers' price claim is granted at the start; the oscillation is a political failure among park policies."
+          },
+          "difficulty_est": 0.48
+        },
+        {
+          "concept_id": "MCAT.CARS.RBT.t1",
+          "type": "passage_question",
+          "stem": "A library board proposes replacing late fines with a winter staffing line and publishing who was fined most last year by postcode. Applying the passage’s commons logic, the author would most likely",
+          "choices": [
+            {
+              "key": "A",
+              "text": "call staffing a betrayal of openness and demand a return to fines as a clean ledger."
+            },
+            {
+              "key": "B",
+              "text": "treat staffing as how openness lasts, and treat the postcode table as the further honesty that a free good can still have been aimed."
+            },
+            {
+              "key": "C",
+              "text": "insist libraries are not commons because books have barcodes."
+            },
+            {
+              "key": "D",
+              "text": "argue that publishing postcodes hands the building to a developer automatically."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Maintenance budgets and a winter gardener are the adult defense; naming who was priced off or targeted is the further honesty that does not sell the land. Fines-as-venue versus neglect are the crude pair. A library without fines plus staffing maps onto maintenance; the postcode table maps onto including the people the old ledger harmed. C fetishizes a technology of tracking. D repeats the mistake of treating honesty as surrender. Apply the park principles to another public good rather than importing property slogans.",
+          "distractor_rationales": {
+            "A": "Paid winter work is explicitly not a betrayal of openness.",
+            "C": "Barcodes do not decide whether a good is a commons in this argument; inhabitability and incomplete ledgers do.",
+            "D": "Naming uses “does not hand the land to the highest bidder.”"
+          },
+          "difficulty_est": 0.55
+        }
+      ]
+    },
+    {
+      "concept_id": "MCAT.CARS.RBT.t3",
+      "title": "Courtesy at the checkpoint",
+      "body": "A border official is trained in courtesy as if courtesy were a disinfectant. Smile, use the family name, apologize for the wait. The training manuals are not cynical. They are trying to prevent the obvious cruelty of a raised voice. What they cannot prevent is the deeper grammar of the encounter: one person may leave, the other must persuade a stranger that her life is plausible.\n\nLiberal theory likes to treat this grammar as an unfortunate delay on the way to a principle. In the principle, the stranger is already a rights-bearer; the checkpoint is a bureaucratic remainder. On the ground, the remainder is the event. Rights that must be performed as a story—complete, sequential, tearful at the approved moments—are rights as an audition. The official who says “help me to help you” is not necessarily a villain. He is naming the price of entry into a language that pretends it is only asking for facts.\n\nScholars of hospitality distinguish welcome from inspection. The distinction is cleaner on the page than in a queue. Inspection can dress as welcome, and welcome can become inspection the moment a detail fails to match a database. A cup of tea in an interview room is not the opposite of a file. It can be the file’s most efficient instrument, loosening speech until it can be contradicted.\n\nNone of this requires pretending that states have no legitimate interest in knowing who crosses. It requires noticing that “legitimate interest” is not a measuring cup. It expands. Yesterday’s emergency power is today’s ordinary form. Tomorrow’s form will be justified by the person who told her story too well, or too badly, last year. The archive of interviews becomes a training set for suspicion.\n\nThe courteous checkpoint is therefore not a milder politics. It is a politics that has learned to sound like a service. If we want a different politics, we will need a different distribution of who must be plausible to whom—not a warmer script for the same audition.",
+      "questions": [
+        {
+          "concept_id": "MCAT.CARS.FND.t3",
+          "type": "passage_question",
+          "stem": "The phrase “rights as an audition” most nearly suggests that",
+          "choices": [
+            {
+              "key": "A",
+              "text": "legal rights at a border exist only when performed as a complete, sequential, appropriately tearful story for an official."
+            },
+            {
+              "key": "B",
+              "text": "actors should replace border officials."
+            },
+            {
+              "key": "C",
+              "text": "smiling manuals have abolished the need to persuade anyone that a life is plausible."
+            },
+            {
+              "key": "D",
+              "text": "databases never contradict speech loosened by tea."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The second paragraph says rights that must be performed as a story—complete, sequential, tearful at approved moments—are rights as an audition. The inference is about the form of proof, not about hiring actors. Courtesy training does not remove the grammar of plausibility. Tea is later an instrument of the file, not a proof that contradiction never comes. Vocabulary here is the author’s compression of performance requirements into “audition.”",
+          "distractor_rationales": {
+            "B": "Audition is a metaphor for the applicant’s burden, not a staffing proposal.",
+            "C": "Courtesy is disinfectant for raised voices; the deeper grammar remains.",
+            "D": "The tea sentence says speech can be loosened until it can be contradicted."
+          },
+          "difficulty_est": 0.4
+        },
+        {
+          "concept_id": "MCAT.CARS.RWT.t4",
+          "type": "passage_question",
+          "stem": "When the author says the manuals “are not cynical,” the rhetorical effect is to",
+          "choices": [
+            {
+              "key": "A",
+              "text": "excuse every checkpoint outcome as good intentions."
+            },
+            {
+              "key": "B",
+              "text": "grant the anti-cruelty aim so the critique can move to grammar, audition, and service-sounding politics rather than to cartoon villainy."
+            },
+            {
+              "key": "C",
+              "text": "mock trainers for believing in smiles."
+            },
+            {
+              "key": "D",
+              "text": "argue that raised voices are the only remaining problem."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The concession isolates what courtesy can do (prevent a raised voice) from what it cannot (change who must be plausible). That is a tone of precision, not sarcasm at trainers and not a blanket excuse. D is the limited prevention the manuals achieve, which the author says is not the deeper problem. Rhetoric questions should hear why a concession is placed early: to retire the easy target.",
+          "distractor_rationales": {
+            "A": "The rest of the essay criticizes audition, expanding emergency powers, and service-sounding politics.",
+            "C": "The manuals are granted a non-cynical aim; the author is not sneering at smiles as such.",
+            "D": "Raised voices are the obvious cruelty the manuals address; the essay’s subject is the grammar underneath."
+          },
+          "difficulty_est": 0.44
+        },
+        {
+          "concept_id": "MCAT.CARS.RBT.t2",
+          "type": "passage_question",
+          "stem": "If a government adds an “empathy algorithm” that scores tears and fluency during interviews, the author would most likely say this",
+          "choices": [
+            {
+              "key": "A",
+              "text": "ends the audition by replacing officials with neutrality."
+            },
+            {
+              "key": "B",
+              "text": "extends the training set for suspicion and still requires a life to be plausible in an approved style, now machine-readable."
+            },
+            {
+              "key": "C",
+              "text": "is the different distribution of plausibility the last paragraph demands."
+            },
+            {
+              "key": "D",
+              "text": "proves hospitality and inspection have become fully distinct."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Yesterday’s emergency becoming today’s form, and interviews becoming a training set for suspicion, is the expansion logic. Scoring tears makes the approved performance more explicit. A treats the machine as the principle liberal theory wished for. C inverts the last paragraph, which wants a different distribution of who must be plausible, not a warmer or smarter script. D ignores the tea-as-file collapse of welcome into inspection. New information should be read as another instrument of the same grammar unless it redistributes the burden.",
+          "distractor_rationales": {
+            "A": "Neutrality of a score still demands an approved performance; that is the audition intensified.",
+            "C": "A different distribution would change who owes plausibility, not how well tears are scored.",
+            "D": "The essay says inspection dresses as welcome; an empathy score is more dress, not a clean distinction."
+          },
+          "difficulty_est": 0.58
+        },
+        {
+          "concept_id": "MCAT.CARS.RWT.t5",
+          "type": "passage_question",
+          "stem": "Which statement is a qualification the author makes rather than a thesis to be discarded later?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "States have no legitimate interest in knowing who crosses."
+            },
+            {
+              "key": "B",
+              "text": "States may have a legitimate interest in knowing who crosses, but that interest is not a measuring cup and tends to expand."
+            },
+            {
+              "key": "C",
+              "text": "Courtesy training is cynical."
+            },
+            {
+              "key": "D",
+              "text": "A cup of tea is the opposite of a file."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Paragraph four opens with “None of this requires pretending that states have no legitimate interest,” then immediately limits the grant: the interest expands. That is the essay’s consistent qualification, not a discarded straw thesis. A is what the author refuses to pretend. C contradicts “not cynical.” D contradicts the tea-as-instrument line. Consistency is the pattern of grant-then-limit already seen with manuals and hospitality theory.",
+          "distractor_rationales": {
+            "A": "The author explicitly refuses this pretence.",
+            "C": "Manuals are said not to be cynical.",
+            "D": "Tea can be the file’s efficient instrument."
+          },
+          "difficulty_est": 0.42
+        },
+        {
+          "concept_id": "MCAT.CARS.RBT.t3",
+          "type": "passage_question",
+          "stem": "Which situation is most analogous to “help me to help you” as naming the price of entry into a language that pretends it is only asking for facts?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "A bank officer who says “just tell your story” while a form will accept only certain sequences of income, address, and remorse."
+            },
+            {
+              "key": "B",
+              "text": "A metronome asking a dancer to keep still."
+            },
+            {
+              "key": "C",
+              "text": "A park gardener paid in winter."
+            },
+            {
+              "key": "D",
+              "text": "A census box labelled “other.”"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The official’s phrase pretends to request facts while requiring a performable, matching story. A loan officer’s invitation to narrate, constrained by a form’s sequences, maps that relation: help offered as service, entry priced as plausibility in the institution’s language. B and C and D are images from other passages without the audition structure. Analogies should preserve the helper’s courtesy plus the hidden script, not merely any bureaucracy.",
+          "distractor_rationales": {
+            "B": "Stillness versus dance is a different essay’s ontology problem.",
+            "C": "Winter gardeners belong to the commons ledger argument.",
+            "D": "An “other” box is a category problem, not the audition-for-help grammar."
+          },
+          "difficulty_est": 0.5
+        }
+      ]
+    }
+  ]
+}

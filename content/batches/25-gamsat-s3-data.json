@@ -1,0 +1,505 @@
+{
+  "passages": [
+    {
+      "concept_id": "GAMSAT.S3.bio.t2",
+      "title": "Vesicle swelling under osmotic load",
+      "body": "A student prepares identical phospholipid vesicles in 300 mOsmol kg−1 sucrose, then dilutes them at t = 0 into the media below. Vesicle volume is inferred from light scatter (larger vesicles scatter less in this geometry). Temperature 25 °C. n = 6 aliquots; scatter reported as mean ± s.d. arbitrary units (higher = smaller vesicles).\n\nMedium after dilution | 10 s | 60 s | 300 s\nA: 300 mOsmol sucrose (control) | 1.00 ± 0.02 | 0.99 ± 0.03 | 1.01 ± 0.02\nB: 150 mOsmol sucrose | 0.71 ± 0.04 | 0.52 ± 0.05 | 0.48 ± 0.06\nC: 150 mOsmol sucrose + 0.1 mM HgCl2 (water-channel blocker in this model) | 0.92 ± 0.03 | 0.80 ± 0.04 | 0.61 ± 0.05\nD: 150 mOsmol sucrose + aquaporin proteoliposomes fused at 5 mol% | 0.40 ± 0.06 | 0.33 ± 0.05 | 0.34 ± 0.04\n\nA second table lists initial rates estimated from 0–10 s, treating scatter drop as swelling:\n\nCondition | Δscatter / 10 s\nA | ~0\nB | −0.029\nC | −0.008\nD | −0.060\n\nThe student claims: “Swelling requires a hypotonic bath, is slowed when water pores are blocked, and is accelerated when extra water pores are added, so the membrane’s phospholipid bilayer is not the main path in B–D.”",
+      "questions": [
+        {
+          "concept_id": "GAMSAT.S3.bio.t2",
+          "type": "passage_question",
+          "stem": "Which comparison best tests whether hypotonicity is required for the scatter drop?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "B versus D at 10 s only, because both are hypotonic."
+            },
+            {
+              "key": "B",
+              "text": "A versus B across time, because osmolarity is the intended difference and A does not drop."
+            },
+            {
+              "key": "C",
+              "text": "C versus D, because mercury is a metal."
+            },
+            {
+              "key": "D",
+              "text": "The s.d. column alone, without condition labels."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Independent variable for that claim is bath osmolarity; A is the isotonic control and stays near 1.00 while B falls. That isolates hypotonicity. B versus D confounds extra aquaporin. C versus D confounds block versus extra pores, both hypotonic. Error bars without labels cannot test the claim. Identifying variables means matching the student’s first clause to the control that actually holds osmolarity at 300.",
+          "distractor_rationales": {
+            "A": "Both hypotonic; cannot show hypotonicity is required.",
+            "C": "Both 150 mOsmol; the difference is pores, not tonicity.",
+            "D": "Unlabelled uncertainty does not identify the independent variable."
+          },
+          "difficulty_est": 0.34,
+          "skill_tag": "GAMSAT.S3.rfd.t3"
+        },
+        {
+          "concept_id": "GAMSAT.S3.bio.t2",
+          "type": "passage_question",
+          "stem": "The 10 s points most nearly imply an initial swelling rank",
+          "choices": [
+            {
+              "key": "A",
+              "text": "A > C > B > D (A swells fastest)."
+            },
+            {
+              "key": "B",
+              "text": "D > B > C > A, matching the Δscatter / 10 s table."
+            },
+            {
+              "key": "C",
+              "text": "all conditions equal within 0.02."
+            },
+            {
+              "key": "D",
+              "text": "C faster than D because 0.92 is larger than 0.40."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Higher scatter means smaller vesicles here, so a larger drop is faster swelling. D 1.00→0.40, B →0.71, C →0.92, A unchanged. The rate table’s more negative Δ is faster. Reading the graph-like table requires using the stem’s mapping, not treating a higher remaining scatter as more swelling. D’s option confuses level with rate.",
+          "distractor_rationales": {
+            "A": "A does not swell; D is fastest.",
+            "C": "10 s values range from 1.00 to 0.40, far beyond 0.02.",
+            "D": "Larger remaining scatter means less swelling by the stated geometry."
+          },
+          "difficulty_est": 0.4,
+          "skill_tag": "GAMSAT.S3.rfd.t1"
+        },
+        {
+          "concept_id": "GAMSAT.S3.bio.t2",
+          "type": "passage_question",
+          "stem": "HgCl2 in C is best interpreted, given the design, as",
+          "choices": [
+            {
+              "key": "A",
+              "text": "a hypotonic agent."
+            },
+            {
+              "key": "B",
+              "text": "a purported inhibitor of water channels, slowing but not abolishing swell relative to B."
+            },
+            {
+              "key": "C",
+              "text": "proof the bilayer cannot admit any water, because scatter never changes."
+            },
+            {
+              "key": "D",
+              "text": "an aquaporin donor at 5 mol%."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The stem calls HgCl2 a water-channel blocker in this model. C is slower than B at every time but still falls by 300 s (0.61), so block is partial relative to B, not a total seal, and D is the extra-pore arm. Hypotheses: the student’s “slowed when blocked” is supported; “bilayer is not the main path” is a stronger claim that residual swell in C could still allow. The best interpretation of C is the intended inhibitor arm.",
+          "distractor_rationales": {
+            "A": "C and B share 150 mOsmol sucrose; mercury is the extra variable.",
+            "C": "Scatter in C does change; residual path remains.",
+            "D": "That is condition D’s fusion, not C."
+          },
+          "difficulty_est": 0.46,
+          "skill_tag": "GAMSAT.S3.rfd.t8"
+        },
+        {
+          "concept_id": "GAMSAT.S3.bio.t2",
+          "type": "passage_question",
+          "stem": "A critic notes that light scatter can also fall if vesicles lyse and fragments leave the beam. Which extra measurement would best protect the swelling interpretation?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Repeating only condition A."
+            },
+            {
+              "key": "B",
+              "text": "Assaying trapped marker retained inside vesicles at 300 s for B and D; retention would argue against lysis as the main scatter drop."
+            },
+            {
+              "key": "C",
+              "text": "Turning the room lights off."
+            },
+            {
+              "key": "D",
+              "text": "Adding more HgCl2 to A."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "If scatter drop were lysis, trapped contents should be lost. Retention of a marker at late time distinguishes intact swollen vesicles from fragments. A cannot speak to B/D. Darkness does not address lysis. Poisoning the isotonic control does not create a lysis control. Experimental design items should add a measurement that would go differently under the rival hypothesis.",
+          "distractor_rationales": {
+            "A": "A already does not drop; it does not test lysis in hypotonic arms.",
+            "C": "Ambient light is not the rival mechanism named.",
+            "D": "HgCl2 in A changes two things and still does not measure intactness."
+          },
+          "difficulty_est": 0.52,
+          "skill_tag": "GAMSAT.S3.rfd.t4"
+        },
+        {
+          "concept_id": "GAMSAT.S3.bio.t2",
+          "type": "passage_question",
+          "stem": "Using only the 0–10 s rates, how many times faster is D’s scatter change than B’s?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "about 2"
+            },
+            {
+              "key": "B",
+              "text": "about 0.5"
+            },
+            {
+              "key": "C",
+              "text": "about 7"
+            },
+            {
+              "key": "D",
+              "text": "undefined, because A is zero"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Rates are −0.060 versus −0.029. The ratio of magnitudes is 0.060/0.029 ≈ 2.1, about 2. Inverse 0.5 would be B/D. 7 would be a misread of 0.060/0.008 (that is D versus C). A being zero is why A is not in the ratio, not why D/B is undefined. Proportional reasoning should use the rate table as stated.",
+          "distractor_rationales": {
+            "B": "That is B relative to D, the inverse.",
+            "C": "That approximates D versus C (−0.060/−0.008), not D versus B.",
+            "D": "The question asks D compared with B, both nonzero."
+          },
+          "difficulty_est": 0.3,
+          "skill_tag": "GAMSAT.S3.rfd.t7"
+        }
+      ]
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t14",
+      "title": "Unknown weak acid titration",
+      "body": "25.00 mL of monoprotic unknown HA (0.100 mol L−1 stated by the stockroom) is titrated with 0.100 mol L−1 NaOH at 25 °C. pH is measured with a probe calibrated at 4.00 and 10.00.\n\nV(NaOH) / mL | pH\n0.00 | 2.88\n5.00 | 3.46\n12.50 | 4.20\n20.00 | 4.94\n24.00 | 5.56\n25.00 | 8.72\n26.00 | 11.24\n30.00 | 12.15\n\nA classmate says the equivalence volume must be 12.50 mL because that is “half way on the page.” Another wants Ka from the initial pH alone, treating HA as if it were a strong acid.",
+      "questions": [
+        {
+          "concept_id": "GAMSAT.S3.chem.t14",
+          "type": "passage_question",
+          "stem": "The equivalence point is best placed near",
+          "choices": [
+            {
+              "key": "A",
+              "text": "12.50 mL, the half-equivalence buffer point."
+            },
+            {
+              "key": "B",
+              "text": "25.00 mL, where pH jumps from the weak-acid/salt region into the excess-OH region."
+            },
+            {
+              "key": "C",
+              "text": "0.00 mL, the initial pH."
+            },
+            {
+              "key": "D",
+              "text": "30.00 mL, the last row."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Equal moles: 25.00 mL of 0.100 M HA needs 25.00 mL of 0.100 M NaOH. The table shows a sharp rise between 24 and 26 mL (5.56 to 11.24) with 25.00 mL already 8.72, typical of a weak-acid equivalence (hydrolysing A−), not 12.50 mL which is the half-neutralisation buffer (pH 4.20). Reading a titration curve as a table is graph-reading. The classmate’s “half way on the page” confuses midpoint with equivalence.",
+          "distractor_rationales": {
+            "A": "12.50 mL is half-equivalence; pH there equals pKa, not the jump.",
+            "C": "Initial pH characterises HA before any OH−.",
+            "D": "30 mL is excess strong base, past equivalence."
+          },
+          "difficulty_est": 0.36,
+          "skill_tag": "GAMSAT.S3.rfd.t1"
+        },
+        {
+          "concept_id": "GAMSAT.S3.chem.t14",
+          "type": "passage_question",
+          "stem": "The half-equivalence pH implies pKa nearest",
+          "choices": [
+            {
+              "key": "A",
+              "text": "2.88"
+            },
+            {
+              "key": "B",
+              "text": "4.20"
+            },
+            {
+              "key": "C",
+              "text": "8.72"
+            },
+            {
+              "key": "D",
+              "text": "12.15"
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "At half-equivalence, [HA]≈[A−], so pH≈pKa. That volume is 12.50 mL on this design, pH 4.20. 2.88 is initial. 8.72 is equivalence. 12.15 is excess OH−. Interpolating the intended Henderson–Hasselbalch point is the skill; do not average endpoints. The data already include the half point; no extrapolation off the table is required.",
+          "distractor_rationales": {
+            "A": "Initial pH of 0.100 M HA is not pKa (weak acid is not fully dissociated).",
+            "C": "Equivalence pH of A−(aq), not pKa.",
+            "D": "Strong-base excess region."
+          },
+          "difficulty_est": 0.28,
+          "skill_tag": "GAMSAT.S3.rfd.t6"
+        },
+        {
+          "concept_id": "GAMSAT.S3.chem.t14",
+          "type": "passage_question",
+          "stem": "Treating HA as a strong acid from the initial pH would estimate [H+] as",
+          "choices": [
+            {
+              "key": "A",
+              "text": "0.100 mol L−1, because the label says 0.100."
+            },
+            {
+              "key": "B",
+              "text": "about 1.3 × 10−3 mol L−1 from pH 2.88, which already shows the strong-acid assumption is false for 0.100 M HA."
+            },
+            {
+              "key": "C",
+              "text": "1 × 10−7 mol L−1."
+            },
+            {
+              "key": "D",
+              "text": "0.100 × 25/12.5 mol L−1."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "pH 2.88 means [H+] = 10^−2.88 ≈ 1.3 × 10−3, two orders below 0.100, so HA is weak; the classmate’s strong-acid move is contradicted by the first row. 10−7 is neutrality. Dilution arithmetic in D is unrelated. Evaluating the hypothesis “initial pH as strong acid” uses the datum the table actually gives.",
+          "distractor_rationales": {
+            "A": "That would be full dissociation; pH would be 1.0, not 2.88.",
+            "C": "Not the measured pH.",
+            "D": "Invented stoichiometry, not [H+] from pH."
+          },
+          "difficulty_est": 0.42,
+          "skill_tag": "GAMSAT.S3.rfd.t8"
+        },
+        {
+          "concept_id": "GAMSAT.S3.chem.t14",
+          "type": "passage_question",
+          "stem": "The pH change from 24.00 to 26.00 mL is 5.68 units for 2.00 mL of titrant. This steepness is most useful as evidence that",
+          "choices": [
+            {
+              "key": "A",
+              "text": "the probe is stuck, because pH cannot move more than 0.1 per mL."
+            },
+            {
+              "key": "B",
+              "text": "the region includes the equivalence jump, so an indicator changing in the high-pH range could still catch the end point."
+            },
+            {
+              "key": "C",
+              "text": "Ka is greater than 1."
+            },
+            {
+              "key": "D",
+              "text": "the unknown is a strong acid from the start."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "A large ΔpH across a small volume is the practical signature of equivalence on a table. Weak-acid vs strong-base end points sit alkaline, so a high-pH indicator can work. Probes routinely record jumps. Ka > 1 would be a strong acid, inconsistent with initial pH 2.88 and half-equivalence 4.20. Comparing table rows is the point of an experimental-results item.",
+          "distractor_rationales": {
+            "A": "Jumps of several pH units in 1–2 mL are expected near equivalence.",
+            "C": "pKa ≈ 4.2 implies Ka ≈ 6 × 10−5, not >1.",
+            "D": "Initial pH and buffer region show a weak acid."
+          },
+          "difficulty_est": 0.4,
+          "skill_tag": "GAMSAT.S3.rfd.t2"
+        },
+        {
+          "concept_id": "GAMSAT.S3.chem.t14",
+          "type": "passage_question",
+          "stem": "If the pipetted HA volume were 25.00 mL but the true concentration were 0.080 mol L−1, the equivalence volume would be",
+          "choices": [
+            {
+              "key": "A",
+              "text": "25.00 mL still, because the burette does not care."
+            },
+            {
+              "key": "B",
+              "text": "20.00 mL of 0.100 mol L−1 NaOH."
+            },
+            {
+              "key": "C",
+              "text": "12.50 mL."
+            },
+            {
+              "key": "D",
+              "text": "8.00 mL."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Moles HA = 0.02500 L × 0.080 mol L−1 = 0.00200 mol. At 0.100 mol L−1 NaOH, V = 0.00200/0.100 = 0.0200 L = 20.00 mL. Units must stay in litres or cancel as millimoles: 25.00 mL × 0.080 mmol mL−1 = 2.00 mmol; 2.00/0.100 = 20.0 mL. 25 mL assumes the labelled 0.100. 12.5 is half of the labelled equivalence, not this hypothetically weaker stock.",
+          "distractor_rationales": {
+            "A": "Equivalence tracks moles, not the intended 25 mL ritual.",
+            "C": "Half of 25 mL is the original half-equivalence, not the new end point.",
+            "D": "Would correspond to an even more dilute or mis-pipetted sample."
+          },
+          "difficulty_est": 0.38,
+          "skill_tag": "GAMSAT.S3.rfd.t9"
+        }
+      ]
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t21",
+      "title": "Counting a short-lived sample",
+      "body": "A detector records decays from a small source. Background, measured overnight with the source removed, is 12 counts per minute. The table is net rate after subtracting that background (already done by the software). Clock time starts when the sample is placed.\n\nt / min | net counts per minute\n0 | 800\n5 | 566\n10 | 400\n15 | 283\n20 | 200\n25 | 141\n40 | 50\n\nThe software also reports a 2-minute count at t = 10 min as 800 counts (raw, including background). A student wants the half-life from any two points and also wants activity in Bq.",
+      "questions": [
+        {
+          "concept_id": "GAMSAT.S3.phys.t21",
+          "type": "passage_question",
+          "stem": "Using t = 0 and t = 20 min, the half-life is",
+          "choices": [
+            {
+              "key": "A",
+              "text": "5 min, because 800→200 is two halvings in 20 min."
+            },
+            {
+              "key": "B",
+              "text": "20 min."
+            },
+            {
+              "key": "C",
+              "text": "10 min, because 800→400 from 0 to 10 min, and 400→200 from 10 to 20 min."
+            },
+            {
+              "key": "D",
+              "text": "40 min, the last row."
+            }
+          ],
+          "correct_key": "C",
+          "explanation": "800 to 400 in 10 min is one half-life; 400 to 200 in the next 10 min confirms. Two halvings in 20 min therefore mean t½ = 10 min, not 5 min. Choice A states two halvings yet assigns 5 min; that arithmetic does not divide 20 by 2. Choice B treats the two-half-life interval as t½. Choice D is only the last clock time. Points that sit on successive powers of two are the clean interpolation.",
+          "distractor_rationales": {
+            "A": "Two halvings in 20 min means 10 min per half-life, not 5.",
+            "B": "20 min is the interval containing two half-lives, not t½.",
+            "D": "The last clock time is not t½; net rate is still 50, not 400."
+          },
+          "difficulty_est": 0.34,
+          "skill_tag": "GAMSAT.S3.rfd.t6"
+        },
+        {
+          "concept_id": "GAMSAT.S3.phys.t21",
+          "type": "passage_question",
+          "stem": "Net 400 min−1 at t = 10 min corresponds to an activity of",
+          "choices": [
+            {
+              "key": "A",
+              "text": "400 Bq, if every decay is counted, because 400 min−1 = 400/60 s−1 ≈ 6.7 Bq."
+            },
+            {
+              "key": "B",
+              "text": "400 Bq exactly, because counts per minute equal becquerels."
+            },
+            {
+              "key": "C",
+              "text": "12 Bq, the background."
+            },
+            {
+              "key": "D",
+              "text": "800 Bq, the raw 2-minute count."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "1 Bq = 1 s−1. A net rate of 400 counts per minute is 400/60 ≈ 6.67 counts per second. Only if detection efficiency is 1 does that equal 6.7 Bq; the option states that condition. Counts per minute are not becquerels. Background was already subtracted and is not the source activity. The 800 raw counts are a 2-minute integral, not a Bq figure. Unit conversion is the overlay skill.",
+          "distractor_rationales": {
+            "B": "Becquerel is per second, not per minute.",
+            "C": "Background was subtracted; it is not the sample.",
+            "D": "800 is raw counts in 2 minutes, including background, not activity in Bq."
+          },
+          "difficulty_est": 0.48,
+          "skill_tag": "GAMSAT.S3.rfd.t9"
+        },
+        {
+          "concept_id": "GAMSAT.S3.phys.t21",
+          "type": "passage_question",
+          "stem": "The raw 2-minute count of 800 at t = 10 min (software includes background) is",
+          "choices": [
+            {
+              "key": "A",
+              "text": "impossible, because net is 400 min−1."
+            },
+            {
+              "key": "B",
+              "text": "consistent with about 400 net min−1 plus 12 min−1 background: (400+12)×2 ≈ 824, so 800 is a plausible rounded total."
+            },
+            {
+              "key": "C",
+              "text": "proof background is 400 min−1."
+            },
+            {
+              "key": "D",
+              "text": "a half-life of 2 min."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Expected raw ≈ (net + background) × live time = 412 × 2 = 824. A displayed 800 is within ordinary rounding, dead time, or a slightly different 2-minute window. Not impossible, not a 400 background, not a new half-life. Uncertainty and bookkeeping of gross versus net is the point; students often forget to put background back when checking an integral count.",
+          "distractor_rationales": {
+            "A": "Gross should be net plus background times live time, about 824, so 800 is slightly low, not impossible.",
+            "C": "Overnight background was 12 min−1.",
+            "D": "Counting window length is not t½."
+          },
+          "difficulty_est": 0.5,
+          "skill_tag": "GAMSAT.S3.rfd.t5"
+        },
+        {
+          "concept_id": "GAMSAT.S3.phys.t26",
+          "type": "passage_question",
+          "stem": "A plot of ln(net rate) versus t should be",
+          "choices": [
+            {
+              "key": "A",
+              "text": "a horizontal line at ln 800."
+            },
+            {
+              "key": "B",
+              "text": "approximately linear with slope −ln(2)/10 min−1 if t½ = 10 min."
+            },
+            {
+              "key": "C",
+              "text": "a parabola because 50 at 40 min looks small."
+            },
+            {
+              "key": "D",
+              "text": "undefined because background was subtracted."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Exponential decay R = R0 e^{−λt} with λ = ln2 / t½. If t½ = 10 min, slope of ln R vs t is −λ = −ln2/10 min−1. The table’s repeated halvings every 10 min support a straight log plot. Horizontal would mean no decay. Subtraction of a constant background is already done; it does not undefine the plot, though at late times (50 vs 12) residual background error would matter. Graph literacy for experimental physics is slope meaning.",
+          "distractor_rationales": {
+            "A": "Rate falls, so ln rate falls.",
+            "C": "Exponential looks curved on a linear-rate plot, not as ln(rate) vs t.",
+            "D": "Net rate is what one plots; late-time caution is not “undefined.”"
+          },
+          "difficulty_est": 0.44,
+          "skill_tag": "GAMSAT.S3.rfd.t1"
+        },
+        {
+          "concept_id": "GAMSAT.S3.phys.t21",
+          "type": "passage_question",
+          "stem": "Extrapolating the 10 min half-life to t = 60 min predicts net rate nearest",
+          "choices": [
+            {
+              "key": "A",
+              "text": "800 min−1."
+            },
+            {
+              "key": "B",
+              "text": "12.5 min−1."
+            },
+            {
+              "key": "C",
+              "text": "400 min−1."
+            },
+            {
+              "key": "D",
+              "text": "0, because all nuclei vanish at 6 half-lives."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "60 min is 6 half-lives from t = 0: 800 / 2^6 = 800/64 = 12.5 min−1. That is already comparable to the subtracted background of 12, so the extrapolation is numerically 12.5 but experimentally fragile—an extra honesty the overlay interpolation/extrapolation topic includes as limits of the data. Not 800, not one half-life, and not a hard zero at six half-lives (1/64 remains).",
+          "distractor_rationales": {
+            "A": "That is t = 0.",
+            "C": "That is t = 10 min.",
+            "D": "Six half-lives leave 1/64 of the activity, not a magical zero."
+          },
+          "difficulty_est": 0.4,
+          "skill_tag": "GAMSAT.S3.rfd.t6"
+        }
+      ]
+    }
+  ]
+}

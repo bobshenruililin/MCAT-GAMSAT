@@ -1,0 +1,916 @@
+{
+  "passages": [
+    {
+      "concept_id": "GAMSAT.S1.visual.t1",
+      "title": "Cartoon: Clinic time",
+      "body": "A single-panel cartoon, unsigned, published on a letters page.\n\nForeground: a waiting-room bench. Four people sit. Above each head a small clock; the hands are at 1:10, 2:40, 4:15, and 9:50. None of the clocks match the large wall clock, which has no hands.\n\nOn the wall, a framed motto: WE VALUE YOUR TIME. The frame is gold. The glass is cracked.\n\nTo the right, a receptionist window. The receptionist smiles with many teeth and holds a clipboard titled TRIAGE (PRIVATE). On the clipboard the only visible line is: “Can they still sit up?” A potted plant on the sill is fake; its price tag remains.\n\nUnder the bench, a fifth clock, face-down.\n\nCaption, in small type: “The system is coping.”\n\nA letter printed beneath, from “Concerned, Upper Shore”: “Cartoons like this undermine dedicated staff. If people arrived on time and did not bring relatives, clocks would match.”",
+      "questions": [
+        {
+          "concept_id": "GAMSAT.S1.visual.t1",
+          "type": "passage_question",
+          "stem": "The cartoon’s humour most depends on",
+          "choices": [
+            {
+              "key": "A",
+              "text": "a mismatch between official claims about time and care and the pictured instruments of waiting, triage, and denial."
+            },
+            {
+              "key": "B",
+              "text": "a scientific proof that wall clocks cannot have hands."
+            },
+            {
+              "key": "C",
+              "text": "the price of fake plants in real hospitals."
+            },
+            {
+              "key": "D",
+              "text": "Upper Shore’s bus timetable."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The panel sets a motto valuing time against handless public time, private mismatched clocks, a triage question about sitting up, a fake plant still tagged, and a caption that the system is coping. Satire is the collision of claim and apparatus. B is literal nonsense. C is a detail in service of fakery, not the engine. D is not in the image. Cartoon items should name the structural irony rather than a prop.",
+          "distractor_rationales": {
+            "B": "The missing hands are symbolic of unmeasured public time, not a physics claim.",
+            "C": "The tag on a fake plant supports a theme of display, but the humour is the whole waiting system.",
+            "D": "No bus timetable appears; Upper Shore is the letter-writer’s suburb."
+          },
+          "difficulty_est": 0.36
+        },
+        {
+          "concept_id": "GAMSAT.S1.visual.t3",
+          "type": "passage_question",
+          "stem": "Relative to the image, the caption “The system is coping” functions as",
+          "choices": [
+            {
+              "key": "A",
+              "text": "a neutral clinical observation confirmed by the matching clocks."
+            },
+            {
+              "key": "B",
+              "text": "an official sentence the picture contradicts, so the caption is ironic rather than descriptive."
+            },
+            {
+              "key": "C",
+              "text": "proof that the fifth clock is broken and should be replaced under warranty."
+            },
+            {
+              "key": "D",
+              "text": "the letter-writer’s own words."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Nothing in the panel shows coping: time is unsynchronised, public time is blank, triage is reduced to sitting up, a clock is face-down. The caption therefore vents an official line against the drawing. It is not the letter, which is a separate text. Warranty and matching clocks are inventions. Caption-versus-image questions in this exam style ask whether the line underwrites or undercuts the drawing; here it undercuts by remaining serene.",
+          "distractor_rationales": {
+            "A": "The clocks do not match, and the wall clock has no hands.",
+            "C": "The face-down clock is a visual of discarded time, not a consumer complaint.",
+            "D": "The letter is attributed to Concerned, Upper Shore; the caption sits under the cartoon."
+          },
+          "difficulty_est": 0.4
+        },
+        {
+          "concept_id": "GAMSAT.S1.tone.t3",
+          "type": "passage_question",
+          "stem": "The letter from Upper Shore is best described as",
+          "choices": [
+            {
+              "key": "A",
+              "text": "sharing the cartoon’s satire of triage."
+            },
+            {
+              "key": "B",
+              "text": "reassigning blame to patients’ punctuality and relatives, missing the cartoon’s target."
+            },
+            {
+              "key": "C",
+              "text": "a statistical study of waiting times."
+            },
+            {
+              "key": "D",
+              "text": "an admission that the motto is cracked glass."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The letter defends staff by scolding arrivals and relatives so that clocks would match. That accepts clock-matching as the patients’ duty and treats the cartoon as an attack on dedication. The cartoon’s target is the system’s self-description, not nurses’ souls. Tone is earnest, slightly stung, not satirical. C invents data. D would require the letter to notice the cracked motto, which it does not.",
+          "distractor_rationales": {
+            "A": "The letter says the cartoon undermines staff, so it does not share the satire.",
+            "C": "No figures are offered, only a counterfactual about punctuality.",
+            "D": "The cracked glass is in the drawing; the letter does not mention it."
+          },
+          "difficulty_est": 0.38
+        },
+        {
+          "concept_id": "GAMSAT.S1.argument.t2",
+          "type": "passage_question",
+          "stem": "The weakest point in Upper Shore’s reasoning is that it",
+          "choices": [
+            {
+              "key": "A",
+              "text": "mentions relatives at all."
+            },
+            {
+              "key": "B",
+              "text": "assumes the pictured disorder of time is caused by patient behaviour, which the drawing locates in institutional devices instead."
+            },
+            {
+              "key": "C",
+              "text": "uses a suburb as a signature."
+            },
+            {
+              "key": "D",
+              "text": "fails to praise the gold frame."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Even granting staff dedication, the letter’s causal story (late people and relatives make clocks diverge) does not meet the image, where clocks are assigned per person, the public clock is blank, triage is privatised, and a clock is hidden. The argument is weak because it changes the subject to manners. A and C and D pick surface features. Evaluating strength means asking whether the reply addresses the cartoon’s evidence.",
+          "distractor_rationales": {
+            "A": "Relatives could be relevant in some waiting-room arguments; here they are a dodge.",
+            "C": "A pen-name is not the logical failure.",
+            "D": "The gold frame is the cartoonist’s irony, not a premise Upper Shore must praise."
+          },
+          "difficulty_est": 0.48
+        },
+        {
+          "concept_id": "GAMSAT.S1.social.t2",
+          "type": "passage_question",
+          "stem": "Taken together, cartoon and letter most nearly comment on",
+          "choices": [
+            {
+              "key": "A",
+              "text": "how public language of coping and valued time can coexist with private ranking of bodies, and how critics of the picture may protect that language."
+            },
+            {
+              "key": "B",
+              "text": "the need to ban letters pages."
+            },
+            {
+              "key": "C",
+              "text": "horticulture in clinics."
+            },
+            {
+              "key": "D",
+              "text": "why gold frames improve health outcomes."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The cartoon shows valued-time rhetoric against triage that asks who can sit, unmatched private times, and a coping caption. The letter defends staff by restoring a manners explanation. Together they sketch a political argument about whose time counts and how dissent is moralised as ingratitude. B, C, and D shrink to props or censorship. Social-argument items should stay at the level of public language versus ranking, which both texts stage.",
+          "distractor_rationales": {
+            "B": "The pairing uses the letter; it does not campaign against letters pages.",
+            "C": "The fake plant is a satirical prop, not a gardening thesis.",
+            "D": "Gold is ostentation against cracked glass, not an outcomes claim."
+          },
+          "difficulty_est": 0.5
+        }
+      ]
+    },
+    {
+      "concept_id": "GAMSAT.S1.compare.t1",
+      "title": "Two short poems: Ferry",
+      "body": "Poem 1 — “Ticket”\nI bought a ticket to the other bank\nas if the river were a problem in change.\nThe ferryman took coins that had known other pockets.\nHe did not ask what I was leaving.\nThe water did, in small repeated questions\nagainst the hull.\n\nPoem 2 — “Return”\nOn the way back the same boat\nwas a different animal.\nI recognised the coins by their edges\nand not the faces.\nSomeone on the far jetty waved\nat a person I had not yet become\nand I, traitor, waved.",
+      "questions": [
+        {
+          "concept_id": "GAMSAT.S1.compare.t1",
+          "type": "passage_question",
+          "stem": "A difference the paired poems invite is that",
+          "choices": [
+            {
+              "key": "A",
+              "text": "the first treats crossing as a solvable exchange, while the second makes the same boat ethically strange on return."
+            },
+            {
+              "key": "B",
+              "text": "only the second mentions a river."
+            },
+            {
+              "key": "C",
+              "text": "the ferryman is cruel in the first and kind in the second."
+            },
+            {
+              "key": "D",
+              "text": "coins appear only in the return poem."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Poem 1 frames the ticket as change, a problem the river might be; the water’s questions are already a leak in that frame. Poem 2 names the same boat a different animal and ends in a treacherous wave toward a not-yet self. Comparison is exchange-logic versus return-estrangement. B is false. C invents ferryman character. D is false: coins are in both. Paired-prose items should pick a contrast both texts can bear.",
+          "distractor_rationales": {
+            "B": "The river is in poem 1; poem 2 implies the same crossing.",
+            "C": "The ferryman takes coins and does not ask; no cruelty/kindness split is drawn.",
+            "D": "Coins appear in both poems."
+          },
+          "difficulty_est": 0.4
+        },
+        {
+          "concept_id": "GAMSAT.S1.infer.t3",
+          "type": "passage_question",
+          "stem": "In poem 2, “I, traitor, waved” most nearly implies that",
+          "choices": [
+            {
+              "key": "A",
+              "text": "the speaker committed a legal crime on the jetty."
+            },
+            {
+              "key": "B",
+              "text": "answering the wave colludes with a future self the speaker has not become, a small betrayal of the present."
+            },
+            {
+              "key": "C",
+              "text": "the coins were stolen."
+            },
+            {
+              "key": "D",
+              "text": "the boat has changed species in a biological sense."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The wave comes from someone greeting a person the speaker has not yet become; calling the return wave treason compresses guilt about becoming, not a statute. Animal is metaphor for the boat’s changed feel. Coins’ edges versus faces belong to recognition, not a theft plot. Reading between the lines in the lyric means taking traitor as moral-self language attached to the wave, which is the only action tagged that way.",
+          "distractor_rationales": {
+            "A": "No law or arrest is in the poem; traitor is tonal.",
+            "C": "Edges versus faces is about recognition of coins, not theft.",
+            "D": "“Different animal” is figurative estrangement of the same boat."
+          },
+          "difficulty_est": 0.46
+        },
+        {
+          "concept_id": "GAMSAT.S1.tone.t1",
+          "type": "passage_question",
+          "stem": "The speaker’s attitude in poem 1 toward the ferryman is best described as",
+          "choices": [
+            {
+              "key": "A",
+              "text": "furious accusation that he should have asked."
+            },
+            {
+              "key": "B",
+              "text": "observant, slightly chilled: he takes worn coins and does not ask, while the water does."
+            },
+            {
+              "key": "C",
+              "text": "comic delight in overcharging."
+            },
+            {
+              "key": "D",
+              "text": "religious awe at a miracle crossing."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The ferryman’s not asking is stated without insult; the water’s questions supply what the official exchange omits. Attitude is cool notice, a chill rather than a rant. Nothing comic about price appears, and no miracle. Tone is in the contrast between human unasking and hull-questions, which is dry rather than devout or enraged.",
+          "distractor_rationales": {
+            "A": "There is no outburst; the leaving is unnamed, not prosecuted.",
+            "C": "Coins from other pockets suggest circulation, not a joke about fraud.",
+            "D": "The ticket-as-change opening is secular and slightly ironic, not hymnic."
+          },
+          "difficulty_est": 0.36
+        },
+        {
+          "concept_id": "GAMSAT.S1.tone.t2",
+          "type": "passage_question",
+          "stem": "Which shift occurs between the poems?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "From a problem of payment and leaving, toward recognition, return, and uneasy self-division."
+            },
+            {
+              "key": "B",
+              "text": "From comedy to a weather report."
+            },
+            {
+              "key": "C",
+              "text": "From the ferryman’s violence to the speaker’s violence."
+            },
+            {
+              "key": "D",
+              "text": "From prose instructions to a shopping list."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Ticket/change/leaving versus same-boat-as-animal, coins’ edges, and a wave to an unarrived self is the arc. No violence or shopping list appears. A tone shift can be a thematic reorientation on return, not only a mood adjective. B and D are category errors. C invents blows. The pairing is built for that outbound-versus-return turn.",
+          "distractor_rationales": {
+            "B": "Neither poem is a comedy set or a forecast.",
+            "C": "No violence is narrated.",
+            "D": "Both are lyrics, not instructions or lists."
+          },
+          "difficulty_est": 0.34
+        },
+        {
+          "concept_id": "GAMSAT.S1.understand.t3",
+          "type": "passage_question",
+          "stem": "In poem 1, “as if the river were a problem in change” uses “change” to refer primarily to",
+          "choices": [
+            {
+              "key": "A",
+              "text": "political revolution on the far bank."
+            },
+            {
+              "key": "B",
+              "text": "small coins and the idea that a crossing is a calculable exchange."
+            },
+            {
+              "key": "C",
+              "text": "the weather changing midstream."
+            },
+            {
+              "key": "D",
+              "text": "the ferryman changing jobs."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The next lines take coins that had known other pockets; change is monetary and, by the simile, a reduction of the river to a transaction. Referents: ticket, coins, exchange. Revolution, weather, and employment are not cued. Follow-structure items should let the following sentence decide the pun’s weight; here coins cash the metaphor, while “problem in change” also names the speaker’s wish that leaving be arithmetical.",
+          "distractor_rationales": {
+            "A": "No political programme is attached to the far bank in poem 1.",
+            "C": "Water’s questions are against the hull, not a forecast.",
+            "D": "The ferryman’s occupation is stable in the poem."
+          },
+          "difficulty_est": 0.32
+        }
+      ]
+    },
+    {
+      "concept_id": "GAMSAT.S1.humanities.t3",
+      "title": "Note on a cancelled tram",
+      "body": "In the third week of the lockout the company ran a single tram, brightly lit, along the route at dusk, with no passengers permitted. Officials called it a demonstration of service. Strikers called it a lantern on a coffin. Children ran beside it anyway, as they had when the cars were working, and were photographed. The photograph was printed in the morning paper under the heading NORMALITY RETURNS, and in an overseas paper under the heading CHILDREN MOCK THE DEAD LINE.\n\nA clerk in the tram office, years later, wrote that he had been told to leave the lights on even if the generator complained, because darkness would look like surrender. He added, without apparent bitterness, that surrender had already occurred in the timetable. What remained was a moving argument about who owned the look of a street at evening.\n\nHistorians still disagree whether the empty tram lengthened the dispute by humiliating the men or shortened it by frightening the board with the cost of theatre. The clerk’s sentence is more useful than either camp: the fight had become, for a night, a question of illumination.",
+      "questions": [
+        {
+          "concept_id": "GAMSAT.S1.humanities.t3",
+          "type": "passage_question",
+          "stem": "The extract as historical commentary mainly suggests that the empty tram was",
+          "choices": [
+            {
+              "key": "A",
+              "text": "a straightforward restoration of public transport."
+            },
+            {
+              "key": "B",
+              "text": "a piece of staged lighting whose meaning split in the street and in the papers, while the timetable had already conceded the service."
+            },
+            {
+              "key": "C",
+              "text": "proof that children always side with companies."
+            },
+            {
+              "key": "D",
+              "text": "irrelevant to who owned the evening street."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Officials, strikers, two captions, the generator, and the clerk’s line about surrender in the timetable all treat the tram as theatre and argument, not as service. Children running are appropriated by rival headlines, not a bloc vote. The clerk is called more useful than the lengthen/shorten camps because he names illumination as the stake. That is historical commentary on a symbol, not a transport report.",
+          "distractor_rationales": {
+            "A": "No passengers were permitted; “service” is the company’s word, ironised.",
+            "C": "The children are photographed and captioned two ways; they are not a corporate constituency.",
+            "D": "The clerk says what remained was who owned the look of the street."
+          },
+          "difficulty_est": 0.42
+        },
+        {
+          "concept_id": "GAMSAT.S1.infer.t2",
+          "type": "passage_question",
+          "stem": "The clerk’s remark that “surrender had already occurred in the timetable” assumes that",
+          "choices": [
+            {
+              "key": "A",
+              "text": "a published schedule without runnable service is already a loss, so lights are a remainder of display."
+            },
+            {
+              "key": "B",
+              "text": "generators cannot fail."
+            },
+            {
+              "key": "C",
+              "text": "overseas papers never print photographs."
+            },
+            {
+              "key": "D",
+              "text": "children wrote the timetable."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Without bitterness he separates timetable surrender from the order to keep lights on so darkness would not look like surrender. The unstated assumption is that the timetable is the real service-commitment, already broken, leaving illumination as look. B and C and D are unrelated. Unstated-assumption items should name the premise that makes his contrast coherent.",
+          "distractor_rationales": {
+            "B": "He says the generator complained; failure is imaginable.",
+            "C": "An overseas paper is cited as printing the photograph.",
+            "D": "No such authorship is hinted."
+          },
+          "difficulty_est": 0.44
+        },
+        {
+          "concept_id": "GAMSAT.S1.argument.t1",
+          "type": "passage_question",
+          "stem": "Which sentence is closest to the commentator’s own conclusion rather than a view attributed to others?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Officials called it a demonstration of service."
+            },
+            {
+              "key": "B",
+              "text": "The fight had become, for a night, a question of illumination."
+            },
+            {
+              "key": "C",
+              "text": "NORMALITY RETURNS."
+            },
+            {
+              "key": "D",
+              "text": "The empty tram definitely shortened the dispute by frightening the board."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The last sentence, after dismissing both historian camps as less useful than the clerk, is the commentator’s distillation. A is attributed to officials. C is a headline. D is one camp the text refuses to settle. Identifying conclusion versus support or versus reported speech is the skill: B is the writer’s closing claim.",
+          "distractor_rationales": {
+            "A": "Attributed to officials.",
+            "C": "A newspaper heading, not the commentator’s verdict.",
+            "D": "The text says historians disagree and prefers the clerk to either camp."
+          },
+          "difficulty_est": 0.34
+        },
+        {
+          "concept_id": "GAMSAT.S1.social.t1",
+          "type": "passage_question",
+          "stem": "The two newspaper headings most nearly illustrate",
+          "choices": [
+            {
+              "key": "A",
+              "text": "identical reporting of a transport miracle."
+            },
+            {
+              "key": "B",
+              "text": "rival social framings of the same image: order restored versus children exposing a dead service."
+            },
+            {
+              "key": "C",
+              "text": "that overseas papers cannot see children."
+            },
+            {
+              "key": "D",
+              "text": "that strikers printed both papers."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Same photograph, two headings: normality versus mockery of a dead line. That is sociological commentary on how a crowd of children is enlisted to different public stories. A denies the split. C is false. D is unsupported. The headings are doing social meaning-making, which is why they are quoted at all.",
+          "distractor_rationales": {
+            "A": "The headings disagree.",
+            "C": "The overseas heading is about children.",
+            "D": "Ownership of the papers is not given."
+          },
+          "difficulty_est": 0.33
+        },
+        {
+          "concept_id": "GAMSAT.S1.argument.t3",
+          "type": "passage_question",
+          "stem": "Relative to the historians who argue about whether the tram lengthened or shortened the dispute, the clerk’s sentence is presented as",
+          "choices": [
+            {
+              "key": "A",
+              "text": "useless because he lacked bitterness."
+            },
+            {
+              "key": "B",
+              "text": "more useful because it identifies what the night’s conflict was actually about: the look of the street, not a simple duration effect."
+            },
+            {
+              "key": "C",
+              "text": "proof the board was frightened."
+            },
+            {
+              "key": "D",
+              "text": "proof the men were humiliated."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The commentator says historians still disagree on lengthen versus shorten, then prefers the clerk: the fight had become illumination. That evaluates two duration-arguments as less adequate than a claim about stakes. Lack of bitterness is how the clerk sounds, not why he is useful. C and D pick the camps. Comparing arguments means seeing the essay change the question rather than picking a winner among the original pair.",
+          "distractor_rationales": {
+            "A": "Without bitterness is tone; usefulness is the illumination claim.",
+            "C": "That is one historian camp, left unsettled.",
+            "D": "The other camp, also unsettled."
+          },
+          "difficulty_est": 0.47
+        }
+      ]
+    },
+    {
+      "concept_id": "GAMSAT.S1.visual.t2",
+      "title": "Table: Verbs in the morning",
+      "body": "A media researcher counts finite verbs in the first paragraphs of four papers on the same Monday, all covering the same ministry announcement.\n\nPaper | “said” | “claimed” | “admitted” | “revealed” | “insisted” | Other verbs of speaking\nNorth Evening | 12 | 0 | 0 | 1 | 0 | 2\nCivic Daily | 3 | 8 | 1 | 0 | 4 | 1\nHarbour Post | 7 | 1 | 6 | 0 | 0 | 3\nThe Signal | 2 | 2 | 0 | 9 | 1 | 2\n\nCaption under the table, written by the researcher: “Speaking is never only speaking. The ministry released one statement. The city woke in four grammars.”\n\nA talkback host that night: “This is just synonyms. Nobody is doing politics with a verb chart. Grow up.”",
+      "questions": [
+        {
+          "concept_id": "GAMSAT.S1.visual.t2",
+          "type": "passage_question",
+          "stem": "The table most clearly supports which observation?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Each paper distributes verbs of speaking differently over the same announcement."
+            },
+            {
+              "key": "B",
+              "text": "The Signal did not cover the announcement."
+            },
+            {
+              "key": "C",
+              "text": "North Evening used “claimed” more than Civic Daily."
+            },
+            {
+              "key": "D",
+              "text": "Talkback hosts write the first paragraphs."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Row patterns differ: North Evening stacks “said,” Civic Daily “claimed” and “insisted,” Harbour Post “admitted,” The Signal “revealed.” That is a table-of-results reading. B is false because The Signal has counts. C reverses 0 versus 8. D is not in the table. Humanities-context tables still require comparing cells rather than importing the host.",
+          "distractor_rationales": {
+            "B": "The Signal has a full row, dominated by “revealed.”",
+            "C": "North Evening has 0 “claimed”; Civic Daily has 8.",
+            "D": "The table counts papers’ first paragraphs, not hosts."
+          },
+          "difficulty_est": 0.28
+        },
+        {
+          "concept_id": "GAMSAT.S1.social.t3",
+          "type": "passage_question",
+          "stem": "The researcher’s caption “the city woke in four grammars” most nearly means",
+          "choices": [
+            {
+              "key": "A",
+              "text": "four languages were spoken on the trams."
+            },
+            {
+              "key": "B",
+              "text": "the same official utterance was received through four patterned choices of reporting verbs, which already interpret."
+            },
+            {
+              "key": "C",
+              "text": "the ministry issued four statements."
+            },
+            {
+              "key": "D",
+              "text": "Civic Daily admitted wrongdoing six times."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The caption follows a verb census and says speaking is never only speaking. Grammars here are the papers’ verb habits as interpretation. A is literal over-reading. C contradicts “one statement.” D misassigns Harbour Post’s “admitted” count to Civic Daily and treats it as the ministry’s confession. Media-and-language items should keep the caption tied to the table’s verb distributions.",
+          "distractor_rationales": {
+            "A": "Grammars is metaphorical for reporting styles, not tram linguistics.",
+            "C": "The caption says the ministry released one statement.",
+            "D": "Harbour Post, not Civic Daily, has six “admitted”; the table is about journalists’ verbs, not the ministry’s plea."
+          },
+          "difficulty_est": 0.4
+        },
+        {
+          "concept_id": "GAMSAT.S1.argument.t2",
+          "type": "passage_question",
+          "stem": "The talkback host’s dismissal is weakest because it",
+          "choices": [
+            {
+              "key": "A",
+              "text": "uses the word grow up."
+            },
+            {
+              "key": "B",
+              "text": "treats the verbs as interchangeable labels, while the table’s divergent profiles are exactly what would be unlikely if they were mere synonyms without selection."
+            },
+            {
+              "key": "C",
+              "text": "mentions politics."
+            },
+            {
+              "key": "D",
+              "text": "speaks at night rather than Monday morning."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "If the verbs were idle synonyms, four papers covering one statement would not show such specialised stacks (said versus claimed/insisted versus admitted versus revealed). The host asserts synonymy without meeting that pattern. Rudeness and time of day are not the logical failure. Evaluating reasoning means testing the synonym claim against the evidence the researcher offered.",
+          "distractor_rationales": {
+            "A": "Tone is blunt but not the core gap.",
+            "C": "Politics is the researcher’s point; mentioning it is not a fallacy.",
+            "D": "When the host spoke is irrelevant to the inference."
+          },
+          "difficulty_est": 0.5
+        },
+        {
+          "concept_id": "GAMSAT.S1.compare.t3",
+          "type": "passage_question",
+          "stem": "Comparing Civic Daily and Harbour Post on this table, the most defensible contrast is",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Civic Daily’s speech-verbs cluster in challenge (claimed, insisted); Harbour Post’s cluster in concession (admitted)."
+            },
+            {
+              "key": "B",
+              "text": "Harbour Post did not use “said.”"
+            },
+            {
+              "key": "C",
+              "text": "they are identical except for “revealed.”"
+            },
+            {
+              "key": "D",
+              "text": "Civic Daily is overseas and Harbour Post is not."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Civic Daily: claimed 8, insisted 4, said only 3. Harbour Post: admitted 6, said 7, claimed 1. That is a contrast in stance verbs over one announcement. B is false (said = 7). C is false. D is not in the data. Quote-set or table comparison still needs a contrast the numbers license, not extra biography.",
+          "distractor_rationales": {
+            "B": "Harbour Post has seven “said.”",
+            "C": "Several columns differ, not only revealed (both 0).",
+            "D": "Locations are not given."
+          },
+          "difficulty_est": 0.37
+        },
+        {
+          "concept_id": "GAMSAT.S1.humanities.t4",
+          "type": "passage_question",
+          "stem": "As cultural criticism of news, the researcher’s project is closest to saying that",
+          "choices": [
+            {
+              "key": "A",
+              "text": "style sheets of reporting verbs are already a politics of credibility, not a transparent pane."
+            },
+            {
+              "key": "B",
+              "text": "newspapers should stop using verbs."
+            },
+            {
+              "key": "C",
+              "text": "The Signal is the only honest paper because it “revealed.”"
+            },
+            {
+              "key": "D",
+              "text": "talkback is the authentic voice of the city."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Four grammars, one statement, speaking never only speaking: the critic treats verb choice as cultural work on authority. B is a cartoon ban. C treats revealed as truth rather than as another grammar (The Signal stacks it). D contradicts the exercise, which decentres the host. Arts-and-cultural-criticism here is about media form, which this table is built to teach.",
+          "distractor_rationales": {
+            "B": "The point is how verbs interpret, not that they should vanish.",
+            "C": "Revealed is one patterned choice among four, not a halo.",
+            "D": "The host is an object of critique, not a gold standard."
+          },
+          "difficulty_est": 0.43
+        }
+      ]
+    },
+    {
+      "concept_id": "GAMSAT.S1.humanities.t4",
+      "title": "On the new memorial",
+      "body": "The memorial is a corridor of rusted uprights, each the height of a person, irregularly spaced so that you must turn sideways to pass. At noon they look like a failed fence. At dusk they look like a crowd that has agreed not to face you. There are no names. A small plaque at the exit says only: THEY WERE NOT LATE. THEY WERE PREVENTED.\n\nTourists complain that they do not know whom to pity. School groups count the uprights and get different numbers, because some are so close they read as one. A veteran interviewed on the steps said he hated it, then stood there until the lights came on, then said he hated that he did not hate it enough.\n\nThe sculptor, in a panel discussion, refused the word healing. “If it heals,” she said, “it has failed at being a door you cannot swagger through.” Critics split between those who call this moral bullying in Cor-Ten steel and those who call the tourists’ complaint the point.\n\nI went through twice. The second time a child asked why the fence was broken. His father said it was not a fence. The child, satisfied with a new category, ran. I was not satisfied. Prevention is a bureaucratic word. In the corridor it becomes a body insisting on its width.",
+      "questions": [
+        {
+          "concept_id": "GAMSAT.S1.humanities.t4",
+          "type": "passage_question",
+          "stem": "The critic’s closing emphasis is that the memorial",
+          "choices": [
+            {
+              "key": "A",
+              "text": "succeeds as a directory of names."
+            },
+            {
+              "key": "B",
+              "text": "turns a bureaucratic word, prevention, into a bodily negotiation of width, which is why swagger fails."
+            },
+            {
+              "key": "C",
+              "text": "should be replaced by a clock."
+            },
+            {
+              "key": "D",
+              "text": "exists mainly to bully school arithmetic."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The last sentences refuse satisfaction with a new category (not a fence) and relocate prevention from bureaucracy to a body in a corridor. That continues the sculptor’s door you cannot swagger through. Names are absent. A clock is not proposed. Counting uprights is an observed tourist/school behaviour, not the critic’s aim. Cultural criticism here ends in phenomenology of passage, which B names.",
+          "distractor_rationales": {
+            "A": "There are no names; tourists complain they do not know whom to pity.",
+            "C": "No replacement is suggested.",
+            "D": "Different counts are an effect of spacing, not the work’s purpose as the critic reads it."
+          },
+          "difficulty_est": 0.45
+        },
+        {
+          "concept_id": "GAMSAT.S1.understand.t1",
+          "type": "passage_question",
+          "stem": "The plaque “THEY WERE NOT LATE. THEY WERE PREVENTED.” is best read, in context, as",
+          "choices": [
+            {
+              "key": "A",
+              "text": "a transport apology for a delayed tram."
+            },
+            {
+              "key": "B",
+              "text": "a refusal of a lateness story in favour of a story of being stopped, which the corridor then makes physical."
+            },
+            {
+              "key": "C",
+              "text": "proof the sculptor wanted more names."
+            },
+            {
+              "key": "D",
+              "text": "the veteran’s slogan."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The whole piece is about blocked passage and the sculptor’s anti-healing door. The plaque’s contrast late/prevented reassigns blame from the dead to an agent of stopping. The critic later says prevention becomes a body insisting on width. A imports the other extract’s tram. C contradicts no names. D is a different speaker. Main claim of the plaque inside this extract is that re-description, not a timetable.",
+          "distractor_rationales": {
+            "A": "Trams belong to another passage; this is a memorial corridor.",
+            "C": "The work has no names; the sculptor is not asking for a directory here.",
+            "D": "The veteran speaks about hating and remaining; he does not author the plaque."
+          },
+          "difficulty_est": 0.38
+        },
+        {
+          "concept_id": "GAMSAT.S1.tone.t1",
+          "type": "passage_question",
+          "stem": "The veteran’s sequence (hate, remain until lights, hate the insufficiency of hate) suggests an attitude of",
+          "choices": [
+            {
+              "key": "A",
+              "text": "simple dismissal."
+            },
+            {
+              "key": "B",
+              "text": "unwilling entanglement: the work gets under a refusal without offering a comfortable approval."
+            },
+            {
+              "key": "C",
+              "text": "cheerful tourism."
+            },
+            {
+              "key": "D",
+              "text": "agreement with the tourists who want someone to pity by name."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "He hates it, stays, then hates not hating enough: that is resistance that fails to stay clean. Not dismissal, not cheer, and not the tourists’ demand for a pity-object. Speaker attitude is mixed and self-reproachful. Tone items should track the three-step interview, which the critic reports because it matches a door you cannot swagger through.",
+          "distractor_rationales": {
+            "A": "Staying until lights and revising the hate contradicts simple dismissal.",
+            "C": "Hate and self-reproach are not cheer.",
+            "D": "He does not mention names or pity; tourists do."
+          },
+          "difficulty_est": 0.41
+        },
+        {
+          "concept_id": "GAMSAT.S1.infer.t1",
+          "type": "passage_question",
+          "stem": "“Failed fence” at noon versus “crowd that has agreed not to face you” at dusk most nearly implies that",
+          "choices": [
+            {
+              "key": "A",
+              "text": "the steel changes alloy at sunset."
+            },
+            {
+              "key": "B",
+              "text": "the same spacing can be read as broken exclusion or as a turned community, depending on light and the viewer’s metaphor."
+            },
+            {
+              "key": "C",
+              "text": "the memorial is only open at dusk."
+            },
+            {
+              "key": "D",
+              "text": "tourists are absent at noon."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The critic offers two appearances of the same uprights. Implication from diction: fence is exclusion that failed; crowd-not-facing is a social body that withholds. Light cues the shift, not a metallurgical one. Opening hours and tourist schedules are not given. The diction pair is doing the interpretive work the exam means by implication from word choice.",
+          "distractor_rationales": {
+            "A": "Alloy does not change; reading does.",
+            "C": "Noon and dusk are both used; no closing time is stated.",
+            "D": "Tourists are not timed to dusk only."
+          },
+          "difficulty_est": 0.44
+        },
+        {
+          "concept_id": "GAMSAT.S1.compare.t2",
+          "type": "passage_question",
+          "stem": "How does the sculptor’s panel remark relate to the tourists’ complaint that they do not know whom to pity?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "She agrees they should be given names so healing can begin."
+            },
+            {
+              "key": "B",
+              "text": "Critics note a split: her anti-healing door treats the missing pity-object as success, while others call that moral bullying."
+            },
+            {
+              "key": "C",
+              "text": "She wrote the tourists’ complaint."
+            },
+            {
+              "key": "D",
+              "text": "Poem 2’s traitor wave is her design brief."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "She refuses healing; if it heals it failed as a door you cannot swagger through. Tourists want a pity-object (names). Critics split between calling her stance bullying and calling the complaint the point. That is poem-versus-commentary structure inside one extract: maker’s claim versus public demand. A inverts her refusal. C and D are false. Comparison here is between her sentence and the tourists, as the critic frames them.",
+          "distractor_rationales": {
+            "A": "She refuses the word healing; names are absent by design in the account.",
+            "C": "Tourists complain; she speaks at a panel.",
+            "D": "The ferry poems are a different text."
+          },
+          "difficulty_est": 0.48
+        }
+      ]
+    },
+    {
+      "concept_id": "GAMSAT.S1.humanities.t1",
+      "title": "The borrowed coat",
+      "body": "He wore other people's sentences the way some men wear coats: against weather, and with the labels left in. At the seminar he began, \"One might argue,\" and then produced, almost unaltered, a paragraph his supervisor had emailed at midnight to save him. The room nodded. He felt the coat settle on his shoulders, warm and slightly too large in the sleeves.\n\nAfterward a friend said, \"That was the first time you sounded like yourself.\" He laughed too quickly. In the bathroom mirror the coat was still on. He tried to take it off by telling the truth to the glass: I do not know whether I think this. The glass, being a glass, offered his mouth moving.\n\nEthics talks as if authenticity were a mineral you either contain or fake. The evening suggested something cheaper and more ordinary. A borrowed argument can keep you from freezing. It can also teach your arms the wrong length. The crime, if there is one, is not the borrowing. It is the nod you collect as if the sleeves had always been yours.\n\nHe sent the supervisor a note: Thank you. I sounded like myself. He deleted it. He sent: Thank you. I used your paragraph. He left that one in the outbox until morning, which is a kind of cowardice that still knows the difference.",
+      "questions": [
+        {
+          "concept_id": "GAMSAT.S1.humanities.t1",
+          "type": "passage_question",
+          "stem": "As literary narrative, the extract is primarily about",
+          "choices": [
+            { "key": "A", "text": "a man who physically steals a supervisor's coat from a peg" },
+            { "key": "B", "text": "using someone else's sentences for warmth and credit, and the small cowardice of almost admitting it" },
+            { "key": "C", "text": "a scientific proof that authenticity is a mineral" },
+            { "key": "D", "text": "bathroom plumbing in a university" }
+          ],
+          "correct_key": "B",
+          "explanation": "The coat is a metaphor for borrowed sentences; the plot is the seminar paragraph, the friend's misrecognition, the mirror, and the two emails. That is a literary narrative of intellectual borrowing, not a theft of cloth, not a mineralogy paper, not plumbing. A main-claim reading has to keep both the warmth of the borrow and the nod-as-if-the-sleeves-were-yours, which only B does, including the outbox delay as character.",
+          "distractor_rationales": {
+            "A": "The coat is figurative; no peg or garment theft occurs.",
+            "C": "Ethics talks as if authenticity were a mineral is a view the narrator complicates, not a proof.",
+            "D": "The bathroom is a setting for the mirror, not the subject."
+          },
+          "difficulty_est": 0.32
+        },
+        {
+          "concept_id": "GAMSAT.S1.humanities.t2",
+          "type": "passage_question",
+          "stem": "The ethical distinction the narrator draws is closest to",
+          "choices": [
+            { "key": "A", "text": "borrowing is always the crime; gratitude notes are irrelevant" },
+            { "key": "B", "text": "the wrong is less the use of another's paragraph than collecting the nod as if the work had always been yours" },
+            { "key": "C", "text": "supervisors should never email students" },
+            { "key": "D", "text": "authenticity is a mineral students either have or fake, with no cheaper account" }
+          ],
+          "correct_key": "B",
+          "explanation": "The third paragraph says the crime, if there is one, is not the borrowing but the nod collected as if the sleeves had always been yours. That is an ethics-of-credit claim, not a ban on help or on email. It also rejects the mineral theory of authenticity. Philosophy-and-ethics extracts in GAMSAT often turn on a redefinition of the wrong; here the redefinition is explicit and should be retrieved rather than moralised into a broader ban.",
+          "distractor_rationales": {
+            "A": "The narrator says the crime is not the borrowing.",
+            "C": "The supervisor's midnight email is help; it is not indicted as a rule.",
+            "D": "The evening suggested something cheaper than the mineral story."
+          },
+          "difficulty_est": 0.4
+        },
+        {
+          "concept_id": "GAMSAT.S1.understand.t2",
+          "type": "passage_question",
+          "stem": "Which paraphrase of “A borrowed argument can keep you from freezing. It can also teach your arms the wrong length.” stays inside the passage?",
+          "choices": [
+            { "key": "A", "text": "Help can prevent collapse and also habituate you to a shape of thought that is not yours" },
+            { "key": "B", "text": "Cold rooms in universities should be illegal" },
+            { "key": "C", "text": "Physical coats always damage the rotator cuff" },
+            { "key": "D", "text": "Arguments should never be written down" }
+          ],
+          "correct_key": "A",
+          "explanation": "The two sentences pair survival-function and deformation-function of a borrow. Paraphrase without over-reading keeps both and does not legislate heating policy, medicine, or a ban on writing. The coat-sleeves image is already glossed as taught arm-length, i.e. habituation. Over-reading would drop the first sentence's charity or inflate the second into a campus by-law.",
+          "distractor_rationales": {
+            "B": "Freezing is metaphorical for being without an argument in the seminar weather.",
+            "C": "Arms and sleeves are figurative for fit of thought.",
+            "D": "The paragraph is about credit and habituation, not about prohibiting text."
+          },
+          "difficulty_est": 0.34
+        },
+        {
+          "concept_id": "GAMSAT.S1.infer.t2",
+          "type": "passage_question",
+          "stem": "Leaving the honest email in the outbox until morning assumes, in this story, that",
+          "choices": [
+            { "key": "A", "text": "the supervisor has no internet" },
+            { "key": "B", "text": "delay can be a way of knowing the right sentence while still not sending it — cowardice that can tell the two drafts apart" },
+            { "key": "C", "text": "thank-you notes are illegal after midnight" },
+            { "key": "D", "text": "the friend wrote both emails" }
+          ],
+          "correct_key": "B",
+          "explanation": "The last sentence calls the overnight outbox a kind of cowardice that still knows the difference between I sounded like myself and I used your paragraph. The assumption is that unsent can be morally intelligible: he can distinguish the drafts and still not transmit. No claim about the supervisor's connection, law, or the friend's authorship. Unstated-assumption questions should name the psychology the ending needs, which is knowledge-without-sending.",
+          "distractor_rationales": {
+            "A": "Nothing about connectivity; the delay is his.",
+            "C": "No legal frame is given.",
+            "D": "He writes and deletes and writes; the friend only mispraised him."
+          },
+          "difficulty_est": 0.46
+        },
+        {
+          "concept_id": "GAMSAT.S1.tone.t2",
+          "type": "passage_question",
+          "stem": "From the seminar warmth to the outbox, the tone shifts toward",
+          "choices": [
+            { "key": "A", "text": "unqualified triumph" },
+            { "key": "B", "text": "a cooler self-accusation that still refuses melodrama" },
+            { "key": "C", "text": "farce about plumbing" },
+            { "key": "D", "text": "religious confession with a priest" }
+          ],
+          "correct_key": "B",
+          "explanation": "Early beats are comic-uneasy (coat too large, laugh too quickly). The close names cowardice without a collapse into sermon, and the glass offering his mouth moving is dry rather than priestly. Triumph is what the friend wrongly heard. Plumbing and priests are not in the register. A tone shift question should hear the temperature drop from the nodded room to the unsent honest line, which is cooler and more exact, not louder.",
+          "distractor_rationales": {
+            "A": "He deletes the self-flattering note; triumph is the friend's error.",
+            "C": "Bathroom is setting, not farce about pipes.",
+            "D": "The glass is a mirror, not a confessor."
+          },
+          "difficulty_est": 0.4
+        }
+      ]
+    }
+  ]
+}

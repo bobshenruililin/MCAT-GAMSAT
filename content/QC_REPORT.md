@@ -58,4 +58,41 @@ Residual risk is not zero: 315 AI-written items will contain subtle errors a hum
 
 ## Coverage note
 
-Forty topics were chosen as a **biochem-heavy spread across MCAT FC1–10 plus GAMSAT S3**, not the raw global top-40 by `exam_weight` (that list is almost all CARS). See `TARGET_TOPICS.json` and BLOCKERS B-009.
+Starter 01–08: 315 items on a biochem-heavy slice (B-009). Not the raw global top-40 CARS list.
+
+## Expansion pass (2026-09-01) — remaining weighted topics
+
+Newest prompt wins on scope: replace PLACEHOLDER seed with a real bank. Taxonomy seed inserts **zero** items. `pnpm bootstrap` ingests every numbered batch. Schema gate on every numbered file: **0 rejects**. No `PLACEHOLDER` stems in any numbered file.
+
+| file | items | notes |
+| --- | ---: | --- |
+| 01–08 starter | 315 | original critic pass above |
+| 09-fc1-remaining.json | 36 | rest of FC1 topics |
+| 10-fc2-fc3.json | 58 | rest of B/B FC2–3 |
+| 12-fc4.json | 40 | rest of C/P FC4 |
+| 13-fc5.json | 42 | rest of C/P FC5 |
+| 14-psyc-soc.json | 70 | rest of P/S |
+| 16-cars-passages.json | 15 | 3 original CARS passages |
+| 17-gamsat-s1-passages.json | 12 | 3 original S1 passages |
+| 18-gamsat-s2-craft.json | 28 | S2 craft/task MCQs |
+| 19–21 gamsat-s3-*.json | 148 | rest of S3 bio/chem/phys discretes |
+| 22-gamsat-s1-more.json | 13 | further S1 |
+| 23-cars-depth.json | 25 | 5 more CARS passages (skills FND/RWT/RBT) |
+| 24-gamsat-s1-depth.json | 30 | cartoon, paired poems, history, verb table, memorial, borrowed-coat |
+| 25-gamsat-s3-data.json | 15 | 3 data passages; `skill_tag` on S3 rfd overlay |
+| **total** | **847** | 25 passages; 120 passage questions |
+
+Every `exam_weight > 0` topic (290) has ≥1 item. Overlays (SIRS, S3 `rfd.*`) stay weight 0 (B-003); rfd is practised as `skill_tag` on S3 data items, not as a new-item quota.
+
+Items remain `source=ai_generated`, `verified=false`. Volume makes residual error certain. Original ten flags still stand.
+
+### Additional human-review pressure (not auto-fail)
+
+11. **23-cars-depth.json / census “sharper count / sharper target” weaken item** — the statute-and-audit hypothetica is a clean logical weaken; a student could argue real statutes leak.
+12. **24-gamsat-s1-depth.json / Clinic time cartoon** — satire + letter; attitude items are judgment calls.
+13. **25-gamsat-s3-data.json / vesicle scatter vs lysis** — rival hypothesis is real; the trapped-marker control is the intended design answer.
+14. **23-cars-depth.json / courtesy at the checkpoint “audition”** — political-theory diction; not AAMC material; easy to over-moralise.
+15. **24 / borrowed coat ethics** — “crime is the nod, not the borrow” is a defensible reading, not the only ethics lecture a student might want.
+
+S2 writing studio is `/write` with 5 rotating quote packs per task (B-011). Not official ACER scoring.
+
