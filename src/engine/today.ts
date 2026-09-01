@@ -2,6 +2,9 @@ import { eq, isNull } from "drizzle-orm";
 import type { AppDb } from "@/db/client";
 import { attempts, fsrsState, items } from "@/db/schema";
 import { getDueItems } from "./reviewEngine";
+import { hasDemoData } from "./demoSeed";
+import { addUtcDays, utcDayKey } from "./rng";
+import { getProgressData } from "./progress";
 
 const AVG_SECONDS = 45;
 
@@ -10,16 +13,44 @@ export type DayCount = {
   count: number;
 };
 
+export type DueForecastDay = {
+  date: string;
+  count: number;
+  estimatedMinutes: number;
+};
+
+export type WeakestSpotlight = {
+  id: string;
+  name: string;
+  mastery: number;
+  attempts: number;
+};
+
 export type TodayStats = {
   dueCount: number;
   estimatedMinutes: number;
   newAvailable: number;
   itemCount: number;
   last7Days: DayCount[];
+  dueForecast: DueForecastDay[];
+  streak: number;
+  weakest: WeakestSpotlight | null;
+  demo: boolean;
 };
 
-function utcDayKey(d: Date): string {
-  return d.toISOString().slice(0, 10);
+function minutesFor(count: number): number {
+  return Math.round(((count * AVG_SECONDS) / 60) * 10) / 10;
+}
+
+export function studyStreak(attemptDays: Set<string>, todayKey: string): number {
+  if (!attemptDays.has(todayKey)) return 0;
+  let n = 0;
+  const cursor = new Date(`${todayKey}T12:00:00.000Z`);
+  while (attemptDays.has(utcDayKey(cursor))) {
+    n += 1;
+    cursor.setUTCDate(cursor.getUTCDate() - 1);
+  }
+  return n;
 }
 
 export function getTodayStats(db: AppDb, now: Date): TodayStats {
@@ -34,25 +65,62 @@ export function getTodayStats(db: AppDb, now: Date): TodayStats {
 
   const last7Days: DayCount[] = [];
   for (let i = 6; i >= 0; i--) {
-    const d = new Date(now.getTime());
-    d.setUTCDate(d.getUTCDate() - i);
+    const d = addUtcDays(now, -i);
     last7Days.push({ date: utcDayKey(d), count: 0 });
   }
   const byDate = new Map(last7Days.map((row) => [row.date, row]));
   const windowStart = last7Days[0]?.date;
   const rows = db.select({ createdAt: attempts.createdAt }).from(attempts).all();
+  const allAttemptDays = new Set<string>();
   for (const row of rows) {
     const key = row.createdAt.slice(0, 10);
+    allAttemptDays.add(key);
     if (windowStart && key < windowStart) continue;
     const bucket = byDate.get(key);
     if (bucket) bucket.count += 1;
   }
 
+  const todayKey = utcDayKey(now);
+  const dueForecast: DueForecastDay[] = [];
+  const fsrsRows = db
+    .select({ dueAt: fsrsState.dueAt, state: fsrsState.state })
+    .from(fsrsState)
+    .all()
+    .filter((r) => r.state !== "new");
+  for (let i = 0; i < 7; i++) {
+    const date = utcDayKey(addUtcDays(now, i));
+    let count = 0;
+    for (const row of fsrsRows) {
+      const dueDay = row.dueAt.slice(0, 10);
+      if (i === 0) {
+        if (row.dueAt <= now.toISOString()) count += 1;
+      } else if (dueDay === date) {
+        count += 1;
+      }
+    }
+    dueForecast.push({ date, count, estimatedMinutes: minutesFor(count) });
+  }
+
+  const progress = getProgressData(db, now);
+  const weakestTopic = progress.topics.find((t) => t.attempts > 0) ?? null;
+  const weakest: WeakestSpotlight | null = weakestTopic
+    ? {
+        id: weakestTopic.id,
+        name: weakestTopic.name,
+        mastery: weakestTopic.mastery,
+        attempts: weakestTopic.attempts,
+      }
+    : null;
+
   return {
     dueCount,
-    estimatedMinutes: Math.round(((dueCount * AVG_SECONDS) / 60) * 10) / 10,
+    estimatedMinutes: minutesFor(dueCount),
     newAvailable: unseen,
     itemCount,
     last7Days,
+    dueForecast,
+    streak: studyStreak(allAttemptDays, todayKey),
+    weakest,
+    demo: hasDemoData(db),
   };
 }
