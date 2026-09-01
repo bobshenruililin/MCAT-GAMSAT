@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ERROR_CLASSES, type ErrorClass } from "@/db/schema";
-import { canProceedAfterReveal, canSubmit, overconfidenceNote } from "@/engine/quizGate";
+import { calibrationNote, canProceedAfterReveal, canSubmit } from "@/engine/quizGate";
 
 export type GradeResult = {
   correct: boolean;
@@ -84,7 +84,7 @@ export function ItemPlayer({
   });
   const calNote =
     grade && confidence !== null
-      ? overconfidenceNote(grade.correct, confidence)
+      ? calibrationNote(grade.correct, confidence)
       : null;
 
   async function submit() {
@@ -285,7 +285,7 @@ export function ItemPlayer({
               {calNote ? (
                 <p
                   className="rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-950"
-                  data-testid="overconfidence-note"
+                  data-testid="calibration-note"
                 >
                   {calNote}
                 </p>

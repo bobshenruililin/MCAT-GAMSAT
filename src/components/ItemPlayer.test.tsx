@@ -112,7 +112,7 @@ describe("ItemPlayer confidence-before-reveal gate", () => {
     expect(onCommit).not.toHaveBeenCalled();
     await user.click(screen.getByTestId("error-content_gap"));
     expect(next).not.toBeDisabled();
-    expect(screen.queryByTestId("overconfidence-note")).toBeNull();
+    expect(screen.queryByTestId("calibration-note")).toBeNull();
   });
 
   it("names overconfidence on a high-confidence miss", async () => {
@@ -136,8 +136,34 @@ describe("ItemPlayer confidence-before-reveal gate", () => {
     await user.click(screen.getByTestId("choice-A"));
     await user.click(screen.getByTestId("confidence-5"));
     await user.click(screen.getByTestId("submit-answer"));
-    expect(await screen.findByTestId("overconfidence-note")).toHaveTextContent(
+    expect(await screen.findByTestId("calibration-note")).toHaveTextContent(
       /confidence and accuracy need to be the same number/i,
+    );
+  });
+
+  it("names underconfidence on a low-confidence hit", async () => {
+    const user = userEvent.setup();
+    const onGrade = vi.fn().mockResolvedValue({
+      correct: true,
+      correctKey: "B",
+      explanation: "Four.",
+      distractorRationales: { A: "too small" },
+    });
+    render(
+      <ItemPlayer
+        item={item}
+        position={0}
+        remaining={1}
+        total={1}
+        onGrade={onGrade}
+        onCommit={vi.fn()}
+      />,
+    );
+    await user.click(screen.getByTestId("choice-B"));
+    await user.click(screen.getByTestId("confidence-1"));
+    await user.click(screen.getByTestId("submit-answer"));
+    expect(await screen.findByTestId("calibration-note")).toHaveTextContent(
+      /low rating brings this card back sooner/i,
     );
   });
 });

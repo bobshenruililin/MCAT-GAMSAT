@@ -22,6 +22,21 @@ export function overconfidenceNote(
   return `You marked ${confidence}/5 and missed. Confidence and accuracy need to be the same number.`;
 }
 
+export function underconfidenceNote(
+  correct: boolean,
+  confidence: number,
+): string | null {
+  if (!correct || confidence > 2) return null;
+  return `You marked ${confidence}/5 and were right. Confidence and accuracy need to be the same number — a low rating brings this card back sooner than the memory needs.`;
+}
+
+export function calibrationNote(
+  correct: boolean,
+  confidence: number,
+): string | null {
+  return overconfidenceNote(correct, confidence) ?? underconfidenceNote(correct, confidence);
+}
+
 export function canProceedAfterReveal(opts: {
   revealed: boolean;
   correct: boolean | null;
