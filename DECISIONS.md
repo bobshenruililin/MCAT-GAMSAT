@@ -192,6 +192,11 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Newest prompt asked for a complete product a human can sit. Dead ends (lost session URL, hung JSON parse, unsaved S2, empty sitting) waste the scarcest resource — study hours. Official percentiles remain AAMC/ACER truth.
 - Rejected: Entering official scores in a form that invents percentiles; auto-abandoning untouched starts; treating agent/browser verify attempts as human study in committed SCOREBOARD.md.
 
+## 2026-09-01 — Merge the stacked PR series by fast-forwarding main
+- Decision: Land PRs #1–#10 by fast-forwarding `main` to `cursor/complete-product-3760` (`334c308`). Every earlier PR head is an ancestor of that tip, so one push includes the whole series.
+- Rationale: Newest prompt was merge all PRs. The branches were already a single stack (1 → 63 commits). A fast-forward preserves every commit SHA so GitHub marks each PR MERGED without conflict resolution or squash rewriting.
+- Rejected: Merging each PR as a separate merge commit; squashing the stack (would orphan earlier PR SHAs); closing older PRs without landing their commits.
+
 
 
 
