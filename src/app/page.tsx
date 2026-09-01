@@ -1,88 +1,91 @@
 import { existsSync } from "node:fs";
-import { count } from "drizzle-orm";
+import Link from "next/link";
 import { openDb } from "@/db/client";
 import { getDbPath } from "@/db/paths";
-import {
-  attempts,
-  concepts,
-  externalScores,
-  fsrsState,
-  items,
-  passages,
-  sessions,
-} from "@/db/schema";
+import { getTodayStats } from "@/engine/today";
+import { StartButtons } from "@/components/StartButtons";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const TABLES = [
-  { name: "concepts", table: concepts },
-  { name: "passages", table: passages },
-  { name: "items", table: items },
-  { name: "sessions", table: sessions },
-  { name: "attempts", table: attempts },
-  { name: "fsrs_state", table: fsrsState },
-  { name: "external_scores", table: externalScores },
-] as const;
-
-function loadHealth() {
+function loadToday() {
   if (!existsSync(getDbPath())) {
     return {
       ok: false as const,
       error: "database file missing — run pnpm db:migrate && pnpm seed",
-      path: getDbPath(),
-      tables: [] as { name: string; rows: number }[],
+      stats: null,
     };
   }
   try {
     const { sqlite, db } = openDb();
-    const tables = TABLES.map(({ name, table }) => ({
-      name,
-      rows: db.select({ n: count() }).from(table).get()?.n ?? 0,
-    }));
+    const stats = getTodayStats(db, new Date());
     sqlite.close();
-    return { ok: true as const, error: null, path: getDbPath(), tables };
+    return { ok: true as const, error: null, stats };
   } catch (err) {
     return {
       ok: false as const,
       error: err instanceof Error ? err.message : String(err),
-      path: getDbPath(),
-      tables: [] as { name: string; rows: number }[],
+      stats: null,
     };
   }
 }
 
-export default function Home() {
-  const health = loadHealth();
+export default function TodayPage() {
+  const today = loadToday();
+  const stats = today.stats;
+  const emptyBank = stats ? stats.itemCount === 0 : true;
+
   return (
-    <main className="mx-auto max-w-xl p-8">
-      <h1 className="text-2xl font-semibold">MCAT-GAMSAT health</h1>
-      <p className="mt-2 text-sm text-zinc-600">{health.path}</p>
-      <p className="mt-4">
-        DB:{" "}
-        <span className={health.ok ? "font-medium text-green-700" : "font-medium text-red-700"}>
-          {health.ok ? "connected" : "disconnected"}
-        </span>
-      </p>
-      {health.error ? <p className="mt-2 text-sm text-red-700">{health.error}</p> : null}
-      {health.tables.length > 0 ? (
-        <table className="mt-6 w-full border-collapse text-left text-sm">
-          <thead>
-            <tr className="border-b border-zinc-300">
-              <th className="py-2 pr-4">table</th>
-              <th className="py-2">rows</th>
-            </tr>
-          </thead>
-          <tbody>
-            {health.tables.map((row) => (
-              <tr key={row.name} className="border-b border-zinc-200">
-                <td className="py-2 pr-4 font-mono">{row.name}</td>
-                <td className="py-2">{row.rows}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+    <main className="mx-auto max-w-lg px-4 py-8">
+      <h1 className="text-2xl font-semibold">Today</h1>
+      <p className="mt-1 text-sm text-zinc-600">Retrieval only. Confidence before reveal.</p>
+
+      {today.error ? (
+        <p className="mt-4 text-sm text-red-700">{today.error}</p>
       ) : null}
+
+      {stats ? (
+        <>
+          <dl className="mt-6 grid grid-cols-2 gap-3">
+            <div className="rounded-lg border border-zinc-200 bg-white p-4">
+              <dt className="text-xs text-zinc-500">Due reviews</dt>
+              <dd className="mt-1 text-2xl font-semibold">{stats.dueCount}</dd>
+              <p className="mt-1 text-xs text-zinc-500">
+                ~{stats.estimatedMinutes} min at 45s avg
+              </p>
+            </div>
+            <div className="rounded-lg border border-zinc-200 bg-white p-4">
+              <dt className="text-xs text-zinc-500">New items available</dt>
+              <dd className="mt-1 text-2xl font-semibold">{stats.newAvailable}</dd>
+            </div>
+          </dl>
+
+          <StartButtons disabled={emptyBank} />
+          {emptyBank ? (
+            <p className="mt-3 text-sm text-zinc-600">
+              Item bank is empty. Run <span className="font-mono">pnpm seed</span>.
+            </p>
+          ) : null}
+
+          <section className="mt-8">
+            <h2 className="text-sm font-medium">Last 7 days</h2>
+            <ul className="mt-3 divide-y divide-zinc-200 rounded-lg border border-zinc-200 bg-white">
+              {stats.last7Days.map((day) => (
+                <li key={day.date} className="flex justify-between px-4 py-2 text-sm">
+                  <span className="font-mono text-zinc-600">{day.date}</span>
+                  <span>{day.count} attempt{day.count === 1 ? "" : "s"}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </>
+      ) : null}
+
+      <p className="mt-8 text-xs text-zinc-500">
+        <Link href="/health" className="underline">
+          Health
+        </Link>
+      </p>
     </main>
   );
 }

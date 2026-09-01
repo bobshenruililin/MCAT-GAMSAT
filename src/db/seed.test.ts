@@ -12,7 +12,8 @@ import {
 import Database from "better-sqlite3";
 import { drizzle } from "drizzle-orm/better-sqlite3";
 import { migrate } from "drizzle-orm/better-sqlite3/migrator";
-import { schema, concepts } from "./schema";
+import { schema, concepts, items } from "./schema";
+import { seedPlaceholdersIfEmpty } from "./seed-items";
 import { MIGRATIONS_DIR, TAXONOMY_PATH } from "./paths";
 
 const HEADER = "AI-emitted, verify against official outline.";
@@ -83,6 +84,26 @@ describe("seed loader — valid", () => {
     migrate(db, { migrationsFolder: MIGRATIONS_DIR });
     seedFromFile(db, filePath);
     expect(db.select().from(concepts).all()).toHaveLength(3);
+    sqlite.close();
+  });
+
+  it("seeds 20 PLACEHOLDER items when the item bank is empty", () => {
+    const dir = mkdtempSync(path.join(tmpdir(), "mcat-seed-ph-"));
+    const dbPath = path.join(dir, "test.db");
+    const sqlite = new Database(dbPath);
+    sqlite.pragma("foreign_keys = ON");
+    const db = drizzle(sqlite, { schema });
+    migrate(db, { migrationsFolder: MIGRATIONS_DIR });
+    seedFromFile(db, TAXONOMY_PATH);
+    const added = seedPlaceholdersIfEmpty(db);
+    expect(added).toBe(20);
+    const rows = db.select().from(items).all();
+    expect(rows).toHaveLength(20);
+    expect(rows.every((row) => row.stem.includes("PLACEHOLDER"))).toBe(true);
+    expect(rows.every((row) => row.source === "ai_generated")).toBe(true);
+    expect(rows.every((row) => row.verified === false)).toBe(true);
+    expect(rows.filter((row) => row.type === "passage_question")).toHaveLength(2);
+    expect(seedPlaceholdersIfEmpty(db)).toBe(0);
     sqlite.close();
   });
 });
