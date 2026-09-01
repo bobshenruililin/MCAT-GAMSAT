@@ -42,3 +42,14 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: These skills overlay every science item; a non-zero quota would steal new items from content nodes. Logged as B-003.
 - Rejected: Giving SIRS/rfd a positive share of the new-item budget in v1.
 
+## 2026-09-01 — ts-fsrs with fuzz off; persist full card extras
+- Decision: Scheduler is `fsrs({ enable_fuzz: false })`. `fsrs_state` gained `scheduled_days` and `learning_steps` so `next()` is given a real ts-fsrs Card, not a reconstructed stub.
+- Rationale: NORTH_STAR forbids hand-rolled FSRS. Fuzz would make tests and a single-user log non-reproducible. Dropping learning_steps would corrupt learning/relearning steps.
+- Rejected: Implementing the forgetting curve ourselves; leaving fuzz on; persisting only the original seven columns.
+
+## 2026-09-01 — Prompt 2 assembler caps and mastery roll-up
+- Decision: Daily assemble uses reviewCap=50, newCap=15, max 3 new items per topic. Parent mastery is the exam_weight-weighted mean of children. Due reviews are rows with `due_at <= now` and `state != new`.
+- Rationale: Newest prompt wins on scope over MINI_SPEC v1 (default quota 8, no parent roll-up). Logged as B-005. New empty cards are not due reviews.
+- Rejected: MINI_SPEC v1 no-rollup; treating `state=new` rows as due.
+
+

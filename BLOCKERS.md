@@ -16,3 +16,7 @@ SIRS 1–4 and GAMSAT S3 `reasoning_from_data` overlay every item (via `skill_ta
 ### B-004 — Category/topic weight split
 AAMC publishes FC percents, not per-category or per-topic percents. v1 splits an FC's weight equally across its content categories, then equally across that category's topics. Human: replace with a better prior if you have one.
 
+### B-005 — MINI_SPEC vs Prompt 2 on mastery roll-up and newCap
+MINI_SPEC says do not roll up mastery to parents in v1, and default `new_item_quota` is 8. Prompt 2 requires parent mastery rolled up by `exam_weight` and assembler `newCap=15`. Prompt 2 wins on scope. Human: amend MINI_SPEC if the roll-up should become the written law.
+
+
