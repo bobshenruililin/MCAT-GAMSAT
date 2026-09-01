@@ -70,4 +70,37 @@ Three riskiest things to review:
 
 SCORE IMPACT: The human can now run retrieval sessions (daily or diagnostic) instead of rereading — score per hour still waits on replacing PLACEHOLDER items with real tagged content and then actually studying.
 
+## PROMPT 4 — Night sprint 4/4 content + visibility (2026-09-01)
+
+Shipped:
+- `pnpm ingest <file>`: schema gate (topic `concept_id`, type, stem, A–D, one `correct_key`, explanation ≥40 words, three distractor rationales, `difficulty_est` in [0,1]). Valid rows insert `source=ai_generated`, `verified=false`. Invalid rows → `content/quarantine/<file>.rejected.json`. Prints pass/fail/inserted/skipped. `pnpm ingest --strip-placeholders`.
+- Starter bank in `content/batches/`: 300 discretes (~40/file) on 40 biochem-heavy MCAT FC1–10 + GAMSAT S3 topics (not raw top-40 CARS; B-009) plus 3 passages × 5 questions (enzyme kinetics table, CARS “archive and the street”, pendulum g).
+- Critic pass: `content/QC_REPORT.md`. Schema 315/315. Hard-fail quarantines: 0. Ten least-certain items flagged for humans.
+- Ingest run on app DB after `db:reset` + `seed`:
+  - 01: 40 passed, 0 failed (inserted 40)
+  - 02: 40 passed, 0 failed (inserted 40)
+  - 03: 42 passed, 0 failed (inserted 42)
+  - 04: 49 passed, 0 failed (inserted 49)
+  - 05: 49 passed, 0 failed (inserted 49)
+  - 06: 40 passed, 0 failed (inserted 40)
+  - 07: 40 passed, 0 failed (inserted 40)
+  - 08: 15 passed, 0 failed (inserted 15)
+  - strip: removed 20 PLACEHOLDER items
+  - resulting bank: 315 items, 3 passages, 0 verified, 0 PLACEHOLDER
+- `/progress`: taxonomy tree color-coded (gray = unseen, red→green mastery), sortable weakest-first topic table (mastery, attempts, exam_weight). Linked from Today.
+- `DEMO.md`: 5-minute click-path + top 5 human-review items.
+- Tests: ingest validation/quarantine/strip + all batch files schema-pass + progress unseen/weakest-first. `pnpm test` 38/38, typecheck, lint green.
+- Browser: Today (315 new) → Start Session on a real CARS passage item (no PLACEHOLDER) → confidence-before-reveal → persist miss → `/progress` shows `MCAT.CARS` / `RBT` colored, other FCs gray.
+
+Failed: nothing in the DoD chain. Content is still unverified AI.
+
+Node counts: 376 taxonomy. Items: 315 real, 0 placeholder.
+
+Three riskiest things to review:
+1. B-009 topic spread vs a literal CARS top-40.
+2. The ten QC flags (James–Lange spinal, arsenate ATP, noncompetitive vs mixed, CARS judgments, demographic stages, plus Mg mass, Bernoulli, k_cat, pendulum intercept, looking-glass).
+3. First daily cards are CARS-weighted; a single miss can display mastery above the 0.3 unseen default because retrievability is high immediately after review.
+
+SCORE IMPACT: Retrieval can now run on tagged science items instead of PLACEHOLDERS, so study hours can start — expected score per hour still depends on the human actually sitting the sessions and on catching the remaining AI-item errors before they train a wrong memory.
+
 

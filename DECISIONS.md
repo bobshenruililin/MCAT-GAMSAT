@@ -77,4 +77,19 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Prompt 3 assigned `/` to Today. Narrowest move of the existing health view.
 - Rejected: Keeping health at `/`; deleting health.
 
+## 2026-09-01 — Starter bank: biochem-heavy 40, not raw top-40
+- Decision: Cover 40 topics as a spread across MCAT FC1–10 (FC1-heavy) plus GAMSAT S3 data-in-stem, not the literal highest-weight 40 topics. Passages add CARS + extra FC1/S3 questions. Logged as B-009.
+- Rationale: Raw top-40 by `exam_weight` is almost all CARS. Prompt also required FC1–10 coverage and biochem weighting. Newest prompt on scope: both constraints; the spread is the only way to satisfy both.
+- Rejected: A CARS-only top-40 bank; equal items on all 308 topics.
+
+## 2026-09-01 — Ingest skip-duplicates; strip all PLACEHOLDERs once a real bank exists
+- Decision: Duplicate `concept_id`+`stem` skips insert. `--strip-placeholders` deletes every PLACEHOLDER stem after any real item exists, not only placeholders whose topic now has a real item.
+- Rationale: Prompt required covered-node stripping. Leftover CARS placeholders would rank first in the new-item queue by exam_weight and displace real retrieval (NORTH_STAR: do not study fakes). Skip-duplicates keeps re-ingest idempotent.
+- Rejected: Leaving uncovered CARS PLACEHOLDERs in the bank; upsert-by-id (items have generated UUIDs).
+
+## 2026-09-01 — Critic: no auto-quarantine; ten human flags
+- Decision: Hostile re-read of all eight batch files; 0 items moved to quarantine. Residual uncertainty listed in `content/QC_REPORT.md` for human review. Items remain `verified=false`.
+- Rationale: Hard-fail rubric is wrong key, two live keys, joke distractors, missing data, passage-independent passage questions, or explanations that do not reason. None met that bar on this pass. NORTH_STAR still forbids `verified=true` without a human or official anchor.
+- Rejected: Quarantining the ten least-certain items automatically; marking the bank verified.
+
 
