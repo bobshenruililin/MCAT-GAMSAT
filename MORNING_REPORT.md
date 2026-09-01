@@ -346,5 +346,28 @@ Three riskiest:
 
 SCORE IMPACT: Study hours can now retrieve the actual past-paper move on a new instance, then a ranked ladder of that move, then a mini sitting — instead of rereading a pattern handbook or grinding untagged volume. Percentile still waits on official papers and the human sitting the hours.
 
+## Sit-today complete product (2026-09-01)
+
+Question: can a human sit this as a product today without dead ends?
+
+Answer: Yes, on the retrieval surfaces that already existed, after closing the gaps that actually blocked a sitting: unfinished sessions buried under abandoned starts, no in-app scoreboard, session fetch hang on non-JSON, S2 drafts only saved on click, empty daily opening a blank player, README as a one-liner.
+
+Shipped:
+- Today lists unfinished real sittings, in-progress first, at most one untouched start. Mixed Start Session throws if the queue is empty instead of routing to "No items".
+- `/scoreboard`: official rows from SCOREBOARD.md only (empty is honest); live study log from non-demo attempts. Nav + summary link.
+- Session player: JSON parse errors surface; miss still requires error class; Today link; uncommitted reveal is not saved.
+- `/write` autosaves locally and names time-up at 0:00 without wiping the draft.
+- README sit-today path (`pnpm bootstrap`, `FACTORY_TARGET=0` cap). `/health` shows verified=true and PAT.* counts. `not-found` / `error` pages.
+- Tests 107. Typecheck/lint green. Browser: Today, daily miss+hit+summary, resume, skill, mastery check, pattern entry/ladder/structure, diagnostic first item, Progress, Write autosave, Scoreboard, Health (verified 0 / PAT 2400), 404.
+
+Failed: did not wipe the local [DEMO] seed (banner stays until `pnpm db:reset`); did not invent official percentiles; video-model review of the walk recording was quota-blocked (screenshots + CDP log are the evidence).
+
+Three riskiest:
+1. B-013 — factory/pattern volume still unverified AI.
+2. This VM's Today still shows demo streak until reset — not human study.
+3. B-015 — structure tests still interleave; not a cloned CARS paper.
+
+SCORE IMPACT: The next study hour can start, miss, classify, finish, resume, write S2, and read the ledger without a blank session or a lost draft — expected score still waits on the human sitting those hours and on official papers.
+
 
 

@@ -187,6 +187,11 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Newest prompt: first-principles past-paper method — pattern analysis with examples, large ranked drills, explanations tied to content+pattern, overall structure tests. NORTH_STAR: retrieval only, no official clones, no pre-reveal hints, never `verified=true` in software. Unlimited generation is used for volume of original analogs, not for lecture pages.
 - Rejected: A markdown pattern handbook; cloned AAMC/ACER stems; same-topic CARS bursts as "structure"; `sessions.kind` migration; showing the pattern move before confidence.
 
+## 2026-09-01 — Sit-today: resume ranked, scoreboard display-only for official rows
+- Decision: Today shows unfinished non-demo sittings, in-progress first, at most one untouched start. Empty daily/diagnostic queues throw instead of creating a blank player. `/scoreboard` displays official rows from SCOREBOARD.md and live study stats from the DB; software still must not write a percentile. S2 drafts autosave in localStorage; time-up is named and does not wipe the essay.
+- Rationale: Newest prompt asked for a complete product a human can sit. Dead ends (lost session URL, hung JSON parse, unsaved S2, empty sitting) waste the scarcest resource — study hours. Official percentiles remain AAMC/ACER truth.
+- Rejected: Entering official scores in a form that invents percentiles; auto-abandoning untouched starts; treating agent/browser verify attempts as human study in committed SCOREBOARD.md.
+
 
 
 

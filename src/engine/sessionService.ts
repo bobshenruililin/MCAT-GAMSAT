@@ -534,7 +534,7 @@ export type OpenSession = {
   total: number;
 };
 
-export function listOpenSessions(db: AppDb, limit = 8): OpenSession[] {
+export function listOpenSessions(db: AppDb, limit = 5): OpenSession[] {
   const rows = db
     .select()
     .from(sessions)
@@ -547,7 +547,7 @@ export function listOpenSessions(db: AppDb, limit = 8): OpenSession[] {
     )
     .sort((a, b) => b.startedAt.localeCompare(a.startedAt));
 
-  const out: OpenSession[] = [];
+  const all: OpenSession[] = [];
   for (const session of rows) {
     const itemIds = queuedItemIds(session.config);
     if (itemIds.length === 0) continue;
@@ -565,7 +565,7 @@ export function listOpenSessions(db: AppDb, limit = 8): OpenSession[] {
     const mode =
       typeof modeRaw === "string" && modeRaw.length > 0 ? modeRaw : session.kind;
     const trackRaw = session.config.track;
-    out.push({
+    all.push({
       id: session.id,
       kind: session.kind,
       mode,
@@ -575,9 +575,10 @@ export function listOpenSessions(db: AppDb, limit = 8): OpenSession[] {
       remaining,
       total: itemIds.length,
     });
-    if (out.length >= limit) break;
   }
-  return out;
+  const inProgress = all.filter((s) => s.answered > 0);
+  const untouched = all.filter((s) => s.answered === 0).slice(0, 1);
+  return [...inProgress, ...untouched].slice(0, limit);
 }
 
 export type PassagePublic = {

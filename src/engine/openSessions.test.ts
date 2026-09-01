@@ -29,6 +29,10 @@ describe("open sessions and empty starts", () => {
     insertTopicTree(db, ["MCAT.FC1.1A.t1", "MCAT.FC1.1B.t1"]);
     insertDiscrete(db, "q1", "MCAT.FC1.1A.t1");
     insertDiscrete(db, "q2", "MCAT.FC1.1B.t1");
+    insertDiscrete(db, "q3", "MCAT.FC1.1A.t1");
+    insertDiscrete(db, "q4", "MCAT.FC1.1B.t1");
+    insertDiscrete(db, "q5", "MCAT.FC1.1A.t1");
+    insertDiscrete(db, "q6", "MCAT.FC1.1B.t1");
     const created = createDailySession(db, now, { reviewCap: 0, newCap: 2 });
     expect(created.config.itemIds).toHaveLength(2);
     recordAttempt(db, {
@@ -59,6 +63,18 @@ describe("open sessions and empty starts", () => {
     expect(getTodayStats(db, now).openSessions.map((s) => s.id)).toEqual([
       created.sessionId,
     ]);
+
+    const older = createDailySession(db, new Date("2026-08-31T12:00:00.000Z"), {
+      reviewCap: 0,
+      newCap: 2,
+    });
+    const newerUntouched = createDailySession(db, now, { reviewCap: 0, newCap: 2 });
+    const ranked = listOpenSessions(db);
+    expect(ranked[0]?.id).toBe(created.sessionId);
+    expect(ranked[0]?.answered).toBe(1);
+    expect(ranked.filter((s) => s.answered === 0)).toHaveLength(1);
+    expect(ranked.some((s) => s.id === newerUntouched.sessionId)).toBe(true);
+    expect(ranked.some((s) => s.id === older.sessionId)).toBe(false);
     close();
   });
 });
