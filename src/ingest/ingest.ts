@@ -1,9 +1,10 @@
-import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { and, eq, like } from "drizzle-orm";
 import { openDb, type AppDb } from "@/db/client";
 import { items, passages } from "@/db/schema";
 import { TAXONOMY_PATH } from "@/db/paths";
+import { listBatchFiles } from "@/ingest/batchFiles";
 import {
   validateIngestFile,
   type RejectedRow,
@@ -209,20 +210,18 @@ function main() {
     process.exit(2);
   }
   if (file === "--all") {
-    const dir = path.join(process.cwd(), "content", "batches");
-    const files = readdirSync(dir)
-      .filter((name) => /^\d+-.*\.json$/.test(name))
-      .sort();
+    const files = listBatchFiles();
     let passed = 0;
     let failed = 0;
     let inserted = 0;
     let skipped = 0;
-    for (const name of files) {
-      const result = ingestPath(path.join(dir, name));
+    for (const abs of files) {
+      const result = ingestPath(abs);
       passed += result.passed;
       failed += result.failed;
       inserted += result.inserted;
       skipped += result.skipped;
+      const name = path.basename(abs);
       console.log(
         `ingest ${name}: ${result.passed} passed, ${result.failed} failed (inserted ${result.inserted}, skipped ${result.skipped})`,
       );

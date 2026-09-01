@@ -1,0 +1,1 @@
+# Factory output lives here (`pnpm factory:emit`). JSON is gitignored; regenerate on bootstrap.

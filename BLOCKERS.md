@@ -40,5 +40,8 @@ NORTH_STAR says studying means answering questions. S2 on the real paper is time
 ### B-012 — Section-track sessions defer other-section dues
 Today can start a CARS / B/B / C/P / P/S / S1 / S2 / S3 block. Due cards from other families wait until a Mixed session or a matching block. That matches exam-morning sitting; it can also let a neglected section’s FSRS due pile up. Human: confirm, or force Mixed to drain all dues first.
 
+### B-013 — 100× factory volume is still unverified AI
+The score-max factory emits 84,700 additional ingest-valid items (code-checked calculations, sibling-discrimination conceptuals, combinatorial CARS/S1 passages, S2 craft, experimental tables). NORTH_STAR still forbids `verified=true` without a human or official anchor. Volume raises poison surface. Human: study a slice and QC; do not treat factory output as AAMC/ACER; optionally cap bootstrap with `FACTORY_TARGET` if the SQLite file is too large for this machine.
+
 
 

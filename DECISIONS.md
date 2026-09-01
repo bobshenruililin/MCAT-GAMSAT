@@ -167,5 +167,15 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: The real paper is 30 minutes of writing. Retrieval of craft is not the same as producing under the clock. Rotating packs prevent one memorised quote set.
 - Rejected: Auto-scoring essays; claiming ACER percentiles; forbidding the studio because NORTH_STAR says retrieval (the MCQ bank still is).
 
+## 2026-09-01 — 100× bank via weight-allocated factory, not uniform clones
+- Decision: Additional volume is `HAND_BANK × 100 = 84,700` items from `src/factory`, allocated by `exam_weight` with a floor of 40 per weighted topic. Designs: code-checked quantitative stems, sibling-discrimination conceptuals, combinatorial CARS/S1 passages (1Q, passage-locked), experimental tables (4Q), S2 craft MCQs. Output is generated at `pnpm factory:emit` / bootstrap into `content/batches/factory/` (gitignored JSON). Never `verified=true`. Engine/UI not redesigned.
+- Rationale: Expected score ≈ Σ P(correct on exam grain i) × exam_weight(i). One card per topic is memorization; CARS is 12.5% of combined weight so it gets more volume as passages, not as fake science discretes. Newest prompt asked for 100× content and design range. NORTH_STAR: ingest+critic, no hand-rolled FSRS, no official clones.
+- Rejected: 84,700 identical paraphrases of the 847; dumping volume only on easy science; committing ~100MB JSON to git; auto-verify; a second scheduler.
+
+## 2026-09-01 — S2 quote packs expanded to ten per task
+- Decision: `/write` now rotates ten Task A and ten Task B packs (still UTC-day index). Factory S2 MCQs remain retrieval of craft; the studio remains production.
+- Rationale: Five packs were too few for a 30-minute paper trained across months. More packs raise the chance the sitting is a new quote set.
+- Rejected: Auto-generated quote salad; scoring the essay with an LLM as an official mark.
+
 
 

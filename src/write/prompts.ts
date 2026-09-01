@@ -77,6 +77,76 @@ export const TASK_A_PACKS: WritingTask[] = [
     prompt:
       "Write a comment on belonging, state power, or memory. Take a position. At least two quotes must do work.",
   },
+  {
+    id: "a-exam",
+    title: "Task A — sociopolitical comment",
+    minutes: 30,
+    quotes: [
+      "A test that only rewards speed will mint a country of people who never reread.",
+      "Merit is a story institutions tell about their own sorting.",
+      "We confuse percentile with virtue because the spreadsheet is tidy.",
+      "The student who cannot buy time still sits the same clock.",
+      "Selection is not the same as education, though both use a hall.",
+    ],
+    prompt:
+      "Write a comment on testing, merit, or who gets time. Take a position a marker could disagree with. Two quotes as pressure.",
+  },
+  {
+    id: "a-city",
+    title: "Task A — sociopolitical comment",
+    minutes: 30,
+    quotes: [
+      "A city is a negotiation that forgot it was a negotiation.",
+      "Housing policy is autobiography written by people who already have keys.",
+      "The street is public until a camera decides it is content.",
+      "We call it vibrancy when we like the noise and nuisance when we do not.",
+      "Parks are easy to love; the bus at 5 a.m. is the actual commons.",
+    ],
+    prompt:
+      "Write a comment on cities, housing, or public space. Position first. Two quotes must work.",
+  },
+  {
+    id: "a-climate",
+    title: "Task A — sociopolitical comment",
+    minutes: 30,
+    quotes: [
+      "The flood does not care that the report was due next quarter.",
+      "We inherited a thermostat and called it destiny.",
+      "Adaptation without mitigation is a polite word for abandonment.",
+      "The people who emit least own the worst weather.",
+      "Hope is a plan with a budget, or it is a mood.",
+    ],
+    prompt:
+      "Write a comment on climate, duty, or delay. Take a stand. At least two quotes as interlocutors.",
+  },
+  {
+    id: "a-care",
+    title: "Task A — sociopolitical comment",
+    minutes: 30,
+    quotes: [
+      "Care work is the economy that is left out of the economy.",
+      "A society that cannot afford nurses can always afford a slogan.",
+      "Love is not a labour policy, but labour policy decides who gets to love in daylight.",
+      "The night shift is a constitutional question.",
+      "We clap for heroes so we do not have to roster them.",
+    ],
+    prompt:
+      "Write a comment on care, labour, or who is visible after hours. Two quotes engaged, not listed.",
+  },
+  {
+    id: "a-history",
+    title: "Task A — sociopolitical comment",
+    minutes: 30,
+    quotes: [
+      "A statue is an argument that ran out of sentences.",
+      "Forgetting is also a curriculum.",
+      "The archive is never full; it is only staffed.",
+      "We ask the past to apologise using the grammar of the present.",
+      "Reparation without renaming is a receipt.",
+    ],
+    prompt:
+      "Write a comment on memory, monuments, or curriculum. Take a position. Two quotes as pressure.",
+  },
 ];
 
 export const TASK_B_PACKS: WritingTask[] = [
@@ -149,6 +219,76 @@ export const TASK_B_PACKS: WritingTask[] = [
     ],
     prompt:
       "Write a reflective piece on failure, shame, or beginning again. Stay particular. Let at least two quotes bruise the draft.",
+  },
+  {
+    id: "b-water",
+    title: "Task B — personal / reflective",
+    minutes: 30,
+    quotes: [
+      "I learned the depth of a pool by miscounting the rungs.",
+      "Salt on the skin is a kind of honesty.",
+      "We returned to the same beach so the year would have a hinge.",
+      "The towel never dried in time; that was the weather of childhood.",
+      "I still hear the lifeguard's whistle when a room goes quiet.",
+    ],
+    prompt:
+      "Write a reflective piece. Stay in water, weather, or a repeated place. Two quotes, used.",
+  },
+  {
+    id: "b-name",
+    title: "Task B — personal / reflective",
+    minutes: 30,
+    quotes: [
+      "My name arrived in pieces at the school gate.",
+      "I practised the easy version until it felt like theft.",
+      "Correction is a small violence we learn to request.",
+      "At home the vowels were longer.",
+      "I signed the form and abandoned a syllable.",
+    ],
+    prompt:
+      "Write a reflective piece on naming, language, or being misheard. Particular scene. Two quotes.",
+  },
+  {
+    id: "b-night",
+    title: "Task B — personal / reflective",
+    minutes: 30,
+    quotes: [
+      "The night shift of the mind starts when the house is finally quiet.",
+      "I kept the lamp on so the thought would have to share the room.",
+      "Insomnia is a committee that does not vote.",
+      "Dawn is not a metaphor when you have been waiting for it as a clock.",
+      "I was gentler in the dark than in the kitchen.",
+    ],
+    prompt:
+      "Write a reflective piece on night, waiting, or a lamp. Stay particular. Two quotes as pressure.",
+  },
+  {
+    id: "b-teacher",
+    title: "Task B — personal / reflective",
+    minutes: 30,
+    quotes: [
+      "A teacher once said my silence was laziness; it was translation time.",
+      "I still write for the person who waited.",
+      "Praise can be a trap if it is the only door.",
+      "The corridor was longer than the lesson.",
+      "I kept the comment in a pocket until it became a spine.",
+    ],
+    prompt:
+      "Write a reflective piece on being taught, or teaching. One corridor, not a CV. Two quotes.",
+  },
+  {
+    id: "b-leave",
+    title: "Task B — personal / reflective",
+    minutes: 30,
+    quotes: [
+      "Leaving was the first adult sentence I finished.",
+      "I packed the wrong weather.",
+      "The station clock was honest; I was not.",
+      "I called it a visit so nobody had to say goodbye correctly.",
+      "The key still fitted. That was the problem.",
+    ],
+    prompt:
+      "Write a reflective piece on leaving or returning. Particular over generic. Two quotes bruise the draft.",
   },
 ];
 

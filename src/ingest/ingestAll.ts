@@ -1,15 +1,8 @@
-import { readdirSync } from "node:fs";
 import path from "node:path";
 import { ingestPath } from "@/ingest/ingest";
+import { listBatchFiles } from "@/ingest/batchFiles";
 
-const BATCH_DIR = path.join(process.cwd(), "content", "batches");
-
-export function listBatchFiles(): string[] {
-  return readdirSync(BATCH_DIR)
-    .filter((name) => /^\d+-.*\.json$/.test(name))
-    .sort()
-    .map((name) => path.join(BATCH_DIR, name));
-}
+export { listBatchFiles };
 
 export function ingestAllBatches(): {
   files: number;

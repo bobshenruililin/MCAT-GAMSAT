@@ -4,9 +4,11 @@ import { items } from "./schema";
 import { seedFromFile, printCounts, TaxonomyError } from "./seed-lib";
 import { ingestAllBatches } from "@/ingest/ingestAll";
 import { removeCoveredPlaceholders } from "@/ingest/ingest";
+import { emitFactoryBatches } from "@/factory/emit";
+import { FACTORY_TARGET } from "@/factory/types";
 
 /**
- * Taxonomy + every real batch. No PLACEHOLDER items.
+ * Taxonomy + every real batch + 100× factory bank.
  * Usage: pnpm db:reset && pnpm bootstrap
  */
 try {
@@ -14,6 +16,15 @@ try {
   const nodes = seedFromFile(db);
   printCounts(nodes);
   sqlite.close();
+
+  const requested = process.env.FACTORY_TARGET;
+  const target =
+    requested === undefined || requested === ""
+      ? FACTORY_TARGET
+      : Number(requested);
+  if (Number.isFinite(target) && target > 0) {
+    emitFactoryBatches(target);
+  }
 
   const stats = ingestAllBatches();
   const { sqlite: sqlite2, db: db2 } = openDb();
