@@ -1,0 +1,3389 @@
+{
+  "header": "AI-emitted, verify against official outline.",
+  "nodes": [
+    {
+      "id": "MCAT.FC1",
+      "parent_id": null,
+      "exam": "mcat",
+      "level": "section",
+      "name": "Foundational Concept 1",
+      "description": "Biomolecules have unique properties that determine how they contribute to the structure and function of cells and how they participate in the processes necessary to maintain life.",
+      "exam_weight": 0.1375
+    },
+    {
+      "id": "MCAT.FC1.1A",
+      "parent_id": "MCAT.FC1",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Structure and function of proteins and their constituent amino acids",
+      "description": "Amino acids, protein structure, non-enzymatic protein function, enzymes, and control of enzyme activity.",
+      "exam_weight": 0.034375
+    },
+    {
+      "id": "MCAT.FC1.1A.t1",
+      "parent_id": "MCAT.FC1.1A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Amino Acids",
+      "description": "Absolute configuration, dipolar ions, classification, cysteine linkage, peptide bond, hydrolysis.",
+      "exam_weight": 0.006875
+    },
+    {
+      "id": "MCAT.FC1.1A.t2",
+      "parent_id": "MCAT.FC1.1A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Protein Structure",
+      "description": "Primary through quaternary structure, conformational stability, isoelectric point, electrophoresis.",
+      "exam_weight": 0.006875
+    },
+    {
+      "id": "MCAT.FC1.1A.t3",
+      "parent_id": "MCAT.FC1.1A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Non-Enzymatic Protein Function",
+      "description": "Binding, immune, motor, and structural protein roles.",
+      "exam_weight": 0.006875
+    },
+    {
+      "id": "MCAT.FC1.1A.t4",
+      "parent_id": "MCAT.FC1.1A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Enzyme Structure and Function",
+      "description": "Catalysis, classification, specificity, active-site and induced-fit models, cofactors.",
+      "exam_weight": 0.006875
+    },
+    {
+      "id": "MCAT.FC1.1A.t5",
+      "parent_id": "MCAT.FC1.1A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Control of Enzyme Activity",
+      "description": "Michaelis\u2013Menten, cooperativity, inhibition types, allostery, zymogens.",
+      "exam_weight": 0.006875
+    },
+    {
+      "id": "MCAT.FC1.1B",
+      "parent_id": "MCAT.FC1",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Transmission of genetic information from the gene to the protein",
+      "description": "Nucleic acids, replication, repair, the genetic code, transcription, translation, and regulation.",
+      "exam_weight": 0.034375
+    },
+    {
+      "id": "MCAT.FC1.1B.t1",
+      "parent_id": "MCAT.FC1.1B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Nucleic Acid Structure and Function",
+      "description": "Nucleotides, Watson\u2013Crick DNA, base pairing, denaturation and hybridization.",
+      "exam_weight": 0.0034375
+    },
+    {
+      "id": "MCAT.FC1.1B.t2",
+      "parent_id": "MCAT.FC1.1B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "DNA Replication",
+      "description": "Semiconservative replication, enzymes, origins, telomeres.",
+      "exam_weight": 0.0034375
+    },
+    {
+      "id": "MCAT.FC1.1B.t3",
+      "parent_id": "MCAT.FC1.1B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Repair of DNA",
+      "description": "Mismatch, nucleotide-excision, and related repair during and after replication.",
+      "exam_weight": 0.0034375
+    },
+    {
+      "id": "MCAT.FC1.1B.t4",
+      "parent_id": "MCAT.FC1.1B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Genetic Code",
+      "description": "Codons, degeneracy, start and stop, wobble.",
+      "exam_weight": 0.0034375
+    },
+    {
+      "id": "MCAT.FC1.1B.t5",
+      "parent_id": "MCAT.FC1.1B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Transcription",
+      "description": "mRNA, tRNA, rRNA, eukaryotic processing, spliceosomes.",
+      "exam_weight": 0.0034375
+    },
+    {
+      "id": "MCAT.FC1.1B.t6",
+      "parent_id": "MCAT.FC1.1B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Translation",
+      "description": "Ribosomes, initiation/elongation/termination, post-translational modification.",
+      "exam_weight": 0.0034375
+    },
+    {
+      "id": "MCAT.FC1.1B.t7",
+      "parent_id": "MCAT.FC1.1B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Eukaryotic Chromosome Organization",
+      "description": "Nucleosomes, heterochromatin, telomeres, centromeres.",
+      "exam_weight": 0.0034375
+    },
+    {
+      "id": "MCAT.FC1.1B.t8",
+      "parent_id": "MCAT.FC1.1B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Control of Gene Expression in Prokaryotes",
+      "description": "Operons, Jacob\u2013Monod, positive and negative control.",
+      "exam_weight": 0.0034375
+    },
+    {
+      "id": "MCAT.FC1.1B.t9",
+      "parent_id": "MCAT.FC1.1B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Control of Gene Expression in Eukaryotes",
+      "description": "Transcription factors, chromatin, methylation, noncoding RNA, oncogenes.",
+      "exam_weight": 0.0034375
+    },
+    {
+      "id": "MCAT.FC1.1B.t10",
+      "parent_id": "MCAT.FC1.1B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Recombinant DNA and Biotechnology",
+      "description": "Restriction enzymes, cloning, PCR, hybridization, expression systems, sequencing.",
+      "exam_weight": 0.0034375
+    },
+    {
+      "id": "MCAT.FC1.1C",
+      "parent_id": "MCAT.FC1",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Transmission of heritable information from generation to generation and the processes that increase genetic diversity",
+      "description": "Mendelian genetics, meiosis, analytic methods, and evolution.",
+      "exam_weight": 0.034375
+    },
+    {
+      "id": "MCAT.FC1.1C.t1",
+      "parent_id": "MCAT.FC1.1C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Evidence that DNA is Genetic Material",
+      "description": "Classic experiments establishing DNA as the hereditary molecule.",
+      "exam_weight": 0.006875
+    },
+    {
+      "id": "MCAT.FC1.1C.t2",
+      "parent_id": "MCAT.FC1.1C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Mendelian Concepts",
+      "description": "Gene, allele, dominance patterns, penetrance, expressivity.",
+      "exam_weight": 0.006875
+    },
+    {
+      "id": "MCAT.FC1.1C.t3",
+      "parent_id": "MCAT.FC1.1C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Meiosis and Other Factors Affecting Genetic Variability",
+      "description": "Meiosis vs mitosis, linkage, recombination, sex linkage, mutation, extranuclear inheritance.",
+      "exam_weight": 0.006875
+    },
+    {
+      "id": "MCAT.FC1.1C.t4",
+      "parent_id": "MCAT.FC1.1C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Analytic Methods",
+      "description": "Hardy\u2013Weinberg, testcross, gene mapping, biometry.",
+      "exam_weight": 0.006875
+    },
+    {
+      "id": "MCAT.FC1.1C.t5",
+      "parent_id": "MCAT.FC1.1C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Evolution",
+      "description": "Natural selection, fitness, speciation, drift, bottlenecks.",
+      "exam_weight": 0.006875
+    },
+    {
+      "id": "MCAT.FC1.1D",
+      "parent_id": "MCAT.FC1",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Principles of bioenergetics and fuel molecule metabolism",
+      "description": "Thermodynamics of ATP, carbohydrate and fat metabolism, and hormonal integration.",
+      "exam_weight": 0.034375
+    },
+    {
+      "id": "MCAT.FC1.1D.t1",
+      "parent_id": "MCAT.FC1.1D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Principles of Bioenergetics",
+      "description": "Free energy, ATP, phosphoryl transfer, biological redox, flavoproteins.",
+      "exam_weight": 0.004296875
+    },
+    {
+      "id": "MCAT.FC1.1D.t2",
+      "parent_id": "MCAT.FC1.1D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Carbohydrates",
+      "description": "Nomenclature, stereochemistry, glycoside linkage, mono/di/polysaccharides.",
+      "exam_weight": 0.004296875
+    },
+    {
+      "id": "MCAT.FC1.1D.t3",
+      "parent_id": "MCAT.FC1.1D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Glycolysis, Gluconeogenesis, and the Pentose Phosphate Pathway",
+      "description": "Aerobic and anaerobic glycolysis, gluconeogenesis, PPP.",
+      "exam_weight": 0.004296875
+    },
+    {
+      "id": "MCAT.FC1.1D.t4",
+      "parent_id": "MCAT.FC1.1D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Principles of Metabolic Regulation",
+      "description": "Steady state, glycogen metabolism, hormonal and allosteric control.",
+      "exam_weight": 0.004296875
+    },
+    {
+      "id": "MCAT.FC1.1D.t5",
+      "parent_id": "MCAT.FC1.1D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Citric Acid Cycle",
+      "description": "Acetyl-CoA, cycle reactions, regulation, net yield.",
+      "exam_weight": 0.004296875
+    },
+    {
+      "id": "MCAT.FC1.1D.t6",
+      "parent_id": "MCAT.FC1.1D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Metabolism of Fatty Acids and Proteins",
+      "description": "Beta-oxidation, ketones, lipogenesis, amino-acid catabolism.",
+      "exam_weight": 0.004296875
+    },
+    {
+      "id": "MCAT.FC1.1D.t7",
+      "parent_id": "MCAT.FC1.1D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Oxidative Phosphorylation",
+      "description": "ETC, chemiosmosis, uncouplers, apoptosis and oxidative stress.",
+      "exam_weight": 0.004296875
+    },
+    {
+      "id": "MCAT.FC1.1D.t8",
+      "parent_id": "MCAT.FC1.1D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Hormonal Regulation and Integration of Metabolism",
+      "description": "Tissue-specific metabolism, fuel hormones, obesity.",
+      "exam_weight": 0.004296875
+    },
+    {
+      "id": "MCAT.FC2",
+      "parent_id": null,
+      "exam": "mcat",
+      "level": "section",
+      "name": "Foundational Concept 2",
+      "description": "Highly organized assemblies of molecules, cells, and organs interact to carry out the functions of living organisms.",
+      "exam_weight": 0.05
+    },
+    {
+      "id": "MCAT.FC2.2A",
+      "parent_id": "MCAT.FC2",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Assemblies of molecules, cells, and groups of cells within unicellular and multicellular organisms",
+      "description": "Membranes, organelles, cytoskeleton, and tissues.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "MCAT.FC2.2A.t1",
+      "parent_id": "MCAT.FC2.2A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Plasma Membrane",
+      "description": "Lipids, fluid mosaic, transport, membrane potential, junctions.",
+      "exam_weight": 0.004166666667
+    },
+    {
+      "id": "MCAT.FC2.2A.t2",
+      "parent_id": "MCAT.FC2.2A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Membrane-Bound Organelles and Defining Characteristics of Eukaryotic Cells",
+      "description": "Nucleus, mitochondria, ER, Golgi, lysosomes, peroxisomes.",
+      "exam_weight": 0.004166666667
+    },
+    {
+      "id": "MCAT.FC2.2A.t3",
+      "parent_id": "MCAT.FC2.2A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Cytoskeleton",
+      "description": "Microfilaments, microtubules, intermediate filaments, cilia, centrioles.",
+      "exam_weight": 0.004166666667
+    },
+    {
+      "id": "MCAT.FC2.2A.t4",
+      "parent_id": "MCAT.FC2.2A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Tissues Formed From Eukaryotic Cells",
+      "description": "Epithelium and connective tissue.",
+      "exam_weight": 0.004166666666
+    },
+    {
+      "id": "MCAT.FC2.2B",
+      "parent_id": "MCAT.FC2",
+      "exam": "mcat",
+      "level": "category",
+      "name": "The structure, growth, physiology, and genetics of prokaryotes and viruses",
+      "description": "Cell theory, bacteria, archaea, and viruses.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "MCAT.FC2.2B.t1",
+      "parent_id": "MCAT.FC2.2B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Cell Theory",
+      "description": "History and impact of cell theory.",
+      "exam_weight": 0.002777777778
+    },
+    {
+      "id": "MCAT.FC2.2B.t2",
+      "parent_id": "MCAT.FC2.2B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Classification and Structure of Prokaryotic Cells",
+      "description": "Domains, shapes, cell wall, flagella.",
+      "exam_weight": 0.002777777778
+    },
+    {
+      "id": "MCAT.FC2.2B.t3",
+      "parent_id": "MCAT.FC2.2B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Growth and Physiology of Prokaryotic Cells",
+      "description": "Fission, growth phases, aerobes/anaerobes, antibiotic resistance.",
+      "exam_weight": 0.002777777778
+    },
+    {
+      "id": "MCAT.FC2.2B.t4",
+      "parent_id": "MCAT.FC2.2B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Genetics of Prokaryotic Cells",
+      "description": "Plasmids, transformation, conjugation, transposons.",
+      "exam_weight": 0.002777777778
+    },
+    {
+      "id": "MCAT.FC2.2B.t5",
+      "parent_id": "MCAT.FC2.2B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Virus Structure",
+      "description": "Capsid, envelope, bacteriophage, genome types.",
+      "exam_weight": 0.002777777778
+    },
+    {
+      "id": "MCAT.FC2.2B.t6",
+      "parent_id": "MCAT.FC2.2B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Viral Life Cycle",
+      "description": "Lytic/lysogenic, transduction, retroviruses, prions and viroids.",
+      "exam_weight": 0.002777777777
+    },
+    {
+      "id": "MCAT.FC2.2C",
+      "parent_id": "MCAT.FC2",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Processes of cell division, differentiation, and specialization",
+      "description": "Mitosis, development, and cell specialization.",
+      "exam_weight": 0.016666666666
+    },
+    {
+      "id": "MCAT.FC2.2C.t1",
+      "parent_id": "MCAT.FC2.2C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Mitosis",
+      "description": "Cell-cycle phases, mitotic structures, checkpoints, cancer.",
+      "exam_weight": 0.003333333333
+    },
+    {
+      "id": "MCAT.FC2.2C.t2",
+      "parent_id": "MCAT.FC2.2C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Biosignalling",
+      "description": "Receptor classes relevant to growth and differentiation.",
+      "exam_weight": 0.003333333333
+    },
+    {
+      "id": "MCAT.FC2.2C.t3",
+      "parent_id": "MCAT.FC2.2C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Reproductive System \u2014 Gametogenesis",
+      "description": "Meiotic production of ovum and sperm.",
+      "exam_weight": 0.003333333333
+    },
+    {
+      "id": "MCAT.FC2.2C.t4",
+      "parent_id": "MCAT.FC2.2C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Embryogenesis",
+      "description": "Fertilization through germ layers and neurulation.",
+      "exam_weight": 0.003333333333
+    },
+    {
+      "id": "MCAT.FC2.2C.t5",
+      "parent_id": "MCAT.FC2.2C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Mechanisms of Development",
+      "description": "Determination, differentiation, induction, apoptosis, stem cells.",
+      "exam_weight": 0.003333333334
+    },
+    {
+      "id": "MCAT.FC3",
+      "parent_id": null,
+      "exam": "mcat",
+      "level": "section",
+      "name": "Foundational Concept 3",
+      "description": "Complex systems of tissues and organs sense internal and external environments of multicellular organisms and maintain a stable internal environment.",
+      "exam_weight": 0.0625
+    },
+    {
+      "id": "MCAT.FC3.3A",
+      "parent_id": "MCAT.FC3",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Structure and functions of the nervous and endocrine systems and ways in which these systems coordinate the organ systems",
+      "description": "Neurons, electrochemistry of membranes, and hormones.",
+      "exam_weight": 0.03125
+    },
+    {
+      "id": "MCAT.FC3.3A.t1",
+      "parent_id": "MCAT.FC3.3A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Nervous System: Structure and Function",
+      "description": "CNS/PNS, autonomic branches, reflexes, endocrine integration.",
+      "exam_weight": 0.004464285714
+    },
+    {
+      "id": "MCAT.FC3.3A.t2",
+      "parent_id": "MCAT.FC3.3A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Nerve Cell",
+      "description": "Anatomy, myelin, synapse, resting and action potentials, glia.",
+      "exam_weight": 0.004464285714
+    },
+    {
+      "id": "MCAT.FC3.3A.t3",
+      "parent_id": "MCAT.FC3.3A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Electrochemistry of Excitable Membranes",
+      "description": "Concentration cells, Nernst relation as applied to neurons.",
+      "exam_weight": 0.004464285714
+    },
+    {
+      "id": "MCAT.FC3.3A.t4",
+      "parent_id": "MCAT.FC3.3A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Biosignalling",
+      "description": "GPCRs, ligand- and voltage-gated channels, receptor enzymes.",
+      "exam_weight": 0.004464285714
+    },
+    {
+      "id": "MCAT.FC3.3A.t5",
+      "parent_id": "MCAT.FC3.3A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Lipids in Signalling",
+      "description": "Steroids, terpenes, and related messengers.",
+      "exam_weight": 0.004464285714
+    },
+    {
+      "id": "MCAT.FC3.3A.t6",
+      "parent_id": "MCAT.FC3.3A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Endocrine System: Hormones and Their Sources",
+      "description": "Glands, hormone types, neuroendocrinology.",
+      "exam_weight": 0.004464285714
+    },
+    {
+      "id": "MCAT.FC3.3A.t7",
+      "parent_id": "MCAT.FC3.3A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Endocrine System: Mechanisms of Hormone Action",
+      "description": "Receptors, second messengers, transport, feedback.",
+      "exam_weight": 0.004464285716
+    },
+    {
+      "id": "MCAT.FC3.3B",
+      "parent_id": "MCAT.FC3",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Structure and integrative functions of the main organ systems",
+      "description": "Physiology of the major organ systems.",
+      "exam_weight": 0.03125
+    },
+    {
+      "id": "MCAT.FC3.3B.t1",
+      "parent_id": "MCAT.FC3.3B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Respiratory System",
+      "description": "Ventilation, gas exchange, Henry's law, pH, neural control.",
+      "exam_weight": 0.002840909091
+    },
+    {
+      "id": "MCAT.FC3.3B.t2",
+      "parent_id": "MCAT.FC3.3B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Circulatory System",
+      "description": "Heart, vessels, blood, hemoglobin, Starling and pressure-flow.",
+      "exam_weight": 0.002840909091
+    },
+    {
+      "id": "MCAT.FC3.3B.t3",
+      "parent_id": "MCAT.FC3.3B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Lymphatic System",
+      "description": "Fluid return, lymphocyte production, transport of lipids.",
+      "exam_weight": 0.002840909091
+    },
+    {
+      "id": "MCAT.FC3.3B.t4",
+      "parent_id": "MCAT.FC3.3B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Immune System",
+      "description": "Innate vs adaptive, antibodies, MHC, clonal selection.",
+      "exam_weight": 0.002840909091
+    },
+    {
+      "id": "MCAT.FC3.3B.t5",
+      "parent_id": "MCAT.FC3.3B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Digestive System",
+      "description": "GI organs, enzymes, absorption, enteric and endocrine control.",
+      "exam_weight": 0.002840909091
+    },
+    {
+      "id": "MCAT.FC3.3B.t6",
+      "parent_id": "MCAT.FC3.3B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Excretory System",
+      "description": "Nephron, countercurrent multiplier, osmoregulation, acid\u2013base.",
+      "exam_weight": 0.002840909091
+    },
+    {
+      "id": "MCAT.FC3.3B.t7",
+      "parent_id": "MCAT.FC3.3B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Reproductive System",
+      "description": "Gonads, genitalia, hormonal cycles, pregnancy.",
+      "exam_weight": 0.002840909091
+    },
+    {
+      "id": "MCAT.FC3.3B.t8",
+      "parent_id": "MCAT.FC3.3B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Muscle System",
+      "description": "Muscle types, NMJ, contraction control, oxygen debt.",
+      "exam_weight": 0.002840909091
+    },
+    {
+      "id": "MCAT.FC3.3B.t9",
+      "parent_id": "MCAT.FC3.3B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Specialized Cell \u2014 Muscle Cell",
+      "description": "Sarcomere, sliding filament, troponin, calcium.",
+      "exam_weight": 0.002840909091
+    },
+    {
+      "id": "MCAT.FC3.3B.t10",
+      "parent_id": "MCAT.FC3.3B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Skeletal System",
+      "description": "Bone types, matrix, joints, endocrine control of calcium.",
+      "exam_weight": 0.002840909091
+    },
+    {
+      "id": "MCAT.FC3.3B.t11",
+      "parent_id": "MCAT.FC3.3B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Skin System",
+      "description": "Layers, thermoregulation, barrier function.",
+      "exam_weight": 0.00284090909
+    },
+    {
+      "id": "MCAT.FC4",
+      "parent_id": null,
+      "exam": "mcat",
+      "level": "section",
+      "name": "Foundational Concept 4",
+      "description": "Complex living organisms transport materials, sense their environment, process signals, and respond to changes using processes understood in terms of physical principles.",
+      "exam_weight": 0.1
+    },
+    {
+      "id": "MCAT.FC4.4A",
+      "parent_id": "MCAT.FC4",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Translational motion, forces, work, energy, and equilibrium in living systems",
+      "description": "Mechanics applied to living systems.",
+      "exam_weight": 0.02
+    },
+    {
+      "id": "MCAT.FC4.4A.t1",
+      "parent_id": "MCAT.FC4.4A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Translational Motion",
+      "description": "Displacement, velocity, acceleration, units.",
+      "exam_weight": 0.003333333333
+    },
+    {
+      "id": "MCAT.FC4.4A.t2",
+      "parent_id": "MCAT.FC4.4A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Force",
+      "description": "Newton's laws, friction, center of mass.",
+      "exam_weight": 0.003333333333
+    },
+    {
+      "id": "MCAT.FC4.4A.t3",
+      "parent_id": "MCAT.FC4.4A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Equilibrium",
+      "description": "Force and torque balance, lever arms.",
+      "exam_weight": 0.003333333333
+    },
+    {
+      "id": "MCAT.FC4.4A.t4",
+      "parent_id": "MCAT.FC4.4A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Work",
+      "description": "W = Fd cos\u03b8, mechanical advantage, work\u2013energy theorem.",
+      "exam_weight": 0.003333333333
+    },
+    {
+      "id": "MCAT.FC4.4A.t5",
+      "parent_id": "MCAT.FC4.4A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Energy of Point Object Systems",
+      "description": "KE, PE, conservation, power.",
+      "exam_weight": 0.003333333333
+    },
+    {
+      "id": "MCAT.FC4.4A.t6",
+      "parent_id": "MCAT.FC4.4A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Periodic Motion",
+      "description": "Amplitude, frequency, waves.",
+      "exam_weight": 0.003333333335
+    },
+    {
+      "id": "MCAT.FC4.4B",
+      "parent_id": "MCAT.FC4",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Importance of fluids for the circulation of blood, gas movement, and gas exchange",
+      "description": "Fluids, circulation, and gases.",
+      "exam_weight": 0.02
+    },
+    {
+      "id": "MCAT.FC4.4B.t1",
+      "parent_id": "MCAT.FC4.4B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Fluids",
+      "description": "Density, buoyancy, hydrostatic pressure, Poiseuille, Bernoulli, surface tension.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "MCAT.FC4.4B.t2",
+      "parent_id": "MCAT.FC4.4B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Circulatory Pressure and Flow",
+      "description": "Arterial vs venous pressure and flow characteristics.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "MCAT.FC4.4B.t3",
+      "parent_id": "MCAT.FC4.4B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Gas Phase",
+      "description": "Ideal gas laws, kinetic theory, partial pressures, real-gas deviations.",
+      "exam_weight": 0.006666666666
+    },
+    {
+      "id": "MCAT.FC4.4C",
+      "parent_id": "MCAT.FC4",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Electrochemistry and electrical circuits and their elements",
+      "description": "Electrostatics, circuits, magnetism, and electrochemical cells.",
+      "exam_weight": 0.02
+    },
+    {
+      "id": "MCAT.FC4.4C.t1",
+      "parent_id": "MCAT.FC4.4C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Electrostatics",
+      "description": "Charge, Coulomb, fields, potential.",
+      "exam_weight": 0.004
+    },
+    {
+      "id": "MCAT.FC4.4C.t2",
+      "parent_id": "MCAT.FC4.4C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Circuit Elements",
+      "description": "Current, Ohm, series/parallel R and C, resistivity, meters.",
+      "exam_weight": 0.004
+    },
+    {
+      "id": "MCAT.FC4.4C.t3",
+      "parent_id": "MCAT.FC4.4C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Magnetism",
+      "description": "B fields, Lorentz force on moving charges.",
+      "exam_weight": 0.004
+    },
+    {
+      "id": "MCAT.FC4.4C.t4",
+      "parent_id": "MCAT.FC4.4C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Electrochemistry",
+      "description": "Galvanic and electrolytic cells, Faraday, Nernst, batteries.",
+      "exam_weight": 0.004
+    },
+    {
+      "id": "MCAT.FC4.4C.t5",
+      "parent_id": "MCAT.FC4.4C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Specialized Cell \u2014 Nerve Cell Electrical Properties",
+      "description": "Myelin, nodes of Ranvier, impulse propagation.",
+      "exam_weight": 0.004
+    },
+    {
+      "id": "MCAT.FC4.4D",
+      "parent_id": "MCAT.FC4",
+      "exam": "mcat",
+      "level": "category",
+      "name": "How light and sound interact with matter",
+      "description": "Waves, optics, and molecular spectra.",
+      "exam_weight": 0.02
+    },
+    {
+      "id": "MCAT.FC4.4D.t1",
+      "parent_id": "MCAT.FC4.4D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Sound",
+      "description": "Production, intensity, Doppler, ultrasound, resonance.",
+      "exam_weight": 0.005
+    },
+    {
+      "id": "MCAT.FC4.4D.t2",
+      "parent_id": "MCAT.FC4.4D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Light and Electromagnetic Radiation",
+      "description": "Interference, diffraction, polarization, EM spectrum.",
+      "exam_weight": 0.005
+    },
+    {
+      "id": "MCAT.FC4.4D.t3",
+      "parent_id": "MCAT.FC4.4D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Molecular Structure and Absorption Spectra",
+      "description": "IR, UV-vis, NMR.",
+      "exam_weight": 0.005
+    },
+    {
+      "id": "MCAT.FC4.4D.t4",
+      "parent_id": "MCAT.FC4.4D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Geometrical Optics",
+      "description": "Reflection, refraction, mirrors, lenses, the eye.",
+      "exam_weight": 0.005
+    },
+    {
+      "id": "MCAT.FC4.4E",
+      "parent_id": "MCAT.FC4",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Atoms, nuclear decay, electronic structure, and atomic chemical behavior",
+      "description": "Nuclear physics, atomic structure, periodic trends, and stoichiometry.",
+      "exam_weight": 0.02
+    },
+    {
+      "id": "MCAT.FC4.4E.t1",
+      "parent_id": "MCAT.FC4.4E",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Atomic Nucleus",
+      "description": "Isotopes, binding energy, decay, half-life, mass spectrometry.",
+      "exam_weight": 0.004
+    },
+    {
+      "id": "MCAT.FC4.4E.t2",
+      "parent_id": "MCAT.FC4.4E",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Electronic Structure",
+      "description": "Orbitals, spectra, Pauli, photoelectric effect, Heisenberg.",
+      "exam_weight": 0.004
+    },
+    {
+      "id": "MCAT.FC4.4E.t3",
+      "parent_id": "MCAT.FC4.4E",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "The Periodic Table \u2014 Classification of Elements",
+      "description": "Groups by electronic structure.",
+      "exam_weight": 0.004
+    },
+    {
+      "id": "MCAT.FC4.4E.t4",
+      "parent_id": "MCAT.FC4.4E",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "The Periodic Table \u2014 Variations of Chemical Properties",
+      "description": "IE, EA, EN, atomic and ionic size.",
+      "exam_weight": 0.004
+    },
+    {
+      "id": "MCAT.FC4.4E.t5",
+      "parent_id": "MCAT.FC4.4E",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Stoichiometry",
+      "description": "Moles, limiting reagent, oxidation numbers, balancing including redox.",
+      "exam_weight": 0.004
+    },
+    {
+      "id": "MCAT.FC5",
+      "parent_id": null,
+      "exam": "mcat",
+      "level": "section",
+      "name": "Foundational Concept 5",
+      "description": "The principles that govern chemical interactions and reactions form the basis for a broader understanding of the molecular dynamics of living systems.",
+      "exam_weight": 0.15
+    },
+    {
+      "id": "MCAT.FC5.5A",
+      "parent_id": "MCAT.FC5",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Unique nature of water and its solutions",
+      "description": "Acids, bases, ions, solubility, and titration.",
+      "exam_weight": 0.03
+    },
+    {
+      "id": "MCAT.FC5.5A.t1",
+      "parent_id": "MCAT.FC5.5A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Acid/Base Equilibria",
+      "description": "Kw, pH, conjugates, Ka/Kb, buffers.",
+      "exam_weight": 0.0075
+    },
+    {
+      "id": "MCAT.FC5.5A.t2",
+      "parent_id": "MCAT.FC5.5A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Ions in Solutions",
+      "description": "Common ions, hydration, hydronium.",
+      "exam_weight": 0.0075
+    },
+    {
+      "id": "MCAT.FC5.5A.t3",
+      "parent_id": "MCAT.FC5.5A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Solubility",
+      "description": "Molarity, Ksp, common-ion effect, complex ions.",
+      "exam_weight": 0.0075
+    },
+    {
+      "id": "MCAT.FC5.5A.t4",
+      "parent_id": "MCAT.FC5.5A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Titration",
+      "description": "Indicators, neutralization curves, redox titrations.",
+      "exam_weight": 0.0075
+    },
+    {
+      "id": "MCAT.FC5.5B",
+      "parent_id": "MCAT.FC5",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Nature of molecules and intermolecular interactions",
+      "description": "Covalent bonding, stereochemistry, and intermolecular forces.",
+      "exam_weight": 0.03
+    },
+    {
+      "id": "MCAT.FC5.5B.t1",
+      "parent_id": "MCAT.FC5.5B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Covalent Bond",
+      "description": "Lewis, VSEPR, hybridization, resonance, formal charge.",
+      "exam_weight": 0.01
+    },
+    {
+      "id": "MCAT.FC5.5B.t2",
+      "parent_id": "MCAT.FC5.5B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Stereochemistry of Covalently Bonded Molecules",
+      "description": "Isomers, R/S, E/Z, optical activity.",
+      "exam_weight": 0.01
+    },
+    {
+      "id": "MCAT.FC5.5B.t3",
+      "parent_id": "MCAT.FC5.5B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Liquid Phase \u2014 Intermolecular Forces",
+      "description": "Hydrogen bonding, dipole, London forces.",
+      "exam_weight": 0.01
+    },
+    {
+      "id": "MCAT.FC5.5C",
+      "parent_id": "MCAT.FC5",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Separation and purification methods",
+      "description": "Extraction, distillation, chromatography, electrophoresis.",
+      "exam_weight": 0.03
+    },
+    {
+      "id": "MCAT.FC5.5C.t1",
+      "parent_id": "MCAT.FC5.5C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Extraction and Distillation",
+      "description": "Partition between immiscible solvents; simple and fractional distillation.",
+      "exam_weight": 0.0075
+    },
+    {
+      "id": "MCAT.FC5.5C.t2",
+      "parent_id": "MCAT.FC5.5C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Chromatography",
+      "description": "TLC, paper, column, HPLC, GC, size-exclusion, ion-exchange, affinity.",
+      "exam_weight": 0.0075
+    },
+    {
+      "id": "MCAT.FC5.5C.t3",
+      "parent_id": "MCAT.FC5.5C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Electrophoresis and Peptide Purification",
+      "description": "SDS-PAGE, isoelectric focusing, quantitative analysis.",
+      "exam_weight": 0.0075
+    },
+    {
+      "id": "MCAT.FC5.5C.t4",
+      "parent_id": "MCAT.FC5.5C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Resolution of Enantiomers",
+      "description": "Racemic mixtures and chiral separation.",
+      "exam_weight": 0.0075
+    },
+    {
+      "id": "MCAT.FC5.5D",
+      "parent_id": "MCAT.FC5",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Structure, function, and reactivity of biologically-relevant molecules",
+      "description": "Nucleotides, amino acids, lipids, carbohydrates, and organic functional-group chemistry.",
+      "exam_weight": 0.03
+    },
+    {
+      "id": "MCAT.FC5.5D.t1",
+      "parent_id": "MCAT.FC5.5D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Nucleotides and Nucleic Acids",
+      "description": "Composition, backbone, DNA chemistry.",
+      "exam_weight": 0.0025
+    },
+    {
+      "id": "MCAT.FC5.5D.t2",
+      "parent_id": "MCAT.FC5.5D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Amino Acids, Peptides, Proteins",
+      "description": "Structure, Strecker and Gabriel synthesis, peptide reactions.",
+      "exam_weight": 0.0025
+    },
+    {
+      "id": "MCAT.FC5.5D.t3",
+      "parent_id": "MCAT.FC5.5D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Three-Dimensional Protein Structure",
+      "description": "Folding, solvation layer, denaturation.",
+      "exam_weight": 0.0025
+    },
+    {
+      "id": "MCAT.FC5.5D.t4",
+      "parent_id": "MCAT.FC5.5D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Non-Enzymatic Protein Function",
+      "description": "Binding and structural roles in a chemical context.",
+      "exam_weight": 0.0025
+    },
+    {
+      "id": "MCAT.FC5.5D.t5",
+      "parent_id": "MCAT.FC5.5D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Lipids",
+      "description": "Triacylglycerols, phospholipids, steroids, fat-soluble vitamins, prostaglandins.",
+      "exam_weight": 0.0025
+    },
+    {
+      "id": "MCAT.FC5.5D.t6",
+      "parent_id": "MCAT.FC5.5D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Carbohydrates",
+      "description": "Cyclic forms, epimers, glycosides, tautomerism.",
+      "exam_weight": 0.0025
+    },
+    {
+      "id": "MCAT.FC5.5D.t7",
+      "parent_id": "MCAT.FC5.5D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Aldehydes and Ketones",
+      "description": "Nucleophilic addition, enolates, aldol.",
+      "exam_weight": 0.0025
+    },
+    {
+      "id": "MCAT.FC5.5D.t8",
+      "parent_id": "MCAT.FC5.5D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Alcohols",
+      "description": "Acidity, oxidation, substitution, protecting groups.",
+      "exam_weight": 0.0025
+    },
+    {
+      "id": "MCAT.FC5.5D.t9",
+      "parent_id": "MCAT.FC5.5D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Carboxylic Acids",
+      "description": "Acidity, derivatives formation, decarboxylation.",
+      "exam_weight": 0.0025
+    },
+    {
+      "id": "MCAT.FC5.5D.t10",
+      "parent_id": "MCAT.FC5.5D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Acid Derivatives",
+      "description": "Anhydrides, amides, esters, relative reactivity, \u03b2-lactams.",
+      "exam_weight": 0.0025
+    },
+    {
+      "id": "MCAT.FC5.5D.t11",
+      "parent_id": "MCAT.FC5.5D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Phenols",
+      "description": "Acidity and biological quinone redox.",
+      "exam_weight": 0.0025
+    },
+    {
+      "id": "MCAT.FC5.5D.t12",
+      "parent_id": "MCAT.FC5.5D",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Polycyclic and Heterocyclic Aromatic Compounds",
+      "description": "Aromatic heterocycles in biomolecules.",
+      "exam_weight": 0.0025
+    },
+    {
+      "id": "MCAT.FC5.5E",
+      "parent_id": "MCAT.FC5",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Principles of chemical thermodynamics and kinetics",
+      "description": "Enzyme kinetics, bioenergetics, thermochemistry, and chemical kinetics.",
+      "exam_weight": 0.03
+    },
+    {
+      "id": "MCAT.FC5.5E.t1",
+      "parent_id": "MCAT.FC5.5E",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Enzymes",
+      "description": "Classification, MM kinetics, inhibition, regulation.",
+      "exam_weight": 0.0075
+    },
+    {
+      "id": "MCAT.FC5.5E.t2",
+      "parent_id": "MCAT.FC5.5E",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Principles of Bioenergetics",
+      "description": "ATP, redox carriers, \u0394G and Keq.",
+      "exam_weight": 0.0075
+    },
+    {
+      "id": "MCAT.FC5.5E.t3",
+      "parent_id": "MCAT.FC5.5E",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Energy Changes in Chemical Reactions",
+      "description": "Laws of thermodynamics, enthalpy, entropy, calorimetry, phase changes.",
+      "exam_weight": 0.0075
+    },
+    {
+      "id": "MCAT.FC5.5E.t4",
+      "parent_id": "MCAT.FC5.5E",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Rate Processes in Chemical Reactions \u2014 Kinetics and Equilibrium",
+      "description": "Rate laws, Arrhenius, kinetic vs thermodynamic control, Le Ch\u00e2telier.",
+      "exam_weight": 0.0075
+    },
+    {
+      "id": "MCAT.FC6",
+      "parent_id": null,
+      "exam": "mcat",
+      "level": "section",
+      "name": "Foundational Concept 6",
+      "description": "Biological, psychological, and sociocultural factors influence the ways that individuals perceive, think about, and react to the world.",
+      "exam_weight": 0.0625
+    },
+    {
+      "id": "MCAT.FC6.6A",
+      "parent_id": "MCAT.FC6",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Sensing the environment",
+      "description": "Sensation, specific senses, and perception.",
+      "exam_weight": 0.020833333333
+    },
+    {
+      "id": "MCAT.FC6.6A.t1",
+      "parent_id": "MCAT.FC6.6A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Sensory Processing",
+      "description": "Thresholds, Weber, signal detection, adaptation, receptor types.",
+      "exam_weight": 0.004166666667
+    },
+    {
+      "id": "MCAT.FC6.6A.t2",
+      "parent_id": "MCAT.FC6.6A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Vision",
+      "description": "Eye structure, pathways, parallel processing, feature detection.",
+      "exam_weight": 0.004166666667
+    },
+    {
+      "id": "MCAT.FC6.6A.t3",
+      "parent_id": "MCAT.FC6.6A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Hearing",
+      "description": "Ear structure, auditory pathways, hair cells.",
+      "exam_weight": 0.004166666667
+    },
+    {
+      "id": "MCAT.FC6.6A.t4",
+      "parent_id": "MCAT.FC6.6A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Other Senses",
+      "description": "Somatosensation, taste, smell, kinesthesia, vestibular sense.",
+      "exam_weight": 0.004166666667
+    },
+    {
+      "id": "MCAT.FC6.6A.t5",
+      "parent_id": "MCAT.FC6.6A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Perception",
+      "description": "Bottom-up/top-down, Gestalt, constancy.",
+      "exam_weight": 0.004166666665
+    },
+    {
+      "id": "MCAT.FC6.6B",
+      "parent_id": "MCAT.FC6",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Making sense of the environment",
+      "description": "Attention, cognition, consciousness, memory, and language.",
+      "exam_weight": 0.020833333333
+    },
+    {
+      "id": "MCAT.FC6.6B.t1",
+      "parent_id": "MCAT.FC6.6B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Attention",
+      "description": "Selective and divided attention.",
+      "exam_weight": 0.004166666667
+    },
+    {
+      "id": "MCAT.FC6.6B.t2",
+      "parent_id": "MCAT.FC6.6B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Cognition",
+      "description": "Information processing, Piaget, problem solving, heuristics, intelligence.",
+      "exam_weight": 0.004166666667
+    },
+    {
+      "id": "MCAT.FC6.6B.t3",
+      "parent_id": "MCAT.FC6.6B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Consciousness",
+      "description": "Sleep stages, circadian rhythms, drugs, hypnosis, meditation.",
+      "exam_weight": 0.004166666667
+    },
+    {
+      "id": "MCAT.FC6.6B.t4",
+      "parent_id": "MCAT.FC6.6B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Memory",
+      "description": "Encoding, storage, retrieval, forgetting, LTP, construction.",
+      "exam_weight": 0.004166666667
+    },
+    {
+      "id": "MCAT.FC6.6B.t5",
+      "parent_id": "MCAT.FC6.6B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Language",
+      "description": "Theories of development, brain areas, language and cognition.",
+      "exam_weight": 0.004166666665
+    },
+    {
+      "id": "MCAT.FC6.6C",
+      "parent_id": "MCAT.FC6",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Responding to the world",
+      "description": "Emotion and stress.",
+      "exam_weight": 0.020833333334
+    },
+    {
+      "id": "MCAT.FC6.6C.t1",
+      "parent_id": "MCAT.FC6.6C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Emotion",
+      "description": "Components, universal emotions, James\u2013Lange, Cannon\u2013Bard, Schachter\u2013Singer, limbic system.",
+      "exam_weight": 0.010416666667
+    },
+    {
+      "id": "MCAT.FC6.6C.t2",
+      "parent_id": "MCAT.FC6.6C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Stress",
+      "description": "Appraisal, stressors, physiological and behavioral responses, coping.",
+      "exam_weight": 0.010416666667
+    },
+    {
+      "id": "MCAT.FC7",
+      "parent_id": null,
+      "exam": "mcat",
+      "level": "section",
+      "name": "Foundational Concept 7",
+      "description": "Biological, psychological, and sociocultural factors influence behavior and behavior change.",
+      "exam_weight": 0.0875
+    },
+    {
+      "id": "MCAT.FC7.7A",
+      "parent_id": "MCAT.FC7",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Individual influences on behavior",
+      "description": "Biology of behavior, personality, disorders, motivation, attitudes.",
+      "exam_weight": 0.029166666667
+    },
+    {
+      "id": "MCAT.FC7.7A.t1",
+      "parent_id": "MCAT.FC7.7A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Biological Bases of Behavior",
+      "description": "Neurons, brain regions, neurotransmitters, endocrine, behavioral genetics, development.",
+      "exam_weight": 0.005833333333
+    },
+    {
+      "id": "MCAT.FC7.7A.t2",
+      "parent_id": "MCAT.FC7.7A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Personality",
+      "description": "Psychoanalytic, humanistic, trait, social-cognitive, biological, behaviorist, situationism.",
+      "exam_weight": 0.005833333333
+    },
+    {
+      "id": "MCAT.FC7.7A.t3",
+      "parent_id": "MCAT.FC7.7A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Psychological Disorders",
+      "description": "Approaches, DSM categories, biological bases including Alzheimer and Parkinson.",
+      "exam_weight": 0.005833333333
+    },
+    {
+      "id": "MCAT.FC7.7A.t4",
+      "parent_id": "MCAT.FC7.7A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Motivation",
+      "description": "Instinct, drive, incentive, need-based theories, biological drives.",
+      "exam_weight": 0.005833333333
+    },
+    {
+      "id": "MCAT.FC7.7A.t5",
+      "parent_id": "MCAT.FC7.7A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Attitudes",
+      "description": "ABC model, foot-in-the-door, cognitive dissonance.",
+      "exam_weight": 0.005833333335
+    },
+    {
+      "id": "MCAT.FC7.7B",
+      "parent_id": "MCAT.FC7",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Social processes that influence human behavior",
+      "description": "Social influence, groups, norms, socialization.",
+      "exam_weight": 0.029166666667
+    },
+    {
+      "id": "MCAT.FC7.7B.t1",
+      "parent_id": "MCAT.FC7.7B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "How the Presence of Others Affects Individual Behavior",
+      "description": "Social facilitation, deindividuation, bystander, social loafing, peer pressure.",
+      "exam_weight": 0.007291666667
+    },
+    {
+      "id": "MCAT.FC7.7B.t2",
+      "parent_id": "MCAT.FC7.7B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Group Decision-making Processes",
+      "description": "Group polarization, groupthink.",
+      "exam_weight": 0.007291666667
+    },
+    {
+      "id": "MCAT.FC7.7B.t3",
+      "parent_id": "MCAT.FC7.7B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Normative and Non-normative Behavior",
+      "description": "Norms, deviance theories, collective behavior.",
+      "exam_weight": 0.007291666667
+    },
+    {
+      "id": "MCAT.FC7.7B.t4",
+      "parent_id": "MCAT.FC7.7B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Socialization",
+      "description": "Agents of socialization.",
+      "exam_weight": 0.007291666666
+    },
+    {
+      "id": "MCAT.FC7.7C",
+      "parent_id": "MCAT.FC7",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Attitude and behavior change",
+      "description": "Learning and theories of attitude change.",
+      "exam_weight": 0.029166666666
+    },
+    {
+      "id": "MCAT.FC7.7C.t1",
+      "parent_id": "MCAT.FC7.7C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Habituation and Dishabituation",
+      "description": "Non-associative learning.",
+      "exam_weight": 0.007291666666
+    },
+    {
+      "id": "MCAT.FC7.7C.t2",
+      "parent_id": "MCAT.FC7.7C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Associative Learning",
+      "description": "Classical and operant conditioning, schedules, biological constraints.",
+      "exam_weight": 0.007291666666
+    },
+    {
+      "id": "MCAT.FC7.7C.t3",
+      "parent_id": "MCAT.FC7.7C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Observational Learning",
+      "description": "Modeling, mirror neurons, vicarious emotion.",
+      "exam_weight": 0.007291666666
+    },
+    {
+      "id": "MCAT.FC7.7C.t4",
+      "parent_id": "MCAT.FC7.7C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Theories of Attitude and Behavior Change",
+      "description": "Elaboration likelihood, social cognitive theory, message/target factors.",
+      "exam_weight": 0.007291666668
+    },
+    {
+      "id": "MCAT.FC8",
+      "parent_id": null,
+      "exam": "mcat",
+      "level": "section",
+      "name": "Foundational Concept 8",
+      "description": "Psychological, sociocultural, and biological factors influence the way we think about ourselves and others, as well as how we interact with others.",
+      "exam_weight": 0.05
+    },
+    {
+      "id": "MCAT.FC8.8A",
+      "parent_id": "MCAT.FC8",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Self-identity",
+      "description": "Self-concept and identity formation.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "MCAT.FC8.8A.t1",
+      "parent_id": "MCAT.FC8.8A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Self-Concept, Self-identity, and Social Identity",
+      "description": "Self-esteem, self-efficacy, locus of control, identity types.",
+      "exam_weight": 0.008333333334
+    },
+    {
+      "id": "MCAT.FC8.8A.t2",
+      "parent_id": "MCAT.FC8.8A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Formation of Identity",
+      "description": "Developmental theories, looking-glass self, reference groups, culture.",
+      "exam_weight": 0.008333333333
+    },
+    {
+      "id": "MCAT.FC8.8B",
+      "parent_id": "MCAT.FC8",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Social thinking",
+      "description": "Attribution, prejudice, and stereotypes.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "MCAT.FC8.8B.t1",
+      "parent_id": "MCAT.FC8.8B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Attributing Behavior to Persons or Situations",
+      "description": "Attribution theory, fundamental attribution error, culture.",
+      "exam_weight": 0.005555555556
+    },
+    {
+      "id": "MCAT.FC8.8B.t2",
+      "parent_id": "MCAT.FC8.8B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Prejudice and Bias",
+      "description": "Power/prestige/class, emotion and cognition in prejudice, stigma, ethnocentrism.",
+      "exam_weight": 0.005555555556
+    },
+    {
+      "id": "MCAT.FC8.8B.t3",
+      "parent_id": "MCAT.FC8.8B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Processes Related to Stereotypes",
+      "description": "Self-fulfilling prophecy, stereotype threat.",
+      "exam_weight": 0.005555555555
+    },
+    {
+      "id": "MCAT.FC8.8C",
+      "parent_id": "MCAT.FC8",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Social interactions",
+      "description": "Status, groups, presentation of self, social behavior, discrimination.",
+      "exam_weight": 0.016666666666
+    },
+    {
+      "id": "MCAT.FC8.8C.t1",
+      "parent_id": "MCAT.FC8.8C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Elements of Social Interaction",
+      "description": "Status, roles, groups, networks, organizations, bureaucracy.",
+      "exam_weight": 0.004166666666
+    },
+    {
+      "id": "MCAT.FC8.8C.t2",
+      "parent_id": "MCAT.FC8.8C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Self-presentation and Interacting with Others",
+      "description": "Impression management, dramaturgy, verbal/nonverbal communication.",
+      "exam_weight": 0.004166666666
+    },
+    {
+      "id": "MCAT.FC8.8C.t3",
+      "parent_id": "MCAT.FC8.8C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Social Behavior",
+      "description": "Attraction, aggression, attachment, altruism, animal social behavior, inclusive fitness.",
+      "exam_weight": 0.004166666666
+    },
+    {
+      "id": "MCAT.FC8.8C.t4",
+      "parent_id": "MCAT.FC8.8C",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Discrimination",
+      "description": "Individual vs institutional, prejudice vs discrimination.",
+      "exam_weight": 0.004166666668
+    },
+    {
+      "id": "MCAT.FC9",
+      "parent_id": null,
+      "exam": "mcat",
+      "level": "section",
+      "name": "Foundational Concept 9",
+      "description": "Cultural and social differences influence well-being.",
+      "exam_weight": 0.0375
+    },
+    {
+      "id": "MCAT.FC9.9A",
+      "parent_id": "MCAT.FC9",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Understanding social structure",
+      "description": "Theory, institutions, and culture.",
+      "exam_weight": 0.01875
+    },
+    {
+      "id": "MCAT.FC9.9A.t1",
+      "parent_id": "MCAT.FC9.9A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Theoretical Approaches",
+      "description": "Functionalism, conflict, symbolic interactionism, social constructionism, feminist and rational-choice views.",
+      "exam_weight": 0.00625
+    },
+    {
+      "id": "MCAT.FC9.9A.t2",
+      "parent_id": "MCAT.FC9.9A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Social Institutions",
+      "description": "Education, family, religion, government/economy, health and medicine.",
+      "exam_weight": 0.00625
+    },
+    {
+      "id": "MCAT.FC9.9A.t3",
+      "parent_id": "MCAT.FC9.9A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Culture",
+      "description": "Elements of culture, lag, shock, assimilation, multiculturalism, subcultures, media.",
+      "exam_weight": 0.00625
+    },
+    {
+      "id": "MCAT.FC9.9B",
+      "parent_id": "MCAT.FC9",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Demographic characteristics and processes",
+      "description": "Demography and social change.",
+      "exam_weight": 0.01875
+    },
+    {
+      "id": "MCAT.FC9.9B.t1",
+      "parent_id": "MCAT.FC9.9B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Demographic Structure of Society",
+      "description": "Age, gender, race/ethnicity, immigration, sexual orientation.",
+      "exam_weight": 0.009375
+    },
+    {
+      "id": "MCAT.FC9.9B.t2",
+      "parent_id": "MCAT.FC9.9B",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Demographic Shifts and Social Change",
+      "description": "Demographic transition, fertility/mortality/migration, social movements, globalization, urbanization.",
+      "exam_weight": 0.009375
+    },
+    {
+      "id": "MCAT.FC10",
+      "parent_id": null,
+      "exam": "mcat",
+      "level": "section",
+      "name": "Foundational Concept 10",
+      "description": "Social stratification and access to resources influence well-being.",
+      "exam_weight": 0.0125
+    },
+    {
+      "id": "MCAT.FC10.10A",
+      "parent_id": "MCAT.FC10",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Social inequality",
+      "description": "Spatial inequality, class, and health gradients.",
+      "exam_weight": 0.0125
+    },
+    {
+      "id": "MCAT.FC10.10A.t1",
+      "parent_id": "MCAT.FC10.10A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Spatial Inequality",
+      "description": "Residential segregation, neighborhood safety, environmental justice.",
+      "exam_weight": 0.004166666667
+    },
+    {
+      "id": "MCAT.FC10.10A.t2",
+      "parent_id": "MCAT.FC10.10A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Social Class",
+      "description": "SES, capital, social reproduction, mobility, meritocracy, poverty, intersectionality, socioeconomic gradient in health.",
+      "exam_weight": 0.004166666667
+    },
+    {
+      "id": "MCAT.FC10.10A.t3",
+      "parent_id": "MCAT.FC10.10A",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Health Disparities",
+      "description": "Access to care, social exclusion, global inequalities in health.",
+      "exam_weight": 0.004166666666
+    },
+    {
+      "id": "MCAT.CARS",
+      "parent_id": null,
+      "exam": "mcat",
+      "level": "section",
+      "name": "Critical Analysis and Reasoning Skills",
+      "description": "MCAT CARS: comprehension and reasoning on humanities and social-science passages. No outside content knowledge required.",
+      "exam_weight": 0.25
+    },
+    {
+      "id": "MCAT.CARS.FND",
+      "parent_id": "MCAT.CARS",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Foundations of Comprehension",
+      "description": "Understanding the basic components of the text.",
+      "exam_weight": 0.083333333333
+    },
+    {
+      "id": "MCAT.CARS.FND.t1",
+      "parent_id": "MCAT.CARS.FND",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Main idea and primary purpose",
+      "description": "Identify the author's central claim or purpose.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "MCAT.CARS.FND.t2",
+      "parent_id": "MCAT.CARS.FND",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Information retrieval",
+      "description": "Locate explicit statements and details.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "MCAT.CARS.FND.t3",
+      "parent_id": "MCAT.CARS.FND",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Inferring meaning",
+      "description": "Draw inferences licensed by the passage.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "MCAT.CARS.FND.t4",
+      "parent_id": "MCAT.CARS.FND",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Vocabulary in context",
+      "description": "Determine word or phrase meaning from usage.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "MCAT.CARS.FND.t5",
+      "parent_id": "MCAT.CARS.FND",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Paraphrase and summary",
+      "description": "Restate claims without distortion.",
+      "exam_weight": 0.016666666665
+    },
+    {
+      "id": "MCAT.CARS.RWT",
+      "parent_id": "MCAT.CARS",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Reasoning Within the Text",
+      "description": "Integrating, analyzing, and evaluating passage arguments.",
+      "exam_weight": 0.083333333333
+    },
+    {
+      "id": "MCAT.CARS.RWT.t1",
+      "parent_id": "MCAT.CARS.RWT",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Integration of parts",
+      "description": "Relate claims, evidence, and examples across paragraphs.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "MCAT.CARS.RWT.t2",
+      "parent_id": "MCAT.CARS.RWT",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Relevance and support",
+      "description": "Judge which statements support or undermine a claim.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "MCAT.CARS.RWT.t3",
+      "parent_id": "MCAT.CARS.RWT",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Logic and structure",
+      "description": "Identify assumptions, conclusions, and argumentative moves.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "MCAT.CARS.RWT.t4",
+      "parent_id": "MCAT.CARS.RWT",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Evaluation of tone and rhetoric",
+      "description": "Assess stance, emphasis, and rhetorical strategy.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "MCAT.CARS.RWT.t5",
+      "parent_id": "MCAT.CARS.RWT",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Internal consistency",
+      "description": "Detect tensions or qualifications inside the passage.",
+      "exam_weight": 0.016666666665
+    },
+    {
+      "id": "MCAT.CARS.RBT",
+      "parent_id": "MCAT.CARS",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Reasoning Beyond the Text",
+      "description": "Applying or extrapolating ideas to new information.",
+      "exam_weight": 0.083333333334
+    },
+    {
+      "id": "MCAT.CARS.RBT.t1",
+      "parent_id": "MCAT.CARS.RBT",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Apply to a new context",
+      "description": "Use a passage principle in an unfamiliar scenario.",
+      "exam_weight": 0.020833333334
+    },
+    {
+      "id": "MCAT.CARS.RBT.t2",
+      "parent_id": "MCAT.CARS.RBT",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Incorporate new information",
+      "description": "Assess how extra-textual facts would affect the argument.",
+      "exam_weight": 0.020833333334
+    },
+    {
+      "id": "MCAT.CARS.RBT.t3",
+      "parent_id": "MCAT.CARS.RBT",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Analogies and hypotheticals",
+      "description": "Map passage relationships onto analogous cases.",
+      "exam_weight": 0.020833333334
+    },
+    {
+      "id": "MCAT.CARS.RBT.t4",
+      "parent_id": "MCAT.CARS.RBT",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Limitations and implications",
+      "description": "Extrapolate consequences the author does not state.",
+      "exam_weight": 0.020833333332
+    },
+    {
+      "id": "MCAT.SIRS",
+      "parent_id": null,
+      "exam": "mcat",
+      "level": "section",
+      "name": "Scientific Inquiry and Reasoning Skills",
+      "description": "Overlay skills on every natural and social science item. exam_weight 0 \u2014 selection uses skill_tag, not new-item quota.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "MCAT.SIRS.SIRS1",
+      "parent_id": "MCAT.SIRS",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Knowledge of Scientific Concepts and Principles",
+      "description": "Skill 1.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "MCAT.SIRS.SIRS1.t1",
+      "parent_id": "MCAT.SIRS.SIRS1",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Demonstrate understanding of scientific concepts and principles",
+      "description": "Recall and recognize scientific content.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "MCAT.SIRS.SIRS1.t2",
+      "parent_id": "MCAT.SIRS.SIRS1",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Identify relationships between closely related concepts",
+      "description": "Connect adjacent scientific ideas.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "MCAT.SIRS.SIRS2",
+      "parent_id": "MCAT.SIRS",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Scientific Reasoning and Problem Solving",
+      "description": "Skill 2.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "MCAT.SIRS.SIRS2.t1",
+      "parent_id": "MCAT.SIRS.SIRS2",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Reason about scientific principles, theories, and models",
+      "description": "Use models to explain or predict.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "MCAT.SIRS.SIRS2.t2",
+      "parent_id": "MCAT.SIRS.SIRS2",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Analyze and evaluate scientific explanations and predictions",
+      "description": "Judge validity of scientific claims.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "MCAT.SIRS.SIRS3",
+      "parent_id": "MCAT.SIRS",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Reasoning about the Design and Execution of Research",
+      "description": "Skill 3.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "MCAT.SIRS.SIRS3.t1",
+      "parent_id": "MCAT.SIRS.SIRS3",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Demonstrate understanding of important components of scientific research",
+      "description": "Variables, controls, samples, methods.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "MCAT.SIRS.SIRS3.t2",
+      "parent_id": "MCAT.SIRS.SIRS3",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Reason about ethical issues in research",
+      "description": "Consent, harm, integrity.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "MCAT.SIRS.SIRS4",
+      "parent_id": "MCAT.SIRS",
+      "exam": "mcat",
+      "level": "category",
+      "name": "Data-Based and Statistical Reasoning",
+      "description": "Skill 4.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "MCAT.SIRS.SIRS4.t1",
+      "parent_id": "MCAT.SIRS.SIRS4",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Interpret patterns in data presented in tables, figures, and graphs",
+      "description": "Read scientific figures.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "MCAT.SIRS.SIRS4.t2",
+      "parent_id": "MCAT.SIRS.SIRS4",
+      "exam": "mcat",
+      "level": "topic",
+      "name": "Reason about data and draw conclusions from them",
+      "description": "Statistics, uncertainty, inference.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "GAMSAT.S1",
+      "parent_id": null,
+      "exam": "gamsat",
+      "level": "section",
+      "name": "Section 1 \u2014 Reasoning in Humanities and Social Sciences",
+      "description": "ACER S1; 25% of overall.",
+      "exam_weight": 0.25
+    },
+    {
+      "id": "GAMSAT.S1.understand",
+      "parent_id": "GAMSAT.S1",
+      "exam": "gamsat",
+      "level": "category",
+      "name": "Understanding",
+      "description": "Close reading of humanities and social-science stimuli.",
+      "exam_weight": 0.03125
+    },
+    {
+      "id": "GAMSAT.S1.understand.t1",
+      "parent_id": "GAMSAT.S1.understand",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Main claim of a prose extract",
+      "description": "Identify what a humanities passage is saying.",
+      "exam_weight": 0.010416666667
+    },
+    {
+      "id": "GAMSAT.S1.understand.t2",
+      "parent_id": "GAMSAT.S1.understand",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Paraphrase without over-reading",
+      "description": "Stay inside the stimulus.",
+      "exam_weight": 0.010416666667
+    },
+    {
+      "id": "GAMSAT.S1.understand.t3",
+      "parent_id": "GAMSAT.S1.understand",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Follow referents and structure",
+      "description": "Track who is speaking and how the piece is built.",
+      "exam_weight": 0.010416666666
+    },
+    {
+      "id": "GAMSAT.S1.infer",
+      "parent_id": "GAMSAT.S1",
+      "exam": "gamsat",
+      "level": "category",
+      "name": "Inference",
+      "description": "Implied meaning licensed by the stimulus.",
+      "exam_weight": 0.03125
+    },
+    {
+      "id": "GAMSAT.S1.infer.t1",
+      "parent_id": "GAMSAT.S1.infer",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Implication from diction",
+      "description": "Infer from word choice.",
+      "exam_weight": 0.010416666667
+    },
+    {
+      "id": "GAMSAT.S1.infer.t2",
+      "parent_id": "GAMSAT.S1.infer",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Unstated assumptions",
+      "description": "What must be true for the speaker's position.",
+      "exam_weight": 0.010416666667
+    },
+    {
+      "id": "GAMSAT.S1.infer.t3",
+      "parent_id": "GAMSAT.S1.infer",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Reading between the lines in poetry",
+      "description": "Implication in compressed literary language.",
+      "exam_weight": 0.010416666666
+    },
+    {
+      "id": "GAMSAT.S1.tone",
+      "parent_id": "GAMSAT.S1",
+      "exam": "gamsat",
+      "level": "category",
+      "name": "Tone and attitude",
+      "description": "Mood, stance, and emphasis.",
+      "exam_weight": 0.03125
+    },
+    {
+      "id": "GAMSAT.S1.tone.t1",
+      "parent_id": "GAMSAT.S1.tone",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Speaker attitude",
+      "description": "Irony, sincerity, hostility, affection.",
+      "exam_weight": 0.010416666667
+    },
+    {
+      "id": "GAMSAT.S1.tone.t2",
+      "parent_id": "GAMSAT.S1.tone",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Shift in tone",
+      "description": "Detect turns inside a short extract.",
+      "exam_weight": 0.010416666667
+    },
+    {
+      "id": "GAMSAT.S1.tone.t3",
+      "parent_id": "GAMSAT.S1.tone",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Satire and understatement",
+      "description": "Non-literal evaluative language.",
+      "exam_weight": 0.010416666666
+    },
+    {
+      "id": "GAMSAT.S1.argument",
+      "parent_id": "GAMSAT.S1",
+      "exam": "gamsat",
+      "level": "category",
+      "name": "Argument structure",
+      "description": "Claims, reasons, and flaws in discursive prose.",
+      "exam_weight": 0.03125
+    },
+    {
+      "id": "GAMSAT.S1.argument.t1",
+      "parent_id": "GAMSAT.S1.argument",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Identify conclusion vs support",
+      "description": "Separate claim from evidence.",
+      "exam_weight": 0.010416666667
+    },
+    {
+      "id": "GAMSAT.S1.argument.t2",
+      "parent_id": "GAMSAT.S1.argument",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Evaluate strength of reasoning",
+      "description": "Gaps, overgeneralization, false dichotomy.",
+      "exam_weight": 0.010416666667
+    },
+    {
+      "id": "GAMSAT.S1.argument.t3",
+      "parent_id": "GAMSAT.S1.argument",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Compare competing arguments",
+      "description": "Which statement better captures a dispute.",
+      "exam_weight": 0.010416666666
+    },
+    {
+      "id": "GAMSAT.S1.compare",
+      "parent_id": "GAMSAT.S1",
+      "exam": "gamsat",
+      "level": "category",
+      "name": "Relative analysis",
+      "description": "Compare two stimuli without flattening differences.",
+      "exam_weight": 0.03125
+    },
+    {
+      "id": "GAMSAT.S1.compare.t1",
+      "parent_id": "GAMSAT.S1.compare",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Paired prose",
+      "description": "Agreement, conflict, and purpose.",
+      "exam_weight": 0.010416666667
+    },
+    {
+      "id": "GAMSAT.S1.compare.t2",
+      "parent_id": "GAMSAT.S1.compare",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Poem vs commentary",
+      "description": "How a second text reframes the first.",
+      "exam_weight": 0.010416666667
+    },
+    {
+      "id": "GAMSAT.S1.compare.t3",
+      "parent_id": "GAMSAT.S1.compare",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Quote sets",
+      "description": "Relationship among several short statements.",
+      "exam_weight": 0.010416666666
+    },
+    {
+      "id": "GAMSAT.S1.visual",
+      "parent_id": "GAMSAT.S1",
+      "exam": "gamsat",
+      "level": "category",
+      "name": "Visual and cartoon texts",
+      "description": "Cartoons, diagrams, and mixed media.",
+      "exam_weight": 0.03125
+    },
+    {
+      "id": "GAMSAT.S1.visual.t1",
+      "parent_id": "GAMSAT.S1.visual",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Political cartoons",
+      "description": "Irony, symbolism, target of critique.",
+      "exam_weight": 0.010416666667
+    },
+    {
+      "id": "GAMSAT.S1.visual.t2",
+      "parent_id": "GAMSAT.S1.visual",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Tables and figures in humanities contexts",
+      "description": "Read non-continuous text.",
+      "exam_weight": 0.010416666667
+    },
+    {
+      "id": "GAMSAT.S1.visual.t3",
+      "parent_id": "GAMSAT.S1.visual",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Caption vs image",
+      "description": "Tension between image and words.",
+      "exam_weight": 0.010416666666
+    },
+    {
+      "id": "GAMSAT.S1.humanities",
+      "parent_id": "GAMSAT.S1",
+      "exam": "gamsat",
+      "level": "category",
+      "name": "Humanities genres",
+      "description": "Literature, philosophy, history, arts commentary.",
+      "exam_weight": 0.03125
+    },
+    {
+      "id": "GAMSAT.S1.humanities.t1",
+      "parent_id": "GAMSAT.S1.humanities",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Literary narrative",
+      "description": "Character, perspective, theme.",
+      "exam_weight": 0.0078125
+    },
+    {
+      "id": "GAMSAT.S1.humanities.t2",
+      "parent_id": "GAMSAT.S1.humanities",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Philosophy and ethics extracts",
+      "description": "Abstract claims in short form.",
+      "exam_weight": 0.0078125
+    },
+    {
+      "id": "GAMSAT.S1.humanities.t3",
+      "parent_id": "GAMSAT.S1.humanities",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Historical commentary",
+      "description": "Interpretation of past events.",
+      "exam_weight": 0.0078125
+    },
+    {
+      "id": "GAMSAT.S1.humanities.t4",
+      "parent_id": "GAMSAT.S1.humanities",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Arts and cultural criticism",
+      "description": "Aesthetic evaluation.",
+      "exam_weight": 0.0078125
+    },
+    {
+      "id": "GAMSAT.S1.social",
+      "parent_id": "GAMSAT.S1",
+      "exam": "gamsat",
+      "level": "category",
+      "name": "Social-science genres",
+      "description": "Sociology, politics, psychology, media.",
+      "exam_weight": 0.03125
+    },
+    {
+      "id": "GAMSAT.S1.social.t1",
+      "parent_id": "GAMSAT.S1.social",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Sociological commentary",
+      "description": "Groups, institutions, power.",
+      "exam_weight": 0.010416666667
+    },
+    {
+      "id": "GAMSAT.S1.social.t2",
+      "parent_id": "GAMSAT.S1.social",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Political argument",
+      "description": "Policy, rights, ideology.",
+      "exam_weight": 0.010416666667
+    },
+    {
+      "id": "GAMSAT.S1.social.t3",
+      "parent_id": "GAMSAT.S1.social",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Media and language",
+      "description": "How public language frames issues.",
+      "exam_weight": 0.010416666666
+    },
+    {
+      "id": "GAMSAT.S2",
+      "parent_id": null,
+      "exam": "gamsat",
+      "level": "section",
+      "name": "Section 2 \u2014 Written Communication",
+      "description": "ACER S2; 25% of overall. Two tasks.",
+      "exam_weight": 0.25
+    },
+    {
+      "id": "GAMSAT.S2.task_a",
+      "parent_id": "GAMSAT.S2",
+      "exam": "gamsat",
+      "level": "category",
+      "name": "Task A \u2014 socio-cultural",
+      "description": "Argumentative response to socio-cultural quote sets.",
+      "exam_weight": 0.083333333333
+    },
+    {
+      "id": "GAMSAT.S2.task_a.t1",
+      "parent_id": "GAMSAT.S2.task_a",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Theme identification",
+      "description": "Name the socio-cultural issue the quotes orbit.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "GAMSAT.S2.task_a.t2",
+      "parent_id": "GAMSAT.S2.task_a",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Argumentative thesis",
+      "description": "Take a clear evaluative position.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "GAMSAT.S2.task_a.t3",
+      "parent_id": "GAMSAT.S2.task_a",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Use of examples",
+      "description": "Concrete cases that earn the claim.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "GAMSAT.S2.task_a.t4",
+      "parent_id": "GAMSAT.S2.task_a",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Engaging the quote set",
+      "description": "Respond to one or more comments without inventorying all.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "GAMSAT.S2.task_a.t5",
+      "parent_id": "GAMSAT.S2.task_a",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Counterargument",
+      "description": "Steelman and answer an opposing view.",
+      "exam_weight": 0.016666666665
+    },
+    {
+      "id": "GAMSAT.S2.task_b",
+      "parent_id": "GAMSAT.S2",
+      "exam": "gamsat",
+      "level": "category",
+      "name": "Task B \u2014 personal and social",
+      "description": "Reflective or personal response to lived-experience quote sets.",
+      "exam_weight": 0.083333333333
+    },
+    {
+      "id": "GAMSAT.S2.task_b.t1",
+      "parent_id": "GAMSAT.S2.task_b",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Personal theme",
+      "description": "Love, identity, memory, belonging, failure.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "GAMSAT.S2.task_b.t2",
+      "parent_id": "GAMSAT.S2.task_b",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Reflective voice",
+      "description": "First-person without solipsism.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "GAMSAT.S2.task_b.t3",
+      "parent_id": "GAMSAT.S2.task_b",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Particular over generic",
+      "description": "Specific scenes instead of platitude.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "GAMSAT.S2.task_b.t4",
+      "parent_id": "GAMSAT.S2.task_b",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Emotional precision",
+      "description": "Tone control; avoid sentimentality.",
+      "exam_weight": 0.016666666667
+    },
+    {
+      "id": "GAMSAT.S2.task_b.t5",
+      "parent_id": "GAMSAT.S2.task_b",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Creative form (optional)",
+      "description": "Story, letter, or hybrid when it serves thought.",
+      "exam_weight": 0.016666666665
+    },
+    {
+      "id": "GAMSAT.S2.craft",
+      "parent_id": "GAMSAT.S2",
+      "exam": "gamsat",
+      "level": "category",
+      "name": "Written communication craft",
+      "description": "Quality of thinking and integration, per ACER.",
+      "exam_weight": 0.083333333334
+    },
+    {
+      "id": "GAMSAT.S2.craft.t1",
+      "parent_id": "GAMSAT.S2.craft",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Structure",
+      "description": "Opening, development, close under time.",
+      "exam_weight": 0.020833333334
+    },
+    {
+      "id": "GAMSAT.S2.craft.t2",
+      "parent_id": "GAMSAT.S2.craft",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Integration of ideas",
+      "description": "Quotes as springboard, not checklist.",
+      "exam_weight": 0.020833333334
+    },
+    {
+      "id": "GAMSAT.S2.craft.t3",
+      "parent_id": "GAMSAT.S2.craft",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Clarity under timed typing",
+      "description": "Sentence control without spellcheck.",
+      "exam_weight": 0.020833333334
+    },
+    {
+      "id": "GAMSAT.S2.craft.t4",
+      "parent_id": "GAMSAT.S2.craft",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Register",
+      "description": "Match formality to task.",
+      "exam_weight": 0.020833333332
+    },
+    {
+      "id": "GAMSAT.S3",
+      "parent_id": null,
+      "exam": "gamsat",
+      "level": "section",
+      "name": "Section 3 \u2014 Reasoning in Biological and Physical Sciences",
+      "description": "ACER S3 double-weighted (50% of overall). Chemistry 40%, biology 40%, physics 20%.",
+      "exam_weight": 0.5
+    },
+    {
+      "id": "GAMSAT.S3.bio",
+      "parent_id": "GAMSAT.S3",
+      "exam": "gamsat",
+      "level": "category",
+      "name": "Biology",
+      "description": "First-year university biology.",
+      "exam_weight": 0.2
+    },
+    {
+      "id": "GAMSAT.S3.bio.t1",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Cell structure and organelles",
+      "description": "Eukaryotic and prokaryotic cell architecture.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t2",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Membranes and transport",
+      "description": "Diffusion, osmosis, pumps, membrane potential.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t3",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Biological molecules",
+      "description": "Water, carbs, lipids, proteins, nucleic acids.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t4",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Enzymes",
+      "description": "Catalysis, specificity, factors affecting rate.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t5",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Cellular respiration",
+      "description": "Glycolysis, Krebs, ETC, ATP yield.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t6",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Photosynthesis",
+      "description": "Light and carbon reactions at first-year level.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t7",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "DNA replication",
+      "description": "Semiconservative replication and enzymes.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t8",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Transcription and translation",
+      "description": "Central dogma.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t9",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Gene expression and mutation",
+      "description": "Regulation and types of mutation.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t10",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Cell cycle, mitosis, meiosis",
+      "description": "Division and genetic consequences.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t11",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Mendelian and population genetics",
+      "description": "Punnett, pedigrees, Hardy\u2013Weinberg.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t12",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Evolution",
+      "description": "Selection, speciation, evidence.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t13",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Microbes and viruses",
+      "description": "Bacteria, viruses, host interaction.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t14",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Digestive system",
+      "description": "Organs, enzymes, absorption.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t15",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Circulation and blood",
+      "description": "Heart, vessels, blood components.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t16",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Respiration and gas exchange",
+      "description": "Lungs, partial pressures.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t17",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Excretion and osmoregulation",
+      "description": "Kidney, water and ion balance.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t18",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Nervous system",
+      "description": "Neurons, synapses, CNS/PNS.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t19",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Endocrine system",
+      "description": "Hormones as chemical messengers.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t20",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Immune system",
+      "description": "Innate and adaptive outlines.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t21",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Musculoskeletal system",
+      "description": "Bone, muscle contraction.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t22",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Reproduction and development",
+      "description": "Gametes, pregnancy, germ layers.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t23",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Homeostasis",
+      "description": "Feedback loops.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t24",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Plant structure and function",
+      "description": "First-year plant physiology as tested.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t25",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Ecology and energy flow",
+      "description": "Trophic levels, cycles.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t26",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Experimental methods in biology",
+      "description": "Assays, microscopy, controls.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t27",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Biotechnology",
+      "description": "PCR, gel electrophoresis, recombinant DNA.",
+      "exam_weight": 0.007142857143
+    },
+    {
+      "id": "GAMSAT.S3.bio.t28",
+      "parent_id": "GAMSAT.S3.bio",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Acid\u2013base and buffers in physiology",
+      "description": "pH of body fluids.",
+      "exam_weight": 0.007142857139
+    },
+    {
+      "id": "GAMSAT.S3.chem",
+      "parent_id": "GAMSAT.S3",
+      "exam": "gamsat",
+      "level": "category",
+      "name": "Chemistry",
+      "description": "First-year university chemistry.",
+      "exam_weight": 0.2
+    },
+    {
+      "id": "GAMSAT.S3.chem.t1",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Atomic structure",
+      "description": "Protons, neutrons, electrons, isotopes.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t2",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Electron configuration",
+      "description": "Orbitals and periodic placement.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t3",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Periodic trends",
+      "description": "Radius, IE, EN, reactivity.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t4",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Ionic and covalent bonding",
+      "description": "Lattice vs molecules.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t5",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Lewis structures and VSEPR",
+      "description": "Shape and polarity.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t6",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Intermolecular forces",
+      "description": "H-bonding, dipole, dispersion.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t7",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Stoichiometry",
+      "description": "Moles, limiting reagent, yields.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t8",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Concentration and dilution",
+      "description": "Molarity, ppm, serial dilution.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t9",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Gases",
+      "description": "Ideal gas law, partial pressures.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t10",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Thermochemistry",
+      "description": "Enthalpy, Hess, calorimetry.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t11",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Entropy and Gibbs energy",
+      "description": "Spontaneity.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t12",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Chemical equilibrium",
+      "description": "K, Q, Le Chatelier.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t13",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Acids and bases",
+      "description": "pH, Ka, strong vs weak.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t14",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Buffers and titration",
+      "description": "Henderson\u2013Hasselbalch, curves.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t15",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Solubility",
+      "description": "Ksp, precipitation.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t16",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Redox",
+      "description": "Oxidation numbers, balancing, cells.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t17",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Electrochemistry",
+      "description": "Galvanic cells, potential.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t18",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Kinetics",
+      "description": "Rate laws, temperature, catalysts.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t19",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Organic functional groups",
+      "description": "Recognition and properties.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t20",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Hydrocarbons",
+      "description": "Alkanes, alkenes, alkynes, aromatics.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t21",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Isomerism and stereochemistry",
+      "description": "Structural, geometric, optical.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t22",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Substitution and addition",
+      "description": "SN1/SN2 and alkene addition at first-year depth.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t23",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Alcohols, carbonyls, carboxylic acids",
+      "description": "Characteristic reactions.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t24",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Amines and amides",
+      "description": "Basicity and peptides as chemistry.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t25",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Aromaticity",
+      "description": "Benzene stability and substitution outline.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t26",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Spectroscopy intro",
+      "description": "IR, NMR, mass spec as data-reasoning.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t27",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Separation methods",
+      "description": "Chromatography, distillation, extraction.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t28",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Colligative properties",
+      "description": "Boiling point elevation, freezing point depression.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t29",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Phase behaviour",
+      "description": "Phase diagrams, vapour pressure.",
+      "exam_weight": 0.006666666667
+    },
+    {
+      "id": "GAMSAT.S3.chem.t30",
+      "parent_id": "GAMSAT.S3.chem",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Coordination and transition metals intro",
+      "description": "As appears in first-year problems.",
+      "exam_weight": 0.006666666657
+    },
+    {
+      "id": "GAMSAT.S3.phys",
+      "parent_id": "GAMSAT.S3",
+      "exam": "gamsat",
+      "level": "category",
+      "name": "Physics",
+      "description": "Year-12 / A-level physics.",
+      "exam_weight": 0.1
+    },
+    {
+      "id": "GAMSAT.S3.phys.t1",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Kinematics",
+      "description": "v, a, graphs of motion.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t2",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Projectile motion",
+      "description": "Independence of components.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t3",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Newton's laws",
+      "description": "Free-body diagrams.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t4",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Work, energy, power",
+      "description": "Conservation of energy.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t5",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Momentum",
+      "description": "Collisions, impulse.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t6",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Circular motion and gravity",
+      "description": "Centripetal force, g.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t7",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Torque and statics",
+      "description": "Equilibrium of extended bodies.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t8",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Simple harmonic motion",
+      "description": "Springs and pendulums.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t9",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Waves",
+      "description": "Speed, frequency, superposition.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t10",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Sound",
+      "description": "Intensity, Doppler, standing waves.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t11",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Reflection, refraction, lenses",
+      "description": "Snell, images.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t12",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Interference and diffraction",
+      "description": "Path difference.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t13",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Electrostatics",
+      "description": "Coulomb, fields, potential.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t14",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "DC circuits",
+      "description": "Ohm, series/parallel, power.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t15",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Capacitors",
+      "description": "Charge, energy, RC qualitative.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t16",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Magnetism",
+      "description": "Force on currents and charges.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t17",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Electromagnetic induction",
+      "description": "Faraday, Lenz, transformers.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t18",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Heat and temperature",
+      "description": "Specific heat, latent heat.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t19",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Ideal gases and kinetic theory",
+      "description": "As physics.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t20",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Fluids",
+      "description": "Pressure, buoyancy, continuity.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t21",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Radioactivity",
+      "description": "Decay, half-life, activity.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t22",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Photoelectric effect and photons",
+      "description": "Quantum intro at year-12.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t23",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Nuclear reactions",
+      "description": "Fission/fusion outline, binding energy.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t24",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Dimensional analysis and units",
+      "description": "SI, conversion, estimation.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t25",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Medical physics applications",
+      "description": "X-ray, ultrasound, as stimulus contexts.",
+      "exam_weight": 0.003846153846
+    },
+    {
+      "id": "GAMSAT.S3.phys.t26",
+      "parent_id": "GAMSAT.S3.phys",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Graphs and experimental physics",
+      "description": "Slope, intercept, uncertainty.",
+      "exam_weight": 0.00384615385
+    },
+    {
+      "id": "GAMSAT.S3.rfd",
+      "parent_id": "GAMSAT.S3",
+      "exam": "gamsat",
+      "level": "category",
+      "name": "Reasoning from data",
+      "description": "Overlay: graphs, design, uncertainty. exam_weight 0.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "GAMSAT.S3.rfd.t1",
+      "parent_id": "GAMSAT.S3.rfd",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Reading graphs",
+      "description": "Axes, slope, log scales.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "GAMSAT.S3.rfd.t2",
+      "parent_id": "GAMSAT.S3.rfd",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Tables of experimental results",
+      "description": "Compare conditions.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "GAMSAT.S3.rfd.t3",
+      "parent_id": "GAMSAT.S3.rfd",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Identify variables",
+      "description": "Independent, dependent, controlled.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "GAMSAT.S3.rfd.t4",
+      "parent_id": "GAMSAT.S3.rfd",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Experimental design",
+      "description": "Controls, randomization, sample size.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "GAMSAT.S3.rfd.t5",
+      "parent_id": "GAMSAT.S3.rfd",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Error and uncertainty",
+      "description": "Random vs systematic, significant figures.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "GAMSAT.S3.rfd.t6",
+      "parent_id": "GAMSAT.S3.rfd",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Interpolate and extrapolate",
+      "description": "Limits of the data.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "GAMSAT.S3.rfd.t7",
+      "parent_id": "GAMSAT.S3.rfd",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Proportional reasoning",
+      "description": "Direct and inverse relations from data.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "GAMSAT.S3.rfd.t8",
+      "parent_id": "GAMSAT.S3.rfd",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Evaluate hypotheses",
+      "description": "What the results can and cannot support.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "GAMSAT.S3.rfd.t9",
+      "parent_id": "GAMSAT.S3.rfd",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Unit conversion in data problems",
+      "description": "Keep quantities consistent.",
+      "exam_weight": 0.0
+    },
+    {
+      "id": "GAMSAT.S3.rfd.t10",
+      "parent_id": "GAMSAT.S3.rfd",
+      "exam": "gamsat",
+      "level": "topic",
+      "name": "Multi-panel figures",
+      "description": "Relate two plots or a plot and a table.",
+      "exam_weight": 0.0
+    }
+  ]
+}
