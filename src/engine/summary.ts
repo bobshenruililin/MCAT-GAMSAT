@@ -9,8 +9,30 @@ import {
   type ErrorClass,
 } from "@/db/schema";
 import { masteryByNode } from "./mastery";
+import {
+  MCAT_SCIENCE_BUDGET,
+  sectionBudgetSeconds,
+  sectionFamily,
+} from "./sectionBudget";
 
-export const MCAT_BUDGET_SECONDS = 95;
+export const MCAT_BUDGET_SECONDS = MCAT_SCIENCE_BUDGET;
+
+export function meanSessionBudgetSeconds(conceptIds: string[]): number {
+  if (conceptIds.length === 0) return MCAT_SCIENCE_BUDGET;
+  const sum = conceptIds.reduce((s, id) => s + sectionBudgetSeconds(id), 0);
+  return sum / conceptIds.length;
+}
+
+export function sessionBudgetLabel(conceptIds: string[]): string {
+  if (conceptIds.length === 0) return `${MCAT_SCIENCE_BUDGET}s MCAT science budget`;
+  const families = new Set(conceptIds.map(sectionFamily));
+  const seconds = Math.round(meanSessionBudgetSeconds(conceptIds));
+  if (families.size === 1) {
+    const family = [...families][0];
+    return `${seconds}s ${family} budget`;
+  }
+  return `${seconds}s mixed-section budget`;
+}
 
 export type CalibrationRow = {
   confidence: number;
@@ -41,6 +63,7 @@ export type SessionSummaryData = {
   accuracy: number;
   meanSeconds: number;
   mcatBudgetSeconds: number;
+  budgetLabel: string;
   calibration: CalibrationRow[];
   missesByErrorClass: Record<ErrorClass, number>;
   perTopic: TopicBreakdown[];
@@ -132,6 +155,8 @@ export function getSessionSummary(
       .slice(0, 10);
   }
 
+  const conceptIds = rows.map((r) => r.conceptId);
+
   return {
     sessionId,
     kind: session.kind,
@@ -139,7 +164,8 @@ export function getSessionSummary(
     correctCount,
     accuracy: total === 0 ? 0 : correctCount / total,
     meanSeconds,
-    mcatBudgetSeconds: MCAT_BUDGET_SECONDS,
+    mcatBudgetSeconds: meanSessionBudgetSeconds(conceptIds),
+    budgetLabel: sessionBudgetLabel(conceptIds),
     calibration,
     missesByErrorClass,
     perTopic,

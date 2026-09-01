@@ -11,14 +11,15 @@ export function SessionSummaryView({
   summary: SessionSummaryData;
 }) {
   const vsBudget = summary.meanSeconds - summary.mcatBudgetSeconds;
+  const label = summary.budgetLabel ?? `${summary.mcatBudgetSeconds}s budget`;
   const vsLabel =
     summary.total === 0
       ? "—"
       : vsBudget === 0
-        ? "on the 95s MCAT budget"
+        ? `on the ${label}`
         : vsBudget > 0
-          ? `${vsBudget.toFixed(1)}s over the 95s MCAT budget`
-          : `${Math.abs(vsBudget).toFixed(1)}s under the 95s MCAT budget`;
+          ? `${vsBudget.toFixed(1)}s over the ${label}`
+          : `${Math.abs(vsBudget).toFixed(1)}s under the ${label}`;
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-8">
