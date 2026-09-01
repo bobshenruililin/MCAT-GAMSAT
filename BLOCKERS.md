@@ -19,4 +19,13 @@ AAMC publishes FC percents, not per-category or per-topic percents. v1 splits an
 ### B-005 — MINI_SPEC vs Prompt 2 on mastery roll-up and newCap
 MINI_SPEC says do not roll up mastery to parents in v1, and default `new_item_quota` is 8. Prompt 2 requires parent mastery rolled up by `exam_weight` and assembler `newCap=15`. Prompt 2 wins on scope. Human: amend MINI_SPEC if the roll-up should become the written law.
 
+### B-006 — Diagnostic sampling grain
+Prompt 3: “up to 3 items per MCAT foundational-concept category and per GAMSAT section category.” v1 samples `concepts.level = category` with `exam_weight > 0` (content categories, not FC `section` rows; overlays with weight 0 are skipped). Hard cap 90; early-stop after 3 per category. Human: confirm, or sample at FC/section instead.
+
+### B-007 — Unsampled prior shrink
+Prompt 3: unsampled siblings inherit parent estimate shrunk toward 0.3. v1 uses `0.5 * parentEst + 0.5 * 0.3`. Human: confirm the mix, or name a different shrink.
+
+### B-008 — Weakest-10 sort key
+Diagnostic summary ranks nodes by `mastery * exam_weight` ascending, skipping weight 0. Low-weight topics at the 0.3 prior outrank higher-weight unseen FCs. Human: confirm, or rank by mastery only (weight as display).
+
 

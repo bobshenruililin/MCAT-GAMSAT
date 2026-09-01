@@ -52,4 +52,29 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Newest prompt wins on scope over MINI_SPEC v1 (default quota 8, no parent roll-up). Logged as B-005. New empty cards are not due reviews.
 - Rejected: MINI_SPEC v1 no-rollup; treating `state=new` rows as due.
 
+## 2026-09-01 — Grade-then-persist so reveal can precede error_class
+- Decision: `POST /api/sessions/:id/grade` returns correctness + explanation without writing. The client must send confidence 1–5 to grade (reveal). `POST /api/attempts` persists on Next, with `error_class` required on a miss. Hits and misses both persist on Next.
+- Rationale: NORTH_STAR requires confidence before reveal; the SQLite CHECK requires `error_class` on the same INSERT as a miss. Reveal-before-error-class in the UI cannot use a single attempt write. Client-held confidence until commit matches MINI_SPEC.
+- Rejected: Persisting a miss with placeholder `error_class=other`; splitting attempts into two tables; revealing from GET `/next`.
+
+## 2026-09-01 — Diagnostic samples weighted content categories, cap 90
+- Decision: Diagnostic queues up to 3 items per `level=category` node with `exam_weight > 0`, zero-attempt categories first, hard cap 90, then interleave. Logged as B-006.
+- Rationale: Newest prompt wins on scope. Narrowest reading of “MCAT foundational-concept category” and “GAMSAT section category” that matches the three-level schema.
+- Rejected: Sampling at FC/`section` grain; including overlay weight-0 categories.
+
+## 2026-09-01 — Diagnostic priors: EWMA sampled, 0.5/0.5 shrink unsampled
+- Decision: On first diagnostic end, write `mastery_priors` for every concept. Sampled topics store EWMA(correctness, α=0.3) from that session. Unsampled siblings get `0.5 * parentEst + 0.5 * 0.3`. Unseen live mastery uses the prior when the node has no attempts and no FSRS state. Logged as B-007.
+- Rationale: Prompt required priors on every node and shrink toward 0.3. Equal mix is the narrowest shrink.
+- Rejected: Leaving unsampled nodes at 0.3 with no parent inheritance; using 0.6C+0.4R as the stored sampled prior.
+
+## 2026-09-01 — Diagnostic attempts do not update FSRS
+- Decision: `recordAttempt` skips `ts-fsrs` when `sessions.kind = diagnostic`. Daily sessions still schedule.
+- Rationale: Diagnostic is placement, not review. Scheduling ~90 cards from a placement dump would pollute the due queue. Attempts are still stored for EWMA/priors and the summary.
+- Rejected: Running FSRS on diagnostic items the same as daily reviews.
+
+## 2026-09-01 — Health moves to /health; Today is /
+- Decision: `/` is the Today dashboard. The row-count health page lives at `/health`.
+- Rationale: Prompt 3 assigned `/` to Today. Narrowest move of the existing health view.
+- Rejected: Keeping health at `/`; deleting health.
+
 

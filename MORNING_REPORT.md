@@ -47,4 +47,27 @@ Three riskiest things to review:
 
 SCORE IMPACT: The scheduler and attempt API now exist, so a later UI can run real retrieval sessions instead of rereading — score per hour still waits on items and the human studying.
 
+## PROMPT 3 — Night sprint 3/4 interface + diagnostic (2026-09-01)
+
+Shipped:
+- Today at `/`: due reviews + estimated minutes (45s avg), new items available, Start Session / Start Diagnostic, last-7-days attempt counts. Health moved to `/health`.
+- Quiz player `/session/[id]`: one item at a time; running timer; required confidence 1–5 before reveal; then explanation + distractor rationales; required error class on miss before Next; seconds from render to submit; passage left pane (stacked on mobile); keys A–D / 1–5 / Enter. Tailwind only.
+- Session summary: accuracy, mean seconds vs 95s MCAT budget, confidence-vs-correctness table, misses by error class, per-topic. Diagnostic adds weakest 10 by mastery × exam_weight.
+- Diagnostic `kind=diagnostic`: up to 3 items per weighted content category, zero-attempt categories first, hard cap 90. On completion, `mastery_priors` for every taxonomy node (sampled = EWMA-from-diagnostic; unsampled siblings inherit parent shrunk toward 0.3). Diagnostic attempts skip FSRS.
+- Grade-then-persist: `POST /api/sessions/:id/grade` reveals without writing; `POST /api/attempts` commits with error_class on miss (schema CHECK).
+- Seed: 20 PLACEHOLDER items when the bank is empty (`source=ai_generated`, `verified=false`).
+- Tests: ItemPlayer gate (no submit without confidence; no Next after miss without error class); diagnostic prior-writing on a fixture answer set. `pnpm test` 30/30, typecheck, lint green.
+- Browser: headed Chrome playthrough of Today, Start Session, a 3-item daily session to summary, a 4-item diagnostic to weakest-10 summary, and a 2-item passage session (desktop + mobile viewport).
+
+Failed: nothing in the DoD chain. Item bank is still placeholders, not exam content.
+
+Node counts unchanged: 376 taxonomy nodes. Items: 20 placeholders.
+
+Three riskiest things to review:
+1. Diagnostic category grain = `level=category` with `exam_weight > 0` (B-006), not FC-level sections.
+2. Unsampled prior shrink is `0.5 * parent + 0.5 * 0.3` (B-007).
+3. Weakest-10 ranking by mastery × weight surfaces low-weight nodes at the 0.3 prior (B-008).
+
+SCORE IMPACT: The human can now run retrieval sessions (daily or diagnostic) instead of rereading — score per hour still waits on replacing PLACEHOLDER items with real tagged content and then actually studying.
+
 
