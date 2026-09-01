@@ -1,9 +1,9 @@
 # STATE
 
-Phase: real exam bank playable; Night Sprint 2/4 engine re-audit closed
+Phase: 100× score-max factory live; hand bank still 847; bootstrap bank 85,547
 Study days logged: 0. Demo is not study. SCOREBOARD official table empty.
-Done: constitution; sprints 01–04; DREAM 1–10; PLACEHOLDER gone; bootstrap ingest-all; 847 items on 290 weighted topics; Prompt 2 engine still in tree (`ts-fsrs` wrap, mastery, assembler, session APIs) with DoD tests now covering rating map, `(1-mastery)*exam_weight` new-item ranking, due/retrievability persistence, and attempt rationales
+Done: constitution; sprints 01–04; DREAM 1–10; real hand bank; Prompt 2 engine; weight-allocated factory (`src/factory`) emits 84,700 ingest-valid items (quant, conceptual, CARS/S1 passages, experiment tables, S2 craft); `/write` 10+10 quote packs; B-013 logged
 In flight: none
-Next: human — QC flags in content/QC_REPORT.md; `pnpm db:reset && pnpm bootstrap` (no demo:seed); sit Mixed and section-block sessions; enter official scores by hand; never verified=true without human. Open: B-001–B-012
-Counts: taxonomy 376 (308 topics, 290 weighted); items 847 on 290 weighted topics; passages 25; verified 0; PLACEHOLDER 0. Tests 71. Overlays SIRS/rfd still weight 0 (B-003)
-Risks: AI-unverified volume; CARS/S1 inference judgment; section tracks can defer other-family dues (B-012); heatmap stays gray until the human attempts
+Next: human — `pnpm db:reset && pnpm bootstrap` (FACTORY_TARGET=n to cap); QC a slice, never verified=true in software; sit sessions; official scores. Open: B-001–B-013
+Counts: taxonomy 376 (290 weighted topics). Hand items 847 + factory 84,700 = 85,547 on fresh DB (18 preview stems skipped as factory dupes). Passages: hand 25 + factory 23,088 generated. verified 0. Tests 75
+Risks: factory CARS/S1 is combinatorial not 20k unique essays; 85k unverified AI (B-013); heatmap gray until the human attempts

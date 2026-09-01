@@ -281,4 +281,24 @@ Three riskiest things to review:
 
 SCORE IMPACT: The retrieval loop was already scheduling real attempts; this re-audit only locked the rating map and assembler ranking so later study hours keep using ts-fsrs and exam-weight priority instead of a silent drift — score still waits on the human sitting sessions.
 
+## 100× score-max factory (2026-09-01)
+
+First principles: expected score ≈ Σ P(correct on exam grain i) × exam_weight(i). Extra practice volume follows weight, with a floor so no node is one memorised card. CARS/S1 get passages, not fake science discretes. Engine untouched.
+
+Shipped:
+- `src/factory`: allocate-by-weight (floor 40/topic) → 84,700 items (847×100). 67 designs. Code-checked kinematics/Newton/energy/fluids/circuits/gas/acid/Ksp/Faraday/optics/waves/nuclear/MM/HWE/dilution/Gibbs/Nernst/work/SHM/photoelectric/colligative. Conceptual sibling-discrimination. Combinatorial CARS/S1 (concession–turn essays, skill-tagged questions). Experimental 4Q tables. S2 craft MCQs.
+- `pnpm factory:emit`; bootstrap generates `content/batches/factory/*.json` (gitignored) then ingests. `FACTORY_TARGET=n` caps.
+- `/write`: 10 Task A + 10 Task B packs.
+- Preview: `content/batches/26-scoremax-preview.json`.
+- Tests 75. Full factory unique + ingest-schema 0 rejects. Fresh DB `/tmp/scoremax-proof.db`: **85,547 inserted, 0 failed** (847 hand + 84,700 factory; 18 preview stems skipped as duplicates).
+
+Failed: factory CARS is not 20k independently written essays (B-013). No item is verified.
+
+Three riskiest:
+1. B-013 — 85k unverified AI.
+2. Combinatorial verbal covers FND/RWT/RBT but reuses argument skeletons.
+3. Default bootstrap writes a large SQLite file; cap with FACTORY_TARGET if needed.
+
+SCORE IMPACT: Study hours can now retrieve across a weight-shaped 100× bank instead of one card per topic — expected score per hour still waits on the human sitting those hours and catching factory errors before they train a wrong memory.
+
 
