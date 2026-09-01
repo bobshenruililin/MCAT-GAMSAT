@@ -202,4 +202,16 @@ Failed: calibration still cannot match accuracy until the human studies.
 
 SCORE IMPACT: Study hours later in the week are less likely to be spent re-reviewing cards the user already knew, because today's low-confidence hits are named as a scheduling mistake.
 
+## DREAM cycle 7 — session pacing uses section budgets (2026-09-01)
+
+Gap: every session summary compared mean seconds to 95s, including CARS (102s) and GAMSAT S3 (120s). Timing insight at the end of the hour was the science line, so a CARS block looked slow when it was not.
+
+Shipped:
+- Mean per-item `sectionBudgetSeconds` (same 95/102/120s families as Progress). Mixed sessions get a mixed-section label.
+- Tests: 57. Green typecheck/lint.
+
+Failed: budgets remain unofficial heuristics (B-010).
+
+SCORE IMPACT: Timing feedback after a CARS or GAMSAT block now matches that section's pace, so the user does not rush or linger on the wrong clock for the next hour of study.
+
 

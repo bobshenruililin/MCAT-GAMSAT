@@ -137,4 +137,9 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: ratingFromAttempt maps correct+conf≤2 to FSRS Hard. That burns future study hours on cards already retrieved. The dream wants confidence and accuracy to be the same number in both directions.
 - Rejected: Changing the FSRS mapping; forcing a confidence edit after reveal; nagging on confidence 3.
 
+## 2026-09-01 — Session summary pacing uses section family budgets
+- Decision: Session mean-seconds is compared to the mean of per-item 95/102/120s family budgets (B-010), not a hardcoded 95s for every session. Mixed sessions are labeled mixed.
+- Rationale: Progress already used family budgets. The session the user just finished still taught the science clock. Wrong timing insight trains the wrong exam-day pace.
+- Rejected: Keeping the 95s line for simplicity; inventing official AAMC/ACER timing rules.
+
 
