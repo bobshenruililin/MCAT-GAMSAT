@@ -80,9 +80,10 @@ export function interleaveItems(items: AssemblerItem[]): AssembleResult {
 }
 
 /**
- * Pure assembler. Due reviews are first-class (all taken up to reviewCap, in given order).
- * New items: hunt topics first (error-driven), then (1-mastery)*exam_weight, max 3 per topic.
- * Combined queue is interleaved so consecutive items avoid the same topic when possible.
+ * Pure assembler. Due reviews are first-class (all taken up to reviewCap).
+ * Hunt-topic dues keep their relative due order but are pulled ahead of other dues
+ * so a trap that is already due is seen first. New items: hunt topics first, then
+ * (1-mastery)*exam_weight, max 3 per topic. Combined queue is interleaved.
  */
 export function assembleSession(
   dueItems: AssemblerItem[],
@@ -93,7 +94,12 @@ export function assembleSession(
     ...DEFAULT_ASSEMBLE_CONFIG,
     ...config,
   };
-  const due = dueItems.slice(0, reviewCap);
+  const hunt = new Set(huntTopicIds ?? []);
+  const due = [...dueItems.slice(0, reviewCap)].sort((a, b) => {
+    const ha = hunt.has(a.conceptId) ? 0 : 1;
+    const hb = hunt.has(b.conceptId) ? 0 : 1;
+    return ha - hb;
+  });
   const news = pickNewItems(
     candidateNewItems,
     newCap,

@@ -190,4 +190,18 @@ describe("assembleSession hunt preference", () => {
     const newIds = result.items.filter((i) => i.id !== "d1").map((i) => i.id);
     expect(newIds).toEqual(["h1", "h2"]);
   });
+
+  it("starts the session with a hunt-topic due review when one is due", () => {
+    const due = [
+      { id: "other-due", conceptId: "t-other" },
+      { id: "hunt-due", conceptId: "t-hunt" },
+    ];
+    const result = assembleSession(due, [], {
+      reviewCap: 50,
+      newCap: 0,
+      huntTopicIds: ["t-hunt"],
+    });
+    expect(result.items[0]?.id).toBe("hunt-due");
+    expect(result.items.map((i) => i.id).sort()).toEqual(["hunt-due", "other-due"]);
+  });
 });
