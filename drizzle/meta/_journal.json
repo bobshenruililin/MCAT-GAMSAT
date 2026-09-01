@@ -15,6 +15,13 @@
       "when": 1788271554185,
       "tag": "0001_fsrs_card_fields",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1788272415362,
+      "tag": "0002_mastery_priors",
+      "breakpoints": true
     }
   ]
 }

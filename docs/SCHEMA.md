@@ -125,6 +125,22 @@ One row per reviewed or queued item. Scheduler is **ts-fsrs**; these columns sto
 
 Index: `due_at`.
 
+## `mastery_priors`
+
+Written when a diagnostic session first ends. One row per taxonomy node.
+
+| column | type | notes |
+| --- | --- | --- |
+| concept_id | text PK | FK → `concepts.id` |
+| value | real not null | 0–1 inclusive |
+| source | text not null | `diagnostic` |
+| session_id | text not null | FK → `sessions.id` |
+| updated_at | text not null | ISO UTC |
+
+Sampled topic nodes store EWMA(correctness, α=0.3) from that diagnostic. Unsampled siblings inherit the parent estimate shrunk toward 0.3: `0.5 * parent + 0.5 * 0.3`. Overlay `exam_weight = 0` nodes are still written.
+
+Index: `session_id`.
+
 ## `external_scores`
 
 Official AAMC/ACER (or other official) scores. Human-entered. Only calibration source.
@@ -144,7 +160,7 @@ Index: `taken_at`, `exam`.
 
 ## File layout
 
-- `src/db/schema.ts` — Drizzle table definitions
+- `src/db/schema.ts` — Drizzle table definitions (includes `mastery_priors`)
 - `src/db/client.ts` — better-sqlite3 + drizzle, FK pragma
 - `src/db/migrate.ts` — `pnpm db:migrate`
 - `src/db/reset.ts` — `pnpm db:reset` (delete db file, remigrate)

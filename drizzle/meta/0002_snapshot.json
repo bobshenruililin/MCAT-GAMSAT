@@ -1,0 +1,863 @@
+{
+  "version": "6",
+  "dialect": "sqlite",
+  "id": "e6721f8b-760f-42a1-810c-7170afc101b0",
+  "prevId": "8c379d3d-e2c6-4132-903a-cbc18aa19d94",
+  "tables": {
+    "attempts": {
+      "name": "attempts",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "item_id": {
+          "name": "item_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "session_id": {
+          "name": "session_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "answered_key": {
+          "name": "answered_key",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "correct": {
+          "name": "correct",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "confidence": {
+          "name": "confidence",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "seconds": {
+          "name": "seconds",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "error_class": {
+          "name": "error_class",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "attempts_item_id_idx": {
+          "name": "attempts_item_id_idx",
+          "columns": [
+            "item_id"
+          ],
+          "isUnique": false
+        },
+        "attempts_session_id_idx": {
+          "name": "attempts_session_id_idx",
+          "columns": [
+            "session_id"
+          ],
+          "isUnique": false
+        },
+        "attempts_created_at_idx": {
+          "name": "attempts_created_at_idx",
+          "columns": [
+            "created_at"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "attempts_item_id_items_id_fk": {
+          "name": "attempts_item_id_items_id_fk",
+          "tableFrom": "attempts",
+          "tableTo": "items",
+          "columnsFrom": [
+            "item_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "attempts_session_id_sessions_id_fk": {
+          "name": "attempts_session_id_sessions_id_fk",
+          "tableFrom": "attempts",
+          "tableTo": "sessions",
+          "columnsFrom": [
+            "session_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "attempts_confidence_check": {
+          "name": "attempts_confidence_check",
+          "value": "\"attempts\".\"confidence\" >= 1 AND \"attempts\".\"confidence\" <= 5"
+        },
+        "attempts_seconds_check": {
+          "name": "attempts_seconds_check",
+          "value": "\"attempts\".\"seconds\" >= 0"
+        },
+        "attempts_error_class_check": {
+          "name": "attempts_error_class_check",
+          "value": "\"attempts\".\"error_class\" IS NULL OR \"attempts\".\"error_class\" IN ('content_gap', 'reasoning', 'misread', 'timing', 'trap', 'other')"
+        },
+        "attempts_error_class_required_check": {
+          "name": "attempts_error_class_required_check",
+          "value": "(\"attempts\".\"correct\" = 1 AND \"attempts\".\"error_class\" IS NULL) OR (\"attempts\".\"correct\" = 0 AND \"attempts\".\"error_class\" IS NOT NULL)"
+        }
+      }
+    },
+    "concepts": {
+      "name": "concepts",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "parent_id": {
+          "name": "parent_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "exam": {
+          "name": "exam",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "level": {
+          "name": "level",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "''"
+        },
+        "exam_weight": {
+          "name": "exam_weight",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "concepts_parent_id_idx": {
+          "name": "concepts_parent_id_idx",
+          "columns": [
+            "parent_id"
+          ],
+          "isUnique": false
+        },
+        "concepts_exam_idx": {
+          "name": "concepts_exam_idx",
+          "columns": [
+            "exam"
+          ],
+          "isUnique": false
+        },
+        "concepts_level_idx": {
+          "name": "concepts_level_idx",
+          "columns": [
+            "level"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "concepts_parent_id_concepts_id_fk": {
+          "name": "concepts_parent_id_concepts_id_fk",
+          "tableFrom": "concepts",
+          "tableTo": "concepts",
+          "columnsFrom": [
+            "parent_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "concepts_exam_check": {
+          "name": "concepts_exam_check",
+          "value": "\"concepts\".\"exam\" IN ('mcat', 'gamsat')"
+        },
+        "concepts_level_check": {
+          "name": "concepts_level_check",
+          "value": "\"concepts\".\"level\" IN ('section', 'category', 'topic')"
+        },
+        "concepts_weight_check": {
+          "name": "concepts_weight_check",
+          "value": "\"concepts\".\"exam_weight\" >= 0 AND \"concepts\".\"exam_weight\" <= 1"
+        }
+      }
+    },
+    "external_scores": {
+      "name": "external_scores",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "exam": {
+          "name": "exam",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "source_name": {
+          "name": "source_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "section": {
+          "name": "section",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "score": {
+          "name": "score",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "percentile": {
+          "name": "percentile",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "taken_at": {
+          "name": "taken_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "notes": {
+          "name": "notes",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "external_scores_taken_at_idx": {
+          "name": "external_scores_taken_at_idx",
+          "columns": [
+            "taken_at"
+          ],
+          "isUnique": false
+        },
+        "external_scores_exam_idx": {
+          "name": "external_scores_exam_idx",
+          "columns": [
+            "exam"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "external_scores_exam_check": {
+          "name": "external_scores_exam_check",
+          "value": "\"external_scores\".\"exam\" IN ('mcat', 'gamsat')"
+        },
+        "external_scores_percentile_check": {
+          "name": "external_scores_percentile_check",
+          "value": "\"external_scores\".\"percentile\" IS NULL OR (\"external_scores\".\"percentile\" >= 0 AND \"external_scores\".\"percentile\" <= 100)"
+        }
+      }
+    },
+    "fsrs_state": {
+      "name": "fsrs_state",
+      "columns": {
+        "item_id": {
+          "name": "item_id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "stability": {
+          "name": "stability",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "difficulty": {
+          "name": "difficulty",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "due_at": {
+          "name": "due_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "last_review_at": {
+          "name": "last_review_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "reps": {
+          "name": "reps",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "lapses": {
+          "name": "lapses",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "state": {
+          "name": "state",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "scheduled_days": {
+          "name": "scheduled_days",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 0
+        },
+        "learning_steps": {
+          "name": "learning_steps",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 0
+        }
+      },
+      "indexes": {
+        "fsrs_state_due_at_idx": {
+          "name": "fsrs_state_due_at_idx",
+          "columns": [
+            "due_at"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "fsrs_state_item_id_items_id_fk": {
+          "name": "fsrs_state_item_id_items_id_fk",
+          "tableFrom": "fsrs_state",
+          "tableTo": "items",
+          "columnsFrom": [
+            "item_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "fsrs_state_state_check": {
+          "name": "fsrs_state_state_check",
+          "value": "\"fsrs_state\".\"state\" IN ('new', 'learning', 'review', 'relearning')"
+        },
+        "fsrs_state_reps_check": {
+          "name": "fsrs_state_reps_check",
+          "value": "\"fsrs_state\".\"reps\" >= 0"
+        },
+        "fsrs_state_lapses_check": {
+          "name": "fsrs_state_lapses_check",
+          "value": "\"fsrs_state\".\"lapses\" >= 0"
+        }
+      }
+    },
+    "items": {
+      "name": "items",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "type": {
+          "name": "type",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "passage_id": {
+          "name": "passage_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "concept_id": {
+          "name": "concept_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "skill_tag": {
+          "name": "skill_tag",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "stem": {
+          "name": "stem",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "choices": {
+          "name": "choices",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "correct_key": {
+          "name": "correct_key",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "explanation": {
+          "name": "explanation",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "distractor_rationales": {
+          "name": "distractor_rationales",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "difficulty_est": {
+          "name": "difficulty_est",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "source": {
+          "name": "source",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "verified": {
+          "name": "verified",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "items_concept_id_idx": {
+          "name": "items_concept_id_idx",
+          "columns": [
+            "concept_id"
+          ],
+          "isUnique": false
+        },
+        "items_passage_id_idx": {
+          "name": "items_passage_id_idx",
+          "columns": [
+            "passage_id"
+          ],
+          "isUnique": false
+        },
+        "items_verified_idx": {
+          "name": "items_verified_idx",
+          "columns": [
+            "verified"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "items_passage_id_passages_id_fk": {
+          "name": "items_passage_id_passages_id_fk",
+          "tableFrom": "items",
+          "tableTo": "passages",
+          "columnsFrom": [
+            "passage_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "items_concept_id_concepts_id_fk": {
+          "name": "items_concept_id_concepts_id_fk",
+          "tableFrom": "items",
+          "tableTo": "concepts",
+          "columnsFrom": [
+            "concept_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "items_type_check": {
+          "name": "items_type_check",
+          "value": "\"items\".\"type\" IN ('discrete', 'passage_question')"
+        },
+        "items_source_check": {
+          "name": "items_source_check",
+          "value": "\"items\".\"source\" IN ('ai_generated', 'official_entry')"
+        },
+        "items_difficulty_check": {
+          "name": "items_difficulty_check",
+          "value": "\"items\".\"difficulty_est\" >= 0 AND \"items\".\"difficulty_est\" <= 1"
+        },
+        "items_passage_required_check": {
+          "name": "items_passage_required_check",
+          "value": "\"items\".\"type\" != 'passage_question' OR \"items\".\"passage_id\" IS NOT NULL"
+        }
+      }
+    },
+    "mastery_priors": {
+      "name": "mastery_priors",
+      "columns": {
+        "concept_id": {
+          "name": "concept_id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "value": {
+          "name": "value",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "source": {
+          "name": "source",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "session_id": {
+          "name": "session_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "mastery_priors_session_id_idx": {
+          "name": "mastery_priors_session_id_idx",
+          "columns": [
+            "session_id"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "mastery_priors_concept_id_concepts_id_fk": {
+          "name": "mastery_priors_concept_id_concepts_id_fk",
+          "tableFrom": "mastery_priors",
+          "tableTo": "concepts",
+          "columnsFrom": [
+            "concept_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "mastery_priors_session_id_sessions_id_fk": {
+          "name": "mastery_priors_session_id_sessions_id_fk",
+          "tableFrom": "mastery_priors",
+          "tableTo": "sessions",
+          "columnsFrom": [
+            "session_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "mastery_priors_value_check": {
+          "name": "mastery_priors_value_check",
+          "value": "\"mastery_priors\".\"value\" >= 0 AND \"mastery_priors\".\"value\" <= 1"
+        },
+        "mastery_priors_source_check": {
+          "name": "mastery_priors_source_check",
+          "value": "\"mastery_priors\".\"source\" IN ('diagnostic')"
+        }
+      }
+    },
+    "passages": {
+      "name": "passages",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "concept_id": {
+          "name": "concept_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "title": {
+          "name": "title",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "body": {
+          "name": "body",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "item_count": {
+          "name": "item_count",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "passages_concept_id_idx": {
+          "name": "passages_concept_id_idx",
+          "columns": [
+            "concept_id"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "passages_concept_id_concepts_id_fk": {
+          "name": "passages_concept_id_concepts_id_fk",
+          "tableFrom": "passages",
+          "tableTo": "concepts",
+          "columnsFrom": [
+            "concept_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "sessions": {
+      "name": "sessions",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "kind": {
+          "name": "kind",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "started_at": {
+          "name": "started_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "ended_at": {
+          "name": "ended_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "config": {
+          "name": "config",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "'{}'"
+        }
+      },
+      "indexes": {
+        "sessions_started_at_idx": {
+          "name": "sessions_started_at_idx",
+          "columns": [
+            "started_at"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "sessions_kind_check": {
+          "name": "sessions_kind_check",
+          "value": "\"sessions\".\"kind\" IN ('daily', 'diagnostic', 'simulation')"
+        }
+      }
+    }
+  },
+  "views": {},
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  },
+  "internal": {
+    "indexes": {}
+  }
+}

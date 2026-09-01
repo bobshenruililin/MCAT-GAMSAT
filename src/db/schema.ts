@@ -35,6 +35,8 @@ export type SessionKind = (typeof SESSION_KINDS)[number];
 export type Choice = { key: string; text: string };
 export type DistractorRationales = Record<string, string>;
 export type SessionConfig = Record<string, unknown>;
+export const PRIOR_SOURCES = ["diagnostic"] as const;
+export type PriorSource = (typeof PRIOR_SOURCES)[number];
 
 export const concepts = sqliteTable(
   "concepts",
@@ -207,6 +209,26 @@ export const fsrsState = sqliteTable(
   ],
 );
 
+export const masteryPriors = sqliteTable(
+  "mastery_priors",
+  {
+    conceptId: text("concept_id")
+      .primaryKey()
+      .references(() => concepts.id),
+    value: real("value").notNull(),
+    source: text("source").notNull().$type<PriorSource>(),
+    sessionId: text("session_id")
+      .notNull()
+      .references(() => sessions.id),
+    updatedAt: text("updated_at").notNull(),
+  },
+  (t) => [
+    index("mastery_priors_session_id_idx").on(t.sessionId),
+    check("mastery_priors_value_check", sql`${t.value} >= 0 AND ${t.value} <= 1`),
+    check("mastery_priors_source_check", sql`${t.source} IN ('diagnostic')`),
+  ],
+);
+
 export const externalScores = sqliteTable(
   "external_scores",
   {
@@ -237,5 +259,6 @@ export const schema = {
   sessions,
   attempts,
   fsrsState,
+  masteryPriors,
   externalScores,
 };
