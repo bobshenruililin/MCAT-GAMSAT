@@ -1,0 +1,490 @@
+{
+  "passages": [
+    {
+      "concept_id": "MCAT.CARS.FND.t1",
+      "title": "The courtesy of untranslatability",
+      "body": "Historians of language like to treat translation as a pipe: meaning enters one end, equivalent wording exits the other, and any turbulence is a defect in the plumber. The figure is flattering to publishers, who can then sell fluency as fidelity, and it is flattering to readers, who can then consume a foreign argument as if it had always been written in their kitchen. The figure is also false. A translation is not a transfer of a stable cargo. It is a series of decisions about which silences will remain audible and which will be paved over so that a page turns without snagging.\n\nConsider the ordinary boast that a novel has been rendered into \"perfectly natural\" English. Natural for whom? The boast treats the target language as a climate rather than as a historically specific set of habits, class markers, and tolerated opacities. When a rural insult is recast as a metropolitan joke, or a liturgical cadence is recast as a magazine paragraph, the text has not been rescued from awkwardness. It has been enrolled in a local etiquette. The reader who thanks the translator for making the book \"not feel translated\" is thanking the translator for hiding the fact that hospitality occurred. Hospitality, if it is more than a smile, leaves a trace of the guest.\n\nThis is not an argument for wooden calques or for the museum of untranslated words left standing like exhibits. Those tactics can become their own piety, a performance of difficulty that congratulates the reader for enduring it. The more serious failure is the opposite one: the belief that a text which does not delay us has therefore been understood. Delay is sometimes the only honest report of a conceptual mismatch. A legal term that organizes a whole civic world cannot be swapped for a near-synonym without smuggling in the civic world of the synonym. To refuse the delay is to pretend that the two worlds already agreed.\n\nPublishers will object that readers abandon books that snag. They are not wrong about the market. They are wrong to treat the market as a theory of meaning. A culture that will only receive what has already been made to sound like itself is not receiving; it is recruiting. The translated page then becomes a mirror with a foreign name on the title page, and the prestige of the foreign name is used to ratify what the reader already believed. That is why \"accessible\" can function as a political adjective. It names not a reading level but a refusal of conceptual immigration.\n\nNone of this requires contempt for the reader. It requires a different courtesy: the courtesy of letting a sentence remain slightly foreign so that the reader can notice the foreignness as information rather than as a stain. The translator's invisibility, long praised as professionalism, is in this light a kind of disappearance of evidence. We might instead want translators to be visibly responsible for their choices, not as celebrities, but as people who can be asked why a silence was kept or filled.\n\nThe practical consequence is modest and severe. Reviewers should stop treating smoothness as a synonym for accuracy. Teachers should stop treating a bilingual dictionary as a moral instrument. And readers who want to be hosts rather than consumers should learn to tolerate, even to prize, the small resistances that prove a text has not been entirely naturalized. What cannot be made to sound like us is often the part that most needed to travel.",
+      "questions": [
+        {
+          "concept_id": "MCAT.CARS.FND.t1",
+          "type": "passage_question",
+          "stem": "Which of the following best states the author's central claim?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Fluent, natural-sounding translations are the only honest ones, because delay is proof that a translator has failed."
+            },
+            {
+              "key": "B",
+              "text": "Translation is a set of decisions about which foreign silences remain audible; selling fluency as fidelity recruits the text into local habits rather than receiving it, so a trace of difficulty can be a form of hospitality."
+            },
+            {
+              "key": "C",
+              "text": "Wooden calques and untranslated exhibits are the only ethically acceptable methods, because any English rendering is a betrayal."
+            },
+            {
+              "key": "D",
+              "text": "Publishers should be abolished, since markets can never influence which books readers finish."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The passage rejects the pipe metaphor and treats translation as decisions about audible silences. Fluency sold as fidelity enrolls a text in local etiquette and hides hospitality; delay can honestly report a conceptual mismatch. The author equally refuses the opposite piety of difficulty-as-exhibit. Choice B keeps both refusals and the hospitality thesis. The other options inflate a rejected tactic, invert the smoothness critique, or turn a market remark into an abolition program the text never offers.",
+          "distractor_rationales": {
+            "A": "The author treats the belief that a text which does not delay us has been understood as the more serious failure, not as a standard of honesty.",
+            "C": "The third paragraph explicitly denies a case for wooden calques and the museum of untranslated words, calling those tactics their own piety.",
+            "D": "Publishers are said to be right about the market and wrong about meaning; the passage does not propose abolishing publishing."
+          },
+          "difficulty_est": 0.42
+        },
+        {
+          "concept_id": "MCAT.CARS.FND.t2",
+          "type": "passage_question",
+          "stem": "According to the passage, what do publishers object, and how does the author respond?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "They object that translators seek celebrity; the author agrees and urges translators to remain invisible as a professional duty."
+            },
+            {
+              "key": "B",
+              "text": "They object that readers abandon books that snag; the author grants the market fact but denies that the market is a theory of meaning."
+            },
+            {
+              "key": "C",
+              "text": "They object that legal terms cannot be translated at all; the author replies that bilingual dictionaries already solve the mismatch."
+            },
+            {
+              "key": "D",
+              "text": "They object that rural insults cannot be recast as jokes; the author treats that recasting as the ideal of hospitality."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The fourth paragraph states the publishers' objection in one sentence: readers abandon books that snag. The next sentence grants they are not wrong about the market and immediately denies that the market is a theory of meaning. That pairing is an explicit retrieval, not an inference from tone. The celebrity remark appears later as a rejected model of visibility; legal terms illustrate mismatch, not a publisher complaint; recasting insults as jokes is the author's example of enrollment in local etiquette, not a goal.",
+          "distractor_rationales": {
+            "A": "Visibility of translators is recommended so choices can be asked about, not because publishers complained about celebrity; invisibility is criticized as disappearance of evidence.",
+            "C": "The legal-term example belongs to the delay paragraph; it is not attributed to publishers, and dictionaries are not offered as a moral fix—teachers are told to stop treating them as one.",
+            "D": "Recasting a rural insult as a metropolitan joke is cited as enrollment in local etiquette, the problem rather than the ideal."
+          },
+          "difficulty_est": 0.36
+        },
+        {
+          "concept_id": "MCAT.CARS.FND.t4",
+          "type": "passage_question",
+          "stem": "In the sentence that calls “accessible” a political adjective naming “a refusal of conceptual immigration,” the phrase conceptual immigration most nearly means",
+          "choices": [
+            {
+              "key": "A",
+              "text": "the physical relocation of translators across national borders as a labor-market fact."
+            },
+            {
+              "key": "B",
+              "text": "the entry of distinctions and civic worlds that have not already been recast to sound like the host language's habits."
+            },
+            {
+              "key": "C",
+              "text": "the use of immigration statutes as a plot device inside the novels being translated."
+            },
+            {
+              "key": "D",
+              "text": "a reader's duty to memorize untranslated legal terms as if they were visa documents."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The surrounding contrast is receiving versus recruiting: a culture that will only take what already sounds like itself is not receiving. “Accessible” is said to name not a reading level but a refusal of conceptual immigration, so the metaphor is about ideas and civic worlds crossing into a language without being fully naturalized. It is not about translators' passports, novelistic plots about immigration law, or a homework program of memorizing terms. The phrase's meaning is fixed by the recruiting/receiving antithesis and by the legal-term example of smuggled civic worlds.",
+          "distractor_rationales": {
+            "A": "The passage's immigration figure is conceptual, not a claim about translators as migrant workers.",
+            "C": "No argument is made about immigration law as subject matter inside fiction; the civic world belongs to the legal term being translated.",
+            "D": "Teachers are warned against treating dictionaries as moral instruments; the author does not redefine immigration as a memorization duty."
+          },
+          "difficulty_est": 0.48
+        },
+        {
+          "concept_id": "MCAT.CARS.RWT.t4",
+          "type": "passage_question",
+          "stem": "The pairing of “modest and severe” to describe the practical consequence is best understood as a rhetorical move that",
+          "choices": [
+            {
+              "key": "A",
+              "text": "satirizes reviewers by exaggeration, implying that smoothness-as-accuracy is a joke not worth policy."
+            },
+            {
+              "key": "B",
+              "text": "apologizes for the argument's weakness by calling its own recommendations trivial."
+            },
+            {
+              "key": "C",
+              "text": "holds two tones together: the reforms named are small (reviewing, teaching, reading habits) yet morally uncompromising in refusing smoothness as a synonym for accuracy."
+            },
+            {
+              "key": "D",
+              "text": "signals contempt for readers by treating them as children who must be scolded by teachers and reviewers."
+            }
+          ],
+          "correct_key": "C",
+          "explanation": "The author has just denied contempt for the reader and asked for a different courtesy. “Modest and severe” then labels a short list: reviewers, teachers, and readers changing habits—not a revolution in publishing law. The rhetoric therefore yokes limited scope to uncompromising standard, matching the earlier refusal of both calque-piety and fluency-piety. It is not a satirical shrug, a confession of triviality, or a scolding of readers as children. Tone questions here turn on how the pair of adjectives organizes the closing list, which only the passage supplies.",
+          "distractor_rationales": {
+            "A": "The closing list is hortatory, not a joke that withdraws the standard; smoothness-as-accuracy is exactly what reviewers are told to stop treating as a synonym.",
+            "B": "Severe blocks the reading of modest as a confession of weakness; the author is specifying scale, not backing down.",
+            "D": "The paragraph immediately before insists that none of this requires contempt for the reader; hosts-rather-than-consumers is a demand, not a humiliation."
+          },
+          "difficulty_est": 0.52
+        },
+        {
+          "concept_id": "MCAT.CARS.RBT.t3",
+          "type": "passage_question",
+          "stem": "Which of the following situations is most analogous to the author's contrast between receiving a text and recruiting it?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "A kitchen that only 'hosts' a visiting cook after rewriting every recipe until guests cannot tell the food was ever foreign, then advertises the guest's name as proof of cosmopolitan taste."
+            },
+            {
+              "key": "B",
+              "text": "A library that stocks facing-page bilingual editions so that delays in reading are mechanically impossible."
+            },
+            {
+              "key": "C",
+              "text": "A publisher that refuses to print any translation, on the ground that all rendering is recruitment."
+            },
+            {
+              "key": "D",
+              "text": "A teacher who requires students to look up every word in a bilingual dictionary before class, treating the dictionary as a moral test."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Receiving, in the passage, would leave a trace of the guest; recruiting makes the page a mirror with a foreign name attached, using prestige to ratify what the host already believed. The kitchen that erases every foreign mark and then sells the guest's name maps that structure: hospitality is advertised while the guest's difference is removed. Bilingual editions, a ban on translation, and dictionary-as-moral-test each invert or ignore a local claim (delay can be honest; translation remains necessary; dictionaries are not moral instruments). The analogy must preserve both the erasure and the prestige-borrowing, which only A does.",
+          "distractor_rationales": {
+            "B": "The author values some delay as information; an edition designed to make delay impossible would be closer to the fluency ideal being criticized, not an analogue of receiving.",
+            "C": "The author refuses abandonment of translation and the calque museum alike; a ban would not model receiving.",
+            "D": "That teacher is the figure the closing paragraph tells us to stop being; it is an analogue of a rejected piety, not of receiving-versus-recruiting."
+          },
+          "difficulty_est": 0.58
+        }
+      ]
+    },
+    {
+      "concept_id": "MCAT.CARS.RWT.t2",
+      "title": "Minutes as consent",
+      "body": "City governments have learned to speak the language of invitation. A new waterfront, a bus garage, a night-time licensing scheme: each arrives with a room, a facilitator, sticky notes, and a promise that \"your voice will be heard.\" The promise is not empty in the way cynics assume. People do speak. Minutes are taken. A summary slide later reports that the community was \"engaged.\" What the ritual converts, with almost chemical reliability, is dissent into attendance. The fact of having been in the room is then cited as evidence that the decision which followed was shared.\n\nThis conversion is the point, not an accidental side-effect. A planning authority that can display a photograph of a crowded hall has already performed legitimacy. The photograph does not record what was refused, only that refusal was given a chair. Once refusal has a chair, it can be filed. The file then travels upward as proof of consultation, and the project proceeds under the borrowed moral credit of those who came to object. Objectors discover, sometimes only at the groundbreaking, that they were extras in a scene titled participation.\n\nThe objection is not that consultation is a trick in every case. Some rooms change designs. A ramp is added; a tree is spared; a night bus is rerouted. Those revisions matter, and it would be a different piety to pretend they never occur. The trouble is the ambient theory that treats any revision as proof that the process is sound, and any remaining grievance as leftover noise from people who \"had their chance.\" Attendance is thereby made to do the work of consent. Consent, if the word still means anything civic, is not the same as having been scheduled.\n\nOral comments at a microphone illustrate the substitution with painful clarity. Three minutes are allotted. A timer is visible. The speaker is thanked. The next speaker is invited. The form is courteous and the structure is a funnel: complexity is shaved to fit the slot, and what cannot be shaved is classified as repetition. Staff later write that \"themes\" emerged. Themes are what survive the funnel. They are not necessarily what the speakers thought they had said. A person who came to argue that the garage should not be built at all finds herself listed under \"requests for mitigation.\" The minutes have translated abolition into upholstery.\n\nDigital portals repeat the same conversion with a friendlier interface. A comment box invites \"feedback.\" Character limits and dropdown menus decide in advance which kinds of sentence will count as input. The resident who types a structural objection is asked, before submitting, to rate the project from one to five stars. The rating is the datum that will be averaged; the paragraph is optional texture. When officials later announce that the \"average rating was 3.7,\" they are not lying about the arithmetic. They are treating a coerced metric as a public will.\n\nA more honest practice would not abandon rooms or portals. It would stop narrating them as consent machines. It would publish the unedited record beside the decision, including the proposals that were not adopted, and it would say plainly: we heard you and we are proceeding anyway, for these reasons. That sentence is politically expensive, which is why the photograph of the hall is preferred. The photograph allows a government to be seen listening without being seen choosing. Democracy, however, is not a listening face. It is the willingness to let a choice remain attributable, especially when the choice disappoints the people who were invited to speak.",
+      "questions": [
+        {
+          "concept_id": "MCAT.CARS.FND.t5",
+          "type": "passage_question",
+          "stem": "Which of the following is the best paraphrase of the author's claim that the ritual converts “dissent into attendance”?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "People who come to object are later counted as having jointly authored the decision, because their presence is filed as engagement while their refusal is no longer visible as a no."
+            },
+            {
+              "key": "B",
+              "text": "Facilitators secretly rewrite every spoken sentence so that minutes contain only praise for the project."
+            },
+            {
+              "key": "C",
+              "text": "Sticky notes are a more accurate record of public will than microphones, because writing cannot be timed."
+            },
+            {
+              "key": "D",
+              "text": "Consultation never alters a design, so attendance is always a theatrical fraud from the first invitation."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The opening argument is that speaking and being minuted are real, yet the fact of having been in the room is later cited as evidence that the decision was shared. Conversion of dissent into attendance means presence is stored as legitimacy while refusal is filed, not that staff must fabricate praise or that revision never occurs. The author later grants that some rooms add ramps or spare trees. A faithful paraphrase must keep that conversion mechanism and must not upgrade it into a claim of universal theatrical fraud or of literal forgery of praise. Only A stays inside those bounds.",
+          "distractor_rationales": {
+            "B": "The author describes structural conversion (photographs, themes, ratings), not a charge that facilitators secretly replace objections with praise.",
+            "C": "Sticky notes belong to the opening inventory of ritual props; they are not ranked as a superior record, and timed microphones are the later funnel example.",
+            "D": "The third paragraph insists some rooms do change designs; treating every invitation as fraud would contradict that qualification."
+          },
+          "difficulty_est": 0.4
+        },
+        {
+          "concept_id": "MCAT.CARS.RWT.t2",
+          "type": "passage_question",
+          "stem": "The speaker who came to argue that a garage should not be built and is later listed under “requests for mitigation” is used in the passage as",
+          "choices": [
+            {
+              "key": "A",
+              "text": "counterevidence, showing that minutes faithfully preserve abolitionist claims."
+            },
+            {
+              "key": "B",
+              "text": "an illustration that the funnel of timed comments and 'themes' can recode a structural refusal as a request for padding, thereby supporting the conversion thesis."
+            },
+            {
+              "key": "C",
+              "text": "proof that digital star ratings are the only honest civic metric."
+            },
+            {
+              "key": "D",
+              "text": "a concession that mitigation is what objectors secretly wanted all along."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The microphone paragraph claims that themes are what survive the funnel and are not necessarily what speakers thought they had said. The garage example is the concrete support: abolition recoded as upholstery. Its function is evidential support for the conversion thesis, not a celebration of minutes, not a leap to star ratings (those arrive in the next paragraph as a further instance), and not a mind-reading concession about secret desires. Relevance-and-support questions require seeing what claim the anecdote is asked to carry, which the surrounding funnel sentences specify.",
+          "distractor_rationales": {
+            "A": "The listing under mitigation is the distortion being diagnosed, not evidence of faithful preservation.",
+            "C": "Star ratings are introduced later as another conversion device, not as a standard the garage anecdote is meant to prove.",
+            "D": "The author treats the recoding as a mistranslation of the speaker's aim, not as a revelation of hidden preference for upholstery."
+          },
+          "difficulty_est": 0.46
+        },
+        {
+          "concept_id": "MCAT.CARS.RWT.t5",
+          "type": "passage_question",
+          "stem": "How is the author's admission that “some rooms change designs” best reconciled with the critique of participation rituals?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "It is a contradiction the passage never notices, because any revision would make attendance identical with consent."
+            },
+            {
+              "key": "B",
+              "text": "It is a sarcastic aside that the author immediately withdraws by calling all ramps imaginary."
+            },
+            {
+              "key": "C",
+              "text": "It is consistent: the target is the ambient theory that treats any revision as proof the process is sound and leftover grievance as noise, not the existence of occasional design changes."
+            },
+            {
+              "key": "D",
+              "text": "It shows the author ultimately prefers photographs of crowded halls to written reasons, since ramps are photogenic."
+            }
+          ],
+          "correct_key": "C",
+          "explanation": "Internal consistency turns on whether the concession cancels the thesis. The third paragraph says revisions matter and that a different piety would deny them, then names the actual target: the theory that any revision proves the process and that remaining grievance is leftover noise from people who had their chance. Attendance made to do the work of consent can coexist with occasional ramps. There is no later withdrawal of the ramp example, and the closing preference is for attributable 'proceeding anyway' over the listening-face photograph. The concession is therefore a scope limit, not a hidden reversal.",
+          "distractor_rationales": {
+            "A": "The author denies that revision equals a sound process; noticing ramps does not force the identity of attendance and consent.",
+            "B": "Nothing in the text recasts the ramp, tree, or night bus as imaginary; they are granted as real and morally relevant.",
+            "D": "The closing paragraphs prefer the politically expensive sentence that admits a choice over the photograph that simulates listening without choosing."
+          },
+          "difficulty_est": 0.5
+        },
+        {
+          "concept_id": "MCAT.CARS.RBT.t2",
+          "type": "passage_question",
+          "stem": "Suppose a planning authority publishes the unedited comment record beside its decision and states: “We heard the objections and are proceeding anyway, for the following reasons.” How would this information affect the author's argument?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "It would refute the argument, because any remaining objection after a statement of reasons proves that consultation never occurred."
+            },
+            {
+              "key": "B",
+              "text": "It would be irrelevant, because the author cares only about whether sticky notes were used in the room."
+            },
+            {
+              "key": "C",
+              "text": "It would weaken the argument by showing that photographs of halls are after all the essence of democracy."
+            },
+            {
+              "key": "D",
+              "text": "It would instantiate the more honest practice the author recommends, shifting legitimacy from a listening-face to an attributable choice, without requiring that objectors prevail."
+            }
+          ],
+          "correct_key": "D",
+          "explanation": "The sixth paragraph describes exactly this practice: do not abandon rooms; stop narrating them as consent machines; publish the unedited record; say we heard you and are proceeding anyway, for these reasons. New information that a city does that would count as the recommended alternative, not as a refutation. Objectors need not win for the conversion problem to be addressed; the issue was borrowed moral credit and the disappearance of choice. The photograph is what this statement is meant to replace. Incorporating the hypothetical therefore confirms D rather than a claim that reasons make consultation impossible.",
+          "distractor_rationales": {
+            "A": "The author never equates objectors losing with the nonexistence of consultation; the expensive sentence is honest precisely when the project still proceeds.",
+            "B": "Sticky notes are opening scenery, not the criterion of legitimacy; unedited records and attributable reasons are the stated alternative.",
+            "C": "The photograph is criticized as allowing a government to be seen listening without being seen choosing; a reasons statement is the opposite of that preference."
+          },
+          "difficulty_est": 0.55
+        },
+        {
+          "concept_id": "MCAT.CARS.RBT.t4",
+          "type": "passage_question",
+          "stem": "Which of the following is the most defensible limitation of the author's argument as written?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "It never explains how conversion of dissent into attendance is supposed to work, so no civic implication can be drawn."
+            },
+            {
+              "key": "B",
+              "text": "It proves that every digital portal is illegal, so further discussion of design is unnecessary."
+            },
+            {
+              "key": "C",
+              "text": "It implies that photographs of consultation cannot substitute for attributable choice, yet it does not supply criteria for when proceeding-anyway is substantively just—only that consent-narration is a dishonest substitute for that choice."
+            },
+            {
+              "key": "D",
+              "text": "It shows that democracy is identical with unedited recordings, so a city that publishes audio has thereby exhausted its civic duty."
+            }
+          ],
+          "correct_key": "C",
+          "explanation": "The passage is strong on a diagnostic implication: legitimacy-by-photograph and coerced averages are not consent. It is modest on substance. The recommended sentence admits a choice; it does not tell a reader how to judge whether the reasons are good. That is a real limitation, not a hole in the conversion mechanism, which is specified through minutes, themes, and ratings. The text also refuses the implication that portals must be abandoned or that recordings exhaust duty. Naming what the argument does not establish is the task; C tracks that gap without inventing a stronger legal claim than the author makes.",
+          "distractor_rationales": {
+            "A": "The mechanism is specified: crowded-hall photographs, recoding into themes, and averaged stars. The limitation is not absence of mechanism.",
+            "B": "The author says a more honest practice would not abandon portals; illegality is never claimed.",
+            "D": "Publishing the record is part of honesty, not a completed democracy; reasons for proceeding remain required, and the choice remains attributable."
+          },
+          "difficulty_est": 0.62
+        }
+      ]
+    },
+    {
+      "concept_id": "MCAT.CARS.RBT.t4",
+      "title": "Who may be loud",
+      "body": "Noise ordinances are written as if they were thermometers. A number of decibels is named; a clock hour is named; a fine is attached. The language of public health does real work here: sleep is not a luxury, and a child whose window faces a compressor is not being precious. But the thermometer conceals a second instrument, which is a social sorting device. Cities do not merely suppress loudness. They decide which kinds of loudness will be classified as vitality and which as nuisance, and the decision tracks, with embarrassing regularity, the prestige of the people making the sound.\n\nWalk a mixed street after dark and the taxonomy is audible. A licensed terrace with heaters and a playlist is \"activation of the night-time economy.\" A storefront church whose singing lasts past the same hour is a complaint waiting to be logged. A terrace is a business; a congregation is a disturbance that happens to own a building. Street vendors packing ice and calling prices are \"chaos\"; a restaurant's Friday overflow onto the pavement is \"vibrancy,\" provided the overflow has paid for a permit. The ear that writes the ordinance has already been trained to hear money as atmosphere and unpaid sound as aggression.\n\nDefenders of the ordinances will say that the issue is volume, not culture. Sometimes it is. A speaker stack aimed at a bedroom is a harm whether the music is sacred or commercial. The author's claim is narrower and more awkward: when two sounds of similar intensity are sorted differently, the sorting is not acoustics. It is a theory of who belongs in the air. \"Quiet\" is then sold as a natural baseline, like clean water, when it is often an aesthetic associated with certain housing and certain hours of salaried rest. Night-shift workers returning at dawn, whose rest is real, rarely get to define the city's sonic morals. People who sleep when the ordinance writers sleep do.\n\nNone of this is a brief for unlimited noise, or for the romance of the unregulated street. A city that cannot protect sleep will punish the poorest first, because they cannot buy distance from compressors. The decent aim is not a louder city but a less hypocritical one: a city that admits that permission to be loud is a scarce good, distributed by licensing, policing, and taste, and that \"quality of life\" is never only a medical phrase. It is also a claim about whose life is the measure.\n\nThe rhetorical trick is hygiene. Once noise is framed as dirt, opposition to a particular sound can wear the costume of sanitation rather than of preference. Dirt, unlike preference, does not have to justify itself at a public meeting. It only has to be pointed at. That is why a campaign against a night market can speak the idiom of rats and refuse even when the photographs show swept stones, and why a campaign for a waterfront festival can speak the idiom of civic joy even when the sound spill is identical. The same wave-form, two moral uniforms.\n\nIf the argument holds, then reform is not a new app for logging complaints. It is a requirement that like sounds be given like reasons, and that exemptions be named as political choices rather than as nature. A hospital generator may deserve its exemption. So, perhaps, does a funeral that spills into a street. What cannot be defended is the pretense that the ordinance is only a meter reading. Meters do not know the difference between a hymn and a brand. Officials do, and they should have to say so.",
+      "questions": [
+        {
+          "concept_id": "MCAT.CARS.FND.t2",
+          "type": "passage_question",
+          "stem": "In the author's after-dark taxonomy, which pairing is presented as the contrast between “activation of the night-time economy” and a “complaint waiting to be logged”?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "A hospital generator versus a funeral that spills into a street."
+            },
+            {
+              "key": "B",
+              "text": "A licensed terrace with heaters and a playlist versus a storefront church whose singing lasts past the same hour."
+            },
+            {
+              "key": "C",
+              "text": "Night-shift workers returning at dawn versus people who sleep when ordinance writers sleep."
+            },
+            {
+              "key": "D",
+              "text": "Swept stones at a night market versus rats named in a campaign idiom."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The second paragraph names the pairing explicitly: a licensed terrace is activation of the night-time economy; a storefront church singing past the same hour is a complaint waiting to be logged. Hospital and funeral appear only later as possible exemptions. Night-shift workers illustrate who rarely defines sonic morals. Swept stones and rats belong to the hygiene-rhetoric paragraph. Information-retrieval items reward locating the exact contrast rather than assembling a thematically nearby pair from another section.",
+          "distractor_rationales": {
+            "A": "Those examples appear in the closing discussion of exemptions the author is willing to consider, not as the vitality-versus-nuisance pairing.",
+            "C": "That contrast concerns whose rest sets the city's clock, not the terrace-versus-church labels.",
+            "D": "Those images support the claim that hygiene talk can costume preference; they are not the after-dark business/congregation pairing."
+          },
+          "difficulty_est": 0.34
+        },
+        {
+          "concept_id": "MCAT.CARS.RWT.t1",
+          "type": "passage_question",
+          "stem": "The paragraph that begins “The rhetorical trick is hygiene” primarily functions to",
+          "choices": [
+            {
+              "key": "A",
+              "text": "abandon the earlier claim that volume can be a real harm, replacing it with a theory that all sanitation language is fraudulent."
+            },
+            {
+              "key": "B",
+              "text": "explain how the social sorting described earlier can wear a public-health costume, so that preference need not justify itself as preference."
+            },
+            {
+              "key": "C",
+              "text": "introduce a new thesis that night markets are medically dirtier than waterfront festivals."
+            },
+            {
+              "key": "D",
+              "text": "define hygiene as the only legitimate basis for any noise rule, including brand-sponsored festivals."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The hygiene paragraph does not replace the opening concession that sleep and compressors matter. It supplies the rhetorical mechanism that lets unequal sorting look like sanitation: once noise is dirt, pointing replaces justifying. That mechanism binds the thermometer opening, the vitality/nuisance walk, and the identical wave-form wearing two moral uniforms. Integration of parts means seeing this paragraph as the how of the sorting claim, not as a medical finding about markets or as a withdrawal of the sleep concession. The festival/market pair is illustrative of uniforms, not a dirt ranking.",
+          "distractor_rationales": {
+            "A": "The first paragraph insists public-health language does real work; the later trick is misuse of that language, not a denial that sleep is a good.",
+            "C": "The author says campaigns can speak the idiom of rats even when photographs show swept stones; the point is costume, not a dirt comparison.",
+            "D": "Hygiene-as-dirt is the trick being unmasked, not the author's recommended sole basis for rules; festivals in the civic-joy idiom are the matching uniform."
+          },
+          "difficulty_est": 0.5
+        },
+        {
+          "concept_id": "MCAT.CARS.RWT.t4",
+          "type": "passage_question",
+          "stem": "The phrase “with embarrassing regularity” in the claim that the vitality/nuisance decision tracks the prestige of the people making the sound most nearly signals",
+          "choices": [
+            {
+              "key": "A",
+              "text": "neutral statistical caution, as if the author were merely reporting an accidental correlation without evaluating it."
+            },
+            {
+              "key": "B",
+              "text": "amused affection for city officials, who are portrayed as lovable bunglers."
+            },
+            {
+              "key": "C",
+              "text": "an evaluative stance: the pattern is presented as socially awkward to admit because it contradicts the ordinances' thermometer posture."
+            },
+            {
+              "key": "D",
+              "text": "a comic retraction, inviting the reader not to take the sorting claim seriously."
+            }
+          ],
+          "correct_key": "C",
+          "explanation": "Embarrassing evaluates. Regularity claims a pattern, not a one-off. Together they mark stance: the tracking of prestige is something a thermometer vocabulary should make hard to confess. The rest of the passage—hypocrisy, costume, meters that do not know hymns from brands—confirms a critical, not affectionate or retracted, tone. Rhetoric here is the gap between the ordinances' claimed neutrality and the author's insistence that officials already hear money as atmosphere. The adjective's job is to name that awkwardness, which is why C, not a claim of statistical humility or of comedy, fits.",
+          "distractor_rationales": {
+            "A": "Embarrassing is not a hedge; it judges the pattern as something that ought to cause shame relative to the hygiene posture.",
+            "B": "Officials are said to hear money as atmosphere and unpaid sound as aggression; that is indictment, not fondness for bunglers.",
+            "D": "The argument proceeds to reform demands (like sounds, like reasons); it does not invite the reader to treat sorting as a joke."
+          },
+          "difficulty_est": 0.44
+        },
+        {
+          "concept_id": "MCAT.CARS.RBT.t1",
+          "type": "passage_question",
+          "stem": "A city fines an unlicensed drumming circle in a courtyard at 11 p.m. at the same measured level it permits from a ticketed waterfront concert with a corporate sponsor the same night. Applying the author's principle, which evaluation follows?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "The differential is automatically justified, because a ticketed event is by definition not noise."
+            },
+            {
+              "key": "B",
+              "text": "The differential may be defensible, but only as a named political allocation of the scarce good of loudness, not as a mere meter reading."
+            },
+            {
+              "key": "C",
+              "text": "Both events must be banned, because the author forbids all exemptions, including hospitals."
+            },
+            {
+              "key": "D",
+              "text": "The courtyard drumming is dirt in the medical sense, so hygiene language is the only honest description."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The author's principle is that like sounds require like reasons and that exemptions should be named as political choices rather than as nature. A concert and a drumming circle at similar intensity, sorted by license and sponsorship, is the hymn-versus-brand structure applied to a new pair. The text allows that some exemptions (a hospital generator, perhaps a funeral) can be defended; it does not treat tickets as a natural solvent of noise, demand a total ban, or accept dirt-language as honest by default. Applying the principle therefore yields a demand for named reasons, which is B.",
+          "distractor_rationales": {
+            "A": "Treating a ticket as a definitional escape from noise is the vitality-as-atmosphere move the walk-after-dark paragraph criticizes.",
+            "C": "The closing paragraph explicitly allows that a hospital generator may deserve its exemption; unlimited prohibition is refused in the fourth paragraph as well.",
+            "D": "Hygiene-as-dirt is the costume that lets preference skip justification; applying it here would repeat the trick, not follow the principle."
+          },
+          "difficulty_est": 0.56
+        },
+        {
+          "concept_id": "MCAT.CARS.RBT.t3",
+          "type": "passage_question",
+          "stem": "The author's account of identical wave-forms wearing two moral uniforms is most nearly analogous to which of the following?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "A restaurant dress code that calls a laborer's boots 'unkempt' and a customer's distressed leather 'casual luxury' at the same scuff level."
+            },
+            {
+              "key": "B",
+              "text": "A physics classroom that treats two equal amplitudes as identical regardless of instrument."
+            },
+            {
+              "key": "C",
+              "text": "A ban on all urban sound in the name of a perfectly silent commons."
+            },
+            {
+              "key": "D",
+              "text": "A medical study that measures sleep loss from compressors beside bedrooms."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The analogy has to map same intensity, different moral labels, tracking prestige. Dress codes that rename the same scuff according to who wears it preserve that structure. A physics classroom that refuses the distinction is the meter the author says officials are not; a total ban is the unlimited-noise opposite the fourth paragraph declines; compressor studies are the genuine public-health work the first paragraph grants. Hypothetical mapping fails if it erases the double uniform or if it substitutes the health concession for the hypocrisy claim. A keeps the hypocrisy without denying that some health measurements are real.",
+          "distractor_rationales": {
+            "B": "That classroom is what a thermometer would do if it were only a thermometer; the author's point is that ordinances are not only meters.",
+            "C": "The author rejects both unlimited noise and the romance of the unregulated street; a total ban is not the analogue of two uniforms.",
+            "D": "Sleep-loss measurement is the legitimate health work distinguished from the sorting device; it does not analogize the two-uniform trick."
+          },
+          "difficulty_est": 0.6
+        }
+      ]
+    }
+  ]
+}

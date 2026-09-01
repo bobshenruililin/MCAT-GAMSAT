@@ -1,0 +1,872 @@
+{
+  "items": [
+    {
+      "concept_id": "GAMSAT.S2.task_a.t1",
+      "type": "discrete",
+      "stem": "A Task A comment set reads:\n1. “A nation that cannot wait cannot be just.”\n2. “Speed is a form of care when the alternative is neglect.”\n3. “The queue is the last public ritual we have not privatised.”\n4. “Whoever owns the clock owns the apology.”\n5. “Triage is a moral vocabulary pretending to be a stopwatch.”\nWhich option best names the socio-cultural issue the comments orbit without inventing a topic none of them share?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Whether waiting, speed, and the control of time in public services are matters of justice or of mere logistics."
+        },
+        {
+          "key": "B",
+          "text": "Whether smartphones should be banned in schools."
+        },
+        {
+          "key": "C",
+          "text": "Whether poetry is more important than policy."
+        },
+        {
+          "key": "D",
+          "text": "Whether privatisation of airlines is historically inevitable."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Theme identification asks what the comments jointly circle, not what a student already wished to preach. Every line here is about waiting, clocks, queues, triage, speed, and who owes an apology—public time as a moral good. School phones, poetry-versus-policy, and airlines share a word or two at most (privatised, care) but are not the orbit. A Task A essay that names A can then take a side; an essay that names B has left the set. The skill is naming the issue tightly enough that the comments remain relevant.",
+      "distractor_rationales": {
+        "B": "No comment mentions schools or phones; importing a stock education topic abandons the set.",
+        "C": "The comments are civic, not a ranking of literary genres against legislation.",
+        "D": "“Privatised” in comment 3 refers to a public ritual of queuing, not to aviation history."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_a.t1",
+      "type": "discrete",
+      "stem": "A Task A set reads:\n1. “We outsourced judgment to whoever had the thickest lamination on a name badge.”\n2. “Ignorance is not a crime; pretending we do not need teachers is.”\n3. “A society that cannot tell a specialist from a loud amateur will pay for the confusion in waiting rooms.”\n4. “Democracy is not a refusal of knowledge.”\n5. “Humility before evidence is not elitism.”\nA student writes that the theme is “the importance of university.” Why is that identification weak, and which theme is tighter?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It is weak because none of the comments mention universities; a tighter theme is the civic status of expertise versus the flattening of knowledge into mere opinion."
+        },
+        {
+          "key": "B",
+          "text": "It is weak because Task A forbids any theme involving knowledge; the only legal theme is sport."
+        },
+        {
+          "key": "C",
+          "text": "It is strong; “teachers” in comment 2 proves the set is about campus funding formulas."
+        },
+        {
+          "key": "D",
+          "text": "It is weak because the real theme is name-badge stationery, which must be discussed as industrial design."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "“University” is a nearby institution, not the shared object. The comments concern judgment, specialists, amateurs, democracy, evidence, and humility—expertise as a public good, not a budget line for campuses. Teachers appear as a figure for needed knowledge, not as a prompt to rehearse HECS policy. Theme identification fails when a student substitutes a familiar essay they have memorised. A is the correction. Sport as the only legal theme is invented; stationery is a metaphor in comment 1, not the issue.",
+      "distractor_rationales": {
+        "B": "Task A has no banned-knowledge rule and no sport requirement; that answer invents exam law.",
+        "C": "One mention of teachers does not convert the set into a funding-formula essay; the other four comments would become decoration.",
+        "D": "Lamination is a metaphor for hollow credential theatre, not an industrial-design brief."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_a.t2",
+      "type": "discrete",
+      "stem": "Same waiting/time comments as a typical Task A set. Which opening is an argumentative thesis rather than a survey or a delay?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "There are many interesting views on waiting, and people have disagreed since the dawn of time."
+        },
+        {
+          "key": "B",
+          "text": "Queues can be fair or unfair depending on a range of factors that this essay will now list."
+        },
+        {
+          "key": "C",
+          "text": "Public waiting is not a neutral leftover of logistics: when a clock is owned by those who will never sit in the queue, delay becomes a way of distributing dignity, and speed for the already-served is not automatically care."
+        },
+        {
+          "key": "D",
+          "text": "In this essay I will discuss comments 1 through 5 in order and then conclude."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "An argumentative thesis takes an evaluable position a reader could resist. C says waiting distributes dignity, that ownership of the clock matters, and that speed is not automatically care—three contestable claims that still leave room for a counterargument about neglect. A and B refuse to land. D is a table of contents, the inventorying ACER does not reward. Task A is not a summary of the prompt. The thesis should be visible early enough that examples have a job. C is the only opening that already argues.",
+      "distractor_rationales": {
+        "A": "A survey of eternal disagreement is a delay, not a position; “dawn of time” is also a generic inflate.",
+        "B": "“Depending on a range of factors” postpones the evaluation the task asks for.",
+        "D": "Promising to walk through comments in order is the checklist method, not a thesis."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_a.t2",
+      "type": "discrete",
+      "stem": "Which candidate thesis for a Task A set on public expertise is still a thesis but is too brittle to control under time, and which is stronger?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Brittle: “Anyone who questions a specialist is an enemy of democracy.” Stronger: “Democratic equality of standing is not the same as equality of expertise; a public that cannot tell the difference will harm the people in waiting rooms first.”"
+        },
+        {
+          "key": "B",
+          "text": "Brittle: any sentence with a semicolon. Stronger: a sentence that never takes a side."
+        },
+        {
+          "key": "C",
+          "text": "Brittle: the stronger thesis in A, because Task A requires absolute slogans. Stronger: “Experts are always right.”"
+        },
+        {
+          "key": "D",
+          "text": "Brittle: all theses; Task A should only narrate a childhood memory of a teacher."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "A thesis can be clear without being a bludgeon. The first sentence in A collapses questioning into enmity and will force the essay into cartoon villains. The second keeps a hard distinction—standing versus expertise—and names a harmed public (waiting rooms) without claiming specialists are sacred. That is still evaluative. B treats punctuation as vice and praises sidelessness. C inverts the standard: slogans are what make essays brittle. D misassigns the personal-memory task to A. Under time, a precise distinction is easier to illustrate than an absolute war on questions.",
+      "distractor_rationales": {
+        "B": "Semicolons are irrelevant; refusing a side is the survey problem, not a virtue of Task A.",
+        "C": "Absolute slogans are harder to defend and invite strawmen; “experts are always right” is the brittle form.",
+        "D": "Childhood memory of a teacher is Task B territory if it stays personal; it is not the required form of Task A."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_a.t3",
+      "type": "discrete",
+      "stem": "A student claims: “When we call delay 'triage,' we often hide understaffing.” Which example actually earns that claim in a Task A essay?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Throughout history, humans have always waited, from ancient Rome to now."
+        },
+        {
+          "key": "B",
+          "text": "A regional clinic that publishes a six-month wait for a diabetic review while its website language speaks of 'priority pathways' shows the vocabulary doing the hiding."
+        },
+        {
+          "key": "C",
+          "text": "My cousin is nice, which proves staffing is a vibe."
+        },
+        {
+          "key": "D",
+          "text": "As Shakespeare once showed, time is money."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Examples on Task A must be concrete enough to do causal work for the claim. B names a setting, a wait, a patient group, and a mismatch with official language—exactly the hiding the thesis alleges. A is a false universal that cannot show hiding. A cousin’s niceness does not speak to staffing. A vague Bard gesture is decoration, and it also risks leaning on a famous line you should not treat as a substitute for a case. Under time, one specified institution beats a millennium. The test is whether the example could be false in a way that would matter to the claim; B could.",
+      "distractor_rationales": {
+        "A": "A sweeping historical always cannot locate the modern bureaucratic hiding the sentence is about.",
+        "C": "Character testimony about a cousin does not instantiate understaffing or official language.",
+        "D": "An unearned literary shrug does not specify a wait, a clinic, or a vocabulary of triage."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_a.t3",
+      "type": "discrete",
+      "stem": "A Task A thesis states that “whoever owns the clock owns the apology.” Which use of an example is weakest, and why?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Weakest: a fully specified case of an airline keeping passengers on the tarmac without a true estimated time, then offering a voucher in lieu of an explanation of the delay’s cause."
+        },
+        {
+          "key": "B",
+          "text": "Weakest: “Companies these days are bad.” It names no clock-owner, no delayed public, and no apology-substitute, so the thesis’s parts have nothing to inhabit."
+        },
+        {
+          "key": "C",
+          "text": "Weakest: a hospital’s public dashboard that shows average wait while omitting the longest decile, if the essay explains how the omitted tail is the apology being owned."
+        },
+        {
+          "key": "D",
+          "text": "Weakest: a comparison between a minister’s press conference time and a benefits helpline’s hold music, if both clocks are identified."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The thesis has moving parts: ownership of time, and an apology that can be captured or replaced. A, C, and D, though imperfect, still give those parts somewhere to live. “Companies these days are bad” is a mood, not a case; it cannot earn a claim about clocks or apologies. Task A examples fail most often by staying at that altitude. The question is not which story is nicest but which one leaves the thesis unemployed. B is the unemployed example. Specificity is a thinking tool, not an ornament.",
+      "distractor_rationales": {
+        "A": "The tarmac case supplies a clock, a public, and a voucher as a substitute apology; it is usable, not weakest.",
+        "C": "A dashboard that hides the worst waits is a precise illustration of owning how delay is narrated.",
+        "D": "Two named clocks in different registers can earn a comparison about whose time is treated as expensive."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_a.t4",
+      "type": "discrete",
+      "stem": "Which response best engages a five-comment Task A set on waiting and speed?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A paragraph that restates each comment in order, beginning “Comment 1 says… Comment 2 says…,” then stops."
+        },
+        {
+          "key": "B",
+          "text": "An essay that never mentions any comment, because “using quotes is cheating.”"
+        },
+        {
+          "key": "C",
+          "text": "An essay that stages the live tension between “speed is a form of care” and “whoever owns the clock owns the apology,” then uses one further comment only where it complicates that tension."
+        },
+        {
+          "key": "D",
+          "text": "An essay that copies all five comments into the introduction as a block and calls that engagement."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Engaging the quote set means thinking with at least some of the comments, not inventorying them and not fleeing them. ACER does not require a roll-call. The productive pattern is to let two comments argue, then bring a third in as a complication rather than as a fifth bead. C is that pattern. A is the checklist. B invents a cheating rule and leaves the prompt unused. A copied block is display, not response. Under time, two comments in genuine relation beat five in a list. That is the craft the topic names.",
+      "distractor_rationales": {
+        "A": "Ordered restatement is a précis of the prompt, which does not yet take a position or put comments into relation.",
+        "B": "The set is the stimulus; refusing it is not a purity rule, it is a missed task.",
+        "D": "Pasting the set into the essay is not engaging it; the comments have not been used as thought."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_a.t4",
+      "type": "discrete",
+      "stem": "A student is unsure which comments to use. Which plan is most consistent with engaging the set without inventorying it?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Choose the one comment that already matches a memorised essay on climate, and ignore the rest even if they are about queues."
+        },
+        {
+          "key": "B",
+          "text": "Find the deepest disagreement inside the set, write to that disagreement, and let unused comments stay unused if they would only repeat a point already earned."
+        },
+        {
+          "key": "C",
+          "text": "Use every comment once, in the given order, as a topic sentence, regardless of redundancy."
+        },
+        {
+          "key": "D",
+          "text": "Translate each comment into a rhetorical question and refuse to answer any of them."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The set is a field of tensions, not a shopping list. The best under-time plan is to locate the disagreement the comments already contain—speed as care versus owned clocks, for example—and write an argument that could not have been written without that disagreement. Unused comments are allowed; forced coverage produces repetition. Hijacking the paper toward a memorised climate piece abandons the set. Rhetorical questions that remain unanswered are another delay. B is the method that treats comments as springboards. It still counts as engaging the set because the disagreement is theirs, not imported.",
+      "distractor_rationales": {
+        "A": "A pre-written climate essay that merely wears one comment as a hat has not engaged this set’s issue.",
+        "C": "Forced once-each coverage is inventory by another name and will flatten redundancy into fake structure.",
+        "D": "Unanswered questions are a tone, not an argument, and they do not use the comments as claims to be tested."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_a.t5",
+      "type": "discrete",
+      "stem": "Thesis: “Speed for the already-served is not automatically care.” Which paragraph is a steelman of the opposing view rather than a strawman?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Opponents of my view simply enjoy watching the poor wait, which is why they exist."
+        },
+        {
+          "key": "B",
+          "text": "A serious opposing view is that when delay itself causes harm—an untreated infection, a missed cancer window—then refusing speed is not humility about clocks but a decision to let damage run, and any justice-talk that ignores that harm is aesthetic."
+        },
+        {
+          "key": "C",
+          "text": "Some people think waiting is fun, which is obviously stupid."
+        },
+        {
+          "key": "D",
+          "text": "Nobody could disagree with me, so a counterargument would be dishonest."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "A steelman states the strongest honest form of the other side before answering it. B uses the set’s own “speed is a form of care when the alternative is neglect” and specifies medical windows, which a waiting-justice thesis must meet. A and C insult motives or intelligence. D refuses the move entirely. Task A essays that never occupy the opposing chair read as sermons. The counterargument topic is not a requirement to surrender; it is a requirement to show that the thesis can survive the best version of “speed is care.” B is that version.",
+      "distractor_rationales": {
+        "A": "Motive-smearing is a strawman of character, not a reconstruction of the neglect argument.",
+        "C": "“Waiting is fun” is not a view present in the set and is too silly to be worth answering.",
+        "D": "Disagreement is already staged by the comments; refusing to voice it is not integrity."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_a.t5",
+      "type": "discrete",
+      "stem": "After a steelman of “speed is care,” which closing move actually answers it rather than merely mentioning it?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "“Of course some delays harm, but that fact supports targeted speed for clinical windows, not a general rule that whoever can buy a shorter clock is therefore caring.”"
+        },
+        {
+          "key": "B",
+          "text": "“As mentioned, there is another view. In conclusion, waiting is deep.”"
+        },
+        {
+          "key": "C",
+          "text": "“I respect all opinions equally, so both speed and waiting are correct.”"
+        },
+        {
+          "key": "D",
+          "text": "“See comment 2.”"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Answering a counterargument means altering or delimiting your thesis in light of it, or showing why the strongest objection still fails. A grants medical windows and then blocks the slide from those windows to a market in shorter clocks. That is a reply. B names the other view and then vapours. C collapses into a draw that the task did not ask for. A bare “see comment 2” is a pointer, not a thought. The craft is steelman-and-answer, not a polite wave. Under time, one precise delimitation is enough. A is the delimitation.",
+      "distractor_rationales": {
+        "B": "Mention plus a vague profundity about waiting does not meet the harm-from-delay objection.",
+        "C": "Equal respect for all opinions abandons evaluation, which is the Task A job.",
+        "D": "Pointing at a comment is not an answer; the essay still has to do the distinguishing work."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_b.t1",
+      "type": "discrete",
+      "stem": "A comment set reads:\n1. “Home is the place that still uses your childhood name.”\n2. “I left so that I could speak; I stayed silent so that I could stay.”\n3. “Belonging is a practice, not a passport stamp.”\n4. “We inherit rooms before we inherit opinions.”\n5. “Forgiveness is sometimes just a tired kind of accuracy.”\nWhich identification correctly treats this as a Task B personal theme rather than a Task A policy brief?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Border-security legislation and visa quotas, because “passport” appears once."
+        },
+        {
+          "key": "B",
+          "text": "Lived belonging, leaving, silence, inherited rooms, and the ordinary work of forgiveness—personal and social experience rather than a program of reform."
+        },
+        {
+          "key": "C",
+          "text": "Interest-rate policy, because inheritance is mentioned."
+        },
+        {
+          "key": "D",
+          "text": "The same socio-cultural waiting-time issue as a typical Task A clock set."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Task B comment sets orbit lived experience: love, identity, memory, belonging, failure. This set’s centre is home, silence, inherited rooms, and forgiveness as accuracy—not a ministerial brief. A single word (passport, inherit) does not convert it into immigration law or macroeconomics. Nor is it a waiting-time policy paper. A student who writes Task A rhetoric here (should the state do X) has misidentified the task. B names the personal theme tightly enough that a reflective essay has somewhere to stand.",
+      "distractor_rationales": {
+        "A": "Passport is a metaphor for belonging, not an invitation to write a visa-quota argument.",
+        "C": "Inheritance of rooms is domestic and formative, not a prompt about cash rates.",
+        "D": "Clocks and queues are a different set; importing them here abandons these comments."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_b.t1",
+      "type": "discrete",
+      "stem": "Which proposed Task B theme is too generic to be a theme, and which is personal enough to control a thirty-minute piece?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Too generic: “Life is a journey.” Personal enough: “The cost of staying in a family that would only love a quieter version of me.”"
+        },
+        {
+          "key": "B",
+          "text": "Too generic: any first-person sentence. Personal enough: “Society today.”"
+        },
+        {
+          "key": "C",
+          "text": "Too generic: the family-silence theme. Personal enough: “The human condition in all cultures.”"
+        },
+        {
+          "key": "D",
+          "text": "Too generic: all Task B themes; the section is only for policy."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "A personal theme still needs edges. “Life is a journey” and “the human condition” cannot generate a particular scene. “The cost of staying in a family that would only love a quieter version of me” can: a kitchen, a withheld sentence, a leaving that is also a silence. That is still Task B, not a Task A program. First-person grammar alone does not make a theme personal, and “society today” is the generic fog Task B must refuse. The section is not a policy paper; misfiling it as one is a task error. A is the pair that shows the difference in grain.",
+      "distractor_rationales": {
+        "B": "First-person is not automatically generic, and “society today” is the broader fog, not the cure.",
+        "C": "This inverts the grain: family-silence can be written; “all cultures” cannot.",
+        "D": "Task B is the personal/social task; calling it policy-only misreads the paper."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_b.t2",
+      "type": "discrete",
+      "stem": "Which opening uses a reflective first-person without collapsing into solipsism?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "I am unique and no one else has ever had to choose between speaking and staying."
+        },
+        {
+          "key": "B",
+          "text": "I kept my mouth closed at that table so the rent would still be paid, and I am still not sure whether that silence was love, cowardice, or both—a question many people inherit with a house."
+        },
+        {
+          "key": "C",
+          "text": "I hate everyone in my family and this essay will list them."
+        },
+        {
+          "key": "D",
+          "text": "One must not use “I,” because reflection is only valid in the third person."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Reflective voice is first-person that thinks, not a claim of cosmic uniqueness and not a prosecution file. B names a particular table and rent, admits mixed motives, and then opens the question outward—many people inherit that silence—without pretending the writer is a universal spokesman. A is solipsism. C is a vent. D invents a ban on “I” that would make Task B impossible. The craft is to let the self be a specimen, not a monument. Under time, one honest uncertainty does more than a manifesto of uniqueness.",
+      "distractor_rationales": {
+        "A": "“No one else has ever” seals the essay against the reader; that is solipsism, not reflection.",
+        "C": "A hate-list is expressive, but it does not turn toward a question the reader can share.",
+        "D": "Task B expects a personal voice; a third-person-only rule is not ACER’s."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_b.t2",
+      "type": "discrete",
+      "stem": "A draft reads: “They never understood me. They were wrong. I was right. The end.” What is the principal reflective-voice failure, and which revision begins to repair it?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Failure: too much world, not enough self. Repair: delete every concrete table and name only “society.”"
+        },
+        {
+          "key": "B",
+          "text": "Failure: the “I” prosecutes without examining itself. Repair: “I called it misunderstanding because that word hurt less than admitting I had used silence as a weapon too.”"
+        },
+        {
+          "key": "C",
+          "text": "Failure: presence of any family. Repair: write about interest rates."
+        },
+        {
+          "key": "D",
+          "text": "Failure: brevity. Repair: triple the length with adjectives of rage."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The draft’s “I” is a verdict machine. Reflection would turn the lens around: how the writer named the hurt, what the naming protected, whether silence went both ways. The repair sentence does that without cancelling the hurt. Making the piece less particular or fleeing into rates would be a task error. Lengthening rage is still prosecution. Voice here is not decoration; it is the difference between a diary dump and a piece of thought. B names the failure and a first repair that a marker could actually reward.",
+      "distractor_rationales": {
+        "A": "The draft is already short on world; more fog is not the cure.",
+        "C": "Family is legitimate Task B material; the failure is unexamined verdict, not the topic.",
+        "D": "More rage without self-scrutiny would intensify the same failure."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_b.t3",
+      "type": "discrete",
+      "stem": "Which sentence better satisfies “particular over generic” for a Task B on inherited rooms?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Family is important in today’s society, and we should all value our loved ones."
+        },
+        {
+          "key": "B",
+          "text": "The spare chair at the end of the table was still set as if my brother might arrive, and nobody mentioned that he had not done so for three winters."
+        },
+        {
+          "key": "C",
+          "text": "In the modern world, individuals struggle with identity."
+        },
+        {
+          "key": "D",
+          "text": "Belonging, as philosophers have always said, is a universal human need."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Particular means a scene a camera could find: a chair, a table, three winters, an unmentioned absence. That still carries theme—belonging, denial, inherited staging—without announcing it as a slogan. A, C, and D are interchangeable across a thousand prompts. Markers are not rewarding furniture for its own sake; they are rewarding thought that has somewhere to live. Generic language cannot host mixed feeling. Under time, one chair beats a paragraph of “today’s society.” B is the sentence that could only belong to this theme.",
+      "distractor_rationales": {
+        "A": "“Family is important” could be pasted onto any paper; it does not yet see a room.",
+        "C": "“Modern world” plus “identity” is the stock fog Task B is designed to punish.",
+        "D": "Appealing to what philosophers have always said is a generic inflate, not a scene."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_b.t3",
+      "type": "discrete",
+      "stem": "A student has two minutes to replace a generic sentence. Which substitution best keeps thought while adding particularity?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Replace “I felt sad” with a list of ten synonyms for sad."
+        },
+        {
+          "key": "B",
+          "text": "Replace “I felt sad” with “I washed his mug and left it on the drying rack, then moved it back to the cupboard because the rack looked like a claim.”"
+        },
+        {
+          "key": "C",
+          "text": "Replace “I felt sad” with a quotation from a famous published memoir used as if it were the student’s life."
+        },
+        {
+          "key": "D",
+          "text": "Replace “I felt sad” with “Sadness is a socio-economic construct in late capitalism,” and stop."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Particularity is not a thesaurus and not a costume of theory. The mug, the rack, and the fear that a drying object looks like a claim turn sadness into a decision in a kitchen—thought plus scene. Synonyms stall. Borrowing a famous memoir’s life as if it were yours is both generic and a integrity problem; this bank uses original scenes only. A theory slogan without a life attached is Task A jargon on a Task B body. The particular should still mean; B’s last clause is the meaning. That is why it wins.",
+      "distractor_rationales": {
+        "A": "A synonym list is still generic; it does not locate the feeling in an action.",
+        "C": "Famous memoir language would not be the student’s particular life, and this trainer does not use copyrighted essays as models to copy.",
+        "D": "A theory caption without a scene abandons Task B’s demand for lived grain."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_b.t4",
+      "type": "discrete",
+      "stem": "Which option shows emotional precision rather than sentimentality?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Tears streamed down my face like rivers of liquid pain as my heart shattered into a million pieces."
+        },
+        {
+          "key": "B",
+          "text": "I was so emotional; it was the most emotional day of my entire emotional life."
+        },
+        {
+          "key": "C",
+          "text": "I was angry at him for dying in a rental, and ashamed of the anger, and then irritated at the agent for being the only person in the room with a workable next step."
+        },
+        {
+          "key": "D",
+          "text": "I smiled bravely because love never dies and he is watching from a better place."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Precision names mixed, slightly unflattering states that can coexist: anger, shame at the anger, irritation at competence. That is tone control. Sentimentality inflates a single approved feeling (tears like rivers, love never dies) until it cannot be tested. “Emotional” repeated is a blank. Task B rewards the writer who can bear an awkward true combination. C could be false in a way that would matter; A and D cannot, because they are already at maximum. Markers read the difference as maturity of thought, not as a lack of feeling.",
+      "distractor_rationales": {
+        "A": "The river-and-million-pieces pile is stock inflation; it blurs rather than specifies.",
+        "B": "Repeating “emotional” names no feeling at all.",
+        "D": "Consolation-card metaphysics replaces the awkward present tense of a rental with an untestable afterlife."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_b.t4",
+      "type": "discrete",
+      "stem": "A student uses irony to say the opposite of what they feel, then never removes the mask. Why is that a problem for emotional precision, and which move would help?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It is not a problem; irony is always more precise than naming. Help: add more sarcasm."
+        },
+        {
+          "key": "B",
+          "text": "It is a problem because the marker cannot tell the difference between defence and thought. Help: one un-ironic clause that admits the uncool feeling the irony was protecting."
+        },
+        {
+          "key": "C",
+          "text": "It is a problem because Task B forbids humour. Help: delete every particular."
+        },
+        {
+          "key": "D",
+          "text": "It is a problem because feelings must be listed as bullet points. Help: format as a table."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Irony can be precise when it is a known distance from a named feeling. If the mask never drops, the essay may look controlled while remaining unavailable. One un-ironic clause—I was lonely; I hated needing them—gives the irony a floor. More sarcasm thickens the mask. Humour is not forbidden; fog is. Bullet-point feelings are a form, not precision. The topic is tone control, not a ban on wit. B states the diagnostic and the smallest repair that still sounds like a person. That is what thirty minutes can afford.",
+      "distractor_rationales": {
+        "A": "Unrelieved irony is often a defence; it is not automatically more exact than a named state.",
+        "C": "Humour can serve precision; the failure is concealment, and deleting particulars would worsen it.",
+        "D": "A table of feelings is not ACER’s demand and usually kills voice."
+      },
+      "difficulty_est": 0.56
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_b.t5",
+      "type": "discrete",
+      "stem": "When, if at all, is a letter form a good optional choice for Task B?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Whenever the student is bored of paragraphs, including when the letter is only a vehicle for rhymed slogans with no thought."
+        },
+        {
+          "key": "B",
+          "text": "When addressing an absent person (a parent, a younger self) lets the writer do work that a report could not—voice, withheld sentences, what cannot be said in the room—and the thinking remains visible."
+        },
+        {
+          "key": "C",
+          "text": "Never; ACER automatically fails any non-essay shape."
+        },
+        {
+          "key": "D",
+          "text": "Only if the letter is addressed to a politician with a five-point policy appendix."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Creative form is optional and must serve thought. A letter to an absent person can make silence and address part of the meaning, which a generic essay on “family” cannot. It fails when form is a gimmick: rhyme without a mind, a screenplay of jokes, a shape chosen from panic. ACER does not automatically fail letters; it also does not reward them as such. A politician-plus-appendix is Task A in costume. The test is whether the form is doing a job the content needs. B is the only option that states that test.",
+      "distractor_rationales": {
+        "A": "Boredom and slogan-rhyme are gimmick, the case in which form should not be used.",
+        "C": "The topic is optional creative form when it serves thought; an automatic-fail rule is invented.",
+        "D": "A policy appendix is the wrong task’s register; it would not make the letter a good Task B."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S2.task_b.t5",
+      "type": "discrete",
+      "stem": "A student plans to write Task B as a film script with camera directions and no interior thought. Which judgment is most accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Excellent, because markers award extra marks for genre variety regardless of thinking."
+        },
+        {
+          "key": "B",
+          "text": "Risky: unless the script form is the only way to show how a family performed itself, the directions will eat minutes and hide the reflective work Task B scores."
+        },
+        {
+          "key": "C",
+          "text": "Required, because personal writing is invalid in prose."
+        },
+        {
+          "key": "D",
+          "text": "Excellent if the script copies the plot of a well-known film so the marker will recognise it."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Optional form is a tool, not a bonus genre. A script can show performance—who gets the close-up in a family—but camera directions are expensive under time and often replace the very interiority Task B needs. Unless that showing is the thought, prose will think more per minute. There is no extra-marks-for-genre rule, no ban on prose, and copying a famous film’s plot would be both generic and a copyright problem this bank refuses. The accurate judgment is risk plus a narrow justification. B is that judgment. Choose form last, after the thought is clear.",
+      "distractor_rationales": {
+        "A": "Markers score thought and control of language, not novelty of format as such.",
+        "C": "Prose is the default that still works; it is not invalid.",
+        "D": "Borrowing a famous film’s plot is the opposite of particular lived grain, and this trainer does not want reconstructed copyrighted stories."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "GAMSAT.S2.craft.t1",
+      "type": "discrete",
+      "stem": "With thirty minutes for Task A, which structure best uses the opening, middle, and close?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Opening: “According to the dictionary, justice means…” Middle: three unrelated news headlines. Close: restatement of the dictionary line."
+        },
+        {
+          "key": "B",
+          "text": "Opening: a contestable thesis about whose clock counts. Middle: one developed example plus a steelmanned objection. Close: a sharpened version of the thesis after the objection, not a copy of sentence one."
+        },
+        {
+          "key": "C",
+          "text": "Opening: a joke about the invigilator. Middle: the joke again. Close: “In conclusion, as I said.”"
+        },
+        {
+          "key": "D",
+          "text": "Opening skipped. Middle: a single paragraph that tries to do everything. Close: omitted because time ran out after the throat-clearing."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Structure under time is not a five-paragraph template; it is a job for each part. The opening should stake. The middle should earn, including by meeting an objection. The close should be cheaper than a new idea but more than echo—typically a delimited thesis. Dictionary openings waste the most valuable sentences. Jokes about invigilators do not stake a civic claim. Skipping the opening and then drowning is how many scripts die. B is the portable skeleton that still looks like thinking. It can be written in thirty minutes if the example stays single and specified.",
+      "distractor_rationales": {
+        "A": "Dictionary openings and headline scatter are two classic ways not to argue.",
+        "C": "Invigilator jokes do not open a socio-cultural argument, and a copied close adds nothing.",
+        "D": "Throat-clearing that consumes the clock is a structure failure, not a personality trait markers must forgive."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "GAMSAT.S2.craft.t1",
+      "type": "discrete",
+      "stem": "A Task B draft opens with three paragraphs of warm-up (“What is belonging, really?”) and puts the only kitchen scene in the last four minutes. What is the structural diagnosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The warm-up is the true close, so the kitchen should be deleted."
+        },
+        {
+          "key": "B",
+          "text": "The piece inverts the needed order: under time, the particular scene should arrive early enough to be thought with, and the abstract question should not consume the opening rent."
+        },
+        {
+          "key": "C",
+          "text": "The diagnosis is that Task B forbids kitchens."
+        },
+        {
+          "key": "D",
+          "text": "The diagnosis is that thirty minutes require at least six scenes."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Openings that ask unanswerable What-is-X questions pay rent without furniture. The kitchen is where this paper’s thought would live; parking it in the last four minutes means the close cannot use it and the middle had nothing to develop. Structure is the management of when particularity appears. Deleting the scene would worsen the fog. Forbidding kitchens is invented. Six scenes would guarantee skimming. The fix is to start in the room and let the question arise from it. That is still an opening-development-close model, just not a philosophy-first one. B is the diagnosis a marker’s timing would reward.",
+      "distractor_rationales": {
+        "A": "The kitchen is the asset; the warm-up is what should shrink.",
+        "C": "Domestic scenes are core Task B material.",
+        "D": "More scenes would thin attention; one or two developed moments beat a montage."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S2.craft.t2",
+      "type": "discrete",
+      "stem": "Which paragraph best integrates ideas rather than treating comments as a checklist?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Comment 1 is true. Comment 2 is also true. Comment 3 is interesting. Comment 4 exists. Comment 5 concludes."
+        },
+        {
+          "key": "B",
+          "text": "If speed can be care when delay is neglect, then the people who never wait are in a poor position to define neglect; their clock is not a medical instrument, even when they borrow triage words."
+        },
+        {
+          "key": "C",
+          "text": "I will now integrate by numbering my sentences 1a, 1b, 1c to match the prompt."
+        },
+        {
+          "key": "D",
+          "text": "Integration means quoting a philosopher at random between each comment."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Integration is ideas in relation: a conditional that uses one comment to limit another, producing a claim neither line stated alone. B does that with speed-as-care and owned clocks. A is a roll-call. Numbering as a display of matching is fake structure. Random authority quotes are name-dropping, not relation. ACER’s “quality of thinking” is visible in that relational sentence. The comments become a springboard because the writer’s claim needed both. That is the craft. Under time, one such sentence is worth five restatements.",
+      "distractor_rationales": {
+        "A": "Serial true-true-interesting is the checklist the topic forbids.",
+        "C": "Cosmetic numbering is not relation; it is inventory with decimals.",
+        "D": "Unrelated authorities do not put the set’s ideas into contact."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "GAMSAT.S2.craft.t2",
+      "type": "discrete",
+      "stem": "A Task B essay on belonging mentions silence at a table, a passport metaphor from the set, and a later city share-house, but never lets those three touch. Which revision would integrate them?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Keep them in separate paragraphs labelled Childhood, Symbol, Adult, with no cross-reference."
+        },
+        {
+          "key": "B",
+          "text": "Show that the share-house key-in-a-bowl was a learned substitute for the table’s silence: a practice of belonging that still flinched from speech, so the passport stamp was never the real document."
+        },
+        {
+          "key": "C",
+          "text": "Drop two of the three so the essay cannot be accused of having ideas."
+        },
+        {
+          "key": "D",
+          "text": "Add a fourth thread about climate policy to prove range."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Integration on Task B is often temporal and metaphorical: a later practice revealed as a translation of an earlier silence, with a comment’s image (passport) used to name what still was not a document. B makes the three threads one argument. Separate labelled boxes are a list of themes. Dropping material to avoid thought is not craft. A climate-policy bolt-on is range as scatter, usually a Task A hijack. The reader should feel the pieces requiring one another. That requirement is the score. B is the only revision that creates it.",
+      "distractor_rationales": {
+        "A": "Labels without contact are the problem restated as a plan.",
+        "C": "Fewer images without relation still fail; the issue is contact, not count.",
+        "D": "An extra policy thread would likely disintegrate the personal piece, not unify it."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "GAMSAT.S2.craft.t3",
+      "type": "discrete",
+      "stem": "Eight minutes remain on a typed Task A. The draft has a clear thesis and a half-built example. Which move best protects clarity under timed typing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Begin a new introduction with a dictionary definition, then hope to loop back."
+        },
+        {
+          "key": "B",
+          "text": "Finish the example in short independent sentences, add one counterargument sentence and one delimiting close; do not open a third example or a nested clause garden."
+        },
+        {
+          "key": "C",
+          "text": "Write one 180-word sentence so the piece looks dense."
+        },
+        {
+          "key": "D",
+          "text": "Stop thinking and hold the shift key to add visual emphasis instead of a close."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Timed typing rewards finishing a thought in readable units. Short independent sentences reduce tangle when there is no leisure to recast. A second example will not be earned. Nested gardens hide the thesis. Dictionary restarts waste the remaining clock. Capitals are not a close. The taxonomy’s point is sentence control without relying on later polish: type the claim, the case, the meeting of an objection, stop. B is that sequence. Markers can follow it; they cannot follow a last-minute syntactic monument. Clarity here is a time skill, not a handwriting skill.",
+      "distractor_rationales": {
+        "A": "A late dictionary opening doubles the unfinished middle rather than closing it.",
+        "C": "A giant sentence is how control is lost when there is no time to edit.",
+        "D": "Emphasis without a close is panic, not communication."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "GAMSAT.S2.craft.t3",
+      "type": "discrete",
+      "stem": "Which statement about computer-based S2 typing is most accurate as craft advice?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Spelling will be invisibly corrected, so muddy thinking will look precise."
+        },
+        {
+          "key": "B",
+          "text": "You should spend the first ten minutes designing an elaborate outline with numbered subsections you will not have time to fill."
+        },
+        {
+          "key": "C",
+          "text": "Assume little rescue from later proofreading: prefer one claim per sentence, read a paragraph back once for dropped words, and do not chase ornamental vocabulary you cannot spell under pulse."
+        },
+        {
+          "key": "D",
+          "text": "Type with your eyes closed to simulate authenticity."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The craft topic is clarity under timed typing, including sentence control without treating spellcheck as a substitute for thought. Whether a given sitting offers light correction or none, ornamental words you cannot securely type will cost you. One claim per sentence is a hedge against dropped subjects and lost verbs. A giant outline that is never filled is a common computer-exam failure. Eye-closed typing is a joke, not a method. The accurate advice is modest: readable units, one pass for missing words, vocabulary you can actually produce. C states that. It is retrieval of how the task works, not a request to write the essay here.",
+      "distractor_rationales": {
+        "A": "Relying on invisible correction to launder unclear thought is exactly the false comfort this topic warns against.",
+        "B": "Over-outlining is a time thief; structure should be light enough to fill.",
+        "D": "Authenticity is not produced by not looking at the screen."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "GAMSAT.S2.craft.t4",
+      "type": "discrete",
+      "stem": "Which register best matches Task A, and which mismatch is most damaging?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Match: controlled public argument, concrete cases, no fake intimacy. Damaging mismatch: “lol queues r dumb, ministers r trash, subscribe for more takes.”"
+        },
+        {
+          "key": "B",
+          "text": "Match: baby-talk. Damaging mismatch: any complete sentence."
+        },
+        {
+          "key": "C",
+          "text": "Match: a private love letter to the marker. Damaging mismatch: mentioning a public institution."
+        },
+        {
+          "key": "D",
+          "text": "Match: as many Latinate abstractions as possible with no case. Damaging mismatch: a specified clinic."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Register is fitness of language to task. Task A is a civic argument for an educated stranger: serious without being stuffed, concrete without being chatty. A blog-rant with lol and subscribe is the wrong public. Baby-talk, love letters to markers, and abstraction-only fog are also mismatches, but the question’s best pair is the rant versus controlled argument. A specified clinic is appropriate, not a mismatch. The damaging pattern in real scripts is often online voice leaking into a paper that is still a formal task. A names that leak. Matching register is not the same as being pompous.",
+      "distractor_rationales": {
+        "B": "Complete sentences are not a mismatch; baby-talk would be.",
+        "C": "A love letter is the wrong intimacy; public institutions are Task A’s natural furniture.",
+        "D": "Abstraction without a case is a register failure of emptiness, and a clinic is a virtue here, not a vice."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "GAMSAT.S2.craft.t4",
+      "type": "discrete",
+      "stem": "A Task B piece on a kitchen silence is written entirely in the diction of a sociology seminar (“hegemonic kinship scripts,” “late-capitalist affect”). What is the register problem?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "There is no problem; Task B is marked as a theory paper."
+        },
+        {
+          "key": "B",
+          "text": "The diction costumes the personal task as Task A jargon, usually to hide the absence of a particular scene, and it sounds like a borrowed coat."
+        },
+        {
+          "key": "C",
+          "text": "The problem is that kitchens are too informal to mention."
+        },
+        {
+          "key": "D",
+          "text": "The problem is the lack of emojis, which Task B requires for sincerity."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Task B’s register is personal and exact, not a seminar impersonation. Theory words can appear if they earn a sentence, but a whole piece in that coat usually means the writer does not trust the mug and the chair. Markers hear the coat. Task B is not a theory exam; kitchens are not too informal; emojis are not a sincerity requirement. The mismatch is using Task A’s (or the academy’s) prestige dialect to avoid the vulnerability the comments ask for. B states that. Switching coats mid-task is a common way to lose both voice and scene.",
+      "distractor_rationales": {
+        "A": "ACER scores thought and language control on a personal/social task, not a seminar jargon quota.",
+        "C": "The kitchen is appropriate; the seminar overlay is the issue.",
+        "D": "Emojis are not an S2 requirement and would usually worsen register on a formal sitting."
+      },
+      "difficulty_est": 0.51
+    }
+  ]
+}

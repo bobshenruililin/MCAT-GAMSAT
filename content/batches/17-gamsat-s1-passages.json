@@ -1,0 +1,397 @@
+{
+  "passages": [
+    {
+      "concept_id": "GAMSAT.S1.humanities.t1",
+      "title": "Vacant possession",
+      "body": "The rental had been emptied with the efficiency of people who did not live there. I arrived after the skip had gone. What remained were the marks of remaining: a paler rectangle on the wall where a calendar had blocked the sun, a screw in the kitchen plaster that had held nothing I could remember, a ring on the lino where a bin had sat long enough to become a climate. The agent called it \"vacant possession.\" The phrase was legally tidy. It treated my father as a tenancy that had concluded.\n\nI opened the cupboard above the kettle. Inside, taped to the wood, was a shopping list in his slanted capitals, and beneath it a scrap of verse I had never seen. He was not a man who announced poems. He had been a man who boiled water at the same hour, as if the day were a machine that required a particular ignition. The list wanted milk, soap, and a cheaper brand of tea. The last item was written twice, then crossed out, then written again, as if indecision were a kind of company.\n\nThe kettle still knew his hour.\nI did not.\nThe cupboard kept a shopping list\naddressed to a week that never arrived.\nI ticked the milk as if the ticking\ncould make a future stand up.\n\nI stood with a pen I had not meant to bring and put a mark beside milk, then stopped, because the gesture had the shape of care and the content of a joke at my own expense. Grief, in the pamphlets, is supposed to be a weather that passes over a landscape. In the cupboard it was more like a task left in a shared kitchen: unclaimed, slightly shameful, still assigned. I wanted, ridiculously, to buy the milk. I wanted not to be the kind of daughter who leaves a list unanswered.\n\nThe agent coughed in the hallway and mentioned carpet cleaning, then the bond, then the need to \"move on\" as if the room were a queue. I heard myself thank him. Courtesy was easier than explaining that the room was not empty, only unpopulated. He was not unkind. He was on a clock I did not share. Vacant possession, I thought, is a legal sentence that cannot conjugate the present tense of objects. The kettle, if it could speak, would not have used it. It would have asked why the hour had been cancelled without notice.",
+      "questions": [
+        {
+          "concept_id": "GAMSAT.S1.understand.t1",
+          "type": "passage_question",
+          "stem": "Which statement best captures what the extract as a whole is saying?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Estate agents are uniquely cruel, and carpet cleaning is a form of theft from the bereaved."
+            },
+            {
+              "key": "B",
+              "text": "Legal vacancy and a cleared rental can coexist with objects and habits that still assign tasks, so grief here is less a passing weather than an unanswered list."
+            },
+            {
+              "key": "C",
+              "text": "The speaker decides that buying milk will bring her father back, and the poem proves supernatural continuance."
+            },
+            {
+              "key": "D",
+              "text": "Poetry taped in cupboards is always a confession of a secret literary career the family refused to honour."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The piece moves from the agent's tidy phrase through remaining marks, a list, a poem about a week that never arrived, and a daughter who almost ticks milk. Its claim is that emptiness in law is not emptiness in the present tense of objects and unfinished care. It does not prosecute agents as thieves, promise resurrection by shopping, or unmask a hidden career. A main-claim answer must sit inside that modest, exact complaint about vacant possession and assigned tasks, which only B does.",
+          "distractor_rationales": {
+            "A": "The speaker says the agent is not unkind and is on a clock; the target is a legal sentence, not a morality play about cruelty.",
+            "C": "Ticking milk is called a joke at her own expense and a ridiculous want, not a magical program; the poem addresses a week that never arrived.",
+            "D": "He is explicitly not a man who announced poems; the scrap is intimate remainder, not evidence of a suppressed vocation."
+          },
+          "difficulty_est": 0.38
+        },
+        {
+          "concept_id": "GAMSAT.S1.infer.t1",
+          "type": "passage_question",
+          "stem": "The agent’s “vacant possession,” called “legally tidy,” is later set against the speaker’s “not empty, only unpopulated.” The diction most nearly implies that",
+          "choices": [
+            {
+              "key": "A",
+              "text": "legal vacancy-language treats a concluded tenancy as a blank, while “unpopulated” concedes missing persons without declaring the remaining objects finished."
+            },
+            {
+              "key": "B",
+              "text": "the agent is quoting a poem, and “unpopulated” is a zoological term for a kettle."
+            },
+            {
+              "key": "C",
+              "text": "the speaker now agrees that the room is legally and emotionally identical to a vacant lot."
+            },
+            {
+              "key": "D",
+              "text": "“tidy” means the skip workers folded the calendar, which is why the wall is paler."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Implication from diction: vacant possession is praised as tidy because it ends a tenancy; empty would complete that blankness. Unpopulated keeps a distinction the law’s word flattens—people gone, things and hours not. The later grammatical metaphor (present tense of objects) confirms the contrast. Nothing supports a zoological kettle, an agreement that the room is a lot, or tidy as a claim about folded calendars. Word choice is doing the ethical work, which is why this is an inference-from-diction item rather than a mere restatement.",
+          "distractor_rationales": {
+            "B": "Unpopulated is the speaker’s correction of empty, not a biology joke, and vacant possession is the agent’s legal phrase, not a poem.",
+            "C": "The whole point of the correction is that she does not accept identity between legal vacancy and the room’s remaining assignments.",
+            "D": "Tidy characterises the legal phrase, not the skip’s handling of a calendar; the paler rectangle is a mark of remaining, not a definition of tidy."
+          },
+          "difficulty_est": 0.52
+        },
+        {
+          "concept_id": "GAMSAT.S1.infer.t3",
+          "type": "passage_question",
+          "stem": "In the taped verse, the speaker who “ticked the milk as if the ticking / could make a future stand up” most nearly implies that",
+          "choices": [
+            {
+              "key": "A",
+              "text": "household lists are a reliable technology for resurrecting cancelled weeks."
+            },
+            {
+              "key": "B",
+              "text": "the ritual mark is a superstitious attempt to force continuance that the rest of the poem has already declared failed."
+            },
+            {
+              "key": "C",
+              "text": "milk was the only item that mattered, and soap and tea are red herrings."
+            },
+            {
+              "key": "D",
+              "text": "the daughter, not the father, wrote the verse as an instruction to the agent."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Compressed literary implication: the list is “addressed to a week that never arrived,” so the future is already cancelled. Ticking milk “as if” the mark could make a future stand up names a counterfactual, almost magical, use of a household gesture. The as-if is the inference, not a claim that lists work, not a ranking of groceries from the prose list, and not a detective theory about authorship. Reading between the lines here is reading the mood of a failed ignition, which the kettle lines have already prepared.",
+          "distractor_rationales": {
+            "A": "The as-if construction undercuts reliability; the week never arrived.",
+            "C": "Soap and tea belong to the prose list; the poem uses milk as the ticked sign of continuance, not as a shopping hierarchy.",
+            "D": "The extract presents the verse as his scrap; nothing licenses reassigning authorship to the daughter as a note to the agent."
+          },
+          "difficulty_est": 0.55
+        },
+        {
+          "concept_id": "GAMSAT.S1.tone.t2",
+          "type": "passage_question",
+          "stem": "The extract's tone shifts most clearly when the speaker",
+          "choices": [
+            {
+              "key": "A",
+              "text": "moves from dry inventory and legal phrasing into self-implicating want—the ridiculous impulse to buy milk—and then back into courtesy with the agent."
+            },
+            {
+              "key": "B",
+              "text": "begins in rage at the agent and ends in religious consolation."
+            },
+            {
+              "key": "C",
+              "text": "maintains a single satirical attack on carpet-cleaning advertisements from first sentence to last."
+            },
+            {
+              "key": "D",
+              "text": "shifts from celebrating vacant possession as freedom to condemning her father for writing lists."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The opening is inventory and a legally tidy phrase. After the poem, the register turns inward and slightly comic-painful: a pen she had not meant to bring, a joke at her own expense, a ridiculous want. The agent's cough returns her to courtesy, which is easier than explaining. That is a detectable turn, not a rage-to-hymn plot, not a satire of advertisements, and not a celebration of vacancy. Tone-shift items require locating where the temperature changes; here it is the cupboard gesture, framed by cooler legal language on either side.",
+          "distractor_rationales": {
+            "B": "The agent is not initially attacked in rage, and nothing in the close is religious consolation.",
+            "C": "Carpet cleaning is one mention in the agent's clocked speech, not a sustained satirical target.",
+            "D": "Vacant possession is never celebrated as freedom, and the father is not condemned for the list; the daughter fears being the one who leaves it unanswered."
+          },
+          "difficulty_est": 0.48
+        }
+      ]
+    },
+    {
+      "concept_id": "GAMSAT.S1.social.t2",
+      "title": "Return-of-service bond: two letters",
+      "body": "Two letters appeared in the same metropolitan daily after the health minister proposed a \"return-of-service\" bond: new doctors whose training was publicly subsidised would owe three years in designated underserved clinics before they could take an unrestricted urban post.\n\nLetter A\nA public scholarship is not a gift ribbon. It is a wager the public makes on a scarce skill. If the graduate then sells that skill immediately to the densest private market, the wager has been privatised without a receipt. Three years is not indenture; it is the time in which a clinic learns a name and a name learns a clinic. Those who call the bond a \"mobility tax\" speak as if mobility were a natural right unpolluted by the taxes that built the teaching hospitals. Rights that forget their invoices are just appetites with better stationery. Underserved towns are not a lifestyle choice the profession may decline, like a sport. They are the other half of the ledger.\n\nLetter B\nThe minister has misdiagnosed a staffing failure as a character failure in the young. Clinics are empty of doctors for the same reasons they are empty of radiographers and nurses: housing costs, school deserts, professional isolation, and locum markets that pay more for a weekend than a bonded year pays for a winter. A bond does not staff a town; it parks a resentful beginner there and calls the parking \"justice.\" Meanwhile the budget that should have made the posting liveable is spared the embarrassment of being seen. Coercion is cheaper than housing. If the public wants doctors in those rooms, it should furnish the rooms, not hostage the people it trained. A ledger that counts only the graduate's debt, and never the state's, is not a ledger. It is a sermon.\n\nEditor's note: Letter A was signed by a retired regional physician; Letter B by a recent graduate now in a metropolitan hospital.",
+      "questions": [
+        {
+          "concept_id": "GAMSAT.S1.argument.t1",
+          "type": "passage_question",
+          "stem": "Which of the following is the conclusion Letter A is principally trying to establish, as distinct from a supporting move?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Teaching hospitals were built with public money."
+            },
+            {
+              "key": "B",
+              "text": "Some critics use the phrase “mobility tax.”"
+            },
+            {
+              "key": "C",
+              "text": "The proposed three-year bond is a legitimate completion of a public wager rather than indenture, because underserved towns are the other half of the ledger."
+            },
+            {
+              "key": "D",
+              "text": "Private urban posts exist and pay."
+            }
+          ],
+          "correct_key": "C",
+          "explanation": "Letter A piles reasons—scholarship as wager, names learned in clinics, invoices behind mobility, towns as ledger not lifestyle—toward a verdict on the bond: it is not indenture but the public's due. Teaching-hospital funding, the critics' phrase, and the existence of private posts are materials in that case, not the destination. Distinguishing conclusion from support means asking what would still need proving if those facts were granted. A wants the reader to accept the bond as just recoupment. That evaluative landing is C.",
+          "distractor_rationales": {
+            "A": "Public building of teaching hospitals is offered as an invoice behind mobility, a premise, not the letter's landing claim.",
+            "B": "Naming the opposing slogan is a setup for rebuttal, not A's own conclusion.",
+            "D": "Urban private markets are the scene of the alleged privatised wager, a circumstance, not what A is trying to prove."
+          },
+          "difficulty_est": 0.42
+        },
+        {
+          "concept_id": "GAMSAT.S1.argument.t2",
+          "type": "passage_question",
+          "stem": "Which evaluation of Letter B's reasoning is most accurate?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "It is airtight, because any policy that mentions graduates' duties is by definition a sermon rather than an argument."
+            },
+            {
+              "key": "B",
+              "text": "It usefully relocates staffing failure from character to conditions, but it overreaches if it treats a bond and liveable postings as mutually exclusive rather than as possibly joint instruments."
+            },
+            {
+              "key": "C",
+              "text": "It has no empirical suggestions at all, because housing and isolation are not conditions."
+            },
+            {
+              "key": "D",
+              "text": "It secretly agrees with Letter A that towns are a lifestyle choice doctors may decline."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "B's strongest move is the misdiagnosis claim: empty clinics share causes with other missing staff, so a character story about the young is a convenient error. “Coercion is cheaper than housing” names a political incentive. The reasoning thins where a bond is identified with hostage-taking as such, as if furnishing rooms and some recoupment could not be combined. False dichotomy is the gap; it is not the case that B offers no conditions, nor that B accepts A's lifestyle-choice line. Evaluating strength means keeping the good causal relocation and naming the overreach.",
+          "distractor_rationales": {
+            "A": "Calling all duty-language a sermon is itself a dismissal, not an evaluation of B's actual causal claims.",
+            "C": "Housing costs, school deserts, isolation, and locum markets are empirical-type conditions B explicitly lists.",
+            "D": "B rejects parking a resentful beginner as justice; it does not adopt A's claim that towns are a sport one may decline."
+          },
+          "difficulty_est": 0.58
+        },
+        {
+          "concept_id": "GAMSAT.S1.argument.t3",
+          "type": "passage_question",
+          "stem": "Which statement best captures the dispute between the two letters?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "They disagree about whether underserved clinics currently lack staff."
+            },
+            {
+              "key": "B",
+              "text": "They disagree about whether the graduate's obligated time, rather than the state's furnishing of the posting, is the proper site of the remedy."
+            },
+            {
+              "key": "C",
+              "text": "They disagree about whether the editor should have printed both letters."
+            },
+            {
+              "key": "D",
+              "text": "They disagree about whether nurses and radiographers exist."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Both letters treat underserved rooms as understaffed. A locates justice in recouping a public wager from the graduate's years; B locates justice in making the posting liveable and treats the bond as a cheap substitute that spares the budget. That is a dispute about the site of remedy and about what counts as a ledger. Neither argues about the editor's choice to print, and B mentions other professions to generalise the staffing problem, not to deny they exist. Comparing competing arguments means finding the fork, which is whose body or whose budget must move first.",
+          "distractor_rationales": {
+            "A": "A's ledger and B's empty clinics both presuppose a staffing lack; that is shared ground.",
+            "C": "The editor's note is framing, not a point of controversy between A and B.",
+            "D": "B invokes nurses and radiographers as fellow absences; A does not deny those occupations."
+          },
+          "difficulty_est": 0.5
+        },
+        {
+          "concept_id": "GAMSAT.S1.compare.t1",
+          "type": "passage_question",
+          "stem": "On the question of public money and professional mobility, the letters most clearly",
+          "choices": [
+            {
+              "key": "A",
+              "text": "agree that invoices exist and disagree about which unpaid bill—the graduate's or the state's—should be presented as the moral centre."
+            },
+            {
+              "key": "B",
+              "text": "agree that three years is indenture and disagree only about the size of urban salaries."
+            },
+            {
+              "key": "C",
+              "text": "have no shared vocabulary, because one writes about clinics and the other about hospitals."
+            },
+            {
+              "key": "D",
+              "text": "agree that coercion is cheaper than housing and disagree about whether locums should exist."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A speaks of rights that forget their invoices and of the other half of the ledger. B says a ledger that counts only the graduate's debt and never the state's is a sermon. Shared: public money, debt imagery, underserved work. Conflict: whose unpaid bill is the scandal. Paired-prose comparison should not flatten A into B's indenture language (A denies indenture) or invent a locum-existence dispute. Purpose differs too: A defends the bond as recoupment; B unmasks it as cheaper than housing. A is the comparison that keeps the shared ledger metaphor and the forked addressee of the bill.",
+          "distractor_rationales": {
+            "B": "A explicitly says three years is not indenture; that word is B's charge, not common ground.",
+            "C": "Both write about publicly trained doctors and underserved rooms; clinic/hospital is not a vocabulary rupture.",
+            "D": "“Coercion is cheaper than housing” is B's line; A does not grant it, and locum existence is not the fork."
+          },
+          "difficulty_est": 0.54
+        }
+      ]
+    },
+    {
+      "concept_id": "GAMSAT.S1.social.t1",
+      "title": "When your number becomes a priority",
+      "body": "[Image]\nA waiting-room drawn as a long, low shed. The bench is actually the tubing of a giant stethoscope, coiled so that patients must sit on the instrument that is supposed to listen to them. Two figures in dark suits, labelled BOARD, wear the earpieces. They are not facing the patients. They lean together toward a cash register whose receipt paper unspools across the floor like a white carpet. The patients are drawn in broken dotted lines, as if they were still being sketched. One solid figure is a child holding a numbered ticket as tall as a door. The ticket number is 1847. A clock on the wall has no hands.\n\n[Caption, in a polite typeface beneath the frame]\n\"We'll call you when your number becomes a priority.\"",
+      "questions": [
+        {
+          "concept_id": "GAMSAT.S1.visual.t1",
+          "type": "passage_question",
+          "stem": "The cartoon's principal target of critique is",
+          "choices": [
+            {
+              "key": "A",
+              "text": "children who play with oversized stationery in clinics."
+            },
+            {
+              "key": "B",
+              "text": "a governing board that uses the listening tool of medicine while actually attending to revenue, leaving patients unfinished and untimed."
+            },
+            {
+              "key": "C",
+              "text": "the invention of the stethoscope as a nineteenth-century error."
+            },
+            {
+              "key": "D",
+              "text": "clockmakers who omit hands as a design fashion."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Political-cartoon reading: the board wears the earpieces of a giant stethoscope but leans toward a cash register; patients are dotted, not fully drawn; the clock has no hands; the child's ticket is 1847. The satire is institutional misdirection of attention, not an attack on children, on auscultation as such, or on furniture design. Symbolism (instrument of listening, unfinished people, frozen time) and the labelled BOARD fix the target. Without the image's arrangement, a caption about priorities could mean several things; the drawing specifies whose ears and whose receipts.",
+          "distractor_rationales": {
+            "A": "The child is the most solid patient, a victim of scale, not the satiric target.",
+            "C": "The stethoscope is ironic because it is sat-upon and mis-aimed, not because the cartoonist wants it uninvented.",
+            "D": "The handless clock is a symbol of time that does not move for patients, not a consumer complaint about clocks."
+          },
+          "difficulty_est": 0.4
+        },
+        {
+          "concept_id": "GAMSAT.S1.visual.t3",
+          "type": "passage_question",
+          "stem": "The polite caption “We'll call you when your number becomes a priority” relates to the image most accurately as",
+          "choices": [
+            {
+              "key": "A",
+              "text": "a literal operating instruction that the drawing merely illustrates without friction."
+            },
+            {
+              "key": "B",
+              "text": "a courteous administrative idiom whose calm is in tension with dotted patients, a door-sized ticket, a handless clock, and a board listening to a till."
+            },
+            {
+              "key": "C",
+              "text": "a promise that number 1847 will be seen immediately, which the cash register confirms."
+            },
+            {
+              "key": "D",
+              "text": "a caption that contradicts the image by proving the board is facing the patients."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Caption-versus-image items ask whether words soothe, ironise, or duplicate the drawing. The typeface is described as polite; the sentence is the familiar postponement of waiting rooms. The image refuses the courtesy: patients are not fully drawn, time has no hands, the ticket is monstrous, the board's ears point at money. That is tension, not illustration without friction. The caption does not promise immediacy, and the board is explicitly not facing patients. The joke is the mismatch between civilised delay and what the picture shows delay is for.",
+          "distractor_rationales": {
+            "A": "If the drawing only illustrated the caption, the board would be listening to patients; the till and dotted lines create friction.",
+            "C": "1847 and a handless clock work against immediacy; the till is the competing listener, not a confirmation of care.",
+            "D": "The description states the board figures are not facing the patients; the caption does not reverse that."
+          },
+          "difficulty_est": 0.46
+        },
+        {
+          "concept_id": "GAMSAT.S1.tone.t3",
+          "type": "passage_question",
+          "stem": "The combination of a giant sat-upon stethoscope and a politely typeset postponement is best described as",
+          "choices": [
+            {
+              "key": "A",
+              "text": "sincere instructional design for new clinic staff."
+            },
+            {
+              "key": "B",
+              "text": "tragic realism without irony, because cash registers commonly appear in waiting rooms as medical equipment."
+            },
+            {
+              "key": "C",
+              "text": "satire that uses understatement in the caption and grotesque scale in the image to evaluate whose hearing counts."
+            },
+            {
+              "key": "D",
+              "text": "affectionate celebration of boards who multitask by listening to receipts."
+            }
+          ],
+          "correct_key": "C",
+          "explanation": "Satire and understatement: the caption's we'll-call-you is the mild public language of triage; the image is not mild. Grotesque scale (ticket as door, patients as dotted outlines, earpieces on BOARD) evaluates without a ranting label. The tone is not a training poster, not a documentary claim that tills are auscultation devices, and not affection. Non-literal evaluative language is the polite sentence doing the work of a knife. Recognising that pairing is the skill the item tags.",
+          "distractor_rationales": {
+            "A": "Nothing in the described frame instructs staff in a sincere protocol; the dotted patients and till make mockery, not a handbook.",
+            "B": "A cash register as the thing being listened to is ironic substitution, not unironic realism.",
+            "D": "Listening to a till while patients remain unfinished is the critique, not a compliment for multitasking."
+          },
+          "difficulty_est": 0.5
+        },
+        {
+          "concept_id": "GAMSAT.S1.infer.t2",
+          "type": "passage_question",
+          "stem": "For the cartoon’s joke to land, which unstated assumption must the viewer grant?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "That a board’s true object of attention is revealed by what its listening-tool is aimed at, so aiming a stethoscope at a till means revenue outranks patients."
+            },
+            {
+              "key": "B",
+              "text": "That children should not be allowed numbered tickets."
+            },
+            {
+              "key": "C",
+              "text": "That cash registers are medically more accurate than stethoscopes."
+            },
+            {
+              "key": "D",
+              "text": "That clocks without hands keep better time than clocks with hands."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Unstated assumptions are what must be true for the satire to mean. The image only works if aiming the earpieces is a sign of what the institution values. Without that convention, the till is just furniture. The caption’s postponement until a number becomes a priority then reads as: patients are not yet the valued object. B, C, and D are not required: the oversized ticket is scale-symbol, not a policy about children; the till is not claimed as a better diagnostic; the handless clock symbolises frozen time, not superior horology. The assumption is institutional, which is why a social waiting-room cartoon still turns on a hidden premise about attention.",
+          "distractor_rationales": {
+            "B": "The child’s ticket is a symbol of waiting scale, not a premise that children must be ticketless.",
+            "C": "The cartoon does not ask us to believe tills auscultate better; it uses mis-aimed listening as irony.",
+            "D": "A handless clock is frozen time, not a claim about accuracy of timekeeping."
+          },
+          "difficulty_est": 0.56
+        }
+      ]
+    }
+  ]
+}
