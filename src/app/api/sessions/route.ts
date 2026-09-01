@@ -8,6 +8,8 @@ export async function POST(request: Request) {
   let body: {
     now?: string;
     kind?: string;
+    mode?: string;
+    skillTopicId?: string;
     reviewCap?: number;
     newCap?: number;
     perCategory?: number;
@@ -20,7 +22,8 @@ export async function POST(request: Request) {
     body = {};
   }
   const now = body.now ? new Date(body.now) : new Date();
-  const kind = body.kind === "diagnostic" ? "diagnostic" : "daily";
+  const modeBody = body.mode ?? body.kind;
+  const kind = body.kind === "diagnostic" || modeBody === "diagnostic" ? "diagnostic" : "daily";
   const track = parseTrack(body.track);
   const { sqlite, db } = openDb();
   try {
@@ -40,19 +43,33 @@ export async function POST(request: Request) {
         track: created.config.track ?? null,
       });
     }
-    const caps: { reviewCap?: number; newCap?: number; track?: typeof track } = {};
+    const mode =
+      modeBody === "skill" || modeBody === "mastery_check" ? modeBody : "daily";
+    const caps: {
+      reviewCap?: number;
+      newCap?: number;
+      track?: typeof track;
+      mode?: "daily" | "skill" | "mastery_check";
+      skillTopicId?: string;
+    } = { mode };
     if (typeof body.reviewCap === "number") caps.reviewCap = body.reviewCap;
     if (typeof body.newCap === "number") caps.newCap = body.newCap;
     if (track) caps.track = track;
+    if (mode === "skill" && typeof body.skillTopicId === "string") {
+      caps.skillTopicId = body.skillTopicId;
+    }
     const created = createDailySession(db, now, caps);
     return Response.json({
       id: created.sessionId,
       kind: "daily",
+      mode: created.config.mode ?? "daily",
       itemIds: created.config.itemIds,
       interleave_exceptions: created.config.interleave_exceptions,
       reviewCap: created.config.reviewCap,
       newCap: created.config.newCap,
       track: created.config.track ?? null,
+      skillTopicId: created.config.skillTopicId ?? null,
+      contrastTopicId: created.config.contrastTopicId ?? null,
     });
   } catch (err) {
     return Response.json(

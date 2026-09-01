@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { assembleSession, type AssemblerItem, type NewCandidate } from "./sessionAssembler";
+import { assembleMasteryCheckSession, assembleSession, assembleSkillFocusSession, pickContrastTopicId, type AssemblerItem, type NewCandidate } from "./sessionAssembler";
 
 function mulberry32(seed: number) {
   return function rng() {
@@ -121,5 +121,83 @@ describe("sessionAssembler", () => {
     expect(result.items).toHaveLength(24);
     expect(consecutiveSameTopic(result.items)).toBe(0);
     expect(result.interleaveExceptions).toBe(0);
+  });
+
+  it("picks easier new items first when topic mastery is low", () => {
+    const news: NewCandidate[] = [
+      { id: "hard", conceptId: "t1", mastery: 0.2, examWeight: 0.1, difficultyEst: 0.9 },
+      { id: "easy", conceptId: "t1", mastery: 0.2, examWeight: 0.1, difficultyEst: 0.2 },
+      { id: "mid", conceptId: "t1", mastery: 0.2, examWeight: 0.1, difficultyEst: 0.5 },
+    ];
+    const result = assembleSession([], news, { reviewCap: 50, newCap: 3, maxNewPerTopic: 3 });
+    expect(result.items.map((i) => i.id)).toEqual(["easy", "mid", "hard"]);
+  });
+
+  it("picks harder new items first when topic mastery is high", () => {
+    const news: NewCandidate[] = [
+      { id: "easy", conceptId: "t1", mastery: 0.8, examWeight: 0.1, difficultyEst: 0.2 },
+      { id: "hard", conceptId: "t1", mastery: 0.8, examWeight: 0.1, difficultyEst: 0.9 },
+      { id: "mid", conceptId: "t1", mastery: 0.8, examWeight: 0.1, difficultyEst: 0.5 },
+    ];
+    const result = assembleSession([], news, { reviewCap: 50, newCap: 3, maxNewPerTopic: 3 });
+    expect(result.items.map((i) => i.id)).toEqual(["hard", "mid", "easy"]);
+  });
+});
+
+describe("assembleSkillFocusSession", () => {
+  it("mixes focus and contrast topics and preserves interleave", () => {
+    const due: AssemblerItem[] = [];
+    for (let i = 0; i < 6; i++) {
+      due.push({ id: `s-${i}`, conceptId: "MCAT.FC1.1A.t1" });
+      due.push({ id: `c-${i}`, conceptId: "MCAT.CARS.FND.t1" });
+    }
+    const result = assembleSkillFocusSession(due, [], {
+      skillTopicId: "MCAT.FC1.1A.t1",
+      contrastTopicId: "MCAT.CARS.FND.t1",
+      focusCap: 4,
+      contrastCap: 4,
+    });
+    expect(result.items).toHaveLength(8);
+    const focus = result.items.filter((i) => i.conceptId === "MCAT.FC1.1A.t1");
+    const contrast = result.items.filter((i) => i.conceptId === "MCAT.CARS.FND.t1");
+    expect(focus).toHaveLength(4);
+    expect(contrast).toHaveLength(4);
+    expect(consecutiveSameTopic(result.items)).toBe(0);
+    expect(result.interleaveExceptions).toBe(0);
+  });
+
+  it("picks a different-family contrast when none is named", () => {
+    const news: NewCandidate[] = [
+      { id: "bb-1", conceptId: "MCAT.FC1.1A.t1", mastery: 0.2, examWeight: 0.1 },
+      { id: "bb-2", conceptId: "MCAT.FC1.1A.t1", mastery: 0.2, examWeight: 0.1 },
+      { id: "cars-1", conceptId: "MCAT.CARS.FND.t1", mastery: 0.3, examWeight: 0.2 },
+      { id: "cars-2", conceptId: "MCAT.CARS.FND.t1", mastery: 0.3, examWeight: 0.2 },
+      { id: "bb-other", conceptId: "MCAT.FC1.1B.t1", mastery: 0.3, examWeight: 0.05 },
+    ];
+    const contrast = pickContrastTopicId([], news, [], "MCAT.FC1.1A.t1");
+    expect(contrast).toBe("MCAT.CARS.FND.t1");
+  });
+});
+
+describe("assembleMasteryCheckSession", () => {
+  it("takes two items from each listed topic and interleaves", () => {
+    const due: AssemblerItem[] = [
+      { id: "a1", conceptId: "t-a" },
+      { id: "a2", conceptId: "t-a" },
+      { id: "b1", conceptId: "t-b" },
+      { id: "b2", conceptId: "t-b" },
+      { id: "c1", conceptId: "t-c" },
+      { id: "c2", conceptId: "t-c" },
+      { id: "d1", conceptId: "t-d" },
+      { id: "d2", conceptId: "t-d" },
+    ];
+    const result = assembleMasteryCheckSession(due, [], {
+      topicIds: ["t-a", "t-b", "t-c", "t-d"],
+      itemsPerTopic: 2,
+    });
+    expect(result.items).toHaveLength(8);
+    const topics = new Set(result.items.map((i) => i.conceptId));
+    expect(topics.size).toBe(4);
+    expect(consecutiveSameTopic(result.items)).toBe(0);
   });
 });

@@ -177,5 +177,11 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Five packs were too few for a 30-minute paper trained across months. More packs raise the chance the sitting is a new quote set.
 - Rejected: Auto-generated quote salad; scoring the essay with an LLM as an official mark.
 
+## 2026-09-01 — Khan-like mastery path without cloning the Khan platform
+- Decision: Map existing topic mastery + attempt counts to five levels (unseen / struggling / familiar / proficient / mastered). Mastered requires mastery ≥ 0.80 and ≥ 3 attempts. Course mastery is the exam-weight-weighted mean with unseen = 0. Today recommends one Up Next skill (hunt → struggling gap → highest-weight unseen → remaining gap). Skill sessions stay `sessions.kind = daily` with `config.mode = skill|mastery_check`; they take ~4 focus + ~4 contrast items and run the existing interleave. New items sort by `difficultyEst` (easier first if topic mastery < 0.5). No video-as-study, energy points, avatars, pre-reveal hints (B-014), or classrooms.
+- Rationale: Newest prompt asked how Khan would adapt this repo for score and learning maximization. NORTH_STAR still wins: retrieval only, confidence before reveal, interleave, no unverified=true. Levels are a display/routing layer on the existing EWMA+FSRS mastery, not a second scheduler. Skill-as-daily keeps SCOREBOARD counting the hours.
+- Rejected: `sessions.kind = skill` (CHECK migration); same-topic KA bursts; hints before confidence; gamification; treating unseen prior 0.3 as course mastery.
+
+
 
 

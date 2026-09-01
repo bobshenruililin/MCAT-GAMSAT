@@ -301,4 +301,28 @@ Three riskiest:
 
 SCORE IMPACT: Study hours can now retrieve across a weight-shaped 100× bank instead of one card per topic — expected score per hour still waits on the human sitting those hours and catching factory errors before they train a wrong memory.
 
+## Khan-like mastery path (2026-09-01)
+
+Question: how would Khan Academy adapt this project for score and learning maximization?
+
+Answer: Keep retrieval + FSRS + interleave. Add skill levels, one Up Next recommendation, skill-focus sessions that still interleave a contrast topic, easier-first new cards while a skill is weak, course mastery %, and session level-up. Refuse video-as-study, hints before confidence, energy points, avatars, classrooms (B-014).
+
+Shipped:
+- `masteryLevel`: unseen / struggling (<0.45) / familiar (<0.62) / proficient (<0.80) / mastered (≥0.80 and ≥3 attempts).
+- Course mastery = exam-weight mean with unseen = 0; proficient+ share on Today and Progress.
+- `pickUpNext`: hunt → struggling by (1−mastery)×weight → highest-weight unseen with items → remaining gap.
+- Skill + mastery-check assemble: ~4+4 or 2×4 topics, existing interleave. `sessions.kind` stays `daily`. Adaptive `difficultyEst` sort in `pickNewItems`.
+- Today Up Next card; Progress level column + course %; summary “Level up: X → Y”.
+- Tests 90. Typecheck/lint green.
+
+Failed: none of the Khan clones that would violate NORTH_STAR.
+
+Three riskiest:
+1. Skill sessions may pull not-yet-due extras so a struggling skill is still practiceable (slight FSRS-forward pull).
+2. Level-up uses current mastery with previous attempt count, so a mastery-threshold crossing can miss the badge until more attempts accrue.
+3. B-013 bank is still unverified AI.
+
+SCORE IMPACT: Study hours now land on the highest remaining exam-weight gap (or a hunt trap) instead of an undifferentiated mixed queue — same FSRS truth, less time wasted on already-familiar grains.
+
+
 

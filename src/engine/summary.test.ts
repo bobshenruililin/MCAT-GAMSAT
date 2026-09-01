@@ -45,6 +45,9 @@ describe("getSessionSummary budget", () => {
     const summary = getSessionSummary(db, "s1", now);
     expect(summary.mcatBudgetSeconds).toBe(102);
     expect(summary.budgetLabel).toBe("102s MCAT CARS budget");
+    expect(summary.mode).toBe("daily");
+    expect(summary.perTopic[0]?.previousLevel).toBe("unseen");
+    expect(summary.perTopic[0]?.leveledUp).toBe(true);
     close();
   });
 });

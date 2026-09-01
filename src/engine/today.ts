@@ -6,6 +6,8 @@ import { hasDemoData } from "./demoSeed";
 import { addUtcDays, utcDayKey } from "./rng";
 import { huntTopicsFromDb } from "./sessionService";
 import { getProgressData } from "./progress";
+import { pickUpNext, type UpNextSkill } from "./upNext";
+import { formatPercent } from "./masteryLevel";
 
 const AVG_SECONDS = 45;
 
@@ -44,6 +46,10 @@ export type TodayStats = {
   huntTopics: HuntSpotlight[];
   coverage: { family: string; topics: number; withItems: number; attempted: number }[];
   demo: boolean;
+  courseMastery: number;
+  proficientPlusShare: number;
+  courseMasteryLabel: string;
+  upNext: UpNextSkill | null;
 };
 
 function minutesFor(count: number): number {
@@ -127,6 +133,18 @@ export function getTodayStats(db: AppDb, now: Date): TodayStats {
     name: byId.get(id)?.name ?? id,
   }));
 
+  const upNext = pickUpNext(
+    progress.topics.map((t) => ({
+      id: t.id,
+      name: t.name,
+      mastery: t.mastery,
+      attempts: t.attempts,
+      examWeight: t.examWeight,
+      itemCount: t.itemCount,
+    })),
+    huntIds,
+  );
+
   return {
     dueCount,
     estimatedMinutes: minutesFor(dueCount),
@@ -139,5 +157,9 @@ export function getTodayStats(db: AppDb, now: Date): TodayStats {
     huntTopics,
     coverage: progress.coverage,
     demo: hasDemoData(db),
+    courseMastery: progress.courseMastery,
+    proficientPlusShare: progress.proficientPlusShare,
+    courseMasteryLabel: formatPercent(progress.courseMastery),
+    upNext,
   };
 }

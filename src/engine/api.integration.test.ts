@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it } from "vitest";
-import { count } from "drizzle-orm";
-import { attempts, fsrsState } from "@/db/schema";
+import { count, eq } from "drizzle-orm";
+import { attempts, fsrsState, items } from "@/db/schema";
 import { POST as postSession } from "@/app/api/sessions/route";
 import { GET as getNext } from "@/app/api/sessions/[id]/next/route";
 import { POST as postAttempt } from "@/app/api/attempts/route";
@@ -110,6 +110,61 @@ describe("API 20-item session", () => {
     const fsrsCount = reopened.db.select({ n: count() }).from(fsrsState).get()?.n;
     expect(attemptCount).toBe(20);
     expect(fsrsCount).toBe(20);
+    reopened.sqlite.close();
+  });
+
+  it("starts a skill session that interleaves the focus topic with a contrast topic", async () => {
+    const { dbPath, db, close } = tempMigratedDb();
+    process.env.MCAT_DB_PATH = dbPath;
+    insertTopicTree(db, ["MCAT.FC1.1A.t1", "MCAT.CARS.FND.t1"]);
+    for (let i = 0; i < 6; i++) {
+      insertDiscrete(db, `bb-${i}`, "MCAT.FC1.1A.t1");
+      insertDiscrete(db, `cars-${i}`, "MCAT.CARS.FND.t1");
+    }
+    close();
+
+    const created = await postSession(
+      new Request("http://localhost/api/sessions", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          now: "2026-07-01T12:00:00.000Z",
+          mode: "skill",
+          skillTopicId: "MCAT.FC1.1A.t1",
+        }),
+      }),
+    );
+    expect(created.status).toBe(200);
+    const session = (await created.json()) as {
+      id: string;
+      kind: string;
+      mode: string;
+      skillTopicId: string;
+      contrastTopicId: string | null;
+      itemIds: string[];
+      interleave_exceptions: number;
+    };
+    expect(session.kind).toBe("daily");
+    expect(session.mode).toBe("skill");
+    expect(session.skillTopicId).toBe("MCAT.FC1.1A.t1");
+    expect(session.contrastTopicId).toBe("MCAT.CARS.FND.t1");
+    expect(session.itemIds).toHaveLength(8);
+    expect(session.interleave_exceptions).toBe(0);
+
+    const reopened = openDb(dbPath);
+    const concepts = session.itemIds.map((id) => {
+      const row = reopened.db
+        .select({ conceptId: items.conceptId })
+        .from(items)
+        .where(eq(items.id, id))
+        .get();
+      return row?.conceptId;
+    });
+    expect(concepts.filter((c) => c === "MCAT.FC1.1A.t1")).toHaveLength(4);
+    expect(concepts.filter((c) => c === "MCAT.CARS.FND.t1")).toHaveLength(4);
+    for (let i = 1; i < concepts.length; i++) {
+      expect(concepts[i]).not.toBe(concepts[i - 1]);
+    }
     reopened.sqlite.close();
   });
 });

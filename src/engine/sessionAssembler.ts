@@ -1,3 +1,5 @@
+import { sectionFamily } from "./sectionBudget";
+
 export type AssemblerItem = {
   id: string;
   conceptId: string;
@@ -6,7 +8,10 @@ export type AssemblerItem = {
 export type NewCandidate = AssemblerItem & {
   mastery: number;
   examWeight: number;
+  difficultyEst?: number;
 };
+
+export const ADAPTIVE_EASIER_BELOW = 0.5;
 
 export type AssembleConfig = {
   reviewCap: number;
@@ -54,13 +59,149 @@ function pickNewItems(
 
   const picked: AssemblerItem[] = [];
   for (const [, topicItems] of rankedTopics) {
-    const sorted = [...topicItems].sort((x, y) => x.id.localeCompare(y.id));
+    const sorted = sortNewForTopic(topicItems);
     for (const item of sorted.slice(0, maxNewPerTopic)) {
       picked.push({ id: item.id, conceptId: item.conceptId });
       if (picked.length >= newCap) return picked;
     }
   }
   return picked;
+}
+
+/** Low topic mastery → easier first. Otherwise stretch (harder first). Tie-break by id. */
+export function sortNewForTopic(topicItems: NewCandidate[]): NewCandidate[] {
+  const mastery = topicItems[0]?.mastery ?? 0.3;
+  const easierFirst = mastery < ADAPTIVE_EASIER_BELOW;
+  return [...topicItems].sort((x, y) => {
+    const dx = x.difficultyEst ?? 0.5;
+    const dy = y.difficultyEst ?? 0.5;
+    if (dx !== dy) return easierFirst ? dx - dy : dy - dx;
+    return x.id.localeCompare(y.id);
+  });
+}
+
+export type SkillFocusConfig = {
+  skillTopicId: string;
+  contrastTopicId?: string;
+  focusCap?: number;
+  contrastCap?: number;
+  extraItems?: AssemblerItem[];
+};
+
+export type MasteryCheckConfig = {
+  topicIds: string[];
+  itemsPerTopic?: number;
+  maxTopics?: number;
+  extraItems?: AssemblerItem[];
+};
+
+function takeFromTopic(
+  dueItems: AssemblerItem[],
+  candidateNewItems: NewCandidate[],
+  extraItems: AssemblerItem[],
+  topicId: string,
+  cap: number,
+): AssemblerItem[] {
+  const fromDue = dueItems.filter((d) => d.conceptId === topicId);
+  const fromNew = sortNewForTopic(
+    candidateNewItems.filter((n) => n.conceptId === topicId && n.examWeight > 0),
+  );
+  const pickedIds = new Set([...fromDue, ...fromNew].map((i) => i.id));
+  const fromExtra = extraItems.filter(
+    (e) => e.conceptId === topicId && !pickedIds.has(e.id),
+  );
+  return [...fromDue, ...fromNew, ...fromExtra].slice(0, cap);
+}
+
+/** Contrast skill: prefer a different section family, then highest exam_weight. */
+export function pickContrastTopicId(
+  dueItems: AssemblerItem[],
+  candidateNewItems: NewCandidate[],
+  extraItems: AssemblerItem[],
+  skillTopicId: string,
+): string | undefined {
+  const skillFamily = sectionFamily(skillTopicId);
+  const topics = new Map<string, { examWeight: number; family: ReturnType<typeof sectionFamily> }>();
+  function touch(conceptId: string, examWeight: number) {
+    if (conceptId === skillTopicId) return;
+    const prev = topics.get(conceptId);
+    topics.set(conceptId, {
+      examWeight: Math.max(prev?.examWeight ?? 0, examWeight),
+      family: sectionFamily(conceptId),
+    });
+  }
+  for (const d of dueItems) touch(d.conceptId, 0);
+  for (const e of extraItems) touch(e.conceptId, 0);
+  for (const n of candidateNewItems) {
+    if (n.examWeight <= 0) continue;
+    touch(n.conceptId, n.examWeight);
+  }
+  const ranked = [...topics.entries()].sort((a, b) => {
+    const da = a[1].family === skillFamily ? 1 : 0;
+    const db = b[1].family === skillFamily ? 1 : 0;
+    if (da !== db) return da - db;
+    if (b[1].examWeight !== a[1].examWeight) return b[1].examWeight - a[1].examWeight;
+    return a[0].localeCompare(b[0]);
+  });
+  return ranked[0]?.[0];
+}
+
+/**
+ * Skill-focus without a same-topic burst: ~focusCap from the skill, ~contrastCap
+ * from a different topic, then the existing interleave pass.
+ */
+export function assembleSkillFocusSession(
+  dueItems: AssemblerItem[],
+  candidateNewItems: NewCandidate[],
+  config: SkillFocusConfig,
+): AssembleResult {
+  const focusCap = config.focusCap ?? 4;
+  const contrastCap = config.contrastCap ?? 4;
+  const extraItems = config.extraItems ?? [];
+  const contrastTopicId =
+    config.contrastTopicId ??
+    pickContrastTopicId(dueItems, candidateNewItems, extraItems, config.skillTopicId);
+  const focus = takeFromTopic(
+    dueItems,
+    candidateNewItems,
+    extraItems,
+    config.skillTopicId,
+    focusCap,
+  );
+  const contrast = contrastTopicId
+    ? takeFromTopic(
+        dueItems,
+        candidateNewItems,
+        extraItems,
+        contrastTopicId,
+        contrastCap,
+      )
+    : [];
+  return interleaveItems([...focus, ...contrast]);
+}
+
+/** Mix recently attempted topics (default 2 items × 4 topics) and interleave. */
+export function assembleMasteryCheckSession(
+  dueItems: AssemblerItem[],
+  candidateNewItems: NewCandidate[],
+  config: MasteryCheckConfig,
+): AssembleResult {
+  const per = config.itemsPerTopic ?? 2;
+  const maxTopics = config.maxTopics ?? 4;
+  const extraItems = config.extraItems ?? [];
+  const picked: AssemblerItem[] = [];
+  for (const topicId of config.topicIds.slice(0, maxTopics)) {
+    picked.push(
+      ...takeFromTopic(
+        dueItems,
+        candidateNewItems,
+        extraItems,
+        topicId,
+        per,
+      ),
+    );
+  }
+  return interleaveItems(picked);
 }
 
 export function interleaveItems(items: AssemblerItem[]): AssembleResult {

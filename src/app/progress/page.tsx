@@ -50,6 +50,8 @@ export default function ProgressPage() {
       <h1 className="mt-2 font-serif text-3xl tracking-tight">Progress</h1>
       <p className="mt-1 text-sm text-zinc-600">
         Gray dots are unseen (no attempts). Color runs red → green with mastery.
+        Topic rows show Khan-like levels: unseen, struggling, familiar, proficient,
+        mastered.
       </p>
       <DemoBanner show={Boolean(loaded.insights?.demo)} />
       {loaded.error ? <p className="mt-4 text-sm text-red-700">{loaded.error}</p> : null}
@@ -85,6 +87,17 @@ export default function ProgressPage() {
       ) : null}
       {loaded.data ? (
         <>
+          <section className="mt-6 rounded-lg border border-zinc-200 bg-white p-4">
+            <h2 className="text-sm font-medium">Course mastery</h2>
+            <p className="mt-1 text-3xl font-semibold" data-testid="progress-course-mastery">
+              {Math.round(loaded.data.courseMastery * 100)}%
+            </p>
+            <p className="mt-1 text-xs text-zinc-500">
+              Exam-weight-weighted topic mean (unseen = 0).{" "}
+              {Math.round(loaded.data.proficientPlusShare * 100)}% of weighted topics are
+              proficient or mastered.
+            </p>
+          </section>
           <section className="mt-8">
             <h2 className="text-lg font-medium">Bank vs exam map</h2>
             <div className="mt-3 rounded-lg border border-zinc-200 bg-white p-4">

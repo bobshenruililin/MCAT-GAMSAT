@@ -3,8 +3,9 @@
 import { useMemo, useState } from "react";
 import type { ProgressNode } from "@/engine/progressTypes";
 import { masterySwatch } from "@/engine/masteryColor";
+import { LEVEL_ORDER } from "@/engine/masteryLevel";
 
-type SortKey = "mastery" | "attempts" | "examWeight" | "id";
+type SortKey = "mastery" | "attempts" | "examWeight" | "id" | "masteryLevel";
 
 export function WeakestTable({ topics }: { topics: ProgressNode[] }) {
   const [sort, setSort] = useState<SortKey>("mastery");
@@ -13,6 +14,9 @@ export function WeakestTable({ topics }: { topics: ProgressNode[] }) {
   const rows = useMemo(() => {
     const copy = [...topics];
     copy.sort((a, b) => {
+      if (sort === "masteryLevel") {
+        return (LEVEL_ORDER[a.masteryLevel] - LEVEL_ORDER[b.masteryLevel]) * dir;
+      }
       const av = a[sort];
       const bv = b[sort];
       if (typeof av === "number" && typeof bv === "number") {
@@ -47,6 +51,11 @@ export function WeakestTable({ topics }: { topics: ProgressNode[] }) {
               </button>
             </th>
             <th className="py-2 pr-3">
+              <button type="button" className="underline" onClick={() => click("masteryLevel")}>
+                Level
+              </button>
+            </th>
+            <th className="py-2 pr-3">
               <button type="button" className="underline" onClick={() => click("attempts")}>
                 Attempts
               </button>
@@ -71,6 +80,9 @@ export function WeakestTable({ topics }: { topics: ProgressNode[] }) {
               </td>
               <td className="py-2 pr-3 font-mono">
                 {row.unseen ? "—" : row.mastery.toFixed(3)}
+              </td>
+              <td className="py-2 pr-3" data-testid="mastery-level">
+                {row.masteryLevel}
               </td>
               <td className="py-2 pr-3">{row.attempts}</td>
               <td className="py-2 font-mono">{row.examWeight.toFixed(4)}</td>

@@ -10,6 +10,12 @@ import {
 } from "@/db/schema";
 import { masteryByNode } from "./mastery";
 import {
+  leveledUp,
+  masteryLevel,
+  LEVEL_LABELS,
+  type MasteryLevel,
+} from "./masteryLevel";
+import {
   MCAT_SCIENCE_BUDGET,
   sectionBudgetSeconds,
   sectionFamily,
@@ -45,6 +51,13 @@ export type TopicBreakdown = {
   name: string;
   correct: number;
   total: number;
+  mastery: number;
+  attempts: number;
+  level: MasteryLevel;
+  previousLevel: MasteryLevel;
+  levelLabel: string;
+  previousLevelLabel: string;
+  leveledUp: boolean;
 };
 
 export type WeakNode = {
@@ -58,6 +71,7 @@ export type WeakNode = {
 export type SessionSummaryData = {
   sessionId: string;
   kind: string;
+  mode: string;
   total: number;
   correctCount: number;
   accuracy: number;
@@ -116,25 +130,70 @@ export function getSessionSummary(
     }
   }
 
-  const topicMap = new Map<string, TopicBreakdown>();
+  const topicMap = new Map<string, TopicBreakdown & { sessionAttempts: number }>();
   for (const row of rows) {
     const existing = topicMap.get(row.conceptId) ?? {
       conceptId: row.conceptId,
       name: row.conceptName,
       correct: 0,
       total: 0,
+      mastery: 0,
+      attempts: 0,
+      level: "unseen" as MasteryLevel,
+      previousLevel: "unseen" as MasteryLevel,
+      levelLabel: LEVEL_LABELS.unseen,
+      previousLevelLabel: LEVEL_LABELS.unseen,
+      leveledUp: false,
+      sessionAttempts: 0,
     };
     existing.total += 1;
+    existing.sessionAttempts += 1;
     if (row.correct) existing.correct += 1;
     topicMap.set(row.conceptId, existing);
   }
-  const perTopic = [...topicMap.values()].sort((a, b) =>
-    a.conceptId.localeCompare(b.conceptId),
-  );
+
+  const allAttemptRows = db
+    .select({
+      conceptId: items.conceptId,
+      sessionId: attempts.sessionId,
+    })
+    .from(attempts)
+    .innerJoin(items, eq(items.id, attempts.itemId))
+    .all();
+  const attemptsByTopic = new Map<string, number>();
+  for (const row of allAttemptRows) {
+    attemptsByTopic.set(row.conceptId, (attemptsByTopic.get(row.conceptId) ?? 0) + 1);
+  }
+
+  const mastery = masteryByNode(db, now);
+  const perTopic = [...topicMap.values()]
+    .map((row) => {
+      const attemptsTotal = attemptsByTopic.get(row.conceptId) ?? row.sessionAttempts;
+      const m = mastery[row.conceptId] ?? 0.3;
+      const level = masteryLevel({ mastery: m, attempts: attemptsTotal });
+      const attemptsBefore = Math.max(0, attemptsTotal - row.sessionAttempts);
+      const previousLevel =
+        attemptsBefore === 0
+          ? ("unseen" as MasteryLevel)
+          : masteryLevel({ mastery: m, attempts: attemptsBefore });
+      return {
+        conceptId: row.conceptId,
+        name: row.name,
+        correct: row.correct,
+        total: row.total,
+        mastery: m,
+        attempts: attemptsTotal,
+        level,
+        previousLevel,
+        levelLabel: LEVEL_LABELS[level],
+        previousLevelLabel: LEVEL_LABELS[previousLevel],
+        leveledUp: leveledUp(previousLevel, level),
+      };
+    })
+    .sort((a, b) => a.conceptId.localeCompare(b.conceptId));
 
   let weakest: WeakNode[] | null = null;
   if (session.kind === "diagnostic") {
-    const mastery = masteryByNode(db, now);
     const all = db.select().from(concepts).all();
     weakest = all
       .filter((n) => n.examWeight > 0)
@@ -156,10 +215,13 @@ export function getSessionSummary(
   }
 
   const conceptIds = rows.map((r) => r.conceptId);
+  const modeRaw = session.config.mode;
+  const mode = typeof modeRaw === "string" ? modeRaw : session.kind;
 
   return {
     sessionId,
     kind: session.kind,
+    mode,
     total,
     correctCount,
     accuracy: total === 0 ? 0 : correctCount / total,

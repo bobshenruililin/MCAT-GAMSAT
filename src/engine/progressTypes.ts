@@ -1,4 +1,5 @@
 import type { Exam, Level } from "@/db/schema";
+import type { MasteryLevel } from "./masteryLevel";
 
 export type ProgressNode = {
   id: string;
@@ -10,4 +11,6 @@ export type ProgressNode = {
   mastery: number;
   attempts: number;
   unseen: boolean;
+  itemCount: number;
+  masteryLevel: MasteryLevel;
 };

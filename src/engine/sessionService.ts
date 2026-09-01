@@ -23,11 +23,18 @@ import { huntTopicIds, priorMissCount } from "./hunt";
 import { isDemoConfig } from "./demoSeed";
 import { maybeSyncScoreboard } from "./scoreboard";
 import {
+  assembleMasteryCheckSession,
   assembleSession,
+  assembleSkillFocusSession,
+  pickContrastTopicId,
   DEFAULT_ASSEMBLE_CONFIG,
   type AssembleConfig,
+  type AssemblerItem,
+  type NewCandidate,
 } from "./sessionAssembler";
 import { matchesTrack, parseTrack, type SectionFamily } from "./sectionBudget";
+
+export type SessionMode = "daily" | "skill" | "mastery_check";
 
 export type DailySessionConfig = SessionConfig & {
   reviewCap: number;
@@ -37,6 +44,9 @@ export type DailySessionConfig = SessionConfig & {
   interleave_exceptions: number;
   huntTopicIds: string[];
   track?: SectionFamily;
+  mode?: SessionMode;
+  skillTopicId?: string;
+  contrastTopicId?: string;
 };
 
 export type DiagnosticSessionConfig = SessionConfig & {
@@ -47,7 +57,11 @@ export type DiagnosticSessionConfig = SessionConfig & {
   track?: SectionFamily;
 };
 
-export type DailyCaps = Partial<AssembleConfig> & { track?: SectionFamily | string };
+export type DailyCaps = Partial<AssembleConfig> & {
+  track?: SectionFamily | string;
+  mode?: SessionMode;
+  skillTopicId?: string;
+};
 export type DiagnosticCaps = Partial<{
   perCategory: number;
   cap: number;
@@ -129,20 +143,100 @@ export function priorMissesFromDb(
   );
 }
 
+function recentlyAttemptedTopicIds(
+  db: AppDb,
+  track: SectionFamily | undefined,
+  limit: number,
+): string[] {
+  const rows = db
+    .select({
+      conceptId: items.conceptId,
+      createdAt: attempts.createdAt,
+      examWeight: concepts.examWeight,
+    })
+    .from(attempts)
+    .innerJoin(items, eq(items.id, attempts.itemId))
+    .innerJoin(concepts, eq(concepts.id, items.conceptId))
+    .all()
+    .filter((r) => r.examWeight > 0 && matchesTrack(r.conceptId, track))
+    .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+  const out: string[] = [];
+  const seen = new Set<string>();
+  for (const row of rows) {
+    if (seen.has(row.conceptId)) continue;
+    seen.add(row.conceptId);
+    out.push(row.conceptId);
+    if (out.length >= limit) break;
+  }
+  return out;
+}
+
+function highestWeightTopicIds(
+  candidates: NewCandidate[],
+  due: AssemblerItem[],
+  limit: number,
+): string[] {
+  const weights = new Map<string, number>();
+  for (const d of due) {
+    if (!weights.has(d.conceptId)) weights.set(d.conceptId, 0);
+  }
+  for (const c of candidates) {
+    if (c.examWeight <= 0) continue;
+    weights.set(c.conceptId, Math.max(weights.get(c.conceptId) ?? 0, c.examWeight));
+  }
+  return [...weights.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .slice(0, limit)
+    .map(([id]) => id);
+}
+
+function extraScheduledItems(
+  db: AppDb,
+  seen: Set<string>,
+  track: SectionFamily | undefined,
+  applyTrack: boolean,
+): AssemblerItem[] {
+  return db
+    .select({
+      id: items.id,
+      conceptId: items.conceptId,
+      examWeight: concepts.examWeight,
+      dueAt: fsrsState.dueAt,
+    })
+    .from(items)
+    .innerJoin(concepts, eq(concepts.id, items.conceptId))
+    .innerJoin(fsrsState, eq(fsrsState.itemId, items.id))
+    .all()
+    .filter(
+      (row) =>
+        !seen.has(row.id) &&
+        row.examWeight > 0 &&
+        (!applyTrack || matchesTrack(row.conceptId, track)),
+    )
+    .sort((a, b) => a.dueAt.localeCompare(b.dueAt) || a.id.localeCompare(b.id))
+    .map((row) => ({ id: row.id, conceptId: row.conceptId }));
+}
+
 export function createDailySession(
   db: AppDb,
   now: Date,
   caps: DailyCaps = {},
 ): { sessionId: string; config: DailySessionConfig } {
-  const { track: trackRaw, ...assembleCaps } = caps;
+  const { track: trackRaw, mode, skillTopicId, ...assembleCaps } = caps;
   const track = parseTrack(trackRaw);
+  const sessionMode: SessionMode =
+    mode === "skill" || mode === "mastery_check" ? mode : "daily";
+  if (sessionMode === "skill" && !skillTopicId) {
+    throw new Error("skill session requires skillTopicId");
+  }
+  const applyTrack = sessionMode !== "skill";
   const assembleConfig = { ...DEFAULT_ASSEMBLE_CONFIG, ...assembleCaps };
   const due = getDueItems(db, now, assembleConfig.reviewCap)
     .map((d) => ({
       id: d.itemId,
       conceptId: d.conceptId,
     }))
-    .filter((d) => matchesTrack(d.conceptId, track));
+    .filter((d) => !applyTrack || matchesTrack(d.conceptId, track));
 
   const seen = new Set(due.map((d) => d.id));
   const newRows = db
@@ -150,6 +244,7 @@ export function createDailySession(
       id: items.id,
       conceptId: items.conceptId,
       examWeight: concepts.examWeight,
+      difficultyEst: items.difficultyEst,
       fsrsItemId: fsrsState.itemId,
     })
     .from(items)
@@ -157,21 +252,59 @@ export function createDailySession(
     .leftJoin(fsrsState, eq(fsrsState.itemId, items.id))
     .where(isNull(fsrsState.itemId))
     .all()
-    .filter((row) => !seen.has(row.id) && matchesTrack(row.conceptId, track));
+    .filter(
+      (row) =>
+        !seen.has(row.id) && (!applyTrack || matchesTrack(row.conceptId, track)),
+    );
 
   const mastery = masteryByNode(db, now);
-  const huntIds = huntTopicsFromDb(db, now).filter((id) => matchesTrack(id, track));
-  const candidates = newRows.map((row) => ({
+  const huntIds = huntTopicsFromDb(db, now).filter(
+    (id) => !applyTrack || matchesTrack(id, track),
+  );
+  const candidates: NewCandidate[] = newRows.map((row) => ({
     id: row.id,
     conceptId: row.conceptId,
     examWeight: row.examWeight,
     mastery: mastery[row.conceptId] ?? 0.3,
+    difficultyEst: row.difficultyEst,
   }));
+  const extraItems =
+    sessionMode === "daily"
+      ? []
+      : extraScheduledItems(db, seen, track, applyTrack);
 
-  const assembled = assembleSession(due, candidates, {
-    ...assembleConfig,
-    huntTopicIds: huntIds,
-  });
+  let assembled;
+  let contrastTopicId: string | undefined;
+  if (sessionMode === "skill" && skillTopicId) {
+    contrastTopicId = pickContrastTopicId(due, candidates, extraItems, skillTopicId);
+    assembled = assembleSkillFocusSession(due, candidates, {
+      skillTopicId,
+      contrastTopicId,
+      extraItems,
+    });
+  } else if (sessionMode === "mastery_check") {
+    let topicIds = recentlyAttemptedTopicIds(db, track, 4);
+    if (topicIds.length < 2) {
+      topicIds = highestWeightTopicIds(candidates, due, 4);
+    }
+    assembled = assembleMasteryCheckSession(due, candidates, {
+      topicIds,
+      itemsPerTopic: 2,
+      extraItems,
+    });
+  } else {
+    assembled = assembleSession(due, candidates, {
+      ...assembleConfig,
+      huntTopicIds: huntIds,
+    });
+  }
+  if (assembled.items.length === 0 && sessionMode !== "daily") {
+    throw new Error(
+      sessionMode === "skill"
+        ? "no items available for that skill"
+        : "no items available for this session",
+    );
+  }
   const config: DailySessionConfig = {
     reviewCap: assembleConfig.reviewCap,
     newCap: assembleConfig.newCap,
@@ -179,7 +312,10 @@ export function createDailySession(
     itemIds: assembled.items.map((i) => i.id),
     interleave_exceptions: assembled.interleaveExceptions,
     huntTopicIds: huntIds,
-    ...(track ? { track } : {}),
+    mode: sessionMode,
+    ...(track && applyTrack ? { track } : {}),
+    ...(skillTopicId && sessionMode === "skill" ? { skillTopicId } : {}),
+    ...(contrastTopicId ? { contrastTopicId } : {}),
   };
   const sessionId = crypto.randomUUID();
   db.insert(sessions)

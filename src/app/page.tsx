@@ -5,6 +5,7 @@ import { getTodayStats } from "@/engine/today";
 import { StartButtons } from "@/components/StartButtons";
 import { CoverageBars } from "@/components/CoverageBars";
 import { DemoBanner } from "@/components/DemoBanner";
+import { UpNextCard } from "@/components/UpNextCard";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -53,6 +54,15 @@ export default function TodayPage() {
         <>
           <dl className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
             <div className="rounded-lg border border-zinc-200 bg-white p-4">
+              <dt className="text-xs text-zinc-500">Course mastery</dt>
+              <dd className="mt-1 text-2xl font-semibold" data-testid="course-mastery">
+                {stats.courseMasteryLabel}
+              </dd>
+              <p className="mt-1 text-xs text-zinc-500">
+                exam-weight mean · {Math.round(stats.proficientPlusShare * 100)}% proficient+
+              </p>
+            </div>
+            <div className="rounded-lg border border-zinc-200 bg-white p-4">
               <dt className="text-xs text-zinc-500">Due reviews</dt>
               <dd className="mt-1 text-2xl font-semibold">{stats.dueCount}</dd>
               <p className="mt-1 text-xs text-zinc-500">
@@ -70,6 +80,13 @@ export default function TodayPage() {
               </dd>
               <p className="mt-1 text-xs text-zinc-500">consecutive UTC days with attempts</p>
             </div>
+          </dl>
+
+          {stats.upNext ? (
+            <UpNextCard skill={stats.upNext} disabled={emptyBank} />
+          ) : null}
+
+          <dl className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
             <div className="rounded-lg border border-zinc-200 bg-white p-4">
               <dt className="text-xs text-zinc-500">Weakest attempted</dt>
               {stats.weakest ? (

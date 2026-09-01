@@ -3,6 +3,11 @@ import { attempts, concepts, items } from "@/db/schema";
 import { masteryByNode } from "./mastery";
 import type { ProgressNode } from "./progressTypes";
 import { COVERAGE_TRACKS, sectionFamily, type SectionFamily } from "./sectionBudget";
+import {
+  courseMasteryPercent,
+  masteryLevel,
+  proficientPlusShare,
+} from "./masteryLevel";
 
 export type { ProgressNode } from "./progressTypes";
 
@@ -17,6 +22,8 @@ export type ProgressData = {
   nodes: ProgressNode[];
   topics: ProgressNode[];
   coverage: TrackCoverage[];
+  courseMastery: number;
+  proficientPlusShare: number;
 };
 
 export function getProgressData(db: AppDb, now: Date): ProgressData {
@@ -69,15 +76,9 @@ export function getProgressData(db: AppDb, now: Date): ProgressData {
     return value;
   }
 
-  const nodes: ProgressNode[] = all.map((row) => ({
-    id: row.id,
-    parentId: row.parentId,
-    exam: row.exam,
-    level: row.level,
-    name: row.name,
-    examWeight: row.examWeight,
-    mastery: mastery[row.id] ?? 0.3,
-    attempts:
+  const nodes: ProgressNode[] = all.map((row) => {
+    const masteryValue = mastery[row.id] ?? 0.3;
+    const attemptCount =
       row.level === "topic"
         ? (topicAttempts.get(row.id) ?? 0)
         : (children.get(row.id) ?? []).reduce((s, id) => {
@@ -85,9 +86,21 @@ export function getProgressData(db: AppDb, now: Date): ProgressData {
             if (!child) return s;
             if (child.level === "topic") return s + (topicAttempts.get(id) ?? 0);
             return s;
-          }, 0),
-    unseen: unseen(row.id),
-  }));
+          }, 0);
+    return {
+      id: row.id,
+      parentId: row.parentId,
+      exam: row.exam,
+      level: row.level,
+      name: row.name,
+      examWeight: row.examWeight,
+      mastery: masteryValue,
+      attempts: attemptCount,
+      unseen: unseen(row.id),
+      itemCount: row.level === "topic" ? (itemsByTopic.get(row.id)?.length ?? 0) : 0,
+      masteryLevel: masteryLevel({ mastery: masteryValue, attempts: attemptCount }),
+    };
+  });
 
   // parent attempt counts: sum descendant topic attempts
   const byId = new Map(nodes.map((n) => [n.id, n]));
@@ -98,6 +111,7 @@ export function getProgressData(db: AppDb, now: Date): ProgressData {
     const kids = children.get(id) ?? [];
     const n = kids.reduce((s, k) => s + addAttempts(k), 0);
     node.attempts = n;
+    node.masteryLevel = masteryLevel({ mastery: node.mastery, attempts: n });
     return n;
   }
   for (const n of nodes) {
@@ -120,5 +134,11 @@ export function getProgressData(db: AppDb, now: Date): ProgressData {
     };
   });
 
-  return { nodes, topics, coverage };
+  return {
+    nodes,
+    topics,
+    coverage,
+    courseMastery: courseMasteryPercent(topics),
+    proficientPlusShare: proficientPlusShare(topics),
+  };
 }

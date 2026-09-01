@@ -91,6 +91,8 @@ describe("demo:seed", () => {
     expect(today.dueForecast).toHaveLength(7);
     expect(today.dueForecast[0]?.date).toBe("2026-09-01");
     expect(today.weakest).not.toBeNull();
+    expect(today.upNext).not.toBeNull();
+    expect(today.courseMastery).toBeGreaterThan(0);
     expect(today.last7Days.reduce((s, d) => s + d.count, 0)).toBeGreaterThan(0);
     close();
   });

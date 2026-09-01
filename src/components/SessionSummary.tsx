@@ -24,7 +24,11 @@ export function SessionSummaryView({
   return (
     <main className="mx-auto max-w-3xl px-4 py-8">
       <p className="text-xs uppercase tracking-wide text-zinc-500">
-        {summary.kind} session
+        {summary.mode === "skill"
+          ? "skill session"
+          : summary.mode === "mastery_check"
+            ? "mastery check"
+            : `${summary.kind} session`}
       </p>
       <h1 className="mt-1 text-2xl font-semibold">Session summary</h1>
 
@@ -88,7 +92,8 @@ export function SessionSummaryView({
           <thead>
             <tr className="border-b border-zinc-300">
               <th className="py-2 pr-3">Topic</th>
-              <th className="py-2">Correct</th>
+              <th className="py-2 pr-3">Correct</th>
+              <th className="py-2">Level</th>
             </tr>
           </thead>
           <tbody>
@@ -98,8 +103,17 @@ export function SessionSummaryView({
                   <span className="font-mono text-xs">{row.conceptId}</span>
                   <span className="ml-2 text-zinc-600">{row.name}</span>
                 </td>
-                <td className="py-2">
+                <td className="py-2 pr-3">
                   {row.correct}/{row.total}
+                </td>
+                <td className="py-2" data-testid="topic-level">
+                  {row.leveledUp ? (
+                    <span className="text-emerald-800">
+                      Level up: {row.previousLevelLabel} → {row.levelLabel}
+                    </span>
+                  ) : (
+                    row.levelLabel
+                  )}
                 </td>
               </tr>
             ))}

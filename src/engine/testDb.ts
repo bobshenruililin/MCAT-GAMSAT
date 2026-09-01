@@ -77,6 +77,7 @@ export function insertDiscrete(
   id: string,
   conceptId: string,
   correctKey = "A",
+  difficultyEst = 0.4,
 ): void {
   db.insert(items)
     .values({
@@ -93,7 +94,7 @@ export function insertDiscrete(
       correctKey,
       explanation: `Because ${correctKey}`,
       distractorRationales: { B: "wrong" },
-      difficultyEst: 0.4,
+      difficultyEst,
       source: "ai_generated",
       verified: false,
       createdAt: "2026-01-01T00:00:00.000Z",
