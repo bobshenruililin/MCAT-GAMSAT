@@ -2,11 +2,24 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { COVERAGE_TRACKS, type SectionFamily } from "@/engine/sectionBudget";
+
+const TRACK_LABELS: Record<SectionFamily, string> = {
+  "MCAT CARS": "CARS",
+  "MCAT B/B": "B/B",
+  "MCAT C/P": "C/P",
+  "MCAT P/S": "P/S",
+  "GAMSAT S1": "S1",
+  "GAMSAT S2": "S2 MCQ",
+  "GAMSAT S3": "S3",
+  Other: "Other",
+};
 
 export function StartButtons({ disabled }: { disabled: boolean }) {
   const router = useRouter();
   const [busy, setBusy] = useState<"daily" | "diagnostic" | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [track, setTrack] = useState<SectionFamily | "">("");
 
   async function start(kind: "daily" | "diagnostic") {
     setBusy(kind);
@@ -15,7 +28,7 @@ export function StartButtons({ disabled }: { disabled: boolean }) {
       const res = await fetch("/api/sessions", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ kind }),
+        body: JSON.stringify({ kind, track: track || undefined }),
       });
       const data = (await res.json()) as { id?: string; error?: string };
       if (!res.ok || !data.id) {
@@ -32,7 +45,43 @@ export function StartButtons({ disabled }: { disabled: boolean }) {
 
   return (
     <div className="mt-6">
-      <div className="flex flex-col gap-3 sm:flex-row">
+      <p className="text-sm font-medium">Section block</p>
+      <p className="mt-1 text-xs text-zinc-500">
+        Mixed follows exam weights. A named block is a CARS sitting, a science sitting, or a
+        GAMSAT paper — the hour matches the clock you will walk into.
+      </p>
+      <div className="mt-3 flex flex-wrap gap-2" data-testid="track-picker">
+        <button
+          type="button"
+          data-testid="track-mixed"
+          disabled={disabled || busy !== null}
+          onClick={() => setTrack("")}
+          className={`rounded-full border px-3 py-1 text-xs ${
+            track === ""
+              ? "border-zinc-900 bg-zinc-900 text-white"
+              : "border-zinc-300 bg-white text-zinc-800"
+          }`}
+        >
+          Mixed
+        </button>
+        {COVERAGE_TRACKS.map((id) => (
+          <button
+            key={id}
+            type="button"
+            data-testid={`track-${id}`}
+            disabled={disabled || busy !== null}
+            onClick={() => setTrack(id)}
+            className={`rounded-full border px-3 py-1 text-xs ${
+              track === id
+                ? "border-zinc-900 bg-zinc-900 text-white"
+                : "border-zinc-300 bg-white text-zinc-800"
+            }`}
+          >
+            {TRACK_LABELS[id]}
+          </button>
+        ))}
+      </div>
+      <div className="mt-4 flex flex-col gap-3 sm:flex-row">
         <button
           type="button"
           disabled={disabled || busy !== null}

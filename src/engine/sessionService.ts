@@ -27,6 +27,7 @@ import {
   DEFAULT_ASSEMBLE_CONFIG,
   type AssembleConfig,
 } from "./sessionAssembler";
+import { matchesTrack, parseTrack, type SectionFamily } from "./sectionBudget";
 
 export type DailySessionConfig = SessionConfig & {
   reviewCap: number;
@@ -35,6 +36,7 @@ export type DailySessionConfig = SessionConfig & {
   itemIds: string[];
   interleave_exceptions: number;
   huntTopicIds: string[];
+  track?: SectionFamily;
 };
 
 export type DiagnosticSessionConfig = SessionConfig & {
@@ -42,7 +44,15 @@ export type DiagnosticSessionConfig = SessionConfig & {
   cap: number;
   itemIds: string[];
   interleave_exceptions: number;
+  track?: SectionFamily;
 };
+
+export type DailyCaps = Partial<AssembleConfig> & { track?: SectionFamily | string };
+export type DiagnosticCaps = Partial<{
+  perCategory: number;
+  cap: number;
+  track: SectionFamily | string;
+}>;
 
 function queuedItemIds(config: SessionConfig): string[] {
   const ids = config.itemIds;
@@ -122,13 +132,17 @@ export function priorMissesFromDb(
 export function createDailySession(
   db: AppDb,
   now: Date,
-  caps: Partial<AssembleConfig> = {},
+  caps: DailyCaps = {},
 ): { sessionId: string; config: DailySessionConfig } {
-  const assembleConfig = { ...DEFAULT_ASSEMBLE_CONFIG, ...caps };
-  const due = getDueItems(db, now, assembleConfig.reviewCap).map((d) => ({
-    id: d.itemId,
-    conceptId: d.conceptId,
-  }));
+  const { track: trackRaw, ...assembleCaps } = caps;
+  const track = parseTrack(trackRaw);
+  const assembleConfig = { ...DEFAULT_ASSEMBLE_CONFIG, ...assembleCaps };
+  const due = getDueItems(db, now, assembleConfig.reviewCap)
+    .map((d) => ({
+      id: d.itemId,
+      conceptId: d.conceptId,
+    }))
+    .filter((d) => matchesTrack(d.conceptId, track));
 
   const seen = new Set(due.map((d) => d.id));
   const newRows = db
@@ -143,10 +157,10 @@ export function createDailySession(
     .leftJoin(fsrsState, eq(fsrsState.itemId, items.id))
     .where(isNull(fsrsState.itemId))
     .all()
-    .filter((row) => !seen.has(row.id));
+    .filter((row) => !seen.has(row.id) && matchesTrack(row.conceptId, track));
 
   const mastery = masteryByNode(db, now);
-  const huntIds = huntTopicsFromDb(db, now);
+  const huntIds = huntTopicsFromDb(db, now).filter((id) => matchesTrack(id, track));
   const candidates = newRows.map((row) => ({
     id: row.id,
     conceptId: row.conceptId,
@@ -165,6 +179,7 @@ export function createDailySession(
     itemIds: assembled.items.map((i) => i.id),
     interleave_exceptions: assembled.interleaveExceptions,
     huntTopicIds: huntIds,
+    ...(track ? { track } : {}),
   };
   const sessionId = crypto.randomUUID();
   db.insert(sessions)
@@ -182,9 +197,11 @@ export function createDailySession(
 export function createDiagnosticSession(
   db: AppDb,
   now: Date,
-  caps: Partial<{ perCategory: number; cap: number }> = {},
+  caps: DiagnosticCaps = {},
 ): { sessionId: string; config: DiagnosticSessionConfig } {
-  const assembleConfig = { ...DEFAULT_DIAGNOSTIC_CONFIG, ...caps };
+  const { track: trackRaw, ...diagCaps } = caps;
+  const track = parseTrack(trackRaw);
+  const assembleConfig = { ...DEFAULT_DIAGNOSTIC_CONFIG, ...diagCaps };
   const topicRows = db
     .select({
       id: items.id,
@@ -201,6 +218,7 @@ export function createDiagnosticSession(
   for (const row of topicRows) {
     const cat = row.parentId ? catById.get(row.parentId) : undefined;
     if (!cat || cat.level !== "category" || cat.examWeight <= 0) continue;
+    if (!matchesTrack(row.conceptId, track)) continue;
     diagnosticItems.push({
       id: row.id,
       conceptId: row.conceptId,
@@ -231,6 +249,7 @@ export function createDiagnosticSession(
     cap: assembleConfig.cap,
     itemIds: assembled.items.map((i) => i.id),
     interleave_exceptions: assembled.interleaveExceptions,
+    ...(track ? { track } : {}),
   };
   const sessionId = crypto.randomUUID();
   db.insert(sessions)

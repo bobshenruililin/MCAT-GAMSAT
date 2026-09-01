@@ -83,7 +83,7 @@ export function PacingChart({
         ))}
       </div>
       <p className="mt-3 text-xs text-zinc-500">
-        Budgets: MCAT science 95s · CARS 102s · GAMSAT S3 120s. Bars are all attempts.
+        Budgets: MCAT science 95s · CARS 102s · GAMSAT S1 97s · S2 MCQ 90s · S3 120s.
       </p>
       <table className="mt-3 w-full text-left text-sm">
         <thead>

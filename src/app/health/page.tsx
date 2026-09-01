@@ -32,7 +32,7 @@ function loadHealth() {
   if (!existsSync(getDbPath())) {
     return {
       ok: false as const,
-      error: "database file missing — run pnpm db:migrate && pnpm seed",
+      error: "database file missing — run pnpm db:migrate && pnpm bootstrap",
       path: getDbPath(),
       tables: [] as { name: string; rows: number }[],
     };

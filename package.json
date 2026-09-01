@@ -12,7 +12,9 @@
     "db:migrate": "tsx src/db/migrate.ts",
     "db:reset": "tsx src/db/reset.ts",
     "seed": "tsx src/db/seed.ts",
+    "bootstrap": "tsx src/db/bootstrap.ts",
     "ingest": "tsx src/ingest/ingest.ts",
+    "ingest:all": "tsx src/ingest/ingestAll.ts",
     "demo:seed": "tsx src/db/demoSeed.ts",
     "scoreboard:sync": "tsx src/db/scoreboardSync.ts"
   },

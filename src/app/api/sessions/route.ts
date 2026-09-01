@@ -1,5 +1,6 @@
 import { openDb } from "@/db/client";
 import { createDailySession, createDiagnosticSession } from "@/engine/sessionService";
+import { parseTrack } from "@/engine/sectionBudget";
 
 export const runtime = "nodejs";
 
@@ -11,6 +12,7 @@ export async function POST(request: Request) {
     newCap?: number;
     perCategory?: number;
     cap?: number;
+    track?: string;
   } = {};
   try {
     body = (await request.json()) as typeof body;
@@ -19,12 +21,14 @@ export async function POST(request: Request) {
   }
   const now = body.now ? new Date(body.now) : new Date();
   const kind = body.kind === "diagnostic" ? "diagnostic" : "daily";
+  const track = parseTrack(body.track);
   const { sqlite, db } = openDb();
   try {
     if (kind === "diagnostic") {
-      const caps: { perCategory?: number; cap?: number } = {};
+      const caps: { perCategory?: number; cap?: number; track?: typeof track } = {};
       if (typeof body.perCategory === "number") caps.perCategory = body.perCategory;
       if (typeof body.cap === "number") caps.cap = body.cap;
+      if (track) caps.track = track;
       const created = createDiagnosticSession(db, now, caps);
       return Response.json({
         id: created.sessionId,
@@ -33,11 +37,13 @@ export async function POST(request: Request) {
         interleave_exceptions: created.config.interleave_exceptions,
         perCategory: created.config.perCategory,
         cap: created.config.cap,
+        track: created.config.track ?? null,
       });
     }
-    const caps: { reviewCap?: number; newCap?: number } = {};
+    const caps: { reviewCap?: number; newCap?: number; track?: typeof track } = {};
     if (typeof body.reviewCap === "number") caps.reviewCap = body.reviewCap;
     if (typeof body.newCap === "number") caps.newCap = body.newCap;
+    if (track) caps.track = track;
     const created = createDailySession(db, now, caps);
     return Response.json({
       id: created.sessionId,
@@ -46,6 +52,7 @@ export async function POST(request: Request) {
       interleave_exceptions: created.config.interleave_exceptions,
       reviewCap: created.config.reviewCap,
       newCap: created.config.newCap,
+      track: created.config.track ?? null,
     });
   } catch (err) {
     return Response.json(

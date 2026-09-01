@@ -40,6 +40,10 @@ describe("section budgets", () => {
     expect(sectionBudgetSeconds("MCAT.CARS.FND.t1")).toBe(102);
     expect(sectionBudgetSeconds("MCAT.FC1.1A.t1")).toBe(95);
     expect(sectionBudgetSeconds("GAMSAT.S3.phys.t26")).toBe(120);
+    expect(sectionFamily("GAMSAT.S1.understand.t1")).toBe("GAMSAT S1");
+    expect(sectionBudgetSeconds("GAMSAT.S1.understand.t1")).toBe(97);
+    expect(sectionFamily("GAMSAT.S2.craft.t1")).toBe("GAMSAT S2");
+    expect(sectionBudgetSeconds("GAMSAT.S2.craft.t1")).toBe(90);
   });
 });
 

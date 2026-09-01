@@ -171,7 +171,7 @@ export function ItemPlayer({
           <aside className="rounded-lg border border-zinc-200 bg-white p-4 md:w-1/2">
             <h2 className="text-sm font-semibold text-zinc-500">Passage</h2>
             <h3 className="mt-1 text-base font-medium">{item.passage.title}</h3>
-            <p className="mt-3 whitespace-pre-wrap text-sm leading-6 text-zinc-800">
+            <p className="mt-3 whitespace-pre-wrap font-serif text-[16px] leading-7 text-zinc-800">
               {item.passage.body}
             </p>
           </aside>

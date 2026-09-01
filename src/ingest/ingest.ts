@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { and, eq, like } from "drizzle-orm";
 import { openDb, type AppDb } from "@/db/client";
@@ -204,8 +204,35 @@ function main() {
   const file = process.argv[2];
   if (!file) {
     console.error("Usage: pnpm ingest <file>");
+    console.error("       pnpm ingest --all");
     console.error("       pnpm ingest --strip-placeholders");
     process.exit(2);
+  }
+  if (file === "--all") {
+    const dir = path.join(process.cwd(), "content", "batches");
+    const files = readdirSync(dir)
+      .filter((name) => /^\d+-.*\.json$/.test(name))
+      .sort();
+    let passed = 0;
+    let failed = 0;
+    let inserted = 0;
+    let skipped = 0;
+    for (const name of files) {
+      const result = ingestPath(path.join(dir, name));
+      passed += result.passed;
+      failed += result.failed;
+      inserted += result.inserted;
+      skipped += result.skipped;
+      console.log(
+        `ingest ${name}: ${result.passed} passed, ${result.failed} failed (inserted ${result.inserted}, skipped ${result.skipped})`,
+      );
+      if (result.rejectedPath) console.log(`quarantine: ${result.rejectedPath}`);
+    }
+    console.log(
+      `ingest:all ${files.length} files, ${passed} passed, ${failed} failed, inserted ${inserted}, skipped ${skipped}`,
+    );
+    if (failed > 0) process.exitCode = 1;
+    return;
   }
   if (file === "--strip-placeholders") {
     const { sqlite, db } = openDb();

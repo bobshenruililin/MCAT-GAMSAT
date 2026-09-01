@@ -34,4 +34,11 @@ Prompt 4 asked for the 40 highest `exam_weight` topic nodes. That list is almost
 ### B-010 — Section time budgets for pacing
 Stretch pacing uses 95s (MCAT science), 102s (CARS, 90 min / 53), 120s (GAMSAT S3, 150 min / 75). These are study pacing heuristics, not official scoring rules. Human: replace with your preferred per-section budgets.
 
+### B-011 — GAMSAT S2 is production, not only retrieval
+NORTH_STAR says studying means answering questions. S2 on the real paper is timed writing. v1 keeps S2 craft as MCQs in the bank and adds `/write` as a local timed studio with a self-rubric (not an official score, not `verified` essays). Human: confirm this split, or forbid the studio as out of scope.
+
+### B-012 — Section-track sessions defer other-section dues
+Today can start a CARS / B/B / C/P / P/S / S1 / S2 / S3 block. Due cards from other families wait until a Mixed session or a matching block. That matches exam-morning sitting; it can also let a neglected section’s FSRS due pile up. Human: confirm, or force Mixed to drain all dues first.
+
+
 

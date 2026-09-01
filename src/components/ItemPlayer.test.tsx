@@ -13,7 +13,7 @@ afterEach(() => {
 const item: PlayerItem = {
   id: "item-1",
   type: "discrete",
-  stem: "[PLACEHOLDER] What is 2+2?",
+  stem: "A peptide of only D-amino acids is incubated with a mammalian protease. What happens?",
   conceptId: "MCAT.FC1.1A.t1",
   passage: null,
   choices: [

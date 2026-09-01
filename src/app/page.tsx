@@ -1,9 +1,9 @@
 import { existsSync } from "node:fs";
-import Link from "next/link";
 import { openDb } from "@/db/client";
 import { getDbPath } from "@/db/paths";
 import { getTodayStats } from "@/engine/today";
 import { StartButtons } from "@/components/StartButtons";
+import { CoverageBars } from "@/components/CoverageBars";
 import { DemoBanner } from "@/components/DemoBanner";
 
 export const runtime = "nodejs";
@@ -13,7 +13,7 @@ function loadToday() {
   if (!existsSync(getDbPath())) {
     return {
       ok: false as const,
-      error: "database file missing — run pnpm db:migrate && pnpm seed",
+      error: "database file missing — run pnpm db:migrate && pnpm bootstrap",
       stats: null,
     };
   }
@@ -38,8 +38,11 @@ export default function TodayPage() {
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-8">
-      <h1 className="text-2xl font-semibold">Today</h1>
-      <p className="mt-1 text-sm text-zinc-600">Retrieval only. Confidence before reveal.</p>
+      <h1 className="font-serif text-3xl tracking-tight">Today</h1>
+      <p className="mt-1 text-sm text-zinc-600">
+        Retrieval only. Confidence before reveal. The person walking into the room is the
+        product.
+      </p>
       <DemoBanner show={Boolean(stats?.demo)} />
 
       {today.error ? (
@@ -107,10 +110,23 @@ export default function TodayPage() {
             </section>
           ) : null}
 
+          {stats.coverage?.length ? (
+            <section className="mt-8">
+              <h2 className="text-sm font-medium">Bank vs exam map</h2>
+              <p className="mt-1 text-xs text-zinc-500">
+                Dark bar: topics with items. Green: topics you have attempted.
+              </p>
+              <div className="mt-3 rounded-lg border border-zinc-200 bg-white p-4">
+                <CoverageBars coverage={stats.coverage} />
+              </div>
+            </section>
+          ) : null}
+
           <StartButtons disabled={emptyBank} />
           {emptyBank ? (
             <p className="mt-3 text-sm text-zinc-600">
-              Item bank is empty. Run <span className="font-mono">pnpm seed</span>.
+              Item bank is empty. Run <span className="font-mono">pnpm bootstrap</span>{" "}
+              (taxonomy + real batches, no PLACEHOLDER items).
             </p>
           ) : null}
 
@@ -146,16 +162,6 @@ export default function TodayPage() {
           </section>
         </>
       ) : null}
-
-      <p className="mt-8 text-xs text-zinc-500">
-        <Link href="/progress" className="underline">
-          Progress
-        </Link>
-        {" · "}
-        <Link href="/health" className="underline">
-          Health
-        </Link>
-      </p>
     </main>
   );
 }

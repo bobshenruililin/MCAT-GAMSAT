@@ -42,6 +42,7 @@ export type TodayStats = {
   streak: number;
   weakest: WeakestSpotlight | null;
   huntTopics: HuntSpotlight[];
+  coverage: { family: string; topics: number; withItems: number; attempted: number }[];
   demo: boolean;
 };
 
@@ -136,6 +137,7 @@ export function getTodayStats(db: AppDb, now: Date): TodayStats {
     streak: studyStreak(allAttemptDays, todayKey),
     weakest,
     huntTopics,
+    coverage: progress.coverage,
     demo: hasDemoData(db),
   };
 }

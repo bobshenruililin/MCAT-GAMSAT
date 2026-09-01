@@ -2,12 +2,21 @@ import type { AppDb } from "@/db/client";
 import { attempts, concepts, items } from "@/db/schema";
 import { masteryByNode } from "./mastery";
 import type { ProgressNode } from "./progressTypes";
+import { COVERAGE_TRACKS, sectionFamily, type SectionFamily } from "./sectionBudget";
 
 export type { ProgressNode } from "./progressTypes";
+
+export type TrackCoverage = {
+  family: SectionFamily;
+  topics: number;
+  withItems: number;
+  attempted: number;
+};
 
 export type ProgressData = {
   nodes: ProgressNode[];
   topics: ProgressNode[];
+  coverage: TrackCoverage[];
 };
 
 export function getProgressData(db: AppDb, now: Date): ProgressData {
@@ -98,5 +107,16 @@ export function getProgressData(db: AppDb, now: Date): ProgressData {
   const topics = nodes
     .filter((n) => n.level === "topic")
     .sort((a, b) => a.mastery - b.mastery || b.examWeight - a.examWeight);
-  return { nodes, topics };
+
+  const coverage: TrackCoverage[] = COVERAGE_TRACKS.map((family) => {
+    const track = topics.filter((t) => sectionFamily(t.id) === family);
+    return {
+      family,
+      topics: track.length,
+      withItems: track.filter((t) => (itemsByTopic.get(t.id)?.length ?? 0) > 0).length,
+      attempted: track.filter((t) => t.attempts > 0).length,
+    };
+  });
+
+  return { nodes, topics, coverage };
 }

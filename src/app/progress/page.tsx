@@ -6,6 +6,7 @@ import { getProgressData } from "@/engine/progress";
 import { getInsightData } from "@/engine/progressInsights";
 import { TaxonomyTree } from "@/components/TaxonomyTree";
 import { WeakestTable } from "@/components/WeakestTable";
+import { CoverageBars } from "@/components/CoverageBars";
 import { DemoBanner } from "@/components/DemoBanner";
 import {
   CalibrationChart,
@@ -46,7 +47,7 @@ export default function ProgressPage() {
           Today
         </Link>
       </p>
-      <h1 className="mt-2 text-2xl font-semibold">Progress</h1>
+      <h1 className="mt-2 font-serif text-3xl tracking-tight">Progress</h1>
       <p className="mt-1 text-sm text-zinc-600">
         Gray dots are unseen (no attempts). Color runs red → green with mastery.
       </p>
@@ -84,6 +85,12 @@ export default function ProgressPage() {
       ) : null}
       {loaded.data ? (
         <>
+          <section className="mt-8">
+            <h2 className="text-lg font-medium">Bank vs exam map</h2>
+            <div className="mt-3 rounded-lg border border-zinc-200 bg-white p-4">
+              <CoverageBars coverage={loaded.data.coverage} />
+            </div>
+          </section>
           <section className="mt-8">
             <h2 className="text-lg font-medium">Taxonomy</h2>
             <div className="mt-3 rounded-lg border border-zinc-200 bg-white p-4">

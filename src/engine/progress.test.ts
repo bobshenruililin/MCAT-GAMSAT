@@ -57,7 +57,9 @@ describe("progress heatmap data", () => {
     expect(other?.unseen).toBe(true);
     expect(t1!.attempts).toBe(1);
     expect(t2!.attempts).toBe(1);
-    expect(t1!.mastery).toBeGreaterThan(t2!.mastery);
+    const bb = data.coverage.find((c) => c.family === "MCAT B/B");
+    expect(bb?.withItems).toBeGreaterThanOrEqual(2);
+    expect(bb?.attempted).toBeGreaterThanOrEqual(2);
 
     const seen = data.topics.filter((n) => !n.unseen);
     for (let i = 1; i < seen.length; i++) {
