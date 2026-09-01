@@ -1,0 +1,1244 @@
+{
+  "items": [
+    {
+      "concept_id": "MCAT.FC1.1B.t1",
+      "type": "discrete",
+      "stem": "A 21-nucleotide DNA probe hybridizes to a wild-type allele through a fully matched duplex that includes a central G–C pair. A disease-associated SNP replaces that pair with A–T. Hybridization is performed at a temperature 2 °C below the melting temperature of the wild-type duplex. Which outcome is most likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The probe remains bound to the wild-type allele but largely dissociates from the SNP allele."
+        },
+        {
+          "key": "B",
+          "text": "The probe binds more tightly to the SNP allele because A–T pairs stack more strongly than G–C pairs."
+        },
+        {
+          "key": "C",
+          "text": "Both duplexes remain equally hybridized because oligonucleotide Tm depends only on length, which is unchanged."
+        },
+        {
+          "key": "D",
+          "text": "The SNP duplex has the higher Tm because adenine presents a larger hydrophobic surface than guanine."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Short DNA duplex stability, and therefore melting temperature, increases with GC content because G–C pairs contribute three hydrogen bonds and more favorable base stacking than A–T pairs. Replacing a central G–C pair with A–T therefore lowers the Tm of that hybrid by several degrees even though length is identical. A wash or hybridization temperature just below the wild-type Tm leaves the perfectly matched duplex largely double-stranded while the weaker SNP hybrid is substantially melted. That differential occupancy is the physical basis of allele-specific hybridization. Length-only or A–T-is-stronger arguments contradict measured nearest-neighbor thermodynamics used to design probes.",
+      "distractor_rationales": {
+        "B": "A–T pairs are thermodynamically weaker than G–C pairs, not stronger; they form two hydrogen bonds and stack less favorably, so they lower rather than raise Tm.",
+        "C": "For oligonucleotides of fixed length, sequence composition and mismatches dominate Tm; a GC-to-AT substitution is enough to shift melting by several degrees.",
+        "D": "Adenine’s size does not make A–T duplexes more stable; G–C pairing and stacking are the main stabilizers of short DNA hybrids."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t1",
+      "type": "discrete",
+      "stem": "A linear double-stranded DNA viral genome is hydrolyzed completely to mononucleotides. Adenine accounts for 18% of all bases. A student reports that guanine must also be 18% because ‘purines are equal.’ Which value is the actual percentage of guanine, and why was the student wrong?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "18%, because Chargaff’s rules set A equal to G in duplex DNA."
+        },
+        {
+          "key": "B",
+          "text": "32%, because A pairs with T so A = T = 18%, leaving G = C = 32%."
+        },
+        {
+          "key": "C",
+          "text": "36%, because G must equal A + T in a Watson–Crick duplex."
+        },
+        {
+          "key": "D",
+          "text": "64%, because G + C equals A and the remaining bases are all guanine."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "In double-stranded DNA, Watson–Crick pairing enforces A = T and G = C, not A = G. If adenine is 18% of all bases, thymine is also 18%, so A + T = 36%. The remaining 64% of bases are G + C, split equally, so guanine is 32%. The student’s purine-equality claim confuses the two purines with each other; Chargaff’s rules pair each purine with a pyrimidine. These equalities do not apply to single-stranded genomes, but the stem specifies a duplex molecule, so the calculation is determined.",
+      "distractor_rationales": {
+        "A": "Chargaff’s rules set A equal to T and G equal to C, not A equal to G. Equal purine percentages would be coincidental, not required.",
+        "C": "There is no rule that G equals A + T. After assigning A = T = 18%, G and C share the remaining 64% equally (32% each).",
+        "D": "G + C is 64%, but that sum is split between guanine and cytosine; guanine alone is 32%, not 64%."
+      },
+      "difficulty_est": 0.35
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t1",
+      "type": "discrete",
+      "stem": "A hydrolyzed sample contains two related species derived from the same DNA sequence: a short oligonucleotide with a 5′-monophosphate and a free 3′-OH, and the corresponding nucleoside of the 3′-terminal residue. Which chemical distinction is correct at physiologic pH?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Both molecules contain internucleotide 3′–5′ phosphodiester bonds; they differ only in whether the bases are methylated."
+        },
+        {
+          "key": "B",
+          "text": "The nucleoside contains a 5′-triphosphate that the oligonucleotide lacks, so only the nucleoside is strongly anionic."
+        },
+        {
+          "key": "C",
+          "text": "The oligonucleotide contains 3′–5′ phosphodiester linkages and a terminal phosphate, so it is polyanionic; the nucleoside is a base plus sugar with no phosphate and is not negatively charged from phosphate."
+        },
+        {
+          "key": "D",
+          "text": "Nucleosides are negatively charged because of phosphate groups, whereas oligonucleotides are uncharged polymers of bases."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "A nucleoside is a nitrogenous base linked to ribose or deoxyribose by an N-glycosidic bond and contains no phosphate. A nucleotide (or an oligonucleotide) includes one or more phosphates. Internucleotide bonds in DNA are 3′–5′ phosphodiesters, and a 5′-monophosphate end adds additional negative charge, so the oligo is polyanionic at physiologic pH. The nucleoside has no phosphate to ionize, so it is not an anion for that reason. Confusing the two names, assigning the triphosphate to the nucleoside, or claiming oligonucleotides are uncharged all reverse the structural definitions used to discuss DNA/RNA chemistry and hybridization.",
+      "distractor_rationales": {
+        "A": "A nucleoside has no internucleotide phosphodiester bonds. Phosphodiesters exist between residues of the oligonucleotide, not in the free nucleoside.",
+        "B": "A nucleoside has no phosphate at all, so it cannot carry a 5′-triphosphate. Triphosphates are nucleotides (NTPs/dNTPs), and the oligo, not the nucleoside, is the anionic species here.",
+        "D": "This reverses the charge pattern: phosphates make oligonucleotides (and nucleotides) anionic; nucleosides lack those phosphates."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t1",
+      "type": "discrete",
+      "stem": "A mixed sample of purified genomic DNA and cellular RNA is incubated in dilute sodium hydroxide at room temperature and then neutralized. Only DNA polymers remain intact. Which structural feature accounts for the selective degradation of RNA?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "RNA uses uracil, which is deprotonated by hydroxide and leaves the backbone as free base."
+        },
+        {
+          "key": "B",
+          "text": "DNA lacks a 5′-phosphate, so it cannot undergo nucleophilic cleavage of phosphodiesters."
+        },
+        {
+          "key": "C",
+          "text": "The C5 methyl of thymine sterically blocks hydroxide attack on DNA phosphodiesters."
+        },
+        {
+          "key": "D",
+          "text": "The 2′-OH of ribose can be deprotonated and attack the adjacent phosphodiester, forming a 2′,3′-cyclic phosphate."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Alkaline cleavage of RNA is an intramolecular transesterification. Hydroxide deprotonates the ribose 2′-OH, which attacks the 3′-linked phosphorus and displaces the 5′ end of the next nucleotide, producing a 2′,3′-cyclic phosphate that subsequently hydrolyzes. DNA lacks a 2′-OH, so it cannot form that cyclic intermediate and is alkali-stable under the same conditions. Uracil versus thymine and the thymine methyl group do not explain backbone scission, and both polymers have 5′-phosphates in internucleotide linkages. This chemistry is why alkaline lysis can destroy RNA while leaving plasmid DNA intact.",
+      "distractor_rationales": {
+        "A": "Uracil versus thymine does not make the phosphodiester alkali-labile; RNA with U still requires the 2′-OH for cleavage, and DNA with T is stable because it lacks that hydroxyl.",
+        "B": "DNA strands are connected by 5′-phosphates in phosphodiester bonds; the absence of a 2′-OH, not absence of a 5′-phosphate, explains alkali stability.",
+        "C": "Thymine’s methyl group is on the base, far from the internucleotide phosphate, and does not account for DNA’s resistance to dilute base."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t1",
+      "type": "discrete",
+      "stem": "A Northern blot probed for a rare mRNA shows high background from imperfect RNA–DNA hybrids. The researcher wants to increase hybridization stringency without changing the probe sequence. Which change is most appropriate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Raise hybridization temperature and lower the NaCl concentration."
+        },
+        {
+          "key": "B",
+          "text": "Lower hybridization temperature and raise the NaCl concentration."
+        },
+        {
+          "key": "C",
+          "text": "Keep temperature fixed and raise NaCl to 2 M so that only G–C pairs remain paired."
+        },
+        {
+          "key": "D",
+          "text": "Decrease temperature to 25 °C at unchanged salt so that mismatches are kinetically trapped."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Stringency is the degree to which hybridization conditions require perfect complementarity. Raising temperature approaches the Tm of imperfect duplexes first, so mismatched hybrids melt while matched hybrids remain. Lowering monovalent salt reduces shielding of the phosphate backbone, which destabilizes duplexes and likewise disfavors mismatches. The combination therefore increases specificity of a Northern or Southern hybridization. Cooling and adding salt do the opposite: they stabilize even poorly matched hybrids and raise background, which is the problem the blot already shows.",
+      "distractor_rationales": {
+        "B": "Lower temperature and higher salt decrease stringency by stabilizing mismatched hybrids, which would worsen the background the blot already shows.",
+        "C": "High salt stabilizes nucleic acid duplexes, including imperfect ones; it does not selectively preserve only G–C pairs in a way that raises specificity.",
+        "D": "Dropping to 25 °C far below typical probe Tm allows nonspecific annealing; mismatches are not ‘trapped’ in a way that improves signal-to-noise."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t1",
+      "type": "discrete",
+      "stem": "An antisense DNA oligonucleotide is designed to base-pair with the mRNA sequence 5′-AUG CGA UUC-3′. Which DNA sequence, written 5′ to 3′, is complementary and antiparallel?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "5′-ATG CGA TTC-3′"
+        },
+        {
+          "key": "B",
+          "text": "5′-GAA TCG CAT-3′"
+        },
+        {
+          "key": "C",
+          "text": "5′-TAC GCT AAG-3′"
+        },
+        {
+          "key": "D",
+          "text": "5′-TTC AGC GTA-3′"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Watson–Crick pairing is complementary and antiparallel, and DNA uses T in place of U. The mRNA 5′-AUG CGA UUC-3′ therefore pairs with DNA 3′-TAC GCT AAG-5′. Rewriting that DNA strand in the conventional 5′ to 3′ direction gives 5′-GAA TCG CAT-3′. Choice A is the coding-strand equivalent of the RNA (T for U) and would run parallel to the mRNA, not pair with it. Writing the complement without reversing polarity (5′-TAC GCT AAG-3′) is a common 5′/3′ error. Getting both complementarity and polarity correct is required for an antisense oligo to hybridize.",
+      "distractor_rationales": {
+        "A": "This sequence matches the mRNA with T in place of U (coding-like) and would be parallel, not complementary-antiparallel, to the target.",
+        "C": "This is the complement written in the same 5′ to 3′ order as the mRNA, which would be parallel rather than antiparallel; the strand must be reversed to 5′-GAA TCG CAT-3′.",
+        "D": "This sequence is neither the reverse complement nor a simple T-for-U copy of the mRNA, so it would not form a continuous Watson–Crick duplex with the target."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t1",
+      "type": "discrete",
+      "stem": "A cuvette of double-stranded DNA is heated through its melting transition while absorbance at 260 nm is recorded. Absorbance rises as the sample denatures. Which molecular explanation is best?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Heat hydrolyzes phosphodiester bonds, releasing free nucleotides that absorb more strongly than polymers."
+        },
+        {
+          "key": "B",
+          "text": "High temperature protonates the bases, increasing n→π* absorbance independently of strand status."
+        },
+        {
+          "key": "C",
+          "text": "Unstacking of bases upon strand separation increases UV absorbance (the hyperchromic effect)."
+        },
+        {
+          "key": "D",
+          "text": "Hydrogen-bond donors on the bases absorb 260 nm light only when they are paired with a complement."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Stacked bases in a duplex have hypochromic UV absorbance relative to the same nucleotides in a random coil. When heat melts hydrogen bonds and stacking, the bases become more exposed to solvent and electronic coupling between stacked rings is lost, so A260 rises. That hyperchromic shift is the experimental readout of a melting curve and is reversible upon cooling if strands can reanneal. Melting temperatures used in the experiment are far below those needed to hydrolyze phosphodiesters, and pairing does not create a special 260 nm chromophore in the hydrogen-bond donors; unpaired bases absorb more, not less.",
+      "distractor_rationales": {
+        "A": "Thermal melting at typical Tm values does not hydrolyze the backbone; oligonucleotides remain intact and can reanneal, which would be impossible if phosphodiesters were cleaved.",
+        "B": "The absorbance jump tracks the cooperative helix-to-coil transition, not a bulk protonation of bases as temperature rises.",
+        "D": "Paired, stacked bases absorb less at 260 nm than unpaired bases; hydrogen-bond donors do not become chromophores only when paired."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t1",
+      "type": "discrete",
+      "stem": "A researcher needs to separate the two strands of genomic DNA for hybridization without hydrolyzing either covalent backbone. Which class of interaction must be disrupted?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "3′–5′ phosphodiester bonds within each strand"
+        },
+        {
+          "key": "B",
+          "text": "N-glycosidic bonds linking bases to deoxyribose"
+        },
+        {
+          "key": "C",
+          "text": "Disulfide bonds that covalently crosslink complementary bases"
+        },
+        {
+          "key": "D",
+          "text": "Hydrogen bonds between complementary bases, together with base-stacking interactions"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The two strands of a DNA duplex are held together by noncovalent hydrogen bonds between Watson–Crick pairs and by stacking of the aromatic bases. Heat, alkali (which titrates bases and disrupts pairing), or formamide can melt those interactions and yield intact single strands that still have covalent phosphodiester backbones. Breaking phosphodiester or glycosidic bonds would fragment or depurinate the DNA rather than produce hybridizable full-length strands. Complementary bases are not linked by disulfides; those bonds stabilize some proteins, not the DNA double helix. Strand separation for blotting or PCR denaturation therefore targets noncovalent duplex forces only.",
+      "distractor_rationales": {
+        "A": "Phosphodiester cleavage would nick or degrade each strand. Denaturation for hybridization must leave the covalent backbones intact.",
+        "B": "Breaking glycosidic bonds depurinates or depyrimidinates DNA and destroys base-pairing information rather than simply unzipping the duplex.",
+        "C": "DNA strands are not covalently crosslinked by disulfides; disulfide bonds are a protein feature. Duplex DNA is noncovalently paired."
+      },
+      "difficulty_est": 0.3
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t5",
+      "type": "discrete",
+      "stem": "The template strand of a bacterial gene has the sequence 3′-TAC GGT TTC ATG-5′ in the transcribed region. Which sequence appears in the corresponding mRNA, written 5′ to 3′?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "5′-UAC GGU UUC AUG-3′"
+        },
+        {
+          "key": "B",
+          "text": "5′-AUG CCA AAG UAC-3′"
+        },
+        {
+          "key": "C",
+          "text": "5′-AUG CCA AAG TAC-3′"
+        },
+        {
+          "key": "D",
+          "text": "5′-CAU GAA ACC GUA-3′"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "RNA polymerase reads the template strand 3′ to 5′ and synthesizes RNA 5′ to 3′, inserting A, U, G, and C opposite T, A, C, and G. The template 3′-TAC GGT TTC ATG-5′ therefore specifies mRNA 5′-AUG CCA AAG UAC-3′. That RNA matches the coding strand except that U replaces T. Copying the template in the same 5′/3′ orientation, leaving T in the RNA, or reversing the RNA without complementing each produce sequences that would not be transcribed from this template. The start-proximal AUG in the correct product is the expected consequence of a 3′-TAC-5′ template triplet.",
+      "distractor_rationales": {
+        "A": "This sequence has the same 5′ to 3′ order as the template with U in place of T; polymerase copies the complement of the template, not a U-substituted copy of the template itself.",
+        "C": "This is close to the correct RNA but retains a DNA thymine; RNA uses uracil, so the 3′ codon must be UAC, not TAC.",
+        "D": "This sequence is not the complement of the given template in either polarity and would not be produced by 5′ to 3′ transcription of 3′-TAC GGT TTC ATG-5′."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t5",
+      "type": "discrete",
+      "stem": "A mutation prevents U1 snRNP from recognizing the 5′ splice site of an intron in a two-exon pre-mRNA. No cryptic splice sites are used. Which statement about splicing chemistry is most accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The two exons are joined by a cytoplasmic RNA ligase that bypasses the spliceosome."
+        },
+        {
+          "key": "B",
+          "text": "The lariat still forms normally because the branch-point adenosine is unchanged."
+        },
+        {
+          "key": "C",
+          "text": "The first transesterification cannot initiate, so the intron is not removed."
+        },
+        {
+          "key": "D",
+          "text": "Polyadenylation fails because the 5′ cap cannot be added until splicing is finished."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Nuclear pre-mRNA splicing is two sequential transesterifications catalyzed by the spliceosome. U1 snRNP recognizes the invariant GU at the 5′ splice site; that recognition is required for the branch-point 2′-OH to attack the 5′ splice-site phosphorus (the first transesterification). If U1 cannot bind and no cryptic 5′ site is activated, that attack does not occur, the lariat does not form, and the intron remains in the transcript. A free cytoplasmic ligase does not replace the spliceosome for GT–AG introns. Capping and cleavage/polyadenylation are mechanistically distinct from U1 recognition, even though the events are often coordinated.",
+      "distractor_rationales": {
+        "A": "Standard GT–AG introns are removed by the spliceosome, not by a backup cytoplasmic RNA ligase. Without splicing, the intron stays in the RNA.",
+        "B": "Lariat formation is the first transesterification at the 5′ splice site. An unrecognized 5′ site means the branch-point A has no proper target, so the lariat does not form normally.",
+        "D": "The 5′ cap is added co-transcriptionally by capping enzymes on the nascent 5′ end and does not require that this intron first be spliced."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t5",
+      "type": "discrete",
+      "stem": "A eukaryotic mRNA recovered from the cytosol is unusually unstable and poorly translated. The 5′ end is a free triphosphate rather than 7-methylguanosine attached by a 5′–5′ triphosphate bridge. Which nuclear processing step failed?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cleavage and polyadenylation at the 3′ end"
+        },
+        {
+          "key": "B",
+          "text": "Assembly of U2 snRNP on the first intron branch point"
+        },
+        {
+          "key": "C",
+          "text": "Aminoacylation of initiator tRNA Met"
+        },
+        {
+          "key": "D",
+          "text": "Capping of the pre-mRNA 5′ end"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The eukaryotic 5′ cap is 7-methylguanosine joined to the first transcribed nucleotide by a 5′–5′ triphosphate linkage, added shortly after initiation by RNA polymerase II. The cap is bound by eIF4E, supporting scanning-dependent translation, and it protects mRNA from 5′ exonucleases. A cytosolic RNA that still ends in a 5′ triphosphate has not been capped, which explains both poor translation and rapid decay. Poly(A) status is a 3′-end event, U2 assembly is a splicing event, and tRNA charging is a translation-factor issue that would not change the chemical structure of the mRNA 5′ end.",
+      "distractor_rationales": {
+        "A": "Defective polyadenylation would alter the 3′ tail, not replace a 5′ cap with a free 5′ triphosphate. The chemistry described is specifically the uncapped 5′ end.",
+        "B": "U2 snRNP functions in splicing; failure to splice would retain intron sequences but would not leave a 5′ triphosphate in place of the cap.",
+        "C": "Initiator tRNA charging affects translation globally but does not remodel the 5′ end of an already synthesized mRNA."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t5",
+      "type": "discrete",
+      "stem": "A eukaryotic cell is treated with α-amanitin at a concentration that strongly inhibits RNA polymerase II but leaves RNA polymerase I largely unaffected. After a short 3H-uridine pulse, which class of newly made RNA is expected to decrease the most?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Heterogeneous nuclear RNA that is processed into mRNA"
+        },
+        {
+          "key": "B",
+          "text": "45S precursor rRNA synthesized in the nucleolus"
+        },
+        {
+          "key": "C",
+          "text": "Most tRNAs, which are primary products of RNA polymerase I"
+        },
+        {
+          "key": "D",
+          "text": "The RNA component of mitochondrial ribosomes, made by RNA polymerase II imported into mitochondria"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "RNA polymerase II synthesizes pre-mRNA (hnRNA) and some snRNAs. α-Amanitin at classic concentrations binds Pol II with high affinity and blocks elongation, so pulse-labeled hnRNA collapses quickly. RNA polymerase I, which makes the 45S rRNA precursor in the nucleolus, is relatively resistant, so nucleolar rRNA labeling continues. tRNAs are made by RNA polymerase III, not Pol I, so choice C misassigns the polymerase. Mitochondrial rRNAs are transcribed by a distinct mitochondrial RNA polymerase, not by imported Pol II. The pulse-label design reports new synthesis, not the bulk of pre-existing rRNA.",
+      "distractor_rationales": {
+        "B": "45S pre-rRNA is an RNA polymerase I product. At a Pol II-selective amanitin dose, Pol I activity remains, so this class should not drop the most.",
+        "C": "Nuclear tRNAs are transcribed by RNA polymerase III, not polymerase I. The choice is wrong both as the expected decrease and as a polymerase assignment.",
+        "D": "Mitochondrial rRNA is made by the mitochondrial RNA polymerase, not by nuclear RNA polymerase II, so it is not the primary target of nuclear Pol II inhibition."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t5",
+      "type": "discrete",
+      "stem": "Two otherwise identical eukaryotic mRNAs differ only in 3′ poly(A) length (about 250 adenosines versus about 20). In the cytosol, which difference is expected?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The short-tailed mRNA is translated more efficiently because ribosomes bind poly(A) directly as a substitute 5′ cap."
+        },
+        {
+          "key": "B",
+          "text": "Both mRNAs are equally stable because eukaryotic decay begins exclusively at an internal endonuclease cut that ignores the tail."
+        },
+        {
+          "key": "C",
+          "text": "The short-tailed mRNA reaches the deadenylation threshold that triggers decapping and 5′–3′ decay more rapidly, shortening its half-life."
+        },
+        {
+          "key": "D",
+          "text": "The long tail is spliced out in the cytosol, so tail length cannot affect cytoplasmic stability."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Most cytoplasmic eukaryotic mRNAs are degraded by deadenylation-dependent pathways. Poly(A)-binding protein coats a long tail, circularizes the mRNA with eIF4G/eIF4E, and hinders decapping. Once the tail is shortened below a threshold, PABP is lost, the decapping enzyme acts, and Xrn1 degrades the RNA 5′ to 3′ (a 3′–5′ exosome route also exists). An mRNA that already has only ~20 adenosines is close to that threshold and is turned over faster than a 250-A counterpart. Ribosomes do not use poly(A) as a cap substitute, and poly(A) is added after cleavage, not spliced out in the cytosol.",
+      "distractor_rationales": {
+        "A": "A long poly(A) tail generally supports translation via PABP–eIF4G closed-loop formation. A very short tail reduces, rather than enhances, translation efficiency.",
+        "B": "The major decay pathways are deadenylation-dependent; tail length is a primary determinant of mRNA half-life, not an irrelevant decoration.",
+        "D": "Splicing removes introns in the nucleus. Poly(A) tails are not exons and are not spliced out in the cytosol."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t5",
+      "type": "discrete",
+      "stem": "A coding (nontemplate, sense) DNA strand contains 5′-ATG GCA-3′ at the start of an open reading frame. Which statement is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The mRNA in this region is 5′-AUG GCA-3′, matching the coding strand except that U replaces T."
+        },
+        {
+          "key": "B",
+          "text": "The mRNA is 5′-UAC CGU-3′ because RNA polymerase copies the coding strand 3′ to 5′."
+        },
+        {
+          "key": "C",
+          "text": "The template strand has 5′-ATG GCA-3′ and is copied directly into 5′-AUG GCA-3′."
+        },
+        {
+          "key": "D",
+          "text": "tRNA, not mRNA, is transcribed from the coding strand of protein-coding genes."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The coding strand has the same sequence as the RNA transcript except that DNA has T where RNA has U. RNA polymerase actually uses the complementary template (antisense) strand as the substrate and polymerizes RNA 5′ to 3′. If the coding strand reads 5′-ATG GCA-3′, the template is 3′-TAC CGT-5′ and the mRNA is 5′-AUG GCA-3′. Calling the coding strand the template, reversing polarity, or asserting that protein-coding genes produce tRNA from that strand all misstate transcription. This relationship is why gene sequences are usually published as the coding strand: it can be read as the mRNA with U for T.",
+      "distractor_rationales": {
+        "B": "5′-UAC CGU-3′ is the reverse complement of the coding sequence, not the transcript. Polymerase synthesizes RNA 5′ to 3′ complementary to the template, yielding 5′-AUG GCA-3′.",
+        "C": "The template strand is complementary to the coding strand, so it cannot also be 5′-ATG GCA-3′ if the coding strand already has that sequence.",
+        "D": "Protein-coding genes are transcribed into mRNA (pre-mRNA in eukaryotes). tRNA genes are separate transcription units, mainly RNA polymerase III products in eukaryotes."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t5",
+      "type": "discrete",
+      "stem": "Nascent RNA chains isolated from a rapidly growing bacterial culture are still hydrogen-bonded to the DNA template and are also bound to ribosomes. Which conclusion fits bacterial gene expression?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A spliceosome must finish removing introns before any ribosome can bind bacterial mRNA."
+        },
+        {
+          "key": "B",
+          "text": "Bacterial mRNA is fully capped and exported from a nucleus before translation begins."
+        },
+        {
+          "key": "C",
+          "text": "Transcription and translation are spatially separated, so ribosomes cannot occupy an incomplete RNA."
+        },
+        {
+          "key": "D",
+          "text": "Ribosomes can initiate on the 5′ end of a bacterial mRNA while RNA polymerase is still elongating the 3′ end."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Bacteria lack a nuclear envelope, and their primary transcripts generally lack spliceosomal introns and 5′ caps of the eukaryotic type. As soon as a ribosome-binding site and start codon emerge from RNA polymerase, ribosomes can initiate. The resulting coupling of transcription and translation is observed as DNA–RNA–ribosome complexes. Eukaryotic mRNA, by contrast, is processed and exported before cytosolic translation. The experimental observation in the stem is therefore diagnostic of prokaryotic expression and is not explained by nuclear capping, spliceosome dependence, or spatial separation of the two processes.",
+      "distractor_rationales": {
+        "A": "Bacterial protein-coding RNAs are not processed by a eukaryotic spliceosome, and ribosomes do not wait for intron removal that generally does not occur.",
+        "B": "Bacteria have no nucleus and do not cap and export mRNA in the eukaryotic manner; translation occurs in the same compartment as transcription.",
+        "C": "The isolation of ribosomes on nascent, DNA-associated RNA directly contradicts spatial separation in this organism."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC1.1B.t5",
+      "type": "discrete",
+      "stem": "A gene contains exons 1–2–3–4. In muscle, exon 3 is skipped; in liver, all four exons are included. The two proteins differ internally but share N- and C-terminal sequences encoded by exons 1 and 4. Which process accounts for the tissue difference?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "RNA editing that inserts a new start codon inside intron 2 only in muscle"
+        },
+        {
+          "key": "B",
+          "text": "Alternative splicing that excludes exon 3 from the muscle mRNA"
+        },
+        {
+          "key": "C",
+          "text": "Use of a different genetic code in muscle ribosomes that skips the exon 3 triplets"
+        },
+        {
+          "key": "D",
+          "text": "Proteolytic removal of the exon 3 peptide after translation in both tissues"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Alternative splicing allows different combinations of exons to be joined from a single pre-mRNA. Skipping exon 3 in muscle joins exon 2 to exon 4, producing an internal deletion in the protein while preserving the shared terminal exons, matching the stem. Liver includes all exons, yielding the longer isoform. A new start in intron 2 would change the N-terminus rather than leave exon 1 shared. The genetic code does not differ by tissue in a way that skips an exon’s codons, and proteolysis after translation would not produce different spliced mRNAs and would not explain a muscle-specific internal difference encoded at the RNA level.",
+      "distractor_rationales": {
+        "A": "A new start codon in intron 2 would alter the N-terminus and typically include intron sequence; it would not keep exon 1 as the shared N-terminus while only dropping exon 3.",
+        "C": "The standard genetic code is used in muscle and liver cytosol; ribosomes cannot ‘skip an exon’ as a coding-table change.",
+        "D": "Proteolysis could shorten a protein but would not generate two different spliced mRNAs, and the stem’s tissue-specific exon 3 skipping is an RNA-processing event."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t5",
+      "type": "discrete",
+      "stem": "Isolated mitochondria are given pyruvate plus ADP. When matrix NADH and acetyl-CoA are raised experimentally, pyruvate consumption falls. Which enzyme is the principal site of this feedback, and which reaction does it catalyze?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Citrate synthase; condensation of two acetyl-CoA molecules to acetoacetate"
+        },
+        {
+          "key": "B",
+          "text": "Pyruvate carboxylase; decarboxylation of pyruvate to acetaldehyde"
+        },
+        {
+          "key": "C",
+          "text": "The pyruvate dehydrogenase complex; oxidative decarboxylation of pyruvate to acetyl-CoA"
+        },
+        {
+          "key": "D",
+          "text": "Malate dehydrogenase; oxidation of malate that is stimulated by NADH"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Pyruvate enters mitochondrial oxidative metabolism through the pyruvate dehydrogenase complex, which converts pyruvate, CoA, and NAD+ to acetyl-CoA, CO2, and NADH. High NADH and acetyl-CoA are the immediate products of that reaction and inhibit PDH (product inhibition and, via PDH kinase, phosphorylation). That feedback slows pyruvate consumption when the cell is already reduced and acetyl-CoA-rich. Citrate synthase does not consume pyruvate and does not condense two acetyl-CoA units to acetoacetate. Pyruvate carboxylase makes oxaloacetate, not acetaldehyde. NADH inhibits, rather than stimulates, NAD+-dependent malate oxidation.",
+      "distractor_rationales": {
+        "A": "Citrate synthase condenses acetyl-CoA with oxaloacetate to citrate, not two acetyl-CoA molecules to acetoacetate. It also does not consume pyruvate, so it is not the site that explains falling pyruvate use.",
+        "B": "Pyruvate carboxylase carboxylates pyruvate to oxaloacetate and is activated, not inhibited, by acetyl-CoA. It does not produce acetaldehyde.",
+        "D": "Malate dehydrogenase uses NAD+; a high NADH/NAD+ ratio drives the reaction toward malate, so NADH does not stimulate malate oxidation or explain reduced pyruvate uptake as the primary gate."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t5",
+      "type": "discrete",
+      "stem": "A mutant citric-acid-cycle enzyme cannot generate GTP (or ATP) even though NADH can still be produced from succinate via later steps. Which enzyme is most likely deficient?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Aconitase, which hydrates citrate to isocitrate without phosphoryl transfer"
+        },
+        {
+          "key": "B",
+          "text": "Isocitrate dehydrogenase, which reduces NAD+ but does not form GTP"
+        },
+        {
+          "key": "C",
+          "text": "Succinate dehydrogenase, which reduces enzyme-bound FAD and feeds Complex II"
+        },
+        {
+          "key": "D",
+          "text": "Succinyl-CoA synthetase (succinyl-CoA ligase), which performs substrate-level phosphorylation"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The only substrate-level phosphorylation in the citric acid cycle is the conversion of succinyl-CoA to succinate by succinyl-CoA synthetase, which conserves the thioester energy as GTP (or ATP, depending on isoform). Aconitase, isocitrate dehydrogenase, and succinate dehydrogenase do not form GTP. Supplying succinate bypasses succinyl-CoA synthetase and still allows SDH, fumarase, and malate dehydrogenase to generate FADH2/NADH, matching the stem. Loss of isocitrate dehydrogenase would cut NADH from that step and would not be rescued in the GTP phenotype by succinate in the way described. Thus the GTP-specific defect localizes to succinyl-CoA synthetase.",
+      "distractor_rationales": {
+        "A": "Aconitase isomerizes citrate to isocitrate via cis-aconitate and does not generate GTP or ATP, so its loss would not uniquely explain a missing substrate-level phosphorylation.",
+        "B": "Isocitrate dehydrogenase produces NADH and CO2, not GTP. A defect there would reduce NADH from isocitrate, contrary to a GTP-only phenotype with intact succinate oxidation.",
+        "C": "Succinate dehydrogenase produces FADH2 equivalents, not GTP. The stem also says NADH from later steps still forms when succinate is supplied, which requires this enzyme to work."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t5",
+      "type": "discrete",
+      "stem": "Acetyl-CoA labeled in both carbon atoms of the acetyl group enters the citric acid cycle by condensing with unlabeled oxaloacetate. After one complete turn, regenerating a four-carbon intermediate, how many of those labeled carbons have been released as CO2?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Zero; the two CO2 molecules lost in that turn come from carboxyl groups that were already on oxaloacetate."
+        },
+        {
+          "key": "B",
+          "text": "One; isocitrate dehydrogenase always releases the methyl carbon of the newly added acetyl group."
+        },
+        {
+          "key": "C",
+          "text": "Two; both acetyl carbons are fully oxidized to CO2 before succinate is formed."
+        },
+        {
+          "key": "D",
+          "text": "Three; an extra CO2 is released at succinyl-CoA synthetase."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Citrate synthase adds the two carbons of acetyl-CoA to oxaloacetate. In the same turn, isocitrate dehydrogenase and α-ketoglutarate dehydrogenase each release one CO2, but those carboxyl carbons originated in the oxaloacetate that accepted the acetyl group, not in the acetyl group just added. Both labeled carbons remain in succinate (and therefore in the regenerated four-carbon acids). Because succinate is symmetric, those labels scramble and a fraction of the label is lost in subsequent turns, but the first turn releases none of the acetyl carbons as CO2. Succinyl-CoA synthetase does not decarboxylate.",
+      "distractor_rationales": {
+        "B": "Isocitrate dehydrogenase does not specifically release the methyl carbon of the acetyl group in the first turn; that methyl carbon remains in the four-carbon intermediates.",
+        "C": "Neither acetyl carbon is lost as CO2 in the first turn. Both are still present in succinate, so the ‘fully oxidized before succinate’ claim is false.",
+        "D": "Succinyl-CoA synthetase converts succinyl-CoA to succinate with formation of GTP; it does not release CO2, and three labeled CO2 molecules are not produced in one turn."
+      },
+      "difficulty_est": 0.62
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t5",
+      "type": "discrete",
+      "stem": "An inhibitor binds the FAD-dependent enzyme that oxidizes a four-carbon citric-acid-cycle intermediate to a trans-unsaturated four-carbon product. The same polypeptide is an integral component of the inner mitochondrial membrane electron-transport chain. Which enzyme is it, and which reduced cofactor does it produce?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Malate dehydrogenase; NADH"
+        },
+        {
+          "key": "B",
+          "text": "Succinate dehydrogenase; enzyme-bound FADH2 that reduces ubiquinone"
+        },
+        {
+          "key": "C",
+          "text": "α-Ketoglutarate dehydrogenase; NADPH"
+        },
+        {
+          "key": "D",
+          "text": "Fumarase; NADH"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Succinate dehydrogenase oxidizes succinate to fumarate (trans-butenedioate) and is the only citric-acid-cycle enzyme that is also Complex II of the electron-transport chain, an inner membrane protein. Its bound FAD is reduced to FADH2, and electrons pass to iron–sulfur centers and then to ubiquinone, forming ubiquinol. Malate dehydrogenase and α-ketoglutarate dehydrogenase are soluble-matrix NAD+-dependent enzymes (α-KGDH uses NAD+, not NADP+ as the primary acceptor). Fumarase hydrates fumarate to malate and is not a dehydrogenase and not an ETC complex. The dual TCA/ETC identity uniquely identifies SDH.",
+      "distractor_rationales": {
+        "A": "Malate dehydrogenase is a matrix enzyme that reduces NAD+ to NADH and is not an inner-membrane ETC complex. It also oxidizes a four-carbon hydroxy acid to oxaloacetate, not to a trans-alkene.",
+        "C": "α-Ketoglutarate dehydrogenase oxidizes a five-carbon α-keto acid to succinyl-CoA using NAD+, not NADPH, and it is not Complex II.",
+        "D": "Fumarase adds water across fumarate’s double bond; it does not reduce NAD+ and is not an electron-transport complex."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t5",
+      "type": "discrete",
+      "stem": "One molecule of acetyl-CoA is oxidized by one turn of the citric acid cycle. Ignoring subsequent oxidative phosphorylation, which set of products is generated directly by the cycle reactions?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1 NADH, 3 FADH2, 1 ATP, and 2 CO2"
+        },
+        {
+          "key": "B",
+          "text": "4 NADH, 1 FADH2, 1 GTP, and 1 CO2"
+        },
+        {
+          "key": "C",
+          "text": "2 NADH, 2 FADH2, 2 GTP, and 2 CO2"
+        },
+        {
+          "key": "D",
+          "text": "3 NADH, 1 FADH2, 1 GTP (or ATP), and 2 CO2"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Each acetyl-CoA that condenses with oxaloacetate yields two CO2 (isocitrate dehydrogenase and α-ketoglutarate dehydrogenase), three NADH (those two dehydrogenases plus malate dehydrogenase), one enzyme-bound FADH2 at succinate dehydrogenase, and one GTP (or ATP) at succinyl-CoA synthetase. Counting four NADH would incorrectly include pyruvate dehydrogenase, which is not a cycle enzyme and is excluded by starting from acetyl-CoA. The FADH2:NADH ratio is not 3:1, and there is a single substrate-level phosphorylation per turn, not two. These stoichiometries are the starting point for later ATP tallies from oxidative phosphorylation.",
+      "distractor_rationales": {
+        "A": "The cycle produces three NADH and only one FADH2 per acetyl-CoA, not the reverse. This option inverts the reduced-cofactor counts.",
+        "B": "Starting from acetyl-CoA there are three NADH, not four, and two CO2, not one. The extra NADH would be from PDH, which is outside the cycle.",
+        "C": "There is one FADH2 and one GTP per turn, not two of each, and NADH production is three, not two."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t5",
+      "type": "discrete",
+      "stem": "A researcher studying anaplerosis in liver mitochondria finds that adding pyruvate plus bicarbonate increases the oxaloacetate pool and accelerates citrate formation from acetyl-CoA. The responsible enzyme requires biotin and is allosterically activated by acetyl-CoA. Which reaction is occurring?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Pyruvate kinase converting PEP to pyruvate, which cannot be a net gain of cycle intermediates"
+        },
+        {
+          "key": "B",
+          "text": "Pyruvate dehydrogenase running in reverse to carboxylate acetyl-CoA to pyruvate"
+        },
+        {
+          "key": "C",
+          "text": "Pyruvate carboxylase converting pyruvate plus CO2 to oxaloacetate"
+        },
+        {
+          "key": "D",
+          "text": "ATP-citrate lyase producing oxaloacetate in the mitochondrial matrix from cytosolic citrate"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Pyruvate carboxylase is the principal anaplerotic enzyme in liver mitochondria: it carboxylates pyruvate to oxaloacetate using biotin as a CO2 carrier and is allosterically activated by acetyl-CoA, matching every experimental clue. The new four-carbon unit can condense with acetyl-CoA at citrate synthase, so citrate formation rises. Pyruvate kinase makes pyruvate, not OAA, and is not biotin-dependent. PDH is irreversible in animals and does not carboxylate acetyl-CoA. ATP-citrate lyase is cytosolic, generating acetyl-CoA for fatty-acid synthesis, not a mitochondrial biotin enzyme that fills the oxaloacetate pool.",
+      "distractor_rationales": {
+        "A": "Pyruvate kinase produces pyruvate from PEP and is not a biotin-dependent carboxylase; it does not replenish oxaloacetate.",
+        "B": "Pyruvate dehydrogenase is irreversible under physiologic conditions and is inhibited, not reversed, by acetyl-CoA. It does not add CO2 to acetyl-CoA.",
+        "D": "ATP-citrate lyase is cytosolic (citrate + ATP + CoA → acetyl-CoA + OAA + ADP + Pi) and does not require biotin or reside in the matrix as the anaplerotic fill reaction described."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t5",
+      "type": "discrete",
+      "stem": "Malonate, a competitive analog of succinate, is added to respiring mitochondria supplied with pyruvate. Which pair of matrix changes is most likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Succinate falls and fumarate rises because the block is after fumarase."
+        },
+        {
+          "key": "B",
+          "text": "Succinate accumulates and conversion of succinate to fumarate decreases."
+        },
+        {
+          "key": "C",
+          "text": "Isocitrate is depleted because aconitase is the malonate target."
+        },
+        {
+          "key": "D",
+          "text": "α-Ketoglutarate is converted exclusively to glutamate, fully bypassing the cycle."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Malonate is a classic competitive inhibitor of succinate dehydrogenase, occupying the succinate-binding site so that succinate cannot be oxidized to fumarate. The substrate of the blocked step therefore accumulates, and the product fumarate (and downstream malate/oxaloacetate) declines. Upstream cycle intermediates can also back up. Aconitase is not the malonate target, so isocitrate depletion as a primary event is wrong. Fumarase is downstream of SDH; blocking SDH cannot raise fumarate while lowering succinate. Transamination of α-ketoglutarate may increase if the cycle stalls, but that is not a complete enzymatic bypass of the malonate block.",
+      "distractor_rationales": {
+        "A": "Malonate inhibits succinate dehydrogenase, which is before fumarase. Succinate should rise and fumarate from that step should fall, not the reverse.",
+        "C": "Malonate is a succinate analog aimed at SDH, not aconitase. Isocitrate would not be the depleted substrate of the inhibited enzyme.",
+        "D": "Glutamate formation from α-ketoglutarate can increase when the cycle backs up, but it does not ‘exclusively’ replace the cycle or remove the SDH block."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t5",
+      "type": "discrete",
+      "stem": "During a high NADH/NAD+ ratio, flux through the citric acid cycle slows. Besides pyruvate dehydrogenase, which pair of cycle enzymes is most directly inhibited by elevated NADH?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Isocitrate dehydrogenase and α-ketoglutarate dehydrogenase"
+        },
+        {
+          "key": "B",
+          "text": "Aconitase and fumarase, which are NAD+-dependent dehydrogenases"
+        },
+        {
+          "key": "C",
+          "text": "Succinyl-CoA synthetase and citrate synthase, which use NADH as a substrate"
+        },
+        {
+          "key": "D",
+          "text": "Succinate dehydrogenase and malate dehydrogenase, both of which are activated by NADH"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The NAD+-dependent oxidative decarboxylations of isocitrate and of α-ketoglutarate are major irreversible control points of the cycle. Both dehydrogenases are inhibited by NADH (and α-KGDH also by succinyl-CoA), so a high NADH/NAD+ ratio throttles flux in addition to PDH inhibition. Aconitase and fumarase are not NAD+-dependent dehydrogenases. Neither succinyl-CoA synthetase nor citrate synthase uses NADH as a substrate; mammalian citrate synthase is not primarily NADH-gated the way bacterial citrate synthase can be. NADH does not activate SDH or malate dehydrogenase; a high NADH/NAD+ ratio instead opposes malate oxidation at the near-equilibrium MDH step.",
+      "distractor_rationales": {
+        "B": "Aconitase and fumarase catalyze hydration/dehydration reactions and do not use NAD+. They are not the NADH-sensitive control points of the cycle.",
+        "C": "Succinyl-CoA synthetase uses the thioester energy of succinyl-CoA to make GTP; citrate synthase uses acetyl-CoA and OAA. Neither consumes NADH as a substrate.",
+        "D": "NADH does not activate these enzymes. High NADH actually disfavors NAD+-dependent malate oxidation, and SDH uses FAD rather than NAD+."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t6",
+      "type": "discrete",
+      "stem": "A molecule of palmitoyl-CoA (C16, saturated) is fully β-oxidized to acetyl-CoA in a hepatocyte mitochondrion. How many rounds of β-oxidation occur, and how many acetyl-CoA, NADH, and FADH2 are produced by those rounds before the citric acid cycle?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "7 rounds; 8 acetyl-CoA, 7 NADH, and 7 FADH2"
+        },
+        {
+          "key": "B",
+          "text": "8 rounds; 8 acetyl-CoA, 8 NADH, and 8 FADH2"
+        },
+        {
+          "key": "C",
+          "text": "16 rounds; 16 acetyl-CoA, 8 NADH, and 8 FADH2"
+        },
+        {
+          "key": "D",
+          "text": "7 rounds; 7 acetyl-CoA, 8 NADH, and 7 FADH2"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Each round of mitochondrial β-oxidation shortens an acyl-CoA by two carbons, releasing one acetyl-CoA and producing one NADH and one FADH2. Palmitate has 16 carbons, so it yields eight acetyl-CoA units. Generating eight two-carbon units from a single chain requires seven cleavage rounds: the last round splits a four-carbon acetoacetyl-CoA into two acetyl-CoA. Therefore the reduced-cofactor count is 7 NADH and 7 FADH2, not 8. Counting one round per carbon, one acetyl per round, or 16 acetyl-CoA all mis-map the two-carbon arithmetic of β-oxidation.",
+      "distractor_rationales": {
+        "B": "Eight acetyl-CoA are correct, but that requires only seven thiolytic cleavages. An eighth round would require a two-carbon acyl-CoA that is not a substrate of another full cycle.",
+        "C": "Palmitate has 16 carbons but yields two-carbon acetyl units, so 8 acetyl-CoA, not 16, and not 16 rounds.",
+        "D": "Seven rounds is correct, but those rounds produce eight acetyl-CoA (the last round yields two) and seven NADH, not seven acetyl-CoA and eight NADH."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t6",
+      "type": "discrete",
+      "stem": "In the fed state, acetyl-CoA carboxylase is active and malonyl-CoA is abundant in hepatocytes. Fatty acyl-CoAs are generated in the cytosol, yet mitochondrial β-oxidation is slow. Which mechanism best explains the block?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Malonyl-CoA inhibits carnitine palmitoyltransferase I, preventing acyl transfer into the matrix."
+        },
+        {
+          "key": "B",
+          "text": "Malonyl-CoA activates pyruvate dehydrogenase, consuming all available carnitine."
+        },
+        {
+          "key": "C",
+          "text": "Malonyl-CoA is the substrate of thiolase, which reverses β-oxidation in the matrix."
+        },
+        {
+          "key": "D",
+          "text": "Carnitine is consumed as a cofactor of fatty acid synthase, leaving none for the shuttle."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Long-chain acyl-CoAs cannot cross the inner mitochondrial membrane. Carnitine palmitoyltransferase I on the outer membrane transfers the acyl group to carnitine, and the acylcarnitine is shuttled into the matrix. Malonyl-CoA, the committed product of acetyl-CoA carboxylase during fatty-acid synthesis, allosterically inhibits CPT-I. In the fed state this prevents newly made or dietary fatty acyl-CoAs from being immediately oxidized, avoiding a futile cycle. Malonyl-CoA does not activate PDH to burn carnitine, is not a thiolase substrate that reverses β-oxidation, and is not consumed by FAS in place of NADPH and acetyl/malonyl-ACP. The CPT-I gate is the standard reciprocal regulation.",
+      "distractor_rationales": {
+        "B": "Malonyl-CoA does not activate PDH, and PDH does not consume carnitine. PDH is a carbohydrate-to-acetyl-CoA enzyme, not the β-oxidation gate.",
+        "C": "Thiolase in β-oxidation uses 3-ketoacyl-CoA, not malonyl-CoA. Malonyl-CoA is a cytosolic building block for fatty-acid synthesis, not a matrix substrate that runs the spiral backward.",
+        "D": "Fatty acid synthase uses acetyl-CoA/malonyl-CoA on ACP and NADPH; carnitine is not a stoichiometric FAS cofactor, so FAS does not deplete the shuttle that way."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t6",
+      "type": "discrete",
+      "stem": "During prolonged fasting, hepatic mitochondria convert acetyl-CoA to acetoacetate and 3-hydroxybutyrate, which are released to blood. Extrahepatic tissues oxidize these ketones, but the liver itself cannot use them as fuel. Which enzymatic gap explains the liver’s inability to consume the ketone bodies it produces?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Liver lacks mitochondrial HMG-CoA synthase, so it cannot make ketones in the first place."
+        },
+        {
+          "key": "B",
+          "text": "Liver lacks succinyl-CoA:acetoacetate CoA-transferase (thiophorase), so it cannot activate acetoacetate to acetoacetyl-CoA."
+        },
+        {
+          "key": "C",
+          "text": "Liver lacks 3-hydroxybutyrate dehydrogenase, so 3-hydroxybutyrate cannot be formed or reoxidized."
+        },
+        {
+          "key": "D",
+          "text": "Liver mitochondria have no succinyl-CoA, so the citric acid cycle cannot run in hepatocytes."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Ketone utilization in muscle, brain, and kidney begins by activating acetoacetate to acetoacetyl-CoA using succinyl-CoA:acetoacetate CoA-transferase (thiophorase). Hepatocytes lack this enzyme, which prevents a futile cycle in which the liver would remake and then re-consume ketones. Liver does contain mitochondrial HMG-CoA synthase (the committed ketogenic enzyme) and 3-hydroxybutyrate dehydrogenase, which is why it can produce both acetoacetate and 3-hydroxybutyrate. Succinyl-CoA is a normal citric-acid-cycle intermediate in liver; its presence is not the missing factor. Extrahepatic tissues then split acetoacetyl-CoA to acetyl-CoA for the cycle.",
+      "distractor_rationales": {
+        "A": "Mitochondrial HMG-CoA synthase is present in liver and is required for ketogenesis; its absence would prevent ketone production, contradicting the stem.",
+        "C": "Hepatic 3-hydroxybutyrate dehydrogenase is how liver generates 3-hydroxybutyrate from acetoacetate; the enzyme is not absent.",
+        "D": "Liver mitochondria operate the citric acid cycle and contain succinyl-CoA. Lack of succinyl-CoA is not the reason ketones are exported rather than oxidized locally."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t6",
+      "type": "discrete",
+      "stem": "Complete β-oxidation of a saturated odd-chain fatty acid (C17) yields acetyl-CoA plus a three-carbon piece. That piece can support net gluconeogenesis after biotin- and vitamin B12-dependent reactions. Which sequence is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acetyl-CoA is carboxylated to pyruvate in mitochondria and then used for glucose."
+        },
+        {
+          "key": "B",
+          "text": "The three-carbon piece is acetone, which is transaminated to alanine and then to glucose."
+        },
+        {
+          "key": "C",
+          "text": "Propionyl-CoA is converted to methylmalonyl-CoA and then to succinyl-CoA, a gluconeogenic citric-acid-cycle intermediate."
+        },
+        {
+          "key": "D",
+          "text": "Propionyl-CoA is converted to acetoacetate, which is strictly ketogenic and cannot make glucose."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Odd-chain fatty acids leave a terminal propionyl-CoA after the last complete two-carbon cleavage. Propionyl-CoA carboxylase (biotin) makes D-methylmalonyl-CoA, which is racemized and then rearranged by methylmalonyl-CoA mutase (adenosylcobalamin, vitamin B12) to succinyl-CoA. Succinyl-CoA can proceed to oxaloacetate and, via PEPCK, to net glucose, so odd-chain fat is partially glucogenic. Animals cannot convert acetyl-CoA to pyruvate in net amounts (PDH is irreversible; two carbons enter and two leave the cycle). Acetone is a ketone body from acetoacetate decarboxylation, not the three-carbon acyl leftover of odd-chain β-oxidation, and propionyl-CoA is not converted to acetoacetate as its primary fate.",
+      "distractor_rationales": {
+        "A": "There is no net conversion of acetyl-CoA to pyruvate in human mitochondria; PDH is irreversible, so even-chain acetyl units are not glucogenic.",
+        "B": "The leftover of odd-chain β-oxidation is propionyl-CoA, not acetone. Acetone is not transaminated to alanine as a major gluconeogenic path.",
+        "D": "Propionyl-CoA is carboxylated and rearranged to succinyl-CoA, which is glucogenic; it is not routed primarily to acetoacetate."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t6",
+      "type": "discrete",
+      "stem": "In periportal hepatocytes, carbamoyl phosphate synthetase I and ornithine transcarbamylase operate in the mitochondrial matrix. Which pair of nitrogen sources ends up in urea, and which activator accelerates CPS-I?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Both nitrogens from aspartate; AMP is the essential allosteric activator of CPS-I."
+        },
+        {
+          "key": "B",
+          "text": "Both nitrogens from free ammonium ion; citrate activates CPS-I."
+        },
+        {
+          "key": "C",
+          "text": "One nitrogen from alanine inserted directly into argininosuccinate; fructose 2,6-bisphosphate activates CPS-I."
+        },
+        {
+          "key": "D",
+          "text": "One nitrogen from ammonia via carbamoyl phosphate and one from aspartate; N-acetylglutamate activates CPS-I."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Urea contains two nitrogens. CPS-I in the matrix condenses ammonia with bicarbonate and ATP to carbamoyl phosphate; OTC transfers that carbamoyl group to ornithine, making citrulline. In the cytosol, argininosuccinate synthase adds the second nitrogen from the amino group of aspartate. Hydrolysis of arginine then yields urea. CPS-I is inactive without the allosteric activator N-acetylglutamate, whose synthesis rises when glutamate and arginine signal amino-acid disposal. AMP, citrate, and fructose 2,6-bisphosphate are not the physiologic CPS-I activators, and both urea nitrogens do not come from a single donor.",
+      "distractor_rationales": {
+        "A": "Only one urea nitrogen comes from aspartate (via argininosuccinate). The other comes from ammonia via CPS-I. AMP does not replace N-acetylglutamate as the CPS-I activator.",
+        "B": "Only one nitrogen is incorporated from ammonia; the second is from aspartate. Citrate is not the CPS-I activator.",
+        "C": "Alanine must donate its nitrogen (typically via transamination to glutamate, then to aspartate or free NH4+) rather than plugging directly into argininosuccinate. Fructose 2,6-bisphosphate regulates glycolysis, not CPS-I."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t6",
+      "type": "discrete",
+      "stem": "A patient is deficient in pyridoxal phosphate. Amino-acid catabolism that funnels nitrogen into glutamate is impaired. Which reaction class is most directly affected?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Oxidative deamination of glutamate by glutamate dehydrogenase, which uses NAD(P)+ rather than PLP"
+        },
+        {
+          "key": "B",
+          "text": "Transamination (for example alanine aminotransferase) that transfers an amino group to α-ketoglutarate"
+        },
+        {
+          "key": "C",
+          "text": "Carbamoyl phosphate synthesis, which requires biotin as the prosthetic group"
+        },
+        {
+          "key": "D",
+          "text": "Peptide-bond hydrolysis by proteases, which depends on zinc or serine catalysis rather than PLP"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Aminotransferases use pyridoxal phosphate to transfer an amino group from an amino acid to an α-keto acid, most often producing glutamate from α-ketoglutarate. Without PLP, this funneling of nitrogen into glutamate is blocked, matching the clinical stem. Glutamate dehydrogenase then can release ammonia from glutamate, but GDH uses NAD(P)+ and does not require PLP, so it is not the primary PLP-deficient step. CPS-I uses ammonia, ATP, and N-acetylglutamate, not biotin (biotin is on carboxylases such as pyruvate carboxylase). Proteases break peptide bonds by unrelated mechanisms and would not specifically stall nitrogen funneling into glutamate.",
+      "distractor_rationales": {
+        "A": "Glutamate dehydrogenase is a PLP-independent NAD(P)+-linked oxidative deamination. It would not be the first casualty of isolated PLP deficiency in this funneling pathway.",
+        "C": "CPS-I does not use PLP or biotin. Biotin is the cofactor of carboxylases, so this choice misidentifies both the enzyme class and the missing cofactor.",
+        "D": "Proteases hydrolyze peptide bonds and do not require PLP; they also do not funnel free amino-acid nitrogen into glutamate as transaminases do."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t6",
+      "type": "discrete",
+      "stem": "De novo palmitate synthesis is measured in a liver fractionation experiment. Which combination of compartment, committed step, and reductant is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Mitochondrial matrix; thiolase; NADH from the citric acid cycle"
+        },
+        {
+          "key": "B",
+          "text": "Endoplasmic reticulum lumen; HMG-CoA reductase; NADPH"
+        },
+        {
+          "key": "C",
+          "text": "Cytosol; acetyl-CoA carboxylase producing malonyl-CoA; NADPH from the pentose phosphate pathway and malic enzyme"
+        },
+        {
+          "key": "D",
+          "text": "Peroxisome; CPT-I; FADH2 from acyl-CoA dehydrogenase"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "De novo fatty-acid synthesis in hepatocytes occurs in the cytosol. The committed step is carboxylation of acetyl-CoA to malonyl-CoA by acetyl-CoA carboxylase (biotin). Fatty acid synthase then uses NADPH, not NADH or FADH2, to reduce the growing chain; NADPH comes largely from the pentose phosphate pathway and from malic enzyme. Acetyl-CoA itself is delivered from mitochondria via citrate and ATP-citrate lyase. Thiolase and FADH2 belong to β-oxidation, HMG-CoA reductase to cholesterol synthesis in the ER, and CPT-I to the mitochondrial uptake of acyl chains for oxidation, the opposite pathway.",
+      "distractor_rationales": {
+        "A": "Mitochondrial thiolase and NADH are features of β-oxidation/ketogenesis, not of de novo palmitate synthesis, which is cytosolic and NADPH-dependent.",
+        "B": "HMG-CoA reductase is the committed enzyme of cholesterol synthesis in the ER, not of palmitate synthesis, even though it also uses NADPH.",
+        "D": "CPT-I and acyl-CoA dehydrogenase belong to fatty-acid oxidation, not synthesis, and peroxisomal β-oxidation is not the cytosolic de novo path measured here."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t6",
+      "type": "discrete",
+      "stem": "A diet contains only amino acids that cannot yield net oxaloacetate or other gluconeogenic intermediates. Which pair consists of the two purely ketogenic amino acids?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Alanine and glutamate, which are transaminated to pyruvate and α-ketoglutarate"
+        },
+        {
+          "key": "B",
+          "text": "Aspartate and asparagine, which feed into oxaloacetate"
+        },
+        {
+          "key": "C",
+          "text": "Valine and isoleucine, both of which are exclusively ketogenic branched-chain amino acids"
+        },
+        {
+          "key": "D",
+          "text": "Leucine and lysine, which are catabolized to acetyl-CoA or acetoacetate without net glucose production"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "A purely ketogenic amino acid cannot produce net pyruvate or citric-acid-cycle intermediates that can exit to gluconeogenesis; its carbons yield acetyl-CoA or ketone bodies. Leucine and lysine are the two standard amino acids in that class. Alanine and glutamate are glucogenic (pyruvate and α-ketoglutarate). Aspartate and asparagine yield oxaloacetate. Among branched-chain amino acids, valine is glucogenic and isoleucine is mixed (both glucogenic and ketogenic), so that pair is not exclusively ketogenic. A diet of only leucine and lysine therefore cannot support net glucose synthesis from amino-acid carbon, matching the stem.",
+      "distractor_rationales": {
+        "A": "Alanine → pyruvate and glutamate → α-ketoglutarate are classic glucogenic conversions, so this pair can make net glucose.",
+        "B": "Aspartate and asparagine are glucogenic via oxaloacetate, not purely ketogenic.",
+        "C": "Valine is glucogenic and isoleucine is mixed; they are not the two purely ketogenic amino acids."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t7",
+      "type": "discrete",
+      "stem": "2,4-Dinitrophenol is added to mitochondria that had been synthesizing ATP from ADP + Pi while oxidizing succinate. Which set of immediate effects is expected?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The proton gradient increases, ATP synthesis rises, and oxygen consumption falls."
+        },
+        {
+          "key": "B",
+          "text": "ATP synthesis rises because protons enter more rapidly through ATP synthase."
+        },
+        {
+          "key": "C",
+          "text": "Oxygen consumption falls to zero because Complex IV is inhibited by DNP."
+        },
+        {
+          "key": "D",
+          "text": "The proton-motive force collapses, ATP synthesis falls, and oxygen consumption increases as electron transport is uncoupled from phosphorylation."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "2,4-Dinitrophenol is a protonophore: it shuttles protons across the inner membrane, dissipating ΔpH and Δψ. ATP synthase requires that proton-motive force, so ATP synthesis falls even though ADP and Pi are present. With the back-pressure of the gradient gone, electron transport accelerates and oxygen consumption rises; energy is released as heat rather than captured as ATP. DNP does not inhibit cytochrome oxidase, and it does not route extra protons through F0 in a way that increases ATP. The same pattern is seen with UCP1 in brown adipose tissue, a physiologic uncoupler.",
+      "distractor_rationales": {
+        "A": "Uncouplers decrease, not increase, the proton gradient. ATP synthesis therefore falls while respiration typically speeds up, opposite this choice.",
+        "B": "Protons re-enter through the uncoupler, not productively through ATP synthase, so phosphorylation decreases rather than rises.",
+        "C": "DNP does not block Complex IV. Oxygen consumption increases because electron flow is no longer limited by the proton gradient."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t7",
+      "type": "discrete",
+      "stem": "In an oxygen-electrode experiment, mitochondria oxidizing NADH-linked substrates consume O2 rapidly after ADP is added. Oligomycin then arrests O2 consumption. Adding DNP restores O2 consumption without restoring ATP synthesis. Which explanation is consistent with these data?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Oligomycin inhibits Complex IV; DNP chemically reduces oxygen, bypassing the chain."
+        },
+        {
+          "key": "B",
+          "text": "Oligomycin blocks proton flow through ATP synthase, stalling the chain; DNP lets protons re-enter without ATP synthase, restarting electron flow while synthase remains inhibited."
+        },
+        {
+          "key": "C",
+          "text": "DNP reverses oligomycin binding at the F1 catalytic sites, fully restoring coupled phosphorylation."
+        },
+        {
+          "key": "D",
+          "text": "Oligomycin uncouples the membrane, and DNP subsequently blocks ATP synthase."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Oligomycin binds the F0 proton channel of ATP synthase, so protons cannot re-enter the matrix through the synthase. The proton-motive force rises until electron transport is thermodynamically stalled and O2 consumption stops, even though Complex IV is intact. DNP provides an alternate proton re-entry path, collapsing the gradient and allowing the respiratory chain to run again, which restores oxygen uptake. ATP synthase remains blocked, so ATP is not restored. That pattern distinguishes ATP-synthase inhibition from Complex IV poisons such as cyanide, which DNP cannot rescue, and from true uncoupling as the primary action of oligomycin.",
+      "distractor_rationales": {
+        "A": "Oligomycin’s target is ATP synthase, not Complex IV. DNP is a protonophore, not a chemical reductant of O2 that bypasses cytochrome oxidase.",
+        "C": "DNP does not competitively displace oligomycin from F1 to restore coupled ATP synthesis; phosphorylation remains inhibited in the experiment.",
+        "D": "This choice reverses the two drugs’ mechanisms: oligomycin is the ATP-synthase blocker and DNP is the uncoupler."
+      },
+      "difficulty_est": 0.6
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t7",
+      "type": "discrete",
+      "stem": "Equal amounts of NADH and of succinate (feeding electrons via Complex II) are oxidized by intact mitochondria. Why does NADH oxidation support more ATP synthesis per pair of electrons?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "NADH dehydrogenase (Complex I) pumps protons, whereas Complex II does not, so NADH-derived electrons drive a larger proton-motive force per 2e−."
+        },
+        {
+          "key": "B",
+          "text": "Electrons from succinate enter at Complex IV, skipping Complex III and cytochrome c, so fewer protons are pumped."
+        },
+        {
+          "key": "C",
+          "text": "NADH reduces oxygen directly in the matrix, producing an extra substrate-level GTP."
+        },
+        {
+          "key": "D",
+          "text": "Succinate dehydrogenase consumes ATP to transfer electrons to ubiquinone."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Electrons from NADH enter at Complex I, which translocates protons, then proceed through ubiquinone, Complex III, cytochrome c, and Complex IV, which also pump protons. Electrons from succinate/FADH2 enter at Complex II, which does not pump protons, and join the chain at ubiquinone; they therefore miss the Complex I contribution to Δp. The smaller proton yield per 2e− means a lower P/O ratio for succinate than for NADH. Succinate does not skip Complex III, NADH does not reduce O2 directly, and Complex II does not hydrolyze ATP to reduce Q. Those facts explain why NADH oxidation supports more ATP per electron pair.",
+      "distractor_rationales": {
+        "B": "Succinate electrons enter at Complex II/ubiquinone, not at Complex IV, and they still pass through Complex III and cytochrome c. Skipping pumps is not how succinate feeds the chain.",
+        "C": "NADH is oxidized by Complex I, not by a direct matrix reaction with O2, and that path does not make substrate-level GTP.",
+        "D": "Complex II transfers electrons from succinate to Q without ATP hydrolysis; it is not an ATP-consuming pump."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t7",
+      "type": "discrete",
+      "stem": "Cyanide is added to cultured cells. Oxygen consumption ceases, the inner-membrane proton gradient collapses, and NADH cannot be reoxidized. Which complex is inhibited, and which reaction fails?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Complex I; mammalian cells continue to reduce oxygen through a cyanide-resistant NADH oxidase."
+        },
+        {
+          "key": "B",
+          "text": "Complex II; molecular oxygen is the physiologic substrate of succinate dehydrogenase."
+        },
+        {
+          "key": "C",
+          "text": "Complex IV (cytochrome c oxidase); transfer of electrons to O2 to form H2O is blocked."
+        },
+        {
+          "key": "D",
+          "text": "ATP synthase; cyanide occupies the F0 proton pore in the same way as oligomycin."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Cytochrome c oxidase (Complex IV) transfers electrons from cytochrome c to molecular oxygen, reducing O2 to water and pumping protons. Cyanide binds the heme iron of cytochrome a3 and blocks that terminal step, so oxygen consumption stops. Upstream carriers, including NADH, remain reduced because electrons have nowhere to go, and proton pumping fails as electron flow stops, collapsing Δp. Complex I and II do not reduce O2 as their substrate, and there is no physiologically adequate cyanide-resistant oxidase in typical human cells that would keep respiration going. Cyanide is not an oligomycin-like F0 plug.",
+      "distractor_rationales": {
+        "A": "Cyanide’s acute lethal target is Complex IV, not Complex I. Human mitochondria do not maintain oxygen consumption via a cyanide-resistant NADH oxidase after Complex IV is blocked.",
+        "B": "Succinate dehydrogenase reduces ubiquinone, not O2. Blocking Complex II would not be the cyanide mechanism described.",
+        "D": "Oligomycin, not cyanide, blocks the ATP synthase proton channel. Cyanide stops electron flow to oxygen at Complex IV."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t7",
+      "type": "discrete",
+      "stem": "A reconstituted vesicle contains bacteriorhodopsin (a light-driven proton pump) and mitochondrial ATP synthase, but no electron-transport proteins. Illumination in the presence of ADP + Pi produces ATP. Which conclusion does this classic experiment support?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A respiratory complex is still required as a covalent high-energy intermediate between the pump and ATP synthase."
+        },
+        {
+          "key": "B",
+          "text": "A proton electrochemical gradient is a sufficient coupling intermediate between proton pumping and ATP synthesis."
+        },
+        {
+          "key": "C",
+          "text": "Light directly phosphorylates ADP on the F1 domain without proton movement."
+        },
+        {
+          "key": "D",
+          "text": "Uncouplers would increase ATP yield by accelerating proton leak into the vesicle."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The Racker–Stoeckenius reconstitution showed that a proton pump unrelated to the respiratory chain, plus ATP synthase, is enough for photophosphorylation of ADP when a proton gradient is generated. That result supports the chemiosmotic hypothesis: the delocalized proton electrochemical potential, not a mandatory electron-transport-bound high-energy chemical intermediate, couples pumping to ATP synthesis. Light acts through bacteriorhodopsin’s proton transport, not by directly phosphorylating ADP on F1. An uncoupler would collapse the gradient and decrease, not increase, ATP. The vesicles contained no Complexes I–IV, so those complexes cannot be required as the coupling intermediate in this system.",
+      "distractor_rationales": {
+        "A": "The vesicles lacked respiratory complexes yet still made ATP, which is evidence against an obligatory ETC-bound covalent intermediate in this experiment.",
+        "C": "Bacteriorhodopsin uses light to pump protons; ATP synthase then uses the resulting Δp. Light does not directly phosphorylate ADP on F1.",
+        "D": "Uncouplers dissipate the proton-motive force and would lower ATP synthesis, not raise it."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t7",
+      "type": "discrete",
+      "stem": "In the intrinsic apoptotic pathway, mitochondrial outer-membrane permeabilization allows a heme protein of the intermembrane space to enter the cytosol, where it helps assemble the apoptosome with Apaf-1 and procaspase-9. Which protein is released, and where does it normally function in respiration?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Complex I iron–sulfur subunits, which normally reduce NAD+ in the matrix"
+        },
+        {
+          "key": "B",
+          "text": "The F1 domain of ATP synthase, which normally synthesizes ATP in the cytosol"
+        },
+        {
+          "key": "C",
+          "text": "Ubiquinone, a peripheral protein of the outer membrane that donates electrons to oxygen"
+        },
+        {
+          "key": "D",
+          "text": "Cytochrome c, which normally shuttles electrons from Complex III to Complex IV"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Cytochrome c is a small soluble heme protein in the intermembrane space. In healthy mitochondria it carries electrons from the cytochrome bc1 complex (Complex III) to cytochrome c oxidase (Complex IV). After Bax/Bak-dependent outer-membrane permeabilization, cytosolic cytochrome c binds Apaf-1, enabling apoptosome assembly and caspase-9 activation. Complex I subunits are integral/matrix-facing and reduce ubiquinone from NADH rather than reduce NAD+. ATP is made in the matrix by inner-membrane ATP synthase, not by cytosolic F1. Ubiquinone is a lipid-soluble inner-membrane carrier, not an outer-membrane protein that reduces oxygen.",
+      "distractor_rationales": {
+        "A": "Complex I oxidizes NADH and is not the IMS heme protein that nucleates the apoptosome. It also reduces Q, rather than reducing NAD+.",
+        "B": "ATP synthase is inner-membrane/matrix-facing; F1 does not synthesize ATP in the cytosol, and it is not the canonical apoptosome trigger.",
+        "C": "Ubiquinone is a hydrophobic inner-membrane pool, not a peripheral outer-membrane protein, and it does not reduce O2 (Complex IV does)."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t7",
+      "type": "discrete",
+      "stem": "Rotenone blocks electron transfer within Complex I. In isolated mitochondria, oxidation of malate/glutamate (NADH-linked) stops, but addition of succinate restores oxygen consumption and some ATP synthesis, with a lower P/O ratio. Why does succinate bypass the block?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Succinate dehydrogenase reduces ubiquinone via Complex II, entering the chain after Complex I."
+        },
+        {
+          "key": "B",
+          "text": "Succinate is oxidized by cytochrome c oxidase directly to fumarate and water."
+        },
+        {
+          "key": "C",
+          "text": "Rotenone is competitive with succinate, so succinate displaces the inhibitor from Complex I."
+        },
+        {
+          "key": "D",
+          "text": "Succinate donates electrons to NAD+, reversing Complex I despite rotenone."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Rotenone prevents NADH dehydrogenase from reducing ubiquinone, so NADH-linked substrates cannot feed the chain. Complex II oxidizes succinate and reduces the same ubiquinone pool downstream of the rotenone block. Electrons then continue through Complexes III and IV to oxygen, restoring respiration. Because Complex I is still out of the circuit, those electrons miss Complex I proton pumping and support a lower P/O ratio, matching the stem. Succinate is not a substrate of Complex IV, rotenone is not a succinate-competitive ligand on Complex I, and succinate does not reverse Complex I by reducing NAD+ in this bypass experiment.",
+      "distractor_rationales": {
+        "B": "Cytochrome c oxidase reduces O2, not succinate. Succinate’s dehydrogenase is Complex II, which feeds Q rather than donating electrons directly to Complex IV.",
+        "C": "Rotenone binds Complex I, not the succinate site of Complex II. Excess succinate does not competitively strip rotenone off Complex I as the bypass mechanism.",
+        "D": "The educational bypass is forward electron flow from Complex II to Q, not reverse electron transfer through blocked Complex I to NAD+."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t7",
+      "type": "discrete",
+      "stem": "When the proton-motive force is high and ADP is scarce, electrons dwell on Complex I and III cofactors and can reduce O2 univalently to superoxide. Which statement about this oxidative-stress path is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Superoxide is harmless because it is more reduced than water and cannot damage Fe–S proteins."
+        },
+        {
+          "key": "B",
+          "text": "Catalase is the first enzyme that converts superoxide to hydrogen peroxide in the mitochondrial matrix."
+        },
+        {
+          "key": "C",
+          "text": "Superoxide dismutase converts superoxide to hydrogen peroxide and O2; glutathione peroxidase (and catalase in some compartments) then removes H2O2."
+        },
+        {
+          "key": "D",
+          "text": "Uncoupling proteins always increase superoxide production by slowing electron transport."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Electron leak from reduced flavin or Q-cycle intermediates onto O2 produces superoxide (O2−). Mitochondrial MnSOD (and Cu/ZnSOD in the intermembrane space/cytosol) dismutates two superoxide molecules to hydrogen peroxide and O2. H2O2 is then reduced to water by glutathione peroxidase (important in mitochondria) or disproportionated by catalase (especially peroxisomes). Superoxide can oxidize and inactivate Fe–S clusters, so it is not harmless. Uncoupling generally lowers ROS by accelerating electron flow and oxidizing the leaky centers, rather than always increasing superoxide. The SOD → peroxidase/catalase sequence is the standard detoxification path tested on the MCAT.",
+      "distractor_rationales": {
+        "A": "Superoxide is a reactive oxygen species that can oxidize Fe–S clusters and lead to further radicals; it is not harmless simply because it is a reduced form of oxygen.",
+        "B": "Superoxide dismutase, not catalase, is the enzyme that acts on superoxide. Catalase acts on H2O2 after SOD (or other H2O2 sources) produces it.",
+        "D": "Mild uncoupling typically decreases mitochondrial ROS by relieving highly reduced, high-Δp states that favor electron leak, so ‘always increase’ is the opposite of the usual effect."
+      },
+      "difficulty_est": 0.48
+    }
+  ]
+}

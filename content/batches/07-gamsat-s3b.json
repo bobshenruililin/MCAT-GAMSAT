@@ -1,0 +1,1244 @@
+{
+  "items": [
+    {
+      "concept_id": "GAMSAT.S3.chem.t12",
+      "type": "discrete",
+      "stem": "The Haber equilibrium is N2(g) + 3 H2(g) ⇌ 2 NH3(g) at a fixed temperature where Kc = 0.50, with Kc = [NH3]^2 / ([N2][H2]^3) and concentrations in mol L−1. A reactor is sampled and the instantaneous concentrations are:\n\nSpecies | Concentration (mol L−1)\nN2 | 0.20\nH2 | 0.60\nNH3 | 0.10\n\nWhat is the reaction quotient Q, and what net change occurs as the mixture returns to equilibrium?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Q = 0.50, so the mixture is already at equilibrium and no net change occurs."
+        },
+        {
+          "key": "B",
+          "text": "Q ≈ 0.23, which is less than Kc, so ammonia forms net until Q rises to 0.50."
+        },
+        {
+          "key": "C",
+          "text": "Q ≈ 2.3, which is greater than Kc, so ammonia decomposes net."
+        },
+        {
+          "key": "D",
+          "text": "Q ≈ 0.083, which is less than Kc, so the reaction shifts to produce N2 and H2."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Q is evaluated with the same expression as Kc but using the instantaneous concentrations: Q = (0.10)^2 / (0.20 × 0.60^3) = 0.010 / (0.20 × 0.216) = 0.010 / 0.0432 ≈ 0.231. Because Q is smaller than Kc, the forward reaction is favoured and ammonia is produced until Q = Kc. Failing to cube [H2] or to square [NH3] gives the distractor values. Kc itself is unchanged at constant temperature, so the comparison of Q with the given Kc fully determines the net direction.",
+      "distractor_rationales": {
+        "A": "Q equals Kc only if the plugged-in concentrations already satisfy Kc. Here Q ≈ 0.23, not 0.50, so the mixture is not at equilibrium.",
+        "C": "Q ≈ 2.3 is obtained if [NH3] is not squared. The correctly computed Q is below Kc, so the net reaction is forward, not reverse.",
+        "D": "Q ≈ 0.083 comes from omitting the cube on [H2]. Even with a Q below Kc, the net change is ammonia formation, not production of N2 and H2."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t12",
+      "type": "discrete",
+      "stem": "Hydrogen and iodine reach the equilibrium H2(g) + I2(g) ⇌ 2 HI(g). After a long wait at constant volume and temperature, the equilibrium concentrations are:\n\nSpecies | Equilibrium concentration (mol L−1)\nH2 | 0.20\nI2 | 0.20\nHI | 1.60\n\nUsing Kc = [HI]^2 / ([H2][I2]), what is Kc for this reaction at this temperature?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "8.0"
+        },
+        {
+          "key": "B",
+          "text": "16"
+        },
+        {
+          "key": "C",
+          "text": "64"
+        },
+        {
+          "key": "D",
+          "text": "256"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Kc uses equilibrium concentrations in the mass-action expression. Substituting the table values gives Kc = (1.60)^2 / (0.20 × 0.20) = 2.56 / 0.040 = 64. The numerical value is unitless for this equal-mole reaction. Omitting a concentration in the denominator, forgetting to square [HI], or squaring incorrectly produces 8, 16, or 256. Because the system is stated to be at equilibrium, these table entries are the values that belong in Kc, not in a nonequilibrium Q.",
+      "distractor_rationales": {
+        "A": "8.0 is [HI] / ([H2][I2]) or a similar expression that fails to square the product concentration.",
+        "B": "16 is (1.60)^2 / 0.20, which drops one of the two reactant concentrations from the denominator.",
+        "D": "256 would require an extra factor of 4 in the numerator or an erroneously small denominator such as (0.10)^2."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t12",
+      "type": "discrete",
+      "stem": "The equilibrium 2 NO2(g) ⇌ N2O4(g) has Kc = 0.80 L mol−1 at temperature T, with Kc = [N2O4] / [NO2]^2. A 4.0 L flask at equilibrium contains 0.400 mol NO2 and 0.0320 mol N2O4. The flask is then rapidly compressed to 2.0 L at the same T, before any chemical change occurs.\n\nConcentrations immediately after compression:\nSpecies | After compression (mol L−1)\nNO2 | 0.200\nN2O4 | 0.0160\n\nHow does Q compare with Kc immediately after the compression, and what net reaction follows?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Q = 0.40, which is less than Kc, so net conversion of NO2 to N2O4 occurs."
+        },
+        {
+          "key": "B",
+          "text": "Q = 1.6, which is greater than Kc, so N2O4 dissociates net."
+        },
+        {
+          "key": "C",
+          "text": "Q remains 0.80, so there is no net reaction; only the numerical value of Kc changes with volume."
+        },
+        {
+          "key": "D",
+          "text": "Q = 0.40, which is less than Kc, so N2O4 dissociates because compression always favours more gas molecules."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Before compression, [NO2] = 0.400/4.0 = 0.100 M and [N2O4] = 0.00800 M, so Q = 0.00800/(0.100)^2 = 0.80 = Kc. Halving the volume doubles both concentrations: Q′ = 0.0160/(0.200)^2 = 0.0160/0.0400 = 0.40. Q′ < Kc, so the forward reaction (fewer gas moles) proceeds until Q returns to 0.80. Kc is a function of temperature only. Compression of this reaction therefore shifts toward N2O4, consistent with both the Q argument and Le Chatelier’s principle.",
+      "distractor_rationales": {
+        "B": "Q = 1.6 would require inverting the mass-action expression or using the old volume in only one concentration. The computed Q after compression is 0.40, below Kc.",
+        "C": "Kc does not change when volume changes at constant T. Instantaneous concentrations do change, so Q drops below Kc and a net reaction occurs.",
+        "D": "Q is indeed 0.40, but the net reaction is toward fewer moles of gas (N2O4), not dissociation. Le Chatelier does not favour more gas molecules under compression."
+      },
+      "difficulty_est": 0.62
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t12",
+      "type": "discrete",
+      "stem": "The gas-phase reaction N2(g) + O2(g) ⇌ 2 NO(g) is studied in a sealed vessel. Equilibrium constants measured at three temperatures are:\n\nT (K) | Kc\n1500 | 1.0 × 10^−5\n2000 | 4.0 × 10^−4\n2500 | 3.5 × 10^−3\n\nKc = [NO]^2 / ([N2][O2]). Which conclusion is supported by the table?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The forward reaction is exothermic, because Kc is small at 1500 K."
+        },
+        {
+          "key": "B",
+          "text": "Kc increases with T only because the rate of the forward reaction increases; the equilibrium composition is unaffected by T."
+        },
+        {
+          "key": "C",
+          "text": "The mixture is always reactant-favoured at every temperature listed, so heating cannot increase the equilibrium amount of NO."
+        },
+        {
+          "key": "D",
+          "text": "The forward reaction is endothermic: raising T increases Kc, so the equilibrium yield of NO increases."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Van’t Hoff behaviour for an endothermic forward reaction is that K increases with temperature. The table shows Kc rising by more than two orders of magnitude from 1500 K to 2500 K, so the forward direction absorbs heat. A larger Kc means a larger equilibrium [NO]^2 / ([N2][O2]), hence a higher equilibrium yield of NO at the higher temperature (at comparable total pressure). A small Kc at 1500 K does not by itself prove the reaction is exothermic; the temperature trend of Kc is the thermodynamic signal. Rates affect how fast equilibrium is reached, not the value of Kc.",
+      "distractor_rationales": {
+        "A": "A small Kc at one temperature does not establish that the forward reaction is exothermic. The increase of Kc with T is the signature of an endothermic forward reaction.",
+        "B": "Temperature changes both rates, but Kc is the ratio of rate constants (or a ΔG° function) and does change with T; the equilibrium composition therefore changes.",
+        "C": "Even when Kc remains less than 1, a larger Kc still corresponds to a larger equilibrium mole fraction of NO. Heating therefore does increase the equilibrium yield."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t12",
+      "type": "discrete",
+      "stem": "Solid calcium carbonate decomposes in a closed, evacuated vessel: CaCO3(s) ⇌ CaO(s) + CO2(g). At 1073 K the equilibrium constant is Kp = 0.22 bar, and Kp = P_CO2 because the activities of the pure solids are omitted. The vessel is already at equilibrium with P_CO2 = 0.22 bar and both solids present. An extra 12 g of CaCO3(s) is then added, T held at 1073 K.\n\nMeasured P_CO2 (bar) | Condition\n0.22 | before adding extra CaCO3\n? | after re-equilibration\n\nWhat is P_CO2 after re-equilibration, and why?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.44 bar, because doubling the carbonate mass doubles the equilibrium pressure of CO2."
+        },
+        {
+          "key": "B",
+          "text": "0.22 bar, because Kp depends only on P_CO2 at this T, and extra solid CaCO3 does not appear in Kp."
+        },
+        {
+          "key": "C",
+          "text": "Much less than 0.22 bar, because added CaCO3 shifts the equilibrium left by mass action on a concentration [CaCO3]."
+        },
+        {
+          "key": "D",
+          "text": "0 bar, because extra CaCO3 reabsorbs all of the CO2."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "For this heterogeneous equilibrium the equilibrium law is Kp = P_CO2. At 1073 K that pressure is fixed at 0.22 bar as long as both CaCO3(s) and CaO(s) remain. Adding more solid carbonate does not change the activities of the solids (taken as 1 for pure phases) and does not change T, so P_CO2 is unchanged. Doubling the mass of a solid does not double a gas pressure that is set by Kp. Treating CaCO3 as if it had a molarity in Kp is the usual incorrect homogeneous-style mass-action argument.",
+      "distractor_rationales": {
+        "A": "Equilibrium pressure of CO2 is set by Kp, not by the mass of solid carbonate, provided some solid remains.",
+        "C": "Pure solids are omitted from Kp; there is no [CaCO3] term that would drive the equilibrium backward when extra solid is added.",
+        "D": "Reabsorption of all CO2 would require Kp = 0. The given Kp is 0.22 bar, so a finite CO2 pressure remains."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t12",
+      "type": "discrete",
+      "stem": "The gas-phase equilibrium A(g) ⇌ 2 B(g) has Kc = 0.40 mol L−1 at temperature T, with Kc = [B]^2 / [A]. A 1.00 L flask at equilibrium contains the concentrations in the first data row. The mixture is then rapidly diluted to 2.00 L at the same T (concentrations instantly halved) before any reaction occurs.\n\nStage | [A] (mol L−1) | [B] (mol L−1)\nAt equilibrium in 1.00 L | 0.100 | 0.200\nImmediately after dilution to 2.00 L | 0.050 | 0.100\n\nWhat is Q immediately after dilution, and what net reaction restores equilibrium?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Q = 0.40, already equal to Kc, so dilution produces no net chemical change."
+        },
+        {
+          "key": "B",
+          "text": "Q = 0.80, greater than Kc, so B combines to form A."
+        },
+        {
+          "key": "C",
+          "text": "Q = 0.20, less than Kc, so A dissociates net to form additional B."
+        },
+        {
+          "key": "D",
+          "text": "Q = 0.20, less than Kc, so B is consumed because dilution always favours fewer particles."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Check the original row: Q = (0.200)^2 / 0.100 = 0.40 = Kc, so the flask truly started at equilibrium. After doubling the volume, Q′ = (0.100)^2 / 0.050 = 0.010 / 0.050 = 0.20, which is below Kc. The forward reaction therefore proceeds, producing more B. That direction also matches Le Chatelier for a process that increases the number of gas particles when the system is diluted. Q does not remain equal to Kc after a concentration jump of this stoichiometry, because [B] is squared.",
+      "distractor_rationales": {
+        "A": "Halving both concentrations does not leave Q unchanged when the numerator is a square. Q falls to 0.20, so a net reaction occurs.",
+        "B": "Q = 0.80 would require doubling rather than halving concentrations, or inverting the dilution. The actual Q is 0.20, below Kc, so A does not form net.",
+        "D": "Q is 0.20, but the restoring reaction produces more particles (A → 2 B), which is the direction favoured by dilution, not consumption of B."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t12",
+      "type": "discrete",
+      "stem": "Sulfuryl chloride decomposes: SO2Cl2(g) ⇌ SO2(g) + Cl2(g), with Kp = 0.30 atm at a stated T and Kp = (P_SO2 P_Cl2) / P_SO2Cl2. A mixture in a rigid bulb has the partial pressures below.\n\nGas | Partial pressure (atm)\nSO2Cl2 | 0.50\nSO2 | 0.20\nCl2 | 0.20\n\nWhat is Qp, and which net process occurs at this T?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Qp = 0.080, which is less than Kp, so SO2Cl2 decomposes net."
+        },
+        {
+          "key": "B",
+          "text": "Qp = 0.080, which is less than Kp, so SO2 and Cl2 combine net."
+        },
+        {
+          "key": "C",
+          "text": "Qp = 0.80, which is greater than Kp, so SO2Cl2 decomposes net."
+        },
+        {
+          "key": "D",
+          "text": "Qp = 0.30 = Kp, so the mixture is already at equilibrium."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Qp uses the same expression as Kp with the instantaneous partial pressures: Qp = (0.20 × 0.20) / 0.50 = 0.040 / 0.50 = 0.080. Because Qp < Kp, the numerator must increase relative to the denominator, which means net decomposition of SO2Cl2. The comparison is made at the given T, so Kp is fixed at 0.30 atm. Adding the partial pressures of the products instead of multiplying them, or treating the mixture as if Qp automatically equals Kp, produces the distractor values.",
+      "distractor_rationales": {
+        "B": "Qp is 0.080, but Qp < Kp implies the forward (decomposition) direction, not combination of the products.",
+        "C": "Qp = 0.80 comes from adding the product pressures (0.20 + 0.20) / 0.50. Partial pressures are multiplied in Kp, and 0.80 would actually be greater than Kp, which is the wrong comparison as well as the wrong arithmetic.",
+        "D": "Equality of Qp and Kp would require (P_SO2 P_Cl2) / P_SO2Cl2 = 0.30. The table gives 0.080, so the system is not at equilibrium."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t12",
+      "type": "discrete",
+      "stem": "The water–gas shift reaction CO(g) + H2O(g) ⇌ CO2(g) + H2(g) has Kc = 10.0 at 800 K, with Kc = ([CO2][H2]) / ([CO][H2O]). A 1.0 L vessel at 800 K is at equilibrium with the first row of the table. A pulse of extra CO2 then raises [CO2] instantly to the second-row value; the other three concentrations are unchanged at that instant.\n\nStage | [CO] | [H2O] | [CO2] | [H2]  (all mol L−1)\nEquilibrium | 0.50 | 0.50 | 1.58 | 1.58\nImmediately after adding CO2 | 0.50 | 0.50 | 3.16 | 1.58\n\nWhat is Q after the pulse, and what net reaction restores equilibrium?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Q remains 10.0, so adding a product cannot shift a system that is already at equilibrium."
+        },
+        {
+          "key": "B",
+          "text": "Q = 5.0, less than Kc, so the forward reaction produces still more CO2 and H2."
+        },
+        {
+          "key": "C",
+          "text": "Q = 20, greater than Kc, so the reverse reaction consumes CO2 and H2 and forms CO and H2O."
+        },
+        {
+          "key": "D",
+          "text": "Q = 20, greater than Kc, so the forward reaction continues because Kc must rise to match the new Q."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The equilibrium row satisfies Kc: (1.58 × 1.58) / (0.50 × 0.50) = 2.496 / 0.25 ≈ 10.0. After the CO2 pulse, Q = (3.16 × 1.58) / 0.25 = 4.993 / 0.25 ≈ 20, which is greater than Kc. The reverse reaction therefore proceeds, consuming CO2 and H2. That is Le Chatelier’s response to adding a product. Kc is unchanged at 800 K; Q, not Kc, is what jumps when a concentration is suddenly altered.",
+      "distractor_rationales": {
+        "A": "Adding CO2 changes the numerator of Q immediately. Q is then 20, not 10, so a net reverse reaction occurs.",
+        "B": "Q after the pulse is about 20, not 5. Q > Kc drives the reverse reaction, which consumes CO2 rather than producing more of it.",
+        "D": "Q is 20, but Kc does not chase Q. Temperature is still 800 K, so Kc stays 10 and the reverse reaction lowers Q back to 10."
+      },
+      "difficulty_est": 0.56
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t13",
+      "type": "discrete",
+      "stem": "Three aqueous solutions are prepared at the same nominal concentration 0.010 mol L−1 and 25 °C. Measured pH values are:\n\nAcid solution (0.010 M) | Measured pH\nHCl | 2.00\nHNO3 | 2.00\nCH3COOH | 3.38\n\npH is defined as −log10[H+]. Which interpretation of the table is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "HCl and HNO3 are fully dissociated so [H+] = 0.010 M; acetic acid is only partly dissociated, so [H+] is smaller and pH is higher."
+        },
+        {
+          "key": "B",
+          "text": "Acetic acid is diprotic, which always gives a higher pH than a monoprotic acid of the same concentration."
+        },
+        {
+          "key": "C",
+          "text": "HCl is a weak acid and the pH of 2.00 is caused by the autoionization of water dominating [H+]."
+        },
+        {
+          "key": "D",
+          "text": "All three acids have the same [H+]; the pH differences are due to a calibration error and have no chemical meaning."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "For a strong monoprotic acid, [H+] equals the nominal concentration, so −log10(0.010) = 2.00, matching HCl and HNO3. Acetic acid is a weak monoprotic acid, so only a fraction of the 0.010 M molecules donate protons. The measured pH of 3.38 corresponds to [H+] = 10^−3.38 ≈ 4.2 × 10^−4 M, far below 0.010 M. Acetic acid is not diprotic, and water’s contribution (10^−7 M) is negligible next to 0.010 M strong acid. The table is therefore a direct comparison of complete versus partial dissociation.",
+      "distractor_rationales": {
+        "B": "Acetic acid has one ionizable carboxyl proton. Being diprotic is not the explanation of the higher pH, and the formula CH3COOH is monoprotic.",
+        "C": "pH 2.00 for 0.010 M HCl is exactly the strong-acid result. Water autoionization is negligible at this [H+]. HCl is strong, not weak.",
+        "D": "The two mineral acids agree at pH 2.00 as expected, while acetic acid is systematically higher. That pattern is chemical, not a random calibration offset."
+      },
+      "difficulty_est": 0.34
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t13",
+      "type": "discrete",
+      "stem": "A monoprotic weak acid HA is prepared at 0.10 mol L−1. Its acid-dissociation constant is Ka = 1.0 × 10^−5, and Ka = [H+][A−] / [HA]. The dissociation is slight, so [H+] ≈ √(Ka × 0.10).\n\nTrial | Method used to estimate pH | Result\n1 | −log10 of the nominal 0.10 M concentration | 1.00\n2 | −log10(Ka) | 5.00\n3 | −log10 of √(Ka × 0.10) | 3.00\n\nWhich trial gives the correct pH of the 0.10 M HA solution?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Trial 1, because every monoprotic acid contributes [H+] equal to its formal concentration."
+        },
+        {
+          "key": "B",
+          "text": "Trial 3, because [H+] ≈ 1.0 × 10^−3 M and pH = 3.00."
+        },
+        {
+          "key": "C",
+          "text": "Trial 2, because pH of a weak acid equals pKa."
+        },
+        {
+          "key": "D",
+          "text": "None of the trials; water sets pH = 7.00 whenever the acid is weak."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "For a dilute weak acid with Ka C >> Kw and x << C, [H+] = √(Ka C) = √(1.0 × 10^−6) = 1.0 × 10^−3 M, so pH = 3.00. That is Trial 3. Treating HA as strong (Trial 1) uses [H+] = 0.10 M and underestimates pH. Equating pH to pKa (Trial 2) would be appropriate near the half-neutralization point of a buffer, not for a solution of HA alone. Water’s pH of 7 is irrelevant once [H+] from the acid is 10^−3 M. The approximation x << C holds because 0.0010 is 1% of 0.10 M.",
+      "distractor_rationales": {
+        "A": "Trial 1 is the strong-acid formula. It would apply to 0.10 M HCl, not to a weak acid with Ka = 10^−5.",
+        "C": "pH = pKa only when [HA] = [A−], as in a 1:1 buffer. A solution of HA alone has [A−] ≈ [H+] << [HA].",
+        "D": "A weak acid still produces [H+] well above 10^−7 M here. The solution is acidic with pH 3, not 7."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t13",
+      "type": "discrete",
+      "stem": "A student mixes 30.0 mL of 0.250 M HCl with 30.0 mL of 0.100 M NaOH. Both solutes are strong. Amounts before mixing and the total volume afterwards are:\n\nSpecies | Amount (mmol) | After mixing\nHCl | 7.50 | excess H+ remains\nNaOH | 3.00 | fully consumed\nTotal volume | — | 60.0 mL\n\nWhat is the pH of the final solution?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.82"
+        },
+        {
+          "key": "B",
+          "text": "1.12"
+        },
+        {
+          "key": "C",
+          "text": "7.00"
+        },
+        {
+          "key": "D",
+          "text": "12.88"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "HCl supplies 30.0 mL × 0.250 M = 7.50 mmol of H+. NaOH supplies 30.0 mL × 0.100 M = 3.00 mmol of OH−. After neutralization, 4.50 mmol of H+ remains in 60.0 mL, so [H+] = 4.50 mmol / 60.0 mL = 0.0750 M. Then pH = −log10(0.0750) = 1.12. Equal volumes do not imply a neutral mixture because the acid is more concentrated. The leftover solute is a strong acid, so the pH is acidic, not 14 minus 1.12. Using the leftover millimoles in only 30.0 mL would give [H+] = 0.150 M and pH 0.82, which ignores dilution by the other aliquot.",
+      "distractor_rationales": {
+        "A": "0.82 is −log10(0.150), which uses leftover H+ in 30.0 mL instead of the combined 60.0 mL volume.",
+        "C": "pH 7 would require equal millimoles of strong acid and strong base. Here acid millimoles are larger (7.50 versus 3.00).",
+        "D": "12.88 is what one would obtain if the leftover reagent were treated as OH− (pOH = 1.12). The leftover reagent is H+, so the solution is acidic."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t13",
+      "type": "discrete",
+      "stem": "Four weak acids and their pKa values in water at 25 °C are listed. Separate 0.10 M aqueous solutions of the sodium salts NaA, NaB, NaC and NaD are prepared (each salt is the conjugate base of the corresponding HA).\n\nAcid | pKa of HA\nHA | 3.80\nHB | 4.90\nHC | 7.20\nHD | 9.10\n\nWhich 0.10 M salt solution has the highest pH?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "NaA, because HA is the strongest acid, so A− is the strongest hydrolysing base."
+        },
+        {
+          "key": "B",
+          "text": "NaB, because pKa near 5 maximises hydrolysis of a 0.10 M salt."
+        },
+        {
+          "key": "C",
+          "text": "NaC, because only acids with pKa > 7 give basic salts."
+        },
+        {
+          "key": "D",
+          "text": "NaD, because HD is the weakest acid, so D− has the largest Kb and produces the most OH−."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The hydrolysis constant of A− is Kb = Kw / Ka = 10^−14 / 10^−pKa = 10^(pKa − 14). The largest pKa therefore gives the largest Kb. HD has pKa 9.10, so Kb of D− is 10^−4.90, much larger than Kb of A− (10^−10.20). For the same 0.10 M concentration, [OH−] ≈ √(Kb C) is therefore greatest for NaD, and that solution has the highest pH. The strongest acid (HA) has the weakest conjugate base, so NaA is the least basic of the four salts, not the most basic. All four conjugate bases hydrolyse to some extent; pKa = 7 is not a switch that turns hydrolysis on.",
+      "distractor_rationales": {
+        "A": "The strongest acid has the weakest conjugate base. NaA therefore has the smallest Kb and the lowest pH among the four salts.",
+        "B": "There is no special maximum in hydrolysis at pKa 5. Hydrolysis of the conjugate base increases monotonically as pKa of HA increases.",
+        "C": "Even salts of acids with pKa < 7 (acetate, formate) give pH > 7. The ranking is still set by Kb, which is largest for NaD."
+      },
+      "difficulty_est": 0.57
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t13",
+      "type": "discrete",
+      "stem": "A 0.20 M solution of a monoprotic weak acid HA has a measured pH of 3.00 at 25 °C.\n\nQuantity | Value\nFormal concentration C of HA | 0.20 mol L−1\nMeasured pH | 3.00\n[H+] from pH = −log10[H+] | 1.0 × 10^−3 mol L−1\n\nPercent ionization is defined as ([H+] / C) × 100%. What is the percent ionization of HA in this solution?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.15%"
+        },
+        {
+          "key": "B",
+          "text": "0.50%"
+        },
+        {
+          "key": "C",
+          "text": "1.5%"
+        },
+        {
+          "key": "D",
+          "text": "15%"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "pH 3.00 means [H+] = 1.0 × 10^−3 mol L−1. For a weak acid HA ⇌ H+ + A−, each dissociated molecule contributes one H+ (neglecting water), so the dissociated concentration is 1.0 × 10^−3 M. Percent ionization = (1.0 × 10^−3 / 0.20) × 100% = 0.50%. The corresponding Ka ≈ (1.0 × 10^−3)^2 / 0.20 = 5.0 × 10^−6, which is consistent with a weakly ionized acid. Using 3.00 / 0.20, forgetting to convert pH to [H+], or dropping a power of ten produces the distractors. The definition asked for is the ratio of ionized concentration to the formal concentration, not pH itself.",
+      "distractor_rationales": {
+        "A": "0.15% might come from mixing the pH number with the concentration (for example 0.20 × 0.75) instead of converting pH to [H+] first.",
+        "C": "1.5% is three times too large, as if 3.0 × 10^−3 M were used for [H+] or C were taken as 0.067 M.",
+        "D": "15% would require [H+] ≈ 0.030 M, which would be pH 1.5, not 3.00. pH is a logarithm and is not itself a percentage ionized."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t13",
+      "type": "discrete",
+      "stem": "A 0.10 M aqueous solution of the weak base B is prepared. The base-dissociation constant is Kb = 1.0 × 10^−5, with Kb = [HB+][OH−] / [B]. Analogous to a weak acid, [OH−] ≈ √(Kb × 0.10). Water at 25 °C has Kw = 1.0 × 10^−14 so pH + pOH = 14.00.\n\nQuantity | Value\nC of B | 0.10 mol L−1\nKb | 1.0 × 10^−5\n[OH−] from √(Kb C) | 1.0 × 10^−3 mol L−1\n\nWhat is the pH of the 0.10 M B solution?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2.00, treating B as if it were a 0.10 M strong acid."
+        },
+        {
+          "key": "B",
+          "text": "5.00, equal to −log10(Kb)."
+        },
+        {
+          "key": "C",
+          "text": "11.00, because pOH = 3.00 and pH = 14.00 − 3.00."
+        },
+        {
+          "key": "D",
+          "text": "13.00, treating B as a fully dissociated 0.10 M strong base."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "[OH−] ≈ √(1.0 × 10^−5 × 0.10) = √(1.0 × 10^−6) = 1.0 × 10^−3 M, so pOH = 3.00 and pH = 11.00. Reporting pOH as if it were pH, or setting pH = −log Kb, are common slips. A strong 0.10 M base would have [OH−] = 0.10 M, pOH = 1.00 and pH = 13.00, which overestimates the basicity of this weak base. The solution is clearly basic (pH > 7), which already eliminates any answer near 2. The weak-base square-root step is the same algebra as for a weak acid, but the logarithm is of [OH−], not of [H+].",
+      "distractor_rationales": {
+        "A": "pH 2.00 would describe a 0.010 M strong acid, not a weak base. The species B produces OH−, so the solution cannot be this acidic.",
+        "B": "−log10(Kb) = 5.00 is pKb, not pH. pH of a weak base is obtained from pOH = −log[OH−], then 14 − pOH.",
+        "D": "pH 13.00 is the strong-base result for 0.10 M OH−. Only a fraction of B is protonated, so [OH−] is 10^−3 M, not 0.10 M."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t13",
+      "type": "discrete",
+      "stem": "[H+] is measured for two monoprotic acids over a range of formal concentrations C at 25 °C:\n\nC (mol L−1) | Acid X: [H+] (mol L−1) | Acid Y: [H+] (mol L−1)\n0.010 | 0.010 | 1.0 × 10^−3\n0.040 | 0.040 | 2.0 × 10^−3\n0.090 | 0.090 | 3.0 × 10^−3\n\nFor a weak acid, [H+] ≈ √(Ka C). Which description fits both columns?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "X and Y are both strong; the Y column must be a unit error because [H+] should always equal C."
+        },
+        {
+          "key": "B",
+          "text": "X is weak with Ka = 1.0 × 10^−4 and Y is strong, because only Y has [H+] far below C."
+        },
+        {
+          "key": "C",
+          "text": "X is a strong monoprotic acid ([H+] = C). Y is a weak acid with Ka = 1.0 × 10^−4, because [H+] = √(Ka C) at each row."
+        },
+        {
+          "key": "D",
+          "text": "Y is a strong diprotic acid, because [H+] is three times larger at 0.090 M than at 0.010 M."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Acid X matches [H+] = C at every row, which is the hallmark of a fully dissociated monoprotic acid. Acid Y follows [H+] ∝ √C: √0.010 : √0.040 : √0.090 = 0.10 : 0.20 : 0.30, and the table is 1.0, 2.0, 3.0 × 10^−3, the same ratios. Then Ka = [H+]^2 / C. Using the first Y row, (1.0 × 10^−3)^2 / 0.010 = 1.0 × 10^−4, and the other rows give the same Ka. A strong diprotic acid would give [H+] closer to 2C, not a square-root dependence. Swapping which acid is strong contradicts the X column, where [H+] equals C.",
+      "distractor_rationales": {
+        "A": "Y’s [H+] is far below C and scales as √C, which is incompatible with complete dissociation. The Y column is chemically consistent, not a unit error.",
+        "B": "X has [H+] = C, so X is the strong acid. Y is the weak one. This option reverses the assignments.",
+        "D": "A factor of three in [H+] when C increases ninefold is the square-root law, not evidence of two protons. A strong diprotic acid would not give [H+] = 0.0030 M from 0.090 M."
+      },
+      "difficulty_est": 0.6
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t13",
+      "type": "discrete",
+      "stem": "Equal volumes of 0.20 M HCl and 0.20 M acetic acid (Ka = 1.8 × 10^−5) are mixed. After mixing, each solute is diluted by two:\n\nSpecies | Concentration after mixing (mol L−1)\nHCl (strong) | 0.10\nCH3COOH | 0.10\n\nFour estimates of the mixture pH are offered. Which is defensible?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "pH ≈ 1.00, because the strong acid sets [H+] ≈ 0.10 M and suppresses ionization of acetic acid."
+        },
+        {
+          "key": "B",
+          "text": "pH ≈ 2.87, the weak-acid formula √(Ka × 0.10) applied as if HCl were absent."
+        },
+        {
+          "key": "C",
+          "text": "pH = 4.74, equal to pKa of acetic acid, as if the mixture were an equimolar buffer of HA and A−."
+        },
+        {
+          "key": "D",
+          "text": "pH = 7.00, because equal molar amounts of two acids cancel."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "HCl is fully dissociated, so after the twofold dilution [H+] from HCl is 0.10 M and pH = 1.00. Acetic acid’s additional contribution is tiny: Ka = [H+][A−]/[HA] ≈ (0.10)[A−]/0.10, so [A−] ≈ Ka = 1.8 × 10^−5 M, which does not change [H+] at the precision of these options. The mixture is not a buffer, because no acetate salt was added and HCl does not convert HA into A−; HCl actually protonates any A−. Two acids cannot neutralize each other to pH 7. Ignoring HCl and using only the acetic-acid square-root formula yields pH ≈ 2.87, which contradicts the presence of 0.10 M strong acid.",
+      "distractor_rationales": {
+        "B": "The √(Ka C) estimate is for a solution containing only the weak acid. Here 0.10 M HCl already supplies [H+] = 0.10 M, so pH cannot be 2.87.",
+        "C": "pH = pKa requires a comparable amount of A−, as in a buffer. This mixture contains HA and HCl, not a 1:1 HA/A− pair.",
+        "D": "Acids do not neutralize other acids. There is no base present in stoichiometric amount, so the mixture remains strongly acidic."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t1",
+      "type": "discrete",
+      "stem": "A runner’s velocity–time graph consists of three straight-line segments:\n\nInterval | v(t)\n0 to 4.0 s | v increases linearly from 0 to 8.0 m s−1\n4.0 to 10.0 s | v is constant at 8.0 m s−1\n10.0 to 12.0 s | v decreases linearly from 8.0 m s−1 to 0\n\nDisplacement equals the signed area under a v–t graph. What is the runner’s displacement from t = 0 to t = 12.0 s?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "48 m"
+        },
+        {
+          "key": "B",
+          "text": "64 m"
+        },
+        {
+          "key": "C",
+          "text": "72 m"
+        },
+        {
+          "key": "D",
+          "text": "96 m"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The area is a triangle of base 4.0 s and height 8.0 m s−1, plus a rectangle 6.0 s by 8.0 m s−1, plus a triangle of base 2.0 s and height 8.0 m s−1. Those areas are (1/2)×4.0×8.0 = 16 m, 6.0×8.0 = 48 m, and (1/2)×2.0×8.0 = 8 m, which sum to 72 m. Using only the constant-speed rectangle gives 48 m. Omitting the final triangle gives 64 m. Multiplying the peak speed by the total time (8.0 × 12) gives 96 m, which would be valid only if v were 8.0 m s−1 for the whole 12 s. All three segments contribute positive area because v never reverses.",
+      "distractor_rationales": {
+        "A": "48 m is only the rectangular middle segment. The two triangular areas (16 m and 8 m) must be added.",
+        "B": "64 m is the first triangle plus the rectangle, omitting the 8 m triangle during deceleration from 10 s to 12 s.",
+        "D": "96 m is (8.0 m s−1)×(12 s), as if the runner held peak speed for the entire interval instead of accelerating and then stopping."
+      },
+      "difficulty_est": 0.35
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t1",
+      "type": "discrete",
+      "stem": "The slope of a velocity–time graph is acceleration. A cart’s v–t record is:\n\nInterval | v(t)\n0.0 to 3.0 s | v decreases linearly from 12.0 m s−1 to 0\n3.0 to 5.0 s | v = 0 (at rest)\n5.0 to 8.0 s | v increases linearly from 0 to 6.0 m s−1\n\nWhat is the acceleration in the interval 0.0–3.0 s?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "−4.0 m s−2"
+        },
+        {
+          "key": "B",
+          "text": "0 m s−2"
+        },
+        {
+          "key": "C",
+          "text": "+2.0 m s−2"
+        },
+        {
+          "key": "D",
+          "text": "+4.0 m s−2"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Acceleration is Δv/Δt. From 12.0 m s−1 to 0 in 3.0 s, a = (0 − 12.0)/3.0 = −4.0 m s−2. The negative sign means the velocity is decreasing (the cart is slowing while still moving in the original positive direction). Zero acceleration applies to the 3–5 s rest interval, not to 0–3 s. The later +2.0 m s−2 is (6.0 − 0)/3.0 for 5–8 s. Dropping the sign and quoting +4.0 m s−2 reports the magnitude of the first interval’s acceleration but not the signed kinematic value asked for.",
+      "distractor_rationales": {
+        "B": "Zero slope occurs only while the cart is at rest (3–5 s). The 0–3 s segment has a clear negative slope.",
+        "C": "+2.0 m s−2 is the slope of the 5–8 s segment, not of 0–3 s.",
+        "D": "+4.0 m s−2 is the magnitude of the first interval’s acceleration with the sign omitted. Velocity is decreasing, so a is negative."
+      },
+      "difficulty_est": 0.32
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t1",
+      "type": "discrete",
+      "stem": "A particle’s velocity–time graph is described as follows:\n\nInterval | v(t)\n0 to 5.0 s | v = +6.0 m s−1 (horizontal line)\n5.0 to 8.0 s | v changes linearly from +6.0 m s−1 to −6.0 m s−1\n8.0 to 12.0 s | v = −6.0 m s−1 (horizontal line)\n\nVelocity is zero at the axis crossing during 5.0–8.0 s. What is the net displacement from t = 0 to t = 12.0 s?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0 m"
+        },
+        {
+          "key": "B",
+          "text": "6.0 m"
+        },
+        {
+          "key": "C",
+          "text": "30 m"
+        },
+        {
+          "key": "D",
+          "text": "−24 m"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Displacement is the signed area. From 0 to 5.0 s the area is 6.0 × 5.0 = +30 m. From 5.0 to 8.0 s the line is antisymmetric about v = 0, which occurs at the midpoint t = 6.5 s, so the +4.5 m triangle and the −4.5 m triangle cancel. From 8.0 to 12.0 s the area is (−6.0)×4.0 = −24 m. The net is 30 + 0 − 24 = +6.0 m. A total of zero would require the negative area to cancel the entire +30 m. +30 m ignores the motion after t = 5 s. −24 m is only the last segment. Direction reversal on a v–t graph does not by itself make the net displacement zero.",
+      "distractor_rationales": {
+        "A": "The positive area (30 m) is larger than the negative area (24 m). Cancellation of the middle triangles does not cancel the whole motion.",
+        "C": "30 m is the displacement during the first 5 s only. The later negative-velocity segment contributes −24 m.",
+        "D": "−24 m is the displacement from 8 s to 12 s only, omitting the earlier +30 m."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t1",
+      "type": "discrete",
+      "stem": "A position–time graph for a walker is piecewise linear:\n\nInterval | s(t)\n0 to 3.0 s | s increases linearly from 0 to 12 m\n3.0 to 7.0 s | s is constant at 12 m\n7.0 to 10.0 s | s decreases linearly from 12 m to 0\n\nAverage velocity is displacement / time. Average speed is path length / time. For the whole 0–10.0 s motion, what is the average velocity?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0 m s−1"
+        },
+        {
+          "key": "B",
+          "text": "1.2 m s−1"
+        },
+        {
+          "key": "C",
+          "text": "2.4 m s−1"
+        },
+        {
+          "key": "D",
+          "text": "4.0 m s−1"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The walker starts at s = 0 and finishes at s = 0, so the displacement for 0–10.0 s is 0 m and the average velocity is 0. The path length is 12 m out plus 12 m back = 24 m, so the average speed is 24/10.0 = 2.4 m s−1. Those two averages are not interchangeable. 1.2 m s−1 would be 12 m / 10.0 s, using only the outbound distance as if it were displacement. 4.0 m s−1 is the slope of the first segment (12/3.0) and is an instantaneous velocity, not the 10 s average. Returning to the origin is the reason the signed average is zero even though the walker was moving for most of the time.",
+      "distractor_rationales": {
+        "B": "1.2 m s−1 uses a 12 m figure divided by 10 s. Displacement for the full trip is 0, not 12 m.",
+        "C": "2.4 m s−1 is the average speed (24 m of path in 10 s), not the average velocity.",
+        "D": "4.0 m s−1 is the velocity only on 0–3 s. Later the velocity is 0 and then −4.0 m s−1, so it is not the overall average."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t1",
+      "type": "discrete",
+      "stem": "Two cars start side by side at t = 0. Their velocity–time graphs are:\n\nCar | v–t description\nP | horizontal line at v = 12 m s−1\nQ | straight line through the origin with slope 3.0 m s−2 (so v_Q = 3.0 t, with t in seconds and v in m s−1)\n\nDisplacement is the area under each v–t graph. At the instant the two cars have equal velocity, how far ahead of Q is P?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0 m; equal velocity means they are at the same position."
+        },
+        {
+          "key": "B",
+          "text": "12 m"
+        },
+        {
+          "key": "C",
+          "text": "24 m"
+        },
+        {
+          "key": "D",
+          "text": "48 m"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Equal velocity when 3.0 t = 12, so t = 4.0 s. In 4.0 s, P travels 12 × 4.0 = 48 m (rectangular area). Q’s area is the triangle (1/2)×4.0×12 = 24 m, or equivalently (1/2) a t^2 = 0.5 × 3.0 × 16 = 24 m. P is therefore 24 m ahead. Equal velocity is not the same as meeting: they meet later, when 12 t = 1.5 t^2, t = 8.0 s. At t = 4 s Q is still 24 m behind. 48 m is P’s distance from the start, not the gap. 12 m would be one second of P’s travel, not the area difference.",
+      "distractor_rationales": {
+        "A": "A v–t crossing means equal speeds at that instant, not equal positions. Positions are areas, which are still unequal at t = 4 s.",
+        "B": "12 m has no matching area. P’s lead is 48 m − 24 m = 24 m.",
+        "D": "48 m is how far P has travelled from the origin at t = 4 s, not the distance between P and Q."
+      },
+      "difficulty_est": 0.61
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t1",
+      "type": "discrete",
+      "stem": "A stone is dropped from rest. Taking g = 10 m s−2 downward as positive, the velocity–time graph is a straight line from (t, v) = (0, 0) to (4.0 s, 40 m s−1).\n\nt (s) | v (m s−1)\n0 | 0\n2.0 | 20\n4.0 | 40\n\nDisplacement from rest is the triangular area under this v–t graph, equivalently s = (1/2) g t^2. How far has the stone fallen in 4.0 s?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "40 m"
+        },
+        {
+          "key": "B",
+          "text": "80 m"
+        },
+        {
+          "key": "C",
+          "text": "160 m"
+        },
+        {
+          "key": "D",
+          "text": "200 m"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The area of the triangle is (1/2) × 4.0 s × 40 m s−1 = 80 m. The same result is s = (1/2)×10×(4.0)^2 = 80 m. Multiplying the final speed by the elapsed time (40 × 4.0 = 160 m) would be correct only if the stone had travelled at 40 m s−1 for the whole interval; instead the average speed from rest is half of the final speed, 20 m s−1, and 20 × 4.0 = 80 m. 40 m is the numerical value of the final speed with units of metres attached. 200 m would correspond to using g = 25 m s−2 or a 5 s drop at this g. The graph’s linearity already encodes constant acceleration from rest.",
+      "distractor_rationales": {
+        "A": "40 m matches the final speed numerically but is not an area. Distance requires integrating v, not reading the last v value as a length.",
+        "C": "160 m is v_final × t, which uses the highest speed as if it applied for all 4 s. The average velocity from rest is 20 m s−1.",
+        "D": "200 m does not match either the triangular area or (1/2)gt^2 with the given g and t."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t1",
+      "type": "discrete",
+      "stem": "A velocity–time graph is a single straight line passing through (0 s, 3.0 m s−1) and (10.0 s, 7.0 m s−1).\n\nPoint | t (s) | v (m s−1)\nStart | 0 | 3.0\nEnd | 10.0 | 7.0\n\nDisplacement is the trapezoidal area under the line. What is the displacement during these 10.0 s?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "30 m"
+        },
+        {
+          "key": "B",
+          "text": "40 m"
+        },
+        {
+          "key": "C",
+          "text": "50 m"
+        },
+        {
+          "key": "D",
+          "text": "70 m"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "For linear v(t) the area is a trapezoid: [(v_i + v_f)/2] × Δt = [(3.0 + 7.0)/2] × 10.0 = 5.0 × 10.0 = 50 m. Equivalently, a = (7.0 − 3.0)/10.0 = 0.40 m s−2 and s = v_i t + (1/2) a t^2 = 3.0×10.0 + 0.5×0.40×100 = 30 + 20 = 50 m. Using only the initial speed gives 30 m. Using only the final speed gives 70 m. Averaging incorrectly as (7 − 3) × 10 or taking 4.0 × 10 = 40 m confuses the change in velocity with the average velocity. Because v stays positive, the displacement equals the path length in this interval.",
+      "distractor_rationales": {
+        "A": "30 m is v_i × t, which would be correct only for constant v = 3.0 m s−1. The object speeds up, adding another 20 m.",
+        "B": "40 m is (Δv) × t or 4.0 × 10, which is not an area under the v–t graph. Average velocity is 5.0 m s−1, not 4.0.",
+        "D": "70 m is v_f × t. That overestimates the area because the object was slower than 7.0 m s−1 for the whole interval."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t1",
+      "type": "discrete",
+      "stem": "An object’s velocity–time graph consists of two horizontal segments:\n\nInterval | v (m s−1)\n0 to 3.0 s | +4.0\n3.0 to 9.0 s | −2.0\n\nNet displacement is the signed area; path length (distance travelled) is the sum of absolute areas. Which pair is correct for 0–9.0 s?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "displacement 24 m; path length 24 m"
+        },
+        {
+          "key": "B",
+          "text": "displacement 0 m; path length 0 m"
+        },
+        {
+          "key": "C",
+          "text": "displacement 12 m; path length 12 m"
+        },
+        {
+          "key": "D",
+          "text": "displacement 0 m; path length 24 m"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The first rectangle has area (+4.0)×3.0 = +12 m. The second has area (−2.0)×6.0 = −12 m. Net displacement is 12 − 12 = 0 m. Path length is |12| + |12| = 24 m. The object goes out 12 m and back 12 m. A zero path length would mean it never moved. If both segments were taken as positive without reversing, both displacement and path would be quoted as 24 m. Keeping only the outbound 12 m as both quantities ignores the return. Signed area and absolute area must be computed separately whenever v changes sign.",
+      "distractor_rationales": {
+        "A": "24 m would be the path length if both areas were added as positive, but then the displacement would still be 0, not 24 m. This option sets both quantities to 24 m.",
+        "B": "Displacement is 0, but the object moved 24 m along its path. Path length is not zero.",
+        "C": "12 m is only the outbound (or only the return) distance. Neither the net displacement nor the full path equals 12 m for the whole 9 s."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t10",
+      "type": "discrete",
+      "stem": "A 512 Hz tuning fork is used to measure wavelength in two media. Wave speed is v = f λ.\n\nMedium | Frequency (Hz) | Measured wavelength (m)\nAir | 512 | 0.670\nWater | 512 | 2.90\n\nWhat is the speed of sound in the air measurement?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "219 m s−1"
+        },
+        {
+          "key": "B",
+          "text": "343 m s−1"
+        },
+        {
+          "key": "C",
+          "text": "512 m s−1"
+        },
+        {
+          "key": "D",
+          "text": "1485 m s−1"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The frequency is the fork frequency in both media; only wavelength and speed change. In air, v = 512 × 0.670. Compute 500 × 0.670 = 335 and 12 × 0.670 = 8.04, so v = 343 m s−1. The water row gives 512 × 2.90 = 1485 m s−1, which is a valid speed of sound in water but is not the air value. 219 m s−1 would be 512 × 0.427 or a mix-up of 0.670 with a two-way path. The frequency in hertz is not itself a speed. The table’s two rows illustrate that the same f produces a longer λ where v is larger.",
+      "distractor_rationales": {
+        "A": "219 m s−1 does not equal f λ for either row. It may come from using a halved wavelength or an incorrect product.",
+        "C": "512 is the frequency in hertz, not a speed. Speed requires multiplying by the measured wavelength.",
+        "D": "1485 m s−1 is f λ in water (512 × 2.90), not the air measurement asked for."
+      },
+      "difficulty_est": 0.33
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t10",
+      "type": "discrete",
+      "stem": "A resonance tube open at both ends is driven by a loudspeaker. Sound speed in the laboratory air is 340 m s−1. Intensity versus driving frequency shows peaks at:\n\nFrequency of intensity peak (Hz)\n200\n400\n600\n800\n\nFor an open pipe, standing-wave frequencies are n v / (2L) with n = 1, 2, 3, … . For a pipe closed at one end they are the odd multiples (2n − 1) v / (4L). What is the length of the tube?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.85 m, an open pipe whose fundamental is 200 Hz."
+        },
+        {
+          "key": "B",
+          "text": "0.43 m, an open pipe whose fundamental is 400 Hz."
+        },
+        {
+          "key": "C",
+          "text": "0.43 m, a closed pipe whose fundamental is 200 Hz."
+        },
+        {
+          "key": "D",
+          "text": "1.70 m, a closed pipe whose fundamental is 100 Hz."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The spectrum contains 200, 400, 600, 800 Hz, i.e. consecutive integer multiples of 200 Hz, including the even harmonics. That pattern is an open pipe with f1 = 200 Hz, so L = v / (2 f1) = 340 / 400 = 0.85 m. A closed pipe of fundamental 200 Hz would show 200, 600, 1000 Hz and would miss 400 and 800. Taking 400 Hz as the fundamental would ignore the observed 200 Hz peak and would give L = 340 / 800 = 0.43 m. A 1.70 m closed pipe would have f1 = v / (4L) = 50 Hz, which is not the observed spacing. The even-harmonic presence is the diagnostic that the tube is open.",
+      "distractor_rationales": {
+        "B": "0.43 m would be L = v / (2 × 400). That treats 400 Hz as the fundamental and cannot account for the 200 Hz peak.",
+        "C": "A closed pipe with f1 = 200 Hz has L = v / (4 × 200) = 0.43 m, but then 400 Hz and 800 Hz would be absent. The table includes those even harmonics.",
+        "D": "1.70 m is v / (200 Hz), which is 2L for an open pipe, not L, and a closed pipe of that length would not produce this harmonic list."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t10",
+      "type": "discrete",
+      "stem": "A small loudspeaker behaves as a point source. Intensity obeys I ∝ 1/r^2. Measurements along a radial line are:\n\nDistance from source r | Intensity I\n2.0 m | 1.80 × 10^−4 W m−2\n6.0 m | (to be determined)\n\nWhat is I at 6.0 m?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "5.40 × 10^−4 W m−2, multiplying by the distance ratio 3."
+        },
+        {
+          "key": "B",
+          "text": "6.00 × 10^−5 W m−2, dividing by the distance ratio 3."
+        },
+        {
+          "key": "C",
+          "text": "2.00 × 10^−5 W m−2, because (2.0/6.0)^2 = 1/9 and (1.80 × 10^−4)/9 = 2.00 × 10^−5."
+        },
+        {
+          "key": "D",
+          "text": "1.62 × 10^−3 W m−2, multiplying by 9 as if intensity increased with r^2."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The radial factor is 6.0/2.0 = 3, so intensity falls by 3^2 = 9. Then I(6 m) = 1.80 × 10^−4 / 9 = 2.00 × 10^−5 W m−2. Inverse-square, not inverse-linear, is the geometric spreading law for a point source in three dimensions. Dividing by 3 instead of 9 leaves I too large by a factor of three (6.00 × 10^−5). Multiplying by 3 would describe intensity increasing with r, and multiplying by 9 would describe intensity growing with area. Both contradict energy conservation for a spherical wave. The stem states I ∝ 1/r^2, so the squared ratio of the tabulated distances is the only scale factor required.",
+      "distractor_rationales": {
+        "A": "Multiplying by 3 treats intensity as increasing with distance. A point source spreads over a larger sphere, so I must fall.",
+        "B": "Dividing by the distance ratio 3 is a 1/r law. Inverse-square requires dividing by 9.",
+        "D": "Intensity of a free spherical wave decreases with r^2; it does not increase. Multiplying by 9 goes in the wrong direction."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t10",
+      "type": "discrete",
+      "stem": "A stationary observer hears a 400 Hz siren. The speed of sound in the air is 340 m s−1. When the source moves directly toward the observer at 30 m s−1, the observed frequency is given by f′ = f × v / (v − vs), where vs is the source speed toward the observer.\n\nQuantity | Value\nf | 400 Hz\nv | 340 m s−1\nvs toward observer | 30 m s−1\n\nWhat frequency does the observer hear?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "367 Hz"
+        },
+        {
+          "key": "B",
+          "text": "439 Hz"
+        },
+        {
+          "key": "C",
+          "text": "400 Hz"
+        },
+        {
+          "key": "D",
+          "text": "477 Hz"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Substitute into the given Doppler formula: f′ = 400 × 340 / (340 − 30) = 400 × 340 / 310. First 340/310 ≈ 1.0968, then 400 × 1.0968 ≈ 439 Hz. Using v + vs in the denominator (340 + 30 = 370) is the receding-source formula and yields 400 × 340/370 ≈ 367 Hz. Leaving the frequency unchanged ignores the approaching source. Putting v + vs in the numerator and v − vs in the denominator (as if both source and observer moved) gives 400 × 370/310 ≈ 477 Hz. The stem specifies a stationary observer and a source moving toward, so only the given f′ = f v / (v − vs) applies.",
+      "distractor_rationales": {
+        "A": "367 Hz is 400 × 340 / 370, the formula for a source receding at 30 m s−1. The source is approaching, so the denominator is 310 m s−1.",
+        "C": "400 Hz would be correct only for a source at rest relative to the air and observer. The 30 m s−1 approach is not negligible compared with 340 m s−1.",
+        "D": "477 Hz is 400 × 370 / 310, which inserts an extra (v + vs) factor appropriate to a moving observer as well. The observer is stationary."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t10",
+      "type": "discrete",
+      "stem": "A microphone records the superposition of two nearby pure tones. A Fourier analysis of a 2.00 s recording lists:\n\nComponent | Frequency (Hz)\nTone 1 | 440\nTone 2 | 436\n\nThe beat frequency is |f1 − f2|. Intensity maxima occur once per beat period. How many loud intensity maxima occur in the 2.00 s recording, and what is the beat frequency?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Beat frequency 4 Hz, so 8 maxima in 2.00 s."
+        },
+        {
+          "key": "B",
+          "text": "Beat frequency 4 Hz, so 4 maxima in 2.00 s."
+        },
+        {
+          "key": "C",
+          "text": "Beat frequency 438 Hz, so 876 maxima in 2.00 s."
+        },
+        {
+          "key": "D",
+          "text": "Beat frequency 876 Hz, so 1752 maxima in 2.00 s."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The beat frequency is |440 − 436| = 4 Hz, so the intensity envelope repeats 4 times each second. In 2.00 s there are 4 × 2.00 = 8 loud maxima. Counting only 4 maxima in 2 s confuses the beat frequency with the number of events in 2 s (forgetting to multiply by the duration). The arithmetic mean 438 Hz is the average of the two tones, not the beat rate. The sum 876 Hz is an upper sideband of a nonlinear mixer, not the slow envelope. The table’s two frequencies are close, which is exactly the condition under which beats are heard as a slow wavering of loudness at the difference frequency.",
+      "distractor_rationales": {
+        "B": "The beat frequency is 4 Hz, but 4 Hz means 4 maxima per second, hence 8 in 2.00 s, not 4. Duration must be multiplied in.",
+        "C": "438 Hz is the mean of 440 and 436. Beats are heard at the difference, not at the average pitch.",
+        "D": "876 Hz is the sum of the two frequencies. The slow loudness variation is the difference 4 Hz, not the sum."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t10",
+      "type": "discrete",
+      "stem": "A taut string is fixed at both ends. Standing-wave wave speed on the string is v = √(T/μ) and the fundamental frequency is f1 = v / (2L). Measured quantities are:\n\nQuantity | Value\nLength L | 0.80 m\nLinear density μ | 5.0 × 10^−4 kg m−1\nTension T | 80 N\n\nWhat is f1?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "125 Hz"
+        },
+        {
+          "key": "B",
+          "text": "200 Hz"
+        },
+        {
+          "key": "C",
+          "text": "250 Hz"
+        },
+        {
+          "key": "D",
+          "text": "500 Hz"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Wave speed is v = √(80 / 5.0 × 10^−4) = √(1.60 × 10^5) = 400 m s−1. The string is fixed at both ends, so the fundamental has λ/2 = L and f1 = v / (2L) = 400 / 1.60 = 250 Hz. Using 4L in the denominator (the closed-pipe formula) gives 125 Hz. Using L instead of 2L gives 500 Hz, which is actually the second harmonic. 200 Hz would require v = 320 m s−1 or L = 1.00 m, neither of which matches the table. The linear density must be in kg m−1; leaving μ in grams would collapse v by √1000 and is not one of the options.",
+      "distractor_rationales": {
+        "A": "125 Hz is v / (4L), the closed-pipe fundamental. A string fixed at both ends uses 2L, like an open pipe.",
+        "B": "200 Hz does not follow from v = 400 m s−1 and L = 0.80 m. It would require a different tension or a 1.0 m string.",
+        "D": "500 Hz is v / L, which is the second harmonic (n = 2) of this string, not the fundamental."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t10",
+      "type": "discrete",
+      "stem": "A resonance tube of length 0.42 m is driven in air of speed 336 m s−1. A spectrum analyser shows intensity peaks only at the frequencies below (no peak is detected at 400 Hz or 800 Hz):\n\nObserved peak (Hz)\n200\n600\n1000\n1400\n\nWhich conclusion is consistent with the data and with v = f λ?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The tube is open at both ends with fundamental 200 Hz, so even harmonics should appear at 400 Hz and 800 Hz."
+        },
+        {
+          "key": "B",
+          "text": "The tube is closed at one end with fundamental 400 Hz; 200 Hz is an artefact."
+        },
+        {
+          "key": "C",
+          "text": "The tube is open at both ends with fundamental 100 Hz; the missing 100 Hz is below the speaker range."
+        },
+        {
+          "key": "D",
+          "text": "The tube is closed at one end: f1 = v / (4L) = 200 Hz, and only odd harmonics 3f1, 5f1, 7f1 appear."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "For a pipe closed at one end, L = λ/4 at the fundamental, so f1 = v / (4L) = 336 / (4 × 0.42) = 336 / 1.68 = 200 Hz. Allowed frequencies are the odd multiples 200, 600, 1000, 1400 Hz, matching the table and explaining the absent 400 Hz and 800 Hz. An open pipe with f1 = 200 Hz would have shown 400 Hz and 800 Hz. Treating 400 Hz as the fundamental contradicts both the 200 Hz peak and L = 0.42 m. An open-pipe fundamental of 100 Hz would produce 200, 300, 400, … including the missing even values. The missing even harmonics are therefore diagnostic of a closed pipe of this length.",
+      "distractor_rationales": {
+        "A": "An open pipe would display the even harmonics 400 Hz and 800 Hz. The analyser found none of those peaks, so the open-pipe assignment is inconsistent with the table.",
+        "B": "A closed-pipe fundamental of 400 Hz would give L = v / (4 × 400) = 0.21 m, not 0.42 m, and would not produce a real 200 Hz resonance.",
+        "C": "An open pipe with f1 = 100 Hz would still produce 300 Hz, 400 Hz, 500 Hz and so on. The spectrum is only odd multiples of 200 Hz."
+      },
+      "difficulty_est": 0.59
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t10",
+      "type": "discrete",
+      "stem": "Sound intensity level in decibels is L = 10 log10(I / I0) with I0 = 1.0 × 10^−12 W m−2. Two measurements at the same frequency are:\n\nLocation | Intensity I (W m−2)\nP | 1.0 × 10^−6\nQ | 1.0 × 10^−4\n\nThe difference is ΔL = LQ − LP = 10 log10(IQ / IP). What is ΔL?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2 dB"
+        },
+        {
+          "key": "B",
+          "text": "20 dB"
+        },
+        {
+          "key": "C",
+          "text": "100 dB"
+        },
+        {
+          "key": "D",
+          "text": "200 dB"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The intensity ratio is (1.0 × 10^−4) / (1.0 × 10^−6) = 100. Then ΔL = 10 log10(100) = 10 × 2 = 20 dB. Equivalently, LP = 10 log10(10^6) = 60 dB and LQ = 10 log10(10^8) = 80 dB, so the difference is 20 dB. Using log10(100) = 2 without the factor of 10 gives 2 dB. Using the ratio 100 itself as a decibel figure gives 100 dB. Using 10 × 100 or confusing log10 with ln can produce 200 dB. The factor of 10 in the definition is required because the bel is 10 times smaller than the decibel scale used here.",
+      "distractor_rationales": {
+        "A": "2 dB is log10(IQ/IP) without multiplying by 10. The definition of L already includes that factor of 10.",
+        "C": "100 dB is the intensity ratio quoted as if it were already in decibels. Decibels are 10 times the log of the ratio, not the ratio itself.",
+        "D": "200 dB would correspond to an intensity ratio of 10^20, far larger than the tabulated factor of 100."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t26",
+      "type": "discrete",
+      "stem": "A dynamics trolley starts from rest. Students plot v^2 (vertical axis, m^2 s−2) against s (horizontal axis, m). The kinematic relation from rest is v^2 = 2 a s, so the graph should be a straight line through the origin with slope 2a. Data with vertical error bars of ±0.4 m^2 s−2 are:\n\ns (m) | v^2 (m^2 s−2)\n0.50 | 3.1 ± 0.4\n1.00 | 5.9 ± 0.4\n1.50 | 9.0 ± 0.4\n2.00 | 12.1 ± 0.4\n\nA least-squares line through the origin has slope 6.0 s−2. What acceleration does that slope imply?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "6.0 m s−2, reading the slope as a rather than as 2a."
+        },
+        {
+          "key": "B",
+          "text": "3.0 m s−2, because slope = 2a so a = 3.0 m s−2."
+        },
+        {
+          "key": "C",
+          "text": "12 m s−2, doubling the slope instead of halving it."
+        },
+        {
+          "key": "D",
+          "text": "0.17 m s−2, taking a = 1 / slope."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The given relation is v^2 = 2 a s, so the plotted slope equals 2a. With slope = 6.0 s−2, a = 3.0 m s−2. Checking a point: at s = 2.00 m, 2 a s = 2 × 3.0 × 2.00 = 12.0, which lies on 12.1 ± 0.4. Identifying a with the slope itself (6.0) forgets the factor of 2. Doubling the slope would be appropriate only if someone wrote a = 2 × slope. The reciprocal of the slope is not acceleration. All four tabulated points lie on v^2 = 6.0 s to within the stated error bars, so the line is a fair summary of the experiment.",
+      "distractor_rationales": {
+        "A": "The slope of v^2 versus s is 2a, not a. Using 6.0 m s−2 as the acceleration double-counts nothing; it simply forgets to divide by 2.",
+        "C": "Doubling 6.0 would be 2 × (2a) = 4a. The algebra requires dividing the slope by 2.",
+        "D": "1/slope has units of seconds squared, not m s−2. Acceleration is not the reciprocal of this graph’s slope."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t26",
+      "type": "discrete",
+      "stem": "Five (x, y) measurements are plotted with vertical error bars of ±0.40 (same units as y):\n\nx | y\n1.0 | 2.0 ± 0.40\n2.0 | 4.1 ± 0.40\n3.0 | 5.9 ± 0.40\n4.0 | 8.1 ± 0.40\n5.0 | 10.2 ± 0.40\n\nA proposed model is a straight line through the origin, y = m x. Which line is consistent with every error bar?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "y = 2.0 x, because each predicted y lies within the corresponding error bar."
+        },
+        {
+          "key": "B",
+          "text": "y = 2.5 x, from taking 10.2 / 4.0 ≈ 2.5 as if the last point were at x = 4.0 and ignoring the error bars."
+        },
+        {
+          "key": "C",
+          "text": "y = 1.5 x, because it undershoots less severely than 2.5 x at x = 5."
+        },
+        {
+          "key": "D",
+          "text": "y = 0 x + 6, a horizontal line through the middle of the y range."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "For y = 2.0 x the predictions are 2.0, 4.0, 6.0, 8.0 and 10.0. Residuals relative to the table are 0.0, +0.1, −0.1, +0.1 and +0.2, all smaller than the ±0.40 error bars, so every point is consistent. For y = 2.5 x, the prediction at x = 5.0 is 12.5, whereas 10.2 + 0.40 = 10.6, so that point (and several others) lie well outside the bars. For y = 1.5 x, the prediction at x = 5.0 is 7.5 versus 10.2 − 0.40 = 9.8, also outside. A horizontal line y = 6 misses the first and last points by far more than 0.40. Error bars, not a single end-point ratio, decide whether a line is acceptable.",
+      "distractor_rationales": {
+        "B": "y = 2.5 x predicts 12.5 at x = 5, which is 2.3 units above 10.2, many times the 0.40 error bar. Overestimating the slope is not a conservative fit.",
+        "C": "y = 1.5 x undershoots the large-x points by more than the error bars (7.5 versus 10.2 ± 0.40). A smaller slope is not automatically safer.",
+        "D": "A horizontal line denies any x-dependence. The table shows y increasing by about 2 per unit x, far outside a ±0.40 band around 6 at both ends."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t26",
+      "type": "discrete",
+      "stem": "A spring is stretched by hanging masses. Force F is plotted against extension x. Hooke’s law is F = k x, so the slope of a graph of F (N) versus x (m) is the spring constant k.\n\nx (m) | F (N)\n0.000 | 0.02 ± 0.04\n0.020 | 1.02 ± 0.04\n0.040 | 2.02 ± 0.04\n0.060 | 3.02 ± 0.04\n\nUsing the change from the first to the last reliable point, what is k?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.050 N m−1, if x were left in millimetres in the denominator."
+        },
+        {
+          "key": "B",
+          "text": "3.0 N m−1, using ΔF / 1 rather than Δx."
+        },
+        {
+          "key": "C",
+          "text": "50 N m−1, because ΔF / Δx = 3.00 N / 0.060 m = 50 N m−1."
+        },
+        {
+          "key": "D",
+          "text": "0.020 m N−1, the reciprocal of the slope (the compliance)."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "From x = 0.000 to 0.060 m, F rises from 0.02 N to 3.02 N, so ΔF = 3.00 N and Δx = 0.060 m. Then k = 3.00 / 0.060 = 50 N m−1. The same slope is (1.02 − 0.02)/0.020 = 50 N m−1 between neighbouring points, so the graph is linear. The intercept 0.02 N is consistent with zero within the ±0.04 N error, so there is no significant preload. If millimetres were used accidentally (Δx = 60), k would appear 1000 times too small (0.050). The reciprocal 0.020 m N−1 is 1/k, which is not what the question asked. ΔF without dividing by Δx is not a spring constant.",
+      "distractor_rationales": {
+        "A": "0.050 N m−1 is 3.00 / 60, i.e. treating 0.060 m as 60 (millimetres) without converting. SI units require metres in F = k x.",
+        "B": "3.0 N is a force difference, not a slope. Spring constant is force per unit extension.",
+        "D": "0.020 m N−1 is 1/k. That is the compliance, useful in some analyses, but the question asked for k from the F–x slope."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t26",
+      "type": "discrete",
+      "stem": "A simple pendulum obeys T = 2π √(L/g), which rearranges to T^2 = (4π^2 / g) L. Students plot T^2 (s^2) against L (m) and obtain a straight line through the origin. Their best-fit slope is 4.02 s^2 m−1. Take 4π^2 = 39.5.\n\nL (m) | T^2 (s^2)\n0.200 | 0.805\n0.400 | 1.61\n0.600 | 2.41\n0.800 | 3.22\n\nWhat value of g follows from the stated slope?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "9.8 m s−2, because g = 4π^2 / slope = 39.5 / 4.02 ≈ 9.83 m s−2."
+        },
+        {
+          "key": "B",
+          "text": "4.02 m s−2, reading the slope as g."
+        },
+        {
+          "key": "C",
+          "text": "39.5 m s−2, quoting 4π^2 as if it were g."
+        },
+        {
+          "key": "D",
+          "text": "0.10 m s−2, using g = slope / 4π^2 ≈ 4.02 / 39.5."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The slope of T^2 versus L is 4π^2 / g. Solving for g gives g = 4π^2 / slope = 39.5 / 4.02. Compute 39.5 / 4.00 = 9.875 and adjust slightly: 39.5 / 4.02 ≈ 9.83 m s−2, which rounds to 9.8 m s−2 at the precision of these options. The tabulated T^2 / L ratios are 4.03, 4.03, 4.02 and 4.03 s^2 m−1, confirming the quoted slope. Identifying g with the slope ignores the 4π^2 factor. Inverting the algebra (slope / 4π^2) gives about 0.10, which is not an acceleration. The intercept is consistent with zero, as required when T = 0 at L = 0.",
+      "distractor_rationales": {
+        "B": "The slope equals 4π^2 / g, approximately 4.0 s^2 m−1 on Earth, not g itself. g is about 9.8 m s−2.",
+        "C": "39.5 is 4π^2 (dimensionless here as s^2 m−1 × m s−2). It is not an experimental value of g.",
+        "D": "g = 4π^2 / slope, not slope / 4π^2. The latter is about 0.102 s^4 m−1, which is not an acceleration."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t26",
+      "type": "discrete",
+      "stem": "A beam of radiation is absorbed according to I = I0 e^{−μ x}. Taking the natural log gives ln I = ln I0 − μ x, so a graph of ln I versus x is linear with slope −μ. Count rates versus absorber thickness are:\n\nx (cm) | I (counts s−1)\n0.0 | 800\n2.0 | 400\n4.0 | 200\n6.0 | 100\n\nWhat is μ?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.50 cm−1, using (800 − 100) / 6.0 from the raw I–x table."
+        },
+        {
+          "key": "B",
+          "text": "2.0 cm−1, the half-thickness itself treated as μ."
+        },
+        {
+          "key": "C",
+          "text": "0.347 cm−1, because I halves every 2.0 cm and μ = ln 2 / 2.0 cm."
+        },
+        {
+          "key": "D",
+          "text": "0.125 cm−1, using 100/800 divided by 6.0."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Each additional 2.0 cm of absorber halves the count rate, so the half-thickness x1/2 = 2.0 cm. Then I / I0 = 1/2 = e^{−μ x1/2}, hence μ = ln 2 / x1/2 = 0.693 / 2.0 = 0.347 cm−1. Equivalently, from x = 0 to 6.0 cm there are three halvings, I / I0 = 1/8, ln(I0/I) = ln 8 = 2.079, μ = 2.079 / 6.0 = 0.347 cm−1. The raw I-versus-x graph is exponential, not linear, so (ΔI)/Δx is not μ. The half-thickness is 2.0 cm, which is not the value of μ. A linear fit must be performed on ln I versus x, whose slope is −0.347 cm−1.",
+      "distractor_rationales": {
+        "A": "Subtracting raw counts and dividing by thickness treats an exponential as a straight line. μ comes from the slope of ln I versus x, not of I versus x.",
+        "B": "2.0 cm is the half-thickness, whose unit is length. μ is ln 2 divided by that length, about 0.35 cm−1.",
+        "D": "100/800 = 0.125 is I(6 cm)/I0, not a value of μ. Dividing that fraction by 6.0 cm also has the wrong algebra for an exponential."
+      },
+      "difficulty_est": 0.56
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t26",
+      "type": "discrete",
+      "stem": "g is to be found from T = 2π √(L/g), so g = 4π^2 L / T^2. The length L is known to 0.10% and may be treated as exact compared with the timing error. A student times one oscillation as T = 2.00 ± 0.10 s.\n\nQuantity | Value | Relative uncertainty\nL | 1.000 m | 0.10% (neglect)\nT | 2.00 ± 0.10 s | 0.10 / 2.00 = 5.0%\n\nRelative uncertainty in a power is the exponent times the relative uncertainty of the base, so δg/g ≈ 2 (δT / T). What is the percentage uncertainty in g?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "5.0%"
+        },
+        {
+          "key": "B",
+          "text": "10%"
+        },
+        {
+          "key": "C",
+          "text": "2.5%"
+        },
+        {
+          "key": "D",
+          "text": "25%"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Because g ∝ 1/T^2, the relative uncertainty doubles: δg/g = 2 × 5.0% = 10%. The 0.10% length error is negligible beside 10%. Using 5.0% copies the timing uncertainty without the exponent 2. Halving 5.0% as if g ∝ √T is the wrong power. Squaring 5% to get 25% confuses the propagation rule (multiply the relative error by the exponent) with squaring the percentage itself. The large timing uncertainty on a single oscillation is why one would instead time many oscillations: timing 25 periods as 50.0 ± 0.10 s would cut δT/T by 25 and the uncertainty in g dramatically.",
+      "distractor_rationales": {
+        "A": "5.0% is δT/T. Because T is squared in the denominator of g, that figure must be doubled.",
+        "C": "2.5% would be appropriate if g depended on √T, but g goes as 1/T^2, which increases rather than reduces the relative error.",
+        "D": "25% is (5%)^2 treated as a percentage. Error propagation uses 2 × 5%, not (5%)^2."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t26",
+      "type": "discrete",
+      "stem": "An object starts from rest with constant acceleration a. Then s = (1/2) a t^2. Four timings are:\n\nt (s) | s (m)\n1.0 | 2.0\n2.0 | 8.0\n3.0 | 18\n4.0 | 32\n\nWhich graph is linear, and what acceleration does its slope give?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "s versus t is linear with slope 8.0 m s−1, so a = 8.0 m s−2."
+        },
+        {
+          "key": "B",
+          "text": "s versus t is linear with slope 2.0 m s−1, so a = 4.0 m s−2."
+        },
+        {
+          "key": "C",
+          "text": "s versus t^2 is linear with slope 8.0 m s−2, so a = 8.0 m s−2."
+        },
+        {
+          "key": "D",
+          "text": "s versus t^2 is linear with slope 2.0 m s−2, so a = 4.0 m s−2 because slope = a/2."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Check s / t^2: 2.0/1 = 2.0, 8.0/4 = 2.0, 18/9 = 2.0, 32/16 = 2.0 m s−2 at every row. Therefore s = 2.0 t^2, which is a straight line of slope 2.0 m s−2 when s is plotted against t^2. Comparing with s = (1/2) a t^2 gives a/2 = 2.0, so a = 4.0 m s−2. A plot of s versus t is a parabola (2, 8, 18, 32 m at equal time steps), not a straight line. Taking the last-over-first slope (32 − 2)/(4 − 1) ≈ 10 m s−1 is not a. Using slope = a instead of a/2 on the t^2 graph would report 2.0 m s−2, which is not among the options that pair the correct graph with a = 4.0 m s−2 except D.",
+      "distractor_rationales": {
+        "A": "s versus t is not linear: the successive s values 2, 8, 18, 32 are not in arithmetic sequence. Constant a produces a parabola on an s–t graph.",
+        "B": "s versus t is parabolic, not linear. A slope of 2.0 m s−1 also does not match the tabulated Δs/Δt values, which increase with t.",
+        "C": "s versus t^2 is linear, but its slope is 2.0 m s−2, not 8.0. Even if the slope were 8, that would be a/2, implying a = 16 m s−2, not 8."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t26",
+      "type": "discrete",
+      "stem": "Resistance is computed from R = V / I. Independent absolute uncertainties add in quadrature or, as a standard school-level rule used here, relative uncertainties add: δR/R = δV/V + δI/I.\n\nReading | Value | Absolute uncertainty | Relative uncertainty\nV | 12.0 V | 0.3 V | 0.3/12.0 = 2.5%\nI | 2.00 A | 0.10 A | 0.10/2.00 = 5.0%\n\nWhat should be reported for R?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "6.00 ± 0.15 Ω, using only the 2.5% voltage uncertainty."
+        },
+        {
+          "key": "B",
+          "text": "6.00 ± 0.30 Ω, using only the 5.0% current uncertainty."
+        },
+        {
+          "key": "C",
+          "text": "6.00 ± 0.45 Ω, because 2.5% + 5.0% = 7.5% and 0.075 × 6.00 = 0.45 Ω."
+        },
+        {
+          "key": "D",
+          "text": "6.00 ± 0.75 Ω, multiplying the percentages (2.5% × 5.0% is not the combination rule)."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "R = 12.0 / 2.00 = 6.00 Ω. Adding the given relative uncertainties produces 2.5% + 5.0% = 7.5%. Then δR = 0.075 × 6.00 = 0.45 Ω, so R = 6.00 ± 0.45 Ω. Using only one of the two contributions underestimates the uncertainty. Multiplying 2.5% by 5.0% gives 0.125%, or if the percentages are multiplied as 12.5% one gets 0.75 Ω; neither is the sum rule stated in the stem. Adding the absolute 0.3 V and 0.10 A would mix volts with amperes and is not how a quotient is combined. The current’s 5% dominates, but the voltage’s 2.5% is still required in the sum.",
+      "distractor_rationales": {
+        "A": "2.5% of 6.00 Ω is 0.15 Ω, which ignores the larger current uncertainty. Both relative errors must be added for a quotient.",
+        "B": "5.0% of 6.00 Ω is 0.30 Ω, which ignores the voltage uncertainty. The stem’s rule adds both relative contributions.",
+        "D": "0.75 Ω corresponds to 12.5%, as if the percentages were multiplied. The stated rule is to add 2.5% and 5.0%."
+      },
+      "difficulty_est": 0.49
+    }
+  ]
+}

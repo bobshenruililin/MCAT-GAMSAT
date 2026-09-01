@@ -1,0 +1,1523 @@
+{
+  "items": [
+    {
+      "concept_id": "MCAT.FC6.6C.t1",
+      "type": "discrete",
+      "stem": "A spinal-injury clinic re-interviews adults who had complete thoracic transection years earlier. Compared with their own pre-injury descriptions, patients still classify scenes as frightening or funny, but they say the “heat” of those feelings is weaker, especially for states that used to come with a pounding heart. Autonomic recordings below the lesion are flat. Which theory most directly predicts the drop in felt intensity?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "James–Lange theory, because the feeling of emotion depends on detecting bodily change"
+        },
+        {
+          "key": "B",
+          "text": "Cannon–Bard theory, because experience is fully independent of the body, so intensity cannot fall"
+        },
+        {
+          "key": "C",
+          "text": "Schachter–Singer theory, because a missing body makes any situational label impossible"
+        },
+        {
+          "key": "D",
+          "text": "Opponent-process theory, because every emotion automatically elicits its opposite and cancels intensity"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "James–Lange theory treats conscious emotion as perception of bodily change, including visceral and autonomic feedback that travels in part through the spinal cord. Interrupting that afferent traffic should therefore blunt intensity even when the person can still identify the situation as frightening or amusing. Cannon–Bard theory instead treats the feeling as a parallel central event and does not predict this selective dulling after deafferentation. Two-factor theory emphasizes labeling of unexplained arousal rather than loss of spinal feedback. Opponent-process theory concerns sequential opposite emotions, not bodily deafferentation.",
+      "distractor_rationales": {
+        "B": "Cannon–Bard holds that feeling and physiology are triggered together by a central process, so cutting spinal autonomic traffic should not systematically weaken the feeling.",
+        "C": "Two-factor theory does not claim that a spinal lesion makes labeling impossible; people can still use context. It also does not uniquely predict intensity loss after transection.",
+        "D": "Opponent-process theory describes a later opposite reaction (for example, relief after fear), not a requirement for intact viscera."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC6.6C.t1",
+      "type": "discrete",
+      "stem": "In a laboratory replication of the classic epinephrine waiting-room study, students receive either epinephrine or saline. Half of the epinephrine group is correctly warned about palpitations and tremor; half is told the shot is inert. Each student then waits with a confederate who acts either euphoric or angry. Which group should give emotion ratings that most closely match the confederate’s mood?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Informed epinephrine participants, because an accurate drug label maximizes emotional matching"
+        },
+        {
+          "key": "B",
+          "text": "Uninformed epinephrine participants, because unexplained arousal is attributed using the waiting-room cue"
+        },
+        {
+          "key": "C",
+          "text": "Saline participants, because only placebo arousal can be misattributed to a social cue"
+        },
+        {
+          "key": "D",
+          "text": "All epinephrine participants equally, because catecholamine level fixes the quality of emotion"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Schachter–Singer two-factor theory says an emotion is unexplained physiological arousal plus a cognitive label drawn from context. Uninformed epinephrine subjects have a real sympathetic surge they cannot credit to the injection, so they interpret it as euphoria or anger depending on the confederate. Informed subjects already have a sufficient explanation (the drug) and therefore have less need to use the social cue. Saline subjects lack the extra arousal. Catecholamines can intensify arousal, but they do not by themselves select the quality of the feeling.",
+      "distractor_rationales": {
+        "A": "A correct explanation of palpitations reduces, rather than increases, the need to borrow an emotion label from the confederate.",
+        "C": "Saline produces little extra arousal to misattribute, so matching should be weaker, not stronger, than in the uninformed drug group.",
+        "D": "Two-factor theory denies that a catecholamine level by itself determines whether one feels anger versus euphoria; the cognitive label does that work."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "MCAT.FC6.6C.t1",
+      "type": "discrete",
+      "stem": "A lab presents a sudden loud noise while recording a startle blink and a continuous self-report dial of fear. Felt fear and the blink both begin within a few hundred milliseconds, and neither measure reliably precedes the other. Palmar skin-conductance change lags by one to two seconds. Which theory is most consistent with near-simultaneity of feeling and the fast motor sign, and with the slowness of the viscera?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "James–Lange theory, which requires that visceral change be perceived before any feeling can start"
+        },
+        {
+          "key": "B",
+          "text": "Opponent-process theory, which requires a delayed opposite emotion before fear is reported"
+        },
+        {
+          "key": "C",
+          "text": "Cannon–Bard theory, which holds that a central process triggers experience and bodily responses together, so slow viscera cannot be the source of the feeling"
+        },
+        {
+          "key": "D",
+          "text": "Schachter–Singer theory, which requires a waiting-room confederate to assign a label before feeling can start"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Cannon argued that the viscera are too slow and too undifferentiated to be the origin of distinct, rapidly felt emotions. Cannon–Bard theory therefore places a central (thalamic) process that simultaneously generates the conscious feeling and the bodily pattern. Fast coincidence of reported fear and a motor sign, with skin conductance trailing, matches that architecture and undercuts a strictly visceral James–Lange sequence. Opponent-process theory is about a later opposite state, not latency of the first feeling. Two-factor theory is an arousal-plus-label account and does not require a confederate for every fear episode.",
+      "distractor_rationales": {
+        "A": "A visceral-first James–Lange sequence is strained when feeling begins before, or without waiting for, the slow skin-conductance change.",
+        "B": "Opponent-process theory predicts a subsequent opposite feeling (for example, relief), not that fear itself must be delayed until an opposite appears.",
+        "D": "Schachter–Singer theory uses context to label unexplained arousal; it does not require a confederate before any fear can be felt in a startle paradigm."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC6.6C.t1",
+      "type": "discrete",
+      "stem": "Ethnographers film posed and spontaneous faces of anger, fear, disgust, happiness, sadness, and surprise in a highland community with little exposure to global media. University students on another continent label still frames at well above chance, although they mis-rank how intense the sitters felt. Which conclusion is most justified?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Display rules are identical worldwide, so intensity rankings should have matched as well as category labels"
+        },
+        {
+          "key": "B",
+          "text": "The result shows that language, not biology, creates the six categories, because the raters used English emotion words"
+        },
+        {
+          "key": "C",
+          "text": "Only happiness is conserved; the other five expressions must have been taught by outsiders"
+        },
+        {
+          "key": "D",
+          "text": "A small set of facial emotion signals is recognized across cultures, consistent with a universal-emotions account, while judged intensity may still be culturally scaled"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Cross-cultural recognition of a small set of facial configurations is the core evidence associated with Ekman’s universal-emotions claim. Above-chance labeling by distant raters of faces produced in an isolated community supports conservation of those signals. Display rules and scaling of intensity can still differ by culture, so mismatched intensity rankings do not cancel the categorical recognition result. Use of English response options is a measurement detail, not proof that the facial signals themselves are linguistic inventions. Restricting universality to happiness alone contradicts the six-category recognition pattern described.",
+      "distractor_rationales": {
+        "A": "Universal recognition of categories does not imply identical display rules or identical intensity scales; those can vary even when the facial prototypes are shared.",
+        "B": "Raters must use some lexicon; that does not show the facial configurations are created by English rather than being widely recognizable signals.",
+        "C": "The data cover six categories above chance, not happiness alone, so a happiness-only universality claim is too narrow."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC6.6C.t1",
+      "type": "discrete",
+      "stem": "Patient S.M. has bilateral amygdala calcification. In delay fear conditioning she shows little potentiation of startle to a colored light that predicts a blast of noise, yet she can later describe the light–noise pairing. A comparison patient with hippocampal damage shows the reverse: intact startle potentiation but no declarative memory of the pairing. Which mapping is best?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The amygdala is required for implicit fear learning; the hippocampus is required for declarative memory of the episode"
+        },
+        {
+          "key": "B",
+          "text": "The amygdala stores the explicit narrative; the hippocampus stores the conditioned fear reflex"
+        },
+        {
+          "key": "C",
+          "text": "Either lesion abolishes all emotion, so the double dissociation must be a measurement artifact"
+        },
+        {
+          "key": "D",
+          "text": "An amygdala lesion should spare fear conditioning and impair only language, which is not what was found"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The limbic amygdala is central to assigning affective value and supporting Pavlovian fear conditioning, which is expressed as startle potentiation or similar implicit measures. The hippocampus supports forming a declarative record of what happened. A double dissociation of the kind described is the standard mapping in affective neuroscience and in MCAT-level limbic-system teaching: amygdala damage hits the fear response while leaving the story intact, and hippocampal damage hits the story while leaving the conditioned response intact. Swapping those roles, or claiming that any limbic lesion wipes out all emotion and language, contradicts the split.",
+      "distractor_rationales": {
+        "B": "This swaps the functions: narratives are hippocampal, not amygdalar, in this design; the reflex-like fear response tracks the amygdala.",
+        "C": "The point of the dissociation is that emotion-related learning and declarative memory can come apart; it is not evidence that both systems failed.",
+        "D": "Amygdala damage is predicted to impair fear conditioning, which is exactly the deficit described for S.M."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "MCAT.FC6.6C.t1",
+      "type": "discrete",
+      "stem": "Participants hold a pen either in the teeth, which recruits smile muscles, or in the lips, which prevents a smile, while rating cartoons. They cannot see their own faces, and autonomic recordings do not differ between conditions. Cartoon ratings are higher in the teeth condition. The result most directly implicates which claim about emotion’s components?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Pure autonomic arousal is sufficient, because a pen cannot affect the face"
+        },
+        {
+          "key": "B",
+          "text": "The behavioral/expressive component can feed back onto the subjective component, as in a facial-feedback account"
+        },
+        {
+          "key": "C",
+          "text": "Unexplained epinephrine was labeled using a confederate, as required by Schachter–Singer theory"
+        },
+        {
+          "key": "D",
+          "text": "Universal-emotion recognition of another person’s face is required, so an audience must have been present"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Emotion is typically parsed into physiological, behavioral/expressive, and cognitive/subjective components that can influence one another. Forcing a smile-like contraction without a visible audience and without a change in autonomic arousal isolates the expressive component. Higher amusement ratings then indicate feedback from face to feeling, the facial-feedback hypothesis. The design does not manipulate epinephrine or a confederate, and it does not require recognizing someone else’s expression. Autonomic sufficiency is ruled out if recordings are matched across conditions.",
+      "distractor_rationales": {
+        "A": "Matched autonomic recordings mean arousal was not the manipulated cause; the pen posture was.",
+        "C": "No unexplained drug arousal and no mood confederate were described, so two-factor misattribution is not the mechanism under test.",
+        "D": "Participants could not see their own faces and no audience is required for a facial-feedback effect on one’s own ratings."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC6.6C.t1",
+      "type": "discrete",
+      "stem": "Two groups run in place for 60 seconds so that heart rate is equally elevated, then immediately watch either a comedy clip or a horror clip. Comedy viewers report amusement; horror viewers report fear, despite matched residual arousal. Which theory most cleanly accounts for the divergence?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "James–Lange theory, because equal heart rate must produce identical feelings"
+        },
+        {
+          "key": "B",
+          "text": "Cannon–Bard theory, because running already produced a thalamic emotion, so the films cannot change reports"
+        },
+        {
+          "key": "C",
+          "text": "Schachter–Singer two-factor theory: comparable residual arousal is labeled using the clip’s context"
+        },
+        {
+          "key": "D",
+          "text": "Selye’s general adaptation syndrome: amusement is the alarm stage and fear is the exhaustion stage"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "When residual arousal is experimentally equated, James–Lange reasoning that distinct feelings require distinct bodily signatures has little to work with. Two-factor theory predicts that the same leftover sympathetic activation will be experienced as different emotions once it is interpreted against different situational cues—the comedy versus horror clip. Cannon–Bard theory does not claim that a prior bout of running freezes later emotional quality so that films are irrelevant. GAS stages describe a time course of stress physiology, not a mapping of amusement onto alarm and fear onto exhaustion.",
+      "distractor_rationales": {
+        "A": "Equal heart rate with unequal reports is a problem for a strictly visceral James–Lange account, not support for it.",
+        "B": "Cannon–Bard allows later stimuli to drive new central emotional events; it does not predict that films are powerless after exercise.",
+        "D": "GAS is a stress-response sequence, not a theory that assigns film genres to alarm versus exhaustion."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "MCAT.FC6.6C.t2",
+      "type": "discrete",
+      "stem": "Medical students give serial morning samples during a six-week examination block. In week 1, catecholamines and cortisol surge and sleep collapses. In weeks 2–5, cortisol stays high but exam performance recovers. In the week after finals, several students develop viral illness and show blunted cortisol reactivity to a laboratory speech. Which general-adaptation-syndrome sequence is illustrated?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Exhaustion, then alarm, then resistance, because the illnesses came at the end of the term"
+        },
+        {
+          "key": "B",
+          "text": "Resistance only; later infection shows they never mounted a stress response"
+        },
+        {
+          "key": "C",
+          "text": "Primary then secondary appraisal, which are the named stages of GAS"
+        },
+        {
+          "key": "D",
+          "text": "Alarm (acute surge), resistance (sustained high cortisol with recovered function), then exhaustion (illness and hyporeactivity)"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Selye’s general adaptation syndrome orders the organism’s response to a persistent stressor as alarm, resistance, and exhaustion. The first week’s catecholamine and cortisol spike with functional disruption is alarm. Continued glucocorticoid elevation with restored performance is resistance. Later infection and blunted reactivity fit exhaustion, when adaptive systems are depleted or dysregulated. Appraisal terms come from Lazarus, not from GAS stage names. Reversing the order, or treating infection as proof that no stress response occurred, misreads the timeline in the stem.",
+      "distractor_rationales": {
+        "A": "Illness after prolonged demand is the last stage, not the first; alarm is the initial surge.",
+        "B": "A documented catecholamine and cortisol surge is a mounted stress response; later illness does not erase it.",
+        "C": "Primary and secondary appraisal are Lazarus’s cognitive steps, not Selye’s GAS stages."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC6.6C.t2",
+      "type": "discrete",
+      "stem": "A junior resident is handed an unfamiliar role in a code. She first judges the event as a threat to the patient’s life and to her reputation. She then asks whether she has the skills, attending backup, and time to manage it. According to Lazarus, these two judgments are:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Primary appraisal of stakes (threat) followed by secondary appraisal of coping resources"
+        },
+        {
+          "key": "B",
+          "text": "Secondary appraisal of harm followed by primary appraisal of challenge, which must occur in that order"
+        },
+        {
+          "key": "C",
+          "text": "The alarm and resistance stages of the general adaptation syndrome"
+        },
+        {
+          "key": "D",
+          "text": "Problem-focused coping then emotion-focused coping, which are mandatory sequential stages"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Lazarus distinguishes how a person construes what is at stake from how the person construes what can be done. Primary appraisal classifies an encounter as irrelevant, benign-positive, or stressful (harm/loss, threat, or challenge). Secondary appraisal evaluates coping options and resources. The resident’s first judgment is about threat to valued ends; the second is about skills and backup. GAS stages are physiological, not these two cognitive steps. Coping styles are attempts to manage the stressor after appraisal, not the names of the two appraisals.",
+      "distractor_rationales": {
+        "B": "The first judgment is about stakes (primary), not resources; reversing the labels and forcing harm-then-challenge as a law misstates the model.",
+        "C": "Alarm and resistance are Selye’s physiological stages, not Lazarus’s appraisal steps.",
+        "D": "Problem- and emotion-focused coping are strategies, not a required two-step sequence that replaces appraisal."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC6.6C.t2",
+      "type": "discrete",
+      "stem": "After a hurricane, Cohort H reports acute terror during the storm. Cohort D reports a divorce in the same month and no storm exposure. Cohort N reports years of traffic, noisy neighbors, and crowding with no discrete disaster. All three complete the same allostatic-load battery. Which statement is most accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Only catastrophes engage the HPA axis; daily hassles are opinions without physiology"
+        },
+        {
+          "key": "B",
+          "text": "Catastrophes, significant life changes, and chronic daily hassles can all raise allostatic load; persistent hassles often track symptoms as strongly as major events"
+        },
+        {
+          "key": "C",
+          "text": "Chosen life changes cannot be stressors, so Cohort D should look like unstressed controls"
+        },
+        {
+          "key": "D",
+          "text": "Ambient noise is ignored by sympathetic systems unless it is first labeled a challenge"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "MCAT-level stress taxonomy groups stressors as catastrophes, significant life changes, and daily hassles (including ambient strains). Each class can activate sympathetic and HPA systems and accumulate as allostatic load. Chronic hassles are not physiologically trivial; they often predict somatic symptoms as well as or better than a single dramatic event because of their duration. Appraising a divorce as chosen does not remove it from the life-change category. Ambient stressors can drive physiology even when they are not framed as an exciting challenge.",
+      "distractor_rationales": {
+        "A": "Hassles can activate stress physiology; they are not merely cognitive opinions.",
+        "C": "Even intended transitions (divorce, job change) are classic significant life-change stressors.",
+        "D": "Challenge is one primary-appraisal outcome, not a gate that ambient stressors must pass before the SAM axis can respond."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC6.6C.t2",
+      "type": "discrete",
+      "stem": "In a Trier Social Stress Test, salivary α-amylase, a sympathetic marker, peaks within minutes of a judged speech, whereas salivary cortisol peaks about twenty minutes after the speech ends. Which physiological account is best?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cortisol is always released first because the adrenal cortex fires before the medulla"
+        },
+        {
+          "key": "B",
+          "text": "Both peaks are produced by the same postganglionic acetylcholine release at the heart, so they must coincide"
+        },
+        {
+          "key": "C",
+          "text": "The sympathetic–adrenal-medullary axis releases catecholamines rapidly, while the HPA axis releases cortisol more slowly after CRH and ACTH"
+        },
+        {
+          "key": "D",
+          "text": "The cortisol lag proves the speech was appraised as irrelevant and therefore not a stressor"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Acute psychosocial threat rapidly engages the sympathetic–adrenal-medullary axis, raising catecholamines and markers such as salivary α-amylase within minutes. The hypothalamic–pituitary–adrenal cascade requires hypothalamic CRH, pituitary ACTH, and then adrenocortical cortisol, so the glucocorticoid peak is slower, often on the order of tens of minutes in saliva. The cortex-first claim reverses adrenal anatomy and timing. Cardiac acetylcholine does not generate the cortisol curve. A cortisol rise is evidence that the HPA axis treated the speech as a stressor, not as an irrelevant event.",
+      "distractor_rationales": {
+        "A": "Medullary catecholamines are faster than cortical cortisol; the stem’s amylase-then-cortisol order matches that, not a cortex-first rule.",
+        "B": "Cortisol is an endocrine HPA product, not a burst of cardiac acetylcholine, so the peaks need not coincide.",
+        "D": "A delayed cortisol peak is the expected HPA time course for a stressor, not a sign that the event was appraised as irrelevant."
+      },
+      "difficulty_est": 0.49
+    },
+    {
+      "concept_id": "MCAT.FC6.6C.t2",
+      "type": "discrete",
+      "stem": "Two patients receive the same cancer diagnosis. Patient A immediately schedules second opinions, organizes a medication list, and asks about trial eligibility. Patient B uses humor and a support group and does not change the oncologist’s plan. Relative to Lazarus and Folkman, these approaches are:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Alarm versus exhaustion stages of GAS"
+        },
+        {
+          "key": "B",
+          "text": "Primary versus secondary appraisal of the tumor"
+        },
+        {
+          "key": "C",
+          "text": "Internal versus external social identity as a patient"
+        },
+        {
+          "key": "D",
+          "text": "Problem-focused versus emotion-focused coping, either of which can be adaptive depending on controllability"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Coping is the effort to manage a stressor after it has been appraised. Problem-focused coping aims at the situation itself (information, treatment choices). Emotion-focused coping aims at the distress (humor, social support) without necessarily altering the medical plan. Both can be useful: problem-focused strategies fit controllable aspects of care, while emotion-focused strategies fit aspects that cannot be immediately changed. These are not GAS stages, not the two appraisal questions, and not identity labels.",
+      "distractor_rationales": {
+        "A": "GAS stages describe a physiological time course, not two patients’ coping styles on the same day.",
+        "B": "Appraisal is the judgment of stakes and resources; the stem describes what they do afterward.",
+        "C": "Social identity is a self-categorization topic, not the problem- versus emotion-focused distinction."
+      },
+      "difficulty_est": 0.35
+    },
+    {
+      "concept_id": "MCAT.FC6.6C.t2",
+      "type": "discrete",
+      "stem": "In a conceptual replication of Seligman’s inescapable-shock work, undergraduates first face either solvable or unsolvable anagrams. Later, both groups receive a new set of solvable puzzles. The unsolvable-first group initiates fewer attempts and quits sooner even though escape is now possible. This behavioral pattern is best classified as:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Learned helplessness, a behavioral response to uncontrollable stress"
+        },
+        {
+          "key": "B",
+          "text": "Problem-focused coping that conserves energy for a later, better task"
+        },
+        {
+          "key": "C",
+          "text": "Resistance-stage adaptation that should improve subsequent performance"
+        },
+        {
+          "key": "D",
+          "text": "Social loafing, because another student sits in the same room"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Learned helplessness is the finding that organisms exposed to outcomes they cannot control later fail to use control when it becomes available. Unsolvable anagrams are an uncontrollable cognitive stressor; reduced later effort on solvable items is the transfer of that expectancy. It is a maladaptive behavioral stress response, not an efficient problem-focused strategy and not Selye’s resistance stage, which is associated with coping that maintains function. Social loafing is reduced effort when individual output is pooled in a group task, which is not the design here.",
+      "distractor_rationales": {
+        "B": "Quitting on now-solvable items is not an instrumental attempt to solve the stressor; it is passivity after uncontrollability.",
+        "C": "Resistance is a period of continued physiological coping, not a prediction that performance will collapse on a new controllable task.",
+        "D": "Mere presence of another student does not define loafing; loafing requires a collective task with diluted individual accountability."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC6.6C.t2",
+      "type": "discrete",
+      "stem": "Spouses who have been primary caregivers for a partner with dementia for more than two years, compared with age-matched non-caregivers, show slower punch-biopsy wound healing, lower antibody titers after vaccination, and higher evening cortisol. Which interpretation is most consistent with chronic-stress physiology?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Repeated acute sympathetic bursts that enhance vaccine responses for months"
+        },
+        {
+          "key": "B",
+          "text": "Prolonged HPA activation associated with impaired immune function, as in exhaustion or allostatic overload"
+        },
+        {
+          "key": "C",
+          "text": "Secondary appraisal of the wound as a challenge, which by itself slows collagen deposition"
+        },
+        {
+          "key": "D",
+          "text": "Emotion-focused humor that directly lyses lymphocytes"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Sustained caregiving is a chronic stressor that keeps HPA output elevated. Glucocorticoids in that range are immunosuppressive: they can slow wound healing and blunt vaccine titers, matching an exhaustion or allostatic-overload picture rather than a short-lived adaptive burst. Acute sympathetic activation can transiently mobilize innate immunity, but it does not explain months of poorer antibody responses. Appraisal of a biopsy as a “challenge” is not a mechanism that replaces endocrine–immune pathways. Humor is an emotion-focused strategy, not a direct cytolytic signal.",
+      "distractor_rationales": {
+        "A": "Enhanced, durable vaccine responses are the opposite of the lower titers described under chronic load.",
+        "C": "Challenge appraisal does not by itself dictate collagen kinetics; the stem’s cortisol and immune measures point to HPA–immune coupling.",
+        "D": "No evidence in the stem links humor to lymphocyte lysis; that is not a standard coping mechanism."
+      },
+      "difficulty_est": 0.56
+    },
+    {
+      "concept_id": "MCAT.FC7.7C.t4",
+      "type": "discrete",
+      "stem": "In a Festinger and Carlsmith-style design, students complete a dull spool-turning task and then tell a waiting participant that the task was interesting. One group is paid $1 for the lie; another is paid $20. A control group does not lie. On a later private rating, which group should describe the original task as most enjoyable?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The $20 group, because a larger reinforcer stamps in a new positive attitude"
+        },
+        {
+          "key": "B",
+          "text": "The $1 group: counterattitudinal speech with insufficient external justification creates dissonance, reduced by deciding the task really was enjoyable"
+        },
+        {
+          "key": "C",
+          "text": "Both lie groups equally, because any public statement rewires attitude regardless of pay"
+        },
+        {
+          "key": "D",
+          "text": "Neither lie group; cognitive dissonance theory predicts that behavior never feeds back on attitude"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Cognitive dissonance theory says holding two inconsistent cognitions is aversive and motivates change. Saying a boring task was fun conflicts with the belief that it was boring. Twenty dollars is ample external justification for the lie, so little dissonance remains and the original attitude can stand. One dollar is insufficient justification, so people reduce dissonance by shifting the attitude: the task must have been somewhat interesting. Simple reinforcement would predict the opposite ($20 produces more liking). Dissonance theory is precisely a behavior-to-attitude path, not a ban on that path.",
+      "distractor_rationales": {
+        "A": "Large payment supplies justification and should reduce, not increase, the need to change the attitude. Reinforcement is the competing prediction that the classic result contradicts.",
+        "C": "Pay magnitude matters; the theory’s point is that insufficient, not any, justification produces the attitude shift.",
+        "D": "Dissonance theory’s central claim is that counterattitudinal behavior can change attitude when justification is low."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC7.7C.t4",
+      "type": "discrete",
+      "stem": "A campus health campaign tests vaccine ads. Undergraduates who expect to be eligible this month and who score high on need for cognition change intention only when the ad cites strong randomized-trial evidence, regardless of whether a celebrity appears. Students who will not be eligible for years change more when a celebrity appears, even if the evidence is weak. This pattern matches:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cognitive dissonance created by watching a celebrity while sitting still"
+        },
+        {
+          "key": "B",
+          "text": "Social loafing, because viewers process less when seated in a lecture hall"
+        },
+        {
+          "key": "C",
+          "text": "The elaboration-likelihood model: high motivation and ability favor the central route (argument quality); low involvement favors peripheral cues (celebrity)"
+        },
+        {
+          "key": "D",
+          "text": "Demographic transition stage 2, the only population in which celebrity ads can work"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The elaboration-likelihood model splits persuasion into a central route, in which people scrutinize message arguments, and a peripheral route, in which they rely on cues such as source attractiveness or fame. Motivation (personal relevance, need for cognition) and ability push processing toward the central route, so argument strength should dominate. When involvement is low, the same people should be more moved by a celebrity than by evidence quality. Dissonance and loafing are different mechanisms, and demographic-transition stages do not gate advertising psychology.",
+      "distractor_rationales": {
+        "A": "Sitting through an ad is not the inconsistent-cognition setup that dissonance theory uses to predict attitude change.",
+        "B": "Social loafing is reduced effort on a collective task, not a dual-route persuasion pattern.",
+        "D": "ELM is not restricted to stage-2 societies; the stem varies involvement, not fertility and mortality."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "MCAT.FC7.7C.t4",
+      "type": "discrete",
+      "stem": "Preschoolers watch an adult batter a Bobo doll. One film ends with the adult receiving praise and snacks; another ends with a scolding. Children are then left with the doll and are not themselves rewarded or punished. Imitation of the aggressive acts is highest after the rewarded model. This most directly supports:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Classical conditioning of fear to the doll"
+        },
+        {
+          "key": "B",
+          "text": "Central-route persuasion by a two-sided statistical message"
+        },
+        {
+          "key": "C",
+          "text": "Cognitive dissonance from being forbidden to play with the doll"
+        },
+        {
+          "key": "D",
+          "text": "Social-cognitive observational learning: vicarious reinforcement changes imitation without direct operant shaping of the child"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Bandura’s social cognitive theory holds that people can acquire and regulate behavior by observing models, and that seeing a model rewarded (vicarious reinforcement) increases later imitation even when the observer is not directly reinforced. The Bobo design is the classic demonstration. Classical conditioning would pair the doll with an aversive unconditioned stimulus to produce fear, which is not the outcome. ELM concerns message scrutiny, not filmed aggression. Dissonance from forbidden toys is a different paradigm (insufficient justification / reactance-adjacent), and the stem does not forbid play.",
+      "distractor_rationales": {
+        "A": "The children attack the doll rather than avoiding it, which is the opposite of conditioned fear.",
+        "B": "No argument quality or statistical message is involved; the children watch a behavioral model.",
+        "C": "Play was not forbidden, and dissonance is not required to explain imitation of a rewarded model."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "MCAT.FC7.7C.t4",
+      "type": "discrete",
+      "stem": "A clinic randomizes reminder messages about a new vaccine. Among patients who will be offered the shot this week and who score high on need for cognition, intention tracks argument quality (trial data versus anecdote) and is unaffected by whether the spokesperson wears a white coat. Among other patients, a white coat and an attractive spokesperson shift intention more than argument quality. Which factor set is illustrated?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Target characteristics (motivation, ability) determine whether message characteristics or source characteristics dominate, as in the elaboration-likelihood model"
+        },
+        {
+          "key": "B",
+          "text": "Only source attractiveness can ever change health attitudes, so the high-involvement result is impossible"
+        },
+        {
+          "key": "C",
+          "text": "Cognitive dissonance requires a one-dollar payment, which was absent, so no attitude change can occur"
+        },
+        {
+          "key": "D",
+          "text": "Social facilitation: a white coat is an audience that always improves argument scrutiny"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Attitude-change theories distinguish features of the message (evidence quality), the source (expertise cues, attractiveness), and the target (motivation, ability, need for cognition). ELM says those target features select the route: involved, able targets use message arguments (central) and discount superficial source cues; uninvolved targets use source cues (peripheral). The split results match that interaction. Claiming that only attractiveness works, that dissonance pay is required for any change, or that a coat is an “audience” that forces scrutiny, cannot explain both groups.",
+      "distractor_rationales": {
+        "B": "High-involvement patients did change with argument quality; attractiveness is not the only possible lever.",
+        "C": "Dissonance is one attitude-change theory, not a prerequisite payment for all persuasion.",
+        "D": "Social facilitation concerns arousal and dominant responses in the presence of others, not white-coat heuristic cues in an ad."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC7.7C.t4",
+      "type": "discrete",
+      "stem": "Undergraduates undergo either a severe and embarrassing initiation or a mild one in order to join a discussion group that then proves dull. Later, severe-initiation members rate the group as more interesting than mild-initiation members do. Which process best explains the difference?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Door-in-the-face compliance, because a large request was followed by a smaller one"
+        },
+        {
+          "key": "B",
+          "text": "Effort justification: suffering to join is inconsistent with believing the group is dull, so dissonance is reduced by raising liking for the group"
+        },
+        {
+          "key": "C",
+          "text": "Social loafing, because ratings were collected in a crowded room"
+        },
+        {
+          "key": "D",
+          "text": "Peripheral-route persuasion, because initiation is processed as a celebrity endorsement"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Aronson and Mills’s initiation study is a standard effort-justification application of cognitive dissonance. If I went through something severe to get here, but the group is dull, those cognitions clash. Changing the memory of the ordeal is hard; changing the attitude toward the group is easier, so liking rises. Door-in-the-face is a sequential-request compliance tactic, not an initiation. Loafing is about effort on a collective performance. Initiation is not a peripheral celebrity cue in ELM terms.",
+      "distractor_rationales": {
+        "A": "No large-then-small request sequence is described; members did not concede to a smaller favor after refusing a larger one.",
+        "C": "The dependent measure is liking, not reduced individual effort on a pooled task.",
+        "D": "A painful initiation is not a source-attractiveness cue; the mechanism is post-effort attitude shift."
+      },
+      "difficulty_est": 0.57
+    },
+    {
+      "concept_id": "MCAT.FC7.7C.t4",
+      "type": "discrete",
+      "stem": "A smoking-cessation trial finds that baseline self-efficacy, number of smoking friends, and cigarettes remaining in the house each predict lapse. A lapse then lowers self-efficacy and increases time spent with smoking friends. Which social-cognitive claim does this pattern illustrate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "One-way environmental determinism: only the house and friends cause behavior"
+        },
+        {
+          "key": "B",
+          "text": "Central-route persuasion by printed nicotine facts"
+        },
+        {
+          "key": "C",
+          "text": "Reciprocal determinism: person (cognition), behavior, and environment continuously influence one another"
+        },
+        {
+          "key": "D",
+          "text": "General adaptation syndrome exhaustion as the only pathway to a lapse"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Social cognitive theory’s reciprocal determinism says personal factors (beliefs such as self-efficacy), behavior (smoking or abstinence), and environment (cues, peers, available cigarettes) are ongoing causes of one another rather than a one-way chain. The trial’s bidirectional links—cognition and setting predict lapse, and lapse then reshapes cognition and setting—are that loop. A purely environmental account drops self-efficacy. ELM is about message routes, not this triad. GAS exhaustion is a stress-physiology sequence, not the SCT model of health-behavior change.",
+      "distractor_rationales": {
+        "A": "Self-efficacy is a personal cognition that also predicts lapse, so environment is not the sole cause.",
+        "B": "No message-elaboration manipulation is described.",
+        "D": "A lapse can have many proximal causes in SCT; exhaustion is not required and is not what the measured loop shows."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "MCAT.FC7.7C.t4",
+      "type": "discrete",
+      "stem": "Students evaluate a tuition-increase essay while either monitoring a rapid digit stream (high load) or not. Under load, a famous-athlete endorsement raises agreement even when the arguments are weak. Without load, only strong arguments increase agreement and the athlete does not. Which account is best?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cognitive dissonance produced by dual-tasking"
+        },
+        {
+          "key": "B",
+          "text": "Social loafing on the essay because another student is grading nearby"
+        },
+        {
+          "key": "C",
+          "text": "James–Lange labeling of residual arousal from watching digits"
+        },
+        {
+          "key": "D",
+          "text": "Load lowers ability to elaborate, shifting processing onto the peripheral route where source cues outweigh message quality"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "ELM treats ability as a switch. A concurrent digit stream consumes working memory, so students cannot scrutinize arguments (central route) and instead use an easy cue—the famous endorser (peripheral route). When ability is intact, argument strength should dominate and the athlete should add little. Dual-tasking is not the inconsistent-cognition recipe for dissonance. Loafing requires a pooled group product. James–Lange theory is about feeling one’s body, not about which persuasion route is used.",
+      "distractor_rationales": {
+        "A": "Doing two tasks is effortful, but it is not holding two conflicting attitudes that must be reconciled.",
+        "B": "The stem is an individual judgment under load, not reduced effort on a collective output.",
+        "C": "Emotion theories do not explain why a celebrity cue substitutes for argument quality under load."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "MCAT.FC7.7B.t1",
+      "type": "discrete",
+      "stem": "Expert typists and novices type a standard paragraph either alone or with three classmates watching. Experts become faster and more accurate with the audience; novices become slower and make more errors. Which account best fits both results?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Social loafing: an audience always reduces effort, so both groups should slow"
+        },
+        {
+          "key": "B",
+          "text": "Deindividuation: the audience makes experts anonymous and therefore more skilled"
+        },
+        {
+          "key": "C",
+          "text": "Social facilitation (Zajonc): presence of others raises arousal and the dominant response—correct for experts, errors for novices"
+        },
+        {
+          "key": "D",
+          "text": "Bystander effect: each spectator assumes another spectator will type"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Social facilitation is the effect of an audience or co-actors on individual performance. Zajonc’s drive account says mere presence increases arousal, which potentiates the dominant response. For a well-learned skill the dominant response is the correct one, so experts improve; for a poorly learned skill the dominant response is error, so novices worsen. Loafing predicts less effort when output is pooled, which is not this design. Deindividuation is reduced self-awareness in anonymous crowds, not a skill-enhancing audience. Bystander logic applies to helping in emergencies, not to typing.",
+      "distractor_rationales": {
+        "A": "Experts improved, which loafing cannot explain, and typing was an individual task with identifiable output.",
+        "B": "Named classmates watching is the opposite of anonymity, and deindividuation does not turn novices’ errors into expertise.",
+        "D": "Spectators were not potential helpers in an emergency; they were an audience for a performance task."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC7.7B.t1",
+      "type": "discrete",
+      "stem": "Blindfolded participants pull a rope, believing they are alone or on a two- or six-person team. Force per person falls as believed team size rises. When a screen displays each person’s force in real time, the drop disappears. Which process is illustrated?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Social facilitation of a complex novel task"
+        },
+        {
+          "key": "B",
+          "text": "Deindividuation that requires costumes and darkness"
+        },
+        {
+          "key": "C",
+          "text": "Normative peer pressure to pull harder in larger teams"
+        },
+        {
+          "key": "D",
+          "text": "Social loafing: effort drops when individual output is not identifiable, and identifiability restores effort"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Social loafing is reduced individual effort on a collective task when contributions are pooled and hard to monitor. The rope-pull (Ringelmann) pattern—less force per person as the believed team grows—is the classic case. Making each person’s output identifiable removes the incentive to hide, so loafing shrinks. Facilitation would predict better performance of a simple, well-learned pull in front of others, not a drop. Deindividuation is about anonymity and disinhibition of usually restrained acts, not a dynamometer. Peer pressure to pull harder predicts the opposite slope.",
+      "distractor_rationales": {
+        "A": "A simple maximal pull getting worse in a group is loafing, not facilitation of a complex skill.",
+        "B": "No costumes or darkness are required for loafing; the manipulation is identifiability of force.",
+        "C": "If peers pressured harder pulling, per-person force should rise, not fall, with team size."
+      },
+      "difficulty_est": 0.39
+    },
+    {
+      "concept_id": "MCAT.FC7.7B.t1",
+      "type": "discrete",
+      "stem": "In a lab shock-noise study, students wearing identical hoods in a dim room deliver longer white-noise bursts to a stranger than students who wear large name tags under bright lights, even though each student decides the burst length alone. Which process best explains the increase?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Deindividuation: anonymity and reduced self-awareness disinhibit behavior that is usually constrained"
+        },
+        {
+          "key": "B",
+          "text": "Social loafing on a motor task whose output is individually recorded"
+        },
+        {
+          "key": "C",
+          "text": "Social facilitation of a well-learned skilled performance"
+        },
+        {
+          "key": "D",
+          "text": "Diffusion of responsibility for a medical emergency unfolding in another room"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Deindividuation occurs when people are anonymous, aroused, and less self-aware, so personal standards exert less control and behavior can become more impulsive or aggressive. Hoods plus darkness are a standard anonymity manipulation; name tags plus lights restore identifiability. The dependent measure is disinhibited harm, not reduced effort on a pooled task (loafing) and not improved skilled performance (facilitation). Diffusion of responsibility is the bystander explanation for not helping when others are thought to be present; no emergency and no co-helpers are described.",
+      "distractor_rationales": {
+        "B": "Burst length is an individual, recorded act, so loafing’s unidentifiable-pooled-effort logic does not apply.",
+        "C": "Delivering noise is not a well-learned skilled task being improved by an audience; it is disinhibited aggression.",
+        "D": "There is no emergency and no set of potential helpers among whom responsibility is split."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC7.7B.t1",
+      "type": "discrete",
+      "stem": "A seizure is staged over an intercom. Help is faster and more likely when the participant believes they are the only listener than when they believe four other students also hear the seizure. Which mechanism is the best explanation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Social facilitation of helping as a dominant well-learned response that should increase in a group"
+        },
+        {
+          "key": "B",
+          "text": "Bystander effect via diffusion of responsibility: more co-witnesses reduce each person’s sense of personal obligation"
+        },
+        {
+          "key": "C",
+          "text": "Deindividuation from wearing a mask, which was not part of the procedure"
+        },
+        {
+          "key": "D",
+          "text": "Normative peer pressure to match a helpful in-group, which predicts more helping when more peers are present"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Darley and Latané’s seizure study is the textbook bystander effect: the presence of other witnesses lowers helping. The proposed mediator is diffusion of responsibility—each person feels less uniquely accountable when others could act. Facilitation would predict better performance of a dominant helping response in a group, which is the wrong direction. Deindividuation was not manipulated with anonymity costumes. A helpful peer-pressure account predicts the opposite of what the intercom design finds.",
+      "distractor_rationales": {
+        "A": "Helping fell, not rose, as the believed audience of co-helpers grew, which is the opposite of facilitation of a dominant help response.",
+        "C": "No mask or anonymity costume is described; the variable is believed number of witnesses.",
+        "D": "Normative pressure to be helpful in a group would increase helping with more peers, not decrease it."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC7.7B.t1",
+      "type": "discrete",
+      "stem": "Adolescents privately choose a longer study plan when deciding alone. After three classmates mock studying as “try-hard,” many switch to a shorter plan in a public roundtable, but an anonymous questionnaire still shows preference for the long plan. Which process is illustrated?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Informational social influence, because they now believe the classmates have better academic data"
+        },
+        {
+          "key": "B",
+          "text": "Social loafing on homework effort in a group project"
+        },
+        {
+          "key": "C",
+          "text": "Normative peer pressure: public compliance without private acceptance"
+        },
+        {
+          "key": "D",
+          "text": "Deindividuation, because the classroom lights were off"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Peer pressure often operates through normative influence: people go along to gain approval or avoid ridicule even when they do not change their private belief. The split between public shortening and anonymous endorsement of the long plan is compliance without internalization. Informational influence would update the private questionnaire as well, because the person would think the others were right. Loafing is about effort on a pooled task, not about which plan is announced. Deindividuation was not manipulated with anonymity or darkness in the stem.",
+      "distractor_rationales": {
+        "A": "Unchanged private scores mean they did not adopt the classmates’ view as information about what works.",
+        "B": "No collective product is being under-produced; the measure is a publicly stated plan.",
+        "D": "Lights-off anonymity is not described; students were identifiable in a roundtable."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "MCAT.FC7.7B.t1",
+      "type": "discrete",
+      "stem": "Cockroaches run a simple straight runway faster when other cockroaches are visible in adjacent boxes, but they run a complex maze more slowly with the same audience (a classic Zajonc demonstration). Which inference is most justified?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Only humans show social facilitation, so the insect data must be a recording error"
+        },
+        {
+          "key": "B",
+          "text": "Audiences impair solely via evaluation apprehension; because cockroaches lack that concern, the simple-runway speeding is impossible"
+        },
+        {
+          "key": "C",
+          "text": "The runner is social loafing by letting the audience complete the maze"
+        },
+        {
+          "key": "D",
+          "text": "Mere presence can potentiate the dominant response even in a species for which evaluation apprehension is implausible, supporting Zajonc’s arousal account"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "If facilitation required worrying about being judged, cockroaches should not show it. The finding that a simple, well-practiced run speeds up and a difficult maze slows down with an audience matches the dominant-response rule and supports mere-presence arousal rather than a uniquely human self-presentational mechanism. Humans are not the only species in the literature. Loafing would require a shared task in which the subject’s effort is hidden among others actually running; the audience boxes do not run the maze for the subject.",
+      "distractor_rationales": {
+        "A": "Comparative studies exist precisely because facilitation is not defined as human-only.",
+        "B": "Evaluation apprehension is one human mediator; the cockroach pattern is evidence that it is not required for the basic effect.",
+        "C": "The audience is not pulling a collective load; each runner’s time is individual."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC7.7B.t1",
+      "type": "discrete",
+      "stem": "Groups brainstorm uses for a brick. When ideas are pooled anonymously, unique ideas per person fall relative to working alone. When each idea is tagged with a name on a shared screen, per-person output matches the alone condition. The identifiability effect is best explained as:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Social loafing that shrinks when contributions are identifiable"
+        },
+        {
+          "key": "B",
+          "text": "Social facilitation of a novel creative task, which should always rise in groups"
+        },
+        {
+          "key": "C",
+          "text": "Deindividuation causing more ideas when people are anonymous"
+        },
+        {
+          "key": "D",
+          "text": "Bystander apathy toward a medical crisis"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Brainstorming in a pool is a collective task. When credit is anonymous, individuals can hide, and unique output per person drops—social loafing. Tagging names restores accountability, so effort returns to the alone baseline. Facilitation of a poorly learned or complex generative task would, if anything, predict impairment from an audience, not a benefit of anonymity. Deindividuation would predict more unrestrained output when anonymous, which is the opposite of fewer ideas. No emergency is present.",
+      "distractor_rationales": {
+        "B": "Idea generation is not a well-learned dominant response that an audience should automatically improve; the drop when anonymous is loafing.",
+        "C": "Anonymity reduced, rather than increased, idea counts, which is not a deindividuation-disinhibition pattern.",
+        "D": "The task is idea listing, not helping a victim."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC8.8A.t1",
+      "type": "discrete",
+      "stem": "A four-year-old fails a Sally–Anne false-belief task, saying Sally will look where the child knows a marble was moved. The same afternoon, after a teacher frowns at the child’s drawing, the child tells a parent “I’m bad at art.” A classmate shows the reverse: passes false-belief but does not change self-ratings after the frown. Which distinction is best?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Both children lack any self-concept, so neither report can be interpreted"
+        },
+        {
+          "key": "B",
+          "text": "Theory of mind (false-belief) and Cooley’s looking-glass self can dissociate: attributing another’s belief about an object is not the same as internalizing another’s evaluation into self-concept"
+        },
+        {
+          "key": "C",
+          "text": "Looking-glass self cannot operate until false-belief is passed, so the first child’s report is theoretically impossible"
+        },
+        {
+          "key": "D",
+          "text": "Theory of mind is only a theory of in-group identity and does not concern beliefs about objects"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Theory of mind, indexed here by false-belief, is the ability to represent that another person can hold a belief one knows to be false. The looking-glass self is Cooley’s claim that self-concept is built from how we imagine others judge us. A child can take a frown as a verdict on the self without passing a marble false-belief task, and another child can track beliefs without using social evaluation to revise self-worth. Treating the two as identical, or declaring self-concept absent, is not required by either construct. ToM is not restricted to in-group identity.",
+      "distractor_rationales": {
+        "A": "Saying “I’m bad at art” is a self-concept statement; failing false-belief does not erase it.",
+        "C": "The stem’s first child is the existence proof that reflected appraisal can appear without laboratory false-belief success.",
+        "D": "False-belief tasks are explicitly about others’ beliefs regarding objects and locations."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "MCAT.FC8.8A.t1",
+      "type": "discrete",
+      "stem": "After a failed organic-chemistry exam, Student X says “I’m a worthless person” but still enrolls in tutoring because “I can learn this if I drill mechanisms.” Student Y says she still likes herself as a person but that “no amount of work will change my organic score.” Which pairing is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "X has high self-esteem and low self-efficacy; Y is the reverse"
+        },
+        {
+          "key": "B",
+          "text": "Both quotations measure only locus of control, so self-esteem cannot differ"
+        },
+        {
+          "key": "C",
+          "text": "X shows low self-esteem but relatively high self-efficacy; Y shows higher self-esteem but low self-efficacy for this task"
+        },
+        {
+          "key": "D",
+          "text": "Self-efficacy and self-esteem are the same construct, so the reports cannot diverge"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Self-esteem is global (or domain-general) evaluation of worth. Self-efficacy is a task-specific belief that one can execute the actions needed to produce an outcome. X’s “worthless” is low self-esteem; signing up because practice will work is relatively high efficacy. Y’s intact liking of the self with a belief that work is useless is higher esteem plus low efficacy. The two constructs can move separately, which is why MCAT items treat them as distinct from each other and from locus of control (who or what is seen as the cause of outcomes).",
+      "distractor_rationales": {
+        "A": "This swaps the labels: X’s global worth statement is low, not high, esteem; Y’s “work will not matter” is low, not high, efficacy.",
+        "B": "Locus of control is about internal versus external causes; the stem also contrasts worth versus capability.",
+        "D": "The educational point of the pair is that esteem and efficacy are not identical."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC8.8A.t1",
+      "type": "discrete",
+      "stem": "Two patients complete the same diabetes-education class. Patient A says “what I do with food and insulin determines my HbA1c” and logs glucose daily. Patient B says “the number is mostly luck and whatever the doctor decides” and rarely logs. At six months, A has the lower HbA1c. Which self-related construct best captures the contrast?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A has lower self-efficacy by definition, because internals never believe they can act"
+        },
+        {
+          "key": "B",
+          "text": "B has an internal locus of control, because luck is an internal cause"
+        },
+        {
+          "key": "C",
+          "text": "Looking-glass self explains the HbA1c gap, because no behavior is involved"
+        },
+        {
+          "key": "D",
+          "text": "Internal locus of control (A) is linked to more instrumental health behavior than external locus (B)"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Locus of control is the belief that outcomes are caused primarily by one’s own actions (internal) or by luck, fate, or powerful others (external). Patient A’s statement and logging are internal; B’s luck-and-doctor account is external. Internality is associated with taking instrumental steps, which can improve a controllable biomarker such as HbA1c. Self-efficacy is capability belief, not the opposite of internality. Luck is a canonical external cause. Looking-glass self is about reflected appraisals, not glucose logging.",
+      "distractor_rationales": {
+        "A": "Internal locus typically supports, rather than forbids, the belief that one’s actions matter; that is closer to higher, not lower, efficacy.",
+        "B": "Luck and powerful others are external attributions, not internal ones.",
+        "C": "The pathway in the stem runs through logging behavior, not through imagined judgments in a mirror."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC8.8A.t1",
+      "type": "discrete",
+      "stem": "In a minimal-group experiment, strangers are randomly labeled Klee or Kandinsky fans after a coin flip. They then allocate points to unknown others identified only by label. People give more points to in-group members even though no interaction or conflicting interest exists. This result most directly supports:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Social identity: mere categorization into a group can create in-group favoritism without a history of realistic conflict"
+        },
+        {
+          "key": "B",
+          "text": "Looking-glass self, because a mirror was required to assign the labels"
+        },
+        {
+          "key": "C",
+          "text": "A theory-of-mind failure, because participants cannot represent that out-group members have minds"
+        },
+        {
+          "key": "D",
+          "text": "Demographic transition among art fans, which predicts point giving in stage 2 only"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Social identity theory (and the minimal-group paradigm) holds that self-concept includes group memberships, and that even arbitrary, newly assigned categories can produce in-group bias. No prior competition for scarce resources is required, which distinguishes this from a purely realistic-conflict story. Looking-glass self is about reflected individual appraisals, not coin-flip teams. Favoring an in-group does not mean denying that out-group members have minds. Demographic transition is a population-level birth/death model, not a point-allocation psychology.",
+      "distractor_rationales": {
+        "B": "No mirror procedure is described; labels came from a coin flip.",
+        "C": "Allocating fewer points is bias, not a clinical ToM deficit.",
+        "D": "Art-preference labels are not fertility and mortality stages."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "MCAT.FC8.8A.t1",
+      "type": "discrete",
+      "stem": "A child reaches for a cookie, narrates “I want it,” then pauses: “they’ll say I’m greedy if I take it,” and puts it back. In Mead’s terms, which analysis is best?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Self-efficacy has dropped to zero, so no future cookie-seeking is possible"
+        },
+        {
+          "key": "B",
+          "text": "The “I” is the spontaneous actor and the “me” is the internalized attitudes of others; role-taking is regulating the act"
+        },
+        {
+          "key": "C",
+          "text": "The child has an external locus of control for all food, which forbids wanting a cookie"
+        },
+        {
+          "key": "D",
+          "text": "Deindividuation in a kitchen erased personal standards"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Mead’s self is a social process: the “I” is the unorganized, impulsive subject of action, and the “me” is the organized set of others’ attitudes one takes toward oneself. Role-taking is seeing one’s act from the other’s standpoint. Wanting the cookie then inhibiting it after imagining “they’ll say I’m greedy” is that dialogue, and it is how self-concept and identity are practiced in social interaction. A single inhibited reach is not zero efficacy, not a global external locus, and not crowd anonymity.",
+      "distractor_rationales": {
+        "A": "Putting one cookie back is self-regulation, not a prediction that the child can never act.",
+        "C": "The child still wants the cookie; the issue is an internalized social standard, not luck as the cause of outcomes.",
+        "D": "Deindividuation reduces self-awareness in anonymous groups; the child is applying, not losing, a personal standard."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "MCAT.FC8.8A.t1",
+      "type": "discrete",
+      "stem": "Two climbers of equal skill fall on the same pitch. The one who had rated “I can complete this route if I persist” returns to practice the move the next day. The one who had rated “I am just not a lead-climbing person” avoids the wall for weeks. Which construct most directly predicts the difference in persistence?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Global self-esteem (overall worth) rather than any task belief"
+        },
+        {
+          "key": "B",
+          "text": "External locus of control, which always increases practice after failure"
+        },
+        {
+          "key": "C",
+          "text": "Self-efficacy: belief in capability for this task predicts practice and persistence after failure"
+        },
+        {
+          "key": "D",
+          "text": "Social identity as “climber” must be absent in anyone who falls"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Bandura’s self-efficacy is a judgment that one can organize and execute the actions required in a specific domain. High efficacy after a fall supports return to practice; a trait-like “I am not that kind of person” statement functions as low efficacy and predicts withdrawal. Global self-esteem may not differ between the two climbers. External locus (“outcomes are luck”) would not uniquely predict more practice. A fall does not strip a social identity; identities can include being a climber who is currently struggling.",
+      "distractor_rationales": {
+        "A": "The ratings in the stem are about completing this route, not about being a worthy person in general.",
+        "B": "External locus typically reduces, rather than increases, instrumental practice, because effort is seen as irrelevant.",
+        "D": "Identity categories survive setbacks; the predictor here is capability belief, not deletion of the climber identity."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC8.8A.t1",
+      "type": "discrete",
+      "stem": "A student-athlete bombs a chemistry quiz in the locker room and later bricks a free throw during lecture. In a twenty-statements task, self-description after the quiz emphasizes “athlete”; after the miss it emphasizes “pre-med.” Which identity claim does this pattern best support?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "People have only one self-concept, so the shift must be a scoring error"
+        },
+        {
+          "key": "B",
+          "text": "This is demographic transition of the self from stage 2 to stage 4"
+        },
+        {
+          "key": "C",
+          "text": "Looking-glass self requires a one-way mirror, which was not present, so identity cannot change"
+        },
+        {
+          "key": "D",
+          "text": "People hold multiple social identities whose salience shifts with context, sometimes protecting self-concept after a threat to one identity"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Self-concept is a working collection of identities (student, athlete, friend) rather than a single static list. Self-categorization and social-identity approaches predict that the identity made salient will track cues and motives, including the motive to downplay a just-threatened identity and foreground an intact one. That is compatible with the quiz-then-athlete and miss-then-pre-med switch. It is not a population fertility model, not dependent on laboratory mirrors, and not evidence that only one identity exists.",
+      "distractor_rationales": {
+        "A": "The twenty-statements shift is evidence for multiple, context-weighted identities, not for a single frozen list.",
+        "B": "Demographic transition refers to national birth and death rates, not to which identity is listed first.",
+        "C": "Reflected appraisals can occur without a piece of glass; the stem is about identity salience, not about mirrors."
+      },
+      "difficulty_est": 0.49
+    },
+    {
+      "concept_id": "MCAT.FC9.9B.t1",
+      "type": "discrete",
+      "stem": "Country X publishes vital statistics after a national vaccine and sanitation campaign. Crude death rate falls from 30 to 12 per 1,000 over twenty years, while crude birth rate stays near 40. The age pyramid is wide at the base and total population is rising fast. Which demographic-transition stage is this?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Stage 2: mortality decline precedes fertility decline, producing rapid natural increase"
+        },
+        {
+          "key": "B",
+          "text": "Stage 1: high birth and high death rates in approximate equilibrium"
+        },
+        {
+          "key": "C",
+          "text": "Stage 4: low birth and low death rates with a stable size"
+        },
+        {
+          "key": "D",
+          "text": "Stage 3: fertility has already fallen to match the new death rate"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "In the demographic transition, stage 1 has high fertility and high mortality and little growth. Stage 2 begins when death rates fall—typically from public health—while birth rates remain high, so the population booms and the pyramid stays youthful. Stage 3 is when fertility falls in response to urbanization, education, and contraception. Stage 4 is the later low-low equilibrium. Country X has a mortality drop without a birth-rate drop, which is the definition of stage 2, not stages 1, 3, or 4.",
+      "distractor_rationales": {
+        "B": "Stage 1 would still show a high death rate near 30, not a fall to 12, and would not produce a boom.",
+        "C": "Stage 4 requires low fertility as well as low mortality; CBR near 40 is incompatible.",
+        "D": "Stage 3 is the fertility decline; the stem says births remain high."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "MCAT.FC9.9B.t1",
+      "type": "discrete",
+      "stem": "Country Y already has a crude death rate near 8 per 1,000. Over one generation, crude birth rate falls from 35 to 18 as women’s schooling and contraception spread; growth is still positive but slowing. Country Z has CBR ≈ CDR ≈ 10 and TFR near 2.1, with roughly stable size. Which staging is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Y is stage 1 and Z is stage 2"
+        },
+        {
+          "key": "B",
+          "text": "Y is stage 3 (fertility falling after mortality already fell); Z is stage 4 (low birth and death, equilibrium)"
+        },
+        {
+          "key": "C",
+          "text": "Both are stage 2, because any positive growth means stage 2"
+        },
+        {
+          "key": "D",
+          "text": "Z is stage 2, because replacement-level TFR indicates a mortality crisis"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Stage 3 is the fertility decline that follows the earlier mortality decline of stage 2; Y matches that description. Stage 4 is the subsequent regime of low fertility, low mortality, and little natural increase; Z’s replacement TFR and matched crude rates match stage 4. Stage 1 is high-high, and stage 2 is high birth with falling death, neither of which fits Z. Positive growth can occur in late stage 2 or 3 and does not by itself equal stage 2. Replacement TFR is not a death-rate spike.",
+      "distractor_rationales": {
+        "A": "Y’s already-low death rate and falling births are not stage 1; Z’s low-low pattern is not stage 2.",
+        "C": "Stage 2 is specifically the lag of fertility behind mortality, not any nonzero growth.",
+        "D": "TFR near 2.1 with low CDR is controlled fertility, not a mortality crisis."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC9.9B.t1",
+      "type": "discrete",
+      "stem": "A city has a large 0–14 population and relatively few 15–64 workers after a baby boom, straining pediatric clinics. Forty years later the same boom cohort is 65+, pension outlays spike, and the youth share is smaller. Which demographic-structure claim is best?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Sex ratio, not age structure, explains both clinic crowding and pensions"
+        },
+        {
+          "key": "B",
+          "text": "Only international immigration can change a population’s age distribution"
+        },
+        {
+          "key": "C",
+          "text": "Birth cohorts move through the age pyramid, so a high youth-dependency ratio can later become a high aged-dependency ratio"
+        },
+        {
+          "key": "D",
+          "text": "Gender identity determines how many pediatric versus geriatric beds are needed"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Age is a core axis of demographic structure. A birth cohort is a set of people born in the same interval; they occupy successive bands of the pyramid as they age. Dependency ratios compare non-working-age groups (children, elderly) to working-age adults. A baby boom therefore presents first as youth dependency and later as old-age dependency without any change in the identity of the cohort. Sex ratio and gender identity do not replace that age-cohort mechanism. Fertility, mortality, and migration all can reshape age structure; immigration is not the only path.",
+      "distractor_rationales": {
+        "A": "The timeline is an aging cohort, not a change in males per females.",
+        "B": "Fertility waves change age structure even with zero migration, which is the baby-boom story.",
+        "D": "Need for pediatric versus geriatric services tracks age composition, not gender identity."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC9.9B.t1",
+      "type": "discrete",
+      "stem": "A hospital chart records chromosomes and anatomy under “sex.” A separate intake asks how the patient lives and is treated as a man, a woman, or another gender, and which jobs the patient considers appropriate for each. For some patients the social answers diverge from the biological record. Which statement is most accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Sex and gender are interchangeable names for chromosomes, so divergence is a charting error"
+        },
+        {
+          "key": "B",
+          "text": "Gender is assigned only by immigration status and cannot diverge from anatomy"
+        },
+        {
+          "key": "C",
+          "text": "Social roles always match gametes in every society, so the split sample is impossible"
+        },
+        {
+          "key": "D",
+          "text": "Sex indexes biological characteristics; gender indexes social roles, identity, and expectations, which can be measured separately"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "In MCAT sociology, sex refers to biological categories (chromosomes, gonads, anatomy), whereas gender refers to the social meanings, roles, and identities organized around those categories. Because gender is socially structured, self-identification and role expectations can diverge from a chromosomal record. That is why surveys treat the variables separately. Treating them as synonyms, tying gender solely to immigration documents, or claiming a universal match between gametes and roles, contradicts the distinction the intake form is built on.",
+      "distractor_rationales": {
+        "A": "If the terms were interchangeable, a split instrument would be pointless; the divergence is the sociological phenomenon of interest.",
+        "B": "Immigration status is a different demographic axis; it does not define gender.",
+        "C": "Cross-cultural and within-society variation in gender roles is a standard finding, not an impossibility."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "MCAT.FC9.9B.t1",
+      "type": "discrete",
+      "stem": "A census shows people with similar skin color but different languages, religions, and national origins checking different ethnicity boxes. After a zoning fight, outsiders begin treating a mixed neighborhood as a single “racial” group despite those cultural differences. Which interpretation is most consistent with how race and ethnicity are used in this literature?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Race is often imposed using perceived phenotype, while ethnicity tracks claimed culture and ancestry; both are social categories rather than a single biological partition"
+        },
+        {
+          "key": "B",
+          "text": "Ethnicity is a genotype and race is a spoken language, so the boxes should never diverge"
+        },
+        {
+          "key": "C",
+          "text": "Immigration law forbids ethnic identification, so the census items are invalid"
+        },
+        {
+          "key": "D",
+          "text": "Demographic transition erases racial categories automatically by stage 4"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Ethnicity typically refers to shared culture, language, religion, or claimed ancestry. Race, in the sociological sense used on the MCAT, is a socially constructed grouping often imposed on the basis of perceived phenotype and historically shifting political projects (racialization). People who “look similar” to outsiders can still report different ethnic identities, and outsiders can collapse them into one racial category after conflict. Neither axis is a clean genotype-to-label map. Immigration does not ban ethnicity, and low fertility does not abolish racial classification.",
+      "distractor_rationales": {
+        "B": "This swaps and biologizes the terms; ethnicity is not a genotype, and race is not identical to language.",
+        "C": "Censuses routinely collect ethnic identification; the stem’s boxes are the data, not a legal impossibility.",
+        "D": "Stage 4 describes vital rates, not the disappearance of racial categories."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC9.9B.t1",
+      "type": "discrete",
+      "stem": "A receiving country finds that first-generation immigrant women have higher total fertility than native-born women, but by the second generation TFR has largely converged. Working-age in-migration also lowers the aged-dependency ratio for a decade. Which statement is best?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Migration cannot affect a population’s age structure, only its language"
+        },
+        {
+          "key": "B",
+          "text": "Fertility, mortality, and migration jointly determine demographic structure; immigrant fertility often assimilates across generations, while in-migration can temporarily rejuvenate the age pyramid"
+        },
+        {
+          "key": "C",
+          "text": "Only catastrophes can change TFR, so the first-generation elevation is measurement error"
+        },
+        {
+          "key": "D",
+          "text": "Stage 1 populations are the only ones that migrate, so the second generation cannot exist"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The demographic equation is births, deaths, and net migration. Migrants are often concentrated in working ages, which lowers aged dependency in the short run. Fertility of immigrant cohorts frequently moves toward the host-country pattern in subsequent generations, a standard finding in demographic structure. Migration therefore belongs beside fertility and mortality as a determinant of age composition. Catastrophes are not the only TFR shifter, and the existence of a second generation shows that migration is not confined to hypothetical stage-1 isolates.",
+      "distractor_rationales": {
+        "A": "Age-selective in-migration is a classic way to change the pyramid; language change is a separate acculturation issue.",
+        "C": "Fertility responds to many social factors, including migration and assimilation, not only disasters.",
+        "D": "People migrate from and into countries at every transition stage; children of immigrants are a normal cohort."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC9.9B.t1",
+      "type": "discrete",
+      "stem": "A clinic intake separates (1) current gender identity and (2) which sexes the person is attracted to. A patient lists male gender identity and attraction to men. A trainee writes “confused gender” and merges the two items into one checkbox. Which correction is appropriate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Sexual orientation is the same demographic variable as gender identity, so one checkbox is enough"
+        },
+        {
+          "key": "B",
+          "text": "Attraction categories are stages of the demographic transition and should not appear on a clinic form"
+        },
+        {
+          "key": "C",
+          "text": "Gender identity and sexual orientation are distinct axes of demographic structure; a man attracted to men does not contradict either construct"
+        },
+        {
+          "key": "D",
+          "text": "Looking-glass self forbids same-sex attraction, so the patient report must be discarded"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Demographic structure on the MCAT includes sex, gender, and sexual orientation as separable dimensions. Gender identity is one’s sense of being male, female, or another gender. Sexual orientation is the pattern of attraction. They can combine in any pairing; male identity plus attraction to men is a coherent description, not evidence that the identity item was completed incorrectly. Transition stages are population vital-rate regimes, not attraction types. Looking-glass self is a theory of how reflected appraisals shape self-concept, not a prohibition on a sexual-orientation category.",
+      "distractor_rationales": {
+        "A": "Collapsing the two items erases a real distinction the form was written to capture.",
+        "B": "Demographic transition is about birth and death rates, not about who someone is attracted to.",
+        "D": "Cooley’s theory does not outlaw same-sex attraction or invalidate the intake."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC10.10A.t1",
+      "type": "discrete",
+      "stem": "Two cities have the same citywide percentage of Black residents. In City A those residents are evenly spread across tracts; in City B nearly all live in three tracts. The index of dissimilarity is much higher in B. Asthma hospitalizations cluster in B’s segregated tracts despite similar citywide income. Which conclusion is most warranted?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Evenness of groups across tracts cannot affect health if citywide composition is matched"
+        },
+        {
+          "key": "B",
+          "text": "Segregation can be measured only in majority-Black cities, so B’s index is invalid"
+        },
+        {
+          "key": "C",
+          "text": "The dissimilarity index measures income inequality only and cannot be computed for race"
+        },
+        {
+          "key": "D",
+          "text": "Residential segregation—the uneven spatial distribution of groups—can concentrate hazards and limit resources even when citywide composition is held constant"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Spatial inequality includes how groups are arranged in space, not only each group’s citywide share. The index of dissimilarity quantifies how unevenly two groups are spread across neighborhoods; City B is more segregated despite an identical overall percentage. Segregated tracts can concentrate pollution, poor housing, and weak services, producing clustered asthma that a citywide average conceals. Dissimilarity is routinely computed for race and does not require a majority-Black city. Matching citywide composition is what makes the spatial arrangement the remaining explanation.",
+      "distractor_rationales": {
+        "A": "The point of comparing A and B is that evenness can differ—and can track health—when composition is matched.",
+        "B": "Dissimilarity is defined for any pair of group shares; majority status is not a requirement.",
+        "C": "Dissimilarity is a segregation statistic for any two groups, including racial groups, not an income-Gini by another name."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "MCAT.FC10.10A.t1",
+      "type": "discrete",
+      "stem": "A GIS study finds that, after statistical control for household income, census tracts with higher Black and Latino shares are closer to Superfund sites and have more extreme urban heat. Which concept does this pattern best illustrate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Environmental injustice: unequal exposure to environmental hazards by race and place that is not fully reducible to class"
+        },
+        {
+          "key": "B",
+          "text": "Demographic transition stage 4, which eliminates toxic siting"
+        },
+        {
+          "key": "C",
+          "text": "Social loafing by residents, which causes regulators to place Superfund sites"
+        },
+        {
+          "key": "D",
+          "text": "James–Lange theory of emotion as the cause of facility siting"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Environmental justice (and the related idea of environmental racism) concerns the disproportionate siting of hazards and the unequal distribution of environmental goods across communities defined by race, class, and place. Persisting proximity gaps after income control are the usual empirical signature that class alone does not exhaust the spatial inequality. Stage 4 of the demographic transition is a vital-rate regime, not a siting rule. Loafing and James–Lange theory are individual behavioral and emotion models; they do not explain why toxic facilities cluster in particular tracts.",
+      "distractor_rationales": {
+        "B": "Low fertility and mortality do not by themselves remove hazardous land uses from minority tracts.",
+        "C": "Facility siting is a political-economic spatial process, not reduced individual effort on a tug-of-war.",
+        "D": "Emotion theories do not determine where waste sites are built."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC10.10A.t1",
+      "type": "discrete",
+      "stem": "Two patients with the same diabetes regimen and similar household income differ in neighborhood. Patient N lives where street lighting is poor and violent crime after dark is high; accelerometer counts are low and HbA1c is higher. Patient S lives on well-lit streets with active night sports fields and has the reverse pattern. Which spatial-inequality claim is best?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Only genetics can explain the HbA1c gap, because both patients have the same prescription"
+        },
+        {
+          "key": "B",
+          "text": "Neighborhood safety is a spatial constraint on health behavior and can therefore shape clinical outcomes"
+        },
+        {
+          "key": "C",
+          "text": "Social facilitation by potential offenders improves exercise, so N should have been more active"
+        },
+        {
+          "key": "D",
+          "text": "The difference is a looking-glass-self illusion with no behavioral pathway"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Neighborhood safety is a standard spatial-inequality topic because the local risk of violence and the quality of public space constrain whether people walk, play, or travel for care. If two similar patients differ in those exposures, activity and a behavior-sensitive marker such as HbA1c can diverge without any change in the written regimen. Genetics-only and “illusion” accounts ignore the measured activity gap. An audience of potential offenders is not a social-facilitation helper that improves a well-learned exercise skill.",
+      "distractor_rationales": {
+        "A": "A matched prescription does not cancel differences in whether the neighborhood makes activity feasible.",
+        "C": "Fear of crime reduces, rather than facilitates, outdoor activity in this design.",
+        "D": "Accelerometer differences are a behavioral path, not a purely reflective-appraisal illusion."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "MCAT.FC10.10A.t1",
+      "type": "discrete",
+      "stem": "A low-income census tract has no full-service grocery within a mile and a high density of fast-food outlets. An income-matched tract with a supermarket has lower obesity prevalence. Which interpretation is most consistent with spatial inequality?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Taste forms independently of retail geography, so the grocery gap cannot matter"
+        },
+        {
+          "key": "B",
+          "text": "This pattern is stage 1 of the demographic transition"
+        },
+        {
+          "key": "C",
+          "text": "Unequal spatial access to healthy food (a food desert) can shape diet and obesity beyond individual income alone"
+        },
+        {
+          "key": "D",
+          "text": "Deindividuation inside supermarkets is what causes obesity"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Food deserts are a spatial-inequality pattern: healthy retail is absent or distant in some neighborhoods, while energy-dense outlets cluster there. Matching on income isolates place—how the built food environment is arranged—as a contributor to diet and obesity. That does not claim geography is the only cause, but it does reject the idea that income-matched people must have identical exposure. Demographic transition stages and deindividuation in aisles are the wrong models for a grocery-access gap.",
+      "distractor_rationales": {
+        "A": "If geography were irrelevant, the income-matched supermarket tract should not differ; the contrast is the evidence that access matters.",
+        "B": "Stage 1 is high birth and death rates, not grocery placement.",
+        "D": "Anonymity in a crowd does not explain why the tract without a grocery has more obesity."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC10.10A.t1",
+      "type": "discrete",
+      "stem": "1930s HOLC maps graded minority neighborhoods “hazardous” (redlined). Those same census tracts today have less tree canopy, higher land-surface temperature, and more heat-related emergency visits, and the associations remain after contemporary income is included in the model. Which reading is best?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Historical lending maps cannot have spatial effects decades later"
+        },
+        {
+          "key": "B",
+          "text": "Heat visits are explained only by individual locus of control"
+        },
+        {
+          "key": "C",
+          "text": "Environmental justice applies only to chemical Superfund sites, not to heat"
+        },
+        {
+          "key": "D",
+          "text": "Legacy residential segregation can persistently structure environmental risk and health, a core spatial-inequality pathway"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Redlining is a historical mechanism of residential segregation: credit and investment were withheld from mapped minority neighborhoods. Those investment patterns shape later canopy, housing quality, and heat islands, which are environmental exposures with clinical consequences. Persistence after modern income adjustment is evidence of a place-based legacy, not a claim that class never matters. Environmental justice includes heat and other amenities, not only chemical dumps. Individual locus of control does not plant trees or set 1930s grades.",
+      "distractor_rationales": {
+        "A": "The empirical pattern in the stem is a decades-later spatial correlation with the historical map.",
+        "B": "A tract-level canopy and temperature gap is not an internal-versus-external belief.",
+        "C": "Unequal exposure to heat is an environmental-justice outcome even without a Superfund listing."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "MCAT.FC10.10A.t1",
+      "type": "discrete",
+      "stem": "A rural county lost its obstetrics ward; EMS times to the nearest labor unit exceed an hour. An urban core eighty miles away has a tertiary hospital, but two of its high-poverty neighborhoods lack night bus service to that campus. Which statement about spatial inequality is most accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Spatial inequality includes both rural–urban resource gaps and intra-urban unequal access to existing institutions"
+        },
+        {
+          "key": "B",
+          "text": "Only cities can be spatially unequal; rural closures are a different, nonspatial problem"
+        },
+        {
+          "key": "C",
+          "text": "Rural mortality is lower by definition because of clean air, so ward closures cannot affect outcomes"
+        },
+        {
+          "key": "D",
+          "text": "Demographic transition requires that rural areas have more hospitals than cities"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Spatial inequality is unequal distribution of resources and risks across places. That includes the rural–urban gradient (distance to obstetrics, EMS time) and fine-grained intra-urban isolation (transit deserts next to a famous hospital). Restricting the concept to cities, or treating rural health as automatically superior because of air quality, misses both of those geographic mechanisms. Vital-rate stages of the demographic transition do not legislate hospital counts.",
+      "distractor_rationales": {
+        "B": "Distance and facility closure are spatial by definition, whether the place is rural or urban.",
+        "C": "Clean air does not cancel time-to-treatment for obstetric emergencies.",
+        "D": "Transition theory does not assign more hospitals to rural areas."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC10.10A.t1",
+      "type": "discrete",
+      "stem": "A high-poverty tract is cut off by a highway from a job corridor. Survey networks show few overlapping ties with higher-opportunity tracts. Citywide employment rises in a boom year, but unemployment in the isolated tract barely moves. Which spatial-inequality mechanism is most consistent with this pattern?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A pure individual self-efficacy deficit with no role for place"
+        },
+        {
+          "key": "B",
+          "text": "Concentrated disadvantage and spatial mismatch/isolation that can trap residents out of labor markets even when the wider city adds jobs"
+        },
+        {
+          "key": "C",
+          "text": "Social loafing inside factories, which built the highway to reduce effort"
+        },
+        {
+          "key": "D",
+          "text": "Cannon–Bard emotion theory as a predictor of unemployment"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Spatial inequality is not only pollution; it is also isolation from jobs, schools, and bridging social networks. Spatial mismatch and concentrated poverty describe neighborhoods physically and socially cut off from opportunity, so a citywide boom need not reach them. That is a place-level mechanism, not a claim that self-efficacy is irrelevant, but it cannot be reduced to self-efficacy alone. Factory loafing and Cannon–Bard theory do not explain highway barriers or truncated networks.",
+      "distractor_rationales": {
+        "A": "A tract-level failure to share in a citywide boom, with a physical barrier and thin bridging ties, is a spatial pattern rather than a lone personality score.",
+        "C": "Highways are infrastructure, not a loafing strategy by workers.",
+        "D": "Simultaneity of feeling and arousal does not place jobs on the far side of a highway."
+      },
+      "difficulty_est": 0.51
+    }
+  ]
+}

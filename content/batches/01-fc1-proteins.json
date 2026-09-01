@@ -1,0 +1,1244 @@
+{
+  "items": [
+    {
+      "concept_id": "MCAT.FC1.1A.t1",
+      "type": "discrete",
+      "stem": "A protease isolated from a mammalian pancreas hydrolyzes peptides composed of L-amino acids with a measured kcat/Km of 2×10^5 M−1 s−1. A chemist synthesizes the identical sequence using only D-amino acids and incubates it with the same enzyme under otherwise identical buffer, pH, and temperature. Which outcome is most likely, and why?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Little or no cleavage, because the active site is stereospecific for the L configuration at Cα"
+        },
+        {
+          "key": "B",
+          "text": "Faster cleavage, because D-residues experience less steric hindrance at the scissile bond"
+        },
+        {
+          "key": "C",
+          "text": "Uncatalyzed hydrolysis in water that is faster for D-peptides than for L-peptides, so the enzyme is unnecessary"
+        },
+        {
+          "key": "D",
+          "text": "The enzyme first racemizes each D-residue to L and then cleaves at the usual rate"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Mammalian digestive proteases evolved to recognize L-amino acids, the configuration found in ribosomally synthesized proteins. The active-site pockets and catalytic residues present a chiral environment that orients the scissile peptide bond of an L-substrate for nucleophilic attack. A D-peptide is the mirror image and generally cannot make the same contacts, so kcat/Km collapses. Peptide bonds of D- and L-peptides have essentially the same intrinsic chemical stability in water, and proteases do not racemize residues before cleavage. Therefore the D-peptide remains largely intact.",
+      "distractor_rationales": {
+        "B": "Steric bulk is not systematically lower for D-residues; the issue is mismatched chirality, not a smaller side chain.",
+        "C": "Uncatalyzed peptide hydrolysis is extremely slow for both configurations; D-peptides are not intrinsically labile.",
+        "D": "Proteases catalyze hydrolysis of peptide bonds; they do not invert Cα configuration as a prerequisite to cleavage."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t1",
+      "type": "discrete",
+      "stem": "A secreted protein contains a single native disulfide between Cys48 and Cys119. Investigators separately mutate each cysteine to serine, express the mutants in oxidizing medium, and compare them with wild type by nonreducing SDS-PAGE and thermal unfolding. Which result is most consistent with the chemistry of cysteine and serine side chains?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Each serine spontaneously forms a covalent Ser–Ser cross-link that fully replaces the native cystine"
+        },
+        {
+          "key": "B",
+          "text": "Neither mutant can form the native disulfide; both are more prone to unfolding than wild type"
+        },
+        {
+          "key": "C",
+          "text": "Only the Cys48Ser mutant loses the disulfide, because only the more N-terminal cysteine can oxidize"
+        },
+        {
+          "key": "D",
+          "text": "Both mutants migrate as covalent dimers on nonreducing SDS-PAGE because serine is oxidized by air"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "A disulfide (cystine) is a covalent bond between two cysteine thiols after oxidation. Serine has a hydroxyl in place of a thiol and cannot form that bond, so either Cys→Ser substitution removes one of the two required sulfurs and abolishes the native inter-residue disulfide. Loss of a structural disulfide commonly lowers conformational stability, so the unfolding temperature typically falls. Serine does not air-oxidize into a covalent Ser–Ser analog of cystine, and both cysteines of a pair are required regardless of sequence order.",
+      "distractor_rationales": {
+        "A": "Serine hydroxyls do not form a cystine-like covalent cross-link under physiologic oxidizing conditions.",
+        "C": "Either cysteine of the pair is required; position in the sequence does not confer a unique ability to oxidize.",
+        "D": "Serine is not oxidized to a covalent dimer; nonreducing SDS-PAGE would not report a new intermolecular Ser–Ser bond."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t1",
+      "type": "discrete",
+      "stem": "A researcher titrates free histidine (pKa values: α-carboxyl 1.8, imidazole 6.0, α-ammonium 9.2) and asks at which pH the amino acid has a time-averaged net charge closest to zero. Which pH should be chosen for an isoelectric precipitation trial?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "3.9, the average of 1.8 and 6.0"
+        },
+        {
+          "key": "B",
+          "text": "5.5, the average of 1.8 and 9.2"
+        },
+        {
+          "key": "C",
+          "text": "7.6, the average of 6.0 and 9.2"
+        },
+        {
+          "key": "D",
+          "text": "9.2, equal to the α-ammonium pKa"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Fully protonated histidine carries a net charge of +2 (carboxylic acid, imidazolium, and ammonium). Loss of the carboxyl proton (pKa 1.8) yields net +1; loss of the imidazole proton (pKa 6.0) yields the zwitterion of net charge 0; loss of the ammonium proton (pKa 9.2) yields net −1. The isoelectric point of a basic amino acid is the average of the two pKa values that bound the net-zero form, here (6.0 + 9.2)/2 = 7.6. Averaging the two lowest pKa values is the rule for acidic residues such as aspartate, not for histidine, and the pI is not equal to a single pKa.",
+      "distractor_rationales": {
+        "A": "Averaging the two lowest pKa values gives the pI of acidic amino acids (Asp, Glu), not of histidine.",
+        "B": "Averaging the α-carboxyl and α-ammonium pKa values is the rule for amino acids with uncharged side chains.",
+        "D": "At the α-ammonium pKa the side chain is already deprotonated, so the net charge is negative, not zero."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t1",
+      "type": "discrete",
+      "stem": "A mixture of glycine (pI ≈ 6.0) and lysine (pI ≈ 9.7) is spotted at the origin of a paper electrophoresis strip equilibrated in a pH 7.0 buffer. After the field is applied, which migration pattern is expected?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Both amino acids migrate toward the cathode"
+        },
+        {
+          "key": "B",
+          "text": "Both amino acids migrate toward the anode"
+        },
+        {
+          "key": "C",
+          "text": "Glycine migrates toward the cathode and lysine migrates toward the anode"
+        },
+        {
+          "key": "D",
+          "text": "Glycine migrates toward the anode and lysine migrates toward the cathode"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The sign of an amino acid’s net charge is set by pH relative to pI: if pH is above pI the molecule is net negative and moves toward the anode; if pH is below pI it is net positive and moves toward the cathode. At pH 7.0, glycine (pI 6.0) is slightly anionic and therefore anodal, whereas lysine (pI 9.7) remains cationic because its side-chain ammonium is still protonated and it migrates to the cathode. The two residues therefore move in opposite directions, which is the basis of separating them electrophoretically at this pH.",
+      "distractor_rationales": {
+        "A": "Glycine is above its pI at pH 7 and is not cationic, so it does not join lysine toward the cathode.",
+        "B": "Lysine is below its pI at pH 7 and remains positive, so it does not migrate toward the anode.",
+        "C": "This choice reverses both signs: glycine is the anion and lysine is the cation at pH 7."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t1",
+      "type": "discrete",
+      "stem": "Free aspartic acid (pKa ≈ 2.0, 3.9, and 9.9) is loaded onto a cation-exchange resin, which bears immobilized negative charges, in a pH 7.0 buffer. The amino acid flows through without binding. Which explanation is best?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "At pH 7 aspartate has a net negative charge and is electrostatically repelled by the resin"
+        },
+        {
+          "key": "B",
+          "text": "At pH 7 aspartate is a zwitterion of net charge zero and therefore has no ionic interaction with the resin"
+        },
+        {
+          "key": "C",
+          "text": "At pH 7 aspartate is net positive and binds so tightly that it cannot be loaded onto the column in the first place"
+        },
+        {
+          "key": "D",
+          "text": "Cation-exchange resins bind amino acids only through aromatic stacking, and aspartate lacks an aromatic ring"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "At pH 7 both carboxyl groups of aspartate (α-carboxyl pKa ~2 and side-chain pKa ~4) are deprotonated, while the α-amino group (pKa ~10) remains protonated, giving a net charge of −1. A cation exchanger presents negative charges intended to bind cations. A net-negative solute is repelled and appears in the flow-through. Aspartate’s isoelectric point is acidic (average of the two carboxyl pKa values, near 3), so pH 7 is well above the pI and the anion predominates. Cation-exchange chromatography is electrostatic, not aromatic stacking.",
+      "distractor_rationales": {
+        "B": "The net-zero form of aspartate exists near pH 3, not at pH 7, where the net charge is −1.",
+        "C": "A net-positive aspartate would require pH below the pI; at pH 7 the residue is anionic, not tightly bound.",
+        "D": "Cation exchangers separate by charge. Aromatic stacking is not the binding mode of a sulfonate or carboxylate resin."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t1",
+      "type": "discrete",
+      "stem": "A purified pentapeptide of known sequence Asn-Ala-Phe-Gln-Lys is subjected to standard acid hydrolysis (6 M HCl, 110 °C, 24 h) and the hydrolysate is analyzed by amino-acid analysis. Compared with the intact peptide’s covalent sequence, which change in the composition table is expected from the chemistry of side-chain amides?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Asparagine and glutamine peaks remain, and two extra free ammonia peaks appear from peptide-bond cleavage only"
+        },
+        {
+          "key": "B",
+          "text": "Asparagine and glutamine are recovered as aspartate and glutamate because their side-chain amides are hydrolyzed"
+        },
+        {
+          "key": "C",
+          "text": "Lysine is converted to norleucine, so the basic residue disappears from the chromatogram"
+        },
+        {
+          "key": "D",
+          "text": "Phenylalanine is fully destroyed, while Asn and Gln are recovered unchanged"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Strong acid hydrolysis cleaves peptide bonds and also hydrolyzes the carboxamide side chains of asparagine and glutamine, converting them to aspartic acid and glutamic acid and releasing ammonia. Amino-acid analysis of a complete acid hydrolysate therefore cannot distinguish Asn from Asp or Gln from Glu; both amides appear in the Asx and Glx pools. Lysine is stable under these conditions, and phenylalanine is not destroyed (tryptophan is the aromatic residue that is lost). The composition table will show Asp and Glu rather than authentic Asn and Gln.",
+      "distractor_rationales": {
+        "A": "Peptide-bond hydrolysis does not spare the side-chain amides; Asn and Gln do not survive standard acid hydrolysis.",
+        "C": "Lysine is not converted to norleucine during HCl hydrolysis; norleucine is sometimes used as an internal standard.",
+        "D": "Tryptophan, not phenylalanine, is destroyed by acid hydrolysis; the amides are not recovered intact."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t1",
+      "type": "discrete",
+      "stem": "A 20-residue alanine-based peptide that is highly α-helical in water is redesigned by placing proline at the central position. Far-UV circular dichroism then shows a marked loss of the 222 nm helical minimum. Which property of proline best accounts for the helix disruption?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Proline’s side chain is positively charged at neutral pH and electrostatically breaks every helix dipole"
+        },
+        {
+          "key": "B",
+          "text": "Proline cannot form peptide bonds, so the chain is cleaved at the substitution site"
+        },
+        {
+          "key": "C",
+          "text": "Proline’s pyrrolidine ring constrains φ and its backbone nitrogen has no hydrogen-bond donor"
+        },
+        {
+          "key": "D",
+          "text": "Proline uniquely forms a disulfide that covalently kinks the helix"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "In an α-helix each carbonyl accepts a hydrogen bond from the amide NH of the residue four positions ahead. Proline’s cyclic side chain tethers the backbone nitrogen, restricting φ to values that are poorly compatible with helix geometry, and that nitrogen has no amide hydrogen, so it cannot donate the i→i+4 hydrogen bond. The combination makes proline a classic helix breaker in the middle of a helix and explains the loss of 222 nm ellipticity. Proline is not charged, does form peptide bonds (as an imide), and has no thiol for disulfide formation.",
+      "distractor_rationales": {
+        "A": "Proline is not ionizable at neutral pH; helix breaking is steric and hydrogen-bonding, not a salt-bridge effect.",
+        "B": "Proline forms peptide (imide) bonds in proteins; the substitution does not hydrolyze the chain.",
+        "D": "Disulfides require cysteine thiols. Proline has no sulfur and cannot cross-link the helix that way."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t1",
+      "type": "discrete",
+      "stem": "A homodimeric extracellular protein is held together solely by one interchain disulfide and has no other covalent links between subunits. Aliquots are run on SDS-PAGE with or without β-mercaptoethanol. Which banding pattern is expected?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A monomer band of identical apparent mass in both the reducing and nonreducing lanes"
+        },
+        {
+          "key": "B",
+          "text": "A dimer band in both lanes, because SDS alone cannot disrupt a protein–protein interface"
+        },
+        {
+          "key": "C",
+          "text": "A dimer band only in the reducing lane and a monomer band only in the nonreducing lane"
+        },
+        {
+          "key": "D",
+          "text": "A band at the dimer mass without reductant and a band at approximately half that mass with reductant"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "SDS denatures noncovalent subunit interfaces, so a dimer that is held together only by a disulfide still migrates as a covalent dimer on nonreducing SDS-PAGE. β-Mercaptoethanol reduces the cystine to two free thiols, releasing the polypeptides, which then migrate at the monomer mass—about half the dimer mass for a homodimer. The reducing lane therefore cannot show the dimer if the disulfide was the only cross-link, and the nonreducing lane cannot show free monomer as the major species. This comparison is the standard test for interchain disulfides.",
+      "distractor_rationales": {
+        "A": "Without reductant the interchain disulfide remains, so the nonreducing lane should not collapse to monomer.",
+        "B": "SDS disrupts noncovalent interfaces; a disulfide-linked dimer is the exception that survives without reductant, not with it.",
+        "C": "This pattern reverses the chemistry: reductant breaks the disulfide, so the dimer should disappear in the reducing lane."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t2",
+      "type": "discrete",
+      "stem": "A globular protein is unfolded in 8 M urea plus a thiol reductant so that all disulfides are broken and secondary structure is lost. Both urea and reductant are then removed by dialysis in air, and catalytic activity spontaneously returns to near-wild-type levels. Which conclusion is best supported?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Native tertiary structure can form only if ribosomes and chaperones remain present during dialysis"
+        },
+        {
+          "key": "B",
+          "text": "The native fold, including correct disulfides, is thermodynamically encoded in the primary sequence under these conditions"
+        },
+        {
+          "key": "C",
+          "text": "Urea covalently rearranges side chains, so the recovered activity belongs to a chemically new protein"
+        },
+        {
+          "key": "D",
+          "text": "Quaternary structure is the only level of structure that can reform after urea treatment"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "This experiment is the Anfinsen result: once the denaturant and reductant are gone, the polypeptide finds its free-energy minimum in solution, pairing cysteines correctly as air reoxidizes thiols. That outcome implies that the information for the native tertiary structure resides in the amino-acid sequence, not in a lingering cellular folding machine in the dialysis bag. Urea is a noncovalent denaturant and does not rewrite the covalent sequence. Activity return also shows that tertiary (and any required disulfides), not merely quaternary assembly of already-folded subunits, can be regenerated from the unfolded chain.",
+      "distractor_rationales": {
+        "A": "The classic refolding is performed on purified protein without ribosomes; chaperones are not required for this demonstration.",
+        "C": "Urea disrupts hydrogen bonds and hydrophobic effect; it does not covalently remodel side chains in this protocol.",
+        "D": "Activity requires a correct tertiary active site. The experiment speaks to refolding of the chain, not only oligomer assembly."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t2",
+      "type": "discrete",
+      "stem": "An α-helix in a soluble protein is probed by mutating a solvent-exposed internal alanine to proline. The magnitude of the negative circular-dichroism band at 222 nm decreases, while the peptide covalent mass is unchanged. The most direct structural interpretation is that:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Proline increases helical hydrogen bonding, so the CD change must reflect aggregation rather than helix loss"
+        },
+        {
+          "key": "B",
+          "text": "The mutation oxidizes nearby cysteines and the CD change reports new disulfides"
+        },
+        {
+          "key": "C",
+          "text": "Helical secondary structure is reduced because proline kinks the helix and cannot donate an amide hydrogen bond"
+        },
+        {
+          "key": "D",
+          "text": "Alanine cannot occur in helices, so the starting protein had no helix and the mutation has no structural meaning"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Far-UV ellipticity at 222 nm is a standard reporter of α-helix content. Proline’s pyrrolidine ring constrains the backbone and removes the amide NH that would donate a hydrogen bond to the carbonyl four residues earlier, so an internal proline typically breaks or kinks a helix. Loss of helix is therefore the most parsimonious reading of a smaller 222 nm signal at constant covalent mass. Alanine is in fact helix-favoring, proline does not create disulfides, and increased helix would deepen—not shrink—the 222 nm minimum.",
+      "distractor_rationales": {
+        "A": "Proline is a helix breaker, not a helix stabilizer; a smaller 222 nm signal is the opposite of increased helicity.",
+        "B": "Proline has no thiol. Disulfide formation is a cysteine chemistry and is not implied by this substitution.",
+        "D": "Alanine has high helix propensity and is common in helices; the starting CD signal already indicated helix."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t2",
+      "type": "discrete",
+      "stem": "A monoclonal IgG stored at pH 8 slowly deamidates a buried asparagine to aspartate. Isoelectric focusing of the aged sample is compared with fresh antibody. How should the pI of the major new species change, and why?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "pI increases because aspartate is more basic than asparagine"
+        },
+        {
+          "key": "B",
+          "text": "pI is unchanged because deamidation does not alter covalent charge"
+        },
+        {
+          "key": "C",
+          "text": "pI becomes undefined because proteins have no isoelectric point after mutation"
+        },
+        {
+          "key": "D",
+          "text": "pI decreases because a neutral carboxamide is converted to an ionizable carboxylate"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Asparagine’s side chain is a nonionizable carboxamide. Deamidation replaces it with aspartic acid, whose carboxylic acid is negatively charged at the mildly alkaline pH of typical IEF sample buffers and throughout most of a focusing gradient above ~pH 4. Adding a new acidic group lowers the pH at which the protein’s net charge is zero, so the focused band shifts toward a lower pI. Aspartate is not a base, the covalent charge table does change, and every protein still has a pI defined by the pH of zero net charge.",
+      "distractor_rationales": {
+        "A": "Aspartate is acidic, not basic; adding a carboxylate cannot raise pI.",
+        "B": "Converting Asn to Asp adds an ionizable group, so the charge versus pH curve and the pI both change.",
+        "C": "Mutations shift pI but do not abolish the concept; IEF still focuses the new species at a new pH."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t2",
+      "type": "discrete",
+      "stem": "A protein elutes from a calibrated size-exclusion column in native buffer at an apparent mass of 160 kDa. Reducing SDS-PAGE of the same sample shows a single band at 40 kDa. The protein contains no cysteine. Which description of quaternary structure is most consistent with the data?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Four identical polypeptide chains associate noncovalently as a homotetramer"
+        },
+        {
+          "key": "B",
+          "text": "A single 160 kDa polypeptide is cleaved by SDS into 40 kDa fragments"
+        },
+        {
+          "key": "C",
+          "text": "Four 40 kDa chains are joined by isopeptide bonds that SDS cannot break"
+        },
+        {
+          "key": "D",
+          "text": "The native species is a heterodimer of 40 kDa and 120 kDa subunits"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Size-exclusion chromatography in native buffer reports the hydrodynamic size of the oligomer, here 160 kDa. SDS unfolds chains and, with reductant, separates polypeptides that are not covalently linked; a single 40 kDa band implies one subunit type whose mass is one-fourth of 160 kDa. Absence of cysteine rules out interchain disulfides, so the tetramer must be held by noncovalent interfaces. SDS does not hydrolyze peptide bonds, covalent isopeptide tetramers would still look large on SDS-PAGE, and a 40 plus 120 kDa heterodimer would give two SDS bands.",
+      "distractor_rationales": {
+        "B": "SDS is a denaturant, not a protease; it does not cut a 160 kDa chain into 40 kDa pieces.",
+        "C": "Isopeptide cross-links would survive SDS and the gel would not collapse to 40 kDa.",
+        "D": "A 40/120 heterodimer would produce two bands on SDS-PAGE, not one."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t2",
+      "type": "discrete",
+      "stem": "A leucine that packs in the dehydrated core of a globular protein is mutated to asparagine. The mutant is soluble, but its thermal unfolding midpoint falls by 12 °C relative to wild type. Which thermodynamic explanation is best?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Asparagine introduces a new disulfide that over-stabilizes a misfolded state"
+        },
+        {
+          "key": "B",
+          "text": "The mutation increases core hydrophobicity, which always lowers Tm"
+        },
+        {
+          "key": "C",
+          "text": "Placing a polar carboxamide in the hydrophobic core is energetically costly unless new hydrogen bonds fully compensate"
+        },
+        {
+          "key": "D",
+          "text": "Leucine is charged at neutral pH and asparagine neutralizes that charge, loosening the fold"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The protein interior is a low-dielectric environment. A buried leucine contributes to the hydrophobic effect and packs with van der Waals contacts. Asparagine’s polar side chain must either satisfy its hydrogen-bonding potential inside the core or pay a large desolvation penalty; incomplete compensation destabilizes the native state and lowers Tm. Asparagine has no thiol, so it cannot make a disulfide. The substitution decreases, rather than increases, hydrophobicity. Leucine is aliphatic and uncharged, so charge neutralization is not the mechanism.",
+      "distractor_rationales": {
+        "A": "Neither leucine nor asparagine can form disulfides; that chemistry belongs to cysteine.",
+        "B": "Asparagine is more polar than leucine, so core hydrophobicity decreases, not increases.",
+        "D": "Leucine is not ionized at neutral pH; there is no charge to neutralize."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t2",
+      "type": "discrete",
+      "stem": "A monomeric enzyme contains no cysteine. Incubation with β-mercaptoethanol in native buffer leaves the far-UV circular-dichroism spectrum unchanged, whereas 6 M guanidine hydrochloride abolishes the 222 nm helical signal. What do the two treatments together indicate about conformational stability?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The fold is locked by disulfides that β-mercaptoethanol somehow cannot reach"
+        },
+        {
+          "key": "B",
+          "text": "β-Mercaptoethanol is a stronger denaturant than guanidine hydrochloride for helical proteins"
+        },
+        {
+          "key": "C",
+          "text": "Guanidine hydrochloride hydrolyzes peptide bonds, and the CD change reports chain cleavage"
+        },
+        {
+          "key": "D",
+          "text": "Secondary structure is maintained by noncovalent interactions, not by disulfides"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The protein has no cysteine, so it cannot contain disulfides, and a reductant is not expected to alter its fold—matching the unchanged CD in β-mercaptoethanol. Guanidine hydrochloride is a chaotrope that disrupts the hydrophobic effect and hydrogen bonding; loss of 222 nm ellipticity shows that α-helix (a noncovalent secondary structure) requires those interactions. Guanidine at 6 M does not hydrolyze the backbone on the timescale of a CD experiment, and a reductant is not a stronger general denaturant than GdnHCl. The contrast isolates noncovalent stabilization.",
+      "distractor_rationales": {
+        "A": "There are no cysteines, so there are no disulfides to lock the fold or to be inaccessible.",
+        "B": "The data show the opposite: GdnHCl unfolds the protein and the reductant does not.",
+        "C": "Chaotropes unfold proteins noncovalently; peptide-bond hydrolysis requires strong acid or proteases."
+      },
+      "difficulty_est": 0.39
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t2",
+      "type": "discrete",
+      "stem": "Two monomeric proteins are compared by native gel electrophoresis at pH 7.0. Protein A has pI 5.0 and protein B has pI 9.0. Ignoring sieving differences, toward which electrode does each protein migrate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A toward the anode and B toward the cathode"
+        },
+        {
+          "key": "B",
+          "text": "Both toward the anode"
+        },
+        {
+          "key": "C",
+          "text": "Both toward the cathode"
+        },
+        {
+          "key": "D",
+          "text": "A toward the cathode and B toward the anode"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "In a native gel the running pH sets net charge: below a protein’s pI the net charge is positive and the protein moves to the cathode; above the pI the net charge is negative and it moves to the anode. At pH 7, protein A (pI 5) is net negative and is therefore anodal, while protein B (pI 9) is net positive and cathodal. The two proteins therefore run in opposite directions if the field is applied to a horizontal strip, or they enter a vertical gel only if the polarity matches their charge. This is the same pH-versus-pI logic used for amino acids.",
+      "distractor_rationales": {
+        "B": "Protein B is below its pI and is cationic; it does not join A toward the anode.",
+        "C": "Protein A is above its pI and is anionic; it does not join B toward the cathode.",
+        "D": "This choice reverses both signs relative to pH minus pI."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t2",
+      "type": "discrete",
+      "stem": "A homodimer is stabilized by an interfacial salt bridge between Arg80 and Glu120. The Glu120Lys mutant remains a single 30 kDa band on SDS-PAGE, but sedimentation equilibrium in native buffer shifts from a 60 kDa dimer toward a 30 kDa monomer. Which interpretation is most accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The mutation hydrolyzes peptide bonds, so SDS-PAGE should have shown fragments smaller than 30 kDa"
+        },
+        {
+          "key": "B",
+          "text": "The substitution selectively weakens quaternary assembly without changing covalent subunit mass"
+        },
+        {
+          "key": "C",
+          "text": "SDS-PAGE would show a 60 kDa band if the interface were real, so the wild-type dimer assignment was an artifact"
+        },
+        {
+          "key": "D",
+          "text": "Lysine cannot occupy a primary-structure position, so the mutant protein cannot be synthesized"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "SDS-PAGE reports covalent polypeptide mass after denaturation. An unchanged 30 kDa band means the backbone is intact and the substitution is a simple point mutant. Sedimentation in native buffer reports oligomeric state: loss of the attractive Arg–Glu pair in favor of Arg–Lys repulsion destabilizes the dimer, shifting the equilibrium toward monomer. That is a quaternary-structure defect. SDS always dissociates noncovalent dimers, so wild-type SDS-PAGE is also 30 kDa and does not refute the native dimer. Lysine is a standard encoded amino acid.",
+      "distractor_rationales": {
+        "A": "A missense mutation does not proteolyze the chain; fragment bands are not expected.",
+        "C": "Noncovalent dimers routinely run as monomers on SDS-PAGE; native methods are required to see the oligomer.",
+        "D": "Lysine is genetically encoded and is commonly introduced by mutagenesis."
+      },
+      "difficulty_est": 0.49
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t4",
+      "type": "discrete",
+      "stem": "A synthetic analog that geometrically mimics the tetrahedral intermediate of a peptide-bond hydrolysis reaction binds a serine protease with a Kd 1000-fold lower than that of the corresponding ground-state substrate, yet the analog is not turned over. This observation is most consistent with which statement about catalysis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The enzyme is designed to bind substrate more tightly than the transition state, which is why chemistry is slow without analog"
+        },
+        {
+          "key": "B",
+          "text": "The analog functions as a dissociable redox cofactor that the protease reduces before each turnover"
+        },
+        {
+          "key": "C",
+          "text": "The active site is complementary to the transition state, so a transition-state mimic binds unusually tightly"
+        },
+        {
+          "key": "D",
+          "text": "Tight analog binding proves that the protease hydrolyzes peptide bonds by a radical chain mechanism"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Pauling’s principle is that enzymes accelerate reactions by binding the transition state more tightly than the substrate, thereby lowering the activation energy. A chemically stable analog that resembles the tetrahedral intermediate therefore acts as a high-affinity inhibitor (a transition-state analog) and is not a substrate. Preferential ground-state binding would raise the barrier, the opposite of catalysis. Serine proteases are hydrolytic, not redox enzymes, and do not require a radical cofactor for this chemistry. The Kd difference is direct evidence of transition-state complementarity.",
+      "distractor_rationales": {
+        "A": "Tighter substrate than transition-state binding would slow the reaction; enzymes do the reverse.",
+        "B": "A non-turned-over analog is an inhibitor, not a redox cofactor of a hydrolase.",
+        "D": "Serine proteases use covalent nucleophilic catalysis, not a radical chain; affinity alone does not imply radicals."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t4",
+      "type": "discrete",
+      "stem": "Yeast hexokinase phosphorylates glucose with ATP. In the absence of sugar the enzyme’s rate of ATP hydrolysis to ADP and inorganic phosphate is very low. Glucose binding closes a domain cleft around the active site and then ATP hydrolysis (now as phosphoryl transfer to glucose) accelerates. Which model best explains the idle ATPase suppression?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A rigid lock-and-key site that is preorganized equally for water and for glucose"
+        },
+        {
+          "key": "B",
+          "text": "Ping-pong substitution in which ATP phosphorylates the enzyme before glucose is possible"
+        },
+        {
+          "key": "C",
+          "text": "Competitive inhibition of hexokinase by glucose with respect to ATP"
+        },
+        {
+          "key": "D",
+          "text": "Induced fit that excludes water and aligns catalytic groups only after glucose binds"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Hexokinase is a classic induced-fit enzyme: glucose binding drives closure of two lobes, dehydrating the active site so that ATP’s γ-phosphoryl is transferred to glucose rather than to water. That conformational requirement explains why abortive ATPase activity is low without sugar. A rigid lock-and-key site already open to solvent would hydrolyze ATP continually. Glucose is the phosphoryl acceptor, not a competitive inhibitor versus ATP, and yeast hexokinase uses a sequential ternary-complex mechanism rather than a substituted-enzyme ping-pong path as the explanation of the water-exclusion observation.",
+      "distractor_rationales": {
+        "A": "A permanently open, rigid site would allow water to attack ATP; the data show that sugar-triggered closure is required.",
+        "B": "The observation is about excluding water by domain closure, not about a covalent phosphoryl-enzyme intermediate.",
+        "C": "Glucose is a substrate. Competitive inhibition would decrease, not enable, phosphoryl transfer."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t4",
+      "type": "discrete",
+      "stem": "The nucleophilic serine of a serine protease is mutated to alanine. Steady-state kinetics show that kcat falls by about six orders of magnitude while Km for a peptide substrate is nearly unchanged. Which interpretation is most appropriate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The serine hydroxyl is required for covalent catalysis but contributes little to ground-state substrate binding"
+        },
+        {
+          "key": "B",
+          "text": "The mutation destroys the S1 specificity pocket, so substrate can no longer bind"
+        },
+        {
+          "key": "C",
+          "text": "Serine was a diffusible cofactor rather than a residue in the polypeptide, and dialysis had already removed it"
+        },
+        {
+          "key": "D",
+          "text": "Km is numerically equal to kcat for hydrolases, so both parameters must fall together; the data are impossible"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "In the catalytic triad the serine hydroxyl attacks the scissile carbonyl, forming a tetrahedral intermediate and then an acyl-enzyme. Replacing that oxygen with alanine’s methyl group removes the nucleophile and collapses kcat. Km, which for many proteases is dominated by substrate binding to the specificity pockets, can remain similar if those pockets are intact—exactly the pattern reported. A destroyed binding pocket would raise Km substantially. Serine is an amino-acid residue, not a cofactor, and Km is not equal to kcat; they are independent kinetic parameters.",
+      "distractor_rationales": {
+        "B": "An unchanged Km argues that ground-state binding is largely intact; the defect is chemical step(s), not docking.",
+        "C": "The nucleophilic serine is part of the protein sequence; it is not a small-molecule cofactor that dialyzes away.",
+        "D": "Km and kcat are independent. A selective kcat drop is the expected signature of a catalytic-residue mutation."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t4",
+      "type": "discrete",
+      "stem": "Lactate dehydrogenase is passed over a gel-filtration column that separates protein from small molecules. The eluted polypeptide has no activity in a lactate-plus-buffer assay until NAD+ is added back, after which NADH production resumes. How is NAD+ best classified in this experiment?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A tightly bound prosthetic group that remains covalently attached throughout gel filtration"
+        },
+        {
+          "key": "B",
+          "text": "A dissociable coenzyme (cosubstrate) required for the hydride-transfer reaction"
+        },
+        {
+          "key": "C",
+          "text": "A competitive inhibitor that was removed so that lactate could finally bind"
+        },
+        {
+          "key": "D",
+          "text": "The enzyme’s true substrate, with lactate serving only as an allosteric activator"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "LDH catalyzes hydride transfer from lactate to NAD+, producing pyruvate and NADH. NAD+ is a small, dissociable coenzyme that occupies a Rossmann fold and leaves with the product as NADH; gel filtration therefore strips it from the protein and activity vanishes until NAD+ is restored. A covalently attached prosthetic group would not be removed by a desalting column. NAD+ is a substrate analog of the redox pair, not an inhibitor, and lactate is the hydride donor, not merely an allosteric ligand. The restoration experiment is the operational definition of a dissociable coenzyme.",
+      "distractor_rationales": {
+        "A": "If NAD+ remained covalently attached, gel filtration would not have abolished activity.",
+        "C": "Adding NAD+ restores catalysis; that is the opposite of removing an inhibitor.",
+        "D": "Both lactate and NAD+ are substrates of the bisubstrate reaction; lactate is not only a regulator."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t4",
+      "type": "discrete",
+      "stem": "An enzyme is assayed with lactate as the only organic substrate. No product forms unless NAD+ is present; the organic product is pyruvate and the dinucleotide is reduced to NADH. According to enzyme classification by reaction type, the protein is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A hydrolase that adds water across the C–C bond of lactate"
+        },
+        {
+          "key": "B",
+          "text": "A ligase that condenses two lactates with concomitant ATP hydrolysis"
+        },
+        {
+          "key": "C",
+          "text": "An isomerase that rearranges lactate to pyruvate without a redox cofactor"
+        },
+        {
+          "key": "D",
+          "text": "An oxidoreductase that uses NAD+ as the electron acceptor"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Oxidoreductases catalyze electron transfer. Conversion of lactate (a secondary alcohol) to pyruvate (a ketone) with stoichiometric reduction of NAD+ to NADH is hydride transfer to a nicotinamide cofactor, the defining LDH reaction and EC class 1. Hydrolases add water and do not require NAD+. Ligases join two molecules using NTP hydrolysis, which is not described. An isomerase would rearrange atoms within one molecule without a net redox change or a requirement for NAD+. The obligatory NAD+ dependence and NADH production assign the enzyme as an oxidoreductase.",
+      "distractor_rationales": {
+        "A": "No water is added, and NAD+ would be unnecessary for a hydrolase.",
+        "B": "ATP is not mentioned, and two lactates are not condensed.",
+        "C": "Isomerases do not reduce NAD+; the observed cofactor change is a redox signature."
+      },
+      "difficulty_est": 0.33
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t4",
+      "type": "discrete",
+      "stem": "Trypsin’s S1 specificity pocket contains Asp189, which orients Lys or Arg side chains of substrates. An Asp189Ser mutant is assayed with otherwise identical peptides. Which kinetic change is most likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "kcat/Km for cleavage after Lys or Arg falls because the anionic S1 contact is lost"
+        },
+        {
+          "key": "B",
+          "text": "The mutant becomes a better catalyst for acidic (Asp/Glu) substrates than wild-type trypsin"
+        },
+        {
+          "key": "C",
+          "text": "Ser189 takes over as the nucleophile, so catalytic triad serine is no longer needed"
+        },
+        {
+          "key": "D",
+          "text": "The mutant hydrolyzes DNA because serine proteases become nucleases when Asp189 is removed"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Trypsin specificity for basic residues is electrostatic: Asp189 at the bottom of the S1 well stabilizes the cationic Lys/Arg side chain of the P1 residue. Replacing that carboxylate with serine’s polar but uncharged hydroxyl removes the salt-bridge partner, so productive occupancy of S1 by basic substrates drops and kcat/Km for those sequences falls. The mutation does not invert specificity toward anions, does not relocate the catalytic nucleophile (still the triad serine), and does not convert the hydrolase into a nuclease. Classic pocket swaps affect recognition, not the chemical identity of the enzyme class.",
+      "distractor_rationales": {
+        "B": "Removing a negative charge from S1 does not create a cationic pocket that would prefer Asp/Glu.",
+        "C": "The nucleophile remains the catalytic-triad serine; residue 189 is a specificity residue, not the attacking group.",
+        "D": "Substrate specificity among peptides is independent of converting a protease into a DNase."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t4",
+      "type": "discrete",
+      "stem": "A hydrolase exhibits a bell-shaped kcat versus pH profile with apparent pKa values near 4.5 and 6.5. Mutating a conserved active-site glutamate to glutamine collapses kcat across pH 5–8 to near the uncatalyzed baseline. The glutamate is most likely required as:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A residue whose hydrogen-bond donor pattern is identical to glutamine, so the activity loss must be steric only"
+        },
+        {
+          "key": "B",
+          "text": "A carboxylate that must be deprotonated in the active enzyme and cannot ionize after the Gln substitution"
+        },
+        {
+          "key": "C",
+          "text": "The organic substrate itself, meaning the enzyme had been catalyzing glutamate conversion rather than peptide hydrolysis"
+        },
+        {
+          "key": "D",
+          "text": "A residue that sets the pKa of solvent water to 14, without participating in proton transfer"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "A bell-shaped kcat–pH curve implies that two ionizable groups must occupy specific protonation states during the rate-limiting step. An apparent pKa near 4.5 is in the carboxylic-acid range. Glutamate in the deprotonated form can act as a general base or stabilize a cation; glutamine is isosteric but cannot ionize, so it cannot supply that carboxylate and kcat collapses at all assay pH values. Gln still donates and accepts hydrogen bonds, so a purely H-bond-identical substitution would not explain total loss. The conserved residue is in the enzyme, not the substrate, and water’s pKa in bulk is already ~15.7; the data specifically implicate an ionizable carboxylate.",
+      "distractor_rationales": {
+        "A": "Gln can mimic some H-bonds but not the negative charge or proton-shuttling of Glu; the activity collapse indicates ionization is essential.",
+        "C": "A conserved active-site glutamate is a catalytic residue of the hydrolase, not evidence that glutamate was the substrate.",
+        "D": "Bulk water already has a high pKa; the pH profile and the Glu→Gln phenotype point to a catalytic carboxylate."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t4",
+      "type": "discrete",
+      "stem": "Two antibodies bind the same hapten substrate with indistinguishable Kd. Antibody 1 is noncatalytic. Antibody 2, raised against a transition-state analog, accelerates hapten hydrolysis 10^4-fold. Relative to antibody 1, antibody 2 must additionally:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bind the product more tightly than the substrate so that the equilibrium constant of the reaction increases"
+        },
+        {
+          "key": "B",
+          "text": "Raise the activation free energy by straining the substrate into a less reactive geometry"
+        },
+        {
+          "key": "C",
+          "text": "Stabilize the transition state (or align catalytic groups) beyond what ground-state binding affinity reports"
+        },
+        {
+          "key": "D",
+          "text": "Convert the unimolecular reaction into a diffusion-limited bimolecular collision in bulk water"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Equal Kd values mean the two antibodies bind the ground-state hapten similarly, so differential ground-state affinity cannot explain a 10^4 rate ratio. Catalytic antibodies selected on transition-state analogs work by binding the altered geometry of the transition state more tightly than the substrate, or by placing catalytic side chains, which lowers ΔG‡. Tighter product binding would risk product inhibition and does not change the reaction equilibrium, which is a property of free substrate and product. Raising the barrier would slow the reaction. Catalysis occurs in the binding site, not by sending the hapten into an uncatalyzed bimolecular solvent path.",
+      "distractor_rationales": {
+        "A": "Enzymes do not change overall Keq. Excess product affinity causes inhibition, not acceleration.",
+        "B": "Increasing the activation energy decreases the rate; the catalytic antibody does the opposite.",
+        "D": "The point of a catalytic binding site is to avoid relying on the slow uncatalyzed solution reaction."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t5",
+      "type": "discrete",
+      "stem": "A reversible inhibitor is added to a Michaelis–Menten enzyme. Double-reciprocal plots with and without inhibitor intersect on the ordinate; the apparent Km increases while Vmax is unchanged. Which mechanistic description fits these data?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Uncompetitive inhibition in which inhibitor binds only the ES complex"
+        },
+        {
+          "key": "B",
+          "text": "Pure noncompetitive inhibition in which inhibitor binds E and ES with equal affinity"
+        },
+        {
+          "key": "C",
+          "text": "Irreversible active-site titration that permanently lowers the concentration of functional enzyme"
+        },
+        {
+          "key": "D",
+          "text": "Competitive inhibition in which inhibitor and substrate compete for free enzyme"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Competitive inhibitors bind free enzyme in a manner that overlaps substrate binding, so they can be overcome by high [S]: Vmax is unchanged and apparent Km rises. On a Lineweaver–Burk plot that pattern is a shared y-intercept (1/Vmax) and a larger x-intercept magnitude. Uncompetitive inhibition lowers both Km and Vmax and gives parallel lines. Pure noncompetitive inhibition lowers Vmax without changing Km (shared x-intercept). Irreversible inactivation lowers Vmax because active enzyme concentration falls and is not reversed by substrate in the same way. The ordinate intersection with higher Km is the competitive signature.",
+      "distractor_rationales": {
+        "A": "Uncompetitive lines are parallel; both apparent Km and Vmax decrease, unlike these plots.",
+        "B": "Noncompetitive inhibition decreases Vmax; the y-intercept would increase, not stay fixed.",
+        "C": "Irreversible loss of enzyme molecules reduces Vmax; substrate cannot restore the original maximum velocity."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t5",
+      "type": "discrete",
+      "stem": "In the presence of a reversible inhibitor, Vmax of an enzyme decreases but Km is unchanged. Increasing substrate concentration cannot restore the original Vmax. The inhibitor most likely:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Binds equally well to E and ES at a site distinct from the substrate, lowering the population of functional catalytic cycles"
+        },
+        {
+          "key": "B",
+          "text": "Competes directly for the active site, which would have increased Km at constant Vmax"
+        },
+        {
+          "key": "C",
+          "text": "Is actually a second substrate that is turned over faster than the assayed substrate"
+        },
+        {
+          "key": "D",
+          "text": "Binds only ES (uncompetitive), which would have decreased apparent Km as well as Vmax"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "When inhibitor affinity for E and ES is equal (α = α′ in the general mixed scheme), the Michaelis constant is unaltered because substrate binding is not biased, but a fraction of enzyme is sequestered in nonproductive EI and ESI complexes, so Vmax falls. Saturating substrate cannot displace an inhibitor that still binds ES. That is classic noncompetitive inhibition and matches the vignette. Competitive inhibition would raise Km and spare Vmax. A better alternative substrate would be a competing reaction, not a simple Vmax drop at constant Km. Uncompetitive inhibition decreases apparent Km.",
+      "distractor_rationales": {
+        "B": "Direct active-site competition is competitive inhibition: Vmax unchanged, Km increased—the opposite pattern.",
+        "C": "A faster alternative substrate would consume enzyme in another reaction; it is not the definition of this inhibitor pattern.",
+        "D": "Uncompetitive inhibitors lower apparent Km (higher apparent affinity) together with Vmax; Km was said to be unchanged."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t5",
+      "type": "discrete",
+      "stem": "Lineweaver–Burk plots recorded at several concentrations of a reversible inhibitor are parallel. Both apparent Km and Vmax decrease as inhibitor rises. Mechanistically the inhibitor:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Binds only free enzyme and is displaced by substrate (competitive)"
+        },
+        {
+          "key": "B",
+          "text": "Binds the ES complex preferentially, diverting it into a nonproductive ESI complex"
+        },
+        {
+          "key": "C",
+          "text": "Binds E and ES equally, leaving Km unchanged"
+        },
+        {
+          "key": "D",
+          "text": "Increases cooperativity so that the Hill coefficient rises above 4"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Parallel Lineweaver–Burk lines are the hallmark of uncompetitive inhibition: inhibitor binds ES (or a downstream complex) rather than free E. Removing ES pulls more substrate onto enzyme (lower apparent Km) while the ESI complex cannot yield product (lower Vmax). Competitive inhibitors intersect on the y-axis and raise Km. Equal binding to E and ES is noncompetitive and keeps Km constant. The vignette does not describe sigmoidal cooperative kinetics or a Hill coefficient. Preferential ES binding is therefore the mechanism that simultaneously lowers both kinetic constants and produces parallel reciprocal plots.",
+      "distractor_rationales": {
+        "A": "Competitive inhibition increases Km and shares a Vmax intercept; the lines would not be parallel with decreasing Km.",
+        "C": "Equal E and ES binding does not change Km and is not associated with parallel LB plots.",
+        "D": "Parallel MM reciprocal plots do not report cooperativity; Hill coefficients are obtained from sigmoidal v versus [S] curves."
+      },
+      "difficulty_est": 0.57
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t5",
+      "type": "discrete",
+      "stem": "A homotetrameric allosteric enzyme displays a sigmoidal v versus [S] curve (Hill coefficient ≈ 2.4). A mutation locks every subunit in the high-affinity R conformation. Which change in the saturation curve is most likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The curve becomes more sigmoidal and the Hill coefficient increases toward the number of subunits"
+        },
+        {
+          "key": "B",
+          "text": "Catalysis is abolished because T-state residues are required for chemistry"
+        },
+        {
+          "key": "C",
+          "text": "The curve becomes more hyperbolic with a lower half-saturation concentration for substrate"
+        },
+        {
+          "key": "D",
+          "text": "Vmax falls to zero while Km is unchanged, as in noncompetitive inhibition by substrate"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "In the concerted MWC model, cooperativity arises from a T ⇌ R equilibrium in which substrate pulls the ensemble toward R. If a mutation pre-stabilizes R, that equilibrium is already shifted, subunits no longer switch in a concerted way, and the v versus [S] plot loses sigmoidicity (Hill n approaches 1). The R state binds substrate more tightly, so K0.5 decreases. Chemistry can still occur in R—that is the high-activity state—so Vmax need not collapse. The phenotype is the opposite of increased cooperativity and is not described by noncompetitive inhibition.",
+      "distractor_rationales": {
+        "A": "Locking R removes the T/R switch that generates cooperativity, so the Hill coefficient falls rather than rises.",
+        "B": "R is the catalytically competent high-affinity state in the standard model; locking R should preserve catalysis.",
+        "D": "Noncompetitive inhibition is a different mechanistic class and would not specifically hyperbolicize a cooperative enzyme."
+      },
+      "difficulty_est": 0.6
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t5",
+      "type": "discrete",
+      "stem": "Trypsin is stored in the pancreas as trypsinogen, which has very low activity until a peptide bond is cleaved and the new N-terminus forms a salt bridge that orders the oxyanion hole. A mutation allows trypsinogen to autoactivate inside acinar cells. Which clinical-level consequence is most directly expected from this loss of zymogen control?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Proteolytic autodigestion of pancreatic tissue (pancreatitis)"
+        },
+        {
+          "key": "B",
+          "text": "Complete inability to digest dietary protein because trypsin can never become active"
+        },
+        {
+          "key": "C",
+          "text": "Conversion of trypsin into an aminotransferase that no longer hydrolyzes peptides"
+        },
+        {
+          "key": "D",
+          "text": "Irreversible competitive inhibition of amylase by the uncleaved activation peptide"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Zymogen storage is a physiological control that keeps a dangerous protease silent until it reaches the intestinal lumen, where enterokinase and trypsin itself generate active enzyme. Premature autoactivation inside the pancreas produces active trypsin among abundant protein substrates, including other zymogens, launching a cascade of autodigestion and inflammation. The mutation described increases, not decreases, activity in the wrong compartment, so dietary protein digestion is not the primary failure. The enzyme remains a hydrolase, not an aminotransferase, and the vignette does not implicate amylase inhibition.",
+      "distractor_rationales": {
+        "B": "Autoactivation creates active trypsin; the problem is location and timing, not absence of activity.",
+        "C": "A zymogen-processing defect does not reclassify trypsin as a PLP-dependent aminotransferase.",
+        "D": "There is no mechanistic link from trypsinogen autoactivation to competitive inhibition of amylase."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t5",
+      "type": "discrete",
+      "stem": "E. coli aspartate transcarbamoylase (ATCase) is inhibited by CTP. A mutation in a regulatory chain prevents CTP binding but leaves the catalytic chains kinetically intact in isolation. In the holoenzyme this mutation is expected to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Block substrate binding at the active site because CTP and aspartate share one pocket"
+        },
+        {
+          "key": "B",
+          "text": "Abolish CTP feedback inhibition while still allowing catalysis of carbamoyl-aspartate formation"
+        },
+        {
+          "key": "C",
+          "text": "Convert ATCase into a zymogen that requires proteolytic cleavage by CTP"
+        },
+        {
+          "key": "D",
+          "text": "Make CTP an irreversible covalent inactivator of the catalytic serine"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "ATCase is the textbook allosteric enzyme of pyrimidine biosynthesis: catalytic subunits bind aspartate and carbamoyl phosphate, while regulatory subunits bind CTP (and ATP) at a distinct site. Occupancy of the regulatory site shifts the T/R equilibrium and raises the K0.5 for aspartate. Removing CTP binding therefore specifically disconnects end-product inhibition from an otherwise functional active site, so carbamoyl-aspartate can still be made but is no longer tuned by CTP. CTP does not share the aspartate pocket, is not a protease, and does not covalently modify a catalytic serine (ATCase is not a serine hydrolase).",
+      "distractor_rationales": {
+        "A": "If CTP and aspartate shared a pocket, a regulatory-chain mutation would not be the relevant lesion; the sites are separate.",
+        "C": "ATCase is not synthesized as a zymogen activated by CTP proteolysis.",
+        "D": "CTP is a reversible allosteric nucleotide, not an affinity label of a catalytic serine."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t5",
+      "type": "discrete",
+      "stem": "A point mutation doubles an enzyme’s Km for substrate without changing kcat or the enzyme concentration. Assays are run at a substrate concentration equal to the wild-type Km. Relative to wild type, the mutant’s initial velocity is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Unchanged, because velocity depends only on kcat"
+        },
+        {
+          "key": "B",
+          "text": "Equal to the new Vmax, because [S] still saturates the mutant"
+        },
+        {
+          "key": "C",
+          "text": "Lower: wild type runs at Vmax/2 while the mutant runs at Vmax/3"
+        },
+        {
+          "key": "D",
+          "text": "Higher, because a larger Km means a larger first-order rate constant"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The Michaelis–Menten equation is v = Vmax [S] / (Km + [S]). For wild type, [S] = Km so v = Vmax/2. The mutant has Km′ = 2 Km and the same Vmax (kcat and [E]t unchanged). Substituting [S] = Km gives v = Vmax · Km / (2 Km + Km) = Vmax/3. Thus the observed rate falls. Velocity at subsaturating [S] depends on both kcat and Km, so an unchanged kcat is not enough. [S] equal to the old Km is only half of the new Km, far from saturation. Increasing Km reflects weaker apparent substrate interaction, which slows—not accelerates—the rate at fixed [S].",
+      "distractor_rationales": {
+        "A": "At [S] near Km, v is sensitive to Km as well as kcat; only Vmax is set by kcat[E]t at saturating [S].",
+        "B": "Saturation requires [S] ≫ Km. Here [S] is only half of the mutant Km, so v is well below Vmax.",
+        "D": "A larger Km is poorer apparent affinity; the first-order constant Vmax/Km decreases when Km doubles at constant Vmax."
+      },
+      "difficulty_est": 0.59
+    },
+    {
+      "concept_id": "MCAT.FC1.1A.t5",
+      "type": "discrete",
+      "stem": "Mammalian phosphofructokinase-1 uses ATP as a phosphoryl donor yet is inhibited by high ATP at a second site. AMP relieves that inhibition even though AMP is not a substrate. This pattern is best described as:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Competitive inhibition by AMP at the catalytic ATP site"
+        },
+        {
+          "key": "B",
+          "text": "Irreversible covalent adenylation of a catalytic lysine by ATP"
+        },
+        {
+          "key": "C",
+          "text": "Uncompetitive inhibition by AMP that binds only the fructose-6-phosphate complex"
+        },
+        {
+          "key": "D",
+          "text": "Allosteric feedback in which cellular energy charge tunes glycolytic flux at a regulatory site"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "PFK-1 is a major control point of glycolysis. ATP binds both the active site (as substrate) and an inhibitory allosteric site that signals high energy charge. AMP, which rises when ATP is depleted, binds a distinct regulatory site (or shifts the T/R equilibrium) to oppose ATP inhibition and restore activity. That is reversible allosteric feedback, not covalent inactivation. AMP is an activator here, not a competitive dead-end inhibitor versus ATP at the catalytic site, and the vignette does not match uncompetitive kinetics. Energy charge therefore sets glycolytic rate independently of simple Michaelis saturation by fructose-6-phosphate.",
+      "distractor_rationales": {
+        "A": "AMP relieves inhibition; it is not acting as a competitive blocker of the catalytic ATP site in this description.",
+        "B": "The ATP effect is rapid and reversible allostery, not a stoichiometric covalent modification required by the vignette.",
+        "C": "AMP is described as relieving ATP inhibition, which is activation, not uncompetitive inhibition."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t3",
+      "type": "discrete",
+      "stem": "Erythrocytes metabolize glucose to lactate. When inorganic phosphate is replaced by arsenate, glyceraldehyde-3-phosphate dehydrogenase still oxidizes its substrate, but 1-arseno-3-phosphoglycerate hydrolyzes spontaneously and 3-phosphoglycerate forms without generating ATP at phosphoglycerate kinase. What happens to the net ATP yield of anaerobic glycolysis per glucose?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Net ATP falls to zero because the two ATP from phosphoglycerate kinase are lost while hexokinase and PFK-1 still consume two ATP"
+        },
+        {
+          "key": "B",
+          "text": "Net ATP doubles because pyruvate kinase is stimulated by arsenate"
+        },
+        {
+          "key": "C",
+          "text": "Net ATP becomes two extra from hexokinase, which now runs in reverse"
+        },
+        {
+          "key": "D",
+          "text": "ATP yield is unchanged because substrate-level phosphorylation occurs only at pyruvate kinase"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "In anaerobic glycolysis, ATP is spent at hexokinase and phosphofructokinase-1 (−2) and recouped at phosphoglycerate kinase (+2, one per triose) and pyruvate kinase (+2), for a net of +2 ATP per glucose. Arsenate allows GAPDH to proceed but bypasses the acyl-phosphate that PGK uses to make ATP, so those two ATP are lost. Pyruvate kinase still makes two ATP from two PEP, exactly canceling the two ATP invested, and net yield is zero. Hexokinase does not reverse under these conditions, and arsenate is not a PK stimulator that would raise yield. PGK is a genuine substrate-level phosphorylation step that the uncoupler removes.",
+      "distractor_rationales": {
+        "B": "Arsenate uncouples PGK; it does not double PK flux in a way that increases net ATP above normal.",
+        "C": "Hexokinase remains an ATP-consuming step; it does not run in reverse to produce ATP in glycolysis.",
+        "D": "Phosphoglycerate kinase is also a substrate-level phosphorylation; ignoring it misses the uncoupling."
+      },
+      "difficulty_est": 0.62
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t3",
+      "type": "discrete",
+      "stem": "A cell-free liver extract can synthesize glucose from several precursors. Avidin is added to inactivate biotin-dependent carboxylases, including pyruvate carboxylase. Which 14C-labeled precursor can still yield [14C]glucose in this system?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "[14C]pyruvate"
+        },
+        {
+          "key": "B",
+          "text": "[14C]lactate"
+        },
+        {
+          "key": "C",
+          "text": "[14C]glycerol"
+        },
+        {
+          "key": "D",
+          "text": "[14C]alanine"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Gluconeogenesis from pyruvate, lactate, or alanine all funnel through pyruvate and therefore require pyruvate carboxylase to form oxaloacetate before PEPCK can make PEP. Pyruvate carboxylase uses biotin; avidin binds biotin extremely tightly and blocks that step. Glycerol is phosphorylated to glycerol-3-phosphate and oxidized to dihydroxyacetone phosphate, which enters the pathway at the triose-phosphate level, bypassing the pyruvate carboxylase/PEPCK bypass of pyruvate kinase. From DHAP, aldolase, fructose-1,6-bisphosphatase, and glucose-6-phosphatase can still produce glucose. Hence only labeled glycerol remains a competent glucogenic precursor in the avidin-treated extract.",
+      "distractor_rationales": {
+        "A": "Pyruvate must be carboxylated by the biotin enzyme pyruvate carboxylase before it can form PEP.",
+        "B": "Lactate is oxidized to pyruvate and then faces the same biotin-dependent carboxylation block.",
+        "D": "Alanine transaminates to pyruvate and likewise requires pyruvate carboxylase."
+      },
+      "difficulty_est": 0.56
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t3",
+      "type": "discrete",
+      "stem": "Skeletal muscle is forced to work under strictly anaerobic conditions. Glycolytic flux from glucose continues, and lactate accumulates. Which process most directly permits GAPDH to keep turning over?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Faster entry of pyruvate into the TCA cycle, which oxidizes NADH in mitochondria"
+        },
+        {
+          "key": "B",
+          "text": "Lactate dehydrogenase regeneration of NAD+ by reducing pyruvate to lactate"
+        },
+        {
+          "key": "C",
+          "text": "The oxidative pentose phosphate pathway, which is the cell’s source of NAD+ for GAPDH"
+        },
+        {
+          "key": "D",
+          "text": "Oxidative phosphorylation, which is required to reoxidize NADH whenever glycolysis runs"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "GAPDH requires NAD+ each time it oxidizes glyceraldehyde-3-phosphate. Under anaerobic conditions the electron-transport chain cannot reoxidize NADH. Cytosolic lactate dehydrogenase transfers those electrons to pyruvate, producing lactate and regenerating NAD+, which is why lactate accumulates and why glycolysis can continue. Pyruvate does not enter a running TCA cycle without oxygen-dependent NADH oxidation. The pentose phosphate pathway produces NADPH, not the NAD+ pool used by GAPDH. Oxidative phosphorylation is precisely what is unavailable in the anaerobic vignette.",
+      "distractor_rationales": {
+        "A": "Anaerobiosis prevents net TCA/ETC function; accelerating pyruvate oxidation in mitochondria is not available.",
+        "C": "Oxidative PPP makes NADPH and CO2; it does not supply the NAD+ that GAPDH needs.",
+        "D": "Oxidative phosphorylation requires oxygen; it cannot be the NAD+ source in this experiment."
+      },
+      "difficulty_est": 0.35
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t3",
+      "type": "discrete",
+      "stem": "Erythrocytes from a patient with glucose-6-phosphate dehydrogenase deficiency maintain near-normal ATP from glycolysis but cannot increase NADPH after an oxidative challenge. After primaquine exposure, hemoglobin is damaged and hemolysis occurs. Which role of the oxidative pentose phosphate pathway best explains the hemolysis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The pathway is the erythrocyte’s main source of ATP, so deficiency causes energy failure first"
+        },
+        {
+          "key": "B",
+          "text": "The pathway produces NADH that directly reduces methemoglobin via complex I"
+        },
+        {
+          "key": "C",
+          "text": "The pathway decarboxylates pyruvate, and loss of that step starves the TCA cycle in red cells"
+        },
+        {
+          "key": "D",
+          "text": "The pathway supplies NADPH that keeps glutathione reduced so that peroxides do not damage hemoglobin"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Mature erythrocytes lack mitochondria and rely on glycolysis for ATP, which is intact in G6PD deficiency and therefore not the primary failure. The oxidative PPP, beginning at G6PD, is their principal source of NADPH. NADPH is the reductant for glutathione reductase; reduced glutathione and glutathione peroxidase detoxify H2O2 and lipid peroxides. Without NADPH, oxidative drugs such as primaquine overwhelm hemoglobin (Heinz bodies) and lyse the cell. The PPP produces NADPH, not NADH for a respiratory chain these cells do not have, and it does not decarboxylate pyruvate in red cells.",
+      "distractor_rationales": {
+        "A": "The vignette states ATP is near normal; hemolysis here is oxidative, not an ATP-depletion syndrome.",
+        "B": "G6PD produces NADPH, not NADH, and erythrocytes do not run Complex I.",
+        "C": "Red cells have no TCA cycle; pyruvate decarboxylation is not the PPP’s role."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t3",
+      "type": "discrete",
+      "stem": "In hepatocytes, glucagon signaling phosphorylates the bifunctional PFK-2/FBPase-2 enzyme, lowering fructose-2,6-bisphosphate. What is the expected immediate effect on glycolysis versus gluconeogenesis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "PFK-1 is activated and glycolysis accelerates to consume blood glucose"
+        },
+        {
+          "key": "B",
+          "text": "PFK-1 becomes less active and fructose-1,6-bisphosphatase is relieved of inhibition, favoring gluconeogenesis"
+        },
+        {
+          "key": "C",
+          "text": "Hexokinase is irreversibly inactivated by direct glucagon binding to the enzyme"
+        },
+        {
+          "key": "D",
+          "text": "Pyruvate kinase is allosterically activated by glucagon so that PEP is drained into pyruvate"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Fructose-2,6-bisphosphate is the key feed-forward activator of hepatic PFK-1 and a potent inhibitor of fructose-1,6-bisphosphatase. Glucagon, via cAMP and protein kinase A, stimulates the phosphatase activity of the bifunctional enzyme, F2,6BP falls, PFK-1 slows, and FBPase-1 accelerates. The liver therefore switches from consuming to producing glucose. Glucagon does not bind hexokinase as a ligand, and the hepatic effect on pyruvate kinase is phosphorylation that inactivates it, not allosteric activation. The F2,6BP drop is the coordinated reciprocal control of the PFK-1/FBPase-1 substrate cycle.",
+      "distractor_rationales": {
+        "A": "Lower F2,6BP deactivates—not activates—PFK-1; glucagon does not speed hepatic glycolysis.",
+        "C": "Glucagon acts through a GPCR/cAMP cascade, not by binding hexokinase, and liver uses glucokinase rather than muscle hexokinase as the control point.",
+        "D": "Glucagon leads to PKA phosphorylation of liver pyruvate kinase, which decreases—not increases—its activity."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t3",
+      "type": "discrete",
+      "stem": "A student proposes to reverse the pyruvate kinase step in cytosol so that pyruvate plus ATP directly yields PEP and ADP, as a shortcut for gluconeogenesis. Measurements of ΔG in hepatocytes show the pyruvate kinase reaction is strongly negative. Which statement best explains why gluconeogenesis uses a two-enzyme bypass instead?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Pyruvate kinase is freely reversible at cellular metabolite ratios, so the bypass is chemically unnecessary"
+        },
+        {
+          "key": "B",
+          "text": "PEP has a lower phosphoryl-transfer potential than pyruvate, so ATP cannot be involved"
+        },
+        {
+          "key": "C",
+          "text": "The bypass exists only to consume biotin; PEPCK alone could reverse pyruvate kinase"
+        },
+        {
+          "key": "D",
+          "text": "The pyruvate kinase reaction is too exergonic to reverse, so pyruvate carboxylase plus PEPCK provide an exergonic detour"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Irreversible glycolytic steps are those with large negative ΔG in the cell. Pyruvate kinase is one of them: PEP’s high phosphoryl-transfer potential drives ATP formation, and the reverse reaction is strongly endergonic. Gluconeogenesis therefore spends extra free energy—ATP in the pyruvate carboxylase step (biotin-dependent formation of OAA) and GTP in PEPCK—to produce PEP by a different route whose overall ΔG can be negative. The bypass is not optional thermodynamics, PEP is the higher-energy phosphate donor relative to pyruvate’s enol, and PEPCK cannot act on pyruvate directly without the carboxylation detour through oxaloacetate.",
+      "distractor_rationales": {
+        "A": "A strongly negative ΔG means the reaction is not freely reversible under cellular conditions.",
+        "B": "PEP has a higher, not lower, phosphoryl-transfer potential than ATP or pyruvate; that is why PK makes ATP.",
+        "C": "PEPCK uses oxaloacetate, not pyruvate; biotin-dependent carboxylation is required to make that OAA from pyruvate."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t3",
+      "type": "discrete",
+      "stem": "Hepatocytes are given either [1-14C]glucose or [6-14C]glucose, and early 14CO2 release is measured before extensive recycling. If the oxidative pentose phosphate pathway is active, which labeling result is expected?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "14CO2 appears faster from C-1-labeled glucose than from C-6-labeled glucose, because 6-phosphogluconate dehydrogenase releases C-1"
+        },
+        {
+          "key": "B",
+          "text": "C-1 and C-6 are chemically equivalent in the first turn of the oxidative PPP, so early 14CO2 rates are equal"
+        },
+        {
+          "key": "C",
+          "text": "Only C-6 is decarboxylated by 6-phosphogluconate dehydrogenase, so C-6 glucose labels CO2 first"
+        },
+        {
+          "key": "D",
+          "text": "GAPDH decarboxylates C-1 of glucose directly, independent of the pentose phosphate pathway"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Glucose-6-phosphate dehydrogenase and 6-phosphogluconate dehydrogenase oxidize G6P and then decarboxylate 6-phosphogluconate to ribulose-5-phosphate. The carbon lost as CO2 is C-1 of the original glucose. C-6 remains in the pentose and is not released in that first oxidative pass. Therefore a C-1/C-6 14CO2 ratio greater than one is a classic assay of oxidative PPP activity when measured at early times, before pentoses are recycled into hexoses that scramble labels. GAPDH is an oxidation of an aldehyde to an acyl phosphate; it does not release CO2. C-1 and C-6 are equivalent in the later symmetric fructose-1,6-bisphosphate of glycolysis, not in the first PPP decarboxylation.",
+      "distractor_rationales": {
+        "B": "The oxidative decarboxylation is specific for C-1; early CO2 from C-1 and C-6 is not equivalent.",
+        "C": "This reverses the carbon numbering of the 6-phosphogluconate decarboxylation.",
+        "D": "GAPDH does not decarboxylate; CO2 from glucose C-1 in this assay is a PPP signature."
+      },
+      "difficulty_est": 0.64
+    },
+    {
+      "concept_id": "MCAT.FC1.1D.t3",
+      "type": "discrete",
+      "stem": "A fasting patient drinks a large amount of ethanol. Hepatic alcohol and aldehyde dehydrogenases generate a high NADH/NAD+ ratio. Blood glucose then falls. Which mechanism best links the redox shift to impaired gluconeogenesis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "NADH oxidizes pyruvate to acetyl-CoA, feeding gluconeogenesis"
+        },
+        {
+          "key": "B",
+          "text": "High NAD+ is required to inhibit pyruvate carboxylase, so NADH should have increased glucose output"
+        },
+        {
+          "key": "C",
+          "text": "Elevated NADH drives pyruvate toward lactate and oxaloacetate toward malate, depleting gluconeogenic intermediates"
+        },
+        {
+          "key": "D",
+          "text": "Ethanol is a competitive inhibitor of hexokinase, blocking the first step of gluconeogenesis"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Alcohol dehydrogenase and aldehyde dehydrogenase reduce NAD+ to NADH in cytosol (and the second step in mitochondria). A high NADH/NAD+ ratio pushes the lactate dehydrogenase equilibrium toward lactate, draining pyruvate, and pushes the malate dehydrogenase equilibrium toward malate, draining oxaloacetate. Pyruvate and OAA are required for the pyruvate carboxylase/PEPCK route of gluconeogenesis, so glucose output falls and hypoglycemia can result in a fasting patient whose glycogen is already low. NADH does not oxidize pyruvate; hexokinase is not a gluconeogenic enzyme and is not the ethanol target. The redox trap of gluconeogenic carbon is the standard mechanism.",
+      "distractor_rationales": {
+        "A": "NADH is a reductant; it does not oxidize pyruvate. Oxidation of pyruvate to acetyl-CoA would also remove gluconeogenic carbon.",
+        "B": "Pyruvate carboxylase is not primarily turned off by NAD+. A high NADH ratio impairs, rather than stimulates, glucose output.",
+        "D": "Gluconeogenesis does not use hexokinase to make glucose; ethanol’s relevant effect here is the NADH load."
+      },
+      "difficulty_est": 0.58
+    }
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "passages": [
+    {
+      "concept_id": "MCAT.FC1.1A.t5",
+      "title": "Reversible inhibitors of a cytosolic dehydrogenase",
+      "body": "Investigators purified a cytosolic NAD+-dependent dehydrogenase that oxidizes a small-molecule metabolite S. Initial velocities were measured at 25 °C by following NADH formation in 1.00 mL assays. Nonlinear fits of v versus [S] produced the apparent Michaelis constants and maximal velocities in Table 1. When an inhibitor was present, its concentration was 2.0 μM in the assay mix. Dialysis that removed unbound compound restored full catalytic activity after incubation with P, Q, or R, indicating reversible binding rather than covalent inactivation. Active-site titration with a tight-binding stoichiometric inactivator found 4.0 nmol of catalytic sites per milligram of protein.\n\nTable 1. Apparent kinetic parameters from initial-rate fits\n\n| Condition | Apparent K_m (mM) | Apparent V_max (nmol s^{-1} mg^{-1}) |\n|-----------|-------------------|--------------------------------------|\n| No inhibitor | 0.50 | 80 |\n| Compound P (2.0 μM) | 0.50 | 40 |\n| Compound Q (2.0 μM) | 1.50 | 80 |\n| Compound R (2.0 μM) | 0.25 | 40 |\n\nIn a separate progress-curve experiment, 25 μg of the same enzyme protein was mixed with 0.50 mM S and no inhibitor in a 1.00 mL reaction. Product concentration was recorded as a function of time (Table 2).\n\nTable 2. Product appearance at [S]_0 = 0.50 mM without inhibitor\n\n| Time (s) | [Product] (μM) |\n|----------|----------------|\n| 0 | 0.0 |\n| 10 | 9.9 |\n| 20 | 19.6 |\n| 30 | 29.1 |\n| 60 | 56.2 |\n| 120 | 102.4 |",
+      "questions": [
+        {
+          "concept_id": "MCAT.FC1.1A.t5",
+          "type": "passage_question",
+          "stem": "Using Table 1, which description best matches the effect of Compound P on the dehydrogenase?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Competitive inhibition: apparent K_m rises while V_max is unchanged, so saturating S fully restores uninhibited velocity."
+            },
+            {
+              "key": "B",
+              "text": "Uncompetitive inhibition: apparent K_m and V_max fall by the same factor, leaving V_max/K_m unchanged."
+            },
+            {
+              "key": "C",
+              "text": "Noncompetitive inhibition: apparent K_m is unchanged while V_max is halved, so inhibition persists at saturating S."
+            },
+            {
+              "key": "D",
+              "text": "Irreversible active-site alkylation: dialysis cannot restore activity because a covalent adduct has destroyed catalytic sites."
+            }
+          ],
+          "correct_key": "C",
+          "explanation": "Table 1 shows that 2.0 μM Compound P leaves apparent K_m at 0.50 mM, identical to the uninhibited enzyme, while apparent V_max falls from 80 to 40 nmol s^{-1} mg^{-1}. That pattern is the diagnostic of pure noncompetitive inhibition: the inhibitor does not alter substrate affinity in the Michaelis sense but lowers the concentration of productive enzyme, so the remaining activity saturates at a reduced ceiling. Competitive inhibition would have raised K_m at constant V_max, and uncompetitive inhibition would have lowered both parameters together. The dialysis result in the passage rules out irreversible covalent inactivation, which would not wash out.",
+          "distractor_rationales": {
+            "A": "Raised K_m at constant V_max is Compound Q’s pattern in Table 1, not P’s; P does not shift K_m.",
+            "B": "A matched decrease in K_m and V_max is Compound R’s pattern; P’s K_m does not fall.",
+            "D": "The passage states that dialysis restored full activity after exposure to P, so the inhibition is reversible, not a covalent kill of active sites."
+          },
+          "difficulty_est": 0.42
+        },
+        {
+          "concept_id": "MCAT.FC1.1A.t5",
+          "type": "passage_question",
+          "stem": "For competitive inhibition, K_m,app = K_m (1 + [I]/K_i). Using Table 1 and [Q] = 2.0 μM, the K_i of Compound Q is",
+          "choices": [
+            {
+              "key": "A",
+              "text": "1.0 μM"
+            },
+            {
+              "key": "B",
+              "text": "0.67 μM"
+            },
+            {
+              "key": "C",
+              "text": "2.0 μM"
+            },
+            {
+              "key": "D",
+              "text": "3.0 μM"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Compound Q raises apparent K_m from 0.50 mM to 1.50 mM at constant V_max, which is the competitive signature. Substituting into K_m,app = K_m (1 + [I]/K_i) gives 1.50 = 0.50 (1 + 2.0 μM / K_i). Dividing through by 0.50 yields 3 = 1 + 2.0/K_i, so 2.0/K_i = 2 and K_i = 1.0 μM. The numerical answer is fixed by the tabulated K_m pair and the stated 2.0 μM dose; a different row of Table 1 would give a different constant. Treating Q as noncompetitive and using the V_max ratio is invalid because Q does not change V_max.",
+          "distractor_rationales": {
+            "B": "0.67 μM is [I] × K_m / K_m,app = 2.0 × 0.50/1.50, which omits the correct rearrangement of the competitive factor (1 + [I]/K_i).",
+            "C": "2.0 μM is the inhibitor concentration itself, or the noncompetitive K_i one would extract from Compound P’s halved V_max; it is not Q’s competitive K_i.",
+            "D": "3.0 μM is the dimensionless ratio K_m,app/K_m misread as a micromolar dissociation constant."
+          },
+          "difficulty_est": 0.58
+        },
+        {
+          "concept_id": "MCAT.FC1.1A.t5",
+          "type": "passage_question",
+          "stem": "On a Lineweaver–Burk plot (1/v versus 1/[S]), which compound in Table 1 produces a line parallel to the uninhibited enzyme, and why?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Compound P, because a halved V_max doubles both the slope and the y-intercept."
+            },
+            {
+              "key": "B",
+              "text": "Compound Q, because a larger K_m increases the x-intercept magnitude while V_max, and therefore the y-intercept, is fixed."
+            },
+            {
+              "key": "C",
+              "text": "None of the compounds, because any reversible inhibitor must change the slope K_m/V_max."
+            },
+            {
+              "key": "D",
+              "text": "Compound R, because apparent K_m and V_max both fall by a factor of two, so the slope K_m/V_max is unchanged."
+            }
+          ],
+          "correct_key": "D",
+          "explanation": "The Lineweaver–Burk slope equals K_m/V_max. From Table 1 the uninhibited slope is 0.50/80 = 0.00625 mM per (nmol s^{-1} mg^{-1}). Compound R gives 0.25/40 = 0.00625, the same ratio, which is the geometric meaning of parallel lines and the kinetic signature of uncompetitive inhibition (both parameters scaled by 1 + [I]/K_i'). Compound P doubles the slope to 0.50/40 = 0.0125, and Compound Q raises it to 1.50/80 = 0.01875; neither is parallel to the control. The parallelism cannot be read off without the paired K_m and V_max entries for R.",
+          "distractor_rationales": {
+            "A": "P’s doubled slope means a steeper, not parallel, Lineweaver–Burk line; noncompetitive inhibition pivots about the x-intercept.",
+            "B": "Q’s increased K_m at fixed V_max steepens the slope and moves the x-intercept; competitive lines share a y-intercept, not a slope.",
+            "C": "Uncompetitive inhibition is the standard reversible case that leaves K_m/V_max unchanged; Table 1 shows R doing exactly that."
+          },
+          "difficulty_est": 0.64
+        },
+        {
+          "concept_id": "MCAT.FC1.1A.t5",
+          "type": "passage_question",
+          "stem": "Using the uninhibited V_max in Table 1 and the active-site titration result, k_cat of the dehydrogenase is closest to",
+          "choices": [
+            {
+              "key": "A",
+              "text": "80 s^{-1}"
+            },
+            {
+              "key": "B",
+              "text": "20 s^{-1}"
+            },
+            {
+              "key": "C",
+              "text": "320 s^{-1}"
+            },
+            {
+              "key": "D",
+              "text": "0.050 s^{-1}"
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Turnover number is V_max expressed per mole of catalytic sites. Table 1 lists uninhibited V_max as 80 nmol of product per second per milligram of protein. The passage states that active-site titration found 4.0 nmol of catalytic sites per milligram, so k_cat = 80 nmol s^{-1} mg^{-1} divided by 4.0 nmol mg^{-1} = 20 s^{-1}. The milligram units cancel, and the result does not use the inhibitor rows. Treating the V_max number as already a first-order rate constant, multiplying by the site titer, or inverting the ratio all ignore one of the two experimental numbers the passage supplies.",
+          "distractor_rationales": {
+            "A": "80 s^{-1} copies the V_max magnitude while dropping the site-titer division; V_max in nmol s^{-1} mg^{-1} is not k_cat until it is normalized per site.",
+            "C": "320 s^{-1} multiplies V_max by the 4.0 nmol mg^{-1} titer instead of dividing, which has the wrong dimensions for a first-order rate constant.",
+            "D": "0.050 s^{-1} is the inverted ratio 4.0/80; that construction does not convert a specific activity into a turnover number."
+          },
+          "difficulty_est": 0.5
+        },
+        {
+          "concept_id": "MCAT.FC1.1A.t5",
+          "type": "passage_question",
+          "stem": "From Table 2, the initial velocity estimated from the 0 s and 20 s product concentrations is closest to which value?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "0.16 μM s^{-1}"
+            },
+            {
+              "key": "B",
+              "text": "0.85 μM s^{-1}"
+            },
+            {
+              "key": "C",
+              "text": "0.98 μM s^{-1}"
+            },
+            {
+              "key": "D",
+              "text": "2.0 μM s^{-1}"
+            }
+          ],
+          "correct_key": "C",
+          "explanation": "Table 2 reports 19.6 μM product at 20 s and 0.0 μM at 0 s, so the early-time rate is 19.6/20 = 0.98 μM s^{-1}. That window is the one the experimenters would treat as an initial rate: Table 2 is still nearly linear through 20–30 s, whereas averaging to 120 s (102.4/120 ≈ 0.85 μM s^{-1}) already shows curvature from substrate depletion. The value 2.0 μM s^{-1} is the assay V_max expected from 80 nmol s^{-1} mg^{-1} times 0.025 mg in 1.00 mL at saturating S, not the rate at [S]_0 = K_m. 0.16 μM s^{-1} would follow if 2 μg rather than 25 μg of enzyme had been used. Only the 0 s and 20 s pair in Table 2 yields 0.98.",
+          "distractor_rationales": {
+            "A": "0.16 μM s^{-1} matches an assay loaded with 2 μg of enzyme at the Table 1 specific activity, not the 25 μg progress curve actually described.",
+            "B": "0.85 μM s^{-1} is 102.4 μM divided by 120 s, an average over a curved progress trace rather than an initial slope from the 0–20 s points.",
+            "D": "2.0 μM s^{-1} is the saturating-S assay V_max in the 1.00 mL cuvette (80 nmol s^{-1} mg^{-1} × 0.025 mg); Table 2 starts at [S] = K_m, so the initial rate should be near half of that ceiling."
+          },
+          "difficulty_est": 0.46
+        }
+      ]
+    },
+    {
+      "concept_id": "MCAT.CARS.FND.t1",
+      "title": "The archive and the street",
+      "body": "Historians often speak as if the past were a reluctant witness who can be coaxed into testimony if only the right box is opened. The letter, the minute-book, the trial transcript, and the parish register are treated not as remnants but as the event itself, patiently waiting to be interviewed. The metaphor is professionally convenient. It locates virtue in attentiveness and implies that an archive, handled without aggression, will speak of its own accord. Archives do not speak. They are offices that decide, usually long before a scholar arrives, which traces of life will be kept, numbered, and thereby made eligible for later recovery. To mistake a folder for a microphone is to forget that someone built the studio, invited some guests, and switched the machine off when the conversation became inconvenient.\n\nThis is not a case for abandoning documents. It is a case against a piety now common in public history: the belief that proximity to a primary source is itself a moral credential. Museum captions announce that an object was found in an attic or rescued from a demolition site, as if its later career in a glass case were a continuation of its first life rather than a conversion into evidence. Conversion is what historians do. Trouble begins when conversion is narrated as rescue, because that narration conceals the historian's power and, more consequentially, conceals the people who never generated a paper trail to be rescued.\n\nOral historians have pressed this objection for decades, sometimes with more hope than caution. They have offered the recorded interview as a democratic patch, a way of admitting those whom the file forgot. The patch is real; it is not automatic. An interview is also a document, made under conditions of prompting, recording, transcription, and later cutting. It can be managed as tightly as a colonial gazette. What distinguishes a responsible oral history is not orality as such, but the historian remaining visible in the manufacture of the record—visible enough that a later reader can see where a question steered, where a narrator pushed back, and where a silence was not a hole but a refusal.\n\nThe sharper problem is civic rather than technical. If the only past that can be cited is the past that was filed, public memory will go on over-representing those who employed clerks. Cities make the point more bluntly than seminars do. A demolished neighborhood deposits fewer cartons than a merchant's townhouse; a street seller deposits fewer than a chartered company. When a preservation trust then campaigns to save the townhouse because it is richly documented, the trust is not merely selecting architecture. It is ratifying a distribution of paperwork as a distribution of historical weight. The house is asked to stand for an age, and the undocumented street is invited, if at all, to supply atmosphere.\n\nHonesty does not require the fantasy that every life can be reconstructed with equal density. Some absences are final. The decent procedure is to treat those absences as facts about power rather than as temporary vacancies that a more heroic search will fill. A history that admits what cannot be known is more public-minded than a history that performs completeness by adding still more pages to an already thick dossier. The archive will remain necessary. It need not remain innocent.",
+      "questions": [
+        {
+          "concept_id": "MCAT.CARS.FND.t1",
+          "type": "passage_question",
+          "stem": "Which of the following best states the author's central claim?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "Written documents should be discarded in favor of interviews, because only speech can represent lives that clerks ignored."
+            },
+            {
+              "key": "B",
+              "text": "Treating archived traces as unmediated testimony conceals how record-keeping decides whose past can be cited, so documentary absences should be read as facts about power rather than as temporary vacancies."
+            },
+            {
+              "key": "C",
+              "text": "Museum conservation is unethical whenever an object is removed from the setting in which it was found."
+            },
+            {
+              "key": "D",
+              "text": "Every past life can be reconstructed at equal density if historians search long enough and interview enough descendants."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The passage repeatedly denies that folders and objects speak by themselves: archives are offices that select what will later count as recoverable, and public memory therefore over-represents those who generated files. The author refuses both archive-abandonment and the fantasy of complete reconstruction, and instead asks that conversion into evidence be named as conversion and that silences be treated as facts about power. Choice B compresses that through-line without converting a local example (museums, oral history, townhouses) into the whole thesis. The rejected options each inflate a qualification or an illustration into a program the author explicitly declines.",
+          "distractor_rationales": {
+            "A": "The second paragraph opens by denying a case for abandoning documents; oral history is offered as a limited patch, not a replacement that makes paper dispensable.",
+            "C": "The author says conversion is what historians do and is not itself a crime; the objection is to narrating conversion as rescue, not to moving objects.",
+            "D": "The closing paragraph states that some absences are final and that performing completeness by thickening an already thick file is the undemocratic option."
+          },
+          "difficulty_est": 0.4
+        },
+        {
+          "concept_id": "MCAT.CARS.RWT.t1",
+          "type": "passage_question",
+          "stem": "The sentence “To mistake a folder for a microphone is to forget that someone built the studio, invited some guests, and switched the machine off when the conversation became inconvenient” primarily functions to",
+          "choices": [
+            {
+              "key": "A",
+              "text": "concede that audio recordings stored in archives are more reliable than paper because they capture tone as well as wording."
+            },
+            {
+              "key": "B",
+              "text": "introduce a practical proposal that historians install recording equipment so that future selection can be avoided."
+            },
+            {
+              "key": "C",
+              "text": "extend the opening archive-as-witness metaphor so that institutional selection and interruption, rather than mere attentiveness, become the historian's problem."
+            },
+            {
+              "key": "D",
+              "text": "supply a definition of an archive as any room in which interviews have been taped for later playback."
+            }
+          ],
+          "correct_key": "C",
+          "explanation": "The first paragraph has already framed historians as interviewers of documents that supposedly speak if handled gently. The microphone sentence keeps that metaphor in play but turns it: a folder is not a pickup pointed at a willing past; it is the output of a studio someone designed, staffed, and could silence. The function is therefore integrative: it binds the “reluctant witness” picture to the claim that archives decide eligibility for recovery. It does not rank media, recommend hardware, or redefine archives as tape libraries. Without the surrounding metaphor, the sentence’s job in the argument cannot be specified.",
+          "distractor_rationales": {
+            "A": "The comparison is figurative; the author is not ranking audio against paper or claiming that stored sound is the more faithful medium.",
+            "B": "No policy of installing microphones is advanced; the studio is a figure for prior institutional control, not a facilities request.",
+            "D": "The passage treats archives as offices that keep, number, and exclude traces of many kinds, not as rooms defined by tape recording."
+          },
+          "difficulty_est": 0.48
+        },
+        {
+          "concept_id": "MCAT.CARS.FND.t3",
+          "type": "passage_question",
+          "stem": "Which of the following would the author be most likely to treat as conversion misdescribed as rescue?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "A philologist who publishes a critical edition of a widely copied legal code and notes the manuscript variants."
+            },
+            {
+              "key": "B",
+              "text": "A gallery caption that praises curators for saving a household altar from a condemned apartment by placing it in a climate-controlled case, presented as a continuation of the altar’s original life."
+            },
+            {
+              "key": "C",
+              "text": "An oral historian who leaves a narrator’s refusal on the transcript so that a later reader can see where questioning was resisted."
+            },
+            {
+              "key": "D",
+              "text": "A municipality that demolishes a merchant townhouse in order to build housing and does not retain the blueprints."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The author locates the objectionable piety in museum language that treats moving an object into a case as a continuation of its first life rather than as a conversion into evidence. A caption that calls the transfer a saving and implies unbroken life is exactly that misdescription: conversion is real, but rescue-talk hides the historian’s or curator’s power. Editing a legal code is ordinary documentary work the author does not condemn; keeping a refusal visible is what the oral-history paragraph praises; demolition without files is the civic problem of missing cartons, not the rescue-rhetoric problem. The inference depends on the attic-and-glass-case example, not on a general hostility to museums.",
+          "distractor_rationales": {
+            "A": "Critical editing is the ordinary conversion the author says historians must do; nothing in the passage tags scholarly apparatus as fake rescue.",
+            "C": "Leaving a refusal audible is the visibility the author wants in the making of an interview, the opposite of concealing power.",
+            "D": "Demolition that leaves fewer boxes is the author’s civic illustration of undocumented loss, not an instance of rescue language covering conversion."
+          },
+          "difficulty_est": 0.52
+        },
+        {
+          "concept_id": "MCAT.CARS.RBT.t1",
+          "type": "passage_question",
+          "stem": "A heritage board awards restoration funds to a nineteenth-century bank whose ledgers, portraits, and blueprints fill a municipal archive, while a demolished riverside market—attested only by a few photographs—is marked with a single plaque. The author’s analysis most strongly supports which evaluation?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "The board has measured historical importance correctly, because importance is proportional to the quantity of surviving paperwork."
+            },
+            {
+              "key": "B",
+              "text": "The plaque is already the more democratic monument, because photographs do not count as documents and so cannot distort public memory."
+            },
+            {
+              "key": "C",
+              "text": "Interviews with former stallholders would automatically cancel the imbalance, since speech cannot be managed the way a gazette can."
+            },
+            {
+              "key": "D",
+              "text": "The funding choice treats a surviving paper trail as a measure of historical weight, thereby letting the distribution of clerks and cartons decide which urban past is monumentalized."
+            }
+          ],
+          "correct_key": "D",
+          "explanation": "The civic paragraph maps directly onto the bank-versus-market case: a preservation campaign that “saves” the richly documented building is not merely picking architecture; it ratifies a distribution of paperwork as a distribution of historical weight, and the undocumented street is left as atmosphere. The bank’s ledgers are the merchant-townhouse carton pile; the market is the demolished neighborhood. The author denies that quantity of files equals importance, denies that non-paper traces are simply non-documents, and denies that oral history automatically undoes archival bias. Applying that principle yields D rather than a celebration of the archive’s bulk.",
+          "distractor_rationales": {
+            "A": "The author treats that proportionality as the error to be named, not as a valid public standard of importance.",
+            "B": "Photographs are still traces; the author’s worry is over-representation of what was filed, not a claim that images lie outside documentation.",
+            "C": "The oral-history section insists that an interview can be managed as tightly as a colonial gazette, so speech is not an automatic democratic solvent."
+          },
+          "difficulty_est": 0.55
+        },
+        {
+          "concept_id": "MCAT.CARS.RWT.t3",
+          "type": "passage_question",
+          "stem": "The claim that an interview “can be managed as tightly as a colonial gazette” plays which role in the argument?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "It is offered as evidence that official gazettes are generally more accurate than spoken testimony and should therefore remain the backbone of public history."
+            },
+            {
+              "key": "B",
+              "text": "It blocks the inference that switching from paper to speech is by itself a democratic solution, by asserting that control can migrate into the making of the interview."
+            },
+            {
+              "key": "C",
+              "text": "It is a concession that colonial records should be discarded because their tightness makes them unusable as historical sources."
+            },
+            {
+              "key": "D",
+              "text": "It defines democracy as a property of recording technology, so that any taped interview counts as a democratic act."
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "The oral-history paragraph grants that interviews can admit people the file forgot, then immediately warns that the corrective is not automatic. The gazette comparison is the argumentative block: if prompting, recording, and cutting can be as tightly managed as an official publication, then orality as such does not deliver democracy. What the author wants instead is visibility of the historian in the manufacture of the record. The sentence is not a defense of gazettes, a call to throw them out, or a technological definition of democracy. Its logical job is to undercut an inference the preceding sentences might otherwise have licensed.",
+          "distractor_rationales": {
+            "A": "The author never ranks gazette accuracy above speech; the comparison is about manageability of production, not about which genre is truer.",
+            "C": "The passage refuses abandonment of documents and does not argue that colonial tightness makes written sources unusable.",
+            "D": "Responsible oral history is distinguished by visible steering and refusal, not by the mere fact that a machine was running."
+          },
+          "difficulty_est": 0.5
+        }
+      ]
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t26",
+      "title": "Period of a simple pendulum and the value of g",
+      "body": "A student determines the gravitational field strength g from the small-angle period of a simple pendulum. Length L is measured from the support to the centre of a spherical bob of diameter 3.0 cm. For each length the student times 20 oscillations and divides by 20 to obtain the period T; the procedure is repeated three times and the mean is recorded. The timing uncertainty on each 20-oscillation interval is estimated as ±0.20 s from reaction time, so the uncertainty in a single mean T is about ±0.010 s. All runs in Table 1 used a maximum angular displacement of about 5°. Take 4π² = 39.48. For an ideal simple pendulum, T² = (4π²/g) L, so a graph of T² against L should be a straight line through the origin with gradient 4π²/g.\n\nTable 1. Mean period versus length (θ ≈ 5°)\n\n| L (m) | Mean T (s) | T² (s²) |\n|-------|------------|---------|\n| 0.400 | 1.269 | 1.610 |\n| 0.500 | 1.419 | 2.012 |\n| 0.600 | 1.554 | 2.415 |\n| 0.700 | 1.678 | 2.817 |\n| 0.800 | 1.794 | 3.220 |\n\nThe student then holds L fixed at 0.600 m and varies the release angle (Table 2).\n\nTable 2. Period versus amplitude at L = 0.600 m\n\n| Maximum angular displacement θ (°) | Mean T (s) |\n|------------------------------------|------------|\n| 5 | 1.554 |\n| 10 | 1.557 |\n| 20 | 1.571 |\n| 30 | 1.595 |",
+      "questions": [
+        {
+          "concept_id": "GAMSAT.S3.phys.t26",
+          "type": "passage_question",
+          "stem": "Using only the L = 0.400 m and L = 0.800 m rows of Table 1, the gradient of a graph of T² against L is closest to",
+          "choices": [
+            {
+              "key": "A",
+              "text": "2.01 s² m^{-1}"
+            },
+            {
+              "key": "B",
+              "text": "4.03 s² m^{-1}"
+            },
+            {
+              "key": "C",
+              "text": "8.05 s² m^{-1}"
+            },
+            {
+              "key": "D",
+              "text": "1.61 s² m^{-1}"
+            }
+          ],
+          "correct_key": "B",
+          "explanation": "Gradient is Δ(T²)/ΔL. Table 1 gives T² = 3.220 s² at 0.800 m and 1.610 s² at 0.400 m, so Δ(T²) = 1.610 s² and ΔL = 0.400 m. The ratio is 1.610/0.400 = 4.025 s² m^{-1}, which is closest to 4.03 s² m^{-1}. Using the full span of L as the denominator (dividing by 0.800 m rather than by the difference) halves the gradient to about 2.01 s² m^{-1}. Dividing by 0.200 m doubles it. Reporting Δ(T²) itself as if it were a slope leaves the 1.61 s² figure with the wrong units. The numerical value cannot be obtained without those two tabulated T² entries.",
+          "distractor_rationales": {
+            "A": "2.01 s² m^{-1} is (3.220 − 1.610)/0.800, which uses the larger length instead of the change in length as the denominator.",
+            "C": "8.05 s² m^{-1} would follow if ΔL were taken as 0.200 m rather than the 0.400 m interval between the two chosen rows.",
+            "D": "1.61 s² is the difference in T², not a gradient; a slope of T² versus L must be divided by the 0.400 m change in length."
+          },
+          "difficulty_est": 0.38
+        },
+        {
+          "concept_id": "GAMSAT.S3.phys.t26",
+          "type": "passage_question",
+          "stem": "Taking 4π² = 39.48 and using the two-end gradient from Table 1 (L = 0.400 m and 0.800 m), the student’s best estimate of g is closest to",
+          "choices": [
+            {
+              "key": "A",
+              "text": "9.8 m s^{-2}"
+            },
+            {
+              "key": "B",
+              "text": "4.0 m s^{-2}"
+            },
+            {
+              "key": "C",
+              "text": "2.5 m s^{-2}"
+            },
+            {
+              "key": "D",
+              "text": "16 m s^{-2}"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "For the ideal relation T² = (4π²/g) L the gradient of T² versus L is 4π²/g, so g = 39.48 / gradient. The Table 1 endpoints give gradient = (3.220 − 1.610)/0.400 = 4.025 s² m^{-1}, hence g = 39.48/4.025 ≈ 9.81 m s^{-2}, closest to 9.8 m s^{-2}. Reporting the gradient itself as g leaves 4.0 m s^{-2} with impossible units for a gravitational field. Other distractors correspond to inverting with 4π rather than 4π² or to skipping the division by ΔL. The numerical estimate is locked to the tabulated T² pair and to the 39.48 factor given in the passage.",
+          "distractor_rationales": {
+            "B": "4.0 m s^{-2} is the T²-versus-L gradient copied as if it were g; the passage states that the gradient equals 4π²/g, so an extra division is required.",
+            "C": "2.5 m s^{-2} is on the order of 4π² divided by a Δ(T²) that was never converted into a per-metre slope, or of other inverted constants, and is far below terrestrial g.",
+            "D": "16 m s^{-2} is a typical result if 4π² is combined with a halved or otherwise incorrect slope; it is not 39.48/4.025."
+          },
+          "difficulty_est": 0.44
+        },
+        {
+          "concept_id": "GAMSAT.S3.phys.t26",
+          "type": "passage_question",
+          "stem": "Suppose the student had measured each L to the bottom of the bob rather than to its centre. On a plot of T² against that recorded length, how would the intercept change relative to the Table 1 procedure?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "The vertical intercept would remain zero, because a constant length error cannot affect a T² versus L graph."
+            },
+            {
+              "key": "B",
+              "text": "The vertical intercept would become positive and equal in magnitude to T² at L = 0.400 m, because the whole data set would shift upward."
+            },
+            {
+              "key": "C",
+              "text": "The vertical intercept would become negative (approximately −0.060 s²), because each recorded L is 0.015 m larger than the length that belongs in T² = (4π²/g) L_centre."
+            },
+            {
+              "key": "D",
+              "text": "The vertical intercept would become positive and the gradient would double, because diameter rather than radius would now be the length unit."
+            }
+          ],
+          "correct_key": "C",
+          "explanation": "The bob diameter is 3.0 cm, so the radius is 0.015 m. Length to the bottom is L_centre + 0.015 m. The physical relation is T² = k L_centre with k = 4π²/g ≈ 4.03 s² m^{-1} from Table 1. Substituting L_recorded = L_centre + 0.015 m gives T² = k L_recorded − 0.015k, a line of unchanged slope with vertical intercept −0.015 × 4.03 ≈ −0.060 s². Table 1, measured to the centre, is consistent with a near-zero intercept; measuring to the bottom systematically overstates L and slides every point to the right. A constant length offset is a classic intercept error, not a doubling of gradient and not an upward shift in T².",
+          "distractor_rationales": {
+            "A": "A systematic additive error in the abscissa is precisely what produces a nonzero intercept; Table 1’s near-origin behaviour would not survive that mis-measure.",
+            "B": "T² does not increase when L is overstated; the points move right along the L axis, which makes the intercept more negative, not equal to the first T² value.",
+            "D": "Using the bottom rather than the centre adds one radius, not a change of units to diameters, and it does not double 4π²/g."
+          },
+          "difficulty_est": 0.62
+        },
+        {
+          "concept_id": "GAMSAT.S3.phys.t26",
+          "type": "passage_question",
+          "stem": "If the uncertainty in each mean T is ±0.010 s as stated, the fractional uncertainty in T² is largest for which Table 1 length, and why?",
+          "choices": [
+            {
+              "key": "A",
+              "text": "L = 0.400 m, because δ(T²)/T² = 2 δT/T and T is smallest at the shortest length."
+            },
+            {
+              "key": "B",
+              "text": "L = 0.800 m, because a longer pendulum amplifies timing errors in proportion to L."
+            },
+            {
+              "key": "C",
+              "text": "L = 0.600 m, because it is the middle of the range and interpolation uncertainties peak there."
+            },
+            {
+              "key": "D",
+              "text": "The fractional uncertainty is the same at every length, because δT is quoted as a single constant."
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "For y = T², logarithmic differentiation gives δy/y = 2 δT/T. With δT fixed at 0.010 s, the fraction 2 δT/T is largest where T is smallest. Table 1’s shortest period is 1.269 s at L = 0.400 m, giving 2 × 0.010/1.269 ≈ 1.6%, compared with 2 × 0.010/1.794 ≈ 1.1% at 0.800 m. A constant absolute error in T therefore does not produce a constant fractional error in T². Nothing in the passage makes the longest pendulum the worst point, and the middle length is not a special interpolation peak. Identifying the worst row requires both the error-propagation relation and the tabulated T values.",
+          "distractor_rationales": {
+            "B": "Absolute timing uncertainty is given as independent of length; T is larger at 0.800 m, so the fractional error in T² is smaller there, not amplified by L.",
+            "C": "The 0.600 m row is not singled out by the uncertainty model; its T lies between the extremes, so its fractional T² error does too.",
+            "D": "A shared absolute δT still yields a T-dependent fraction 2 δT/T; constancy of δT is why the shortest T is the worst case."
+          },
+          "difficulty_est": 0.56
+        },
+        {
+          "concept_id": "GAMSAT.S3.phys.t26",
+          "type": "passage_question",
+          "stem": "Suppose the L = 0.800 m run had actually been released at 30° while every other Table 1 length used 5°. Using Table 2 to estimate the fractional period increase, the two-end value of g from T² versus L would be closest to",
+          "choices": [
+            {
+              "key": "A",
+              "text": "9.8 m s^{-2}"
+            },
+            {
+              "key": "B",
+              "text": "10.8 m s^{-2}"
+            },
+            {
+              "key": "C",
+              "text": "8.9 m s^{-2}"
+            },
+            {
+              "key": "D",
+              "text": "12.4 m s^{-2}"
+            }
+          ],
+          "correct_key": "C",
+          "explanation": "Table 2 at L = 0.600 m shows T rising from 1.554 s at 5° to 1.595 s at 30°, a factor of 1.595/1.554 ≈ 1.026. Applying that factor to Table 1’s 0.800 m period gives T ≈ 1.794 × 1.026 ≈ 1.841 s and T² ≈ 3.39 s². The two-end gradient then becomes (3.39 − 1.610)/0.400 ≈ 4.45 s² m^{-1}, so g ≈ 39.48/4.45 ≈ 8.9 m s^{-2}. Inflating only the largest-L point steepens T² versus L and therefore underestimates g. Leaving g at 9.8 m s^{-2} would require ignoring Table 2. An overestimate would require the high-L T² to have fallen, which amplitude does not do.",
+          "distractor_rationales": {
+            "A": "9.8 m s^{-2} is the small-angle result from Table 1 alone; it neglects the 30° inflation of the 0.800 m period that the question specifies.",
+            "B": "10.8 m s^{-2} would be a higher g from a shallower slope, but a larger T² at 0.800 m steepens the slope and lowers, rather than raises, g = 39.48/gradient.",
+            "D": "12.4 m s^{-2} is well above any slope consistent with adding a 2.6% period increase at one end of Table 1."
+          },
+          "difficulty_est": 0.7
+        }
+      ]
+    }
+  ]
+}

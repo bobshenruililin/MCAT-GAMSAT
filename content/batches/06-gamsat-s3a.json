@@ -1,0 +1,1244 @@
+{
+  "items": [
+    {
+      "concept_id": "GAMSAT.S3.bio.t1",
+      "type": "discrete",
+      "stem": "A liver homogenate is fractionated by differential centrifugation. Marker quantities are reported per milligram of protein:\n1000 g nuclear pellet: succinate dehydrogenase 4 units, acid phosphatase 3 units, NADPH–cytochrome c reductase 5 units, DNA 82 µg.\n10 000 g pellet: SDH 96, acid phosphatase 8, reductase 6, DNA 4.\n20 000 g pellet: SDH 7, acid phosphatase 88, reductase 9, DNA 2.\n100 000 g microsomal pellet: SDH 3, acid phosphatase 6, reductase 91, DNA 1.\nFinal supernatant: SDH 2, acid phosphatase 5, reductase 4, DNA 0.\nWhich conclusion is best supported?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The 10 000 g pellet is enriched in mitochondria, because succinate dehydrogenase peaks there."
+        },
+        {
+          "key": "B",
+          "text": "The 20 000 g pellet is nuclei, because acid phosphatase is a nuclear-envelope marker."
+        },
+        {
+          "key": "C",
+          "text": "The microsomal pellet is nuclei, because it has the highest DNA (91 units of reductase)."
+        },
+        {
+          "key": "D",
+          "text": "The supernatant contains the mitochondria, because succinate dehydrogenase is a soluble cytosolic enzyme."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Succinate dehydrogenase sits in the inner mitochondrial membrane, so its specific activity traces mitochondria. That activity is 96 units mg−1 in the 10 000 g pellet and only 2–7 in the other fractions, so mitochondria sediment there. Acid phosphatase at 88 units marks lysosomes in the 20 000 g pellet; NADPH–cytochrome c reductase at 91 units marks endoplasmic reticulum microsomes; DNA at 82 µg mg−1 marks nuclei. The cytosol is not the mitochondrial compartment. The table therefore assigns mitochondria to the 10 000 g fraction.",
+      "distractor_rationales": {
+        "B": "Acid phosphatase is a lysosomal hydrolase, not a nuclear marker; nuclei track with DNA in the 1000 g pellet.",
+        "C": "The 91-unit peak is the ER reductase, not DNA; microsomal DNA is only 1 µg mg−1.",
+        "D": "Succinate dehydrogenase is membrane-bound in mitochondria; the supernatant has only 2 units."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t1",
+      "type": "discrete",
+      "stem": "A pulse of 3H-leucine labels a secretory protein in cultured cells. Radioactivity in the immunoprecipitated protein (counts min−1) is:\n5 min: rough ER 820, Golgi 40, secretory vesicles 10, extracellular medium 5.\n20 min: RER 210, Golgi 640, vesicles 80, medium 15.\n45 min: RER 50, Golgi 180, vesicles 520, medium 90.\n90 min: RER 20, Golgi 40, vesicles 110, medium 710.\nWhich route do the counts support?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Golgi → rough ER → secretory vesicles → medium"
+        },
+        {
+          "key": "B",
+          "text": "Rough ER → Golgi → secretory vesicles → extracellular medium"
+        },
+        {
+          "key": "C",
+          "text": "Medium → vesicles → Golgi → rough ER (endocytosis of the labelled protein)"
+        },
+        {
+          "key": "D",
+          "text": "Rough ER → secretory vesicles → Golgi → medium"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The radioactivity peak moves in time: 820 counts in the rough ER at 5 min, 640 in the Golgi at 20 min, 520 in secretory vesicles at 45 min, and 710 in the medium at 90 min. That order is the classical secretory pathway (synthesis into the RER, processing in the Golgi, packaging into vesicles, then exocytosis). The reverse order would require the earliest counts in the medium, which are only 5. Skipping the Golgi would not produce the 640-count Golgi peak at 20 min before the vesicular peak.",
+      "distractor_rationales": {
+        "A": "The 5 min maximum is in the RER (820), not the Golgi (40), so the path cannot start at the Golgi.",
+        "C": "Extracellular counts rise last (5 then 710), so the protein is being secreted, not taken up.",
+        "D": "Vesicles peak at 45 min after the Golgi peak at 20 min, so vesicles follow the Golgi rather than precede it."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t1",
+      "type": "discrete",
+      "stem": "Two spherical cells are compared. Cell L has diameter 20 µm (radius 10 µm). Cell S has diameter 10 µm (radius 5 µm). Surface area = 4πr² and volume = (4/3)πr³, so the surface-to-volume ratio equals 3/r. Membrane transport capacity scales with surface area; metabolic demand scales with volume.\nWhich statement follows?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cell S is more transport-limited because its SA/V is 0.60 µm−1 versus 0.30 µm−1 for L."
+        },
+        {
+          "key": "B",
+          "text": "The two cells are equally transport-limited because both are spheres with the same 3/r formula."
+        },
+        {
+          "key": "C",
+          "text": "Cell L is more transport-limited because its SA/V is 0.30 µm−1, half that of cell S (0.60 µm−1)."
+        },
+        {
+          "key": "D",
+          "text": "Cell L is more transport-limited because it has the larger SA/V of 0.60 µm−1."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "For a sphere, SA/V = 3/r. Cell L has r = 10 µm so SA/V = 0.30 µm−1; cell S has r = 5 µm so SA/V = 0.60 µm−1. The larger cell therefore has only half as much membrane per unit cytoplasm. Nutrient import, gas exchange, and waste export are more likely to limit L than S. Being spherical does not equalise the ratios, and 0.60 µm−1 belongs to the smaller cell, not L.",
+      "distractor_rationales": {
+        "A": "A higher SA/V eases, rather than limits, membrane transport relative to volume; S is less limited.",
+        "B": "The same geometric formula still yields different numerical ratios when r differs.",
+        "D": "L’s SA/V is 0.30 µm−1, not 0.60 µm−1; the larger value belongs to S."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t1",
+      "type": "discrete",
+      "stem": "Isolated organelles are incubated with substrate, and the rate of change of O2 (nmol min−1 mg−1 protein) is recorded:\nMitochondria + pyruvate, dark: −48; same tubes, light of equal intensity: −47.\nChloroplasts + CO2, dark: −2; light: +36.\nBoiled chloroplasts + CO2, dark: 0; light: 0.\nWhich interpretation is consistent with the organelle functions?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Mitochondria photosynthesise in the dark, because they consume O2 only when unlit."
+        },
+        {
+          "key": "B",
+          "text": "Light splits water abiotically in this experiment, because boiled chloroplasts still make O2."
+        },
+        {
+          "key": "C",
+          "text": "Mitochondria and chloroplasts produce O2 at similar rates in the light (−47 versus +36)."
+        },
+        {
+          "key": "D",
+          "text": "Chloroplasts evolve O2 only in the light; mitochondria consume O2 with or without light."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "A negative rate means net O2 consumption; a positive rate means net O2 production. Mitochondria remain near −48 nmol min−1 mg−1 in dark and light, matching respiration that does not require photons. Chloroplasts switch from about zero in the dark to +36 in the light, matching photosynthetic water-splitting at photosystem II. Boiled chloroplasts give 0 in both conditions, so the light-driven O2 is enzyme-dependent, not a simple photochemical artefact of the lamp.",
+      "distractor_rationales": {
+        "A": "Mitochondrial O2 consumption is essentially the same in light and dark (−48 vs −47), which is respiration, not photosynthesis.",
+        "B": "Boiled chloroplasts produce no O2 in the light (rate 0), so intact enzymes are required.",
+        "C": "−47 is consumption and +36 is production; the signs are opposite, not similar output."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t1",
+      "type": "discrete",
+      "stem": "Two cell types are characterised:\nCell P: ribosomes sediment at 70S; 100% of 3H-thymidine autoradiographic grains over a nucleoid with no nuclear envelope; internal membrane area 0.2 µm² per cell; diameter 1.2 µm.\nCell E: cytoplasmic ribosomes 80S, plus 70S ribosomes inside double-membrane organelles; 94% of DNA grains inside a nuclear envelope; internal membrane area 48 µm² per cell; diameter 18 µm.\nWhich classification is supported?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cell P is prokaryotic: 70S ribosomes, nucleoid DNA, and almost no endomembrane."
+        },
+        {
+          "key": "B",
+          "text": "Cell E is prokaryotic, because some of its ribosomes are 70S."
+        },
+        {
+          "key": "C",
+          "text": "Cell P is eukaryotic, because a diameter of 1.2 µm is typical of animal cells."
+        },
+        {
+          "key": "D",
+          "text": "Both are eukaryotic, because both contain DNA."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Prokaryotes lack a nuclear envelope, use 70S ribosomes, and have little internal membrane; those are exactly the measurements for cell P (nucleoid grains 100%, 0.2 µm² membranes, 1.2 µm diameter). Cell E has a nucleus, 80S cytosolic ribosomes, and extensive endomembrane (48 µm²), so it is eukaryotic. The 70S ribosomes inside E’s organelles are the bacterial-descended mitochondrial or chloroplast ribosomes, not evidence that E itself is a prokaryote. DNA is present in both domains.",
+      "distractor_rationales": {
+        "B": "70S ribosomes inside organelles of a nucleated 80S cell are expected in eukaryotes; they do not make E prokaryotic.",
+        "C": "1.2 µm is bacterial-scale; typical animal cells are an order of magnitude larger, matching E at 18 µm.",
+        "D": "Prokaryotes also contain DNA; the distinguishing features are the nucleus and endomembrane system."
+      },
+      "difficulty_est": 0.34
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t1",
+      "type": "discrete",
+      "stem": "Two purified organelle enzymes are assayed versus pH (activity in the same arbitrary units):\npH 5.0: hydrolase L = 92, catalase P = 8.\npH 7.0: hydrolase L = 14, catalase P = 88.\npH 8.0: hydrolase L = 6, catalase P = 71.\nCompartment L has a measured luminal pH of 5.0; compartment P has a luminal pH of 7.2.\nWhich assignment fits both the pH data and standard organelle chemistry?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "L is the mitochondrial matrix (pH near 8), because hydrolase L still has 6 units at pH 8."
+        },
+        {
+          "key": "B",
+          "text": "L is lysosomal (acid-optimum hydrolase) and P is consistent with peroxisomal catalase."
+        },
+        {
+          "key": "C",
+          "text": "Both enzymes are cytosolic, because cytosol is pH 7 and hydrolase L still has 14 units there."
+        },
+        {
+          "key": "D",
+          "text": "P is lysosomal, because catalase destroys H2O2 most rapidly at pH 5 (activity 8)."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Lysosomes maintain an acidic lumen so that acid hydrolases work at their pH optimum; hydrolase L is almost fully active at pH 5 (92 units) and nearly inactive at pH 7–8, matching that compartment. Peroxisomal catalase operates near neutrality; catalase P peaks at pH 7 (88 units) and is weak at pH 5 (8 units), matching lumen pH 7.2. Residual activity of L at pH 8 is only 6 units, far below its acid peak, so L is not a matrix enzyme. Catalase’s low activity at pH 5 rules out a lysosomal assignment for P.",
+      "distractor_rationales": {
+        "A": "Activity 6 at pH 8 is a trough, not an optimum; the mitochondrial matrix would not house an acid hydrolase of this profile.",
+        "C": "Fourteen units at pH 7 is a small fraction of L’s pH-5 peak, so the enzyme is not tuned to the cytosol.",
+        "D": "Catalase P has only 8 units at pH 5 and 88 at pH 7, the opposite of a lysosomal acid optimum."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t1",
+      "type": "discrete",
+      "stem": "A 40 kDa GFP fusion is imaged 30 min after microinjection into the cytosol. Mean fluorescence intensities (arbitrary units) are:\nGFP only: nucleus 22, cytosol 78 (ratio 0.28).\nGFP with a nuclear localisation sequence (NLS): nucleus 81, cytosol 19 (ratio 4.3).\nGFP–NLS after ATP depletion: nucleus 25, cytosol 75 (ratio 0.33).\nGFP–NLS plus a nuclear-pore blocker: nucleus 18, cytosol 82 (ratio 0.22).\nWhich conclusion is justified?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "GFP without an NLS is actively concentrated in the nucleus (ratio 0.28)."
+        },
+        {
+          "key": "B",
+          "text": "ATP depletion stimulates NLS-dependent import, because the ratio rises from 0.28 to 0.33."
+        },
+        {
+          "key": "C",
+          "text": "NLS-dependent nuclear accumulation requires ATP and intact nuclear pores."
+        },
+        {
+          "key": "D",
+          "text": "Blocking nuclear pores increases nuclear GFP–NLS (18 versus 81 in the untreated NLS sample)."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Active nuclear import concentrates an NLS cargo: the nuclear/cytosolic ratio jumps from 0.28 (GFP alone) to 4.3 (GFP–NLS). Depleting ATP drops that ratio to 0.33, and blocking pores drops it to 0.22, both indistinguishable from passive distribution of GFP. Therefore concentration of the NLS protein needs both energy (Ran–importin cycle) and open nuclear pores. A ratio below 1 is not accumulation, and 18 nuclear units with the pore blocker is less than 81, not more.",
+      "distractor_rationales": {
+        "A": "A nuclear/cytosol ratio of 0.28 means GFP is still mostly cytosolic; that is not active concentration.",
+        "B": "ATP depletion collapses the NLS ratio from 4.3 to 0.33; comparing 0.33 with GFP-only 0.28 is the wrong baseline.",
+        "D": "Nuclear intensity falls from 81 to 18 with the pore blocker, so pores are required rather than inhibitory."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t1",
+      "type": "discrete",
+      "stem": "Stereology of a hepatocyte with total volume 5000 µm³ gives these volume fractions and counts:\nCytosol 54%; mitochondria 22% (1400 organelles); rough ER 9%; nucleus 8% (1 nucleus); lysosomes 1% (250 organelles); other 6%.\nWhich numerical comparison is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The nucleus occupies 54% of the cell (2700 µm³)."
+        },
+        {
+          "key": "B",
+          "text": "A typical mitochondrion (0.79 µm³) is larger than the nucleus (400 µm³)."
+        },
+        {
+          "key": "C",
+          "text": "Lysosomes occupy more volume than all mitochondria combined (50 µm³ versus 1100 µm³)."
+        },
+        {
+          "key": "D",
+          "text": "Mitochondria together occupy 1100 µm³, which exceeds the 400 µm³ nucleus."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Nuclear volume is 0.08 × 5000 = 400 µm³. Combined mitochondrial volume is 0.22 × 5000 = 1100 µm³, so the mitochondrial population is larger than the nucleus even though each mitochondrion is small (1100/1400 ≈ 0.79 µm³). Cytosol, not the nucleus, is 54%. Lysosomes are only 0.01 × 5000 = 50 µm³, far below 1100 µm³. The arithmetic from the given fractions therefore shows mitochondria as a major volumetric compartment relative to the nucleus.",
+      "distractor_rationales": {
+        "A": "54% is the cytosol fraction; the nucleus is 8%, or 400 µm³.",
+        "B": "0.79 µm³ per mitochondrion is much smaller than the 400 µm³ nucleus.",
+        "C": "Lysosomes are 50 µm³ versus 1100 µm³ of mitochondria; the inequality is reversed."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t2",
+      "type": "discrete",
+      "stem": "Human red cells have an internal osmolarity of 300 mOsm. Equal aliquots are placed in NaCl baths (NaCl treated as membrane-impermeant). Relative cell volume at 2 min is:\n150 mOsm bath: 1.82; 300 mOsm: 1.00; 450 mOsm: 0.71; 600 mOsm: 0.58.\nWhich description matches the data and osmosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cells swell in the hypotonic 150 mOsm bath and shrink in the hypertonic 450 and 600 mOsm baths."
+        },
+        {
+          "key": "B",
+          "text": "150 mOsm is hypertonic, because the volume 1.82 shows water leaving the cells."
+        },
+        {
+          "key": "C",
+          "text": "Volume is independent of bath osmolarity, because 0.58 is not far from 1.82."
+        },
+        {
+          "key": "D",
+          "text": "600 mOsm causes lysis; lysis would increase, not decrease, packed cell volume."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Water moves toward the higher osmolarity. At 150 mOsm the bath is hypotonic to 300 mOsm cytoplasm, so water enters and relative volume rises to 1.82 (less than the ideal 300/150 = 2 because of non-solvent cell solids). At 300 mOsm there is no net driving force (volume 1.00). At 450 and 600 mOsm the bath is hypertonic, water leaves, and volume falls to 0.71 and 0.58, near the ideal 300/450 = 0.67 and 300/600 = 0.50. A volume below 1 is shrinkage, not lysis.",
+      "distractor_rationales": {
+        "B": "Volume 1.82 is swelling from water entry; 150 mOsm is hypotonic, not hypertonic.",
+        "C": "Volume falls monotonically from 1.82 to 0.58 as osmolarity rises from 150 to 600 mOsm.",
+        "D": "Lysis would burst cells and cannot explain a relative volume of 0.58; that is crenation in a hypertonic bath."
+      },
+      "difficulty_est": 0.33
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t2",
+      "type": "discrete",
+      "stem": "Initial uptake rates (nmol min−1 per milligram protein) versus external concentration [S]:\n[S] = 0.5 mM: glucose 18, urea 2.1.\n1.0 mM: glucose 32, urea 4.0.\n2.0 mM: glucose 48, urea 8.1.\n8.0 mM: glucose 58, urea 32.\n16 mM: glucose 60, urea 64.\nWhich kinetic reading is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Both solutes cross by unsaturable simple diffusion, because both rates increase with [S]."
+        },
+        {
+          "key": "B",
+          "text": "Glucose uses a saturable facilitated carrier; urea crosses by unsaturable simple diffusion."
+        },
+        {
+          "key": "C",
+          "text": "Urea uses an ATP pump, because its rate at 16 mM (64) exceeds that of glucose (60)."
+        },
+        {
+          "key": "D",
+          "text": "Glucose uses simple diffusion, because a plateau means the bilayer has become infinitely permeable."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Facilitated transporters saturate when binding sites are occupied. Glucose rises from 18 to 58 between 0.5 and 8 mM but only to 60 at 16 mM, so Vmax is about 60 nmol min−1 and Km is near 1 mM (rate 32 ≈ Vmax/2). Urea doubles whenever [S] doubles (2.1, 4.0, 8.1, 32, 64), a linear relation with no plateau, as expected for simple diffusion. A higher urea rate at 16 mM does not imply a pump; pumps would still saturate and would require an energy source, which is not indicated.",
+      "distractor_rationales": {
+        "A": "Glucose clearly plateaus (58 then 60) while urea does not; an increase with [S] at low concentration occurs for both mechanisms.",
+        "C": "Simple diffusion can outrun a saturated carrier at high [S]; rate 64 versus 60 is not evidence of active pumping.",
+        "D": "A plateau is the signature of a limited number of carriers, not of infinite bilayer permeability."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t2",
+      "type": "discrete",
+      "stem": "Inside-out plasma-membrane vesicles are given ATP on the ATPase side of the Na+/K+ pump. In 1.00 min the vesicles hydrolyse 3.0 nmol ATP and catalyse net movement of 9.0 nmol Na+ outward and 6.0 nmol K+ inward. Ouabain, a pump blocker, reduces ATP hydrolysis and both ion fluxes to ≤0.2 nmol. Which stoichiometry matches the measurements?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1 Na+ and 1 K+ moved per ATP, because 9 and 6 are both larger than 3."
+        },
+        {
+          "key": "B",
+          "text": "2 Na+ out and 3 K+ in per ATP (the ratios 9/3 and 6/3 reversed)."
+        },
+        {
+          "key": "C",
+          "text": "3 Na+ out and 2 K+ in per ATP hydrolysed."
+        },
+        {
+          "key": "D",
+          "text": "The ions diffuse independently of ATP, because 9, 6, and 3 are different numbers."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Dividing the ion fluxes by ATP hydrolysed gives 9.0/3.0 = 3 Na+ and 6.0/3.0 = 2 K+ per ATP. That is the textbook Na+/K+ ATPase stoichiometry and it is electrogenic (net +1 charge out). Ouabain collapsing all three measurements together shows the fluxes are pump-coupled, not independent leaks. Unequal Na and K counts are required by the 3:2 mechanism; they do not imply 1:1 cycling or a reversed 2:3 pump.",
+      "distractor_rationales": {
+        "A": "9/3 = 3 and 6/3 = 2, not 1 and 1; being larger than 3 nmol does not set the ratio to 1.",
+        "B": "That swaps the measured 3 Na : 2 K ratio.",
+        "D": "Ouabain zeros ATP hydrolysis and both ion movements together, so the fluxes are pump-dependent."
+      },
+      "difficulty_est": 0.35
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t2",
+      "type": "discrete",
+      "stem": "At the experimental temperature the Nernst equation is given as E = (58 mV / z) log10([ion]out / [ion]in). Concentrations (mM) are:\nK+: out 4, in 140 (z = +1).\nNa+: out 145, in 12 (z = +1).\nCl−: out 116, in 4 (z = −1).\nIf the membrane were permeable only to K+, the resting potential would be closest to which value?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0 mV, because unequal concentrations cannot produce a voltage until pumps run."
+        },
+        {
+          "key": "B",
+          "text": "+90 mV, using log10(140/4) with a positive sign."
+        },
+        {
+          "key": "C",
+          "text": "+58 mV, assuming a ten-fold K+ gradient."
+        },
+        {
+          "key": "D",
+          "text": "−90 mV"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "For K+, z = +1 and [out]/[in] = 4/140 = 0.0286. log10(0.0286) ≈ −1.54, so E_K = 58 × (−1.54) ≈ −89 mV, about −90 mV. A membrane permeable only to K+ rests at that equilibrium potential: K+ efflux leaves unmatched negative charge inside until the electrical pull balances the concentration gradient. Inverting the concentration ratio gives +90 mV, which would be the potential if the inside were the reference for a cation gradient in the opposite direction. A ten-fold gradient would be −58 mV, but 140/4 is 35-fold, not 10-fold.",
+      "distractor_rationales": {
+        "A": "A concentration gradient of a permeant ion is sufficient to set E_K; pumps maintain the gradient but are not required in the Nernst formula itself.",
+        "B": "Using [in]/[out] flips the sign; cations leaving a K+-rich cell make the interior negative.",
+        "C": "The gradient is 35-fold (log10 ≈ 1.54), not 10-fold, and the sign must be negative."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t2",
+      "type": "discrete",
+      "stem": "Initial influx across a protein-free phospholipid bilayer (pmol s−1 cm−2) is:\nurea (MW 60, octanol/water log P = −2.1): 0.4;\nethanol (MW 46, log P = −0.3): 18;\nglucose (MW 180, log P = −3.0): 0.05;\ntestosterone (MW 288, log P = +3.3): 42.\nWhich factor best accounts for the ranking of these four fluxes?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Lipid solubility (log P) dominates: testosterone is fastest despite the largest MW."
+        },
+        {
+          "key": "B",
+          "text": "The smallest molar mass always wins, so urea (MW 60) should exceed testosterone."
+        },
+        {
+          "key": "C",
+          "text": "Glucose is fastest because cells need sugar, and 0.05 is the largest influx."
+        },
+        {
+          "key": "D",
+          "text": "Charge determines the order; all four solutes must be anions because they cross at all."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Simple diffusion through a bilayer favours hydrophobic solutes. Testosterone’s log P of +3.3 and flux 42 dwarf urea (log P −2.1, flux 0.4) and glucose (log P −3.0, flux 0.05) even though testosterone is the heaviest (MW 288). Ethanol is intermediate (log P −0.3, flux 18). Molecular weight still matters for a given polarity, but in this set polarity outranks size. Need for a metabolite is irrelevant in a protein-free bilayer, and none of the tabulated solutes is an anion.",
+      "distractor_rationales": {
+        "B": "Urea’s influx is 0.4 versus testosterone’s 42, so smallest MW does not win here.",
+        "C": "Glucose has the smallest influx (0.05), not the largest, and a protein-free bilayer has no glucose carriers.",
+        "D": "The table gives no charges; urea, ethanol, glucose, and testosterone are not anions, yet they still show very different fluxes."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t2",
+      "type": "discrete",
+      "stem": "At the stated temperature, sucrose solute potential is Ψs = −2.50 MPa × molarity. Water potential is Ψ = Ψs + Ψp. A plant cell has sap equivalent to 0.30 M sucrose and turgor Ψp = +0.40 MPa. It is placed in an open 0.10 M sucrose bath (Ψp_bath = 0).\nΨ_cell = (−2.50 × 0.30) + 0.40 = −0.35 MPa; Ψ_bath = −2.50 × 0.10 = −0.25 MPa.\nWhat is the direction of net water flow?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Water leaves the cell because −0.35 MPa is higher than −0.25 MPa."
+        },
+        {
+          "key": "B",
+          "text": "Water enters the cell because Ψ_bath (−0.25 MPa) is higher than Ψ_cell (−0.35 MPa)."
+        },
+        {
+          "key": "C",
+          "text": "There is no net flow because turgor is already +0.40 MPa."
+        },
+        {
+          "key": "D",
+          "text": "Water leaves the cell because bath sucrose (0.10 M) exceeds cell sucrose (0.30 M)."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Water moves from higher (less negative) water potential to lower. The bath at −0.25 MPa is higher than the cell at −0.35 MPa, so water enters. That matches the concentration comparison as well: 0.10 M outside is more dilute than 0.30 M sap, so osmosis is inward, and the +0.40 MPa turgor is not yet large enough to cancel Ψs_cell (−0.75 MPa). Turgor alone does not prove equilibrium; equilibrium would require Ψ_cell = Ψ_bath.",
+      "distractor_rationales": {
+        "A": "On the number line −0.35 is lower, not higher, than −0.25; water does not flow up the Ψ gradient.",
+        "C": "Turgor is part of Ψ but equilibrium needs Ψ_cell = Ψ_bath; here they differ by 0.10 MPa.",
+        "D": "0.10 M is lower, not higher, than 0.30 M; that comparison would drive water in, not out."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t2",
+      "type": "discrete",
+      "stem": "Skeletal-muscle fibres are treated with ouabain, which blocks Na+/K+ ATPase. Intracellular concentrations (mM) versus time:\n0 min: [Na+] 12, [K+] 140.\n20 min: [Na+] 28, [K+] 118.\n60 min: [Na+] 61, [K+] 82.\nWhich mechanism explains the table?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "[Na+]in falls because the pump is the only pathway for sodium to enter."
+        },
+        {
+          "key": "B",
+          "text": "[K+]in rises because potassium is trapped once the pump stops."
+        },
+        {
+          "key": "C",
+          "text": "Sodium leaks in and potassium leaks out down their gradients, so [Na+]in rises and [K+]in falls."
+        },
+        {
+          "key": "D",
+          "text": "Concentrations are unchanged at 60 min (still 12 and 140 mM)."
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The pump continuously extrudes Na+ and imports K+ to offset passive leaks. Blocking it with ouabain leaves those leaks unopposed: [Na+]in climbs from 12 to 61 mM while [K+]in falls from 140 to 82 mM. Sodium is more concentrated outside, so it cannot fall inside when its active export stops. Potassium is more concentrated inside, so it cannot rise when its active import stops. The 60 min row is clearly not the t = 0 pair.",
+      "distractor_rationales": {
+        "A": "[Na+]in increases (12 → 61), so sodium is entering through leak channels, not leaving.",
+        "B": "[K+]in decreases (140 → 82); K+ leaves through K+ channels rather than being trapped.",
+        "D": "By 60 min the values are 61 and 82 mM, not the original 12 and 140 mM."
+      },
+      "difficulty_est": 0.32
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t2",
+      "type": "discrete",
+      "stem": "Ion flux versus external [ion] is measured on the same membrane. Without ATP the flux is linear through the origin with slope 0.80 nmol min−1 mM−1 and no plateau up to 50 mM. With ATP an additional saturable component appears (Km 0.80 mM, Vmax 12 nmol min−1) while the linear leak remains. At 50 mM external ion, which pathway carries more flux?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The ATP-dependent pump, because 12 nmol min−1 is greater than zero."
+        },
+        {
+          "key": "B",
+          "text": "The two pathways are equal (12 versus 40 nmol min−1)."
+        },
+        {
+          "key": "C",
+          "text": "Only the pump operates at high concentration; leak saturates and shuts off."
+        },
+        {
+          "key": "D",
+          "text": "The linear leak (~40 nmol min−1) exceeds the saturable pump (~12 nmol min−1)."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Leak flux at 50 mM is 0.80 × 50 = 40 nmol min−1. The pump is already near Vmax at this concentration (50 mM ≫ Km 0.80 mM), so it contributes about 12 nmol min−1. Forty is larger than twelve, so the unsaturable pathway dominates at high substrate even though ATP is present. A leak that is linear by description does not shut off at high concentration; that is the opposite of saturation. Being nonzero does not make the pump the larger term.",
+      "distractor_rationales": {
+        "A": "Twelve is less than the leak’s 40 nmol min−1; nonzero is not the same as dominant.",
+        "B": "12 and 40 are not equal.",
+        "C": "The leak was measured as linear to 50 mM; it does not saturate. The pump is the saturable term."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t10",
+      "type": "discrete",
+      "stem": "A diploid G1 nucleus contains 6.0 pg of DNA. Flow cytometry of an unsynchronised culture gives these peaks:\n6.0 pg: 62% of cells; 9.0 pg: 8%; 12.0 pg: 26%; 3.0 pg: 0%.\nWhich assignment of the peaks is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "6.0 pg is G1 (2C), 12.0 pg is G2/M (4C), and 9.0 pg is S-phase DNA between 2C and 4C."
+        },
+        {
+          "key": "B",
+          "text": "12.0 pg is G1, because G1 cells have just divided and therefore have the most DNA."
+        },
+        {
+          "key": "C",
+          "text": "3.0 pg must be the G1 peak; its 0% occupancy means the culture is entirely haploid."
+        },
+        {
+          "key": "D",
+          "text": "6.0 pg is G2, because most cells in a culture are always in G2."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "G1 diploid DNA is given as 6.0 pg (2C). After replication, G2/M nuclei hold 12.0 pg (4C). S-phase cells are between those values, here the 9.0 pg shoulder (8% of the population). Most growing cells sit in G1, matching the 62% peak at 6.0 pg. A 3.0 pg (1C) peak would be haploid G1 after meiosis, but it is absent, so this is a mitotic diploid cycle. G2 is the smaller 12 pg peak (26%), not the majority 6 pg peak, and G1 cannot be 12 pg.",
+      "distractor_rationales": {
+        "B": "Division halves DNA; G1 is the 6.0 pg peak, not 12.0 pg.",
+        "C": "Zero cells at 3.0 pg means there is no haploid G1 population; G1 here is 6.0 pg.",
+        "D": "G2 is 12 pg and only 26% of cells; the majority 6 pg peak is G1."
+      },
+      "difficulty_est": 0.39
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t10",
+      "type": "discrete",
+      "stem": "An animal has 2n = 8 chromosomes. DNA is scored relative to a diploid G1 nucleus (= 1.0, which is 2C). Four cells are examined:\nCell W: 8 chromosome bodies, 2 chromatids each, DNA 2.0.\nCell X: 4 chromosome bodies, 2 chromatids each, DNA 1.0.\nCell Y: 4 chromosome bodies, 1 chromatid each, DNA 0.5.\nCell Z: 8 chromosome bodies, 1 chromatid each, DNA 1.0.\nWhich cell is a haploid product of meiosis I that has not yet completed meiosis II?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cell W"
+        },
+        {
+          "key": "B",
+          "text": "Cell X"
+        },
+        {
+          "key": "C",
+          "text": "Cell Y"
+        },
+        {
+          "key": "D",
+          "text": "Cell Z"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Meiosis I separates homologues, so each daughter is haploid in chromosome number (4 bodies when 2n = 8) but each chromosome is still duplicated (two chromatids) and DNA is 2C relative to a haploid genome, which is 1.0 on the diploid-G1 scale. That is cell X. Cell W still has 8 replicated chromosomes and 4C DNA, so it is pre-division diploid. Cell Y has 1C DNA and single chromatids, so meiosis II has finished. Cell Z is an ordinary diploid G1 cell.",
+      "distractor_rationales": {
+        "A": "Eight replicated chromosomes and DNA 2.0 (4C) describe mitosis or G2, not a meiosis-I product.",
+        "C": "DNA 0.5 with single chromatids is a gamete after meiosis II, not a secondary gametocyte.",
+        "D": "Eight unreplicated chromosomes and DNA 1.0 is diploid G1, not haploid."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t10",
+      "type": "discrete",
+      "stem": "An asynchronous culture has a measured generation time of 20.0 h. A snapshot of 360 cells shows:\ninterphase 324, prophase 18, metaphase 12, anaphase 4, telophase 2.\nThe duration of a phase is (fraction of cells in that phase) × generation time.\nHow long is metaphase?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "12 h, reading the metaphase cell count as hours"
+        },
+        {
+          "key": "B",
+          "text": "20.0 h, the full generation time"
+        },
+        {
+          "key": "C",
+          "text": "40 min"
+        },
+        {
+          "key": "D",
+          "text": "2.0 h (12/360 × 60 h)"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The metaphase fraction is 12/360 = 1/30. Multiplied by a 20.0 h cycle that is 20/30 h = 2/3 h = 40 min. The cell count 12 is a number of cells, not a time. The whole cycle is 20 h, which would apply only if every cell were in metaphase. Using 60 h or treating 12/360 as a 2 h interval is an arithmetic mix-up. As a check, interphase is 324/360 × 20 = 18 h, the expected long gap phase, and prophase is 18/360 × 20 = 1.0 h.",
+      "distractor_rationales": {
+        "A": "Twelve is the head-count in metaphase, not a duration in hours.",
+        "B": "20 h is the entire cycle; only 12 of 360 cells are in metaphase.",
+        "D": "12/360 × 20 h is 0.67 h, not 2 h; there is no 60 h generation time in the stem."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t10",
+      "type": "discrete",
+      "stem": "A dihybrid AaBb is crossed to aabb. Among 400 offspring the counts are:\nA B: 162; A b: 41; a B: 39; a b: 158.\nRecombination frequency is recombinant offspring divided by total offspring.\nWhat is the recombination frequency?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.80 (the parental fraction 320/400)"
+        },
+        {
+          "key": "B",
+          "text": "0.10 (a single recombinant class, 41/400)"
+        },
+        {
+          "key": "C",
+          "text": "0.40 (80 recombinants out of 200)"
+        },
+        {
+          "key": "D",
+          "text": "0.20"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Parentals are the abundant classes AB and ab (162 + 158 = 320). Recombinants are Ab and aB (41 + 39 = 80). Frequency = 80/400 = 0.20, or 20 map units. Using only one recombinant class halves the value to 0.10. Using 200 as the denominator doubles it to 0.40. The parental fraction 0.80 is 1 − RF, not RF itself. A value of 0.20 is also far below the 0.50 expected for free independent assortment, so these loci are linked, but the numerical RF is still 0.20 from the table.",
+      "distractor_rationales": {
+        "A": "320/400 is the non-recombinant fraction; recombination frequency uses the recombinant 80, not 320.",
+        "B": "Both recombinant classes must be pooled (41 + 39), not a single class.",
+        "C": "The total scored is 400, not 200; 80/400 = 0.20."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t10",
+      "type": "discrete",
+      "stem": "Human lymphocytes (2n = 46) are treated with colchicine, which prevents spindle assembly. Mitotic figures are scored:\nControl: mitotic index 4%; 28% of mitoses in metaphase; mean chromosome number 46.\nColchicine 4 h: mitotic index 18%; 91% of mitoses in metaphase; mean chromosome number 46.\nColchicine 24 h, then drug wash and one subsequent cell cycle: mitotic index 5%; 30% of mitoses in metaphase; mean chromosome number 92.\nWhich interpretation fits?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Prolonged spindle failure blocks anaphase; after wash, some cells enter the next cycle tetraploid (92 chromosomes)."
+        },
+        {
+          "key": "B",
+          "text": "Colchicine lowers the mitotic index from 4% to 18%, proving fewer cells enter mitosis."
+        },
+        {
+          "key": "C",
+          "text": "Control cells already have 92 chromosomes, matching a normal human karyotype."
+        },
+        {
+          "key": "D",
+          "text": "Four hours of colchicine is enough to double the chromosome number to 92 in the arrested metaphases."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Without a spindle, chromatids cannot separate, so cells pile up in metaphase: mitotic index rises 4% → 18% and metaphase among mitoses rises 28% → 91%, while the count remains 46. If the block lasts long enough that cells exit mitosis without cytokinesis and then replicate DNA again, the next mitosis shows 92 chromosomes. That appears only after the 24 h treatment plus wash, not at 4 h. An increase in mitotic index is arrest, not fewer mitoses. Diploid human cells have 46 chromosomes, shown in the control row.",
+      "distractor_rationales": {
+        "B": "18% is higher than 4%; colchicine increases the apparent mitotic index by metaphase arrest.",
+        "C": "The control mean is 46, the diploid human number, not 92.",
+        "D": "The 4 h row still lists 46 chromosomes; doubling appears only in the post-wash 92-chromosome row."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t10",
+      "type": "discrete",
+      "stem": "A double heterozygote AaBb produces 160 scored gametes:\nAB 38; Ab 42; aB 41; ab 39.\nWhich genetic conclusion do the counts support?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The loci are completely linked in cis, which would yield only AB and ab, each near 80."
+        },
+        {
+          "key": "B",
+          "text": "The loci assort independently: the four gamete classes are statistically indistinguishable from 1:1:1:1."
+        },
+        {
+          "key": "C",
+          "text": "AB gametes are lethal, because 38 is effectively zero."
+        },
+        {
+          "key": "D",
+          "text": "Only Ab and aB appear, so the loci are completely linked in trans."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Independent assortment of two heterozygotes predicts four equally frequent gametes, 40 each in a sample of 160. The observed 38, 42, 41, and 39 sit on that expectation (each is 40 ± 2). Complete linkage would collapse the table to two parental classes of about 80. All four classes are present and large, so neither cis nor trans complete linkage fits, and 38 is not a lethal zero. First-year Mendelian reasoning plus the counts is sufficient; no map distance near zero is implied.",
+      "distractor_rationales": {
+        "A": "All four classes are occupied near 40, not two classes near 80.",
+        "C": "38/160 is ~24%, not a missing class.",
+        "D": "AB and ab are present (38 and 39) at the same level as the ‘recombinant’ pair."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t10",
+      "type": "discrete",
+      "stem": "Human 2n = 46, so a normal gamete has 23 chromosomes. Four sperm are karyotyped:\nW: 23 chromosomes; X: 24; Y: 22; Z: 46.\nEach fertilises a normal 23-chromosome egg. Which pairing yields a 47-chromosome (trisomic) zygote?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Sperm W (23) + egg 23 → 47"
+        },
+        {
+          "key": "B",
+          "text": "Sperm Y (22) + egg 23 → 47"
+        },
+        {
+          "key": "C",
+          "text": "Sperm X (24) + egg 23 → 47"
+        },
+        {
+          "key": "D",
+          "text": "Sperm Z (46) + egg 23 → 46"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "A trisomic zygote has 2n + 1 = 47 chromosomes. That is 24 + 23, so the n + 1 sperm X. Sperm W is euploid (23 + 23 = 46). Sperm Y is n − 1 and gives monosomy (22 + 23 = 45). Sperm Z is an unreduced 46-chromosome gamete and would give triploidy (46 + 23 = 69), not 46 and not trisomy. Nondisjunction in meiosis is the usual source of the 24- and 22-chromosome sperm.",
+      "distractor_rationales": {
+        "A": "23 + 23 = 46, a normal diploid, not 47.",
+        "B": "22 + 23 = 45, a monosomy, not trisomy.",
+        "D": "46 + 23 = 69 (triploid); the sum is not 46, and triploidy is not trisomy."
+      },
+      "difficulty_est": 0.31
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t10",
+      "type": "discrete",
+      "stem": "DNA per nucleus is plotted for a cell that starts at 6.0 pg (diploid G1, 2C). The trace is: 0–8 h, DNA rises 6.0 → 12.0 pg; 8–10 h, DNA stays 12.0 pg; at 10 h the nucleus divides into two nuclei of 6.0 pg; at 11 h those two divide again into four nuclei of 3.0 pg. There is no second S-phase plateau at 12 pg after the first division.\nWhich process is shown?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Mitosis, which would also finish at 3.0 pg after a single division."
+        },
+        {
+          "key": "B",
+          "text": "Endoreduplication without nuclear division, which would leave one 12 pg nucleus."
+        },
+        {
+          "key": "C",
+          "text": "Two S phases then one mitosis, which would require a second rise 6 → 12 pg after 10 h."
+        },
+        {
+          "key": "D",
+          "text": "Meiosis: one S phase then two divisions, producing 3.0 pg (1C) nuclei."
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Meiosis replicates DNA once (6 → 12 pg) and then divides twice without another S phase, so the products are 1C (3.0 pg) if G1 diploid was 6.0 pg. Mitosis would stop after the first division, leaving two 6.0 pg G1 nuclei. Endoreduplication would not split the nucleus. A second S phase would be visible as another 6 → 12 pg rise after 10 h, which the trace lacks. The four 3 pg nuclei at 11 h are therefore meiotic products.",
+      "distractor_rationales": {
+        "A": "Mitosis yields two 6 pg nuclei, not four 3 pg nuclei.",
+        "B": "The plot shows divisions at 10 h and 11 h, not a single undivided 12 pg nucleus.",
+        "C": "After 10 h DNA falls rather than rising through a second S phase."
+      },
+      "difficulty_est": 0.49
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t1",
+      "type": "discrete",
+      "stem": "A mass spectrum of element X shows only three peaks (m/z equal to the mass number, relative intensities summing to 100):\nm/z 24, intensity 79; m/z 25, intensity 10; m/z 26, intensity 11.\nThe average atomic mass is Σ (mass number × relative abundance). What value should be reported?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "24.32 u"
+        },
+        {
+          "key": "B",
+          "text": "25.00 u, the middle mass number"
+        },
+        {
+          "key": "C",
+          "text": "24.00 u, the most intense peak"
+        },
+        {
+          "key": "D",
+          "text": "26.00 u, the heaviest isotope"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Weighted average = (24 × 79 + 25 × 10 + 26 × 11) / 100 = (1896 + 250 + 286) / 100 = 24.32 u. Relative intensity is the abundance of each isotope, so the mean is pulled toward 24 but not all the way there because of the 25 and 26 peaks. The median mass number 25, the mode 24, and the heaviest mass 26 each ignore that weighting. The arithmetic uses only the tabulated peaks; no external atomic-mass table is required.",
+      "distractor_rationales": {
+        "B": "An unweighted middle mass number ignores that 79% of the atoms are 24 u.",
+        "C": "The most abundant isotope is 24 u, but 21% of the sample is heavier, raising the average to 24.32 u.",
+        "D": "The 26 u peak is only 11% of the intensity; it cannot be the average."
+      },
+      "difficulty_est": 0.34
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t1",
+      "type": "discrete",
+      "stem": "A hydrogen-like ion has electronic energies E1 = −54.4 eV, E2 = −13.6 eV, and E3 = −6.04 eV. Photon energy and wavelength are related by E (eV) = 1240 eV·nm / λ (nm). Which wavelength is emitted for the n = 3 → n = 2 transition?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "30 nm (the n = 2 → n = 1 gap of 40.8 eV)"
+        },
+        {
+          "key": "B",
+          "text": "164 nm"
+        },
+        {
+          "key": "C",
+          "text": "26 nm (the n = 3 → n = 1 gap of 48.4 eV)"
+        },
+        {
+          "key": "D",
+          "text": "7.56 nm, taking the energy change in eV as a wavelength in nm"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The photon energy is the difference between levels: ΔE = (−6.04) − (−13.6) = 7.56 eV. Then λ = 1240 / 7.56 ≈ 164 nm. The n = 2 → n = 1 gap is 54.4 − 13.6 = 40.8 eV (λ ≈ 30 nm) and n = 3 → n = 1 is 54.4 − 6.04 = 48.4 eV (λ ≈ 26 nm); those are different lines. Energy in eV is not numerically equal to wavelength in nm. All constants needed are in the stem.",
+      "distractor_rationales": {
+        "A": "30 nm is the n = 2 to n = 1 line (40.8 eV), not 3 to 2.",
+        "C": "26 nm is the n = 3 to n = 1 line (48.4 eV).",
+        "D": "7.56 eV must be converted with 1240/λ; it is not a wavelength of 7.56 nm."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t1",
+      "type": "discrete",
+      "stem": "Four nuclides are listed as (Z, A):\nP: (17, 35); Q: (17, 37); R: (18, 37); S: (16, 32).\nIsotopes are nuclides with the same proton number Z and different mass number A. Neutron number is A − Z.\nWhich pair are isotopes of the same element?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Q and R, because both have A = 37"
+        },
+        {
+          "key": "B",
+          "text": "P and R, because neutron numbers are 18 and 19, nearly equal"
+        },
+        {
+          "key": "C",
+          "text": "P and Q, because both have Z = 17"
+        },
+        {
+          "key": "D",
+          "text": "R and S, because 18 − 16 = 37 − 32"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Z is the proton count and defines the element. P and Q both have Z = 17, with A = 35 and 37, so they are isotopes (17 protons; neutrons 18 and 20). Q and R share A = 37 but differ in Z (17 vs 18); those are isobars, not isotopes. Nearly equal neutron numbers do not make P and R the same element (Z = 17 vs 18). An accidental equality of two differences for R and S is not the isotope definition.",
+      "distractor_rationales": {
+        "A": "Same A and different Z are isobars (here 37Cl and 37Ar), not isotopes.",
+        "B": "P has 18 neutrons and R has 19, but Z differs (17 vs 18), so they are different elements.",
+        "D": "Subtracting Z and A between two nuclides is not a test for isotopes; R and S have different Z and A."
+      },
+      "difficulty_est": 0.3
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t1",
+      "type": "discrete",
+      "stem": "First ionisation energies (kJ mol−1) for consecutive second-period elements are:\nLi 520; Be 899; B 801; C 1086; N 1402; O 1314; F 1681.\nWhich comparison is explained by a paired 2p electron being easier to remove than an unpaired electron from a half-filled 2p subshell?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Be (899) versus Li (520), a drop from Li to Be"
+        },
+        {
+          "key": "B",
+          "text": "F (1681) versus O (1314), a drop from O to F"
+        },
+        {
+          "key": "C",
+          "text": "C (1086) versus B (801), a drop from C to B that does not occur"
+        },
+        {
+          "key": "D",
+          "text": "O (1314) versus N (1402), the drop from N to O"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Nitrogen is 2p3 (three unpaired electrons). Oxygen is 2p4, so one 2p orbital is paired. Electron–electron repulsion in that pair lowers IE1: 1314 kJ mol−1 for O versus 1402 for N, against the general left-to-right rise. Lithium to beryllium actually increases (520 → 899) because Be has a filled 2s subshell. Fluorine is higher than oxygen (1681 vs 1314), and carbon is higher than boron (1086 vs 801); those are not drops caused by pairing at oxygen.",
+      "distractor_rationales": {
+        "A": "IE increases from Li to Be; there is no drop, and the 2s pair in Be is more stable, not easier to remove than Li.",
+        "B": "F is higher than O, so this is not a pairing-induced drop.",
+        "C": "C is higher than B; the B-to-C step is not a pairing drop at oxygen."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t1",
+      "type": "discrete",
+      "stem": "A radioactive isotope is counted in a fixed geometry:\nt = 0 h, 800 min−1; 3 h, 400 min−1; 6 h, 200 min−1; 9 h, 102 min−1.\nAssuming exponential decay with a constant half-life, the count rate at 12 h is closest to which value?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "50 min−1"
+        },
+        {
+          "key": "B",
+          "text": "800 min−1, because total atoms are conserved"
+        },
+        {
+          "key": "C",
+          "text": "200 min−1, reading the 6 h row as the 12 h prediction"
+        },
+        {
+          "key": "D",
+          "text": "12 min−1, setting the rate equal to the elapsed time"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The count halves every 3 h (800 → 400 → 200), so t½ = 3 h. Twelve hours is four half-lives from t = 0, and 800 / 2^4 = 800 / 16 = 50 min−1. From the 9 h point (≈100 min−1) one more half-life also gives ≈50 min−1; the 102 rather than 100 at 9 h is ordinary counting scatter. Nuclei are not conserved as the parent species: each decay removes a parent. The 6 h value is 200, which would be wrong at 12 h, and rate is not numerically equal to time in hours.",
+      "distractor_rationales": {
+        "B": "Parent nuclei disappear as they decay; activity falls rather than staying at 800 min−1.",
+        "C": "200 min−1 is the 6 h observation, only two half-lives from the start, not four.",
+        "D": "Elapsed hours and counts per minute are different quantities; 12 h does not force 12 min−1."
+      },
+      "difficulty_est": 0.33
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t1",
+      "type": "discrete",
+      "stem": "Successive ionisation energies of element M (kJ mol−1) are:\nIE1 577; IE2 1817; IE3 2745; IE4 11 577; IE5 14 842.\nA large jump indicates that the next electron is taken from a noble-gas core. In which group does M belong?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Group 1, because only IE1 is below 600 kJ mol−1"
+        },
+        {
+          "key": "B",
+          "text": "Group 13, because the jump occurs after three valence electrons (IE3 → IE4)"
+        },
+        {
+          "key": "C",
+          "text": "Group 2, because IE2 is already large (1817)"
+        },
+        {
+          "key": "D",
+          "text": "Group 18, because several ionisation energies are listed"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "IE1–IE3 lie in the thousands or below (577, 1817, 2745) while IE4 leaps to 11 577, more than four times IE3. Three relatively removable electrons then a core-like fourth means three valence electrons: group 13 (for example aluminium). Group 1 would jump after IE1 (IE2 huge). Group 2 would jump after IE2; here IE3 is still only 2745, not core-like. Noble gases do not show three modest IEs before a jump at IE4. The pattern uses only the given numbers.",
+      "distractor_rationales": {
+        "A": "IE2 and IE3 are still sequential valence ionisations (1817, 2745); a group-1 jump would appear at IE2.",
+        "C": "IE2/IE1 ≈ 3 is ordinary; the diagnostic jump is IE4/IE3 ≈ 4.2.",
+        "D": "Listing five IEs does not place an element in group 18; noble-gas cores explain the jump, not the group of M."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t1",
+      "type": "discrete",
+      "stem": "A 10.00 g sample of boron contains 19.9 atom % 10B (10.013 u) and 80.1 atom % 11B (11.009 u). The average atomic mass is 0.199(10.013) + 0.801(11.009) = 10.811 u. Mass of an isotope in the sample = (atom fraction × isotope mass / average mass) × 10.00 g.\nWhat mass of the sample is 10B?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1.99 g, taking 19.9 atom % as 19.9% by mass"
+        },
+        {
+          "key": "B",
+          "text": "8.01 g, taking 80.1 atom % as the 10B mass fraction"
+        },
+        {
+          "key": "C",
+          "text": "1.84 g"
+        },
+        {
+          "key": "D",
+          "text": "5.00 g, an unweighted half of the sample"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Mass fraction of 10B = (0.199 × 10.013) / 10.811 = 1.993 / 10.811 = 0.1844, so the mass is 0.1844 × 10.00 g = 1.84 g. Atom percent is not mass percent because 10B atoms are lighter than 11B atoms; using 19.9% of 10.00 g (1.99 g) slightly overestimates the 10B mass. The 80.1% figure belongs to 11B atoms, not to 10B. An arbitrary 5.00 g split ignores both the abundances and the two isotopic masses given in the stem.",
+      "distractor_rationales": {
+        "A": "Atom % equals mass % only if the isotopes have identical mass; here 10B is lighter, so its mass fraction is 18.4%, not 19.9%.",
+        "B": "80.1% is the atom fraction of 11B, not of 10B.",
+        "D": "The isotopes are not present in equal mass; the weighted mass of 10B is 1.84 g."
+      },
+      "difficulty_est": 0.56
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t1",
+      "type": "discrete",
+      "stem": "Nuclear processes are written as parent (Z, A) → daughter (Z, A):\nProcess 1: (92, 238) → (90, 234)\nProcess 2: (90, 234) → (91, 234)\nProcess 3: (91, 234) → (92, 234)\nProcess 4: (92, 234) → (90, 230)\nAlpha emission decreases Z by 2 and A by 4. Beta-minus emission increases Z by 1 and leaves A unchanged.\nWhich processes are alpha emissions?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2 and 3"
+        },
+        {
+          "key": "B",
+          "text": "1 and 2"
+        },
+        {
+          "key": "C",
+          "text": "3 and 4"
+        },
+        {
+          "key": "D",
+          "text": "1 and 4"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Process 1 drops Z by 2 and A by 4 (92 → 90, 238 → 234), the alpha signature. Process 4 does the same (92 → 90, 234 → 230). Processes 2 and 3 keep A = 234 while Z increases by 1 (90 → 91, then 91 → 92), which is beta-minus decay (a neutron converting to a proton). Mixing an alpha with a beta, or pairing the two betas, does not match the ΔZ, ΔA rules given in the stem.",
+      "distractor_rationales": {
+        "A": "Processes 2 and 3 are β− (A unchanged, Z + 1), not alpha.",
+        "B": "Process 2 is β−; only process 1 of this pair is alpha.",
+        "C": "Process 3 is β−; only process 4 of this pair is alpha."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t10",
+      "type": "discrete",
+      "stem": "50.0 mL of 1.00 M HCl is mixed with 50.0 mL of 1.00 M NaOH in a coffee-cup calorimeter. Treat the mixture as 100.0 g of solution with c = 4.18 J g−1 °C−1. Both solutions start at 22.0 °C; the final temperature is 28.8 °C. The limiting reaction is H+ + OH− → H2O (0.0500 mol). q_solution = m c ΔT, and ΔH_rxn = −q_solution / moles.\nWhat is ΔH for the neutralization?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "−56.8 kJ mol−1"
+        },
+        {
+          "key": "B",
+          "text": "+56.8 kJ mol−1"
+        },
+        {
+          "key": "C",
+          "text": "−28.4 kJ mol−1 (using 0.100 mol as the extent of reaction)"
+        },
+        {
+          "key": "D",
+          "text": "−5.68 kJ mol−1 (using 0.500 mol)"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "ΔT = 28.8 − 22.0 = 6.8 °C. Heat absorbed by the solution is 100.0 × 4.18 × 6.8 = 2842 J. The reaction released that heat, so q_rxn = −2842 J. Extent is 0.0500 mol (50.0 mL of 1.00 M of each, 1:1 stoichiometry), giving ΔH = −2842 J / 0.0500 mol = −56.8 kJ mol−1. The temperature rise shows an exothermic process, so the sign is negative. Using 0.100 mol (sum of both reagents) halves |ΔH|; using 0.500 mol divides by ten.",
+      "distractor_rationales": {
+        "B": "Heat flowed into the solution (T rose), so the reaction is exothermic and ΔH is negative.",
+        "C": "Only 0.0500 mol of water forms; 50.0 mL of 1.00 M plus 50.0 mL of 1.00 M is not 0.100 mol of reaction.",
+        "D": "0.500 mol is ten times the actual extent, which would give −5.68 kJ mol−1."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t10",
+      "type": "discrete",
+      "stem": "Standard enthalpy changes (kJ mol−1) are:\n(1) C + O2 → CO2    ΔH = −394\n(2) H2 + 1/2 O2 → H2O(l)    ΔH = −286\n(3) 2C + 3H2 + 1/2 O2 → C2H5OH(l)    ΔH = −278\nCombustion: C2H5OH(l) + 3 O2 → 2 CO2 + 3 H2O(l).\nUsing Hess’s law, ΔH_comb = 2(ΔH1) + 3(ΔH2) − (ΔH3). What is ΔH_comb?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "−1646 kJ mol−1 (omitting −(ΔH3))"
+        },
+        {
+          "key": "B",
+          "text": "−1368 kJ mol−1"
+        },
+        {
+          "key": "C",
+          "text": "+1368 kJ mol−1"
+        },
+        {
+          "key": "D",
+          "text": "−278 kJ mol−1, the formation enthalpy of ethanol"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Products: 2 CO2 contribute 2 × (−394) = −788 kJ and 3 H2O contribute 3 × (−286) = −858 kJ, sum −1646 kJ. Ethanol’s formation enthalpy is −278 kJ, and O2 is 0, so subtract −278: ΔH_comb = −1646 − (−278) = −1368 kJ mol−1. Combustion of an alcohol is exothermic, so the sign is negative. Leaving out the ethanol term stops at −1646. The formation value −278 kJ is for building ethanol from elements, not for burning it.",
+      "distractor_rationales": {
+        "A": "That sum is only the product formation enthalpies; Hess’s law still subtracts the reactant ethanol ΔHf.",
+        "C": "The magnitude is right but combustion releases heat, so ΔH is negative.",
+        "D": "−278 kJ mol−1 is equation (3), formation, not combustion."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t10",
+      "type": "discrete",
+      "stem": "Average bond enthalpies (kJ mol−1): H–H 436, Cl–Cl 243, H–Cl 432. For H2 + Cl2 → 2 HCl, ΔH = Σ bonds broken − Σ bonds formed. What is ΔH?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "+185 kJ (sign reversed)"
+        },
+        {
+          "key": "B",
+          "text": "+679 kJ (only the bonds broken: 436 + 243)"
+        },
+        {
+          "key": "C",
+          "text": "−185 kJ"
+        },
+        {
+          "key": "D",
+          "text": "−432 kJ (one H–Cl bond only)"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Bonds broken: one H–H and one Cl–Cl, 436 + 243 = 679 kJ absorbed. Bonds formed: two H–Cl, 2 × 432 = 864 kJ released. ΔH = 679 − 864 = −185 kJ per mole of reaction as written. The negative sign means the H–Cl bonds are stronger in total than the bonds they replace, matching an exothermic hydrogen–chlorine combination. Counting only broken bonds leaves the endothermic half. Forming two H–Cl molecules requires twice 432, not once.",
+      "distractor_rationales": {
+        "A": "The arithmetic 864 − 679 = 185 kJ is the magnitude of heat released; ΔH carries a minus sign.",
+        "B": "679 kJ is only the break term; the 864 kJ of H–Cl formation must be subtracted.",
+        "D": "The balanced equation produces two moles of HCl, so two H–Cl bonds form."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t10",
+      "type": "discrete",
+      "stem": "0.050 mol of salt X dissolves in 100 g of water (c = 4.18 J g−1 °C−1) in a well-insulated cup. The temperature falls from 22.0 °C to 19.5 °C. Take q_water = m c ΔT and q_rxn = −q_water. What is ΔH_solution per mole of X?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "−21 kJ mol−1, treating the cooling as an exothermic dissolution"
+        },
+        {
+          "key": "B",
+          "text": "+1045 kJ mol−1, leaving q in joules and skipping division by 0.050 mol"
+        },
+        {
+          "key": "C",
+          "text": "0, because a 2.5 °C change is negligible"
+        },
+        {
+          "key": "D",
+          "text": "+21 kJ mol−1 (endothermic)"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Water cools, so ΔT = −2.5 °C and q_water = 100 × 4.18 × (−2.5) = −1045 J. Energy left the water and entered the dissolving salt, so q_rxn = +1045 J. Per mole, ΔH = +1045 J / 0.050 mol = +2.09 × 10^4 J mol−1 = +21 kJ mol−1. A temperature drop is the calorimetric signature of an endothermic process. Ignoring the 0.050 mol divisor leaves 1045 J, which is not 1045 kJ mol−1, and 2.5 °C is the entire signal, not a reason to assign zero.",
+      "distractor_rationales": {
+        "A": "Cooling of the surroundings means the system absorbed heat; ΔH is positive, not negative.",
+        "B": "1045 J is q for 0.050 mol, not 1045 kJ per mole.",
+        "C": "The 2.5 °C drop is how the heat is measured; it corresponds to 21 kJ mol−1, not to ΔH = 0."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t10",
+      "type": "discrete",
+      "stem": "Standard enthalpies of formation (kJ mol−1): CH4(g) −75; CO2(g) −394; H2O(l) −286; O2(g) 0. For CH4 + 2 O2 → CO2 + 2 H2O(l), ΔH = Σ ΔHf(products) − Σ ΔHf(reactants).\nWhat is ΔH?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "−891 kJ mol−1"
+        },
+        {
+          "key": "B",
+          "text": "−966 kJ mol−1 (forgetting to subtract ΔHf of CH4)"
+        },
+        {
+          "key": "C",
+          "text": "+891 kJ mol−1"
+        },
+        {
+          "key": "D",
+          "text": "−75 kJ mol−1, the formation enthalpy of methane"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Products: −394 + 2(−286) = −394 − 572 = −966 kJ. Reactants: −75 + 2(0) = −75 kJ. ΔH = −966 − (−75) = −891 kJ mol−1. Methane combustion is strongly exothermic, matching the negative sign. Dropping the methane term leaves −966, which is only the product sum. The formation enthalpy −75 kJ is the methane building reaction from C and H2, not this combustion.",
+      "distractor_rationales": {
+        "B": "Σ ΔHf(products) is −966 kJ; Hess’s law still subtracts ΔHf of CH4 (−75).",
+        "C": "Heat is released (combustion), so ΔH is negative.",
+        "D": "−75 kJ mol−1 is ΔHf of methane, not ΔH of burning methane in oxygen."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t10",
+      "type": "discrete",
+      "stem": "Combustion enthalpies: methane, M = 16.0 g mol−1, ΔH_comb = −890 kJ mol−1; octane, M = 114 g mol−1, ΔH_comb = −5470 kJ mol−1. Heat released per gram is |ΔH_comb| / M.\nWhich fuel releases more heat per gram?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Octane, because 5470 kJ mol−1 is larger than 890 kJ mol−1"
+        },
+        {
+          "key": "B",
+          "text": "Methane, 55.6 kJ g−1 versus 48.0 kJ g−1 for octane"
+        },
+        {
+          "key": "C",
+          "text": "The two fuels are equal per gram, because both are hydrocarbons"
+        },
+        {
+          "key": "D",
+          "text": "Octane, 5470/16.0 = 342 kJ g−1, using methane’s molar mass for octane"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Methane: 890 / 16.0 = 55.6 kJ g−1. Octane: 5470 / 114 = 48.0 kJ g−1. Per gram, methane wins even though each octane molecule releases far more heat, because octane’s molar mass is about seven times larger (114 vs 16). Being hydrocarbons does not force equal gravimetric heats. Dividing octane’s molar enthalpy by 16 g mol−1 uses the wrong mass and inflates the octane figure to 342 kJ g−1.",
+      "distractor_rationales": {
+        "A": "Per-mole enthalpies are not comparable until divided by molar mass; octane’s 5470 kJ is spread over 114 g.",
+        "C": "55.6 and 48.0 kJ g−1 differ by about 16%; they are not equal.",
+        "D": "Octane’s molar mass is 114 g mol−1, not 16.0 g mol−1."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t10",
+      "type": "discrete",
+      "stem": "Measured enthalpies:\nN2 + O2 → 2 NO    ΔH = +180 kJ\n2 NO + O2 → 2 NO2    ΔH = −114 kJ\nAdding these equations gives N2 + 2 O2 → 2 NO2. What is ΔH for that sum?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "+180 kJ, keeping only the first equation"
+        },
+        {
+          "key": "B",
+          "text": "−114 kJ, keeping only the second equation"
+        },
+        {
+          "key": "C",
+          "text": "+66 kJ"
+        },
+        {
+          "key": "D",
+          "text": "+294 kJ, adding 180 + 114 without the sign on the second ΔH"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Hess’s law adds ΔH when equations add. The two NO intermediates cancel, leaving N2 + 2 O2 → 2 NO2, and ΔH = +180 + (−114) = +66 kJ. The overall formation of NO2 from the elements is slightly endothermic in this data set because the costly NO-forming step is only partly repaid by the exothermic NO → NO2 oxidation. Dropping either equation, or flipping the −114 to +114, does not match the algebraic sum.",
+      "distractor_rationales": {
+        "A": "The second step still occurs in the sum and contributes −114 kJ.",
+        "B": "The first step is required to produce the NO that the second step consumes.",
+        "D": "The second ΔH is −114, not +114; 180 − 114 = 66, not 294."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t10",
+      "type": "discrete",
+      "stem": "1.00 g of compound C (M = 180 g mol−1) is burned in a bomb calorimeter whose water equivalent is 2.00 kg of water. Use c = 4.18 J g−1 °C−1. The temperature rises 3.50 °C. q_cal = m c ΔT; for combustion ΔU ≈ −q_cal / moles.\nWhat is ΔU per mole of C?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "+5.27 × 10^3 kJ mol−1 (wrong sign)"
+        },
+        {
+          "key": "B",
+          "text": "−29.3 kJ mol−1 (reporting the heat per gram as if it were per mole)"
+        },
+        {
+          "key": "C",
+          "text": "−5.27 kJ mol−1 (off by 10^3)"
+        },
+        {
+          "key": "D",
+          "text": "−5.27 × 10^3 kJ mol−1"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The calorimeter absorbs q = 2000 g × 4.18 J g−1 °C−1 × 3.50 °C = 2.926 × 10^4 J = 29.26 kJ for 1.00 g. One mole is 180 g, so 29.26 kJ g−1 × 180 g mol−1 = 5.27 × 10^3 kJ mol−1. Combustion heats the calorimeter, so the chemical system released that energy and ΔU is negative: −5.27 × 10^3 kJ mol−1. Treating 29.26 kJ as already molar, or dropping the factor of 1000 between J and kJ incorrectly, produces the smaller distractors; a positive sign ignores that the water warmed.",
+      "distractor_rationales": {
+        "A": "The calorimeter temperature rose, so the reaction released heat; ΔU is negative.",
+        "B": "29.26 kJ is the heat for 1.00 g; multiplying by 180 g mol−1 is required for a molar value.",
+        "C": "29 260 J per gram times 180 is 5.27 × 10^6 J mol−1 = 5.27 × 10^3 kJ mol−1, not 5.27 kJ mol−1."
+      },
+      "difficulty_est": 0.57
+    }
+  ]
+}
