@@ -83,4 +83,43 @@ describe("sessionAssembler", () => {
       expect(consecutiveSameTopic(result.items)).toBe(result.interleaveExceptions);
     }
   });
+
+  it("picks new items from highest (1-mastery)*exam_weight and skips weight 0", () => {
+    const due: AssemblerItem[] = [];
+    const news: NewCandidate[] = [
+      { id: "weak-high-m", conceptId: "t-strong", mastery: 0.9, examWeight: 0.05 },
+      { id: "gap-low-m", conceptId: "t-gap", mastery: 0.1, examWeight: 0.2 },
+      { id: "mid", conceptId: "t-mid", mastery: 0.5, examWeight: 0.1 },
+      { id: "overlay", conceptId: "t-overlay", mastery: 0.0, examWeight: 0 },
+    ];
+    const result = assembleSession(due, news, {
+      reviewCap: 50,
+      newCap: 15,
+      maxNewPerTopic: 3,
+    });
+    const newIds = result.items.map((i) => i.id);
+    expect(newIds[0]).toBe("gap-low-m");
+    expect(newIds).toContain("mid");
+    expect(newIds).toContain("weak-high-m");
+    expect(newIds.indexOf("gap-low-m")).toBeLessThan(newIds.indexOf("mid"));
+    expect(newIds.indexOf("mid")).toBeLessThan(newIds.indexOf("weak-high-m"));
+    expect(newIds).not.toContain("overlay");
+  });
+
+  it("repairs a grouped same-topic due queue to zero consecutive clashes", () => {
+    const due: AssemblerItem[] = [];
+    for (let t = 0; t < 8; t++) {
+      for (let i = 0; i < 3; i++) {
+        due.push({ id: `d-${t}-${i}`, conceptId: `topic-${t}` });
+      }
+    }
+    const result = assembleSession(due, [], {
+      reviewCap: 50,
+      newCap: 15,
+      maxNewPerTopic: 3,
+    });
+    expect(result.items).toHaveLength(24);
+    expect(consecutiveSameTopic(result.items)).toBe(0);
+    expect(result.interleaveExceptions).toBe(0);
+  });
 });

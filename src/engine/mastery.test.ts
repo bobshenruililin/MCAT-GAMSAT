@@ -1,11 +1,17 @@
 import { Rating } from "ts-fsrs";
 import { describe, expect, it } from "vitest";
 import { attempts, sessions } from "@/db/schema";
-import { masteryByNode } from "./mastery";
-import { schedule } from "./reviewEngine";
+import { ewmaCorrectness, masteryByNode } from "./mastery";
+import { getRetrievability, schedule } from "./reviewEngine";
 import { insertDiscrete, insertTopicTree, tempMigratedDb } from "./testDb";
 
 describe("mastery", () => {
+  it("EWMA α=0.3 seeds at 0.3 (MINI_SPEC)", () => {
+    expect(ewmaCorrectness([])).toBeCloseTo(0.3, 10);
+    expect(ewmaCorrectness([1])).toBeCloseTo(0.3 * 1 + 0.7 * 0.3, 10);
+    expect(ewmaCorrectness([1, 0])).toBeCloseTo(0.3 * 0 + 0.7 * (0.3 * 1 + 0.7 * 0.3), 10);
+  });
+
   it("unseen nodes are 0.3; correct attempts raise topic mastery; parents roll up by weight", () => {
     const { db, close } = tempMigratedDb();
     insertTopicTree(db, ["MCAT.FC1.1A.t1", "MCAT.FC1.1A.t2"], 0.05);
@@ -40,7 +46,12 @@ describe("mastery", () => {
       })
       .run();
 
-    const after = masteryByNode(db, new Date("2026-06-02T00:00:00.000Z"));
+    const afterNow = new Date("2026-06-02T00:00:00.000Z");
+    const after = masteryByNode(db, afterNow);
+    const C = ewmaCorrectness([1]);
+    const R = getRetrievability(db, "a", afterNow);
+    expect(R).not.toBeNull();
+    expect(after["MCAT.FC1.1A.t1"]).toBeCloseTo(0.6 * C + 0.4 * (R as number), 5);
     expect(after["MCAT.FC1.1A.t1"]).toBeGreaterThan(before["MCAT.FC1.1A.t1"]);
     expect(after["MCAT.FC1.1A.t2"]).toBeCloseTo(0.3, 5);
     expect(after["MCAT.FC1.1A"]).toBeGreaterThan(before["MCAT.FC1.1A"]);

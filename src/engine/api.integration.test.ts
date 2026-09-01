@@ -57,11 +57,18 @@ describe("API 20-item session", () => {
       );
       const next = (await nextRes.json()) as {
         done: boolean;
-        item: { id: string; stem: string; correctKey?: string; explanation?: string };
+        item: {
+          id: string;
+          stem: string;
+          correctKey?: string;
+          explanation?: string;
+          distractorRationales?: Record<string, string>;
+        };
       };
       expect(next.done).toBe(false);
       expect(next.item.correctKey).toBeUndefined();
       expect(next.item.explanation).toBeUndefined();
+      expect(next.item.distractorRationales).toBeUndefined();
 
       const attemptRes = await postAttempt(
         new Request("http://localhost/api/attempts", {
@@ -83,9 +90,11 @@ describe("API 20-item session", () => {
         correct: boolean;
         explanation: string;
         correctKey: string;
+        distractorRationales: Record<string, string>;
       };
       expect(attempt.correctKey).toBe("A");
       expect(attempt.explanation.length).toBeGreaterThan(0);
+      expect(attempt.distractorRationales.B).toBe("wrong");
       expect(attempt.correct).toBe(i % 5 !== 0);
     }
 

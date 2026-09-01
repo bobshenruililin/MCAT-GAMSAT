@@ -1,6 +1,8 @@
+import { eq } from "drizzle-orm";
 import { Rating, State } from "ts-fsrs";
 import { describe, expect, it } from "vitest";
-import { schedule } from "./reviewEngine";
+import { fsrsState } from "@/db/schema";
+import { getDueItems, getRetrievability, schedule } from "./reviewEngine";
 import { insertDiscrete, insertTopicTree, tempMigratedDb } from "./testDb";
 
 describe("reviewEngine FSRS properties", () => {
@@ -63,6 +65,25 @@ describe("reviewEngine FSRS properties", () => {
     expect(card.state).toBe(State.Relearning);
     expect(card.lapses).toBeGreaterThan(0);
     expect(card.due.getTime() - now.getTime()).toBeLessThan(longInterval);
+    close();
+  });
+
+  it("persists to fsrs_state; getDueItems skips empty new cards; getRetrievability uses ts-fsrs", () => {
+    const { db, close } = tempMigratedDb();
+    insertTopicTree(db, ["MCAT.FC1.1A.t1"]);
+    insertDiscrete(db, "item-r", "MCAT.FC1.1A.t1");
+    const now = new Date("2026-01-01T00:00:00.000Z");
+    expect(getRetrievability(db, "item-r", now)).toBeNull();
+    expect(getDueItems(db, now, 10)).toEqual([]);
+
+    const card = schedule(db, "item-r", Rating.Good, now);
+    const row = db.select().from(fsrsState).where(eq(fsrsState.itemId, "item-r")).get();
+    expect(row).toBeDefined();
+    expect(row?.state).not.toBe("new");
+    expect(getRetrievability(db, "item-r", now)).toBeTypeOf("number");
+    expect(getRetrievability(db, "item-r", now)).toBeGreaterThan(0);
+    expect(getDueItems(db, now, 10).map((d) => d.itemId)).not.toContain("item-r");
+    expect(getDueItems(db, card.due, 10).map((d) => d.itemId)).toContain("item-r");
     close();
   });
 });
