@@ -112,4 +112,9 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: NORTH_STAR lists error-driven remediation. The dream requires a twice-missed trap to come back until it dies. Sister new items kill the node; FSRS already restudies the card. Overriding due dates would fight the scheduler we chose not to hand-roll.
 - Rejected: Changing FSRS due dates; a hunt queue outside `newCap`; hunting from demo:seed history; mixing overlay weight-0 topics into hunt ranking (they still fail `examWeight > 0`).
 
+## 2026-09-01 — SCOREBOARD study log auto-syncs; official scores stay human
+- Decision: `pnpm scoreboard:sync` and session-end auto-sync rewrite only the Study log from non-demo daily and diagnostic attempts. Official scores and the weekly verdict are never written by the app. Demo/simulation is excluded. Auto-sync runs only against `data/app.db` so tests cannot clobber the ledger.
+- Rationale: NORTH_STAR measures success in SCOREBOARD.md. A ledger that stays at 0 after real study cannot be a trend line. Official percentiles are AAMC/ACER truth — software must not invent them.
+- Rejected: Counting demo:seed; writing fake official scores; failing a session if the markdown write errors.
+
 

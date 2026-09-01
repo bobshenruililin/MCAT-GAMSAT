@@ -136,4 +136,19 @@ Failed: hunt is idle until real (non-demo) misses exist.
 
 SCORE IMPACT: Study hours after a trap or twice-miss now spend the new-item quota on that node until it recovers, instead of on highest-weight unseen CARS — more score per hour once the human actually misses and returns.
 
+## DREAM cycle 2 — SCOREBOARD study log from real attempts (2026-09-01)
+
+Gap: SCOREBOARD.md stayed at Sessions: 0 after any amount of real study, so the ledger the North Star measures could not become a trend line.
+
+Shipped:
+- `pnpm scoreboard:sync` rewrites the Study log from non-demo `daily` and `diagnostic` attempts only.
+- Official-scores table and Weekly verdict are preserved character-for-character (human-entered).
+- Simulation/`config.demo` sessions are excluded. Empty sessions do not count.
+- Daily/diagnostic session end auto-syncs when the DB is `data/app.db` (tests and temp DBs skip). A failed write does not fail the attempt.
+- Tests: 50. `pnpm test`, typecheck, lint green.
+
+Failed: study days remain 0 until the human sits a real session.
+
+SCORE IMPACT: After each real session the study log shows days, attempts, and mean mastery of attempted topics, so the human can see whether this week's hours are actually moving the score ledger instead of guessing from chat.
+
 
