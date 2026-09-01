@@ -214,4 +214,28 @@ Failed: budgets remain unofficial heuristics (B-010).
 
 SCORE IMPACT: Timing feedback after a CARS or GAMSAT block now matches that section's pace, so the user does not rush or linger on the wrong clock for the next hour of study.
 
+## DREAM cycle 8 — gap audit, bank coverage (2026-09-01)
+
+Named gap: heatmap gray / bank depth. Counted taxonomy vs batches: 308 topics, 45 with items (weight ~0.34), 263 uncovered (weight ~1.66). Highest uncovered are CARS reasoning skills and GAMSAT S2 craft (timed writing).
+
+Why not built: this month the 315 items have 0 real study days. More unverified AI would raise poison surface before the existing ten QC flags are reviewed (trust > velocity). B-009 is an open human choice against a CARS-majority bank. GAMSAT S2 craft is not an MCQ retrieval item — a writing player would be a redesign.
+
+SCORE IMPACT: none this cycle — next score per hour is sitting the 315, not adding unstudied cards.
+
+## DREAM cycle 9 — gap audit, scheduling and insight leftovers (2026-09-01)
+
+Named leftovers: mid-question pacing nags; Progress error-class chart (already on session summary); Today streak including demo (banner + SCOREBOARD exclusion are the guards; DEMO.md requires the 14-day streak); overlay skill_tag items (B-003 weight 0); official-score data entry UI (markdown is the ledger).
+
+Why not built: nags would rush retrieval (misread). Duplicate insight is polish. Overlay budget and official scores are human. Demo streak is a named fixture, not the study path.
+
+SCORE IMPACT: none this cycle — the study path is already playable: due + hunt + newCap + FSRS + calibration notes.
+
+## DREAM cycle 10 — gap audit, stop (2026-09-01)
+
+Third consecutive cycle with no unblocked litmus-passing gap. Remaining dream pieces: real study days, human/official verified items, official AAMC/ACER scores, heatmap coverage after those hours.
+
+DREAM GAP: none reachable without the human
+
+SCORE IMPACT: none this cycle — the person walking into the room is now the bottleneck, which is the product.
+
 

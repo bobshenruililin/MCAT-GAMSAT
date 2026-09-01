@@ -142,4 +142,9 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Progress already used family budgets. The session the user just finished still taught the science clock. Wrong timing insight trains the wrong exam-day pace.
 - Rejected: Keeping the 95s line for simplicity; inventing official AAMC/ACER timing rules.
 
+## 2026-09-01 — Stop the DREAM loop at human-gated gaps
+- Decision: Do not generate more AI items to cover the 263 empty topics, do not add a GAMSAT S2 writing player, and do not nag pacing mid-question. The loop stops until the human studies, reviews QC flags, and (if they want CARS-majority coverage) resolves B-009.
+- Rationale: Feature litmus is score per study hour this month. Study days are 0 on a 315-item unverified bank. More AI content fails trust. S2 craft is not retrieval MCQ. Three consecutive audits found no unblocked gap.
+- Rejected: Painting the heatmap with unverified CARS; treating demo streak as study; a fourth scheduling tweak that the user would not feel on exam morning.
+
 
