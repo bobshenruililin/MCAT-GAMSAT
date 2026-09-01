@@ -1,0 +1,1802 @@
+{
+  "items": [
+    {
+      "concept_id": "MCAT.FC2.2A.t3",
+      "type": "discrete",
+      "stem": "Cultured fibroblasts are treated with a membrane-permeable analog of latrunculin that binds G-actin with nanomolar affinity and drops free monomer below the critical concentration for barbed-end assembly. Fifteen minutes later, which structure is expected to disassemble first?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Nuclear lamina, because lamins are actin polymers that treadmill rapidly"
+        },
+        {
+          "key": "B",
+          "text": "Keratin tonofilaments, because intermediate filaments require a high G-actin pool"
+        },
+        {
+          "key": "C",
+          "text": "Stress fibers and the cortical actin meshwork, which are F-actin arrays in equilibrium with G-actin"
+        },
+        {
+          "key": "D",
+          "text": "Centrioles, because the nine triplet blades are unstabilized actin bundles"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Latrunculin-like ligands sequester G-actin so the monomer concentration falls below the critical concentration. Filamentous actin therefore net-depolymerizes, collapsing stress fibers, lamellipodia, and cortical F-actin within minutes. Intermediate filaments (lamins, keratins) are nonpolar coiled-coil polymers of unrelated subunits and do not require an actin monomer pool. Centrioles are highly stable microtubule-based organelles. The kinetic selectivity of the drug therefore reports which cytoskeletal polymer is actin, not which structure looks fibrous by light microscopy.",
+      "distractor_rationales": {
+        "A": "Nuclear lamins are intermediate filaments, not actin polymers, so sequestering G-actin does not dismantle the lamina on this timescale.",
+        "B": "Keratin filaments are intermediate filaments assembled from keratin subunits; they are not in rapid equilibrium with G-actin.",
+        "D": "Centrioles are microtubule triplets plus accessory proteins, not actin bundles, and they are unusually stable."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t3",
+      "type": "discrete",
+      "stem": "A plus-end-directed kinesin mutant has kcat for ATP hydrolysis reduced 40-fold with little change in Km(ATP) or microtubule-binding affinity. In a gliding assay on polarity-marked microtubules (bright plus ends), wild-type motors drive cargo toward the bright end at 800 nm/s. The mutant cargo is most likely to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Reverse direction and move toward the minus end, because lowering kcat inverts motor polarity"
+        },
+        {
+          "key": "B",
+          "text": "Bind microtubules but translocate much more slowly toward the plus end, because stepping is tightly coupled to the ATPase cycle"
+        },
+        {
+          "key": "C",
+          "text": "Switch tracks onto F-actin, because kinesin becomes a myosin when ATP turnover is slow"
+        },
+        {
+          "key": "D",
+          "text": "Catastrophically depolymerize microtubules from the plus end, which is the normal function of conventional kinesin-1"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Conventional kinesin is a plus-end-directed microtubule motor. Each eight-nanometer step is coupled to one ATP hydrolytic cycle, so a large drop in kcat slows the stepping rate without reversing the structural bias that selects the plus end. Km is unchanged, so the motor still saturates at physiologic ATP; the defect is catalytic throughput, not substrate binding. Kinesin does not become an actin motor when slow, and kinesin-1 is a transport motor rather than a microtubule depolymerase (that activity belongs to other kinesin families such as kinesin-13).",
+      "distractor_rationales": {
+        "A": "Polarity is set by the motor domain's asymmetric interaction with the microtubule lattice, not by the numerical value of kcat.",
+        "C": "Kinesin and myosin are distinct ATPases with different track specificities; slowing ATP turnover does not convert one into the other.",
+        "D": "Kinesin-1 walks processively toward the plus end; plus-end catastrophe is not its physiologic role."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t4",
+      "type": "discrete",
+      "stem": "A 400-Da fluorescent tracer is added to the apical bath of a polarized MDCK monolayer. In wild-type cultures the tracer remains apical for hours. Monolayers lacking claudin-1 allow the tracer to appear in the basolateral compartment within minutes without any drop in transcellular transporter activity. The missing epithelial structure is the:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Gap junction plaque, whose connexin channels normally seal the paracellular route"
+        },
+        {
+          "key": "B",
+          "text": "Hemidesmosome, which is the only barrier to small solutes between apical and basolateral baths"
+        },
+        {
+          "key": "C",
+          "text": "Tight junction (zonula occludens), whose claudin strands form the paracellular seal"
+        },
+        {
+          "key": "D",
+          "text": "Focal adhesion, which occludes the lateral intercellular space at the apical pole"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Polarized epithelia separate apical and basolateral compartments with tight junctions. Claudins polymerize into anastomosing strands that limit paracellular flux of small solutes; losing claudin-1 opens that shunt so an apical tracer reaches the basolateral bath. Gap junctions (connexins) couple the interiors of adjacent cells and do not form the apical seal. Hemidesmosomes and focal adhesions attach cells to the basement membrane or matrix and are not the permeability barrier between apical and basolateral media. Unchanged transcellular transport shows the leak is paracellular, not a collapse of pumps and channels.",
+      "distractor_rationales": {
+        "A": "Connexin channels permit ion and metabolite exchange between cytoplasms; they do not occlude the paracellular path.",
+        "B": "Hemidesmosomes link basal keratin to laminin in the basement membrane and are not the apical paracellular gate.",
+        "D": "Focal adhesions are integrin-based matrix contacts, typically basal, and do not create the epithelial tight seal."
+      },
+      "difficulty_est": 0.39
+    },
+    {
+      "concept_id": "MCAT.FC2.2A.t4",
+      "type": "discrete",
+      "stem": "Dermal fibroblasts from a patient with dietary ascorbate deficiency are labeled with 14C-proline. Secreted type I collagen has a sharply reduced hydroxyproline content and a lower thermal unfolding temperature than collagen from ascorbate-replete cultures. The most direct biochemical explanation is that vitamin C:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Is an essential cofactor for prolyl hydroxylase; without 4-hydroxyproline the collagen triple helix is thermally unstable"
+        },
+        {
+          "key": "B",
+          "text": "Is the reductant required to form desmosine cross-links in elastin, which then templates collagen folding"
+        },
+        {
+          "key": "C",
+          "text": "Provides the ATP for ribosomal translation of collagen mRNA, so chains are truncated"
+        },
+        {
+          "key": "D",
+          "text": "Converts fibroblasts into polarized epithelial cells that no longer secrete fibrillar collagen"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Collagen prolyl hydroxylase uses Fe2+, 2-oxoglutarate, O2, and ascorbate to form 4-hydroxyproline. The hydroxyl groups stabilize the triple helix through stereoelectronic effects and hydrogen bonding, raising the melting temperature above body temperature. When ascorbate is absent, underhydroxylated tropocollagen is secreted but unfolds more readily, which is the molecular basis of scurvy and of the thermal shift in this labeling experiment. Desmosine is an elastin cross-link, ascorbate is not the energy source for translation, and vitamin C does not transdifferentiate fibroblasts into epithelium.",
+      "distractor_rationales": {
+        "B": "Desmosine cross-links elastin via lysyl oxidase, not prolyl hydroxylase, and does not explain a hydroxyproline deficit in collagen.",
+        "C": "Translation is GTP/ATP-dependent at the ribosome; ascorbate is not the stoichiometric energy donor for collagen synthesis.",
+        "D": "Vitamin C deficiency impairs collagen modification; it does not reprogram fibroblasts into epithelial cells."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC2.2B.t1",
+      "type": "discrete",
+      "stem": "A 30-nm particle is purified from a lysate. It contains a 6 kb RNA genome encapsidated by protein, has no ribosomes and no plasma membrane of its own, and yields progeny only when incubated with live host cells. Classifying the particle as a cell would most directly contradict cell theory because:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "All cells must use DNA, never RNA, as genetic material"
+        },
+        {
+          "key": "B",
+          "text": "A cell is the autonomous unit of metabolism and reproduction, bounded by a membrane and capable of protein synthesis with its own ribosomes; this particle is an obligate intracellular replicator lacking that machinery"
+        },
+        {
+          "key": "C",
+          "text": "Cell theory requires every living particle to be visible by standard light microscopy"
+        },
+        {
+          "key": "D",
+          "text": "RNA genomes are forbidden in any biological entity, including viruses"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Classical cell theory holds that the cell is the basic unit of life: a membrane-bounded compartment that carries out metabolism and arises from preexisting cells. Viruses and virus-like particles encapsidate nucleic acid but lack ribosomes, independent energy metabolism, and a self-contained plasma membrane; they replicate only by hijacking a host cell. RNA as a genome is fully compatible with being a virus and does not by itself decide cellular status. Size below the light-microscope limit also does not define a cell. The contradiction is the absence of autonomous cellular organization, not the chemical identity of the genome.",
+      "distractor_rationales": {
+        "A": "Many viruses use RNA genomes; cell theory is about cellular organization, not a ban on RNA.",
+        "C": "Some authentic bacteria are near the diffraction limit; visibility is not a tenet of cell theory.",
+        "D": "RNA viruses are biological entities; they are simply not cells."
+      },
+      "difficulty_est": 0.33
+    },
+    {
+      "concept_id": "MCAT.FC2.2B.t1",
+      "type": "discrete",
+      "stem": "Sterile nutrient broth in a swan-neck flask remains clear for months. After the curved neck is broken so that airborne dust can fall into the broth, turbidity appears within a day and microscopy shows rods that are dividing by binary fission. The result most directly supports which statement of cell theory?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "New cells arise only from preexisting cells; microbial growth here depends on inoculation, not spontaneous generation from the broth"
+        },
+        {
+          "key": "B",
+          "text": "Every cell contains a membrane-bound nucleus, demonstrated by the appearance of turbidity"
+        },
+        {
+          "key": "C",
+          "text": "Mitochondria are the only source of new bacteria when a flask is opened"
+        },
+        {
+          "key": "D",
+          "text": "Broth macromolecules polymerize directly into living cells once oxygen is admitted"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Pasteur's swan-neck design showed that sterilized medium does not spawn life on its own: as long as dust and microbes are trapped in the neck, the broth stays sterile. Breaking the neck allows preexisting airborne cells to enter, after which they proliferate by division, producing turbidity. That is experimental support for omnis cellula e cellula and against spontaneous generation. Turbidity does not demonstrate nuclei (these are prokaryotes), mitochondria do not generate free-living bacteria in the flask, and oxygen alone does not polymerize nutrients into cells.",
+      "distractor_rationales": {
+        "B": "The dividing rods are bacteria, which lack nuclei; turbidity is biomass, not a nuclear envelope.",
+        "C": "Mitochondria are organelles inside eukaryotic cells, not a reservoir of bacteria that inoculates broth.",
+        "D": "This is spontaneous generation, the hypothesis the experiment refutes."
+      },
+      "difficulty_est": 0.28
+    },
+    {
+      "concept_id": "MCAT.FC2.2B.t2",
+      "type": "discrete",
+      "stem": "A mutant Escherichia coli cannot synthesize meso-diaminopimelic acid, an amino acid of the peptidoglycan peptide stem. In hypotonic medium the cells swell and lyse unless 0.5 M sucrose is added as an osmotic stabilizer. Integrity of which structure has been lost?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The 70S ribosome, which normally resists turgor by covalently cross-linking phospholipids"
+        },
+        {
+          "key": "B",
+          "text": "The peptidoglycan cell wall, whose peptide cross-links bear turgor pressure"
+        },
+        {
+          "key": "C",
+          "text": "The nuclear envelope, which is the load-bearing wall of Gram-negative bacteria"
+        },
+        {
+          "key": "D",
+          "text": "Flagellar hooks, which osmotically clamp the periplasm"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Peptidoglycan is a mesh of glycan chains cross-linked through short peptides; meso-DAP is a stem residue used in those cross-links in E. coli. Without it the wall cannot be completed, so it cannot oppose the osmotic driving force for water influx, and the inner membrane ruptures in hypotonic medium. Sucrose outside the cell raises external osmolarity and reduces net water entry, rescuing the spheroplasts. Ribosomes do not bear turgor, bacteria have no nuclear envelope, and flagella are motility organelles rather than the hydrostatic exoskeleton.",
+      "distractor_rationales": {
+        "A": "Ribosomes synthesize protein; they are not a pressure-bearing sac and do not cross-link membrane lipids.",
+        "C": "Prokaryotes lack a nuclear envelope; the wall, not a nucleus, is the turgor-resistant layer.",
+        "D": "Flagella propel the cell; they do not substitute for a missing peptidoglycan sacculus."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC2.2B.t2",
+      "type": "discrete",
+      "stem": "An uncoupler collapses the proton motive force of a motile Gram-negative rod. Flagellar rotation stops within seconds even though cytoplasmic ATP remains high for several minutes. In a control, demembranated sperm axonemes continue to beat when ATP is supplied. Bacterial flagellar rotation in this organism is powered by:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "ATP hydrolysis at a dynein-like ATPase built into the basal body, identical to the axoneme"
+        },
+        {
+          "key": "B",
+          "text": "GTP hydrolysis by FtsZ rings at the pole, which turn the filament"
+        },
+        {
+          "key": "C",
+          "text": "Actin polymerization against the cell wall, which pushes the hook"
+        },
+        {
+          "key": "D",
+          "text": "Proton (or in some species sodium) flux through Mot proteins of the rotary motor in the envelope"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The bacterial flagellum is a rotary motor. Torque is generated by ion flow, usually protons, through MotA/MotB stator complexes in the inner membrane, dissipating the proton motive force. An uncoupler therefore stops rotation even while ATP is still abundant, proving the motor is not an ATP-burning dynein. Eukaryotic cilia and flagella are different machines: axonemal dynein hydrolyzes ATP to slide microtubule doublets. FtsZ is a tubulin homolog used in cytokinesis, and bacteria do not rotate flagella by polymerizing actin at the pole.",
+      "distractor_rationales": {
+        "A": "Axonemal beating is ATP-driven dynein sliding; the uncoupler result shows the bacterial motor is PMF-driven, not an ATP ATPase like dynein.",
+        "B": "FtsZ GTP hydrolysis assembles the division ring; it does not power flagellar rotation.",
+        "C": "Some pathogens use actin polymerization for intracellular motility, not for rotating a Gram-negative flagellum."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC2.2B.t3",
+      "type": "discrete",
+      "stem": "A log-phase batch culture of a bacterium increases from 2.0 x 10^6 CFU/mL to 1.28 x 10^8 CFU/mL in 3.0 hours with no lag after the first sample. The generation time during this interval is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "15 minutes, obtained by dividing 3 hours by the factor 12 instead of by the number of doublings"
+        },
+        {
+          "key": "B",
+          "text": "3.0 hours, equal to the elapsed clock time regardless of fold increase"
+        },
+        {
+          "key": "C",
+          "text": "60 minutes, from taking log10(64) as if it were the number of generations"
+        },
+        {
+          "key": "D",
+          "text": "30 minutes, because the fold increase is 64 = 2^6, so six generations occur in 180 minutes"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Exponential growth means N = N0 * 2^n, so the number of generations n is log2(N/N0). Here 1.28 x 10^8 / 2.0 x 10^6 = 64 = 2^6, so n = 6. Six doublings in 180 minutes give a generation (doubling) time of 30 minutes. Using the entire 3-hour window as if it were one generation ignores the fold change. Dividing time by 12 or treating log10(64) as n are arithmetic mix-ups. The calculation assumes the culture remained in balanced log phase, which the stem states.",
+      "distractor_rationales": {
+        "A": "There is no basis for 12 intervals; six binary doublings produce a 64-fold increase, not twelve.",
+        "B": "Elapsed time is the window in which several generations occur; generation time is that window divided by n.",
+        "C": "log10(64) is about 1.8 and is not the generation count; generations use log2 of the fold change."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC2.2B.t3",
+      "type": "discrete",
+      "stem": "A soil isolate forms colonies in an anaerobic jar but dies within an hour when the same medium is shaken in air. Enzyme assays detect neither superoxide dismutase nor catalase. The isolate is best classified as:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "An obligate aerobe that requires O2 as its only terminal electron acceptor"
+        },
+        {
+          "key": "B",
+          "text": "A facultative anaerobe that grows faster in air than without oxygen"
+        },
+        {
+          "key": "C",
+          "text": "An obligate anaerobe that cannot detoxify reactive oxygen species generated in air"
+        },
+        {
+          "key": "D",
+          "text": "A microaerophile that requires 21% oxygen and lacks anaerobic metabolism"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Obligate anaerobes are inhibited or killed by oxygen, often because they lack superoxide dismutase and catalase (or equivalent peroxidases) and therefore cannot dispose of superoxide and hydrogen peroxide formed when O2 oxidizes cellular reductants. Growth in an anaerobic jar plus rapid death in air matches that physiology. Obligate aerobes and microaerophiles require oxygen, and facultative organisms grow with or without it, typically better with respiration in air. The enzyme profile is the mechanistic reason for the oxygen-sensitive growth pattern, not a side detail.",
+      "distractor_rationales": {
+        "A": "Obligate aerobes need oxygen and would not thrive in an anaerobic jar.",
+        "B": "Facultative anaerobes grow in air; this isolate is killed by air.",
+        "D": "Microaerophiles need low oxygen, not strict anaerobiosis, and 21% oxygen is atmospheric, which kills this isolate."
+      },
+      "difficulty_est": 0.34
+    },
+    {
+      "concept_id": "MCAT.FC2.2B.t4",
+      "type": "discrete",
+      "stem": "F+ Escherichia coli that are streptomycin-sensitive and lac+ are mixed with F- cells that are streptomycin-resistant and lac-. DNase is present in the medium throughout the 30-minute mating. Streptomycin-resistant lac+ colonies appear at high frequency. The DNA transfer mechanism is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Transformation with naked chromosomal DNA, which DNase would degrade in the medium"
+        },
+        {
+          "key": "B",
+          "text": "Conjugation through a pilus, which is DNase-resistant because DNA moves cell to cell inside a protected channel"
+        },
+        {
+          "key": "C",
+          "text": "Generalized transduction, which requires a lytic phage lysate that was not provided"
+        },
+        {
+          "key": "D",
+          "text": "Uptake of secreted lac mRNA and reverse transcription in the recipient"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "F plasmid conjugation transfers DNA through a conjugative pilus/pore. Because the nucleic acid never becomes free in the medium, extracellular DNase does not block the cross. Transformation is defined by uptake of naked DNA and is DNase-sensitive, so it is ruled out by the experimental design. Transduction requires phage particles to package and deliver DNA, which the stem does not supply. Recipients become F+ lac+ (here lac is on the F or cotransferred) while remaining streptomycin-resistant because that chromosomal marker was already theirs. Bacterial recipients do not reverse-transcribe environmental mRNA to gain a stable lac+ genotype.",
+      "distractor_rationales": {
+        "A": "Transformation uses naked DNA and is blocked by DNase; the high frequency despite DNase excludes it.",
+        "C": "No phage was introduced; conjugation between F+ and F- is sufficient to explain the exconjugants.",
+        "D": "Stable bacterial alleles are DNA; there is no physiologic reverse transcription of secreted lac mRNA in E. coli."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "MCAT.FC2.2B.t4",
+      "type": "discrete",
+      "stem": "An Hfr donor transfers chromosomal markers in the time-of-entry order thr at 8 min, azi at 9 min, ton at 11 min, and lac at 18 min. Mating is interrupted at 10 minutes. Among streptomycin-counterselected recipients, thr+ azi+ recombinants are common but lac+ recombinants are essentially absent. This pattern indicates that:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "All four genes are on a small plasmid that always transfers as a unit in under 2 minutes"
+        },
+        {
+          "key": "B",
+          "text": "Transformation equalizes every marker by 10 minutes regardless of map position"
+        },
+        {
+          "key": "C",
+          "text": "The integrated F plasmid mobilizes the chromosome linearly from a fixed origin, so 10 minutes of contact transfers thr and azi but not the later lac locus"
+        },
+        {
+          "key": "D",
+          "text": "The recipient was already F+, which blocks all chromosomal recombination after 8 minutes"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "In Hfr strains the F plasmid is integrated into the chromosome. Conjugation nicks at oriT and transfers chromosomal DNA in a linear, time-dependent order set by the site and orientation of integration. Interrupted-mating clocks that order: markers that have already entered can recombine into the recipient, while markers still upstream of the transfer fork cannot. At 10 minutes thr and azi have entered and lac has not, matching the 8-9 versus 18 minute map. A small plasmid would not show a 10-minute lag between markers, and ordinary transformation does not produce a time-of-entry gradient.",
+      "distractor_rationales": {
+        "A": "Unit transfer of a tiny plasmid would not generate a several-minute time-of-entry series.",
+        "B": "Transformation does not create a conjugation clock; marker frequency would not follow this ordered delay.",
+        "D": "F+ recipients can show surface exclusion, but that would reduce transfer globally, not spare early markers and exclude only lac."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "MCAT.FC2.2B.t5",
+      "type": "discrete",
+      "stem": "A mild detergent that solubilizes lipid bilayers abolishes infectivity of virus A within minutes but leaves infectivity of virus B intact under the same conditions. Neither genome is covalently damaged. Virus A is most likely:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "An enveloped virus whose fusion machinery sits in a host-derived lipid bilayer required for entry"
+        },
+        {
+          "key": "B",
+          "text": "A naked icosahedral virus whose capsid is a protein shell with no lipid"
+        },
+        {
+          "key": "C",
+          "text": "A viroid, which is a naked circular RNA without capsid or envelope"
+        },
+        {
+          "key": "D",
+          "text": "A prion, whose infectivity is a misfolded protein devoid of nucleic acid and lipid"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Enveloped viruses acquire a phospholipid bilayer by budding. Entry typically requires that bilayer and its embedded glycoproteins for attachment and membrane fusion. Detergent strips the envelope and inactivates those particles without needing to nick the genome. Naked capsids have no essential lipid, so they are relatively detergent-resistant. Viroids are unencapsidated RNAs, and prions are protein-only; neither matches a detergent-labile, genome-containing virion contrasted with a stable companion virus B. The differential detergent sensitivity is therefore a classic operational definition of an envelope.",
+      "distractor_rationales": {
+        "B": "Protein-only capsids lack a bilayer target, so mild detergent should not abolish infectivity if the genome is intact.",
+        "C": "Viroids have no envelope to solubilize and are not typically scored as detergent-labile virions.",
+        "D": "Prion infectivity is conformational protein; it is not explained by extraction of a viral envelope lipid."
+      },
+      "difficulty_est": 0.35
+    },
+    {
+      "concept_id": "MCAT.FC2.2B.t5",
+      "type": "discrete",
+      "stem": "A T-even bacteriophage is grown so that its DNA is labeled with 32P and its capsid protein with 35S. After adsorption to bacteria and shear that strips empty coats, 32P is recovered in the bacterial pellet while 35S remains in the supernatant. The structural implication is that:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Capsid protein is injected as the genetic material and DNA remains outside"
+        },
+        {
+          "key": "B",
+          "text": "The phage envelope fuses with the bacterial plasma membrane, mixing 35S into the cytoplasm"
+        },
+        {
+          "key": "C",
+          "text": "The nucleic acid genome enters the cell while the protein capsid stays outside, so DNA, not protein, is the injected hereditary material"
+        },
+        {
+          "key": "D",
+          "text": "Both labels enter equally because the entire virion is taken up by phagocytosis"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Tailed bacteriophages are nucleoprotein particles: DNA (or sometimes RNA) is condensed inside a protein capsid, and a tail apparatus punctures the envelope to inject the genome. 32P traces nucleic acid into the cell; 35S traces methionine/cysteine in coat protein that remains extracellular after blending. That partition shows the capsid is a delivery device, not the hereditary substance. Typical T-even phages are non-enveloped and are not taken up whole by bacterial phagocytosis. Protein staying outside is the opposite of protein-as-gene.",
+      "distractor_rationales": {
+        "A": "The pellet is 32P-rich and the supernatant 35S-rich, which is DNA in and protein out, not the reverse.",
+        "B": "T-even phages are naked; fusion of a lipid envelope is not how they deliver DNA, and 35S did not enter.",
+        "D": "Bacteria do not phagocytose intact T-even virions in this protocol; the labels separate."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC2.2B.t6",
+      "type": "discrete",
+      "stem": "A lambda lysogen is exposed to UV doses that activate RecA. RecA stimulates autocleavage of the lambda cI repressor. The expected immediate outcome for the prophage is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Permanent silencing of all phage genes with no virion production, because cI cleavage locks lysogeny"
+        },
+        {
+          "key": "B",
+          "text": "Excision of the prophage and induction of the lytic cycle, producing progeny phage and usually lysing the host"
+        },
+        {
+          "key": "C",
+          "text": "Conversion of the phage genome into a prion that seeds in the cytoplasm without DNA replication"
+        },
+        {
+          "key": "D",
+          "text": "Immediate reverse transcription of lambda DNA into an RNA provirus that integrates at a new site"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "In lysogeny, cI repressor occupies operators and prevents lytic transcription while the prophage rides along in the bacterial chromosome. DNA damage activates RecA, which facilitates cI autocleavage, dropping repressor occupancy. Lytic genes including excisionases then fire, the prophage excises, and the phage replicates, packages, and lyses the cell. Cleavage of cI is the switch out of lysogeny, not a lock into it. Lambda is a dsDNA phage and does not reverse-transcribe, and induction is not prion conversion.",
+      "distractor_rationales": {
+        "A": "cI cleavage removes repression; it does not deepen lysogeny.",
+        "C": "Prophage induction is a DNA recombination and transcription program, not a prion disease.",
+        "D": "Reverse transcription is a retrovirus strategy; lambda replicates as DNA."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC2.2B.t6",
+      "type": "discrete",
+      "stem": "A mutant HIV-1 reverse transcriptase has kcat for dNTP incorporation reduced 80-fold with an unaltered Km for dNTPs. In newly infected CD4 T cells, compared with wild-type virus, synthesis of full-length proviral DNA is expected to be:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Faster, because a lower kcat always means higher fidelity and therefore fewer pauses"
+        },
+        {
+          "key": "B",
+          "text": "Unchanged, because host replicative DNA polymerase copies the viral RNA genome directly"
+        },
+        {
+          "key": "C",
+          "text": "Replaced by integrase polymerization, which does not require reverse transcriptase"
+        },
+        {
+          "key": "D",
+          "text": "Slower, because minus- and plus-strand DNA synthesis from the RNA template is catalyzed by reverse transcriptase at a rate set by kcat"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Retroviruses package reverse transcriptase so that the single-stranded RNA genome can be converted into double-stranded DNA before integrase inserts a provirus. The enzyme's kcat is the catalytic turnover per active site; dropping it 80-fold slows chain elongation even when dNTP binding (Km) is normal and dNTP pools are saturating. Host DNA polymerases do not copy incoming viral RNA as mRNA into DNA. Integrase catalyzes concerted insertion of already-made DNA ends, not polymerization of the genome. Fidelity can change with some RT mutants, but a pure kcat drop does not make DNA synthesis faster.",
+      "distractor_rationales": {
+        "A": "Catalytic rate and fidelity are different parameters; slowing chemistry lengthens the time to a complete provirus.",
+        "B": "Cellular DNA polymerases act on DNA templates; reverse transcription is the viral enzyme's job.",
+        "C": "Integrase cannot substitute for DNA polymerization from RNA."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "MCAT.FC2.2C.t1",
+      "type": "discrete",
+      "stem": "A proliferating culture is treated with a microtubule-depolymerizing drug. Flow cytometry shows a 4C DNA peak. Live imaging shows condensed chromosomes and a disassembled nuclear envelope that persist for hours. The cells are arrested primarily in:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "G1, when unreplicated 2C nuclei wait for mitogen"
+        },
+        {
+          "key": "B",
+          "text": "Early S phase, when DNA content is still near 2C"
+        },
+        {
+          "key": "C",
+          "text": "Mitosis, because the spindle assembly checkpoint blocks anaphase until kinetochores attach to microtubules"
+        },
+        {
+          "key": "D",
+          "text": "Cytokinesis of a haploid cell, which has 1C DNA"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "After S phase, G2 and mitotic cells both have 4C DNA, so DNA content alone cannot separate them. Condensed chromosomes and nuclear-envelope breakdown are mitotic hallmarks. Without microtubules, kinetochores cannot attach, the spindle assembly checkpoint remains active, separase stays inhibited, and cells arrest in prometaphase with 4C genomes. G1 is 2C with an intact nucleus, early S is between 2C and 4C, and haploid cytokinesis is not the state of these somatic cells. Microtubule poisons used in karyotyping exploit this SAC arrest.",
+      "distractor_rationales": {
+        "A": "G1 cells are 2C with decondensed chromatin and an intact nucleus.",
+        "B": "Early S is not a 4C condensed-chromosome arrest.",
+        "D": "These are 4C mitotic somatic cells, not 1C haploids completing cytokinesis."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC2.2C.t1",
+      "type": "discrete",
+      "stem": "A temperature-sensitive separase mutant is shifted to the nonpermissive temperature after chromosomes have aligned at the metaphase plate. Sister chromatids remain paired at centromeres and anaphase does not begin, although cyclin-B levels can still fall. The step that fails is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cleavage of cohesin (kleisin) subunits, which is required to dissolve sister-chromatid cohesion at anaphase"
+        },
+        {
+          "key": "B",
+          "text": "DNA replication licensing, which must be repeated at the metaphase-to-anaphase transition"
+        },
+        {
+          "key": "C",
+          "text": "Nuclear-envelope breakdown, which has not yet occurred at metaphase in animal cells"
+        },
+        {
+          "key": "D",
+          "text": "Actin-ring assembly, which is what physically pulls sisters to opposite poles"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Cohesin rings hold sister chromatids together from S phase until anaphase. The spindle checkpoint ultimately allows the anaphase-promoting complex to ubiquitinate securin; free separase then proteolyzes the kleisin subunit of cohesin, especially at centromeres, so sisters can disjoin. A separase loss-of-function after alignment therefore freezes cells in metaphase with intact cohesion. DNA licensing is a G1/S event, the nuclear envelope is already gone in animal metaphase, and the mitotic spindle of microtubules, not the cytokinetic actin ring, is what segregates chromatids.",
+      "distractor_rationales": {
+        "B": "Replication occurs in S phase; it is not re-executed to trigger anaphase.",
+        "C": "Metaphase animal cells have already broken down the nuclear envelope.",
+        "D": "The actin contractile ring drives cytokinesis after chromatids have separated; it is not the anaphase chromatid engine."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "MCAT.FC2.2C.t2",
+      "type": "discrete",
+      "stem": "A fibroblast line coexpresses wild-type EGFR and a truncated EGFR that binds EGF but lacks the intracellular tyrosine kinase domain. EGF-stimulated MAPK phosphorylation is strongly suppressed relative to cells that express only wild-type receptor. The truncated receptor acts as a dominant negative because it:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Sequesters ligand and forms nonproductive dimers in which trans-autophosphorylation cannot occur"
+        },
+        {
+          "key": "B",
+          "text": "Hydrolyzes GTP on Ras more rapidly than GAP, thereby silencing MAPK independently of dimerization"
+        },
+        {
+          "key": "C",
+          "text": "Constitutively phosphorylates STAT proteins in the absence of EGF"
+        },
+        {
+          "key": "D",
+          "text": "Translocates to the nucleus and functions as a steroid-hormone receptor repressor of cyclin genes"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "EGFR is a receptor tyrosine kinase that must dimerize so that partner kinase domains can trans-autophosphorylate, creating phosphotyrosine docking sites for adaptor-driven Ras-MAPK activation. A kinase-deleted ectodomain still binds EGF and still dimerizes, so it poisons mixed dimers and also competes for ligand. The result is dominant-negative blockade even though some wild-type chains are present. The truncation has no kinase, so it cannot hyperphosphorylate STATs, it is not a Ras GAP, and RTKs are not nuclear steroid receptors.",
+      "distractor_rationales": {
+        "B": "Dominant-negative EGFR acts at the receptor-dimer step, not by becoming a Ras GTPase.",
+        "C": "Without a kinase domain the mutant cannot phosphorylate STATs.",
+        "D": "EGFR signaling is membrane-proximal tyrosine phosphorylation, not steroid-receptor transcription as the primary truncated mechanism."
+      },
+      "difficulty_est": 0.49
+    },
+    {
+      "concept_id": "MCAT.FC2.2C.t2",
+      "type": "discrete",
+      "stem": "Oncogenic Ras G12V has greatly reduced GTPase activity and is insensitive to GAPs. In serum-starved fibroblasts this mutant, relative to wild-type Ras, will:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Remain GDP-bound and therefore silent at the plasma membrane"
+        },
+        {
+          "key": "B",
+          "text": "Directly phosphorylate tyrosines on growth-factor receptors to mimic ligand"
+        },
+        {
+          "key": "C",
+          "text": "Remain GTP-bound and constitutively activate RAF-MEK-ERK transcription programs even without growth factor"
+        },
+        {
+          "key": "D",
+          "text": "Block all GPCR signaling by sequestering beta-gamma subunits as its only activity"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Ras is a molecular switch: GTP-bound Ras-GTP engages RAF, driving the MEK-ERK cascade that promotes proliferation. Intrinsic GTPase activity, stimulated by GAPs, returns Ras to the inactive GDP state. G12V impairs GTP hydrolysis, so the protein accumulates as Ras-GTP independently of upstream RTK occupancy and remains on after serum withdrawal. Ras is not a tyrosine kinase and does not replace receptor autophosphorylation. Although Ras can intersect some GPCR pathways, the defining oncogenic lesion is constitutive RAF activation, not wholesale GPCR blockade.",
+      "distractor_rationales": {
+        "A": "Failed GTP hydrolysis leaves Ras GTP-bound, not GDP-bound.",
+        "B": "Ras binds effectors; it does not phosphorylate receptor tyrosines.",
+        "D": "G12V is a gain of Ras-GTP signaling, not a general GPCR antagonist."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC2.2C.t3",
+      "type": "discrete",
+      "stem": "A resting primary oocyte in a primordial follicle has completed premeiotic S phase and is arrested with homologous chromosomes paired as bivalents. The meiotic stage of this oocyte is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Metaphase of mitosis, with 46 unpaired sisterless chromosomes"
+        },
+        {
+          "key": "B",
+          "text": "Anaphase II, after sisters have already separated"
+        },
+        {
+          "key": "C",
+          "text": "G1 of a haploid ovum awaiting fertilization"
+        },
+        {
+          "key": "D",
+          "text": "Prophase I (dictyate), a prolonged diplotene arrest with 4C DNA"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Oogonia finish DNA replication and enter meiosis I before birth. Primary oocytes then arrest in diplotene of prophase I (the dictyate stage) with homologous chromosomes still synapsed or paired as bivalents and with 4C DNA content. The LH surge much later drives completion of meiosis I. Metaphase of mitosis would not feature meiotic bivalents. Anaphase II and a haploid G1 ovum occur only after ovulation and fertilization. Recognizing that the ovarian reserve is stored as prophase-I primary oocytes is the key to oogenesis timing questions.",
+      "distractor_rationales": {
+        "A": "Mitotic metaphase lacks homologous pairing into bivalents and is not the fetal oocyte arrest.",
+        "B": "Anaphase II is triggered by fertilization of a metaphase-II egg, not by the primordial-follicle resting state.",
+        "C": "The cell is still diploid 4C; it is not a haploid ovum."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC2.2C.t3",
+      "type": "discrete",
+      "stem": "A human primary spermatocyte has 46 chromosomes and 4C DNA. Immediately after meiosis I, each secondary spermatocyte has:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "23 chromosomes (each a dyad of sister chromatids) and 2C DNA"
+        },
+        {
+          "key": "B",
+          "text": "46 chromosomes and 4C DNA, unchanged because meiosis I is equational"
+        },
+        {
+          "key": "C",
+          "text": "23 single chromatids and 1C DNA, the haploid sperm genome"
+        },
+        {
+          "key": "D",
+          "text": "46 unpaired G1 chromosomes with 2C DNA, as in a somatic G1 cell"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Meiosis I is reductional: homologs disjoin, so chromosome number falls from 46 to 23, but each chromosome still consists of two sister chromatids. DNA content therefore falls from 4C to 2C, not to 1C. Meiosis II is the equational division that splits sisters, producing 1C haploid spermatids. Treating meiosis I as if it were mitosis (46 chromosomes remaining) or as if sisters had already separated (1C) are the two standard counting errors. A somatic G1 cell is 2C with 46 unreplicated chromosomes, which is not a secondary spermatocyte.",
+      "distractor_rationales": {
+        "B": "Meiosis I reduces ploidy; it is not equational, so neither chromosome number nor DNA content stays 46/4C.",
+        "C": "1C 23-chromatid products appear after meiosis II, not after meiosis I.",
+        "D": "Secondary spermatocytes still have replicated dyads, not G1 unreplicated chromosomes."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "MCAT.FC2.2C.t4",
+      "type": "discrete",
+      "stem": "A lineage tracer injected into a single cell of embryonic ectoderm after gastrulation later labels spinal-cord neurons and epidermal keratinocytes but never cardiomyocytes, skeletal muscle, or hepatocytes. The labeled clone was restricted to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Mesoderm, which produces epidermis and the neural tube"
+        },
+        {
+          "key": "B",
+          "text": "Endoderm, which produces the entire central nervous system"
+        },
+        {
+          "key": "C",
+          "text": "Ectoderm, which generates both surface epidermis and neuroectoderm"
+        },
+        {
+          "key": "D",
+          "text": "Trophectoderm only, which forms the embryo proper rather than extraembryonic tissues"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "After gastrulation the three germ layers are allocated. Ectoderm produces the epidermis and, after neural induction, the neural plate/tube (CNS neurons). Mesoderm produces heart, skeletal muscle, and many internal supporting tissues; endoderm produces hepatocytes and gut epithelium. A clone that marks epidermis plus spinal neurons and excludes heart and liver is therefore ectodermal. Trophectoderm is extraembryonic (placenta) and is not the source of the embryo proper's neurons. Mixing up which organs come from which layer is the usual error.",
+      "distractor_rationales": {
+        "A": "Mesoderm makes muscle and heart, not epidermis and CNS neurons.",
+        "B": "Endoderm makes gut-derived viscera such as liver, not the neural tube.",
+        "D": "Trophectoderm is extraembryonic; it does not produce spinal neurons or epidermis of the embryo proper."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "MCAT.FC2.2C.t4",
+      "type": "discrete",
+      "stem": "Sperm-egg fusion triggers a calcium wave across the oocyte. Cortical granules exocytose, and additional sperm can no longer bind the zona pellucida. This calcium-dependent cortical reaction primarily:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hardens and chemically modifies the zona pellucida to establish a block to polyspermy"
+        },
+        {
+          "key": "B",
+          "text": "Initiates gastrulation within seconds by forming a primitive streak"
+        },
+        {
+          "key": "C",
+          "text": "Completes meiosis I, which in humans is unfinished until after implantation"
+        },
+        {
+          "key": "D",
+          "text": "Fuses male and female pronuclei before DNA replication of either genome"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Fertilization must admit exactly one haploid sperm genome. The calcium wave causes cortical granule release; enzymes and structural proteins they contain modify ZP glycoproteins so that additional sperm cannot penetrate, the slow block to polyspermy. Gastrulation occurs days later and is not triggered in seconds by cortical granules. In humans meiosis I is completed at ovulation; fertilization then completes meiosis II, not meiosis I. Pronuclear fusion (syngamy) is a later step and is not the definition of the cortical reaction.",
+      "distractor_rationales": {
+        "B": "The primitive streak appears at gastrulation, long after the cortical reaction.",
+        "C": "Meiosis I is completed before ovulation; fertilization completes meiosis II.",
+        "D": "The cortical reaction is a zona/membrane block, not immediate karyogamy."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC2.2C.t5",
+      "type": "discrete",
+      "stem": "A blastomere from the prospective neural plate of an early gastrula is transplanted into ventral epidermis of a same-stage host and differentiates as epidermis. The equivalent cell taken from a late neurula and transplanted ventrally still forms neural tissue. These results show that:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Determination has occurred by the later stage, so fate is no longer redirected by the new environment"
+        },
+        {
+          "key": "B",
+          "text": "Totipotency increases as development proceeds, which is why the older transplant ignores host cues"
+        },
+        {
+          "key": "C",
+          "text": "Induction never occurs, because the early transplant could change fate"
+        },
+        {
+          "key": "D",
+          "text": "The late transplant undergoes apoptosis and the host then makes a ghost neural tube"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Specification and determination are operationally defined by transplantation. An undetermined cell is competent to follow inductive cues in a new location (here, ventral epidermis). Once determined, the cell's developmental commitment is stable and it differentiates according to its original identity (neural) even in a foreign environment. That is a restriction of potency over time, not an increase in totipotency. The early result actually demonstrates that induction/environment can still assign fate. The assay scores differentiated neural tissue from the graft, not host apoptosis artifacts.",
+      "distractor_rationales": {
+        "B": "Potency generally decreases; totipotency does not rise after gastrulation.",
+        "C": "The early cell's change of fate is evidence that inductive environment still acts.",
+        "D": "The experiment's point is autonomous neural differentiation of the late graft, not cell death."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC2.2C.t5",
+      "type": "discrete",
+      "stem": "Developing mouse paws treated with a pan-caspase inhibitor retain interdigital webbing that normally regresses before birth. DNA from the untreated interdigital mesenchyme shows internucleosomal ladders. The morphogenetic process that was blocked is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Mitotic expansion of ectoderm that physically pushes digits apart"
+        },
+        {
+          "key": "B",
+          "text": "Ossification of the radius, which secondarily erases webbing"
+        },
+        {
+          "key": "C",
+          "text": "Programmed cell death (apoptosis) of interdigital mesenchymal cells"
+        },
+        {
+          "key": "D",
+          "text": "Fertilization of residual polar bodies in the limb bud"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Digit separation in mice depends on apoptosis of the interdigital mesenchyme. Caspases execute that program; inhibiting them leaves a bat-like web. Internucleosomal DNA cleavage (ladders) is a biochemical hallmark of apoptosis, distinct from random necrotic smears. The process is spatially patterned death, not a requirement that ectoderm outgrow the web or that the radius ossify to cut the tissue. Polar-body fertilization is unrelated to limb morphogenesis. Comparative anatomy (webbed duck feet have less interdigital apoptosis) is the same mechanism in another species.",
+      "distractor_rationales": {
+        "A": "Digits are sculpted by death of cells between them, not by mitotic wedging alone.",
+        "B": "Radius ossification does not explain caspase-sensitive webbing or DNA ladders in the mesenchyme.",
+        "D": "Polar bodies are meiotic products in the ovary/zygote, not limb-bud cells."
+      },
+      "difficulty_est": 0.32
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t2",
+      "type": "discrete",
+      "stem": "A focal demyelinating lesion increases internodal membrane capacitance and decreases internodal transmembrane resistance. Compared with adjacent myelinated axon, action potential propagation through the plaque is most likely to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Speed up, because saltatory jumps become longer when myelin is lost"
+        },
+        {
+          "key": "B",
+          "text": "Convert the axon into an electrical synapse with no need for voltage-gated sodium channels"
+        },
+        {
+          "key": "C",
+          "text": "Increase the density of internodal sodium channels above nodal levels within minutes as the only repair"
+        },
+        {
+          "key": "D",
+          "text": "Slow or fail, because local-circuit current leaks across internodal membrane instead of depolarizing the next node to threshold"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Myelin increases effective membrane resistance and decreases capacitance, so internodal membrane does not waste depolarizing current. Voltage-gated Na+ channels are concentrated at nodes of Ranvier; the action potential jumps from node to node. Demyelination lets current leak through internodes, lowering the length constant and slowing charging of the next node, which can block conduction. Saltatory conduction is not faster without myelin. Loss of myelin does not create a gap junction, and internodal Na-channel redistribution, when it occurs, is a slow plastic response rather than an immediate rescue that speeds conduction above normal.",
+      "distractor_rationales": {
+        "A": "Myelin loss shortens the effective jump and slows conduction; it does not lengthen saltatory steps.",
+        "B": "The axon remains a chemically/electrically excitable cable with Na channels; it does not become a gap-junction synapse.",
+        "C": "Channel redistribution is not an instantaneous, complete replacement of myelin, and internodes do not immediately exceed nodal Na-channel density to speed spikes."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t2",
+      "type": "discrete",
+      "stem": "A motor-nerve terminal is bathed in cadmium, which blocks voltage-gated calcium channels. Sodium-dependent action potentials still invade the terminal, but end-plate potentials disappear. The missing step is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Calcium-triggered fusion of synaptic vesicles with the presynaptic membrane, releasing acetylcholine"
+        },
+        {
+          "key": "B",
+          "text": "Potassium leak through resting channels, which is the sole requirement for transmitter release"
+        },
+        {
+          "key": "C",
+          "text": "Myelination of the muscle fiber, without which ACh cannot bind nicotinic receptors"
+        },
+        {
+          "key": "D",
+          "text": "Retrograde spikes in T-tubules that pump ACh out of the muscle into the cleft"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Presynaptic depolarization opens voltage-gated Ca2+ channels at active zones. The local Ca2+ rise binds synaptotagmin and drives SNARE-mediated vesicle fusion, dumping ACh into the cleft to open muscle nicotinic receptors. Cadmium blocks those Ca2+ channels, so spikes still occur (Na+-dependent) but exocytosis fails and EPPs vanish. Resting K+ leak sets resting potential; it does not substitute for the Ca2+ trigger. Muscle is unmyelinated at the end plate, and T-tubules conduct muscle APs after, not before, ACh binding; they do not secrete ACh.",
+      "distractor_rationales": {
+        "B": "K+ leak influences excitability but is not the exocytotic trigger; Ca2+ is.",
+        "C": "Skeletal muscle fibers are not myelinated; receptor binding does not require myelin.",
+        "D": "ACh is released from the nerve terminal, not pumped out of T-tubules."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t3",
+      "type": "discrete",
+      "stem": "A neuronal membrane is modeled as a K+ concentration cell. Extracellular K+ is raised tenfold (for example 5 mM to 50 mM) while intracellular K+ is unchanged. The K+ Nernst potential EK:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Shifts in the positive direction by about 61 mV (depolarizes), because EK = (RT/F) ln([K+]o/[K+]i) and the concentration ratio falls tenfold"
+        },
+        {
+          "key": "B",
+          "text": "Shifts negative by about 61 mV (hyperpolarizes), because more external K+ increases the outward driving force"
+        },
+        {
+          "key": "C",
+          "text": "Is independent of [K+]o and remains at the sodium Nernst potential"
+        },
+        {
+          "key": "D",
+          "text": "Reverses the sign of ENa without affecting EK"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The Nernst equation for a monovalent cation is E = (RT/zF) ln(out/in), about 61 mV * log10(out/in) at mammalian temperature with z = +1. Increasing [K+]o tenfold multiplies the argument of the log by 10, adding +61 mV to EK regardless of the starting ratio. EK therefore becomes less negative. Resting membranes are largely K+-permeable, so Vm follows EK and the cell depolarizes (the basis of hyperkalemic excitability changes). Raising external K+ decreases, not increases, the outward chemical gradient. ENa depends on sodium concentrations and is not slaved to this K+ change.",
+      "distractor_rationales": {
+        "B": "A smaller out-to-in K+ gradient reduces the magnitude of the negative EK; the shift is depolarizing.",
+        "C": "EK is defined by the K+ gradient; it is not a constant and is not ENa.",
+        "D": "Changing only K+ concentrations moves EK, not ENa."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t3",
+      "type": "discrete",
+      "stem": "Investigators impose a 10-fold Ca2+ concentration ratio (outside > inside) across an artificial bilayer permeable only to Ca2+ at 25 C. Using 58 mV per decade for a monovalent cation, the Ca2+ Nernst potential is closest to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "+58 mV, treating calcium as if z = +1"
+        },
+        {
+          "key": "B",
+          "text": "-58 mV, reversing the gradient in the log term"
+        },
+        {
+          "key": "C",
+          "text": "0 mV, because divalent ions have no Nernst potential"
+        },
+        {
+          "key": "D",
+          "text": "+29 mV, because E = (58 mV / z) log10([Ca2+]o/[Ca2+]i) with z = +2"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The Nernst potential scales as RT/zF. For Ca2+, z = +2, so the voltage per decade concentration ratio is half that of a monovalent ion: 58/2 = 29 mV at the stated convention. With outside higher than inside, the equilibrium potential is positive: a cation's Nernst potential is positive when the ion is more concentrated outside, because the electrical force must push the cation out to balance inward chemical flux. Divalent ions absolutely have Nernst potentials; ignoring z or flipping the log sign are the common arithmetic traps. Physiologic ECa is much more positive because the real gradient is ~10^4, not 10.",
+      "distractor_rationales": {
+        "A": "This uses z = 1. Calcium carries charge +2, so the decade voltage is halved.",
+        "B": "Outside > inside for a cation makes E positive, not negative.",
+        "C": "Every permeant ion has a Nernst potential set by its gradient and charge."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t4",
+      "type": "discrete",
+      "stem": "At the neuromuscular junction, acetylcholine opens a pentameric ligand-gated cation channel. Alpha-bungarotoxin occupies the acetylcholine-binding site without opening the channel. The toxin therefore:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Increases end-plate potentials by blocking acetylcholinesterase"
+        },
+        {
+          "key": "B",
+          "text": "Converts the nicotinic receptor into a Gs-coupled GPCR that raises cAMP"
+        },
+        {
+          "key": "C",
+          "text": "Prevents end-plate depolarization by competitively blocking the ionotropic nicotinic ACh receptor"
+        },
+        {
+          "key": "D",
+          "text": "Blocks axonal voltage-gated sodium channels as its only high-affinity target at the end plate"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The muscle nicotinic acetylcholine receptor is a ligand-gated ion channel (ionotropic): ACh binding opens a cation pore and depolarizes the end plate toward threshold. Alpha-bungarotoxin is a competitive antagonist at that site, so the channel stays closed, EPPs fall, and paralysis follows. It is not an acetylcholinesterase inhibitor (those raise ACh and can increase EPPs). Muscarinic receptors are GPCRs; the NMJ end-plate receptor is nicotinic and ionotropic. Voltage-gated Na+ channels in the surrounding sarcolemma fire after the EPP; bungarotoxin's defining NMJ action is on nAChR, not Nav.",
+      "distractor_rationales": {
+        "A": "Cholinesterase inhibitors increase ACh; bungarotoxin occupies the receptor and shrinks EPPs.",
+        "B": "Nicotinic NMJ receptors are ion channels, not Gs-coupled muscarinic receptors.",
+        "D": "The toxin\u2019s classic neuromuscular target is nAChR, not axonal Nav."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t4",
+      "type": "discrete",
+      "stem": "Cholera toxin ADP-ribosylates Gs-alpha so that the G protein cannot hydrolyze GTP. In an intestinal epithelial cell this modification is expected to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Persistently activate adenylyl cyclase, elevating cAMP and protein kinase A activity"
+        },
+        {
+          "key": "B",
+          "text": "Decrease cAMP because Gs-alpha is destroyed"
+        },
+        {
+          "key": "C",
+          "text": "Convert the receptor into a receptor tyrosine kinase as the toxin\u2019s enzymatic product"
+        },
+        {
+          "key": "D",
+          "text": "Directly ligate voltage-gated calcium channels closed, lowering cAMP as a secondary effect"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Gs-alpha stimulates adenylyl cyclase only while GTP is bound. GTP hydrolysis, often with help from the G protein's intrinsic GTPase, turns the subunit off. Cholera toxin covalently ADP-ribosylates Gs-alpha and blocks that hydrolysis, locking the ON state. cAMP therefore remains high, PKA stays active, and in gut epithelium CFTR-mediated chloride secretion produces watery diarrhea. The alpha subunit is not degraded, RTK conversion does not occur, and the primary lesion is constitutive cyclase activity rather than a direct Ca2+-channel ligation that would lower cAMP.",
+      "distractor_rationales": {
+        "B": "The toxin freezes Gs-alpha in the GTP-bound active form; it does not destroy it or lower cAMP.",
+        "C": "ADP-ribosylation of a G protein does not create a tyrosine kinase receptor.",
+        "D": "Cholera\u2019s canonical cascade is Gs-cAMP-PKA, not direct voltage-gated Ca2+ blockade as the cAMP-lowering step."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t5",
+      "type": "discrete",
+      "stem": "A radiolabeled, lipid-soluble hormone accumulates in target-cell nuclei and co-immunoprecipitates with a zinc-finger DNA-binding protein that occupies hormone-response elements. The hormone is acting most like:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Insulin, which binds a receptor tyrosine kinase at the plasma membrane"
+        },
+        {
+          "key": "B",
+          "text": "Epinephrine, which signals through a Gs-coupled adrenergic receptor"
+        },
+        {
+          "key": "C",
+          "text": "Acetylcholine at nicotinic receptors, opening a ligand-gated cation channel"
+        },
+        {
+          "key": "D",
+          "text": "Cortisol or another steroid, which binds an intracellular receptor that regulates transcription"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Steroid hormones are lipid-derived (from cholesterol, a triterpene relative) and cross membranes to bind intracellular receptors. Liganded steroid receptors are transcription factors with zinc-finger DNA-binding domains that sit on hormone-response elements, matching the nuclear co-IP. Peptide hormones and catecholamines bind cell-surface receptors and do not accumulate as nuclear DNA-binding complexes of this type. Nicotinic ACh is an ionotropic neurotransmitter, not a nuclear lipid messenger. The slow genomic actions of steroids follow from this transcriptional mechanism, unlike seconds-scale second-messenger cascades.",
+      "distractor_rationales": {
+        "A": "Insulin\u2019s receptor is a membrane RTK; the hormone does not co-IP with nuclear zinc-finger receptors as the primary complex.",
+        "B": "Epinephrine is a hydrophilic catecholamine acting at GPCRs, not a nuclear steroid receptor ligand.",
+        "C": "Nicotinic ACh receptors are ligand-gated channels at membranes, not nuclear DNA-binding proteins."
+      },
+      "difficulty_est": 0.31
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t5",
+      "type": "discrete",
+      "stem": "Aspirin acetylates a serine in cyclooxygenase, blocking the enzyme\u2019s cyclooxygenase activity. In platelets, production of thromboxane A2 from membrane phospholipid-derived arachidonic acid is therefore expected to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Increase, because COX inhibition shunts arachidonate into TxA2 synthase only"
+        },
+        {
+          "key": "B",
+          "text": "Remain constant, because thromboxanes are steroids made from cholesterol, not from arachidonic acid"
+        },
+        {
+          "key": "C",
+          "text": "Fall, because COX converts arachidonic acid to prostaglandin H2, the precursor of TxA2"
+        },
+        {
+          "key": "D",
+          "text": "Fall only if vitamin D 1-alpha-hydroxylase is also acetylated, because TxA2 is a secosteroid"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Arachidonic acid released from membrane phospholipids by phospholipase A2 is oxygenated by cyclooxygenase (COX) to PGH2. Tissue-specific synthases then make prostaglandins, prostacyclin, or thromboxane A2. Aspirin\u2019s covalent COX blockade therefore cuts the PGH2 supply and lowers platelet TxA2, which is why aspirin reduces platelet aggregation. Thromboxanes are eicosanoid lipids, not cholesterol-derived steroids or vitamin D-like secosteroids. Inhibiting COX does not selectively force residual arachidonate into TxA2; the shared precursor is reduced.",
+      "distractor_rationales": {
+        "A": "Without COX, PGH2 is not made; TxA2 cannot rise by a COX-independent synthase route from arachidonate in this pathway.",
+        "B": "TxA2 is an arachidonic-acid metabolite, not a steroid.",
+        "D": "Vitamin D chemistry is irrelevant to COX-dependent thromboxane synthesis."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t6",
+      "type": "discrete",
+      "stem": "Transection of the pituitary stalk rapidly lowers circulating ADH and produces diabetes insipidus, while prolactin often rises because hypothalamic dopamine can no longer reach the anterior lobe. These findings are consistent with ADH being:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Synthesized by anterior-pituitary gonadotrophs and released into the cavernous sinus"
+        },
+        {
+          "key": "B",
+          "text": "A steroid produced by the adrenal cortex under ACTH control only"
+        },
+        {
+          "key": "C",
+          "text": "Synthesized in hypothalamic nuclei and axonally transported to the posterior pituitary for release"
+        },
+        {
+          "key": "D",
+          "text": "Made by ovarian granulosa cells as the primary osmoregulatory hormone"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "ADH (vasopressin) and oxytocin are peptides synthesized in hypothalamic magnocellular neurons (supraoptic and paraventricular nuclei). Axons of the hypothalamo-hypophyseal tract terminate in the posterior pituitary, so cutting the stalk disconnects those endings from their somata and ADH falls. Anterior-lobe hormones are made by pituitary cells under hypothalamic releasing/inhibiting factors delivered by the portal system; loss of dopamine inhibition explains the prolactin rise and shows the stalk lesion is not a generic shutdown of every pituitary cell. ADH is not an adrenal steroid or an ovarian product.",
+      "distractor_rationales": {
+        "A": "Gonadotrophs secrete LH/FSH, not ADH; ADH is posterior-pituitary/hypothalamic.",
+        "B": "Adrenal steroids are cortisol/aldosterone/androgens, not ADH.",
+        "D": "The ovary does not secrete the physiologic antidiuretic hormone."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC3.3A.t6",
+      "type": "discrete",
+      "stem": "A radioiodine scan labels thyroid follicles intensely but does not label parafollicular C cells. The iodinated hormones stored on thyroglobulin in the follicular colloid are:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "T3 and T4, whose aromatic rings are iodinated on thyroglobulin in the follicle"
+        },
+        {
+          "key": "B",
+          "text": "Calcitonin, which is an iodinated peptide made by C cells"
+        },
+        {
+          "key": "C",
+          "text": "PTH, which incorporates iodine in the parathyroid chief cells that the scan also lights up"
+        },
+        {
+          "key": "D",
+          "text": "Cortisol, iodinated in the adrenal cortex after iodide trapping by follicular cells"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Follicular thyrocytes trap iodide via NIS, oxidize it with thyroid peroxidase, and organify it onto tyrosyl residues of thyroglobulin, later coupling them to form T3 and T4. That is why radioiodine concentrates in follicles. C cells secrete calcitonin, a peptide that is not iodinated on thyroglobulin, so they are cold on an iodine scan. PTH is made in the parathyroids without iodine organification, and cortisol is a cholesterol-derived steroid from the adrenal cortex. Distinguishing follicular versus C-cell products is a standard endocrine-anatomy point.",
+      "distractor_rationales": {
+        "B": "Calcitonin is uniodinated and comes from C cells, which the scan does not label.",
+        "C": "PTH is not an iodinated follicular hormone, and parathyroids do not trap radioiodine like thyroid follicles.",
+        "D": "Cortisol is not iodinated in the thyroid; adrenal steroidogenesis does not explain the follicular iodine signal."
+      },
+      "difficulty_est": 0.34
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t1",
+      "type": "discrete",
+      "stem": "An anemic patient has hemoglobin 7 g/dL (about half of normal) but arterial PO2 = 100 mmHg and oxyhemoglobin saturation of the remaining hemoglobin is ~97%. Compared with a normal person at the same PO2, which statement is correct? (Henry's law: dissolved [O2] = kH * PO2.)",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Dissolved arterial O2 is halved because Henry's constant depends on hemoglobin concentration"
+        },
+        {
+          "key": "B",
+          "text": "Arterial PO2 must be ~50 mmHg because content and partial pressure are the same variable"
+        },
+        {
+          "key": "C",
+          "text": "The remaining hemoglobin must be only 50% saturated to match the anemia"
+        },
+        {
+          "key": "D",
+          "text": "Arterial O2 content is substantially reduced because most O2 is hemoglobin-bound, while dissolved O2 (hence PaO2) is nearly unchanged"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Partial pressure of oxygen in arterial blood is a property of dissolved O2 in plasma and is set by alveolar gas exchange. Henry's law relates that dissolved concentration to PO2 with a small kH; hemoglobin concentration does not appear in kH. The vast majority of arterial O2 content is bound to hemoglobin, so halving Hb halves bound O2 and thus total content even when PaO2 and saturation of whatever Hb remains are normal. Confusing content with PO2, or assuming saturation must fall to 50% in anemia, are classic traps. Dissolved O2 stays ~0.3 mL/dL at 100 mmHg either way.",
+      "distractor_rationales": {
+        "A": "Henry's law constant is a solubility coefficient for O2 in plasma, not a function of Hb.",
+        "B": "PaO2 can be normal in anemia; it is not numerically equal to O2 content.",
+        "C": "Saturation is occupancy of available hemes; remaining tetramers still saturate normally at PaO2 100 mmHg."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t1",
+      "type": "discrete",
+      "stem": "A premature neonate produces insufficient pulmonary surfactant. Alveolar surface tension remains high. Which set of mechanical consequences is expected?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "High surface tension, alveolar collapse (atelectasis), and decreased lung compliance, raising the work of inflation"
+        },
+        {
+          "key": "B",
+          "text": "Increased compliance so that small alveoli overexpand while large ones empty"
+        },
+        {
+          "key": "C",
+          "text": "A higher FEV1/FVC ratio as the primary surfactant deficiency phenotype, identical to asthma"
+        },
+        {
+          "key": "D",
+          "text": "A right shift of the hemoglobin-O2 curve as surfactant\u2019s main chemical role"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Surfactant, largely dipalmitoyl phosphatidylcholine from type II pneumocytes, lowers alveolar surface tension gamma. Laplace's relation P = 2 gamma / r says that without that reduction, small alveoli generate large collapsing pressures, empty into larger ones, and the lung becomes stiff (low compliance). Neonatal respiratory distress syndrome is the clinical picture: atelectasis and high work of breathing. Asthma is an obstructive FEV1/FVC fall, not a surfactant-deficient restrictive pattern. Surfactant is not a hemoglobin allosteric effector. Compliance falls, it does not rise.",
+      "distractor_rationales": {
+        "B": "High tension decreases compliance and promotes collapse of small alveoli, the opposite of easy overexpansion.",
+        "C": "Surfactant deficiency is restrictive physiology, not an asthma-like obstructive ratio increase as the core lesion.",
+        "D": "The O2 dissociation curve is not controlled by alveolar surfactant lipids."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t2",
+      "type": "discrete",
+      "stem": "A patient with right-sided heart failure has elevated central venous pressure. Capillary hydrostatic pressure in dependent tissues rises. According to Starling forces, net filtration at those capillaries should:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Decrease, dehydrating the interstitium because plasma oncotic pressure must rise in parallel"
+        },
+        {
+          "key": "B",
+          "text": "Stop entirely, because lymphatics reverse and empty into arterioles"
+        },
+        {
+          "key": "C",
+          "text": "Increase, producing edema as Pc more strongly favors filtration over oncotic reabsorption"
+        },
+        {
+          "key": "D",
+          "text": "Depend only on interstitial PCO2, which Starling listed as the filtration driving force"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Net fluid flux is k * [(Pc - Pi) - sigma(pi_c - pi_i)]. Raising venous pressure is transmitted retrograde into capillaries, increasing Pc. Filtration therefore exceeds downstream reabsorption and lymph drainage capacity, and dependent edema forms. Plasma oncotic pressure does not automatically rise enough to cancel the hydrostatic change. Lymphatics return interstitial fluid to veins; they do not reverse into arteries. Carbon dioxide partial pressure is not a Starling force. This is the same hydrostatic logic as standing still or venous obstruction.",
+      "distractor_rationales": {
+        "A": "Oncotic pressure does not obligately climb in step with venous hypertension to dehydrate tissues.",
+        "B": "Lymph flow may increase but does not reverse into arterioles or zero filtration.",
+        "D": "Starling forces are hydrostatic and oncotic pressures, not PCO2."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t2",
+      "type": "discrete",
+      "stem": "Mean arterial pressure is modeled as MAP = CO x TPR (central venous pressure neglected). A drug halves TPR while cardiac output is experimentally held constant. MAP is expected to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Halve, because the product CO x TPR scales linearly with TPR at fixed CO"
+        },
+        {
+          "key": "B",
+          "text": "Double, because resistance and pressure are inversely related at fixed flow in this model"
+        },
+        {
+          "key": "C",
+          "text": "Remain unchanged, because MAP is set only by heart rate"
+        },
+        {
+          "key": "D",
+          "text": "Fall to zero, because any vasodilation abolishes arterial pressure"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Ohm's-law analog for the circulation is (MAP - CVP) = CO x TPR. With CVP ~ 0 and CO clamped, MAP is directly proportional to TPR, so a 50% TPR cut halves MAP. Flow Q = DeltaP / R rearranged is DeltaP = Q R; there is no inversion that would double pressure when R falls. Heart rate influences CO but is not an independent setter of MAP once CO is fixed. Vasodilation lowers MAP; it does not require MAP to reach zero unless TPR itself is zero. Reflex tachycardia would normally raise CO, but that pathway is excluded by the clamp.",
+      "distractor_rationales": {
+        "B": "At fixed flow, pressure drop falls when resistance falls; it does not double.",
+        "C": "HR can change CO, but CO is held constant here, so MAP tracks TPR.",
+        "D": "Halving TPR halves MAP in the model; it does not imply zero pressure."
+      },
+      "difficulty_est": 0.33
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t3",
+      "type": "discrete",
+      "stem": "After a fatty meal, lymph in the thoracic duct is milky with chylomicrons. Surgical ligation of the thoracic duct near its junction with the left subclavian vein would be expected to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Increase delivery of dietary long-chain triglycerides into mixed venous blood"
+        },
+        {
+          "key": "B",
+          "text": "Block all intestinal glucose absorption, which is entirely lymph-dependent"
+        },
+        {
+          "key": "C",
+          "text": "Prevent hemoglobin recycling by macrophages as the duct\u2019s primary cargo"
+        },
+        {
+          "key": "D",
+          "text": "Impair return of chylomicrons and interstitial lymph to the venous system, with backup of intestinal lymph"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Enterocytes package long-chain fatty acids into chylomicrons that enter lacteals, not blood capillaries, and reach the circulation via the thoracic duct at the left subclavian vein. Ligating that duct therefore interrupts both dietary fat transport and a major route of lymph return, producing chylous backup. Glucose and amino acids use portal blood, so they are not duct-dependent. Hemoglobin from senescent RBCs is processed by macrophages and the liver, not as thoracic-duct chyle. The milky appearance after a fat meal is the clinical clue that the cargo is chylomicron lipid.",
+      "distractor_rationales": {
+        "A": "Ligation reduces, not increases, chylomicron entry into venous blood.",
+        "B": "Monosaccharides are absorbed into mesenteric capillaries and the portal vein.",
+        "C": "The thoracic duct is not the primary hemoglobin-recycling pathway."
+      },
+      "difficulty_est": 0.39
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t3",
+      "type": "discrete",
+      "stem": "Starling filtration slightly exceeds venous reabsorption in most capillary beds; lymphatics return the difference plus leaked plasma protein. If lymphatics draining a limb are obliterated, the limb most likely develops:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A fall in interstitial protein and dehydration of the subcutis"
+        },
+        {
+          "key": "B",
+          "text": "Arterial obstruction, because lymphatics are the sole path for erythrocytes to return to the heart"
+        },
+        {
+          "key": "C",
+          "text": "Lymphedema: accumulation of protein-rich interstitial fluid that cannot be cleared"
+        },
+        {
+          "key": "D",
+          "text": "Immediate cessation of ADH secretion, which is controlled by limb lymph flow"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Blind-ended lymphatic capillaries collect excess filtrate and macromolecules that blood capillaries do not fully reabsorb, eventually returning them to veins. When that route is blocked (filariasis, surgery, congenital aplasia), protein-rich fluid accumulates as lymphedema. Interstitial oncotic pressure rises and worsens filtration, a vicious cycle. RBCs normally remain in the vascular space and return via veins, not lymph. ADH is regulated by plasma osmolarity and volume receptors, not limb lymphatics. The fluid is not protein-poor dehydration.",
+      "distractor_rationales": {
+        "A": "Blocked lymphatics trap protein and fluid; they do not dehydrate the limb.",
+        "B": "Erythrocytes return through veins; lymph is not the RBC circuit.",
+        "D": "ADH is not slaved to limb lymphatic flow."
+      },
+      "difficulty_est": 0.3
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t4",
+      "type": "discrete",
+      "stem": "A virus-infected epithelial cell presents a viral peptide on MHC class I. The lymphocyte that recognizes this complex and kills the infected cell is a:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "CD8 cytotoxic T cell, whose TCR surveys peptide-MHC I"
+        },
+        {
+          "key": "B",
+          "text": "CD4 helper T cell restricted to MHC class II on that epithelium as the sole killing receptor"
+        },
+        {
+          "key": "C",
+          "text": "Naive B cell secreting IgM without MHC restriction"
+        },
+        {
+          "key": "D",
+          "text": "Neutrophil expressing a T-cell receptor that binds MHC I"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Almost all nucleated cells express MHC I and display cytosolic (often viral) peptides. CD8 binds the MHC I alpha-3 domain, and the CD8 T-cell receptor recognizes the peptide-MHC I complex, triggering perforin/granzyme or FasL killing. CD4 T cells recognize peptide-MHC II on professional antigen-presenting cells and are helper rather than the classic killers of infected epithelium. B cells bind native antigen with immunoglobulin and do not use MHC to see intracellular viral peptides on the epithelial surface. Neutrophils are innate phagocytes without TCRs.",
+      "distractor_rationales": {
+        "B": "CD4 is MHC II-restricted and does not mediate the standard MHC I-restricted cytotoxic hit on infected epithelia.",
+        "C": "B-cell receptors see extracellular native epitopes, not MHC I-displayed peptides, as the killing mechanism here.",
+        "D": "Neutrophils lack TCRs and MHC-restricted clonal antigen receptors."
+      },
+      "difficulty_est": 0.35
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t4",
+      "type": "discrete",
+      "stem": "A primary immunization yields mostly IgM in the first week. After a booster with the same protein antigen, serum titers are dominated by high-affinity IgG. This shift is best explained by:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Innate NK cells class-switching their antigen receptors to IgG"
+        },
+        {
+          "key": "B",
+          "text": "Neutrophils secreting IgG after they phagocytose the booster dose"
+        },
+        {
+          "key": "C",
+          "text": "MHC class I presentation of native folded antigen to B cells as the only required event"
+        },
+        {
+          "key": "D",
+          "text": "Clonal expansion of antigen-specific B cells with germinal-center affinity maturation and isotype switching to IgG"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Clonal selection expands the rare B cells whose BCRs bind the antigen. In T-dependent protein responses, germinal centers then allow somatic hypermutation and selection for higher-affinity variants, while class-switch recombination replaces mu with gamma (or other) constant regions. Memory B cells and long-lived plasma cells therefore produce high-affinity IgG on rechallenge. NK cells and neutrophils do not generate somatically recombined, class-switched antibody. B cells recognize native antigen; MHC I presentation to CD8 cells is not the driver of the IgM-to-IgG humoral shift.",
+      "distractor_rationales": {
+        "A": "NK cells are innate lymphocytes without BCRs and do not class-switch to IgG.",
+        "B": "Neutrophils do not secrete immunoglobulin.",
+        "C": "Humoral class switching is a B cell/T helper germinal-center program, not MHC I display of native protein to B cells."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t5",
+      "type": "discrete",
+      "stem": "HCl infused into the duodenum of a fasting animal raises plasma secretin and pancreatic bicarbonate output. Cutting the vagus does not abolish the bicarbonate response. The dominant mechanism is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "CCK released from gastric G cells acting on pancreatic acini to secrete trypsinogen as bicarbonate"
+        },
+        {
+          "key": "B",
+          "text": "Pepsin from pancreatic duct cells, stimulated only by vagal preganglionic fibers"
+        },
+        {
+          "key": "C",
+          "text": "Secretin from duodenal S cells acting hormonally on pancreatic ductal epithelium to secrete HCO3-"
+        },
+        {
+          "key": "D",
+          "text": "Direct titration of pancreatic juice by duodenal acid without any endocrine cell involvement"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Duodenal acid is the physiologic stimulus for S cells to release secretin. Secretin travels in blood to pancreatic duct cells, raises cAMP, and drives bicarbonate-rich secretion that neutralizes chyme. Persistence after vagotomy shows a hormonal, not solely neural, reflex. CCK is released from I cells in response to fat and protein and primarily stimulates enzyme secretion and gallbladder contraction, not this acid-bicarbonate pairing. G cells make gastrin in the stomach, pepsin is a gastric protease, and duct cells do not dump pepsin. Acid does not magically become pancreatic juice without secretin.",
+      "distractor_rationales": {
+        "A": "G cells secrete gastrin, not CCK, and CCK is not the acid-evoked bicarbonate hormone.",
+        "B": "Pepsin is gastric; the vagus is unnecessary here by experimental design.",
+        "D": "The rise in plasma secretin identifies an endocrine mediator."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t5",
+      "type": "discrete",
+      "stem": "A patient lacks enteropeptidase (enterokinase) at the duodenal brush border. Pancreatic zymogen output is anatomically normal. Protein digestion is still severely impaired because:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Enteropeptidase converts trypsinogen to trypsin, and trypsin then activates the other pancreatic proteases"
+        },
+        {
+          "key": "B",
+          "text": "Enteropeptidase is the only enzyme that hydrolyzes peptide bonds in the stomach"
+        },
+        {
+          "key": "C",
+          "text": "Without enteropeptidase, bile acids cannot be conjugated and fat maldigestion is the primary nitrogen loss"
+        },
+        {
+          "key": "D",
+          "text": "Enteropeptidase is required to transcribe pancreatic lipase genes in acinar cells"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Pancreas secretes inactive zymogens to protect itself. Enteropeptidase on duodenal enterocytes clips trypsinogen to trypsin. Trypsin then autocatalytically generates more trypsin and activates chymotrypsinogen, proelastase, and procarboxypeptidases. Missing that first clip leaves the cascade off, so luminal protein digestion fails even if the pancreas is intact. Pepsin in the stomach is a separate acid protease and does not need enteropeptidase. Bile-acid conjugation and lipase gene transcription are not enteropeptidase functions. The stem's preserved zymogen output isolates the activation defect.",
+      "distractor_rationales": {
+        "B": "Gastric pepsin, not enteropeptidase, is the gastric peptide hydrolase.",
+        "C": "This is a protease-activation lesion, not a bile-acid conjugation defect.",
+        "D": "Enteropeptidase is a luminal protease, not a pancreatic transcription factor."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t6",
+      "type": "discrete",
+      "stem": "GFR is 125 mL/min and plasma glucose is 400 mg/dL. The renal glucose Tm is 375 mg/min. Ignoring splay, glucose excretion is closest to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0 mg/min, because the proximal tubule always reabsorbs 100% of filtered glucose"
+        },
+        {
+          "key": "B",
+          "text": "500 mg/min, equal to the filtered load with no reabsorption"
+        },
+        {
+          "key": "C",
+          "text": "375 mg/min, equal to Tm as if Tm were excreted rather than reabsorbed"
+        },
+        {
+          "key": "D",
+          "text": "125 mg/min, because filtered load is 500 mg/min and reabsorption saturates at 375 mg/min"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Filtered load = GFR x plasma concentration. Convert 125 mL/min to 1.25 dL/min and multiply by 400 mg/dL to obtain 500 mg/min (or 125 mL/min x 4 mg/mL). The proximal Na-glucose transporters reabsorb up to Tm = 375 mg/min. Excretion is filtered minus reabsorbed = 125 mg/min once Tm is exceeded. Below threshold, excretion would be ~0, but 400 mg/dL is well above threshold. Tm is the reabsorptive ceiling, not the excreted amount, and the kidney does not ignore reabsorption entirely.",
+      "distractor_rationales": {
+        "A": "Glucose appears in urine once filtered load exceeds Tm; 100% reabsorption is not guaranteed.",
+        "B": "This ignores Tm reabsorption of 375 mg/min.",
+        "C": "Tm is reabsorbed, not excreted."
+      },
+      "difficulty_est": 0.56
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t6",
+      "type": "discrete",
+      "stem": "Furosemide inhibits the Na-K-2Cl cotransporter in the thick ascending limb. After the medullary interstitial gradient has run down, the kidney's ability to produce concentrated urine in the presence of ADH is expected to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Increase, because more salt is delivered to the collecting duct for osmotic water reabsorption"
+        },
+        {
+          "key": "B",
+          "text": "Be unchanged, because concentrating ability depends only on urea transporters in the bladder"
+        },
+        {
+          "key": "C",
+          "text": "Decrease, because the countercurrent multiplier can no longer add NaCl to the medullary interstitium"
+        },
+        {
+          "key": "D",
+          "text": "Increase, because furosemide inserts extra AQP2 independently of V2 receptors"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The thick ascending limb is water-impermeable and pumps NaCl into the interstitium via NKCC2, creating the corticomedullary osmotic gradient that the countercurrent multiplier and vasa recta maintain. ADH then inserts AQP2 in collecting-duct principal cells so water can flow toward that hypertonic medulla. Blocking NKCC2 dissipates medullary hypertonicity; even with ADH and aquaporins, the driving force for water reabsorption is reduced, so urine cannot be concentrated normally. Furosemide does not insert AQP2, and the bladder is a storage organ, not the multiplier.",
+      "distractor_rationales": {
+        "A": "Salt remaining in the lumen osmotically holds water; it does not steepen medullary interstitial tonicity.",
+        "B": "Medullary interstitial osmolarity, not bladder urea transporters, sets concentrating ability.",
+        "D": "AQP2 trafficking is ADH/V2/cAMP-dependent, not a loop-diuretic action."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t7",
+      "type": "discrete",
+      "stem": "In a menstrual cycle, a midcycle estradiol peak normally triggers an LH surge and ovulation. If pituitary GnRH receptors are pharmacologically blocked, the estradiol peak still occurs but LH does not surge. Estradiol's ovulatory action is therefore:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Positive feedback on the hypothalamic-pituitary axis that requires GnRH-driven gonadotroph LH release"
+        },
+        {
+          "key": "B",
+          "text": "Direct luteinization of the oocyte in the absence of LH"
+        },
+        {
+          "key": "C",
+          "text": "Inhibition of all ovarian steroidogenesis as the only feedback mode throughout the cycle"
+        },
+        {
+          "key": "D",
+          "text": "Secretion of LH from the posterior pituitary, which does not use GnRH receptors"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "For most of the follicular phase estradiol exerts negative feedback, but at high, sustained levels it switches to positive feedback, increasing GnRH pulse patterns and pituitary sensitivity so that gonadotrophs fire the LH surge. The surge then causes ovulation and luteinization. Blocking GnRH receptors prevents that pituitary LH release even if the ovary still makes estradiol, proving estradiol does not ovulate the follicle by a fully ovary-autonomous route. LH is an anterior-pituitary glycoprotein, not a posterior-pituitary peptide. Negative feedback is not the only estradiol mode at midcycle.",
+      "distractor_rationales": {
+        "B": "Ovulation requires the LH surge; estradiol does not replace LH at the oocyte.",
+        "C": "Midcycle estradiol is stimulatory to LH release, not purely inhibitory.",
+        "D": "LH is anterior pituitary; posterior hormones are ADH and oxytocin."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t7",
+      "type": "discrete",
+      "stem": "During the first weeks after implantation, syncytiotrophoblast secretes hCG, an LH analog. A neutralizing antibody to hCG given at week 5 would most likely:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Raise corpus luteum progesterone output by blocking an inhibitory hormone"
+        },
+        {
+          "key": "B",
+          "text": "Block FSH receptors on Sertoli cells as its only relevant target in a pregnant woman"
+        },
+        {
+          "key": "C",
+          "text": "Prevent sperm capacitation in the epididymis after week 20, with no first-trimester effect"
+        },
+        {
+          "key": "D",
+          "text": "Cause luteal regression, a fall in progesterone, and loss of endometrial support for the pregnancy"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The corpus luteum of pregnancy is rescued by trophoblastic hCG acting on luteal LH receptors, maintaining progesterone until the placenta assumes steroidogenesis (~8-10 weeks). Neutralizing hCG removes that luteotropic signal, progesterone collapses, and the progesterone-dependent endometrium cannot sustain the conceptus. hCG is not an inhibitor of progesterone at this stage. FSH/Sertoli biology is male and irrelevant to week-5 gestation, and epididymal capacitation is not the antibody's first-trimester target. This is why early pregnancy tests detect hCG and why luteal failure aborts early pregnancy.",
+      "distractor_rationales": {
+        "A": "hCG is luteotropic; blocking it lowers, not raises, progesterone.",
+        "B": "The relevant hCG receptor here is luteal LH-R in the ovary, not male Sertoli FSH-R.",
+        "C": "Week 5 is first trimester; the mechanism is ovarian, not delayed epididymal."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t8",
+      "type": "discrete",
+      "stem": "A motor neuron innervating a skeletal-muscle motor unit is stimulated at increasing frequency. Twitches fuse into fused tetanus. The summation occurs because:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Each action potential halves sarcoplasmic reticulum Ca2+ so force falls then rebounds"
+        },
+        {
+          "key": "B",
+          "text": "ATP concentration doubles between spikes, independently of calcium"
+        },
+        {
+          "key": "C",
+          "text": "SERCA cannot sequester Ca2+ fully between closely spaced action potentials, so cytosolic Ca2+ and active force remain elevated"
+        },
+        {
+          "key": "D",
+          "text": "The muscle fiber converts into a neuron and fires its own regenerative tetanus without calcium"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "A single twitch is brief because Ca2+ is released and then pumped back into the SR by SERCA, tropomyosin reblocks myosin-binding sites, and force falls. When stimuli arrive before sequestration is complete, Ca2+ remains bound to troponin C, more cross-bridges stay attached, and force sums into tetanus. This is temporal summation of the calcium transient, not a doubling of ATP as the causal variable. Action potentials increase, not halve, SR release per unit time. Muscle remains a contractile cell using Ca2+; it does not become a calcium-free neuron.",
+      "distractor_rationales": {
+        "A": "High-frequency stimulation increases, rather than halves, time-averaged Ca2+ release.",
+        "B": "ATP is the energy source but is not the integrator that produces tetanic summation.",
+        "D": "Tetanus is fused contractile force in muscle, still Ca2+/troponin-dependent."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t8",
+      "type": "discrete",
+      "stem": "A biopsy taken immediately after a 10-second maximal sprint shows depleted phosphocreatine, elevated creatine and Pi, and a rise in lactate. The fastest initial buffer that regenerated ATP during the sprint is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The creatine kinase reaction (PCr + ADP -> Cr + ATP)"
+        },
+        {
+          "key": "B",
+          "text": "Mitochondrial beta-oxidation of fatty acids as the sole 10-second ATP source"
+        },
+        {
+          "key": "C",
+          "text": "De novo AMP biosynthesis, which produces ATP on a millisecond timescale"
+        },
+        {
+          "key": "D",
+          "text": "Oxidative phosphorylation reaching maximal flux in the first 50 milliseconds, before PCr is used"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Cytosolic creatine kinase equilibrates phosphocreatine with ATP, providing an immediate high-energy phosphate buffer for brief maximal efforts. The biopsy pattern (PCr down, Cr and Pi up) is the fingerprint of that reaction. Anaerobic glycolysis then contributes lactate when the sprint lasts several seconds. Fatty-acid oxidation and oxidative phosphorylation are too slow to be the first ATP source in a 10-second all-out effort, and they would not uniquely deplete PCr. Nucleotide de novo synthesis is a slow biosynthetic pathway, not a millisecond ATP buffer. Excess post-exercise oxygen consumption later restores PCr and oxidizes lactate.",
+      "distractor_rationales": {
+        "B": "Beta-oxidation cannot meet the instantaneous ATP demand of a 10-second sprint as the primary buffer.",
+        "C": "Purine biosynthesis does not regenerate ATP on the timescale of a sprint.",
+        "D": "Oxidative phosphorylation ramps more slowly; PCr is the immediate buffer, consistent with its depletion."
+      },
+      "difficulty_est": 0.39
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t9",
+      "type": "discrete",
+      "stem": "A sarcomere shortens from 2.2 um to 1.9 um during an isometric-to-shortening transition in which thick and thin filament lengths are independently measured and found constant. Which statement is consistent with sliding-filament theory?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A-band length shortens in proportion to the sarcomere because myosin filaments contract like springs"
+        },
+        {
+          "key": "B",
+          "text": "Z-lines move apart as thin filaments are pushed out of the lattice"
+        },
+        {
+          "key": "C",
+          "text": "Titin is hydrolyzed to power each power stroke, shortening the thick filament"
+        },
+        {
+          "key": "D",
+          "text": "A-band length stays constant while I-band and H-zone shorten as thin filaments slide over thick filaments"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Sliding-filament theory states that force comes from myosin cross-bridges walking on actin, not from shortening of the filaments themselves. The A band is the thick-filament array and keeps its length; the I band (thin filaments not overlapping myosin) and H zone (thick filaments not overlapped by actin) shrink as overlap increases and Z-lines approach. Constant measured filament lengths in the stem rule out myosin-spring models and titin hydrolysis as the shortening engine. Titin is an elastic linker, not a fuel that is cleaved each stroke.",
+      "distractor_rationales": {
+        "A": "A-band length is the thick filament length and remains constant during physiologic shortening.",
+        "B": "Z-lines move closer together in contraction, not apart.",
+        "C": "Titin is not consumed as a hydrolyzed fuel to shorten thick filaments."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t9",
+      "type": "discrete",
+      "stem": "A point mutant of cardiac troponin C has a 10-fold higher Kd for Ca2+ (lower affinity) with no change in myosin ATPase kcat measured on unregulated thick filaments. At a given systolic cytosolic Ca2+, active force is expected to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Increase, because tropomyosin will be permanently displaced from actin"
+        },
+        {
+          "key": "B",
+          "text": "Be unchanged, because force is set only by myosin kcat, which was not altered"
+        },
+        {
+          "key": "C",
+          "text": "Fall, because occupancy of TnC Ca2+ sites drops, so less tropomyosin movement and fewer available cross-bridge sites"
+        },
+        {
+          "key": "D",
+          "text": "Fall only if the SR calcium-release channel is a proteolytic fragment of TnC"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Thin-filament activation begins when Ca2+ binds troponin C, moving tropomyosin and exposing myosin-binding sites on actin. Fractional occupancy of a binding site is Ca / (Ca + Kd). Raising Kd tenfold at the same [Ca2+]i lowers occupancy, so less tropomyosin shift, fewer attached bridges, and less force. Myosin's unloaded kcat on unregulated filaments can be normal because the lesion is regulatory, not in the myosin catalytic core. Lower affinity does not lock tropomyosin off actin. RyR is a separate SR protein, not a TnC fragment.",
+      "distractor_rationales": {
+        "A": "Weaker Ca2+ binding reduces, not permanently increases, thin-filament activation.",
+        "B": "Force in the sarcomere is gated by the troponin-tropomyosin switch even when myosin kcat is intact.",
+        "D": "TnC affinity does not need RyR proteolysis to change force; the occupancy effect is sufficient."
+      },
+      "difficulty_est": 0.57
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t10",
+      "type": "discrete",
+      "stem": "A parathyroid adenoma secretes excess PTH. Serum Ca2+ is high and phosphate is low. PTH raises Ca2+ in part because it:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Binds osteoblasts, increasing RANKL expression that activates osteoclasts, and also increases renal Ca2+ reabsorption and 1,25-dihydroxyvitamin D production"
+        },
+        {
+          "key": "B",
+          "text": "Directly binds osteoclasts as its only receptor-bearing bone cell, with no effect on kidney or vitamin D"
+        },
+        {
+          "key": "C",
+          "text": "Blocks renal 1-alpha-hydroxylase and thereby lowers intestinal Ca2+ absorption as the cause of hypercalcemia"
+        },
+        {
+          "key": "D",
+          "text": "Is identical to calcitonin and inhibits osteoclasts, which paradoxically raises serum Ca2+"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "PTH receptors on osteoblasts (and osteocytes) induce RANKL, which binds RANK on osteoclast precursors and increases bone resorption, releasing Ca2+ and phosphate. Simultaneously PTH increases distal-tubule calcium reabsorption, decreases phosphate reabsorption (explaining hypophosphatemia), and stimulates renal 1-alpha-hydroxylase to make 1,25-(OH)2D, which increases intestinal Ca2+ absorption. Osteoclasts lack the classical PTH receptor; the osteoblast relay is the MCAT-relevant point. Calcitonin, from thyroid C cells, opposes resorption. Blocking 1-alpha-hydroxylase would lower, not raise, gut Ca2+ uptake.",
+      "distractor_rationales": {
+        "B": "PTH acts on osteoblasts to control osteoclasts via RANKL, and it has major renal/vitamin D actions.",
+        "C": "PTH stimulates, rather than blocks, 1-alpha-hydroxylase; hypercalcemia is not from less vitamin D.",
+        "D": "Calcitonin lowers serum Ca2+; PTH is not calcitonin."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t10",
+      "type": "discrete",
+      "stem": "A child with vitamin D deficiency has low intestinal Ca2+ and phosphate absorption, secondary hyperparathyroidism, and poorly mineralized osteoid at growth plates (rickets). The organic matrix that fails to mineralize adequately is composed primarily of:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hydroxyapatite crystals with no protein scaffold"
+        },
+        {
+          "key": "B",
+          "text": "Glycogen granules secreted by osteoblasts"
+        },
+        {
+          "key": "C",
+          "text": "Pure elastin, which is the tensile protein of bone osteoid"
+        },
+        {
+          "key": "D",
+          "text": "Type I collagen osteoid, which normally nucleates hydroxyapatite mineral"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Bone is a composite: type I collagen and ground substance (osteoid) deposited by osteoblasts, later mineralized with hydroxyapatite. In rickets/osteomalacia the scaffold is laid down but calcium-phosphate product is insufficient for proper mineralization, so unmineralized osteoid accumulates and bones are soft. Hydroxyapatite is the mineral, not the organic matrix. Elastin is important in ligaments and skin, not the bulk of bone osteoid. Glycogen is not the secreted bone matrix. Vitamin D's role here is mineral supply (and PTH-driven wasting of phosphate), not a switch from collagen to elastin.",
+      "distractor_rationales": {
+        "A": "Hydroxyapatite is the missing mineral, not the organic osteoid that is overabundant in rickets.",
+        "B": "Osteoblasts do not build osteoid from glycogen.",
+        "C": "Bone tensile protein is type I collagen, not elastin."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t11",
+      "type": "discrete",
+      "stem": "In a hot environment, cutaneous vasodilation and sweating increase heat loss. Atropine blocks muscarinic receptors on eccrine sweat glands and sweating stops, although skin blood flow remains high. Core temperature is then more likely to rise because:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Radiative heat gain from vasodilation always exceeds any other term when atropine is present"
+        },
+        {
+          "key": "B",
+          "text": "Shivering is the primary heat-loss mechanism and atropine triggers it"
+        },
+        {
+          "key": "C",
+          "text": "Evaporative cooling of sweat is impaired, removing the main avenue of heat loss when air temperature approaches or exceeds skin temperature"
+        },
+        {
+          "key": "D",
+          "text": "The epidermis becomes an infinite water-permeability barrier only after muscarinic blockade"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "When ambient temperature is near or above skin temperature, convection and radiation cannot dump heat and may even add heat. Evaporation of hypotonic eccrine sweat then becomes the critical cooling term. Those glands are sympathetic but cholinergic (muscarinic) at the neuroglandular junction, so atropine produces anhidrosis and heat storage. Vasodilation still delivers heat to the skin but cannot evaporate it without sweat. Shivering is a heat-gain response to cold. Atropine does not create a tighter stratum corneum; if anything, the problem is too little surface water, not an infinite barrier.",
+      "distractor_rationales": {
+        "A": "Vasodilation can still lose heat if a gradient exists; the atropine-specific defect is evaporation.",
+        "B": "Shivering produces heat; it is not a cooling mechanism activated by atropine.",
+        "D": "Muscarinic blockade stops sweat secretion; it does not suddenly waterproof the epidermis as the reason temperature rises."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "MCAT.FC3.3B.t11",
+      "type": "discrete",
+      "stem": "A full-thickness burn destroys epidermis including the stratum corneum. Insensible water loss and infection risk both rise sharply. The most direct explanation is loss of:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Dermal melanin production, which is the primary water-tight seal of skin"
+        },
+        {
+          "key": "B",
+          "text": "The cornified lipid-keratin barrier that limits transepidermal water loss and microbial invasion"
+        },
+        {
+          "key": "C",
+          "text": "Vitamin D photoproduction, which is what physically occludes bacteria"
+        },
+        {
+          "key": "D",
+          "text": "Eccrine overproduction of hypotonic fluid as the only change after a burn"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The stratum corneum is a brick-and-mortar of keratinized corneocytes and intercellular lipids from lamellar bodies. That composite is the principal barrier to evaporative water loss and to many microbes. Destroying it in a full-thickness burn is why patients desiccate and become infected unless the surface is replaced or dressed. Melanin absorbs UV in deeper living layers; it is not the water seal. Cutaneous vitamin D synthesis is a photochemical reaction, not a mechanical lid on bacteria. Burned skin does not cool the patient by secreting extra sweat from destroyed glands; insensible loss is barrier failure, not eccrine overdrive.",
+      "distractor_rationales": {
+        "A": "Melanin is a UV pigment transferred to keratinocytes, not the lipid-keratin water barrier.",
+        "C": "Vitamin D is a hormone precursor, not the physical occlusion that keeps water in and pathogens out.",
+        "D": "Full-thickness injury destroys sweat glands; the water loss is passive through a missing barrier."
+      },
+      "difficulty_est": 0.35
+    }
+  ]
+}
