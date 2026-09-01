@@ -245,6 +245,7 @@ describe("API pattern path", () => {
           now,
         }),
       }),
+      { params: Promise.resolve({ id: session.id }) },
     );
     expect(gradeRes.status).toBe(200);
     const grade = (await gradeRes.json()) as {

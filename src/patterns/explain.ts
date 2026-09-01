@@ -19,7 +19,7 @@ export function decorateExplanation(input: {
     : null;
   const contentBlock = `Content grain (${input.conceptId}): ${content}.`;
   let explanation = input.explanation.trim();
-  if (patternBlock && !explanation.includes(`Pattern (${pattern.id}`)) {
+  if (pattern && !explanation.includes(`Pattern (${pattern.id}`)) {
     explanation = `${patternBlock} ${contentBlock} ${explanation}`;
   } else if (!explanation.includes("Content grain (")) {
     explanation = `${contentBlock} ${explanation}`;
