@@ -1,0 +1,1554 @@
+{
+  "items": [
+    {
+      "concept_id": "GAMSAT.S3.bio.t3",
+      "type": "discrete",
+      "stem": "A hexapeptide Asp–Lys–Ala–Glu–His–Gly is titrated in water. The relevant pKa values are:\n\nGroup | pKa\nN-terminal α-COOH (Asp) | 2.0\nAsp side chain | 4.0\nGlu side chain | 4.5\nHis side chain | 6.0\nN-terminal α-NH3+ | 9.0\nLys side chain | 10.5\nC-terminal α-COOH (Gly) | 2.2\n\nAt pH 7.0 a group is taken as deprotonated if pH is more than 1 unit above its pKa and protonated if pH is more than 1 unit below its pKa. His (pKa 6.0) is treated as predominantly uncharged. What net charge does this rule set assign to the peptide?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0"
+        },
+        {
+          "key": "B",
+          "text": "−1"
+        },
+        {
+          "key": "C",
+          "text": "−2"
+        },
+        {
+          "key": "D",
+          "text": "+1"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "At pH 7 the two carboxyl termini and both Asp and Glu side chains lie well above their pKa values, so each is COO− (−1 each, four carboxylates). The N-terminus (pKa 9.0) and Lys (pKa 10.5) remain NH3+ (+1 each). Histidine at pKa 6.0 is predominantly the neutral imidazole at pH 7, contributing 0. The algebraic sum is −4 + 2 = −1. Treating His as fully +1 would incorrectly give 0, and omitting one carboxylate would give 0 or −2.",
+      "distractor_rationales": {
+        "A": "A net of 0 would require counting His as +1, but the stem’s ≥1-unit rule leaves His uncharged at pH 7.",
+        "C": "−2 would mean an extra anion, for example counting His as −1 or forgetting the two cationic amino groups.",
+        "D": "+1 would require most carboxylates still to be protonated, which is incompatible with pH 7 versus pKa values near 2–4.5."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t3",
+      "type": "discrete",
+      "stem": "Differential scanning calorimetry traces of three hydrated phosphatidylcholine bilayers are described.\nBilayer P (di-C16:0): a sharp endotherm peaking at 41 °C.\nBilayer Q (equimolar C16:0 / C16:1): a broader endotherm centred at 18 °C.\nBilayer R (di-C16:0 plus 30 mol% cholesterol): no sharp peak; heat capacity is a low, broad hump from 20–50 °C, and a fluorescence anisotropy probe at 25 °C reports fluidity between the gel-like P and the liquid-like Q.\nWhich interpretation of the lipid data is best supported?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The 41 °C peak of P is protein denaturation; lipids do not show cooperative melting."
+        },
+        {
+          "key": "B",
+          "text": "Cis unsaturation lowers the gel-to-liquid transition temperature, and cholesterol smears that transition rather than acting as a simple melting-point depressant like the alkene."
+        },
+        {
+          "key": "C",
+          "text": "Cholesterol raises Tm of saturated PC to 41 °C, which is why R has the sharpest peak."
+        },
+        {
+          "key": "D",
+          "text": "Unsaturation raises Tm because kinked chains pack more tightly, which is why Q melts at 18 °C while P melts at 41 °C."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The saturated species P melts sharply at 41 °C. Introducing one cis double bond (Q) drops the transition to 18 °C and broadens it, matching poorer packing of kinked chains. Cholesterol in R abolishes the cooperative spike and yields intermediate order at 25 °C, the classic buffering of membrane fluidity rather than a shift of a still-sharp Tm. The traces therefore separate the effects of unsaturation (lower Tm) from cholesterol (damped transition).",
+      "distractor_rationales": {
+        "C": "The sharp 41 °C peak belongs to cholesterol-free P; R has no sharp peak, so cholesterol is not raising Tm.",
+        "D": "Q melts at a lower temperature than P, so unsaturation lowers Tm rather than raising it.",
+        "A": "The samples are hydrated phosphatidylcholine bilayers without protein; the endotherm is the lipid chain-melting transition."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t4",
+      "type": "discrete",
+      "stem": "An enzyme obeys Michaelis–Menten kinetics with Km = 2.0 mM and Vmax = 80 µmol min−1. Initial rates measured without inhibitor are:\n\n[S] (mM) | v (µmol min−1)\n2.0 | 40\n6.0 | 60\n8.0 | 64\n\nA competitive inhibitor raises the apparent Km to 6.0 mM without changing Vmax. What is v at [S] = 6.0 mM in the presence of that inhibitor?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "40 µmol min−1"
+        },
+        {
+          "key": "B",
+          "text": "60 µmol min−1"
+        },
+        {
+          "key": "C",
+          "text": "20 µmol min−1"
+        },
+        {
+          "key": "D",
+          "text": "30 µmol min−1"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "With the inhibitor, v = Vmax [S] / (Km,app + [S]) = 80 × 6 / (6 + 6) = 480 / 12 = 40 µmol min−1. That is half of Vmax because [S] now equals the new Km. The uninhibited rate at 6 mM is 60, which is the no-inhibitor row in the table, not the inhibited value. Using the original Km of 2 mM with the inhibited formula would incorrectly give 60 again.",
+      "distractor_rationales": {
+        "C": "20 µmol min−1 would be v = Vmax [S] / (Km,app + 3[S]) or a similar extra factor; the competitive rate law does not introduce that.",
+        "D": "30 µmol min−1 is Vmax × 6 / (6 + 10) or half of the uninhibited 60; neither matches Km,app = 6 mM.",
+        "B": "60 µmol min−1 is the uninhibited rate at 6 mM, when Km is still 2 mM, not the inhibited rate."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t4",
+      "type": "discrete",
+      "stem": "Relative catalytic activity of a cysteine protease is plotted against pH:\n\npH | relative activity (%)\n4 | 8\n5 | 25\n6 | 70\n7 | 100\n8 | 80\n9 | 20\n10 | 4\n\nThe mechanism requires a histidine (pKa ≈ 6.2) to be deprotonated so it can accept a proton, and a cysteine (pKa ≈ 8.3) to be protonated in the resting enzyme so the thiol is available for activation. Which statement is consistent with the profile and those pKa values?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The acidic limb (pH 4–6) tracks protonation of histidine, which removes the required base, while the alkaline limb (pH 8–10) tracks deprotonation of cysteine."
+        },
+        {
+          "key": "B",
+          "text": "Maximum activity at pH 7 shows that both residues must be fully protonated."
+        },
+        {
+          "key": "C",
+          "text": "The enzyme is inactive at pH 4 because the peptide substrate is uncharged only in base."
+        },
+        {
+          "key": "D",
+          "text": "Activity collapses above pH 9 mainly because the essential histidine becomes protonated."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "For His to act as a base it must be deprotonated, which becomes true as pH rises through 6.2, matching the climb from 8% at pH 4 to 100% at pH 7. For the thiol to remain in the activatable resting state it must stay protonated, which fails as pH exceeds 8.3, matching the fall to 20% then 4%. Peak activity at pH 7 sits between the two pKa values. The alkaline drop is therefore Cys deprotonation, not His protonation, which would occur on the acidic side.",
+      "distractor_rationales": {
+        "D": "Histidine protonation occurs on the low-pH side of pKa 6.2, not above pH 9.",
+        "B": "Fully protonated His would be the inactive acidic form; the pH 7 maximum is the mixed protonation state between the two pKa values.",
+        "C": "The stem assigns the pH dependence to catalytic residues, not to a requirement that the substrate be uncharged."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t5",
+      "type": "discrete",
+      "stem": "A sealed respirometer records gas exchange of isolated muscle fibres. Complete oxidation of glucose is C6H12O6 + 6 O2 → 6 CO2 + 6 H2O (respiratory quotient RQ = CO2 produced / O2 consumed = 1.00). Complete oxidation of palmitate is C16H32O2 + 23 O2 → 16 CO2 + 16 H2O (RQ = 16/23 ≈ 0.70).\nRun 1: 12 mmol O2 consumed, 12 mmol CO2 produced.\nRun 2: 10 mmol O2 consumed, 7 mmol CO2 produced.\nWhich fuel use is consistent with the two runs?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Run 1 is carbohydrate oxidation (RQ = 1.00); Run 2 is close to fatty-acid oxidation (RQ = 0.70)."
+        },
+        {
+          "key": "B",
+          "text": "Run 1 is fatty-acid oxidation because equal moles of the two gases always indicate fat."
+        },
+        {
+          "key": "C",
+          "text": "Run 2 is carbohydrate oxidation because more O2 than CO2 always indicates sugar."
+        },
+        {
+          "key": "D",
+          "text": "Both runs have RQ = 1.00 once the 23 and 6 stoichiometric coefficients are ignored."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "RQ is the measured mole ratio, not a count of carbons alone. Run 1 gives 12/12 = 1.00, matching glucose. Run 2 gives 7/10 = 0.70, matching the palmitate stoichiometry 16/23. Fat oxidation consumes extra O2 to oxidise the more reduced hydrocarbon chain, so CO2 < O2. Equal gas volumes do not diagnose fat; that pattern is carbohydrate. The coefficients 6 and 23 are exactly what generate the two distinctive RQ values.",
+      "distractor_rationales": {
+        "B": "Equal moles of CO2 and O2 give RQ = 1, the carbohydrate signature, not the fat signature of ~0.70.",
+        "C": "Carbohydrate has RQ = 1, so O2 and CO2 match; Run 2’s excess O2 consumption is the fat pattern.",
+        "D": "Dropping the stoichiometric coefficients would erase the definition of RQ; the data already give 1.00 and 0.70."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t5",
+      "type": "discrete",
+      "stem": "A mitochondrion oxidises one acetyl-CoA in the citric acid cycle, producing 3 NADH, 1 FADH2, and 1 GTP. The electron-transport accounting used in this laboratory is: 10 H+ translocated per NADH, 6 H+ per FADH2, and 4 H+ re-entering per ATP formed (3 through ATP synthase plus 1 for phosphate import). GTP is counted as equivalent to 1 ATP. How many ATP equivalents are obtained from that one acetyl-CoA?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "15"
+        },
+        {
+          "key": "B",
+          "text": "4"
+        },
+        {
+          "key": "C",
+          "text": "10"
+        },
+        {
+          "key": "D",
+          "text": "12"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Each NADH yields 10/4 = 2.5 ATP, so three NADH give 7.5. FADH2 yields 6/4 = 1.5 ATP. Adding the substrate-level GTP gives 7.5 + 1.5 + 1 = 10 ATP equivalents. The older integer tally of 12 counted 3 ATP per NADH and 2 per FADH2 (9 + 2 + 1). Fifteen would treat all four reducing equivalents as NADH at the old 3 ATP factor. Four would count only the substrate-level phosphorylation plus a single reduced cofactor.",
+      "distractor_rationales": {
+        "B": "Four ATP would ignore most of the proton-motive force from the three NADH and the FADH2.",
+        "D": "Twelve is the classical integer yield (3×3 NADH + 2 FADH2 + 1 GTP), not the 10/4 and 6/4 proton arithmetic given here.",
+        "A": "Fifteen would be 3 NADH plus 1 FADH2 all billed at 3 ATP each, plus GTP, which overcounts FADH2 and uses the old NADH factor."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t6",
+      "type": "discrete",
+      "stem": "The Calvin–Benson cycle as written for net hexose is 6 CO2 + 18 ATP + 12 NADPH → C6H12O6 + 18 ADP + 17 Pi + 12 NADP+. Isolated chloroplasts at saturating light and 25 °C fix CO2 at 6.0 µmol min−1. Light is then reduced so that the measured NADPH supply falls to 6.0 µmol min−1 while ATP remains in excess. Assuming the carbon reactions are otherwise unlimited, what is the new maximum rate of net glucose formation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1.0 µmol min−1"
+        },
+        {
+          "key": "B",
+          "text": "6.0 µmol min−1"
+        },
+        {
+          "key": "C",
+          "text": "0.25 µmol min−1"
+        },
+        {
+          "key": "D",
+          "text": "0.50 µmol min−1"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Originally 6.0 µmol CO2 min−1 corresponds to 1.0 µmol glucose min−1 because six CO2 make one hexose, requiring 12 µmol NADPH min−1. When NADPH supply is only 6.0 µmol min−1, the NADPH/glucose stoichiometry of 12 limits glucose to 6/12 = 0.50 µmol min−1. ATP is stated to be in excess, so it is not limiting. Equating glucose rate to the CO2 rate (6.0) ignores the 6 CO2 per sugar. Halving twice would give 0.25 without a stoichiometric reason.",
+      "distractor_rationales": {
+        "C": "0.25 µmol min−1 would be appropriate if both ATP and NADPH had been halved and both were co-limiting in series; only NADPH was halved.",
+        "A": "1.0 µmol min−1 is the original saturating-light glucose rate, which needed 12 µmol NADPH min−1, not 6.",
+        "B": "6.0 µmol min−1 is the CO2 fixation rate, not the hexose rate, and it is the old, not the NADPH-limited, value."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t6",
+      "type": "discrete",
+      "stem": "Oxygen evolution of a green algal suspension (relative units) is recorded at equal incident photon flux at each wavelength:\n\nWavelength (nm) | O2 evolution\n430 | 100\n480 | 85\n550 | 18\n650 | 72\n680 | 96\n700 | 12\n720 | 3\n\nChlorophyll a absorption maxima lie near 430 and 680 nm; chlorophyll b contributes near 480 and 650 nm. Photosystem II photochemistry that splits water declines sharply beyond about 680 nm (Emerson red drop), whereas photosystem I can still absorb near 700 nm. Which conclusion follows?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "O2 evolution tracks chlorophyll absorption and collapses in far-red light even though PSI can still absorb, so water oxidation is tied to PSII."
+        },
+        {
+          "key": "B",
+          "text": "The 700 nm point being low proves that chlorophyll does not absorb beyond 680 nm at all."
+        },
+        {
+          "key": "C",
+          "text": "Equal photon flux at 430 and 700 nm must give equal O2 because both wavelengths are visible light."
+        },
+        {
+          "key": "D",
+          "text": "The 550 nm trough shows that carotenoids are the main O2-evolving pigments."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "High O2 at 430 and 680 nm matches chlorophyll a, with secondary peaks at 480 and 650 nm from chlorophyll b. Green-yellow light at 550 nm is poorly absorbed, so O2 is low. The further collapse at 700–720 nm is the red drop: PSI absorbs there but PSII, which oxidises water, does not drive non-cyclic electron flow efficiently. The action spectrum is therefore a chlorophyll-plus-PSII signature, not a statement that chlorophyll has zero absorbance at 700 nm or that all visible wavelengths are equivalent.",
+      "distractor_rationales": {
+        "D": "Carotenoids absorb in the blue-green, but O2 is lowest at 550 nm and highest at the chlorophyll peaks, so they are not the O2-evolving pigments.",
+        "B": "PSI chlorophyll does absorb near 700 nm; the low O2 is a photochemical, not an absorption, failure of PSII.",
+        "C": "The table shows 100 versus 12 at those two wavelengths, so equal photon flux does not yield equal O2."
+      },
+      "difficulty_est": 0.57
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t7",
+      "type": "discrete",
+      "stem": "E. coli is grown for many generations in 15N so that all DNA is heavy–heavy (HH). Cells are then switched to 14N. Density-gradient fractions after the switch are:\n\nGenerations in 14N | % HH | % hybrid HL | % light LL\n0 | 100 | 0 | 0\n1 | 0 | 100 | 0\n2 | 0 | 50 | 50\n3 | 0 | 25 | 75\n\nWhich replication model do the percentages support?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Conservative replication: each generation a fully new LL duplex is made and the original HH duplex is preserved, so generation 1 would still show 50% HH."
+        },
+        {
+          "key": "B",
+          "text": "Semiconservative replication: each daughter duplex keeps one parental strand, producing only HL at generation 1 and then diluting HL with LL."
+        },
+        {
+          "key": "C",
+          "text": "Dispersive replication: every duplex is a patchwork, so generation 1 DNA would band at a single intermediate density that then shifts continuously toward light, not a 50:50 HL/LL split at generation 2."
+        },
+        {
+          "key": "D",
+          "text": "End-to-end ligation of an HH chromosome to an LL chromosome, which cannot produce a hybrid-density band."
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "After one replication in light nitrogen every duplex is one 15N strand plus one 14N strand, so 100% HL and 0% HH, ruling out conservative synthesis (which would retain HH). At generation 2 the two hybrid templates yield two HL and two LL molecules (50:50). Generation 3 keeps the original two hybrid molecules among eight duplexes (25% HL, 75% LL). Dispersive replication would not split into two discrete bands with those exact 1:1 then 1:3 ratios. The table is the Meselson–Stahl signature of semiconservative replication.",
+      "distractor_rationales": {
+        "A": "Conservative replication predicts persistent HH DNA (the original duplex) at generation 1; the table shows 0% HH.",
+        "C": "A dispersive mechanism yields one migrating intermediate peak, not a 50% HL plus 50% LL pair of bands at generation 2.",
+        "D": "Concatemer ligation would not convert 100% of molecules to a single hybrid density in one generation."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t7",
+      "type": "discrete",
+      "stem": "A replication fork advances at 1000 nucleotides s−1 on each template. Lagging-strand Okazaki fragments are 2000 nucleotides of DNA, each primed by a 10-nucleotide RNA primer. For a 100 000 nucleotide lagging-strand stretch, how many RNA primers are laid down, and how much time elapses between successive primers at one fork?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "10 primers, 2.0 s apart"
+        },
+        {
+          "key": "B",
+          "text": "50 primers, 2.0 s apart"
+        },
+        {
+          "key": "C",
+          "text": "50 primers, 0.010 s apart"
+        },
+        {
+          "key": "D",
+          "text": "100 primers, 2.0 s apart"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Each 2000-nucleotide DNA fragment needs one primer, so 100 000 / 2000 = 50 primers. The fork polymerises 1000 nucleotides per second, so the time to synthesise one 2000-nucleotide Okazaki piece—and therefore the interval between primers—is 2000 / 1000 = 2.0 s. The 10-nucleotide primer length does not change how many primers are needed; it would only affect the tiny RNA mass. Using the primer length as the fragment size would wrongly suggest 10 000 primers or a 0.010 s interval.",
+      "distractor_rationales": {
+        "C": "0.010 s is the time to make a 10-nucleotide primer at 1000 nt s−1, not the time between Okazaki starts.",
+        "D": "100 primers would be appropriate for 1000-nucleotide fragments, not 2000.",
+        "A": "10 primers would cover only 20 000 nucleotides at 2000 nt each, not 100 000."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t8",
+      "type": "discrete",
+      "stem": "A coding-strand segment and a codon table fragment are given.\nCoding DNA: 5′-ATG-TTT-GGC-TAA-3′\nCodons: AUG = Met (start), UUU = Phe, UUC = Phe, GGC = Gly, GGG = Gly, UGG = Trp, CUA = Leu, UAA = stop, UAG = stop.\nThe corresponding mRNA is 5′-AUG-UUU-GGC-UAA-3′, translated as Met–Phe–Gly and then stop.\nA single U is inserted in the mRNA immediately after the start codon, giving 5′-AUG-UUU-UGG-CUA-A…\nWhat is the peptide reading until the data run out?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Met–Phe–Gly–Leu… (the original frame is retained and TAA is ignored)"
+        },
+        {
+          "key": "B",
+          "text": "Met–Trp–Leu… (the first Phe codon is skipped)"
+        },
+        {
+          "key": "C",
+          "text": "Met–Phe–Gly (the insertion is silent because UUU and UUC are both Phe)"
+        },
+        {
+          "key": "D",
+          "text": "Met–Phe–Trp–Leu… (frameshift after Met)"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The insertion after AUG shifts the grouping of the downstream nucleotides: UUU UGG CUA rather than UUU GGC UAA. Those new triplets are Phe, Trp, Leu, so the chain is Met–Phe–Trp–Leu and the original stop is destroyed. Synonymous codon degeneracy of Phe does not rescue a shift that creates UGG. Skipping UUU would require a two-nucleotide jump that the insertion does not produce. The original Gly-stop frame exists only on the uninserted mRNA.",
+      "distractor_rationales": {
+        "C": "UUU remaining Phe does not prevent the following codon from becoming UGG instead of GGC; the third residue changes and the stop is lost.",
+        "A": "Retention of Gly requires the original GGC codon, which the +1 insertion dismantles.",
+        "B": "The second codon is still UUU (Phe); Trp appears as the third codon UGG, not in place of Phe."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t8",
+      "type": "discrete",
+      "stem": "In an E. coli transcription–translation coupling experiment, RNA polymerase elongates at 50 nucleotides s−1 and ribosomes elongate at 15 amino acids s−1. An open reading frame is 1500 nucleotides (500 sense codons plus stop). A ribosome initiates as soon as the 5′ end is free, which occurs after the first 30 nucleotides have been transcribed. How long after transcription initiation does the first ribosome complete the polypeptide, and roughly how many ribosomes can occupy the 1500-nt mRNA if they are spaced every 90 nucleotides?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 30 s; about 50 ribosomes"
+        },
+        {
+          "key": "B",
+          "text": "About 10 s; about 17 ribosomes"
+        },
+        {
+          "key": "C",
+          "text": "About 33 s; about 3 ribosomes"
+        },
+        {
+          "key": "D",
+          "text": "About 33 s; about 17 ribosomes"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Transcription of 1500 nt at 50 nt s−1 takes 30 s, but the ribosome starts after 30 nt (0.6 s) and then must polymerise 500 amino acids at 15 aa s−1, which takes 500/15 ≈ 33.3 s. Total time from transcription start is about 0.6 + 33.3 ≈ 34 s, quoted as about 33 s for the translation-limited wait. Occupancy: 1500/90 ≈ 16.7, about 17 ribosomes. Fifty would be one per codon. Ten seconds would be transcription of 500 nt, not translation of 500 residues. Three ribosomes would imply ~500 nt spacing.",
+      "distractor_rationales": {
+        "A": "50 ribosomes would be one per codon (1500/3), not one per 90 nucleotides; 30 s is only the transcription time of the ORF.",
+        "B": "10 s is 1500/150 or 500/50, not 500 residues at 15 aa s−1.",
+        "C": "Three ribosomes would require ~500 nt spacing; the stem specifies 90 nt."
+      },
+      "difficulty_est": 0.62
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t9",
+      "type": "discrete",
+      "stem": "β-Galactosidase specific activity (relative units) in four E. coli cultures:\n\nCarbon source | cAMP (relative) | lactose | β-gal\nGlucose | 1 | absent | 1\nGlucose | 1 | present | 2\nGlycerol | 20 | absent | 1\nGlycerol | 20 | present | 100\n\nThe lac repressor binds the operator unless lactose (allolactose) is present. CAP–cAMP must occupy the promoter for high transcription. Which regulatory logic do the four rows support?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "High expression requires both a high cAMP (low-glucose) signal and lactose to lift the repressor; either signal alone is insufficient."
+        },
+        {
+          "key": "B",
+          "text": "Glucose induces the operon because the glucose rows would then be the high-activity ones."
+        },
+        {
+          "key": "C",
+          "text": "cAMP is a repressor of lac, because activity is high only when cAMP is 1."
+        },
+        {
+          "key": "D",
+          "text": "Lactose is unnecessary once cAMP is high, because the glycerol-minus-lactose row would then read 100."
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Activity is 100 only in the glycerol-plus-lactose row, where cAMP is high and lactose is present. Glucose keeps cAMP low, so even with lactose the activity is 2. High cAMP without lactose leaves the repressor bound (activity 1). AND logic of CAP activation plus repressor removal is the only pattern that fits all four cells. Glucose is not the inducer, cAMP is not a repressor, and lactose remains required when cAMP is already high.",
+      "distractor_rationales": {
+        "B": "Glucose rows are 1 and 2, not 100, so glucose is not the inducing condition.",
+        "C": "The high-cAMP lactose row is 100, so cAMP promotes, rather than represses, expression.",
+        "D": "Glycerol without lactose is still 1, so lifting catabolite repression is not enough without inducer."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t9",
+      "type": "discrete",
+      "stem": "A 900-nucleotide coding sequence (300 amino acids, no introns) is mutated. Experimental readouts:\n\nMutant | DNA change | mRNA length | protein\nW | TGG at codon 80 → TGA | 900 nt | 79 amino acids\nX | TGG at codon 80 → TGC | 900 nt | 300 amino acids, one residue different\nY | +1 bp insertion in codon 10 | 901 nt | 18 amino acids\nZ | promoter −10 box ATATAA → GGATCC | none detected | none\n\nTGG = Trp, TGA = stop, TGC = Cys. Which assignment is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "W deletion of the gene; X silent; Y inversion; Z RNA editing"
+        },
+        {
+          "key": "B",
+          "text": "W nonsense; X missense; Y frameshift to a premature stop; Z promoter loss of transcription"
+        },
+        {
+          "key": "C",
+          "text": "W missense; X nonsense; Y silent; Z frameshift"
+        },
+        {
+          "key": "D",
+          "text": "W splice defect; X conservative substitution only if Cys equals Trp; Y promoter mutation; Z missense"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "TGG → TGA converts Trp to stop at codon 80, truncating translation after 79 residues while leaving a full-length mRNA: nonsense. TGG → TGC is Trp → Cys with a 300-residue protein: missense. A +1 insertion near codon 10 scrambles the reading frame and typically hits a stop soon after (here at residue 18) with an mRNA one nucleotide longer: frameshift. Destroying the −10 promoter box abolishes transcription, so no mRNA and no protein. The table does not show splicing (no introns), gene deletion, or RNA editing.",
+      "distractor_rationales": {
+        "C": "W creates a stop, not a missense change; X is Cys not a stop; Y is not silent; Z is not a frameshift in coding DNA.",
+        "D": "There are no introns, so W is not splicing; Cys ≠ Trp so X is a real missense; Y is coding-sequence insertion; Z is not missense.",
+        "A": "W still produces 900 nt mRNA so the gene is present; X changes an amino acid; Y is an insertion; Z is transcriptional failure."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t11",
+      "type": "discrete",
+      "stem": "A randomly mating population of 10 000 diploid adults is genotyped at an autosomal locus:\n\nGenotype | Number\nAA | 6400\nAa | 3200\naa | 400\n\nAllele frequency of A is counted as (2×AA + Aa) / 20 000. Are the data consistent with Hardy–Weinberg proportions, and what is p(A)?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "p = 0.80, but HWE requires 8000 AA : 1800 Aa : 200 aa"
+        },
+        {
+          "key": "B",
+          "text": "p = 0.32, the heterozygote frequency, which already equals Hardy–Weinberg"
+        },
+        {
+          "key": "C",
+          "text": "p = 0.64, and the population is not in HWE because 6400 ≠ 0.80² × 10 000"
+        },
+        {
+          "key": "D",
+          "text": "p = 0.80, expected counts are 6400 : 3200 : 400, so the sample matches HWE"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "p = (2×6400 + 3200) / 20 000 = 16 000 / 20 000 = 0.80, so q = 0.20. Hardy–Weinberg expectations are p²N = 0.64 × 10 000 = 6400, 2pqN = 0.32 × 10 000 = 3200, q²N = 0.04 × 10 000 = 400, identical to the counts. Using p = 0.64 confuses the AA genotype frequency with the allele frequency. The 8000:1800:200 split would correspond to different p or to a selection-distorted sample, not to p = 0.80.",
+      "distractor_rationales": {
+        "C": "0.64 is the frequency of AA, not of allele A; with p = 0.80 the 6400 AA individuals are exactly p²N.",
+        "A": "Those counts would require a much higher p or a deficit of heterozygotes; they are not the HWE prediction for p = 0.80.",
+        "B": "Heterozygote frequency 0.32 equals 2pq only after p is known; p itself is 0.80, not 0.32."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t11",
+      "type": "discrete",
+      "stem": "In guinea pigs, black (B) is dominant to brown (b) and rough coat (R) is dominant to smooth (r). The loci assort independently. A dihybrid BbRr is crossed to another BbRr. Among 160 offspring, how many are expected to be black and smooth (B_ rr), and what fraction of all offspring are brown and rough (bb R_)?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "10 black-smooth; 1/16 brown-rough"
+        },
+        {
+          "key": "B",
+          "text": "40 black-smooth; 1/4 brown-rough"
+        },
+        {
+          "key": "C",
+          "text": "30 black-smooth; 1/16 brown-rough"
+        },
+        {
+          "key": "D",
+          "text": "30 black-smooth; 3/16 brown-rough"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Independent assortment gives 9:3:3:1 among the four phenotypic classes of a double heterozygote self-cross. Black-smooth is B_ rr = (3/4)×(1/4) = 3/16, and 3/16 × 160 = 30. Brown-rough is bb R_ = (1/4)×(3/4) = 3/16, not 1/16 (that is bb rr) and not 1/4 (that is a single recessive class). Ten would be 1/16 of 160. Forty would be 1/4 of 160, the combined recessive-at-one-locus count if the other locus were ignored incorrectly.",
+      "distractor_rationales": {
+        "A": "10 is 1/16 × 160, the double-recessive class, not B_ rr.",
+        "B": "40 is 1/4 × 160, which would be all smooth coats regardless of colour, not the black-smooth subset.",
+        "C": "The headcount 30 is right, but brown-rough is 3/16, not the 1/16 double recessive."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t12",
+      "type": "discrete",
+      "stem": "Relative fitnesses at an autosomal locus are w(AA) = 1.00, w(Aa) = 1.00, w(aa) = 0.50. In a large population, p(A) = 0.90 and q(a) = 0.10 before selection. Mean fitness is w̄ = p²wAA + 2pq wAa + q² waa. After one round of selection the new q is q′ = q (p wAa + q waa) / w̄. What happens to q, and what is w̄?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "w̄ = 0.995 and q falls to about 0.095, as expected for a recessive deleterious allele"
+        },
+        {
+          "key": "B",
+          "text": "w̄ = 0.50 and q doubles, because the aa class has fitness 0.50"
+        },
+        {
+          "key": "C",
+          "text": "w̄ = 1.00 and q is unchanged, because A is dominant"
+        },
+        {
+          "key": "D",
+          "text": "w̄ = 0.995 and q rises, because rare alleles always increase"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "w̄ = (0.81)(1) + (0.18)(1) + (0.01)(0.50) = 0.81 + 0.18 + 0.005 = 0.995. Then q′ = 0.10 × (0.90 × 1 + 0.10 × 0.50) / 0.995 = 0.10 × 0.95 / 0.995 ≈ 0.0955. Selection against aa therefore trims q slightly. Dominance of A means heterozygotes are spared, so a rare recessive is only slowly purged, not instantly eliminated and not increased. Mean fitness is near 1 because aa is only 1% of the population.",
+      "distractor_rationales": {
+        "B": "Mean fitness is not equal to the lowest genotype fitness; aa individuals are rare, so w̄ stays near 1 and q does not double.",
+        "C": "Dominance keeps heterozygote fitness at 1 but aa still dies back, so q is not strictly unchanged and w̄ is 0.995 not 1.000.",
+        "D": "A deleterious recessive decreases when rare; there is no general rule that rare alleles increase."
+      },
+      "difficulty_est": 0.64
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t12",
+      "type": "discrete",
+      "stem": "Amino-acid differences in a 100-residue protein among four species:\n\nPair | differences\nA–B | 2\nA–C | 8\nB–C | 8\nA–D | 20\nB–D | 20\nC–D | 20\n\nA molecular clock is assumed, so distance is proportional to time since divergence. Which unrooted tree topology and relative branching order are supported?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A star phylogeny with all four lineages splitting at once, because every pair differs"
+        },
+        {
+          "key": "B",
+          "text": "A and B are sister taxa; C joins that pair next; D is the deepest split"
+        },
+        {
+          "key": "C",
+          "text": "A and D are sister taxa because 20 is the largest number"
+        },
+        {
+          "key": "D",
+          "text": "C and D are sister taxa; A and B attach as a distant outgroup pair with 2 differences to D"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "The smallest distance (A–B = 2) identifies the most recent split. C is equally 8 steps from A and from B, so C joins after A and B have already diverged, at a depth of 4 substitutions per lineage (8/2). D is 20 from every other taxon, a deeper stem of 10 substitutions per lineage, and the equal A/B/C-to-D distances indicate a clock-like outgroup split, not a C–D clade. A star would not produce a 2-versus-8-versus-20 hierarchy. Large distances mark old splits, not sister pairs.",
+      "distractor_rationales": {
+        "C": "The largest distance marks the oldest divergence, so A and D are the least closely related pair, not sisters.",
+        "D": "C and D differ by 20, the maximum, so they are not sisters; A–B = 2 is not a distance to D.",
+        "A": "A simultaneous four-way split cannot explain the nested 2, 8 and 20 classes."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t13",
+      "type": "discrete",
+      "stem": "Optical density (OD600) of a bacterial batch culture:\n\nTime (h) | OD600\n0.0 | 0.10\n1.0 | 0.20\n2.0 | 0.40\n3.0 | 0.80\n4.0 | 1.50\n5.0 | 1.60\n6.0 | 1.55\n\nWhich description of growth phases is justified?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Death phase begins at 1 h because the first doubling has already occurred"
+        },
+        {
+          "key": "B",
+          "text": "Exponential growth continues through 6 h because OD remains above 0.10"
+        },
+        {
+          "key": "C",
+          "text": "Exponential doubling time is 1.0 h from 0–3 h; the culture is entering stationary phase by 4–6 h"
+        },
+        {
+          "key": "D",
+          "text": "The culture is in lag phase for the entire 6 h because OD never exceeds 2"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "From 0.10 to 0.80 in 3 h the OD doubles every hour (0.10→0.20→0.40→0.80), the definition of exponential growth with a 1 h doubling time. Between 3 and 4 h the increase is less than a doubling (0.80→1.50), and by 5–6 h OD plateaus near 1.6, i.e. stationary phase. Lag would be a delay before doubling starts, but doubling is immediate here. Death phase would be a sustained OD fall, not a 1.60 to 1.55 wobble after a plateau. Remaining above the inoculum OD does not mean exponential growth continues.",
+      "distractor_rationales": {
+        "D": "Lag is a period without net increase; this culture doubles immediately, so it is not in lag.",
+        "A": "Completing a doubling is exponential growth, not death.",
+        "B": "After 3 h the successive ratios are 1.50/0.80 and 1.60/1.50, not a constant factor of 2, so exponential growth has ended."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t13",
+      "type": "discrete",
+      "stem": "A one-step bacteriophage growth experiment reports plaque-forming units (PFU) per millilitre after a synchronous infection of 10³ cells mL−1:\n\nTime (min) | extracellular PFU | intracellular PFU (after chloroform)\n0 | 10 | 10³\n10 | 8 | 10³\n20 | 6 | 10³\n30 | 1.0 × 10⁵ | 1.0 × 10⁵\n40 | 1.0 × 10⁵ | 1.0 × 10⁵\n\nWhich statement is supported?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Burst size is 10⁵ because that is the final PFU"
+        },
+        {
+          "key": "B",
+          "text": "Phage never enter an intracellular phase, because extracellular PFU is never zero"
+        },
+        {
+          "key": "C",
+          "text": "The latent period is 10 min, equal to the first listed time point after zero"
+        },
+        {
+          "key": "D",
+          "text": "The eclipse lasts at least 20 min with a burst size of about 100 phage per cell, and lysis has occurred by 30 min"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "During 0–20 min almost no infectious phage are outside cells (PFU ~10), while chloroform-released intracellular counts stay at the 10³ infected-cell input: new virions are not yet assembled (eclipse). At 30 min both extra- and intracellular PFU jump to 10⁵, so lysis has released a burst of 10⁵/10³ = 100 phage per cell. Residual extracellular PFU of 6–10 is unadsorbed inoculum, not evidence that infection failed. The latent period ends at the rise (30 min), not at the arbitrary 10 min row.",
+      "distractor_rationales": {
+        "A": "10⁵ is the population burst, not the per-cell burst size; dividing by 10³ infected cells gives 100.",
+        "B": "Intracellular PFU of 10³ during eclipse shows phage are inside cells; extracellular counts are leftover free virions.",
+        "C": "Infectious centres do not increase at 10 min; the latent period extends until the 30 min jump."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t14",
+      "type": "discrete",
+      "stem": "Relative protease activity versus pH for two digestive enzymes:\n\npH | pepsin | trypsin\n1.5 | 90 | 0\n2.0 | 100 | 0\n4.0 | 40 | 2\n6.0 | 5 | 20\n8.0 | 0 | 100\n9.0 | 0 | 70\n\nStomach chyme is pH 2; pancreatic juice raises duodenal pH to 8. Which division of labour is consistent with the table?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Pepsin accounts for gastric protein hydrolysis; trypsin is inactive there and becomes the principal duodenal endopeptidase after bicarbonate arrives"
+        },
+        {
+          "key": "B",
+          "text": "Trypsin is the stomach enzyme because digestion always begins with the enzyme that peaks at pH 8"
+        },
+        {
+          "key": "C",
+          "text": "Both enzymes work equally at pH 6, so the stomach and duodenum are interchangeable"
+        },
+        {
+          "key": "D",
+          "text": "Pepsin is a duodenal enzyme that is secreted in inactive form at pH 8"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Pepsin’s activity is essentially 100 at gastric pH 2 and 0 at duodenal pH 8, so it cannot continue after bicarbonate arrives. Trypsin is 0 at pH 2 and 100 at pH 8, so it is silent in the stomach and dominant in the duodenum. The enzymes therefore act in series along the pH gradient, not as a single pH-6 compromise (where both are weak). Assigning trypsin to the stomach or pepsin to the duodenum contradicts the pH–activity columns.",
+      "distractor_rationales": {
+        "B": "Trypsin has zero activity at pH 1.5–2, so it cannot be the gastric protease.",
+        "C": "At pH 6 pepsin is 5 and trypsin is 20, both far below their maxima, and neither organ is held at pH 6 in the stem.",
+        "D": "Pepsin is already at its maximum in the pH 2 column, the stomach condition, not at pH 8."
+      },
+      "difficulty_est": 0.33
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t14",
+      "type": "discrete",
+      "stem": "A textbook geometric model of the small intestine starts from a smooth cylinder of internal area 0.50 m². Circular folds multiply area ×3, villi ×10, and microvilli ×20, applied sequentially. If villi were absent but folds and microvilli remained, what absorptive area would the model predict, and what is the full three-amplifier area?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "100 m² without villi; 300 m² with all three"
+        },
+        {
+          "key": "B",
+          "text": "30 m² without villi; 300 m² with all three amplifiers"
+        },
+        {
+          "key": "C",
+          "text": "15 m² without villi; 33.5 m² with all three (adding 3+10+20)"
+        },
+        {
+          "key": "D",
+          "text": "0.50 m² without villi; 300 m² with villi only"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Multiplicative amplifiers stack: 0.50 × 3 × 10 × 20 = 300 m² when all three are present. Removing villi drops the ×10 factor, leaving 0.50 × 3 × 20 = 30 m². Adding 3+10+20 treats dimensionless fold-factors as areas and is dimensionally wrong. Omitting folds and microvilli when villi are “absent” would collapse to the raw 0.50 m² cylinder, which is not what the question asked. 100 m² would be 0.50 × 10 × 20, i.e. dropping folds instead of villi.",
+      "distractor_rationales": {
+        "C": "The amplifiers multiply area, they do not add; 3+10+20 = 33 is not an area in m².",
+        "D": "Without villi the folds and microvilli still remain, so the area is not the bare 0.50 m² cylinder.",
+        "A": "100 m² is the product if circular folds (×3) were the missing factor rather than villi (×10)."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t15",
+      "type": "discrete",
+      "stem": "Cardiac output (CO) = heart rate × stroke volume. Three measurements on one subject:\n\nState | HR (min−1) | SV (mL)\nRest | 70 | 80\nExercise | 140 | 100\nHaemorrhage | 120 | 40\n\nWhich comparison of CO is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Rest 5.6 L min−1; exercise 7.0 L min−1 (using resting SV); haemorrhage 9.6 L min−1"
+        },
+        {
+          "key": "B",
+          "text": "All three states have the same CO because the product HR × SV is conserved by homeostasis"
+        },
+        {
+          "key": "C",
+          "text": "Rest 5.6 L min−1; exercise 14.0 L min−1; haemorrhage 4.8 L min−1"
+        },
+        {
+          "key": "D",
+          "text": "Rest 150 mL min−1; exercise 240; haemorrhage 160, summing HR and SV"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Rest: 70 × 80 = 5600 mL min−1 = 5.6 L min−1. Exercise: 140 × 100 = 14 000 mL min−1 = 14.0 L min−1. Haemorrhage: 120 × 40 = 4800 mL min−1 = 4.8 L min−1. Adding HR to SV is not a cardiac output. Using resting SV in exercise underestimates CO, and using 120 × 80 would invent a 9.6 L haemorrhage output the table does not contain. The three products are different, so CO is not conserved across these states.",
+      "distractor_rationales": {
+        "D": "Cardiac output is a product of rate and volume ejected per beat, not a sum, and the units would not be mL min−1 in that sense.",
+        "A": "Exercise SV is 100 mL not 80, and haemorrhage SV is 40 mL not 80.",
+        "B": "The three products 5.6, 14.0 and 4.8 L min−1 are unequal, so CO is not invariant."
+      },
+      "difficulty_est": 0.32
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t15",
+      "type": "discrete",
+      "stem": "Haemoglobin–oxygen saturation on two dissociation curves at the same PO2 values:\n\nPO2 (mmHg) | sat % at P50 = 26 mmHg | sat % at P50 = 32 mmHg (low pH / high 2,3-BPG)\n100 | 97 | 95\n40 | 75 | 60\n26 | 50 | 38\n\nVenous muscle PO2 is 40 mmHg; arterial PO2 is 100 mmHg. Which statement about oxygen unloading is supported?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The right shift prevents unloading because saturation at 40 mmHg is lower"
+        },
+        {
+          "key": "B",
+          "text": "Arterial saturation falling from 97% to 95% is the main physiological effect of a P50 increase"
+        },
+        {
+          "key": "C",
+          "text": "P50 is the PO2 at 100% saturation, so 26 mmHg already represents full loading"
+        },
+        {
+          "key": "D",
+          "text": "The right-shifted curve unloads more O2 in tissue (35 percentage points versus 22) with little change in arterial loading"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Unloading is arterial minus venous saturation. For P50 = 26 mmHg: 97 − 75 = 22 points. For P50 = 32 mmHg: 95 − 60 = 35 points. The Bohr/2,3-BPG right shift therefore delivers more oxygen at a venous PO2 of 40 mmHg, while arterial loading at 100 mmHg barely changes (97 vs 95). Lower venous saturation means more, not less, unloading. P50 is the PO2 at 50% saturation by definition, not at 100%.",
+      "distractor_rationales": {
+        "A": "A lower saturation at 40 mmHg is exactly greater unloading if arterial saturation remains near 95–97%.",
+        "B": "The 2-point arterial change is trivial beside the 15-point extra venous desaturation.",
+        "C": "The table itself shows 50% saturation at 26 mmHg on the first curve; that is the definition of P50."
+      },
+      "difficulty_est": 0.49
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t16",
+      "type": "discrete",
+      "stem": "Alveolar ventilation VA = f × (VT − VD), with f the respiratory frequency, VT tidal volume, and VD anatomic dead space (150 mL here).\n\nPattern | f (min−1) | VT (mL)\nQuiet breathing | 12 | 500\nSlow deep | 6 | 1000\nPanting | 24 | 250\n\nWhich ranking of VA is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Slow deep (5100 mL min−1) > quiet (4200) > panting (2400)"
+        },
+        {
+          "key": "B",
+          "text": "Panting > quiet > slow deep, because frequency dominates"
+        },
+        {
+          "key": "C",
+          "text": "All three equal 4200 mL min−1 because minute ventilation f × VT is 6000 in each row"
+        },
+        {
+          "key": "D",
+          "text": "Quiet 6000; slow deep 6000; panting 6000, ignoring dead space"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Quiet: 12 × (500 − 150) = 12 × 350 = 4200 mL min−1. Slow deep: 6 × (1000 − 150) = 6 × 850 = 5100 mL min−1. Panting: 24 × (250 − 150) = 24 × 100 = 2400 mL min−1. Minute ventilation f×VT is 6000 mL min−1 in every pattern, but a larger fraction of each pant is dead-space air, so alveolar ventilation falls. Slow deep breathing spends a larger fraction of each breath below the dead-space threshold, raising VA. Frequency alone does not rank the rows.",
+      "distractor_rationales": {
+        "B": "Panting has the highest f but the lowest VA because VT is only 100 mL above dead space.",
+        "C": "Equal minute ventilation does not imply equal VA once VD is subtracted inside the parentheses.",
+        "D": "Ignoring VD quotes minute ventilation, not alveolar ventilation, which is what the stem defines."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t16",
+      "type": "discrete",
+      "stem": "Fick’s law is written V̇gas = (A / T) × D × ΔP. Three lung conditions are compared at the same ΔP and D:\nHealthy: A = 70 m², T = 0.5 µm, relative rate = 100.\nEmphysema: A = 35 m², T = 0.5 µm.\nFibrosis: A = 70 m², T = 1.0 µm.\nWhat are the relative diffusion rates for emphysema and fibrosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Both remain 100, because ΔP is unchanged"
+        },
+        {
+          "key": "B",
+          "text": "Emphysema 50; fibrosis 50"
+        },
+        {
+          "key": "C",
+          "text": "Emphysema 200; fibrosis 50, because thinning always accompanies emphysema"
+        },
+        {
+          "key": "D",
+          "text": "Emphysema 50; fibrosis 200, because thicker barriers conduct faster"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Rate scales with A/T. Healthy A/T = 70 / 0.5 = 140 (in m² µm−1). Emphysema halves area at the same thickness, so A/T = 70, half the healthy value (relative 50). Fibrosis doubles thickness at the same area, A/T = 70, again half (relative 50). The stem holds T fixed in emphysema and A fixed in fibrosis, so one should not invent extra thinning or argue that thicker tissue conducts faster. Unchanged ΔP does not cancel a change in A/T.",
+      "distractor_rationales": {
+        "C": "The emphysema row keeps T = 0.5 µm; doubling rate would require doubling A/T, which does not occur.",
+        "D": "T is in the denominator, so doubling thickness halves, rather than doubles, rate.",
+        "A": "Fick’s law still contains A/T; holding ΔP constant isolates that geometric factor, which did change."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t17",
+      "type": "discrete",
+      "stem": "Clearance C = U V / P, with U urine concentration, V urine flow, P plasma concentration. Simultaneous measurements:\n\nMarker | P | U | V\nInulin | 4.0 mg L−1 | 200 mg L−1 | 2.0 mL min−1\nPAH | 2.0 mg L−1 | 1000 mg L−1 | 2.0 mL min−1\n\nInulin clearance estimates GFR. PAH clearance estimates effective renal plasma flow. What are GFR, RPF, and filtration fraction GFR/RPF?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "GFR 50 mL min−1; RPF 500 mL min−1; FF 0.10"
+        },
+        {
+          "key": "B",
+          "text": "GFR 100 mL min−1; RPF 200 mL min−1; FF 0.50"
+        },
+        {
+          "key": "C",
+          "text": "GFR 100 mL min−1; RPF 1000 mL min−1; FF 0.10"
+        },
+        {
+          "key": "D",
+          "text": "GFR 1000 mL min−1; RPF 100 mL min−1; FF 10"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Convert V to 0.0020 L min−1. Inulin: C = 200 × 0.0020 / 4.0 = 0.40 / 4.0 = 0.10 L min−1 = 100 mL min−1. PAH: C = 1000 × 0.0020 / 2.0 = 2.0 / 2.0 = 1.0 L min−1 = 1000 mL min−1. Filtration fraction = 100/1000 = 0.10. Swapping the two clearances inverts FF to an impossible 10. Halving both would require using V = 1.0 mL min−1. Using U/P without V for PAH gives 500, not 1000 mL min−1, and 200 mL min−1 would be a typical RBF mis-scale.",
+      "distractor_rationales": {
+        "D": "That pair swaps inulin and PAH clearances and makes FF = 10, which cannot be a fraction of plasma filtered.",
+        "A": "Those values would follow if V were taken as 1.0 mL min−1 instead of 2.0.",
+        "B": "RPF 200 mL min−1 underuses the PAH U/P ratio of 500 together with the 2 mL min−1 flow."
+      },
+      "difficulty_est": 0.56
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t17",
+      "type": "discrete",
+      "stem": "Osmolality (mOsm kg−1) along a long-looped nephron with and without ADH:\n\nSite | with ADH | without ADH\nBowman’s capsule | 300 | 300\nHairpin of loop | 1200 | 1200\nEarly distal tubule | 100 | 100\nFinal urine | 1200 | 100\n\nThe thick ascending limb actively exports NaCl and is impermeable to water. Which statement follows?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Without ADH the loop cannot concentrate the hairpin, because the table would then show 300 at the hairpin"
+        },
+        {
+          "key": "B",
+          "text": "ADH is required to dilute the early distal fluid to 100 mOsm kg−1"
+        },
+        {
+          "key": "C",
+          "text": "Final urine is always 1200 mOsm kg−1 in a long-looped nephron"
+        },
+        {
+          "key": "D",
+          "text": "The loop still generates a medullary gradient without ADH, but only ADH makes the collecting duct water-permeable so urine can equilibrate to 1200 mOsm kg−1"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The hairpin is 1200 in both columns, so countercurrent multiplication does not require ADH. Early distal fluid is 100 in both columns, the signature of salt extraction without water in the ascending limb (diluting segment). The columns diverge only at the collecting duct: with ADH, water follows the medullary gradient to 1200; without ADH the duct stays impermeable and urine remains as dilute as the distal load (100). Therefore ADH gates water permeability of the collecting duct, not loop function or distal dilution.",
+      "distractor_rationales": {
+        "A": "The hairpin is 1200 with and without ADH, so the gradient is intact.",
+        "B": "Early distal osmolality is already 100 in the no-ADH column, so dilution is ADH-independent.",
+        "C": "The no-ADH urine is 100 mOsm kg−1, so long loops do not force concentrated urine without ADH."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t18",
+      "type": "discrete",
+      "stem": "The potassium Nernst potential is EK = 60 log10([K+]o / [K+]i) mV. A neuron has [K+]i = 140 mM. Resting [K+]o = 5.0 mM. During ischaemia [K+]o rises to 10 mM. (log10 28 ≈ 1.45; log10 14 ≈ 1.15.) How does EK change?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "From about −87 mV to about −69 mV, a depolarising shift"
+        },
+        {
+          "key": "B",
+          "text": "From about −87 mV to about −105 mV, a hyperpolarising shift"
+        },
+        {
+          "key": "C",
+          "text": "EK remains −87 mV because [K+]i is unchanged"
+        },
+        {
+          "key": "D",
+          "text": "EK becomes positive because [K+]o doubled"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "At rest EK = 60 log10(5/140) = 60 log10(1/28) = −60 × 1.45 = −87 mV. After the rise, EK = 60 log10(10/140) = 60 log10(1/14) = −60 × 1.15 = −69 mV. Raising extracellular potassium therefore moves EK toward 0 mV (depolarisation), which is why ischaemic hyperkalaemia can inactivate sodium channels. The inward concentration ratio shrank, so the magnitude of the negative potential must fall, not increase. Doubling [K+]o does not reverse the gradient, which is still 14-fold inward.",
+      "distractor_rationales": {
+        "B": "A more negative EK would require a steeper inward [K+] gradient, the opposite of raising [K+]o.",
+        "C": "EK depends on the ratio of concentrations, not on [K+]i alone.",
+        "D": "Even at 10 mM outside versus 140 mM inside the log argument is still <1, so EK stays negative."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t18",
+      "type": "discrete",
+      "stem": "Conduction measurements on two axons of length 1.0 m:\n\nAxon | internodal distance | time per node | continuous conduction speed\nMyelinated A | 1.0 mm | 0.10 ms | (saltatory)\nUnmyelinated C | — | — | 1.0 m s−1\n\nFor the myelinated fibre, speed ≈ internodal distance / time per node. What are the two conduction times for a 1.0 m path, and which fibre arrives first?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A fibre 1.0 s; C fibre 0.10 s; C arrives first"
+        },
+        {
+          "key": "B",
+          "text": "A fibre 0.10 s; C fibre 1.0 s; A arrives first"
+        },
+        {
+          "key": "C",
+          "text": "A fibre 0.10 ms; C fibre 1.0 s; A arrives first by a million-fold"
+        },
+        {
+          "key": "D",
+          "text": "Both 1.0 s, because length is the same"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Myelinated speed = 1.0 × 10−3 m / 1.0 × 10−4 s = 10 m s−1. Time for 1.0 m is 0.10 s. The C fibre at 1.0 m s−1 needs 1.0 s. Saltatory hopping therefore wins by a factor of ten, not a factor of 10 000. Using 0.10 ms (the nodal delay) as the whole-nerve time forgets that 1000 nodes must be crossed in 1.0 m (1.0 m / 1.0 mm). Equal length does not equalise time when speeds differ tenfold. The unmyelinated fibre is the slow one.",
+      "distractor_rationales": {
+        "C": "0.10 ms is the delay at one node, not the 1 m travel time; there are 1000 such nodes.",
+        "D": "Time = distance/speed; the speeds are 10 versus 1 m s−1, so times differ.",
+        "A": "That pair swaps the two speeds; internodal arithmetic gives 10 m s−1 for A, faster than C."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t19",
+      "type": "discrete",
+      "stem": "Simultaneous plasma values during an oral glucose series in a healthy volunteer:\n\nTime (min) | glucose (mM) | insulin (mU L−1) | glucagon (ng L−1)\n0 | 4.5 | 8 | 80\n30 | 8.0 | 40 | 25\n60 | 6.0 | 22 | 40\n120 | 4.6 | 9 | 75\n\nWhich regulatory pattern is illustrated?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Insulin is secreted only after glucose has already returned to 4.6 mM"
+        },
+        {
+          "key": "B",
+          "text": "The three concentrations are independent, because 60 min values are intermediate by chance"
+        },
+        {
+          "key": "C",
+          "text": "Rising glucose stimulates insulin and suppresses glucagon; as glucose returns to baseline the two hormones reverse"
+        },
+        {
+          "key": "D",
+          "text": "Glucagon rises with glucose, amplifying hyperglycaemia"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "At 30 min glucose has risen to 8.0 mM, insulin has jumped fivefold, and glucagon has fallen from 80 to 25, the classic reciprocal islet response that stores the load. By 120 min glucose is back near 4.5 mM and both hormones have returned toward fasting values. Glucagon does not rise with glucose; it is suppressed. Insulin peaks while glucose is still high, not after euglycaemia is restored. The ordered rise-and-fall across three variables is coordinated negative-feedback control, not coincidence.",
+      "distractor_rationales": {
+        "D": "Glucagon falls from 80 to 25 as glucose rises, the opposite of amplification.",
+        "A": "Insulin is already 40 mU L−1 at 30 min, when glucose is 8.0 mM.",
+        "B": "The hormones move in opposite directions locked to glucose, which is the definition of coordinated regulation."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t19",
+      "type": "discrete",
+      "stem": "Morning plasma cortisol and ACTH in four patients (reference: cortisol 200–500 nM; ACTH 2–10 pM):\n\nPatient | cortisol (nM) | ACTH (pM)\nP | 80 | 40\nQ | 80 | 0.5\nR | 900 | 0.4\nS | 900 | 35\n\nWhich localisation is consistent with negative feedback on the HPA axis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "P pituitary failure, because ACTH is high"
+        },
+        {
+          "key": "B",
+          "text": "R primary adrenal failure, because cortisol is high"
+        },
+        {
+          "key": "C",
+          "text": "S Addison disease, because both hormones are high"
+        },
+        {
+          "key": "D",
+          "text": "P primary adrenal failure; Q secondary (pituitary/hypothalamic) failure; R autonomous adrenal cortisol; S ACTH-driven Cushing pathology"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Low cortisol with high ACTH (P) means the pituitary is driving the adrenal, which is not responding: primary adrenal failure. Low cortisol with suppressed ACTH (Q) means the adrenal is under-stimulated: secondary failure. High cortisol should suppress ACTH; if ACTH is nevertheless low (R), the cortisol source is ACTH-independent (adrenal adenoma or exogenous steroid). High cortisol with unsuppressed ACTH (S) is ACTH-dependent hypercortisolism. High ACTH is the opposite of pituitary failure; high cortisol is the opposite of Addison disease.",
+      "distractor_rationales": {
+        "A": "Pituitary failure lowers ACTH; patient P has ACTH 40 pM, an appropriate response to low cortisol.",
+        "B": "Primary adrenal failure lowers cortisol; R has cortisol 900 nM.",
+        "C": "Addison disease is cortisol deficiency; S has cortisol 900 nM with high ACTH, i.e. Cushing physiology."
+      },
+      "difficulty_est": 0.59
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t20",
+      "type": "discrete",
+      "stem": "Serum antibody titres after two injections of the same protein antigen on day 0 and day 40:\n\nDay | IgM titre | IgG titre\n0 | <10 | <10\n7 | 80 | 20\n14 | 40 | 160\n40 (pre-boost) | 10 | 80\n47 | 40 | 2560\n54 | 20 | 1280\n\nWhich conclusion is best supported?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The primary response is IgM-led and modest; the secondary response is a large, rapid IgG rise, the signature of immunological memory and class switching"
+        },
+        {
+          "key": "B",
+          "text": "IgM is the memory isotype, because it is highest on day 47"
+        },
+        {
+          "key": "C",
+          "text": "No class switch occurred, because IgM never falls to zero"
+        },
+        {
+          "key": "D",
+          "text": "The day-47 IgG titre of 2560 is a primary response to a new antigen contaminating the boost"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "After the first injection IgM appears first (80 at day 7) while IgG is still 20, then IgG overtakes (160 at day 14): primary class switching. After the day-40 boost IgG rockets to 2560 within a week while IgM only reaches 40, which is the quantitative definition of a secondary, memory, IgG-dominant response to the same antigen. IgM is not higher than IgG on day 47. Persistence of a little IgM does not deny class switch. A contaminant would not selectively inflate IgG 32-fold over the pre-boost baseline in seven days as a first exposure.",
+      "distractor_rationales": {
+        "B": "On day 47 IgG is 2560 versus IgM 40, so IgG, not IgM, dominates the memory response.",
+        "C": "IgG already exceeds IgM by day 14 and explodes after the boost; that is class switching even if some IgM remains.",
+        "D": "A primary response to a new antigen would look like days 7–14 (modest IgM then IgG), not a 2560 IgG spike."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t20",
+      "type": "discrete",
+      "stem": "Forward blood-typing mixes unknown cells with known reagents. Agglutination is scored + or − after 60 s on a slide. Three unknown samples are tested.\n\nReagent | Person W | Person X | Person Y\nAnti-A | + | − | −\nAnti-B | − | + | −\nAnti-D (Rh) | + | + | −\n\nABO antibodies in plasma are the reciprocal of the antigens on the person’s red cells (Landsteiner). Which plasma antibodies and Rh status follow?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "All three have anti-A and anti-B because agglutination reagents are antibodies"
+        },
+        {
+          "key": "B",
+          "text": "W: anti-B, Rh+; X: anti-A, Rh+; Y: anti-A and anti-B, Rh−"
+        },
+        {
+          "key": "C",
+          "text": "W: anti-A, Rh+; X: anti-B, Rh+; Y: none, Rh−"
+        },
+        {
+          "key": "D",
+          "text": "W: anti-A and anti-B, Rh−; X: none, Rh+; Y: anti-D only"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "W cells agglutinate with anti-A only, so W is group A and therefore circulates anti-B, not anti-A. X is group B and circulates anti-A. Y cells react with neither anti-A nor anti-B, so Y is group O and has both anti-A and anti-B. Anti-D agglutination marks Rh+ for W and X; Y is Rh−. Reversing A/B antigens relative to plasma antibodies is the standard Landsteiner trap. Group O plasma is the universal antibody-containing plasma, not an empty plasma. The typing reagents’ identities do not put those same antibodies into every person’s plasma.",
+      "distractor_rationales": {
+        "C": "That option assigns each person the antibody against their own antigen, which would agglutinate their own cells in vivo.",
+        "D": "W is A-positive, not AB-negative; X is B, not AB; Y is O Rh−, whose plasma has anti-A and anti-B, not anti-D as the defining feature here.",
+        "A": "Only the reagent wells contain those antibodies; a person’s plasma antibodies are complementary to the antigens they lack."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t21",
+      "type": "discrete",
+      "stem": "Isometric tetanic tension of a skeletal fibre versus sarcomere length (relative tension, 100 = plateau):\n\nLength (µm) | tension (%)\n1.5 | 55\n2.0 | 100\n2.2 | 100\n2.6 | 80\n3.6 | 0\n\nThick filaments are 1.6 µm; thin filaments from each Z-line are 1.0 µm; the H-zone has no thin-filament overlap. Which mechanical interpretation fits?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The plateau at 2.0–2.2 µm means no cross-bridges attach in that range"
+        },
+        {
+          "key": "B",
+          "text": "Tension at 1.5 µm is low because thin filaments have detached from Z-lines"
+        },
+        {
+          "key": "C",
+          "text": "3.6 µm is zero overlap so zero force; 2.0–2.2 µm is optimal overlap; 1.5 µm is excessive overlap that impairs force"
+        },
+        {
+          "key": "D",
+          "text": "Force is maximum at 3.6 µm because cross-bridges have the most room to swing"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "At 3.6 µm a 1.6 µm thick filament plus two 1.0 µm thin filaments end-to-end span 3.6 µm, so overlap—and force—is zero, matching the table. The 2.0–2.2 µm plateau is the region of constant maximal overlap of cross-bridge zones. At 1.5 µm opposite thin filaments crash into each other and thick filaments hit Z-lines, reducing force to 55%, not because Z-line attachments are lost. Maximum force is therefore at intermediate, not extreme stretched, length. The plateau is maximal attachment, not zero attachment.",
+      "distractor_rationales": {
+        "D": "The 3.6 µm row is 0% tension; there is no overlap for cross-bridges to swing on.",
+        "A": "100% tension on the plateau is the maximum number of active bridges, not zero.",
+        "B": "Thin filaments remain anchored at Z-lines; force falls at short length because of double overlap and compression, as the 1.5 µm row shows residual 55% tension."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t21",
+      "type": "discrete",
+      "stem": "A forearm is held horizontal. The elbow is the pivot. Biceps inserts 4.0 cm from the pivot and pulls vertically. The combined weight of forearm plus a dumbbell acts 32 cm from the pivot and equals 40 N. Ignore the triceps and assume a single biceps force F. For rotational equilibrium (net torque = 0), what is F?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "40 N"
+        },
+        {
+          "key": "B",
+          "text": "5.0 N"
+        },
+        {
+          "key": "C",
+          "text": "160 N"
+        },
+        {
+          "key": "D",
+          "text": "320 N"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Torques about the elbow: biceps F × 0.040 m clockwise-or-up, load 40 N × 0.32 m the other way. Setting them equal gives F × 0.040 = 12.8, so F = 12.8 / 0.040 = 320 N. The muscle must exceed the load because it has the shorter moment arm (4 cm versus 32 cm, a factor of 8; 8 × 40 = 320). Equating F to 40 N ignores leverage. Dividing 40 by 8 gives 5 N, which would be the load if F were 40 N, the inverted lever. 160 N is a factor-of-4 error, as if the insertion were 8 cm.",
+      "distractor_rationales": {
+        "A": "40 N would balance the load only if biceps inserted at 32 cm, the same arm as the weight.",
+        "B": "5 N is 40 × 4/32, inverting the lever ratio.",
+        "C": "160 N would be correct for a 8 cm insertion (factor of 4), not 4 cm (factor of 8)."
+      },
+      "difficulty_est": 0.39
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t22",
+      "type": "discrete",
+      "stem": "Daily plasma hormones in a 28-day menstrual cycle (simplified):\n\nDay | LH (IU L−1) | oestradiol (pM) | progesterone (nM)\n7 | 8 | 200 | 2\n13 | 12 | 900 | 2\n14 | 80 | 800 | 3\n21 | 8 | 400 | 25\n28 | 6 | 150 | 3\n\nWhich reading of ovulation and luteal function is consistent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The day-14 LH surge triggers ovulation; day-21 progesterone at 25 nM indicates a functional corpus luteum, which then fails by day 28 if no pregnancy occurs"
+        },
+        {
+          "key": "B",
+          "text": "Ovulation occurs on day 7 because that is the first listed day"
+        },
+        {
+          "key": "C",
+          "text": "Progesterone peaks before the LH surge, so the corpus luteum forms in the follicular phase"
+        },
+        {
+          "key": "D",
+          "text": "The cycle is anovulatory because progesterone never exceeds LH numerically"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "LH is basal until a surge of 80 IU L−1 on day 14, the mid-cycle trigger for ovulation. Progesterone stays at 2–3 nM through day 14 (follicular/ovulatory) and only then rises to 25 nM on day 21, the luteal signature of a corpus luteum secreting progesterone. By day 28 progesterone has fallen to 3 nM, so the corpus luteum has involuted in the absence of pregnancy. Day 7 is mid-follicular, with low LH and low progesterone. Comparing progesterone nM to LH IU L−1 is a units error, not a test of ovulation.",
+      "distractor_rationales": {
+        "B": "Day 7 has LH 8 and progesterone 2, a follicular pattern, not an ovulatory surge.",
+        "C": "Progesterone is still 2–3 nM at the surge and only later reaches 25 nM.",
+        "D": "Hormone identities are not ranked by raw number across different units; the 25 nM progesterone peak is luteal."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t22",
+      "type": "discrete",
+      "stem": "A spherical zygote has diameter 200 µm. Cleavage conserves total cytoplasmic volume through the 8-cell stage (each blastomere a sphere). Volume of a sphere is (4/3)πr³, so diameter scales as the cube root of volume. At the 8-cell stage, what is each blastomere’s diameter, and which later distinction is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "100 µm; all 8 cells are already extra-embryonic trophectoderm"
+        },
+        {
+          "key": "B",
+          "text": "100 µm; the blastocyst then allocates an inner cell mass (embryo) versus trophoblast (placenta)"
+        },
+        {
+          "key": "C",
+          "text": "25 µm; each cleavage halves diameter"
+        },
+        {
+          "key": "D",
+          "text": "200 µm; cleavage increases total volume eightfold"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Eight equal blastomeres share the original volume, so each has volume /8. Diameter scales as ∛(volume), and ∛(1/8) = 1/2, so diameter = 100 µm. Diameter does not fall eightfold (that would be 25 µm), which would be confusing linear with volume. Total volume is conserved, not multiplied, so cells cannot stay 200 µm. After compaction the blastocyst inner cell mass forms the embryo proper while trophoblast forms extra-embryonic chorion; the 8-cell stage is not yet all trophectoderm.",
+      "distractor_rationales": {
+        "C": "Halving diameter at every cleavage would be correct only if volume halved while remaining one cell; here volume per cell is /8, so diameter /2 once at the 8-cell stage.",
+        "D": "The stem states volume is conserved; diameter therefore must fall.",
+        "A": "The 100 µm figure is right, but inner cells of the later blastocyst are embryonic, not all trophoblast."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t23",
+      "type": "discrete",
+      "stem": "Core temperature (°C) in a climate chamber. Effectors: shivering if core < set-point − 0.2 °C; sweating if core > set-point + 0.2 °C. Normal set-point 37.0 °C.\n\nTime (min) | chamber air (°C) | core (°C) | observed effector\n0–20 | 22 | 37.0 | none\n20–40 | 42 | 37.4 | sweating\n40–60 | 42 | 37.0 | sweating (less)\n60–90 | 42, pyrogen injected | 37.0 → 39.0 | shivering then none\n\nWhich control scheme matches the record?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The set-point is the chamber air temperature, which is why core follows 42 °C"
+        },
+        {
+          "key": "B",
+          "text": "Pyrogen destroys effectors, which is why shivering appears"
+        },
+        {
+          "key": "C",
+          "text": "Negative feedback around a 37.0 °C set-point, then a pyrogen-induced rise in set-point to 39.0 °C that transiently makes 37.0 °C feel ‘cold’"
+        },
+        {
+          "key": "D",
+          "text": "Positive feedback, because sweating at 37.4 °C further raises core temperature"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "In the heat, core edges up to 37.4 °C and sweating is recruited, then core returns to 37.0 °C despite air at 42 °C: negative feedback defending 37.0 °C. After pyrogen, the same 37.0 °C now lies below a new 39.0 °C set-point, so shivering raises core until 39.0 °C, a controlled fever, not effector failure. Sweating lowers, rather than raises, core temperature. Core never equals the 42 °C air, so air is a disturbance, not the set-point.",
+      "distractor_rationales": {
+        "D": "Sweating is a cooling effector; core falls from 37.4 back to 37.0, the opposite of positive feedback.",
+        "A": "Core stays near 37 then 39, not 42, so the regulated variable is core temperature, not air.",
+        "B": "Shivering is an intact heat-gain effector acting toward a higher set-point, not a destroyed effector."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t23",
+      "type": "discrete",
+      "stem": "Paired plasma osmolality and ADH during a water-restriction test:\n\nPlasma osmolality (mOsm kg−1) | ADH (pg mL−1) | urine osmolality (mOsm kg−1)\n280 | 1 | 80\n290 | 4 | 400\n300 | 10 | 900\n320 | 12 | 950\n\nADH insertion of aquaporins in the collecting duct raises urine osmolality. Which description of the feedback loop is best?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "ADH falls as osmolality rises, producing more dilute urine"
+        },
+        {
+          "key": "B",
+          "text": "Urine is always 900–950 mOsm kg−1, so ADH is unnecessary in this subject"
+        },
+        {
+          "key": "C",
+          "text": "The loop is open-loop feed-forward from urine to plasma, because urine osmolality exceeds plasma"
+        },
+        {
+          "key": "D",
+          "text": "Above about 280 mOsm kg−1, rising plasma osmolality increases ADH, which increases urine concentration; the response saturates near 950 mOsm kg−1"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Each row shows plasma osmolality, ADH, and urine concentration rising together from a threshold near 280 mOsm kg−1, the standard osmoreceptor–ADH–kidney negative-feedback cascade that conserves water. The last step from 300 to 320 mOsm kg−1 barely changes urine (900 to 950), i.e. a saturating concentrating ability. ADH does not fall, and urine at 80 mOsm kg−1 when ADH is 1 proves the kidney can dilute when ADH is low. Concentrated urine is the output that corrects plasma osmolality, not evidence that the loop runs from urine to plasma as the sensed variable.",
+      "distractor_rationales": {
+        "A": "ADH rises 1 → 12 as osmolality rises 280 → 320; urine becomes more concentrated, not more dilute.",
+        "B": "The first row has urine 80 mOsm kg−1, so concentration is regulated, not fixed.",
+        "C": "The sensed variable listed first is plasma osmolality; concentrated urine is the effector response."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t24",
+      "type": "discrete",
+      "stem": "Water potential ψ = ψs + ψp (MPa) along a transpiring shoot at midday:\n\nCompartment | ψs | ψp | ψ\nSoil solution | −0.20 | 0.00 | −0.20\nRoot cortex | −0.60 | +0.20 | −0.40\nXylem sap | −0.10 | −1.10 | −1.20\nLeaf cell | −1.50 | +0.20 | −1.30\n\nWater moves toward more negative ψ. Which path is possible?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Soil → root → xylem → leaf, because −0.20 > −0.40 > −1.20 > −1.30 (less negative to more negative)"
+        },
+        {
+          "key": "B",
+          "text": "Leaf → xylem → root → soil, following the pressure potential ψp alone"
+        },
+        {
+          "key": "C",
+          "text": "Xylem cannot contain liquid water because ψp is negative"
+        },
+        {
+          "key": "D",
+          "text": "The root is a barrier to uptake because its ψs is more negative than the soil’s"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "The summed ψ values become steadily more negative from soil (−0.20) to root (−0.40) to xylem (−1.20) to leaf (−1.30), the required downhill gradient for transpiration. Negative xylem ψp is tension in a continuous water column, not an empty pipe; liquid xylem sap is the standard cohesion–tension state. Root ψs is more negative than soil, which is how the root lowers its ψ below the soil and takes up water; that is a driving force, not a barrier. Ranking by ψp alone would send water the wrong way because it ignores solute potential.",
+      "distractor_rationales": {
+        "B": "Using only ψp would drive water out of the pressurised root toward the soil (0.00) and miss the actual ψ gradient.",
+        "C": "Negative hydrostatic pressure in xylem is tension in liquid water, the cohesion–tension mechanism.",
+        "D": "A more negative root ψs contributes to a more negative root ψ than soil, which is required for uptake."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t24",
+      "type": "discrete",
+      "stem": "Abaxial stomatal conductance gs (mmol m−2 s−1) of a C3 leaf:\n\nTreatment | gs\nLight, well watered | 400\nDark, well watered | 40\nLight, ABA applied | 50\nLight, well watered, then cut petiole in air | 20 (after 10 min)\n\nTranspiration is proportional to gs when the leaf-to-air vapour gradient is fixed. Which interpretation is consistent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cutting the petiole increases gs by relieving root pressure"
+        },
+        {
+          "key": "B",
+          "text": "Light opens stomata; ABA and hydraulic collapse (cut petiole) close them, so transpiration falls about eight- to twenty-fold from the well-watered light control"
+        },
+        {
+          "key": "C",
+          "text": "Darkness increases transpiration because gs rises from 400 to 40"
+        },
+        {
+          "key": "D",
+          "text": "ABA opens stomata in the light, matching the 50 versus 40 comparison to dark"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Well-watered light gs of 400 is ten times the dark value of 40, so light-stimulated opening dominates the well-watered contrast. ABA in the light drops gs to 50, essentially closed, the drought-hormone response. Cutting the xylem collapses leaf water potential and gs falls to 20, showing a hydraulic closure even in the light. Relative transpiration therefore falls from 400 to 50 or 20, i.e. eight- to twenty-fold. Darkness lowers gs; ABA does not open in this table; cutting does not raise conductance.",
+      "distractor_rationales": {
+        "C": "gs falls from 400 to 40 in the dark, which decreases, not increases, transpiration.",
+        "D": "ABA in the light gives 50, close to the closed dark value of 40, not to the open 400.",
+        "A": "The cut-petiole gs is 20, the lowest row, so conductance fell."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t25",
+      "type": "discrete",
+      "stem": "Annual energy fluxes (kJ m−2 yr−1) in a grassland:\n\nFlux | value\nGross primary production (GPP) | 20 000\nAutotrophic respiration | 10 000\nHerbivore ingestion | 1 000\nHerbivore respiration + faeces + urine | 900\nCarnivore ingestion | 100\n\nNet primary production NPP = GPP − autotrophic respiration. Ecological efficiency at a step is ingestion at that step divided by production at the step below. Which pair is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "NPP = 10 000; herbivore efficiency 90% because 900 is respired"
+        },
+        {
+          "key": "B",
+          "text": "NPP = 9 000; carnivore efficiency 1% of GPP only"
+        },
+        {
+          "key": "C",
+          "text": "NPP = 10 000; herbivore efficiency 10%; carnivore efficiency 10% of herbivore ingestion (100/1000)"
+        },
+        {
+          "key": "D",
+          "text": "NPP = 20 000; both consumer efficiencies 50%"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "NPP = 20 000 − 10 000 = 10 000 kJ m−2 yr−1. Herbivores ingest 1000 of that 10 000, so 10% transfer into the herbivore step. Herbivore production available to carnivores is ingestion minus the 900 lost to respiration and wastes, i.e. 100, and carnivores ingest that entire 100, which is 10% of herbivore ingestion (or 100% of net herbivore production). Using GPP as NPP ignores plant respiration. Treating the 900 loss as an efficiency of 90% inverts the meaning of transfer efficiency. NPP is not 9000 on these figures.",
+      "distractor_rationales": {
+        "D": "NPP is GPP minus autotrophic respiration, so 10 000 not 20 000; 1000/10 000 is 10% not 50%.",
+        "A": "The 900 is energy not passed to the next trophic level; efficiency of transfer is 100/1000 or 1000/10 000, not 900/1000.",
+        "B": "NPP is 10 000; quoting carnivores as 1% of GPP (200) would be 200, not the 100 listed, and mixes a basal GPP denominator with a two-step climb."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t25",
+      "type": "discrete",
+      "stem": "A population grows logistically: dN/dt = r N (1 − N/K) with r = 0.50 yr−1 and K = 400 individuals. Tabulated states:\n\nN | 1 − N/K | dN/dt (yr−1)\n0 | 1.00 | 0\n100 | 0.75 | 37.5\n200 | 0.50 | 50\n400 | 0.00 | 0\n\nIf the same r were used in exponential growth dN/dt = rN at N = 200, that rate would be 100 yr−1. Which statement is true?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Logistic growth is fastest at N = 0, where unused carrying capacity is greatest"
+        },
+        {
+          "key": "B",
+          "text": "At N = 400 the population still increases at rK = 200 yr−1"
+        },
+        {
+          "key": "C",
+          "text": "Exponential and logistic rates are equal at N = 200 because both contain the factor rN"
+        },
+        {
+          "key": "D",
+          "text": "The maximum logistic recruitment is at N = K/2 = 200, where dN/dt = 50, half the exponential rate at the same N"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "The logistic term (1 − N/K) is 0.5 at half carrying capacity, so dN/dt = 0.50 × 200 × 0.5 = 50 yr−1, matching the table and equal to half of rN = 100. The product N(1 − N/K) is maximised at N = K/2, not at N = 0 (where N itself is 0, so dN/dt = 0) and not at K (where the bracket is 0). Exponential equality fails because the extra (1 − N/K) factor is 0.5, not 1, at N = 200. At K the population stops growing.",
+      "distractor_rationales": {
+        "A": "The N = 0 row has dN/dt = 0; an empty habitat has unused K but no parents.",
+        "B": "The N = 400 row is 0, the definition of carrying capacity.",
+        "C": "The table’s 50 versus the exponential 100 shows they are not equal; (1 − N/K) is missing from the exponential model."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t26",
+      "type": "discrete",
+      "stem": "A PCR is designed to amplify a 500 bp genomic target. After 25 cycles, 10 µL of each reaction is run on an agarose gel beside a 100 bp ladder (bands 100, 200, 300, 400, 500, 600 bp).\n\nLane | template | result\n1 | 10 ng genomic DNA | single band aligned with the 500 bp ladder mark\n2 | water, no DNA | no band\n3 | genomic DNA, no polymerase | no band\n4 | genomic DNA, annealing temperature 10 °C too low | smear plus extra bands at 300 and 700 bp\n5 | water, but a 500 bp band appears\n\nWhich quality-control reading is justified?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Lane 1 is the expected specific product; lane 2 is a clean negative; lane 5 indicates contamination of the no-template control; lane 4 shows non-specific priming"
+        },
+        {
+          "key": "B",
+          "text": "Lane 5 proves the water contained the 500 bp gene as a natural solute"
+        },
+        {
+          "key": "C",
+          "text": "Lane 3 should have shown a 500 bp band because DNA was added, so polymerase is unnecessary"
+        },
+        {
+          "key": "D",
+          "text": "Lane 1’s alignment with 500 bp proves the sequence is correct to the nucleotide"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "A unique 500 bp amplicon with a blank no-template lane is the textbook pass. Lane 3 without polymerase cannot synthesise DNA, so a blank lane is the correct enzyme control, not a failure. Extra bands when annealing is too cold are misprimed products. A 500 bp band in a water lane means template (or amplicon) contaminated that tube, the most important fail. Water does not come with genomic targets at PCR-detectable concentration in a well-run lab. Co-migration with a 500 bp marker estimates length, not sequence identity.",
+      "distractor_rationales": {
+        "B": "A band in the water lane is contamination, not evidence that solvent water encodes a 500 bp gene.",
+        "C": "Polymerase is required to extend primers; lane 3 is correctly blank.",
+        "D": "Gel mobility gives approximate length; sequencing or a restriction digest would be needed for sequence confirmation."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t26",
+      "type": "discrete",
+      "stem": "The Abbe resolution limit is d = 0.61 λ / NA. Two fluorescent point sources are 250 nm apart. Illumination wavelength λ = 500 nm.\n\nObjective | NA | calculated d\nAir 10× | 0.25 | 1220 nm\nAir 40× | 0.65 | 469 nm\nOil 100× | 1.40 | 218 nm\n\nWhich objective can resolve the two sources as separate, and why?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The 40× and 100× equally, because both have d listed below 500 nm"
+        },
+        {
+          "key": "B",
+          "text": "Only the oil 100×, because 218 nm < 250 nm while 469 nm and 1220 nm are coarser than the spacing"
+        },
+        {
+          "key": "C",
+          "text": "All three, because 250 nm is larger than the wavelength divided by 2"
+        },
+        {
+          "key": "D",
+          "text": "Only the 10×, because lower magnification reduces diffraction"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Two points are resolved when their separation exceeds d. For the oil lens, 250 > 218, so they are just resolved. For the 40× air lens, 250 < 469, so they merge. The 10× is far worse (d = 1.22 µm). Magnification does not appear in the Abbe formula; numerical aperture and wavelength do. Being less than 500 nm (the wavelength) is not the criterion—the 40× d of 469 nm is still larger than 250 nm. The naive λ/2 = 250 nm cutoff is an approximation at NA = 1.22, not a free pass for every lens.",
+      "distractor_rationales": {
+        "C": "λ/2 = 250 nm would require NA ≈ 1.22; the 0.25 and 0.65 objectives do not meet that.",
+        "D": "Lower NA at 10× makes d worse (1220 nm), not better; magnification is not in the formula.",
+        "A": "The 40× d of 469 nm still exceeds 250 nm, so that lens cannot split the pair."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t27",
+      "type": "discrete",
+      "stem": "A 4000 bp plasmid has a single EcoRI site. A 1000 bp EcoRI fragment is ligated into that site. After ligation, DNA is linearised with EcoRI (complete digestion) and run on a gel.\n\nSample | observed band(s)\nUncut parental plasmid | fast supercoiled band (apparent ~2500 bp)\nParental plasmid + EcoRI | 4000 bp\nLigation + EcoRI | 4000 bp and 1000 bp\nSelf-ligated parental recircularised + EcoRI | 4000 bp only\n\nWhich conclusion is supported?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "EcoRI linearisation of recombinants must give a single 5000 bp band because the insert lacks EcoRI ends"
+        },
+        {
+          "key": "B",
+          "text": "A 1000 bp band proves contamination with genomic DNA of that length rather than insert release"
+        },
+        {
+          "key": "C",
+          "text": "Successful recombinants release the 1000 bp insert plus the 4000 bp backbone; empty recircularised plasmid yields only 4000 bp"
+        },
+        {
+          "key": "D",
+          "text": "The uncut apparent 2500 bp band is the true recombinant size (4000 + 1000 − 2500)"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Cloning into a unique EcoRI site recreates EcoRI sites at both insert–vector junctions. Complete EcoRI digestion of a recombinant therefore cuts out the 1000 bp insert and leaves the 4000 bp vector, two bands. An empty plasmid cut at its one EcoRI site is a 4000 bp line. Supercoiled uncut DNA migrates anomalously fast (~2500 apparent), which is not a true size and not 4000+1000−2500 arithmetic. The insert was defined as an EcoRI fragment, so it does have EcoRI ends; a 5000 bp linear would appear only if a different enzyme that cuts once in the recombinant were used.",
+      "distractor_rationales": {
+        "D": "Supercoiled mobility is not a reliable base-pair measure; 2500 is an apparent, not physical, size.",
+        "A": "EcoRI ends on the insert restore two EcoRI sites, so the recombinant should fall into 4000 + 1000, not remain 5000.",
+        "B": "The 1000 bp band matches the insert length used in the ligation; genomic contamination would not be a single clean 1000 bp species correlated with the ligation lane."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t27",
+      "type": "discrete",
+      "stem": "A CRISPR–Cas9 experiment targets exon 2 of gene F. Readouts in a clonal cell line:\n\nAssay | result\nSanger of exon 2 | 1 bp deletion, frameshift\nmRNA (RT–qPCR, exons 4–5) | 70% of wild-type level\nWestern blot, antibody to C-terminus | no band\nRescue: cDNA of F lacking the guide site | Western band restored; phenotype reversed\n\nWhich interpretation is most cautious and complete?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The remaining 70% mRNA means the protein must still be present at 70%, so the Western is wrong"
+        },
+        {
+          "key": "B",
+          "text": "The phenotype is an off-target effect that the rescue cannot address"
+        },
+        {
+          "key": "C",
+          "text": "A 1 bp deletion is too small to affect a gene, so F is unchanged"
+        },
+        {
+          "key": "D",
+          "text": "A frameshift knockout of F protein is likely causal, because protein is lost, a little mRNA remains, and a guide-resistant cDNA restores protein and phenotype"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "A single-base deletion in an exon shifts the reading frame and typically triggers loss of the C-terminal epitope, matching a blank Western. Residual mRNA at 70% is compatible with incomplete nonsense-mediated decay; mRNA is not a stoichiometric report of protein. Re-expressing a cDNA that cannot be recut by the guide restores the Western band and reverses the phenotype, the standard cis-rescue that argues the phenotype runs through F rather than an off-target. A 1 bp coding deletion is among the most disruptive small lesions, not a null-effect.",
+      "distractor_rationales": {
+        "A": "Frameshifts and NMD uncouple mRNA level from full-length protein; the C-terminal antibody is the relevant protein assay.",
+        "B": "A guide-resistant cDNA rescue that restores both protein and phenotype is exactly the experiment used to argue against off-target causation.",
+        "C": "Frameshifts of one base are not silent; they scramble every codon after the lesion and usually introduce a premature stop."
+      },
+      "difficulty_est": 0.57
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t28",
+      "type": "discrete",
+      "stem": "The Henderson–Hasselbalch relation for plasma is pH = 6.10 + log10([HCO3−] / (0.030 × PCO2)), with [HCO3−] in mM and PCO2 in mmHg. Three arterial samples:\n\nSample | PCO2 | [HCO3−]\nN | 40 | 24\nR | 80 | 24\nM | 40 | 12\n\nlog10(20) = 1.30; log10(10) = 1.00. What are the three pH values?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "N 7.40; R 7.10 (respiratory acidosis); M 7.10 (metabolic acidosis)"
+        },
+        {
+          "key": "B",
+          "text": "N 7.40; R 7.70; M 7.70, adding rather than taking the log of the ratio"
+        },
+        {
+          "key": "C",
+          "text": "N 6.10; R 6.10; M 6.10, ignoring the bicarbonate/CO2 term"
+        },
+        {
+          "key": "D",
+          "text": "N 7.40; R 7.40; M 7.40, because 6.1 is constant"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Sample N: 0.030 × 40 = 1.20, and 24/1.20 = 20, so pH = 6.10 + 1.30 = 7.40. Sample R doubles PCO2 at fixed bicarbonate: 24 / 2.40 = 10, pH = 6.10 + 1.00 = 7.10, a respiratory acidosis. Sample M halves bicarbonate at fixed PCO2: 12 / 1.20 = 10, pH = 7.10, a metabolic acidosis. The same pH of 7.10 is reached by two different ratio changes. Adding 20 instead of taking log10(20) would not yield 7.40. The pKa 6.10 is not the blood pH.",
+      "distractor_rationales": {
+        "B": "The logarithm of the ratio is required; 6.10 + 20 is meaningless as a pH, and raising PCO2 cannot alkalinise.",
+        "C": "Dropping the log term leaves only pKa, which is not arterial pH.",
+        "D": "pKa is constant, but pH still changes when the [HCO3−]/(K × PCO2) ratio changes, as R and M show."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.bio.t28",
+      "type": "discrete",
+      "stem": "Arterial blood gases and electrolytes:\n\nPatient | pH | PCO2 (mmHg) | [HCO3−] (mM) | Na+ | Cl−\nA | 7.32 | 60 | 30 | 140 | 100\nB | 7.20 | 25 | 9 | 140 | 100\nC | 7.20 | 25 | 9 | 140 | 116\n\nAnion gap AG = [Na+] − ([Cl−] + [HCO3−]); a normal gap is about 12 mM. Which classification is consistent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "All three are the same disorder because each pH is below 7.40"
+        },
+        {
+          "key": "B",
+          "text": "A chronic respiratory acidosis (high PCO2 with compensatory HCO3− 30); B high-gap metabolic acidosis (AG 31); C hyperchloraemic normal-gap metabolic acidosis (AG 15)"
+        },
+        {
+          "key": "C",
+          "text": "A metabolic alkalosis, because HCO3− is 30"
+        },
+        {
+          "key": "D",
+          "text": "B and C are respiratory alkaloses, because PCO2 is 25"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Patient A has acidaemia with PCO2 60 mmHg, so the primary process is respiratory acidosis; bicarbonate has risen to 30 mM, a renal compensation seen in chronic CO2 retention, not a metabolic alkalosis as the primary. Patients B and C share pH 7.20 and low bicarbonate, i.e. metabolic acidosis, with PCO2 25 mmHg as respiratory compensation (not a primary respiratory alkalosis, which would raise pH). AG for B is 140 − (100+9) = 31, a high-gap (e.g. lactate/ketoacid) acidosis. AG for C is 140 − (116+9) = 15, essentially normal, with hyperchloraemia filling the gap. Shared acidaemia does not unify the three mechanisms.",
+      "distractor_rationales": {
+        "C": "A high bicarbonate with low pH and high PCO2 is compensated respiratory acidosis; primary metabolic alkalosis would raise pH.",
+        "D": "Low PCO2 with low pH is compensation for a metabolic acidosis; a primary respiratory alkalosis alkalinises.",
+        "A": "pH < 7.40 only says acidaemia; the PCO2, HCO3− and AG patterns distinguish three disorders."
+      },
+      "difficulty_est": 0.66
+    }
+  ]
+}

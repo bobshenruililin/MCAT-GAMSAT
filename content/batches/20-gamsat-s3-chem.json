@@ -1,0 +1,1616 @@
+{
+  "items": [
+    {
+      "concept_id": "GAMSAT.S3.chem.t2",
+      "type": "discrete",
+      "stem": "Successive ionisation energies (kJ mol−1) of element Q in period 3:\n\nIE1 590 | IE2 1150 | IE3 4910 | IE4 6480 | IE5 8110\n\nA large jump marks removal of an electron from a new, much more stable shell. Which inference is justified, and what is the most likely ground-state valence configuration of the neutral atom?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The jump after IE2 shows two valence electrons; Q is a group-2 metal with valence ns2"
+        },
+        {
+          "key": "B",
+          "text": "The jump after IE2 shows Q is a halogen with valence ns2 np5"
+        },
+        {
+          "key": "C",
+          "text": "IE values increase smoothly, so Q is a noble gas with ns2 np6"
+        },
+        {
+          "key": "D",
+          "text": "The jump after IE5 shows five valence electrons, so Q is group 15 with ns2 np3"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "IE3 is more than four times IE2 (4910 versus 1150), while IE1 and IE2 are comparable. That pattern means the third electron comes from a complete inner shell, so only two electrons are valence electrons: a group-2 configuration ns2 (Mg-like in period 3). A halogen would show a jump after seven valence ionisations. A noble-gas atom would have a very high IE1. A jump after IE5 is not present; IE3 is already the cliff. The configuration therefore cannot be np5, np6, or np3.",
+      "distractor_rationales": {
+        "B": "A halogen has seven valence electrons, so the first large jump would appear after IE7, not after IE2.",
+        "C": "IE1 of Q is only 590 kJ mol−1, far too low for a noble gas, and the series is not smooth: IE3 is a cliff.",
+        "D": "The cliff is at IE3, not after five electrons; group 15 would jump after IE5."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t2",
+      "type": "discrete",
+      "stem": "Iron is atomic number 26. A photoelectron experiment and chemical evidence are summarised:\n\nSpecies | 4s occupancy | 3d occupancy | unpaired 3d electrons (high-spin)\nFe | 2 | 6 | 4\nFe2+ | 0 | 6 | 4\nFe3+ | 0 | 5 | 5\n\nNeutral Fe is [Ar] 4s2 3d6. Which statement about ionisation and the Aufbau/exchange pattern is supported?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Fe and Fe2+ cannot both have four unpaired 3d electrons because ionisation always pairs remaining electrons"
+        },
+        {
+          "key": "B",
+          "text": "The 4s electrons are lost first, so Fe2+ is 3d6; Fe3+ is 3d5, a half-filled high-spin set with five unpaired electrons"
+        },
+        {
+          "key": "C",
+          "text": "3d electrons are always lost before 4s, so Fe2+ would be 4s2 3d4"
+        },
+        {
+          "key": "D",
+          "text": "Fe3+ must be 4s1 3d4 to keep a 4s electron"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Cations of the first transition series are formed by emptying 4s before 3d, matching the table: Fe2+ is 4s0 3d6 and Fe3+ is 4s0 3d5. High-spin 3d6 still has four unpaired electrons (↑↑↑↑↑ plus one pair), so Fe and Fe2+ share that count. High-spin 3d5 is five unpaired, the half-filled advantage of Fe3+. Removing 3d before 4s would give Fe2+ as 4s2 3d4, contradicting the occupancy column. There is no requirement to retain a 4s electron in Fe3+, and ionisation does not force pairing of the remaining 3d set.",
+      "distractor_rationales": {
+        "C": "The table lists Fe2+ as 4s occupancy 0 and 3d occupancy 6, the opposite of losing 3d first.",
+        "D": "Fe3+ is listed as 4s 0 and 3d 5, not 4s1 3d4.",
+        "A": "The unpaired-electron column is 4 for both Fe and Fe2+, which is the high-spin 3d6 count."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t3",
+      "type": "discrete",
+      "stem": "Period-3 atomic radius and first ionisation energy:\n\nElement | radius (pm) | IE1 (kJ mol−1)\nNa | 186 | 496\nMg | 160 | 738\nAl | 143 | 577\nSi | 118 | 787\n\nWhich statement is consistent with both columns?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Al has a higher IE1 than Mg because it has more protons"
+        },
+        {
+          "key": "B",
+          "text": "Na has the smallest radius, which is why its IE1 is the lowest"
+        },
+        {
+          "key": "C",
+          "text": "Radius falls Na→Si as Zeff rises, but Al’s IE1 dips below Mg because Al loses a 3p electron that is higher in energy and more shielded than Mg’s 3s electron"
+        },
+        {
+          "key": "D",
+          "text": "Radius increases across the period, matching the IE1 dip at Al"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Radius decreases steadily from 186 to 118 pm as nuclear charge rises while the valence shell stays n=3, so Zeff climbs. IE1 generally climbs too (496 → 738 → 787) but Al is the well-known exception (577): the electron removed is 3p1, not 3s2, so it is easier to remove than Mg’s paired 3s electron despite Al’s extra proton. The radius column does not increase, Al’s IE1 is not higher than Mg, and Na has the largest, not smallest, radius.",
+      "distractor_rationales": {
+        "D": "Radius falls from 186 to 118 pm; it does not increase.",
+        "A": "The table shows Al IE1 = 577, lower than Mg 738, so extra protons do not dominate here.",
+        "B": "Na has the largest radius (186 pm); a large radius and low Zeff together explain the low IE1."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t3",
+      "type": "discrete",
+      "stem": "Halogen data:\n\nElement | covalent radius (pm) | IE1 (kJ mol−1) | electron affinity (kJ mol−1, exothermic as negative)\nF | 64 | 1680 | −328\nCl | 99 | 1255 | −349\nBr | 114 | 1140 | −325\n\nElectron affinity here is the enthalpy of X(g) + e− → X−(g). Which reading is supported?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "F has the most exothermic EA because it has the highest IE1"
+        },
+        {
+          "key": "B",
+          "text": "Br is the smallest halogen, which is why its IE1 is lowest"
+        },
+        {
+          "key": "C",
+          "text": "EA becomes steadily more exothermic from F to Br as radius increases"
+        },
+        {
+          "key": "D",
+          "text": "Radius and ease of removing an electron both increase down the group, but Cl has the most exothermic EA because F’s compact 2p shell raises electron–electron repulsion in F−"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Covalent radius increases 64 → 99 → 114 pm and IE1 falls 1680 → 1255 → 1140, the standard down-group weakening of attraction to valence electrons. Electron affinity, however, is most negative for Cl (−349), not F (−328): adding an electron to tiny F crowding a 2p subshell is less favourable than adding to Cl. EA is therefore not a monotone function of IE1 or of radius. Br is the largest listed atom, not the smallest, which is why its IE1 is the lowest of the three.",
+      "distractor_rationales": {
+        "A": "F’s EA is −328, less exothermic than Cl’s −349, so the highest IE1 does not produce the most exothermic EA.",
+        "B": "Br’s radius 114 pm is the largest in the table.",
+        "C": "EA goes −328, −349, −325, a peak at Cl, not a steady trend toward Br."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t4",
+      "type": "discrete",
+      "stem": "Physical data for three chlorides:\n\nCompound | melting point (°C) | electrical conductivity of liquid | ΔEN (Pauling)\nNaCl | 801 | high | 2.1\nMgCl2 | 714 | high | 1.8\nSiCl4 | −70 | none | 1.2\n\nWhich bonding assignment matches the table?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "NaCl and MgCl2 are ionic lattices that melt to mobile ions; SiCl4 is a covalent molecular liquid with no free ions"
+        },
+        {
+          "key": "B",
+          "text": "SiCl4 is ionic because chlorine is present, which is why it melts at −70 °C"
+        },
+        {
+          "key": "C",
+          "text": "NaCl is molecular, because 801 °C is too low for a lattice"
+        },
+        {
+          "key": "D",
+          "text": "All three are giant covalent networks, so all should conduct when molten"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "High melting points plus molten conductivity are the ionic-lattice signature: Na+Cl− and Mg2+Cl− melt into mobile ions. SiCl4 melts at −70 °C and does not conduct, so it is a discrete SiCl4 molecule held by weak intermolecular forces, consistent with a smaller electronegativity gap. Chlorine content does not make a compound ionic. 801 °C is a typical ionic melting point, not a molecular one. A giant covalent chloride would not melt at −70 °C, and molten NaCl/MgCl2 conductivity would then be unexplained if there were no ions.",
+      "distractor_rationales": {
+        "B": "An ionic lattice does not melt at −70 °C, and molten SiCl4 does not conduct.",
+        "C": "801 °C and high molten conductivity are ionic, not molecular, markers.",
+        "D": "SiCl4’s −70 °C melting point and zero conductivity rule out a giant network, and networks do not produce ionic conductivity on melting."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t4",
+      "type": "discrete",
+      "stem": "Lattice enthalpy magnitudes (kJ mol−1, all exothermic as negative) estimated from Born–Haber cycles:\n\nSalt | |ΔH_latt|\nNaF | 910\nMgO | 3900\nLiF | 1030\nNaI | 700\n\nCation/anion radii increase Na+ < Mg2+ and F− < I−; charges are 1 or 2. Lattice energy scales roughly with |q+ q−| / r. Which comparison is required by that scaling and the table?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "All four lattice enthalpies must be equal because each formula unit contains two ions"
+        },
+        {
+          "key": "B",
+          "text": "MgO >> NaF mainly because of the 2×2 charge product, and NaI is weaker than NaF because I− is larger than F−"
+        },
+        {
+          "key": "C",
+          "text": "NaI should exceed MgO because iodine is heavier"
+        },
+        {
+          "key": "D",
+          "text": "LiF is weaker than NaF because Li+ is smaller than Na+"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "MgO’s |q+q−| = 4 versus 1 for NaF, and the ions are still small, so |ΔH_latt| jumps from 910 to 3900 kJ mol−1. NaI at 700 is below NaF at 910 because the larger iodide increases r in the denominator. LiF at 1030 is stronger than NaF, as expected for a smaller cation, not weaker. Mass of iodine is irrelevant to the Coulomb scaling. Counting ‘two ions’ would make every 1:1 salt identical, contradicting the 700–3900 spread.",
+      "distractor_rationales": {
+        "C": "NaI is the weakest lattice in the table (700), not stronger than MgO (3900).",
+        "D": "LiF is 1030, larger than NaF 910, matching the smaller Li+ radius.",
+        "A": "The four values 910, 3900, 1030 and 700 are not equal."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t5",
+      "type": "discrete",
+      "stem": "Valence electron counts and VSEPR conclusions for three molecules:\n\nMolecule | valence e− | electron domains on central atom | predicted shape | measured dipole\nCO2 | 16 | 2 (two C=O) | linear | 0 D\nSO2 | 18 | 3 (two S–O bonding regions + 1 lone pair) | bent | 1.6 D\nBF3 | 24 | 3 bonding, 0 lone pairs | trigonal planar | 0 D\n\nWhich statement is consistent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "BF3 is polar because fluorine is electronegative, so the dipole cannot be 0 D"
+        },
+        {
+          "key": "B",
+          "text": "Any molecule with an 18-electron count must be linear like CO2"
+        },
+        {
+          "key": "C",
+          "text": "SO2 is polar because the lone pair bends the molecule so the S–O bond dipoles do not cancel, unlike linear CO2 and trigonal BF3"
+        },
+        {
+          "key": "D",
+          "text": "CO2 is bent like SO2, which is why both have 16–18 electrons"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "CO2’s two domains lie 180° apart and the C=O dipoles cancel (0 D). SO2 has three domains, so the observed shape is bent and a net dipole remains (1.6 D). BF3’s three identical B–F bonds at 120° cancel despite polar bonds (0 D). Electron count 16 versus 18 is why CO2 is not bent. Electronegative fluorines do not create a dipole when the vector sum is zero by symmetry. Eighteen electrons is the SO2 count, and SO2 is bent, not linear.",
+      "distractor_rationales": {
+        "D": "CO2 is listed as linear with dipole 0 D; sharing a similar electron count with SO2 does not make it bent.",
+        "A": "The table gives BF3 a 0 D dipole; symmetry cancellation overrides bond polarity.",
+        "B": "SO2 has 18 electrons and is bent with a 1.6 D dipole."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t5",
+      "type": "discrete",
+      "stem": "Xenon difluoride is analysed. Xe contributes 8 valence electrons and each F contributes 7, total 22. The Lewis structure places 3 lone pairs and 2 bonding pairs on Xe (5 electron domains). Five domains adopt a trigonal bipyramidal arrangement; lone pairs occupy equatorial sites. What is the F–Xe–F shape, and is the molecule polar if the two Xe–F bonds are equivalent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bent and polar, because any molecule with lone pairs is bent"
+        },
+        {
+          "key": "B",
+          "text": "Trigonal planar, using only three of the five domains"
+        },
+        {
+          "key": "C",
+          "text": "Square planar and polar, the 4-domain parentage of XeF4 applied to XeF2"
+        },
+        {
+          "key": "D",
+          "text": "Linear and non-polar, because the two fluorines occupy axial sites 180° apart and the equatorial lone pairs cancel by symmetry"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Five electron domains are trigonal bipyramidal. Three lone pairs take the 120° equatorial belt, leaving the two fluorines axial, so the observed molecular shape is linear (F–Xe–F = 180°). Equivalent axial bond dipoles cancel, and the three equatorial lone pairs are symmetrically disposed, so the molecule is non-polar. The presence of lone pairs does not force a bent molecular shape when those lone pairs are equatorial in a TBP. XeF2 is not a three-domain or four-domain problem; that would describe BF3 or XeF4, not 22-electron XeF2.",
+      "distractor_rationales": {
+        "A": "Lone pairs here occupy equatorial TBP sites, yielding a linear molecular shape, not a bent one.",
+        "B": "All five domains around Xe count in VSEPR; ignoring two of them is not justified.",
+        "C": "XeF4 is the square-planar 12-electron-on-Xe case (6 domains); XeF2 has only two fluorines."
+      },
+      "difficulty_est": 0.6
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t6",
+      "type": "discrete",
+      "stem": "Normal boiling points of four hydrides:\n\nCompound | Mr | bp (°C)\nCH4 | 16 | −162\nNH3 | 17 | −33\nHF | 20 | 20\nH2O | 18 | 100\n\nDispersion forces increase with Mr in the absence of hydrogen bonding. Which explanation of the table is best?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "CH4, with no N/O/F–H bonding, boils far lower than the three hydrogen-bonded hydrides of similar mass; H2O boils highest because each molecule can form up to four hydrogen bonds in a network"
+        },
+        {
+          "key": "B",
+          "text": "Boiling point simply tracks Mr, so HF must boil below CH4"
+        },
+        {
+          "key": "C",
+          "text": "NH3 has the highest bp because nitrogen is less electronegative than oxygen"
+        },
+        {
+          "key": "D",
+          "text": "All four compounds are hydrogen-bonded equally, so the 262 °C spread is random"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Mr values lie in a narrow 16–20 window, so dispersion alone cannot explain a 262 °C spread. CH4 cannot hydrogen-bond and boils at −162 °C. NH3, HF and H2O all hydrogen-bond and boil much higher. Water’s tetrahedral two-donor plus two-acceptor capacity builds a three-dimensional network, placing its bp well above HF (which has a donor/acceptor mismatch) and NH3. Tracking Mr would rank HF highest and CH4 lowest by only a few degrees, not 182 °C. NH3 is not the highest, and the four species are not equivalent in hydrogen-bond inventory.",
+      "distractor_rationales": {
+        "B": "HF (Mr 20) boils 182 °C above CH4 (Mr 16); mass does not dominate.",
+        "C": "NH3 boils at −33 °C, below both HF and H2O.",
+        "D": "CH4 cannot form conventional hydrogen bonds; the spread is systematic, not random."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t6",
+      "type": "discrete",
+      "stem": "Vapour pressures at 20 °C:\n\nLiquid | Pvap (kPa) | notable IMF\nPentane | 57 | dispersion only\nPropanone | 24 | dipole–dipole + dispersion\nEthanol | 5.8 | hydrogen bonding + dispersion\nWater | 2.3 | hydrogen-bond network\n\nA lower vapour pressure at a given temperature means stronger net attractions in the liquid. Which ranking of total intermolecular attraction is supported?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Propanone > water, because a carbonyl dipole is always stronger than hydrogen bonding"
+        },
+        {
+          "key": "B",
+          "text": "Water > ethanol > propanone > pentane"
+        },
+        {
+          "key": "C",
+          "text": "Pentane > propanone > ethanol > water, following vapour pressure"
+        },
+        {
+          "key": "D",
+          "text": "All four are equal because each is a molecular liquid at 20 °C"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Vapour pressure falls 57 → 24 → 5.8 → 2.3 kPa from pentane to water, so the liquid-phase attractions increase in that same direction: pentane (dispersion only) weakest, then polar propanone, then hydrogen-bonded ethanol, then the water network. Ranking by the vapour-pressure numbers themselves reverses the force order. Being molecular at 20 °C does not equalise escaping tendency. Propanone’s 24 kPa is an order of magnitude above water’s 2.3 kPa, so the carbonyl dipole is not stronger than water’s hydrogen-bond network.",
+      "distractor_rationales": {
+        "C": "High vapour pressure means weak attractions; that list is the reverse of interaction strength.",
+        "D": "A 25-fold range in Pvap shows the liquids are not equivalent.",
+        "A": "Propanone’s vapour pressure is much higher than water’s, so its net IMF are weaker."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t7",
+      "type": "discrete",
+      "stem": "Hydrogen is burned: 2 H2 + O2 → 2 H2O. A closed bulb is charged with 4.0 g H2 (Mr = 2.0) and 16 g O2 (Mr = 32). Which reagent limits, and what mass of water can form?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The reagents are stoichiometric; 20 g H2O forms (4 + 16)"
+        },
+        {
+          "key": "B",
+          "text": "O2 limits (0.50 mol); 9.0 g H2O forms"
+        },
+        {
+          "key": "C",
+          "text": "O2 limits (0.50 mol); 18 g H2O forms"
+        },
+        {
+          "key": "D",
+          "text": "H2 limits (2.0 mol); 36 g H2O forms"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Moles: n(H2) = 4.0/2.0 = 2.0 mol; n(O2) = 16/32 = 0.50 mol. The equation consumes 2 mol H2 per 1 mol O2, so 0.50 mol O2 would need 1.0 mol H2 and is limiting; 1.0 mol H2 remains unused. Water produced is 2 mol H2O per mol O2, hence 1.0 mol = 18 g. Hydrogen is in excess, not limiting. Adding masses of H2 and O2 (20 g) ignores that 2.0 g of unused H2 stays uncombined. Half of 18 g would be appropriate for 0.25 mol O2, not 0.50 mol.",
+      "distractor_rationales": {
+        "D": "2.0 mol H2 would require 1.0 mol O2; only 0.50 mol O2 is present, so H2 is excess.",
+        "A": "The mole ratio is 2.0 : 0.50 = 4 : 1, not the stoichiometric 2 : 1, and unused H2 is not water.",
+        "B": "0.50 mol O2 produces 1.0 mol H2O = 18 g, not 0.50 mol = 9 g."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t7",
+      "type": "discrete",
+      "stem": "Ammonia synthesis: N2 + 3 H2 → 2 NH3. A reactor is loaded with 2.0 mol N2 and 3.0 mol H2. After the limiting reagent is exhausted, a student recovers 1.6 mol NH3. What is the percent yield?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "40%"
+        },
+        {
+          "key": "B",
+          "text": "53%"
+        },
+        {
+          "key": "C",
+          "text": "100%"
+        },
+        {
+          "key": "D",
+          "text": "80%"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Hydrogen is limiting: 3.0 mol H2 would consume 1.0 mol N2 and produce 2.0 mol NH3 (the 3:2 stoichiometry). Nitrogen is in excess by 1.0 mol. Theoretical yield is therefore 2.0 mol NH3. Percent yield = 1.6/2.0 × 100% = 80%. Using N2 as limiting would predict 4.0 mol NH3 and a 40% yield, but that calculation spends 6.0 mol H2 that were never loaded. 1.6/3.0 is an unmotivated 53%. The reaction did not go to the theoretical 2.0 mol, so the yield is not 100%.",
+      "distractor_rationales": {
+        "A": "40% comes from taking N2 as limiting (4.0 mol theoretical) despite insufficient H2.",
+        "B": "53% is 1.6/3.0, mixing product moles with H2 moles.",
+        "C": "1.6 mol recovered is less than the 2.0 mol theoretical ceiling."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t8",
+      "type": "discrete",
+      "stem": "A stock solution is 2.00 M HCl. Dilution uses C1V1 = C2V2.\nStep 1: 10.0 mL stock is made up to 100.0 mL (flask A).\nStep 2: 10.0 mL of A is made up to 100.0 mL (flask B).\nStep 3: 10.0 mL of B is made up to 100.0 mL (flask C).\nWhat is [HCl] in flask C?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.00200 M"
+        },
+        {
+          "key": "B",
+          "text": "0.0200 M"
+        },
+        {
+          "key": "C",
+          "text": "0.200 M"
+        },
+        {
+          "key": "D",
+          "text": "0.000200 M"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Each step multiplies concentration by 10.0/100.0 = 0.100, a tenfold dilution. Three successive tenfold dilutions multiply by 10−3, so 2.00 × 10−3 = 0.00200 M. After one step the solution would be 0.200 M and after two steps 0.0200 M; stopping the count early produces those distractors. Four tenfold steps would give 0.000200 M. The volumes are consistent with C1V1 = C2V2 at each stage: 2.00 × 10.0 = C × 100, and repeating.",
+      "distractor_rationales": {
+        "B": "0.0200 M is the concentration after two dilutions, flask B, not flask C.",
+        "C": "0.200 M is flask A, after a single 10 → 100 mL dilution.",
+        "D": "0.000200 M would be a fourth tenfold dilution that was not performed."
+      },
+      "difficulty_est": 0.34
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t8",
+      "type": "discrete",
+      "stem": "A 2.00 mg mass of a drug is dissolved in 1.00 kg of water. Density of the dilute solution is 1.00 g mL−1. 1 ppm is 1 mg of solute per kg of solution. The same solution is also described in mol L−1; the drug’s molar mass is 200 g mol−1. Which pair is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.00200 ppm and 1.00 × 10−5 M"
+        },
+        {
+          "key": "B",
+          "text": "2.00 ppm and 1.00 × 10−5 M"
+        },
+        {
+          "key": "C",
+          "text": "2.00 ppm and 1.00 × 10−2 M"
+        },
+        {
+          "key": "D",
+          "text": "2000 ppm and 1.00 × 10−5 M"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "2.00 mg in 1.00 kg is exactly 2.00 ppm by the given definition. The solution volume is 1.00 L at the stated density. Moles of drug = 2.00 × 10−3 g / 200 g mol−1 = 1.00 × 10−5 mol, so molarity is 1.00 × 10−5 mol L−1. Using 2.00 g instead of 2.00 mg would give 0.0100 M. Calling 2.00 mg in 1 kg ‘2000 ppm’ treats the solute as 2 g. 0.00200 ppm would be 2.00 µg in 1 kg.",
+      "distractor_rationales": {
+        "C": "1.00 × 10−2 M would require 2.00 g of drug in 1 L, a thousand-fold mass error.",
+        "D": "2000 ppm would be 2.00 g per kg, not 2.00 mg.",
+        "A": "The ppm figure is 2.00, not 0.00200; the molarity half of the option is right but the ppm is not."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t9",
+      "type": "discrete",
+      "stem": "Use PV = nRT with R = 0.080 L atm mol−1 K−1. A cylinder contains 2.0 mol of an ideal gas at 300 K in 24 L. What is the pressure? After a leak at constant T and V the pressure falls to 1.0 atm, how many moles remain?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Initial P = 2.0 atm; 2.0 mol remain because T and V are fixed"
+        },
+        {
+          "key": "B",
+          "text": "Initial P = 24 atm; 0.080 mol remain"
+        },
+        {
+          "key": "C",
+          "text": "Initial P = 2.0 atm; 1.0 mol remains after the leak"
+        },
+        {
+          "key": "D",
+          "text": "Initial P = 0.50 atm; 4.0 mol remain"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "P = nRT/V = 2.0 × 0.080 × 300 / 24 = 48 / 24 = 2.0 atm. At the same T and V, P is proportional to n, so halving P to 1.0 atm halves n to 1.0 mol. Inverting n and V would give 0.50 atm. Fixed T and V do not freeze n when gas leaks; P would then stay 2.0 atm. Using V in place of nRT/V gives 24 atm, which is the volume number, not the pressure.",
+      "distractor_rationales": {
+        "D": "0.50 atm is V/(nRT) or a swapped n and V; the leak cannot increase the mole count to 4.0.",
+        "A": "A leak at falling P must remove moles; T and V being fixed is why n tracks P.",
+        "B": "24 is the volume in litres, not P, and 0.080 is R, not the remaining n."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t9",
+      "type": "discrete",
+      "stem": "A 10.0 L flask at 300 K holds 0.20 mol O2 and 0.80 mol N2. Dalton’s law: each gas’s partial pressure is its mole fraction times Ptotal, and Ptotal = ntotal RT/V with R = 0.080 L atm mol−1 K−1. Graham’s law: rate of effusion ∝ 1/√Mr. What is p(O2), and how many times faster does O2 (Mr 32) effuse than SO2 (Mr 64) through the same pinhole?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "p(O2) = 2.4 atm; O2 effuses 2 times faster"
+        },
+        {
+          "key": "B",
+          "text": "p(O2) = 0.48 atm; O2 effuses 2 times faster (64/32 without the square root)"
+        },
+        {
+          "key": "C",
+          "text": "p(O2) = 0.080 atm; rates are equal because both are gases"
+        },
+        {
+          "key": "D",
+          "text": "p(O2) = 0.48 atm; O2 effuses √2 ≈ 1.4 times faster than SO2"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "ntotal = 1.00 mol, so Ptotal = 1.00 × 0.080 × 300 / 10.0 = 2.4 atm. Mole fraction of O2 is 0.20, so p(O2) = 0.48 atm. Graham’s ratio is √(64/32) = √2 ≈ 1.41, not 2. Using Ptotal as if it were p(O2) gives 2.4 atm. Dropping the square root doubles the effusion ratio. p(O2) is not R, and molar mass clearly separates the effusion rates.",
+      "distractor_rationales": {
+        "A": "2.4 atm is the total pressure, not the oxygen partial pressure; the effusion factor 2 omitted the square root and used the wrong pairing anyway if applied to O2/SO2 without √.",
+        "B": "The 0.48 atm figure is right, but effusion rates go as the square root of the inverse mass ratio, √2 not 2.",
+        "C": "0.080 is R, not a pressure here; different Mr values mean different effusion rates."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t11",
+      "type": "discrete",
+      "stem": "For the condensation-like process A(g) → A(l), ΔH = −40.0 kJ mol−1 and ΔS = −100 J K−1 mol−1 = −0.100 kJ K−1 mol−1. ΔG = ΔH − TΔS. Compute ΔG at 300 K and at 500 K, and the temperature at which ΔG = 0.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "ΔG(300 K) = −10 kJ mol−1 (spontaneous); ΔG(500 K) = +10 kJ mol−1 (not); crossover T = 400 K"
+        },
+        {
+          "key": "B",
+          "text": "ΔG is −40 kJ mol−1 at both temperatures because ΔH is constant"
+        },
+        {
+          "key": "C",
+          "text": "ΔG(300 K) = +10 kJ mol−1; the process is never spontaneous"
+        },
+        {
+          "key": "D",
+          "text": "Crossover T = 0.25 K, from 40/0.100 without converting ΔS into kJ"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "At 300 K, TΔS = 300 × (−0.100) = −30 kJ mol−1, so ΔG = −40 − (−30) = −10 kJ mol−1, spontaneous. At 500 K, TΔS = −50 kJ mol−1, ΔG = −40 − (−50) = +10 kJ mol−1, not spontaneous. Setting ΔG = 0 gives T = ΔH/ΔS = 40.0 / 0.100 = 400 K. ΔH alone is not ΔG. The sign at 300 K is negative, not positive. Forgetting to put ΔS in kJ produces a 400-fold temperature error (0.25 K is 40/160, or 40/100 without unit conversion depending on the slip).",
+      "distractor_rationales": {
+        "B": "The −TΔS term changes by 20 kJ mol−1 between 300 and 500 K, so ΔG is not frozen at ΔH.",
+        "C": "ΔG at 300 K is −10 kJ mol−1, so the process is spontaneous below 400 K.",
+        "D": "T = 40.0 kJ / 0.100 kJ K−1 = 400 K; using 100 J without converting yields 400 K still if consistent, but 0.25 K is not that quotient."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t11",
+      "type": "discrete",
+      "stem": "Standard entropy changes (J K−1 mol−1) estimated from gas counts (each mole of gas ≈ 200 J K−1 mol−1, liquids/solids neglected):\n\nReaction | gas moles reactants → products | predicted ΔS°\nN2 + 3 H2 → 2 NH3 | 4 → 2 | −400\nCaCO3(s) → CaO(s) + CO2(g) | 0 → 1 | +200\n2 SO2 + O2 → 2 SO3 | 3 → 2 | −200\nH2O(l) → H2O(g) | 0 → 1 | +200\n\nFor which reactions is a high temperature most likely to make ΔG more negative if ΔH° is positive for the decomposition and vapourisation rows and negative for the two combination rows?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "None, because ΔS° does not enter ΔG"
+        },
+        {
+          "key": "B",
+          "text": "The CaCO3 decomposition and the water vaporisation, because both have ΔS° > 0 so −TΔS becomes more negative as T rises"
+        },
+        {
+          "key": "C",
+          "text": "The ammonia and SO3 syntheses, because they have the largest |ΔS°|"
+        },
+        {
+          "key": "D",
+          "text": "All four, because ΔG always falls with temperature"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "ΔG° = ΔH° − TΔS°. When ΔS° is positive, −TΔS° is negative and grows with T, favouring the endothermic CaCO3 and H2O(l)→H2O(g) processes at high temperature. The two combination reactions have ΔS° < 0, so −TΔS° is positive and high T makes ΔG° less favourable (Haber and SO3 synthesis are therefore low-T, high-K thermodynamically). Large |ΔS| with the wrong sign opposes high-T spontaneity. ΔG does not automatically fall with T, and ΔS is exactly the T-dependent piece of ΔG.",
+      "distractor_rationales": {
+        "C": "Those syntheses have negative ΔS, so high T works against them thermodynamically.",
+        "D": "For negative ΔS, ΔG becomes more positive as T rises.",
+        "A": "The −TΔS term is the explicit temperature dependence of ΔG."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t14",
+      "type": "discrete",
+      "stem": "A buffer is made from ethanoic acid (pKa = 4.76) and sodium ethanoate. Henderson–Hasselbalch: pH = pKa + log10([A−]/[HA]). Three mixtures, all at 25 °C:\n\nMixture | [HA] (M) | [A−] (M)\nP | 0.10 | 0.10\nQ | 0.10 | 0.20\nR | 0.20 | 0.10\n\nlog10(2) = 0.30. What are the three pH values?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "All 4.76, because pKa is constant"
+        },
+        {
+          "key": "B",
+          "text": "P 0.00; Q 0.30; R −0.30, reporting only the log term"
+        },
+        {
+          "key": "C",
+          "text": "P 4.76; Q 5.06; R 4.46"
+        },
+        {
+          "key": "D",
+          "text": "P 4.76; Q 4.46; R 5.06 (inverting the ratio)"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "When [A−]=[HA], log10(1)=0 and pH=pKa=4.76. Mixture Q has [A−]/[HA]=2, so pH=4.76+0.30=5.06. Mixture R has ratio 0.50, log10(0.50)=−0.30, pH=4.46. Inverting the ratio swaps Q and R. Constancy of pKa does not freeze pH when the buffer ratio changes—that is the point of Henderson–Hasselbalch. The log term alone is not a pH.",
+      "distractor_rationales": {
+        "D": "Q is the acetate-rich buffer and must sit above pKa; R is acid-rich and sits below.",
+        "A": "pKa is the centre, but pH still follows the log ratio, as Q and R show.",
+        "B": "Those figures omit pKa; pH values near 0 or negative are not ethanoic buffers."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t14",
+      "type": "discrete",
+      "stem": "20.0 mL of 0.10 M weak acid HA (pKa = 5.00) is titrated with 0.10 M NaOH. Approximate pH landmarks:\n\nVolume NaOH (mL) | composition | pH\n0.0 | 0.10 M HA | ~3 (not needed)\n10.0 | equimolar HA/A− | 5.00\n20.0 | equivalence, 0.050 M A− | >7\n30.0 | excess strong base | ~12\n\nWhich statement is justified?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Equivalence is at 10.0 mL, because that is where pH = pKa"
+        },
+        {
+          "key": "B",
+          "text": "The equivalence pH is 5.00, the pKa of HA"
+        },
+        {
+          "key": "C",
+          "text": "After 30.0 mL the solution is a buffer at pH 5"
+        },
+        {
+          "key": "D",
+          "text": "The half-equivalence pH equals pKa (5.00); the equivalence point is basic because A− hydrolyses; a strong-acid analogue would be pH 7 at 20.0 mL"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Equal moles of HA and NaOH meet at 20.0 mL (0.0020 mol each), the equivalence point. At 10.0 mL half of HA is converted, so [HA]=[A−] and pH=pKa=5.00, which is half-equivalence, not equivalence. The salt A− is a weak base, so equivalence pH > 7, unlike a strong acid–strong base titration. At 30.0 mL there is 0.0010 mol of leftover OH− in 50 mL, a strongly basic unbuffered solution, not a pH 5 buffer.",
+      "distractor_rationales": {
+        "A": "10.0 mL is half-equivalence; stoichiometric completion is 20.0 mL.",
+        "B": "pKa describes the half-equivalence buffer, not the A− solution at equivalence.",
+        "C": "Excess strong base destroys the buffer; pH is near 12, as tabulated."
+      },
+      "difficulty_est": 0.49
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t15",
+      "type": "discrete",
+      "stem": "Ksp(AgCl) = 1.0 × 10−10 at 25 °C. Two experiments:\n(1) AgCl(s) in pure water: Ksp = s2, s = [Ag+] = [Cl−].\n(2) AgCl(s) in 0.10 M NaCl: Ksp = [Ag+](0.10).\nWhat are [Ag+] in (1) and (2)?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1.0 × 10−5 M in water; 1.0 × 10−9 M in 0.10 M Cl−"
+        },
+        {
+          "key": "B",
+          "text": "1.0 × 10−10 M in both, equal to Ksp"
+        },
+        {
+          "key": "C",
+          "text": "1.0 × 10−5 M in both, because s is a constant"
+        },
+        {
+          "key": "D",
+          "text": "0.10 M in water; 1.0 × 10−10 M in NaCl"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "In pure water s2 = 1.0 × 10−10, so s = 1.0 × 10−5 M. With a common-ion chloride concentration of 0.10 M, [Ag+] = Ksp / 0.10 = 1.0 × 10−9 M, a ten-thousand-fold suppression. Ksp is the product, not the silver concentration. Solubility is not invariant once a common ion is added. [Ag+] cannot be 0.10 M in water; that would give Q = 0.01, vastly exceeding Ksp.",
+      "distractor_rationales": {
+        "B": "Ksp is [Ag+][Cl−], so [Ag+] equals Ksp only if [Cl−] = 1.0 M, which is not the case in either experiment.",
+        "C": "The common-ion experiment is designed to change s; the two [Ag+] values differ by 104.",
+        "D": "0.10 M is the added chloride, not the silver ion in water."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t15",
+      "type": "discrete",
+      "stem": "Ksp(PbCl2) = 1.6 × 10−5 = [Pb2+][Cl−]2. Equal volumes of 0.20 M Pb(NO3)2 and 0.20 M HCl are mixed, so immediately after mixing, before any precipitation, [Pb2+] = 0.10 M and [Cl−] = 0.10 M. The reaction quotient Q = [Pb2+][Cl−]2. Does PbCl2 precipitate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "No; Q = 0 because solids have activity 1"
+        },
+        {
+          "key": "B",
+          "text": "Yes; Q = 1.0 × 10−3, which exceeds Ksp = 1.6 × 10−5"
+        },
+        {
+          "key": "C",
+          "text": "No; Q = 1.0 × 10−3, which is less than Ksp"
+        },
+        {
+          "key": "D",
+          "text": "Yes; Q = 0.10, set equal to [Pb2+] alone"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "After equal-volume mixing both ions are 0.10 M, so Q = (0.10)(0.10)2 = 0.10 × 0.010 = 1.0 × 10−3. Ksp is 1.6 × 10−5, and 1.0 × 10−3 > 1.6 × 10−5, so the solution is supersaturated and PbCl2 precipitates. Q is not smaller than Ksp. Omitting the square on chloride gives 0.010, still > Ksp, but the listed distractor 0.10 ignores chloride entirely. Q for the dissolved ions is not zero; the solid’s activity is 1 only once the solid is present at equilibrium, which is the state the comparison is testing for.",
+      "distractor_rationales": {
+        "C": "1.0 × 10−3 is larger than 1.6 × 10−5, so the inequality predicts precipitation.",
+        "D": "Q must include [Cl−]2; using [Pb2+] alone is not the Ksp expression.",
+        "A": "Q is computed from the ion concentrations before precipitation; it is 1.0 × 10−3, not 0."
+      },
+      "difficulty_est": 0.56
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t16",
+      "type": "discrete",
+      "stem": "A redox titration uses MnO4− + 5 Fe2+ + 8 H+ → Mn2+ + 5 Fe3+ + 4 H2O. 20.0 mL of Fe2+ solution requires 20.0 mL of 0.020 M KMnO4 to reach the first permanent pink. How many moles of Fe2+ were present, and what was the original [Fe2+]?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.0020 mol Fe2+; 0.020 M (forgetting the 20.0 mL volume of Fe)"
+        },
+        {
+          "key": "B",
+          "text": "0.010 mol Fe2+; 0.50 M"
+        },
+        {
+          "key": "C",
+          "text": "0.0020 mol Fe2+; 0.10 M"
+        },
+        {
+          "key": "D",
+          "text": "0.00040 mol Fe2+; 0.020 M (1:1 mole ratio)"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Moles of MnO4− = 0.020 mol L−1 × 0.0200 L = 4.0 × 10−4 mol. The equation consumes 5 Fe2+ per MnO4−, so n(Fe2+) = 5 × 4.0 × 10−4 = 2.0 × 10−3 mol. In 20.0 mL that is 0.0020 / 0.0200 = 0.10 M. A 1:1 assumption undercounts iron by a factor of five. Leaving the iron moles unconverted to molarity with the correct n still needs division by 0.0200 L. Using 1:1 on volumes without the 5:1 ratio can invent other figures such as 0.50 M if 0.020 × 5 / 0.020 is mis-assigned.",
+      "distractor_rationales": {
+        "D": "The balanced equation is 5 Fe per MnO4, not 1:1, so n(Fe2+) is five times n(MnO4−).",
+        "A": "0.0020 mol in 20.0 mL is 0.10 M, not 0.020 M.",
+        "B": "0.010 mol would be 25 times the permanganate moles, not 5 times."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t16",
+      "type": "discrete",
+      "stem": "Oxidation numbers in Cr2O7 2− + 3 SO2 + 2 H+ → 2 Cr3+ + 3 SO4 2− + H2O are assigned with O as −2 and H as +1. In Cr2O7 2− each Cr is +6; in SO2 each S is +4; in SO4 2− each S is +6; Cr3+ is +3. How many electrons are transferred per dichromate ion, and which species is the oxidising agent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Three electrons; SO2 is the oxidising agent"
+        },
+        {
+          "key": "B",
+          "text": "Six electrons; SO2 is the oxidising agent because sulfur’s number rises"
+        },
+        {
+          "key": "C",
+          "text": "Zero electrons; oxidation numbers are book-keeping only and no transfer occurs"
+        },
+        {
+          "key": "D",
+          "text": "Six electrons; Cr2O7 2− is the oxidising agent (each of two Cr gains three electrons)"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Each chromium falls from +6 to +3, a gain of three electrons, and two chromium atoms per dichromate give six electrons gained. Those six electrons come from three SO2 molecules, each sulfur rising from +4 to +6 (loss of two electrons each). The species that is reduced (Cr2O7 2−) is the oxidising agent. SO2 is oxidised, so it is the reducing agent. Three electrons would count only one chromium. The balanced equation exists precisely because electrons are transferred; the oxidation numbers track that transfer.",
+      "distractor_rationales": {
+        "A": "Three electrons counts a single Cr; the formula has two. SO2 is oxidised, not reduced.",
+        "B": "Six electrons is the right count, but the oxidising agent is the dichromate that accepts them, not the sulfur that loses them.",
+        "C": "A change of six in the chromium oxidation-number total is the definition of a six-electron redox process."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t17",
+      "type": "discrete",
+      "stem": "Standard reduction potentials: Cu2+/Cu = +0.34 V; Zn2+/Zn = −0.76 V. A Daniell cell runs Zn | Zn2+ (1.0 M) || Cu2+ (1.0 M) | Cu with E°cell = E°cathode − E°anode = 0.34 − (−0.76) = 1.10 V and n = 2. The Nernst equation at 25 °C is E = E° − (0.060/n) log10 Q, with Q = [Zn2+]/[Cu2+]. If [Zn2+] = 1.0 M and [Cu2+] = 0.010 M, what is E?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1.04 V"
+        },
+        {
+          "key": "B",
+          "text": "1.10 V"
+        },
+        {
+          "key": "C",
+          "text": "1.16 V"
+        },
+        {
+          "key": "D",
+          "text": "0.98 V"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Q = 1.0 / 0.010 = 100, log10 Q = 2.00. The correction is (0.060/2) × 2.00 = 0.060 V. E = 1.10 − 0.060 = 1.04 V. The cell is slightly less than E° because the product ion is at 1 M while the reactant Cu2+ is depleted. Omitting the log term leaves 1.10 V. Adding instead of subtracting the 0.060 V gives 1.16 V. Using 0.060 × 2 without dividing by n would subtract 0.12 V and give 0.98 V.",
+      "distractor_rationales": {
+        "B": "1.10 V is E° at Q = 1; here Q = 100.",
+        "C": "1.16 V would be E° plus the 0.060 V term, the wrong sign in Nernst’s − (RT/nF) ln Q.",
+        "D": "0.98 V subtracts 0.12 V, as if n were omitted when applying 0.060 log Q."
+      },
+      "difficulty_est": 0.57
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t17",
+      "type": "discrete",
+      "stem": "Electrolysis of aqueous AgNO3 deposits Ag(s) at the cathode: Ag+ + e− → Ag. Faraday’s constant is taken as 96 500 C mol−1, so 96 500 C deposits 1.00 mol of silver (Mr = 108). A current of 10.0 A runs for 193 s. How much silver is deposited?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.216 g"
+        },
+        {
+          "key": "B",
+          "text": "2.16 g"
+        },
+        {
+          "key": "C",
+          "text": "1.08 g"
+        },
+        {
+          "key": "D",
+          "text": "21.6 g"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Charge passed = 10.0 A × 193 s = 1930 C. Moles of electrons = 1930 / 96 500 = 0.0200 mol. For Ag+ / Ag the mole ratio is 1 e− per Ag, so 0.0200 mol Ag = 0.0200 × 108 g = 2.16 g. Half that mass (1.08 g) would be 0.0100 mol of electrons. 21.6 g is 0.200 mol, which would require 19 300 C (1930 s at 10.0 A). 0.216 g is a factor-of-ten slip on 2.16 g.",
+      "distractor_rationales": {
+        "C": "1.08 g is 0.0100 mol of Ag, half the 0.0200 mol of electrons passed.",
+        "D": "21.6 g is 0.200 mol, ten times the charge actually passed in 193 s.",
+        "A": "0.216 g is 2.16 g with the decimal shifted; 0.0200 mol of Ag is 2.16 g."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t18",
+      "type": "discrete",
+      "stem": "Initial-rate data for 2A → products:\n\nExperiment | [A]0 (M) | rate (M s−1)\n1 | 0.10 | 0.020\n2 | 0.20 | 0.080\n3 | 0.30 | 0.180\n\nThe rate law is rate = k[A]m. What are m and k, and what is the half-life from [A]0 = 0.10 M if the integrated law for m = 2 is t1/2 = 1 / (k[A]0)?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "m = 2; k = 0.20 M−1 s−1; t1/2 = 50 s"
+        },
+        {
+          "key": "B",
+          "text": "m = 0; k = 0.020 M s−1; t1/2 undefined"
+        },
+        {
+          "key": "C",
+          "text": "m = 2; k = 2.0 M−1 s−1; t1/2 = 5.0 s"
+        },
+        {
+          "key": "D",
+          "text": "m = 1; k = 0.20 s−1; t1/2 = 5.0 s"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Doubling [A] from 0.10 to 0.20 multiplies rate by 4 (0.020 → 0.080), so m = 2. Then k = rate / [A]2 = 0.020 / 0.010 = 2.0 M−1 s−1, confirmed by 0.080 / 0.040 = 2.0 and 0.180 / 0.090 = 2.0. Half-life at 0.10 M is 1 / (2.0 × 0.10) = 5.0 s. First-order would have doubled the rate, not quadrupled it. Using k = 0.20 forgets to divide by [A]2. A zero-order law cannot fit a 9-fold rate increase for a 3-fold concentration increase.",
+      "distractor_rationales": {
+        "D": "First order would give rate ×2 when [A] ×2; the table shows ×4.",
+        "A": "k = 0.20 would be rate/[A] rather than rate/[A]2; that k also gives t1/2 = 50 s, ten times too long.",
+        "B": "Rate is not constant as [A] changes, so the reaction is not zero order."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t18",
+      "type": "discrete",
+      "stem": "A first-order decomposition has k = 0.069 min−1. Because t1/2 = ln 2 / k and ln 2 ≈ 0.69, t1/2 = 10 min. Starting from 80 mg of reactant, remaining masses are:\n\nTime (min) | mass (mg)\n0 | 80\n10 | 40\n20 | 20\n30 | 10\n\nA catalyst is found to double k at the same temperature. What is the new t1/2, and how much remains at 10 min from the same 80 mg start?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "t1/2 = 20 min; 40 mg remains (catalyst slows the reaction)"
+        },
+        {
+          "key": "B",
+          "text": "t1/2 stays 10 min; 40 mg remains, because half-life is independent of k"
+        },
+        {
+          "key": "C",
+          "text": "t1/2 = 5.0 min; 10 mg remains (three half-lives in 10 min)"
+        },
+        {
+          "key": "D",
+          "text": "t1/2 = 5.0 min; 20 mg remains at 10 min (two half-lives)"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Doubling k halves t1/2 to 5.0 min. Ten minutes is then two half-lives: 80 → 40 → 20 mg. Catalysts increase k, they do not lengthen half-life. First-order t1/2 is independent of concentration but inversely dependent on k. Three half-lives would be 15 min at the new k, leaving 10 mg, not a 10 min point.",
+      "distractor_rationales": {
+        "A": "A catalyst increases k, so t1/2 falls rather than rises to 20 min.",
+        "B": "t1/2 = 0.69/k, so it must change when k doubles.",
+        "C": "10 min / 5 min = 2 half-lives, not 3; 10 mg would be the 15 min mark."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t19",
+      "type": "discrete",
+      "stem": "Three C3H6O isomers give these data:\n\nCompound | IR (cm−1) | 13C environments | Tollens’ reagent\nX | 1715 (strong) | 2 | negative\nY | 1725 and 2720 | 3 | silver mirror\nZ | 1650 and 3300 (broad) | 3 | negative\n\n1715–1725 cm−1 is C=O; 2720 cm−1 is aldehyde C–H; 1650 cm−1 is C=C; 3300 cm−1 is O–H. Which identification is consistent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "X propanone; Y propanal; Z prop-2-en-1-ol (allyl alcohol)"
+        },
+        {
+          "key": "B",
+          "text": "X propanal; Y propanone; Z propanone enol only"
+        },
+        {
+          "key": "C",
+          "text": "X cyclopropanol; Y acetone; Z propanal"
+        },
+        {
+          "key": "D",
+          "text": "All three are propanone, because the formula is C3H6O"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "X has a ketone carbonyl (1715 cm−1), only two carbon environments (CH3 and C=O of acetone), and no aldehyde hydrogen, so Tollens’ is negative: propanone. Y has an aldehyde C–H stretch at 2720 cm−1, three carbon environments, and a silver mirror: propanal. Z lacks a carbonyl IR, shows alkene plus alcohol stretches, and is Tollens’-negative: an unsaturated alcohol C3H6O, i.e. prop-2-en-1-ol. Swapping X and Y contradicts both the 2720 cm−1 band and Tollens’. Cyclopropanol would show O–H, not 1715 cm−1. The shared molecular formula does not make the spectra identical.",
+      "distractor_rationales": {
+        "B": "Propanal, not propanone, gives Tollens’ silver and the 2720 cm−1 band, so Y is the aldehyde.",
+        "C": "X has no O–H stretch; Y is Tollens’-positive, hence not acetone; Z has no carbonyl.",
+        "D": "Three different IR/NMR/Tollens patterns cannot be one compound."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t19",
+      "type": "discrete",
+      "stem": "Boiling points and water solubility of C2H6O constitutional isomers:\n\nIsomer | bp (°C) | miscibility with water\nEthanol | 78 | miscible\nMethoxymethane (dimethyl ether) | −25 | modest\n\nWhich intermolecular-force account is required?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Ethanol’s higher bp shows it has the larger molecular mass"
+        },
+        {
+          "key": "B",
+          "text": "Ethanol hydrogen-bonds to itself and to water, raising bp and conferring miscibility; the ether has only dipole and dispersion forces and cannot donate a hydrogen bond"
+        },
+        {
+          "key": "C",
+          "text": "The ether has the higher boiling point because it is more volatile at −25 °C"
+        },
+        {
+          "key": "D",
+          "text": "Both isomers hydrogen-bond identically, so the 103 °C gap is packing of CH3 groups"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Both isomers have Mr = 46, so mass is not the discriminator. Ethanol’s O–H group donates and accepts hydrogen bonds, producing a liquid that boils at 78 °C and mixes in all proportions with water. Dimethyl ether has no O–H bond: it can accept a hydrogen bond from water but cannot form an O–H···O network of its own, so it is a gas at room temperature (bp −25 °C) and only modestly soluble. Volatility is high when boiling point is low, not the reverse. Identical hydrogen bonding cannot open a 103 °C gap.",
+      "distractor_rationales": {
+        "C": "−25 °C is a lower boiling point, meaning weaker liquid-phase attractions and higher vapour pressure at a given T.",
+        "D": "The ether has no hydrogen-bond donor; the isomers are not equivalent.",
+        "A": "The isomers are C2H6O, identical mass; mass cannot explain the gap."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t20",
+      "type": "discrete",
+      "stem": "Combustion and unsaturation data:\n\nHydrocarbon | combustion: mol O2 per mol hydrocarbon | mol H2 absorbed over Pt | formula\nP | 8.0 | 0 | C5H12\nQ | 7.5 | 1.0 | C5H10\nR | 7.0 | 2.0 | C5H8\n\nComplete combustion of CnHm is CnHm + (n + m/4) O2 → n CO2 + (m/2) H2O. Which structural conclusion follows?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "R is more saturated than P because it absorbs more H2"
+        },
+        {
+          "key": "B",
+          "text": "Q must be an alkyne, because 7.5 is half-integral"
+        },
+        {
+          "key": "C",
+          "text": "P is an alkane; Q has one double bond or ring; R has two double-bond equivalents (diene, alkyne, or cycloalkene)"
+        },
+        {
+          "key": "D",
+          "text": "All three are alkanes, because each contains only C and H"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "For C5H12, n + m/4 = 5 + 3 = 8, matching P, and zero H2 uptake is a saturated alkane. C5H10 is one degree of unsaturation (double bond or ring): 5 + 2.5 = 7.5 mol O2 and 1 mol H2. C5H8 has two degrees of unsaturation, 7.0 mol O2 and 2 mol H2. Hydrocarbons include unsaturated series. Absorbing H2 diagnoses unsaturation, so R is less, not more, saturated than P. A half-integral O2 coefficient is normal for odd hydrogen counts, not an alkyne fingerprint (C5H8 would be the alkyne formula, which is R, not Q).",
+      "distractor_rationales": {
+        "D": "Q and R absorb H2 and match C5H10 and C5H8, the unsaturated formulae.",
+        "A": "H2 absorption measures unsaturation; R absorbing 2 mol is less saturated than P absorbing 0.",
+        "B": "Q is C5H10, one DUE, typically an alkene or cycloalkane; the alkyne formula C5H8 is R."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t20",
+      "type": "discrete",
+      "stem": "Three C6 hydrocarbons are treated with bromine in the dark in CCl4, then with Br2/FeBr3.\n\nSample | Br2/CCl4 (dark) | Br2/FeBr3\nCyclohexane | orange persists | orange persists (very slow)\nCyclohexene | orange decolourises instantly | (already reacted)\nBenzene | orange persists | substitution, HBr fumes, pale product\n\nWhich bonding description is supported?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Benzene is a typical alkene, because it eventually reacts with bromine"
+        },
+        {
+          "key": "B",
+          "text": "Cyclohexane is unsaturated, which is why FeBr3 is required"
+        },
+        {
+          "key": "C",
+          "text": "All three are aromatic, differing only in colour"
+        },
+        {
+          "key": "D",
+          "text": "Cyclohexene undergoes rapid electrophilic addition; benzene’s delocalised π system resists addition and instead substitutes under Lewis-acid catalysis; cyclohexane has no π bond"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Instant decolourisation in the dark is addition to an isolated C=C, the cyclohexene row. Benzene leaves Br2/CCl4 untouched, proving it does not add like an alkene, but does undergo catalysed substitution with FeBr3, the aromatic electrophilic-substitution signature. Cyclohexane, with only σ bonds, does neither on this timescale. Reaction of benzene under forcing catalytic conditions is substitution, not evidence that benzene is ‘a typical alkene’. Cyclohexane’s inertness in both tests is the saturated-alkane pattern. Aromaticity is unique to benzene in this set.",
+      "distractor_rationales": {
+        "A": "A typical alkene would decolourise Br2 in the dark, which benzene does not.",
+        "B": "Cyclohexane fails both tests; FeBr3 is the aromatic-substitution catalyst for benzene.",
+        "C": "Cyclohexane and cyclohexene are not aromatic; their Br2 behaviour differs sharply from benzene."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t21",
+      "type": "discrete",
+      "stem": "Isomer counts for C4 species:\n\nFormula | constitutionally distinct skeletons | additional stereo notes\nC4H10 | 2 (butane, 2-methylpropane) | none\nC4H8 (open-chain alkenes) | 3 carbon skeletons | but-2-ene has cis/trans (E/Z) pair\nC4H9Cl from butane | 2 positional (1-chloro vs 2-chloro) | 2-chlorobutane has a stereocentre, two enantiomers\n\nHow many stereoisomeric 2-chlorobutanes exist, and how many distinct but-2-enes?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Two enantiomers of 2-chlorobutane; two geometric isomers of but-2-ene"
+        },
+        {
+          "key": "B",
+          "text": "One 2-chlorobutane; four but-2-enes"
+        },
+        {
+          "key": "C",
+          "text": "Two 2-chlorobutanes that are constitutional isomers; no cis/trans but-2-ene"
+        },
+        {
+          "key": "D",
+          "text": "Four stereoisomers of 2-chlorobutane because there are four carbons"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "2-Chlorobutane has one stereogenic carbon (C2 attached to H, Cl, methyl, ethyl), so two non-superposable mirror images. But-2-ene has a C=C with two different substituents on each carbon, so cis and trans (Z and E) are distinct. Constitutional isomerism of C4H9Cl (1- vs 2-chloro) is separate from the two stereoisomers of the 2-chloro compound. One-and-four counts have no basis in the table. Geometric isomerism of but-2-ene is exactly the additional stereo note given. Four carbons do not generate four stereoisomers from a single stereocentre (2^n with n=1 gives 2).",
+      "distractor_rationales": {
+        "B": "A single stereocentre gives two, not one, 2-chlorobutanes; but-2-ene has two geometric isomers, not four.",
+        "C": "1-Chloro and 2-chloro are constitutional; the two 2-chlorobutanes are enantiomers. But-2-ene does have cis/trans isomers.",
+        "D": "Stereoisomer count is 2^n for n independent stereocentres without meso forms; n = 1 here."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t21",
+      "type": "discrete",
+      "stem": "Dipole moments and boiling points of 1,2-dichloroethene isomers:\n\nIsomer | μ (D) | bp (°C)\ncis | 1.9 | 60\ntrans | 0.0 | 48\n\nBoth have Mr = 97. Which explanation is consistent with polarity and packing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cis is non-polar, which is why μ is listed as 1.9 D"
+        },
+        {
+          "key": "B",
+          "text": "Cis C–Cl dipoles add, raising intermolecular dipole–dipole attraction and bp; trans dipoles cancel, leaving a non-polar molecule with the lower bp"
+        },
+        {
+          "key": "C",
+          "text": "Trans has the higher bp because μ = 0 means stronger forces"
+        },
+        {
+          "key": "D",
+          "text": "The 12 °C gap is a molecular-mass difference"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "In the cis isomer both chlorines lie on the same side so the C–Cl vectors reinforce (1.9 D), producing dipole–dipole attractions on top of dispersion and a 60 °C boiling point. In trans the vectors oppose (0.0 D), so only dispersion remains and the boiling point is 12 °C lower. Zero dipole moment means weaker, not stronger, polar attractions. The isomers share Mr = 97. A 1.9 D dipole is the definition of a polar molecule, so cis is polar.",
+      "distractor_rationales": {
+        "C": "The trans bp is 48 °C, lower than cis 60 °C; μ = 0 removes dipole–dipole forces.",
+        "D": "Both isomers are C2H2Cl2, identical mass.",
+        "A": "μ = 1.9 D is a substantial dipole; cis is polar."
+      },
+      "difficulty_est": 0.39
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t22",
+      "type": "discrete",
+      "stem": "Relative rates of reaction with 0.10 M NaOH in ethanol/water at 25 °C:\n\nSubstrate | relative rate | rate law observed\nCH3Br | 1200 | rate = k[substrate][OH−]\nCH3CH2Br | 80 | rate = k[substrate][OH−]\n(CH3)2CHBr | 3 | mixed\n(CH3)3CBr | 0.01 in this bimolecular test; fast in polar protic solvent without needing [OH−] | rate = k[substrate] in water\n\nWhich mechanistic reading is supported?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "All four follow the same rate law, so the mechanism never changes"
+        },
+        {
+          "key": "B",
+          "text": "Methyl bromide is slowest because it is the least hindered"
+        },
+        {
+          "key": "C",
+          "text": "Primary substrates favour SN2 (second-order, fastest at CH3); tertiary favours SN1 (first-order, independent of [OH−])"
+        },
+        {
+          "key": "D",
+          "text": "Tertiary is fastest at SN2 because three methyl groups donate electrons to the pentavalent carbon"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The second-order law and the 1200 → 80 → 3 fall as alkyl substitution increases are the SN2 steric series, fastest at methyl. tert-Butyl bromide is near-zero under bimolecular conditions but reacts by a first-order law in water, the SN1 ionisation route available to a tertiary carbocation. Electron donation would, if anything, help SN1, not SN2; the table shows tertiary is slowest in the bimolecular column. Rate laws are not all the same. Least hindered CH3Br is the fastest SN2 substrate, not the slowest.",
+      "distractor_rationales": {
+        "D": "The SN2 column lists (CH3)3CBr at 0.01, the slowest, because the backside is blocked.",
+        "A": "Methyl and ethyl are second-order; tertiary in water is first-order.",
+        "B": "CH3Br has relative rate 1200, the maximum in the SN2 series."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t22",
+      "type": "discrete",
+      "stem": "Propene is treated in three flasks. Major organic products:\n\nReagent | major product (after work-up)\nHBr | 2-bromopropane\nHBr / peroxides | 1-bromopropane\nBr2 / CCl4 | 1,2-dibromopropane\nH2 / Pt | propane\n\nMarkovnikov addition places H on the less substituted carbon. Which statement matches the table?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "All four reagents give 2-bromopropane"
+        },
+        {
+          "key": "B",
+          "text": "H2/Pt yields 1,2-dibromopropane because platinum brominates"
+        },
+        {
+          "key": "C",
+          "text": "Peroxides reverse Br2 addition, giving 1-bromopropane from Br2/CCl4"
+        },
+        {
+          "key": "D",
+          "text": "Ionic HBr is Markovnikov; peroxide HBr is anti-Markovnikov radical addition; Br2 adds across the double bond; H2/Pt saturates it"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Ionic addition of HBr to propene yields the secondary bromide 2-bromopropane (Markovnikov). Peroxides switch the mechanism to bromine-atom addition at the terminal carbon, giving 1-bromopropane. Molecular bromine adds to give the vicinal dibromide. Catalytic hydrogenation removes the π bond entirely, giving propane, not an organobromide. The four rows are four different products, so they cannot all be 2-bromopropane. Platinum is a hydrogenation catalyst here, not a bromine source. Peroxides are specified for HBr, not for Br2/CCl4.",
+      "distractor_rationales": {
+        "A": "The table lists four different products, only the first of which is 2-bromopropane.",
+        "B": "H2/Pt gives propane, the saturated hydrocarbon.",
+        "C": "Br2/CCl4 is listed as 1,2-dibromopropane regardless of peroxides, which were used only in the HBr row."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t23",
+      "type": "discrete",
+      "stem": "Acidified dichromate (orange Cr2O7 2− → green Cr3+) is used in excess, then the organic product is characterised.\n\nAlcohol | dichromate colour | product IR after oxidation\nCH3CH2OH | orange → green | 1710 cm−1 plus broad 3000 cm−1 (carboxylic acid)\n(CH3)2CHOH | orange → green | 1715 cm−1 only (ketone)\n(CH3)3COH | orange remains | unchanged 3300 cm−1 alcohol\n\nWhich oxidation-level account is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Primary ethanol oxidises through aldehyde to carboxylic acid; secondary propan-2-ol stops at the ketone; tertiary 2-methylpropan-2-ol has no C–H on the carbinol carbon and does not oxidise"
+        },
+        {
+          "key": "B",
+          "text": "Tertiary alcohols oxidise most easily, so the orange colour should have vanished"
+        },
+        {
+          "key": "C",
+          "text": "Secondary alcohols give carboxylic acids, matching the 1715 cm−1-only row"
+        },
+        {
+          "key": "D",
+          "text": "All three alcohols are at the same oxidation level because each contains one oxygen"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Dichromate decolourisation (orange to green) means the alcohol reduced Cr(VI). Ethanol, primary, is oxidised all the way to ethanoic acid (carbonyl plus very broad O–H). Propan-2-ol, secondary, can lose its one carbinol hydrogen and stops at acetone (carbonyl, no acid O–H). tert-Butanol has no hydrogen on the carbon bearing OH, so Cr(VI) remains orange. Tertiary is therefore the least, not most, oxidisable under these conditions. A ketone IR without the broad acid band is not a carboxylic acid. One oxygen atom does not equalise oxidation levels: RCH2OH, R2CHOH and R3COH sit at different levels.",
+      "distractor_rationales": {
+        "B": "The tertiary row keeps orange dichromate, experimental proof of no oxidation.",
+        "C": "The secondary product is a ketone (1715 cm−1 only), not an acid.",
+        "D": "The three different outcomes show three different oxidisabilities."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t23",
+      "type": "discrete",
+      "stem": "Approximate pKa values: ethanol 16, phenol 10, ethanoic acid 4.8, HCl −7. Aqueous buffers are prepared at pH 7.0. A species is taken as deprotonated if pH > pKa + 1 and protonated if pH < pKa − 1. Which species is predominantly deprotonated at pH 7.0?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "None of them, because pH 7 is neutral"
+        },
+        {
+          "key": "B",
+          "text": "Ethanoate ion from ethanoic acid; phenol and ethanol remain protonated; HCl is fully deprotonated as Cl−"
+        },
+        {
+          "key": "C",
+          "text": "Ethanol, because pKa 16 is the largest"
+        },
+        {
+          "key": "D",
+          "text": "Phenol only, because 10 is closest to 7"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Ethanoic acid (pKa 4.8) lies more than 1 unit below pH 7, so it exists as ethanoate. Phenol (pKa 10) lies more than 1 unit above pH 7, so it remains PhOH. Ethanol (pKa 16) is fully protonated. HCl (pKa −7) is a strong acid, fully Cl−. Largest pKa means weakest acid, least deprotonated, so ethanol is not deprotonated. Closeness of 10 to 7 without the ±1 rule still leaves phenol mostly protonated (ratio [A−]/[HA]=10^(7−10)=0.001). Neutrality of water does not set every solute’s protonation state; pKa versus pH does.",
+      "distractor_rationales": {
+        "C": "A pKa of 16 means ethanol holds its proton at pH 7 by an enormous factor.",
+        "D": "Phenol’s pKa 10 is still 3 units above pH 7, so it is not predominantly phenolate.",
+        "A": "pH 7 compared with pKa 4.8 already requires ethanoate as the major form."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t24",
+      "type": "discrete",
+      "stem": "pKb values (smaller = stronger base) in water:\n\nCompound | pKb\nEthanamine | 3.4\nAmmonia | 4.8\nAniline | 9.4\nAcetamide | ~14 (no measurable protonation of N in dilute acid)\n\nWhich order of basicity, and which structural reason, match the numbers?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Aniline is stronger than ethanamine because it is aromatic"
+        },
+        {
+          "key": "B",
+          "text": "All four have the same basicity because each has a nitrogen lone pair"
+        },
+        {
+          "key": "C",
+          "text": "Ethanamine > NH3 > aniline >> acetamide; alkyl donation raises amine basicity, the phenyl ring delocalises the lone pair, and the amide lone pair is tied up in the carbonyl"
+        },
+        {
+          "key": "D",
+          "text": "Acetamide is the strongest base because pKb 14 is the largest number"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Basicity decreases as pKb increases: 3.4 < 4.8 < 9.4 << 14, so ethanamine is strongest and acetamide weakest. An alkyl group is electron-releasing relative to hydrogen, making aliphatic amines stronger than ammonia. In aniline the nitrogen lone pair conjugates with the ring, lowering availability. In acetamide the lone pair is delocalised onto oxygen of the carbonyl, so the nitrogen is not a practical aqueous base. Large pKb means weak base. Aromaticity of aniline reduces, rather than increases, basicity relative to ethanamine. A lone pair is necessary but not sufficient; its availability differs.",
+      "distractor_rationales": {
+        "D": "The largest pKb is the weakest base; acetamide is essentially non-basic at nitrogen.",
+        "A": "Aniline’s pKb 9.4 versus ethanamine 3.4 shows aniline is weaker by six log units.",
+        "B": "A 10-unit pKb spread is ten orders of magnitude in Kb, not sameness."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t24",
+      "type": "discrete",
+      "stem": "Glycine (pI 6.0) and lysine (pI 9.7) are spotted at the origin of an electrophoresis strip buffered at pH 6.0. A species with pI < pH is net negative and migrates to the anode; pI > pH is net positive and migrates to the cathode; pI = pH does not migrate. After 20 min the strip is:\n\nPosition (towards cathode +) | spot\n+ 4 cm | one ninhydrin-positive spot\n0 cm (origin) | one spot\n− 4 cm | none\n\nWhich assignment is consistent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Both amino acids are at the origin because they are zwitterions in the solid state"
+        },
+        {
+          "key": "B",
+          "text": "Lysine is at −4 cm because pI 9.7 is larger, so it must be negative"
+        },
+        {
+          "key": "C",
+          "text": "Glycine migrates to the cathode at its isoelectric pH"
+        },
+        {
+          "key": "D",
+          "text": "The origin is glycine (net zero at pH = pI); the cathodic spot is lysine (net positive at pH 6.0 < 9.7)"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "At pH 6.0 glycine is at its pI, so its net charge is zero and it stays at the origin. Lysine’s pI is 9.7, so at pH 6 both its carboxylates and its extra side-chain ammonium are such that the net charge is positive; it moves toward the cathode (+4 cm). There is no anodic spot, matching the absence of a net-negative species. Solid-state zwitterions still acquire a net charge in a pH 6 buffer if pI ≠ 6. A higher pI means more basic, hence cationic at pH 6, not anionic. Migration of glycine at its pI would contradict the definition of pI.",
+      "distractor_rationales": {
+        "A": "The strip shows a second spot at +4 cm, so they do not both remain at the origin.",
+        "B": "pI > pH produces a cation, which moves to the cathode, the +4 cm position, not the anode.",
+        "C": "At pH = pI the net charge is zero; glycine is the origin spot."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t25",
+      "type": "discrete",
+      "stem": "Enthalpies of hydrogenation (kJ mol−1, all exothermic):\n\nCompound | ΔHhyd\nCyclohexene | −120\nCyclohexa-1,3-diene | −230\nBenzene | −210\nHypothetical ‘cyclohexatriene’ (3 × cyclohexene) | −360\n\nAromatic stabilisation is the gap between the hypothetical triene and real benzene. What is that energy, and which comparison shows conjugation in the diene is small?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "150 kJ mol−1 aromatic stabilisation of benzene; the diene is only 10 kJ mol−1 more stable than two isolated double bonds (2 × −120 = −240 versus −230)"
+        },
+        {
+          "key": "B",
+          "text": "210 kJ mol−1, equal to benzene’s ΔHhyd, is the resonance energy"
+        },
+        {
+          "key": "C",
+          "text": "Benzene is 150 kJ mol−1 less stable than cyclohexatriene, because −210 is less negative than −360"
+        },
+        {
+          "key": "D",
+          "text": "The diene’s −230 versus benzene’s −210 shows the diene is more aromatic"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Three isolated double bonds would release 360 kJ mol−1 on hydrogenation. Benzene releases only 210, so it starts 150 kJ mol−1 lower in energy: the aromatic stabilisation. Cyclohexa-1,3-diene at −230 versus −240 for two isolated alkenes is a mere 10 kJ mol−1 conjugation effect, not aromaticity. Resonance energy is that 150 kJ mol−1 gap, not the raw −210. Less negative ΔHhyd means the reactant was already lower in energy, i.e. more stable, not less. Aromaticity is the large benzene gap, not the slightly less exothermic hydrogenation of benzene versus the diene taken in isolation.",
+      "distractor_rationales": {
+        "B": "−210 kJ mol−1 is the observed hydrogenation enthalpy, not the extra stabilisation relative to a Kekulé triene.",
+        "C": "A less exothermic hydrogenation means benzene is more stable than the hypothetical triene by 150 kJ mol−1.",
+        "D": "The 150 kJ mol−1 benzene gap dwarfs the diene’s 10 kJ mol−1; benzene is the aromatic partner."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t25",
+      "type": "discrete",
+      "stem": "Planar cyclic π counts (Hückel: aromatic if 4n+2 π electrons, antiaromatic if 4n, assuming planarity):\n\nSpecies | π electrons | predicted\nBenzene | 6 | aromatic (n=1)\nCyclobutadiene | 4 | antiaromatic (n=1 of 4n)\nCyclopentadienyl anion | 6 | aromatic\nCyclooctatetraene (tub-shaped) | 8 | non-aromatic (not planar)\n\nThe pKa of cyclopentadiene is ~16, far below a typical alkene (~40). Which row explains that acidity?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cyclooctatetraene’s 8π count is why cyclopentadiene is acidic"
+        },
+        {
+          "key": "B",
+          "text": "Deprotonation produces the 6π aromatic cyclopentadienyl anion, so the anion is unusually stabilised"
+        },
+        {
+          "key": "C",
+          "text": "Cyclopentadiene is already a 6π aromatic like benzene, so it has benzene’s pKa (~43, not acidic)"
+        },
+        {
+          "key": "D",
+          "text": "The conjugate base would be 4π antiaromatic, which would raise the pKa above 40"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Cyclopentadiene itself is a conjugated diene, not a 6π closed loop (the CH2 carbon is sp3). Loss of that CH2 proton generates a planar C5H5− with 6 π electrons, Hückel-aromatic, so the anion is strongly stabilised and the pKa drops to ~16. If the diene were already aromatic it would not need to deprotonate to gain aromaticity and would not be so acidic. The anion is 6π, not 4π. Cyclooctatetraene is a different hydrocarbon whose tub conformation avoids antiaromaticity; it does not set cyclopentadiene’s pKa.",
+      "distractor_rationales": {
+        "C": "Neutral cyclopentadiene is not a 6π aromatic; benzene-like pKa would contradict the stated pKa ~16.",
+        "D": "C5H5− has 6 π electrons, aromatic not antiaromatic; that is why pKa falls, not rises.",
+        "A": "The acidity argument is internal to the C5 ring and its 6π anion, not to C8H8."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t26",
+      "type": "discrete",
+      "stem": "An unknown C3H6O gives:\nIR: 1715 cm−1, no band above 3000 cm−1, no 2720 cm−1.\n1H NMR: one singlet.\n13C NMR: two signals, one near 210 ppm.\nWhich structure is consistent with the full data set?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Oxetane (a cyclic ether)"
+        },
+        {
+          "key": "B",
+          "text": "Prop-2-en-1-ol (allyl alcohol)"
+        },
+        {
+          "key": "C",
+          "text": "Propanone (acetone)"
+        },
+        {
+          "key": "D",
+          "text": "Propanal"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "A 1715 cm−1 band with a 210 ppm carbon is a ketone carbonyl. Absence of 2720 cm−1 and of any 1H resonance near 9–10 ppm eliminates propanal. A single 1H NMR singlet plus only two 13C environments is the acetone pattern: two equivalent methyl groups and the carbonyl carbon. Oxetane is an ether, so it cannot produce a 1715 cm−1 stretch or a 210 ppm carbon. Allyl alcohol would show a 3300 cm−1 O–H band and a 1650 cm−1 C=C stretch, both absent from the IR description. Only propanone fits every spectroscopic constraint at once.",
+      "distractor_rationales": {
+        "D": "Propanal would show an aldehydic C–H stretch near 2720 cm−1 and a 1H NMR signal near 9–10 ppm, and it has three distinct hydrogen environments, not one singlet.",
+        "A": "Oxetane has no carbonyl, so it cannot give 1715 cm−1 or a 210 ppm 13C peak.",
+        "B": "Prop-2-en-1-ol would display O–H and alkene IR bands that the spectrum lacks, and its 1H NMR would not be a single singlet."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t26",
+      "type": "discrete",
+      "stem": "Mass spectrum of compound W (odd-electron molecular ion):\n\nm/z | interpretation offered\n72 | M+•\n57 | M − 15 (loss of CH3)\n43 | C3H7+ or CH3CO+\n29 | C2H5+ or CHO+\n\nIR of W: 1715 cm−1, no 2720 cm−1. Which molecular formula and structure are most consistent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "C5H12, pentane: M = 72, but no carbonyl IR is then allowed"
+        },
+        {
+          "key": "B",
+          "text": "C3H4O2, with M = 72, necessarily an aldehyde because of m/z 29"
+        },
+        {
+          "key": "C",
+          "text": "C4H8O, butanal, required by m/z 29 even though 2720 cm−1 is absent"
+        },
+        {
+          "key": "D",
+          "text": "C4H8O, butan-2-one: M = 72, methyl loss to 57, acyl ion CH3CO+ at 43, and a ketone IR"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "M+• = 72 with a ketone IR is satisfied by C4H8O (72 = 48+8+16). Butan-2-one fragments by α-cleavage to CH3 (M−15 = 57) and to CH3CO+ (43), the standard methyl ketone pattern. Pentane is also Mr 72 but cannot produce 1715 cm−1. C3H4O2 is 72 and could be acrylic acid or similar, but the 1715 cm−1-only description without a broad acid O–H, plus the 57 methyl-loss, fits butanone better; m/z 29 is not uniquely CHO+. Butanal would show the 2720 cm−1 aldehyde C–H that is absent. The IR therefore selects the ketone over the aldehyde isomer of C4H8O.",
+      "distractor_rationales": {
+        "A": "Pentane has no oxygen and cannot give a 1715 cm−1 carbonyl stretch.",
+        "B": "m/z 29 is ambiguous (ethyl or formyl); the missing aldehyde IR and the 57 peak favour a methyl ketone.",
+        "C": "Butanal is C4H8O and would give M = 72, but the IR lacks 2720 cm−1, so it is not W."
+      },
+      "difficulty_est": 0.6
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t27",
+      "type": "discrete",
+      "stem": "Silica TLC (polar stationary phase, hexane/ethyl acetate 4:1). Distances from origin:\n\nSpot | distance (cm)\nSolvent front | 8.0\nCompound A | 6.0\nCompound B | 2.0\nCompound C | 2.0, after staining also UV-active at 254 nm like B\n\nRf = distance(spot)/distance(front). A is a non-polar hydrocarbon; B is a phenol. Which reading is justified?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Rf(A)=0.75, Rf(B)=0.25; A is less polar and travels farther on silica; C co-spots with B so TLC alone does not prove C ≠ B"
+        },
+        {
+          "key": "B",
+          "text": "Rf(A)=0.25 because hydrocarbons stick to silica"
+        },
+        {
+          "key": "C",
+          "text": "B is less polar than A because it moved only 2.0 cm"
+        },
+        {
+          "key": "D",
+          "text": "C must be identical to B because two compounds cannot share an Rf"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Rf(A)=6.0/8.0=0.75 and Rf(B)=2.0/8.0=0.25. Polar silica retains the phenol (hydrogen bonding) so B lags; the hydrocarbon A interacts weakly and rides near the solvent front. Compound C has the same Rf as B, so they may be the same or merely coincidentally similar in polarity; co-spotting is necessary but not sufficient for identity. Hydrocarbons do not ‘stick’ on silica relative to phenols. Smaller distance means more polar on this phase, so B is more polar than A. Different compounds can share an Rf, which is why mixed-spot tests and a second method are used.",
+      "distractor_rationales": {
+        "B": "A travelled 6.0 of 8.0 cm, Rf 0.75, the less retained non-polar compound.",
+        "C": "Shorter travel on silica means stronger adsorption, i.e. more polar, not less.",
+        "D": "Equal Rf is consistent with identity but does not prove it; many phenols could occupy Rf 0.25."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t27",
+      "type": "discrete",
+      "stem": "A diethyl-ether solution contains naphthalene and benzoic acid. The solution is shaken with 1.0 M NaOH(aq); the layers are separated. The aqueous layer is then acidified with HCl and extracted with fresh ether.\n\nFraction | expected major organic\nOriginal ether after NaOH wash | naphthalene\nAlkaline aqueous layer | sodium benzoate\nEther extract after acidification | benzoic acid\n\nWhich separation principle is illustrated?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "HCl oxidises naphthalene, which is why it stays in ether"
+        },
+        {
+          "key": "B",
+          "text": "Deprotonation converts benzoic acid into a water-soluble salt, leaving naphthalene in ether; acidification regenerates the ether-soluble acid"
+        },
+        {
+          "key": "C",
+          "text": "Naphthalene is extracted into NaOH because it is more acidic than benzoic acid"
+        },
+        {
+          "key": "D",
+          "text": "Both organics remain in the original ether because ether is always the upper layer"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Benzoic acid (pKa ~4.2) is deprotonated by NaOH to benzoate, an ionic species that partitions into water. Naphthalene has no acidic proton and remains in ether. Acidifying benzoate regenerates PhCO2H, which returns to ether. Naphthalene is not an acid relative to benzoic acid and does not dissolve in NaOH. If both stayed in the original ether, the scheme would not list sodium benzoate in the aqueous layer. HCl is used as an acid to protonate benzoate, not as an oxidant for naphthalene.",
+      "distractor_rationales": {
+        "C": "Naphthalene is the component that remains in ether after the NaOH wash, so it was not extracted.",
+        "D": "The table assigns benzoate to the alkaline aqueous layer, so a transfer occurred.",
+        "A": "No redox is invoked; HCl protonates PhCO2− back to PhCO2H."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t28",
+      "type": "discrete",
+      "stem": "Freezing-point depression is ΔTf = i Kf m, with Kf(water) = 2.0 °C kg mol−1 in this approximation. Three 1.0 kg water solutions:\n\nSolute | molality m | van’t Hoff i (ideal)\nGlucose | 1.0 | 1\nNaCl | 1.0 | 2\nCaCl2 | 1.0 | 3\n\nWhat are the three freezing points?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Glucose −2.0 °C; NaCl −1.0 °C; CaCl2 −0.67 °C (dividing by i)"
+        },
+        {
+          "key": "B",
+          "text": "Glucose 2.0 °C; NaCl 4.0 °C; CaCl2 6.0 °C (elevation rather than depression)"
+        },
+        {
+          "key": "C",
+          "text": "Glucose −2.0 °C; NaCl −4.0 °C; CaCl2 −6.0 °C"
+        },
+        {
+          "key": "D",
+          "text": "All −2.0 °C, because each is 1.0 molal"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "ΔTf(glucose)=1×2.0×1.0=2.0, so Tf=−2.0 °C. NaCl supplies two particles: 2×2.0×1.0=4.0, Tf=−4.0 °C. CaCl2 supplies three: 6.0 °C depression, Tf=−6.0 °C. Colligative properties count particles, so equal molality does not equalise ΔTf. Dividing by i inverts the van’t Hoff factor. The freezing point falls below 0 °C; the numbers are depressions, not new boiling-style elevations of the freezing point above 0 °C.",
+      "distractor_rationales": {
+        "D": "i differs (1, 2, 3), so ΔTf differs even at the same m.",
+        "A": "i multiplies ΔTf, it does not divide it; salts depress Tf more than glucose, not less.",
+        "B": "Freezing-point depression puts Tf below 0 °C; positive temperatures would be boiling-point elevation of a different sort, and even then water’s Kb is not 2.0 in this problem."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t28",
+      "type": "discrete",
+      "stem": "Osmotic pressure π = i c RT, with R = 0.080 L atm mol−1 K−1 and T = 300 K. Two intravenous-style solutions:\n\nSolution | formal concentration | i\nGlucose | 0.30 M | 1\nNaCl | 0.15 M | 2\n\nHow do the osmotic pressures compare, and what is π for each?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Glucose 7.2 atm; NaCl 3.6 atm, ignoring i of NaCl"
+        },
+        {
+          "key": "B",
+          "text": "Glucose 0.30 atm; NaCl 0.15 atm, omitting RT"
+        },
+        {
+          "key": "C",
+          "text": "Both 2.4 atm, using R = 0.080 without T"
+        },
+        {
+          "key": "D",
+          "text": "Both 7.2 atm, because i c is 0.30 M in each"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Particle concentration i c is 0.30 M for glucose and 0.15 × 2 = 0.30 M for NaCl, so they are iso-osmotic. π = 0.30 × 0.080 × 300 = 0.30 × 24 = 7.2 atm for both. Dropping i for NaCl halves its π incorrectly. Omitting RT leaves the molarity numbers with atm painted on. Using R but not T gives 0.30 × 0.080 = 0.024, not 2.4; a 2.4 atm figure is 0.30 × 8 without the 300/100 bookkeeping. Clinically this is why 0.15 M NaCl (half-molar salt) matches 0.30 M glucose.",
+      "distractor_rationales": {
+        "A": "NaCl’s i = 2 doubles 0.15 M to the same 0.30 M particles as glucose.",
+        "B": "RT = 24 L atm mol−1 at 300 K with this R, so π is tens of atm per mole per litre, not 0.30 atm.",
+        "C": "Forgetting T underestimates by a factor of 300; 2.4 atm is not the correct product."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t29",
+      "type": "discrete",
+      "stem": "A heating curve for 18 g (1.00 mol) of H2O at 1 atm uses Lf = 6.0 kJ mol−1 and Lv = 41 kJ mol−1, and c = 75 J mol−1 K−1 for liquid water. The curve’s plateaux are:\n\nSegment | T (°C) | heat absorbed (kJ) | process\nAB | 0 | 6.0 | ice → water\nBC | 0 → 100 | 7.5 | warming liquid\nCD | 100 | 41 | water → steam\n\nWhich statement is required by the data?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Latent-heat plateaux occur at the melting and boiling points; warming the liquid 100 °C costs 1.00 × 75 × 100 J = 7.5 kJ, matching BC"
+        },
+        {
+          "key": "B",
+          "text": "The longest energy segment is melting, because AB is drawn first"
+        },
+        {
+          "key": "C",
+          "text": "Temperature rises during AB and CD, because heat is being absorbed"
+        },
+        {
+          "key": "D",
+          "text": "BC should cost 41 kJ, the same as vaporisation"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "At 1 atm, ice melts at 0 °C and water boils at 100 °C; during those phase changes T is constant while the latent heats 6.0 and 41 kJ are absorbed. Between them, q = n c ΔT = 1.00 × 75 J K−1 × 100 K = 7500 J = 7.5 kJ, which is row BC. Vaporisation dwarfs fusion (41 versus 6.0 kJ), so CD, not AB, is the costly plateau. Heat absorbed at a phase change does not raise T; that is why they are plateaux. Equating the liquid-warming leg to Lv confuses sensible heat with latent heat.",
+      "distractor_rationales": {
+        "B": "AB is 6.0 kJ; CD is 41 kJ, so boiling, not melting, is the largest energy step.",
+        "C": "The table lists constant T for AB and CD; absorbed heat there breaks intermolecular forces, not the thermometer reading.",
+        "D": "41 kJ is Lv for CD; BC is the 7.5 kJ sensible-heat calculation."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t29",
+      "type": "discrete",
+      "stem": "Vapour-pressure data (kPa) and a sketch of the H2O and CO2 phase diagrams are described.\nWater: Pvap(100 °C)=101 kPa; the solid–liquid line slopes slightly left (ice denser as liquid).\nCO2: Pvap(−78 °C) at 101 kPa is already on the sublimation curve; the triple point is 5.1 atm and −57 °C.\nWhich everyday consequence follows?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Water boils at 100 °C at any pressure, because 101 kPa is listed"
+        },
+        {
+          "key": "B",
+          "text": "Dry ice sublimes at 1 atm because 1 atm lies below the CO2 triple-point pressure; ice melts under pressure (skate-blade) because water’s melting line leans to lower T at higher P"
+        },
+        {
+          "key": "C",
+          "text": "CO2 must melt at −78 °C and 1 atm, like water at 0 °C"
+        },
+        {
+          "key": "D",
+          "text": "Raising pressure on ice always raises its melting point, as for CO2"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "CO2’s triple point at 5.1 atm means that at 1 atm there is no liquid region: heating solid CO2 crosses the sublimation curve at −78 °C. Water’s triple point is well below 1 atm, so 1 atm heating melts then boils. The negative slope of water’s melting curve means higher pressure lowers the melting temperature, the qualitative ice-skate argument. CO2 does not melt at 1 atm. Water’s melting line is the unusual left-leaning one, not CO2’s. Boiling temperature tracks Pvap = external P, so it is 100 °C only when that pressure is 101 kPa.",
+      "distractor_rationales": {
+        "C": "1 atm is below the 5.1 atm triple point, so liquid CO2 is not stable and dry ice sublimes.",
+        "D": "Water’s solid–liquid line slopes the opposite way to most substances, lowering Tm with P.",
+        "A": "The 101 kPa row fixes the normal boiling point; at other pressures water boils at other temperatures."
+      },
+      "difficulty_est": 0.57
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t30",
+      "type": "discrete",
+      "stem": "Formation of nickel complexes in water (Ni2+ is d8):\n\nSpecies | added ligand | colour | proposed formula | coordination number\naqua ion | H2O | green | [Ni(H2O)6]2+ | 6\n+ excess NH3 | NH3 | blue-violet | [Ni(NH3)6]2+ | 6\n+ excess CN− | CN− | yellow | [Ni(CN)4]2− | 4\n\nCharge on the cyano complex: Ni2+ plus 4 CN−. Which statement is consistent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The aqua ion is [Ni(H2O)4]2+ because the cyano complex is four-coordinate"
+        },
+        {
+          "key": "B",
+          "text": "Adding NH3 oxidises Ni2+ to Ni3+, which is why the colour changes"
+        },
+        {
+          "key": "C",
+          "text": "Water and ammonia give octahedral Ni(II); cyanide, a strong-field ligand, gives a four-coordinate [Ni(CN)4]2− of charge 2−"
+        },
+        {
+          "key": "D",
+          "text": "[Ni(CN)4]2− must contain Ni(IV) because the charge is 2−"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "The aqua and ammine rows are both coordination number 6, the usual octahedral Ni(II) complexes, with ligand substitution (not a change of oxidation state) explaining the green to blue-violet shift. Four cyanide ligands on Ni2+ give overall charge 2 + 4(−1) = −2, matching [Ni(CN)4]2−, a well-known square-planar strong-field complex of d8 Ni(II). Charge 2− does not require Ni(IV) (that would be Ni4+ + 4 CN− = 0). The aqua ion is listed as six-coordinate. Colour change on adding NH3 is ligand-field substitution of H2O, not oxidation to Ni3+.",
+      "distractor_rationales": {
+        "D": "Ni2+ + 4 CN− = −2 overall with nickel still in the +2 state.",
+        "A": "The table assigns the aqua ion coordination number 6, [Ni(H2O)6]2+.",
+        "B": "The ammine formula still contains Ni2+; NH3 is not an oxidant here."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.chem.t30",
+      "type": "discrete",
+      "stem": "Two isomers of octahedral [Co(NH3)4Cl2]+ are isolated.\n\nIsomer | colour | measured dipole moment | Cl–Co–Cl angle from diffraction\nViolet | polar (μ > 0) | 90°\nGreen | μ = 0 | 180°\n\nMA4B2 octahedra have a cis isomer (adjacent X ligands) and a trans isomer (opposite X ligands). Which assignment follows?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Green is cis because a 180° angle means the chlorides are neighbours"
+        },
+        {
+          "key": "B",
+          "text": "Both must be the same isomer because the formula is [Co(NH3)4Cl2]+ in each case"
+        },
+        {
+          "key": "C",
+          "text": "Violet is tetrahedral CoCl2(NH3)2, which is why it is polar"
+        },
+        {
+          "key": "D",
+          "text": "Violet is cis (90° Cl–Co–Cl, net dipole); green is trans (180° Cl–Co–Cl, dipoles cancel)"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Adjacent chlorides in cis-[Co(NH3)4Cl2]+ give a 90° Cl–Co–Cl angle, so the Co–Cl bond dipoles cannot cancel and the ion is polar: the violet isomer. Opposite chlorides in the trans isomer sit 180° apart, the dipoles cancel (μ = 0), and that is the green isomer. A 180° angle is the definition of trans, not of neighbouring (cis) ligands. The same formula with two geometries is stereoisomerism, not identity. Four ammines plus two chlorides is coordination number 6, octahedral Co(III), not a tetrahedral CoCl2(NH3)2 species.",
+      "distractor_rationales": {
+        "A": "Neighbouring chlorides are 90° apart (cis). 180° is trans.",
+        "B": "Cis and trans share a formula by definition; polarity and the Cl–Co–Cl angle distinguish them.",
+        "C": "The formula [Co(NH3)4Cl2]+ already contains six ligands, so the geometry is octahedral."
+      },
+      "difficulty_est": 0.51
+    }
+  ]
+}

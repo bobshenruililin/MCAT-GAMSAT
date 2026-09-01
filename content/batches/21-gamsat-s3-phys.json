@@ -1,0 +1,1430 @@
+{
+  "items": [
+    {
+      "concept_id": "GAMSAT.S3.phys.t2",
+      "type": "discrete",
+      "stem": "A ball is launched from level ground at 20 m s−1 and 45° in a region where g = 10 m s−2 and air resistance is neglected. Take sin 45° = cos 45° = 1/√2, so the initial components are each 10√2 m s−1. Maximum height H = uy² / (2g), range R = u² sin 2θ / g, and time of flight T = 2 uy / g. Which set is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "H = 10 m, R = 40 m, T = 2√2 s"
+        },
+        {
+          "key": "B",
+          "text": "H = 20 m, R = 40 m, T = 4.0 s"
+        },
+        {
+          "key": "C",
+          "text": "H = 10 m, R = 20 m, T = 2√2 s"
+        },
+        {
+          "key": "D",
+          "text": "H = 40 m, R = 10 m, T = 2.0 s"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "uy = 10√2 m s−1, so H = (10√2)² / 20 = 200/20 = 10 m. At 45°, sin 2θ = 1, so R = u² / g = 400/10 = 40 m. T = 2(10√2)/10 = 2√2 s. Using uy = 20 m s−1 as if the launch were vertical would give H = 20 m and T = 4 s. Halving the range to 20 m confuses H with R/2 or uses only one velocity component in R = u t. Swapping 10 m and 40 m mixes height with range.",
+      "distractor_rationales": {
+        "B": "H = 20 m and T = 4 s would require uy = 20 m s−1, i.e. a vertical launch, not 45°.",
+        "C": "The 10 m height is right, but R = u²/g = 40 m at 45°, not 20 m.",
+        "D": "40 m is the range, not the height; 10 m is the height, not the range."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t2",
+      "type": "discrete",
+      "stem": "An aircraft flies horizontally at 80 m s−1 at a height of 45 m and releases a supply crate. g = 10 m s−2; air resistance is neglected. The crate’s initial vertical velocity is 0. Time to the ground is found from h = (1/2) g t². Horizontal velocity remains 80 m s−1. How far down-range does the crate land, and what is its vertical speed on impact?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "45 m down-range; vertical speed 0, because it was released not thrown"
+        },
+        {
+          "key": "B",
+          "text": "240 m down-range; vertical speed 30 m s−1"
+        },
+        {
+          "key": "C",
+          "text": "80 m down-range; vertical speed 45 m s−1"
+        },
+        {
+          "key": "D",
+          "text": "240 m down-range; vertical speed 80 m s−1"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "From 45 = 5 t², t² = 9, t = 3.0 s. Horizontal distance = 80 × 3.0 = 240 m. Vertical speed vy = g t = 30 m s−1. The horizontal speed is unchanged at 80 m s−1, but that is not the vertical component. Using t = 1 s (as if s = vt with v = 45) gives only 80 m of range. A dropped object still accelerates vertically; impact vertical speed is not zero. Independence of perpendicular components is the whole point of the calculation.",
+      "distractor_rationales": {
+        "C": "80 m would be the range for a 1.0 s fall; t is 3.0 s from h = 5 t². Vertical speed is gt, not the height number 45.",
+        "D": "The range 240 m is right, but 80 m s−1 is the unchanged horizontal speed, not vy.",
+        "A": "Release with uy = 0 still allows free-fall acceleration; after 3 s, vy = 30 m s−1, and the crate has travelled 240 m horizontally."
+      },
+      "difficulty_est": 0.38
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t3",
+      "type": "discrete",
+      "stem": "A 10 kg crate on a rough horizontal floor is pulled by a 20 N horizontal force. Kinetic friction is 5.0 N. Newton’s second law is ΣF = ma. Starting from rest, what is the acceleration, and how far has the crate moved after 4.0 s?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "a = 0.50 m s−2; s = 4.0 m"
+        },
+        {
+          "key": "B",
+          "text": "a = 2.5 m s−2; s = 20 m (adding friction to the pull)"
+        },
+        {
+          "key": "C",
+          "text": "a = 1.5 m s−2; s = 12 m"
+        },
+        {
+          "key": "D",
+          "text": "a = 2.0 m s−2; s = 16 m (friction omitted)"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Net force = 20 − 5.0 = 15 N, so a = 15/10 = 1.5 m s−2. From rest, s = (1/2) a t² = 0.50 × 1.5 × 16 = 12 m. Omitting friction gives a = 2.0 m s−2 and 16 m. Using only the 5 N friction as the net force gives 0.50 m s−2. Adding friction to the pull as if both acted forward gives 25 N and 2.5 m s−2. The free-body diagram has the pull forward and friction backward.",
+      "distractor_rationales": {
+        "D": "Friction 5.0 N opposes the 20 N pull, so the net force is 15 N, not 20 N.",
+        "A": "0.50 m s−2 would be 5.0 N / 10 kg, using friction alone and ignoring the 20 N pull.",
+        "B": "Friction does not add to the pull; it subtracts from it on a horizontal floor."
+      },
+      "difficulty_est": 0.34
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t3",
+      "type": "discrete",
+      "stem": "An Atwood machine has masses 3.0 kg and 1.0 kg joined by a light inextensible string over a light frictionless pulley. g = 10 m s−2. The acceleration of the system is a = (m1 − m2)g / (m1 + m2), and the tension is the same throughout the string. What are a and T?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "a = 10 m s−2; T = 0, as in free fall of both masses"
+        },
+        {
+          "key": "B",
+          "text": "a = 5.0 m s−2; T = 30 N"
+        },
+        {
+          "key": "C",
+          "text": "a = 2.5 m s−2; T = 15 N"
+        },
+        {
+          "key": "D",
+          "text": "a = 5.0 m s−2; T = 15 N"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "a = (3.0 − 1.0) × 10 / (3.0 + 1.0) = 20/4 = 5.0 m s−2. For the 1.0 kg mass, T − 10 = 1.0 × 5.0, so T = 15 N. Checking the 3.0 kg mass: 30 − T = 15, T = 15 N. Both masses cannot be in free fall while linked by a taut string; T is not zero. T = 30 N would be the 3.0 kg weight with no acceleration. a = 2.5 m s−2 would follow from dividing by 8 kg or using g/4 without the mass difference of 2.0 kg over 4.0 kg.",
+      "distractor_rationales": {
+        "A": "The string constraint couples the masses, so neither falls at g and the string carries tension.",
+        "B": "T = 30 N is the weight of the heavy mass; a non-zero acceleration requires T < m1 g.",
+        "C": "The factor (m1 − m2)/(m1 + m2) is 2/4 = 1/2, so a = 5.0 m s−2, not 2.5."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t4",
+      "type": "discrete",
+      "stem": "A 2.0 kg block is launched up a frictionless incline at 10 m s−1. g = 10 m s−2. Mechanical energy is conserved: (1/2) m v² = m g h at the highest point. What maximum vertical height does it reach, and if a constant 8.0 N kinetic-friction force later acts on the level return path, how much extra distance is needed to stop it from the same 10 m s−1?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "h = 5.0 m; extra stopping distance 12.5 m"
+        },
+        {
+          "key": "B",
+          "text": "h = 10 m; extra stopping distance 25 m"
+        },
+        {
+          "key": "C",
+          "text": "h = 5.0 m; extra stopping distance 2.5 m"
+        },
+        {
+          "key": "D",
+          "text": "h = 0.50 m; extra stopping distance 12.5 m"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Initial KE = (1/2)×2.0×100 = 100 J. Height: 100 = 2.0×10×h, so h = 5.0 m. On the level, friction does −8.0 s = −100 J to cancel that KE, hence s = 12.5 m. Using mgh with g omitted or v² = 100 as h would give 10 m. Dividing 100 J by 40 N (perhaps mg) gives 2.5 m, ten times too short for an 8 N force. h = 0.50 m would be 100 / (2×10×10) with an extra factor of 10. Energy accounting therefore separates the vertical climb from the later dissipative stop.",
+      "distractor_rationales": {
+        "B": "h = v²/g = 10 m forgets the 1/2 in KE, or uses h = v²/g instead of v²/2g.",
+        "C": "The 5.0 m height is right, but 100 J / 8.0 N = 12.5 m, not 2.5 m.",
+        "D": "0.50 m is a factor-of-ten error in mgh; 100 J / 20 N = 5.0 m."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t4",
+      "type": "discrete",
+      "stem": "A hoist lifts a 50 kg crate at constant speed through 4.0 m in 8.0 s. g = 10 m s−2. Work against gravity is mgh. Average power is W/t. What are W and P? If the motor is only 50% efficient, what electrical power input is required?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "W = 16 000 J; P = 2000 W (using mgh t)"
+        },
+        {
+          "key": "B",
+          "text": "W = 2000 J; P = 250 W; input 500 W"
+        },
+        {
+          "key": "C",
+          "text": "W = 2000 J; P = 250 W; input 250 W, ignoring efficiency"
+        },
+        {
+          "key": "D",
+          "text": "W = 400 J; P = 50 W (using 50 kg as if it were newtons)"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Weight = 500 N, so W = 500 × 4.0 = 2000 J. Average output power = 2000/8.0 = 250 W. At 50% efficiency the electrical input must be 250 / 0.50 = 500 W. Efficiency less than one always means a larger input than the useful mechanical output. Treating 50 kg as 50 N undercounts work by g. Multiplying by t instead of dividing inflates power. Constant speed means the motor force equals weight, so W = mgh is the useful work.",
+      "distractor_rationales": {
+        "C": "50% efficiency doubles the required input relative to the 250 W mechanical output.",
+        "D": "Force is 50 × 10 = 500 N, not 50 N; work is 2000 J.",
+        "A": "Power is work/time, not work × time; 2000 J in 8 s is 250 W."
+      },
+      "difficulty_est": 0.36
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t5",
+      "type": "discrete",
+      "stem": "A 2.0 kg cart travelling at 6.0 m s−1 collides with a stationary 4.0 kg cart. For a perfectly inelastic collision they move together at v = (m1 u1) / (m1 + m2). Kinetic energies: KE = (1/2) m v². What is the common speed, and how much KE is lost?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "v = 2.0 m s−1; KE is conserved at 36 J"
+        },
+        {
+          "key": "B",
+          "text": "v = 3.0 m s−1; KE lost is 0"
+        },
+        {
+          "key": "C",
+          "text": "v = 2.0 m s−1; KE falls from 36 J to 12 J, so 24 J is lost"
+        },
+        {
+          "key": "D",
+          "text": "v = 6.0 m s−1; KE is conserved at 36 J"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Momentum conservation: 2.0 × 6.0 = (6.0) v, so v = 2.0 m s−1. Initial KE = 0.50 × 2.0 × 36 = 36 J. Final KE = 0.50 × 6.0 × 4.0 = 12 J. The missing 24 J is dissipated as heat and deformation, which is allowed in a perfectly inelastic collision. Speed is not unchanged, and KE is not conserved for the inelastic case. A 3.0 m s−1 guess is the mean of 6 and 0 without mass weighting. Elastic formulae would give a rebound of the light cart, not a common 2.0 m s−1.",
+      "distractor_rationales": {
+        "D": "The 4.0 kg cart must gain momentum, so the 2.0 kg cart must slow; v cannot stay 6.0 m s−1 if they stick.",
+        "A": "The common speed 2.0 m s−1 is right, but (1/2)×6×4 = 12 J, not 36 J, so KE is not conserved.",
+        "B": "Mass-weighted momentum gives 2.0 m s−1, not the unweighted average 3.0 m s−1, and inelastic collisions do lose KE."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t5",
+      "type": "discrete",
+      "stem": "A tennis ball of mass 0.060 kg hits a wall at 20 m s−1 and rebounds at 20 m s−1 in the opposite direction. The contact lasts 0.010 s. Impulse = Δp = F_avg Δt, taking incoming momentum as positive. What is the magnitude of the average force on the ball?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "120 N"
+        },
+        {
+          "key": "B",
+          "text": "1.2 N"
+        },
+        {
+          "key": "C",
+          "text": "0.012 N"
+        },
+        {
+          "key": "D",
+          "text": "240 N"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Incoming p = 0.060 × 20 = 1.2 kg m s−1. Outgoing p = −1.2 kg m s−1. Change in momentum = −1.2 − 1.2 = −2.4 kg m s−1, so |Δp| = 2.4 kg m s−1. F_avg = 2.4 / 0.010 = 240 N. Using |Δp| = 1.2 (as if the ball stopped) halves the force to 120 N. Forgetting to divide by 0.010 s leaves 1.2 N, the momentum change of a stop, not a force. 0.012 N treats Δt as 100 s or multiplies instead of dividing incorrectly. Reversal doubles the impulse relative to a dead stop.",
+      "distractor_rationales": {
+        "A": "120 N would be correct if the ball stopped and did not rebound, so |Δp| = 1.2 rather than 2.4.",
+        "B": "1.2 N is |Δp| for a stop, with the 0.010 s omitted, and has the wrong unit role.",
+        "C": "0.012 N is 0.060 × 0.20 or a similar product that is not Δp/Δt."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t6",
+      "type": "discrete",
+      "stem": "A 2.0 kg stone on a 4.0 m light string is whirled in a horizontal circle at 8.0 m s−1 (ignore gravity for this horizontal ‘idealised’ tension problem, or take it as a smooth ice puck on a string). Centripetal acceleration is v²/r and T = m v²/r. Period T_period = 2π r / v. What are the tension and the period?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Tension 32 N; period π s"
+        },
+        {
+          "key": "B",
+          "text": "Tension 4.0 N; period 2.0 s"
+        },
+        {
+          "key": "C",
+          "text": "Tension 32 N; period 2π s"
+        },
+        {
+          "key": "D",
+          "text": "Tension 16 N; period π s"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "a = v²/r = 64/4.0 = 16 m s−2, so T = m a = 2.0 × 16 = 32 N. Period = 2π × 4.0 / 8.0 = π s. Using v/r = 2.0 s−1 as if it were acceleration gives 4.0 N. Period 2π s would be 2π r / v with v taken as 4, or 2π r without dividing by v correctly. 16 N is the acceleration magnitude painted as a force, omitting the 2.0 kg. The inverse-square law is not needed for a string-enforced circle of given r and v.",
+      "distractor_rationales": {
+        "B": "4.0 N is m(v/r) with v/r = 2 s−1 treated as acceleration; true a is v²/r = 16 m s−2.",
+        "C": "Tension 32 N is right, but T = 2πr/v = 8π/8 = π s, not 2π s.",
+        "D": "16 N is ma without m, or a itself in newtons; the mass is 2.0 kg."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t6",
+      "type": "discrete",
+      "stem": "Surface gravity on a spherical planet is g = GM / R² = 10 m s−2. Two locations are compared: (i) at r = 2R from the centre (above the surface), (ii) a planet of the same density with radius 2R. Density ρ is constant, and M = (4/3)π R³ ρ, so g ∝ ρ R at the surface. What is g at (i), and what is surface g on the larger planet (ii)?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "(i) 20 m s−2; (ii) 40 m s−2"
+        },
+        {
+          "key": "B",
+          "text": "(i) 2.5 m s−2; (ii) 20 m s−2"
+        },
+        {
+          "key": "C",
+          "text": "(i) 5.0 m s−2; (ii) 5.0 m s−2"
+        },
+        {
+          "key": "D",
+          "text": "(i) 2.5 m s−2; (ii) 2.5 m s−2"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Outside a sphere, g(r) = GM/r². At r = 2R, g = g_surface / 4 = 2.5 m s−2. For a same-density planet, M scales as R³, so surface g = GM/R² scales as R: doubling R doubles surface g to 20 m s−2. Using 1/r instead of 1/r² gives 5.0 m s−2 for (i). Applying the 1/4 factor to the larger planet as well confuses an exterior point with a new surface. Increasing g with R² without the mass scaling would overshoot. The two questions therefore use different dependencies: 1/r² off-surface versus ρR on a new world.",
+      "distractor_rationales": {
+        "C": "At 2R from the original centre, g falls as 1/r² not 1/r, so 2.5 not 5.0 m s−2. The larger same-density planet has greater surface g, not 5.0.",
+        "D": "2.5 m s−2 is correct for (i) but not for the surface of a same-density world with twice the radius.",
+        "A": "g does not increase when you go farther from the original planet; (i) is weaker, not 20 m s−2."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t7",
+      "type": "discrete",
+      "stem": "A uniform 4.0 m beam weighs 80 N. It rests on supports at both ends (A left, B right). A 40 N crate sits 1.0 m from A. Vertical equilibrium: RA + RB = 120 N. Torque about A: clockwise 80 N at 2.0 m plus 40 N at 1.0 m equals RB × 4.0 m. What are RA and RB?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "RA = 80 N; RB = 40 N, each support taking the nearer load only"
+        },
+        {
+          "key": "B",
+          "text": "RA = 60 N; RB = 60 N, splitting the 120 N equally"
+        },
+        {
+          "key": "C",
+          "text": "RA = 70 N; RB = 50 N"
+        },
+        {
+          "key": "D",
+          "text": "RA = 50 N; RB = 70 N"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Moments about A: 80 × 2.0 + 40 × 1.0 = 160 + 40 = 200 N m = RB × 4.0, so RB = 50 N. Then RA = 120 − 50 = 70 N. The left support carries more because the crate is closer to A. Swapping 70 and 50 puts the larger reaction at the far end. Assigning each support only the object next to it ignores that the beam’s own 80 N is shared. Equal 60 N reactions would be correct only if the extra 40 N sat at the midpoint.",
+      "distractor_rationales": {
+        "D": "The crate is nearer A, so A must carry the larger share; moments about A already fix RB = 50 N.",
+        "A": "The beam’s weight acts at the centre and is supported by both ends, not solely by A.",
+        "B": "Equal reactions would require the 40 N load at mid-span, not 1.0 m from A."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t7",
+      "type": "discrete",
+      "stem": "A spanner of length 0.25 m applies a force of 40 N to a nut. Torque τ = F d sin θ, with θ the angle between the force and the spanner. Compute τ for θ = 90° and for θ = 30° (sin 30° = 0.50). Which pair is correct, and which orientation tightens more effectively?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "10 N m at both angles, because F and d are unchanged"
+        },
+        {
+          "key": "B",
+          "text": "5.0 N m at 90°; 10 N m at 30°"
+        },
+        {
+          "key": "C",
+          "text": "100 N m at 90°; 50 N m at 30° (using 2.5 m as the length)"
+        },
+        {
+          "key": "D",
+          "text": "10 N m at 90°; 5.0 N m at 30°; perpendicular is more effective"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "At 90°, sin θ = 1, so τ = 40 × 0.25 = 10 N m. At 30°, sin θ = 0.50, so τ = 5.0 N m. Only the perpendicular component of the force produces rotation, so the 90° pull is twice as effective. Angle independence would contradict the sin θ factor. Swapping the two values inverts that geometry. Using 2.5 m instead of 0.25 m inflates both torques by ten. Maximum torque at a given F and d is always the perpendicular case.",
+      "distractor_rationales": {
+        "A": "τ includes sin θ, which halves when θ goes from 90° to 30°.",
+        "B": "sin 90° = 1 > sin 30° = 0.50, so the 10 N m value belongs to 90°.",
+        "C": "The length is 0.25 m, not 2.5 m; 40 × 0.25 = 10, not 100."
+      },
+      "difficulty_est": 0.33
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t8",
+      "type": "discrete",
+      "stem": "A 4.0 kg mass on a horizontal frictionless track is attached to a spring of k = 100 N m−1 and oscillates with amplitude 0.10 m. Angular frequency ω = √(k/m), period T = 2π/ω, vmax = ω A, amax = ω² A, and E = (1/2) k A². Which set is correct? (√(100/4) = 5.0 rad s−1.)",
+      "choices": [
+        {
+          "key": "A",
+          "text": "T = 2π/5 s; vmax = 0.50 m s−1; amax = 2.5 m s−2; E = 0.50 J"
+        },
+        {
+          "key": "B",
+          "text": "T = 2π × 5 s; vmax = 5.0 m s−1; E = 50 J"
+        },
+        {
+          "key": "C",
+          "text": "T = 2π/5 s; vmax = 0.50 m s−1; E = 5.0 J"
+        },
+        {
+          "key": "D",
+          "text": "T = 5 s; amax = 0.10 m s−2; E = 0.50 J"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "ω = √(k/m) = 5.0 rad s−1, so T = 2π/5 s. vmax = 5.0 × 0.10 = 0.50 m s−1. amax = 25 × 0.10 = 2.5 m s−2. E = 0.50 × 100 × 0.010 = 0.50 J. Inverting ω into the period as 2π ω would make T huge. Using vmax = ω without multiplying by A gives 5 m s−1. Energy 5.0 J would be (1/2)kA or (1/2)m v with v = ω. T is not equal to ω. The four SHM relations therefore close consistently on option A.",
+      "distractor_rationales": {
+        "B": "T = 2π/ω not 2πω; vmax is ωA = 0.50 m s−1; E = ½kA² = 0.50 J, not ½k.",
+        "C": "Period and vmax are right, but E = ½ × 100 × 0.010 = 0.50 J, not 5.0 J.",
+        "D": "T = 2π/ω ≈ 1.3 s, not 5 s (that is ω). amax = ω²A = 2.5 m s−2, not A."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t8",
+      "type": "discrete",
+      "stem": "A simple pendulum has length 1.0 m. Take g = 10 m s−2 so T = 2π √(L/g) = 2π √0.10. √0.10 ≈ 0.32, hence T ≈ 2.0 s. The same pendulum is taken to a planet where g' = 2.5 m s−2, and a second pendulum of length 4.0 m is left on Earth. Which period pairing is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Both remain 2.0 s, because a pendulum’s period is a universal constant"
+        },
+        {
+          "key": "B",
+          "text": "Planet: about 4.0 s; 4.0 m Earth pendulum: about 4.0 s"
+        },
+        {
+          "key": "C",
+          "text": "Planet: about 1.0 s; 4.0 m Earth pendulum: about 1.0 s"
+        },
+        {
+          "key": "D",
+          "text": "Planet: about 4.0 s; 4.0 m Earth pendulum: about 2.0 s"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "T scales as √(L/g). Reducing g from 10 to 2.5 is a factor of 1/4, so √(1/g) grows by 2 and T doubles to ~4.0 s. Lengthening L from 1.0 to 4.0 m at fixed g also multiplies T by 2, giving ~4.0 s. The two changes are therefore equivalent. If T scaled as g or as 1/L, the planet pendulum would be faster. The 4.0 m Earth pendulum is not still 2.0 s. Period is not a universal constant independent of L and g; that is why pendulums measure g.",
+      "distractor_rationales": {
+        "C": "Weaker gravity lengthens, not shortens, T; a longer pendulum is also slower, not faster.",
+        "D": "The planet value is right, but √4 = 2 so the 4.0 m Earth pendulum is ~4.0 s, not ~2.0 s.",
+        "A": "T = 2π√(L/g) depends on both length and gravity; neither change can be ignored."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t9",
+      "type": "discrete",
+      "stem": "A wave travels at 20 m s−1 on a string. The oscillator frequency is 10 Hz, so λ = v/f. The string is 2.0 m long and is fixed at both ends. Standing-wave wavelengths on that string are λn = 2L/n for integer n ≥ 1. Which description is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The travelling wavelength is 2.0 m, which is forbidden on a 2.0 m fixed-fixed string"
+        },
+        {
+          "key": "B",
+          "text": "The fundamental frequency must be 10 Hz because that is the driving frequency"
+        },
+        {
+          "key": "C",
+          "text": "The travelling wavelength is 2.0 m, which fits the n = 2 harmonic (two loops); the fundamental would be f1 = 5.0 Hz"
+        },
+        {
+          "key": "D",
+          "text": "The travelling wavelength is 0.50 m, matching n = 8"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "λ = 20/10 = 2.0 m. For L = 2.0 m, n = 2L/λ = 4.0/2.0 = 2, so two half-wavelengths fit: the second harmonic. The fundamental has λ1 = 2L = 4.0 m and f1 = v/λ1 = 5.0 Hz. A 2.0 m standing wave is allowed; it is simply not n = 1. Driving at 10 Hz selects n = 2, not the fundamental. λ = 0.50 m would be v/f with f = 40 Hz. Fixed-fixed strings support any integer n, including n = 2.",
+      "distractor_rationales": {
+        "D": "λ = v/f = 2.0 m, not 0.50 m.",
+        "A": "n = 2 is an allowed mode; forbidden would mean a non-integer n, which this is not.",
+        "B": "The driver can excite a harmonic; f1 = v/(2L) = 5.0 Hz is the lowest possible standing-wave frequency."
+      },
+      "difficulty_est": 0.49
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t9",
+      "type": "discrete",
+      "stem": "Two coherent waves of amplitude 4.0 cm and 3.0 cm occupy the same region. Superposition adds displacements. In phase, the resultant amplitude is 7.0 cm; exactly out of phase it is 1.0 cm. Intensities scale as amplitude squared. What is the ratio I_max / I_min?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "7"
+        },
+        {
+          "key": "B",
+          "text": "16/9"
+        },
+        {
+          "key": "C",
+          "text": "25/7"
+        },
+        {
+          "key": "D",
+          "text": "49"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "I_max is proportional to (4.0 + 3.0)² = 49 and I_min to (4.0 − 3.0)² = 1, so the ratio is 49. Intensity does not scale with amplitude linearly, so 7 is only the amplitude ratio. 16/9 is the intensity ratio of the two separate sources. 25/7 would mix A² sums in an unmotivated way (16+9 over 7). Completely constructive versus completely destructive interference of unequal amplitudes therefore gives a large but finite intensity contrast, not zero minima.",
+      "distractor_rationales": {
+        "A": "Seven is A_max/A_min, not I_max/I_min; intensity goes as amplitude squared.",
+        "B": "16/9 = A1²/A2² compares the two waves one at a time, not the interference extremes.",
+        "C": "25/7 has no standing in (A1±A2)²; those squares are 49 and 1."
+      },
+      "difficulty_est": 0.45
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t11",
+      "type": "discrete",
+      "stem": "A light ray in air (n = 1.00) strikes glass (n = 1.50) at 30° to the normal. Snell’s law: n1 sin θ1 = n2 sin θ2. sin 30° = 0.50. The critical angle for glass → air satisfies sin θc = 1.00/1.50 = 2/3. Which pair is correct? (arcsin(1/3) ≈ 19.5°; arcsin(2/3) ≈ 42°.)",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Refracted angle in glass ≈ 19.5°; light in glass incident at 42° to the normal is at the critical angle"
+        },
+        {
+          "key": "B",
+          "text": "Refracted angle ≈ 45°; critical angle 30°"
+        },
+        {
+          "key": "C",
+          "text": "Refracted angle ≈ 19.5°; critical angle 60°, from n_g sin 60° = 1"
+        },
+        {
+          "key": "D",
+          "text": "The ray cannot enter the glass because 30° exceeds the critical angle"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "sin θ2 = (1.00/1.50) × 0.50 = 1/3, so θ2 ≈ 19.5°. Light bends toward the normal on entering glass, so the angle must drop below 30°, not rise to 45°. The critical angle is measured inside glass: sin θc = n_air/n_glass = 2/3, θc ≈ 42°. Using sin 60° = √3/2 with n_g would not equal 1. The critical angle applies to the dense-to-rare direction; a 30° air ray is well able to enter. Total internal reflection is not an issue on this first interface.",
+      "distractor_rationales": {
+        "B": "45° would be a larger angle in the denser medium, violating Snell; 30° is the air incidence, not θc.",
+        "C": "The 19.5° refraction is right, but sin θc = 2/3, not a 60° guess from n sin 60° = 1 (that would need sin 60° = 2/3, which is false).",
+        "D": "Critical-angle physics applies when the ray is already in glass heading toward air; here the ray starts in air."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t11",
+      "type": "discrete",
+      "stem": "A thin converging lens has focal length 10 cm. A real object stands 30 cm from the lens. Using the real-is-positive convention, 1/v + 1/u = 1/f. Linear magnification m = −v/u. Where is the image, and what is m?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Real image 7.5 cm from the lens, m = −0.25"
+        },
+        {
+          "key": "B",
+          "text": "Real image 15 cm from the lens, inverted, half size (m = −0.50)"
+        },
+        {
+          "key": "C",
+          "text": "Virtual image 15 cm behind the object, m = +2.0"
+        },
+        {
+          "key": "D",
+          "text": "Real image 30 cm from the lens, m = −1.0"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "1/v = 1/10 − 1/30 = 3/30 − 1/30 = 2/30 = 1/15, so v = 15 cm, real, on the far side. m = −15/30 = −0.50: inverted and half as tall. A virtual image would require a negative v, which occurs for u < f, not for u = 3f. Equal object and image distances would need u = 2f = 20 cm, the 2f–2f case, not 30 cm. 7.5 cm would be f/something other than the lens equation. The object is outside f, so the image of a converging lens is real and inverted.",
+      "distractor_rationales": {
+        "C": "u = 30 cm > f, so the image is real and inverted, not virtual and upright.",
+        "D": "u = v = 30 cm would require f = 15 cm (1/30+1/30=1/15), not f = 10 cm.",
+        "A": "7.5 cm is not 1/(1/10 − 1/30); that difference of reciprocals is 1/15."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t12",
+      "type": "discrete",
+      "stem": "Young’s double slit uses λ = 5.0 × 10−7 m, slit separation d = 5.0 × 10−4 m, and a screen at D = 2.0 m. Fringe spacing (adjacent bright fringes) is β = λ D / d. The third bright fringe from the centre (m = 3) is at y = 3β. What are β and that y?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "β = 0.50 mm; y = 1.5 mm"
+        },
+        {
+          "key": "B",
+          "text": "β = 5.0 mm; y = 15 mm"
+        },
+        {
+          "key": "C",
+          "text": "β = 2.0 mm; y = 6.0 mm"
+        },
+        {
+          "key": "D",
+          "text": "β = 2.0 mm; y = 2.0 mm"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "β = (5.0 × 10−7 × 2.0) / (5.0 × 10−4) = (1.0 × 10−6) / (5.0 × 10−4) = 2.0 × 10−3 m = 2.0 mm. The m = 3 bright fringe sits at 3 × 2.0 mm = 6.0 mm. Leaving out the factor 3 reports only one fringe spacing. Inverting D and d or dropping a power of ten can produce 0.50 mm or 5.0 mm. Constructive interference at mλ path difference maps linearly to y = m λ D / d on a distant screen, so the arithmetic is a direct substitution.",
+      "distractor_rationales": {
+        "D": "β = 2.0 mm is right, but m = 3 places the fringe at 6.0 mm, not at the first fringe.",
+        "A": "0.50 mm would be d D / λ or a swapped 10−3/10−something; the formula is λD/d.",
+        "B": "5.0 mm is λD/d with d taken as 2.0 × 10−4 m, not 5.0 × 10−4 m."
+      },
+      "difficulty_est": 0.46
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t12",
+      "type": "discrete",
+      "stem": "A single slit of width a = 4.0 × 10−4 m is illuminated with λ = 5.0 × 10−7 m. The first diffraction minimum satisfies a sin θ = λ. For small θ in radians, sin θ ≈ θ ≈ λ/a. A screen is D = 2.0 m away, so the linear distance from centre to the first minimum is y ≈ θ D. The full central-maximum width is 2y. What is that full width?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2.5 mm"
+        },
+        {
+          "key": "B",
+          "text": "8.0 mm"
+        },
+        {
+          "key": "C",
+          "text": "1.25 mm"
+        },
+        {
+          "key": "D",
+          "text": "5.0 mm"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "θ ≈ λ/a = 5.0×10−7 / 4.0×10−4 = 1.25×10−3 rad. Then y = θ D = 1.25×10−3 × 2.0 = 2.5×10−3 m = 2.5 mm to the first minimum. The central bright fringe spans both sides, so the full width is 2y = 5.0 mm. Reporting y itself gives 2.5 mm. Using a = 2.5×10−4 m would widen the pattern. Half of y is 1.25 mm, the angle in milliradians misread as a millimetre distance without multiplying by D correctly. Narrower slits spread the pattern more; this a and λ already fix 5.0 mm.",
+      "distractor_rationales": {
+        "A": "2.5 mm is the centre-to-first-minimum distance y, not the full 2y width of the central maximum.",
+        "B": "8.0 mm would require a smaller slit or a larger D than those given.",
+        "C": "1.25 mm is θ in milliradians written as millimetres, or y/2, omitting the screen distance or the two-sided width."
+      },
+      "difficulty_est": 0.55
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t13",
+      "type": "discrete",
+      "stem": "Coulomb’s law is F = k |q1 q2| / r² with k = 9.0 × 10^9 N m² C−2. Two point charges of +2.0 μC and +2.0 μC are 3.0 m apart. The electric field of a single 2.0 μC charge is E = k q / r². What is F, and what is E at 3.0 m from one of the charges alone?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "F = 4.0 × 10−3 N; E = 2.0 × 10^3 N C−1"
+        },
+        {
+          "key": "B",
+          "text": "F = 4.0 N; E = 2.0 × 10^6 N C−1"
+        },
+        {
+          "key": "C",
+          "text": "F = 4.0 × 10−3 N; E = 4.0 × 10−3 N C−1"
+        },
+        {
+          "key": "D",
+          "text": "F = 0 because like charges cannot exert forces in a vacuum"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "q = 2.0 × 10−6 C, r² = 9.0, so k q² / r² = (9.0×10^9)(4.0×10−12)/9.0 = (36×10−3)/9.0 = 4.0×10−3 N. E from one charge is kq/r² = (9.0×10^9)(2.0×10−6)/9.0 = 18×10^3 / 9.0 = 2.0×10^3 N C−1. Dropping the micro- prefix (using 2 C) inflates F by 10^12. E is not equal to F in newtons per coulomb by coincidence of the 4.0×10−3 figure. Like charges repel with that Coulomb force; vacuum is the setting Coulomb’s law assumes.",
+      "distractor_rationales": {
+        "B": "2.0 μC is 2.0 × 10−6 C, not 2.0 C; omitting 10−6 twice overstates F catastrophically.",
+        "C": "The force 4.0 × 10−3 N is right, but E = kq/r² = 2000 N C−1, not the force copied into N C−1.",
+        "D": "Coulomb’s law is a vacuum (or air) law; like charges repel with F = 4.0 mN here."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t13",
+      "type": "discrete",
+      "stem": "Points P and Q lie on the perpendicular bisector and on the line joining two charges, respectively:\n\nCharges: +4.0 μC at x = −1.0 m and +4.0 μC at x = +1.0 m.\nP is at (0, 0), the midpoint.\nQ is at (3.0 m, 0).\n\nElectric field is a vector; potential V = kq/r is a scalar. Which statement is true?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "E is maximum at P and zero at Q"
+        },
+        {
+          "key": "B",
+          "text": "At P the fields cancel so E = 0 but V is 2 kq/r = 7.2 × 10^4 V; at Q the fields add in the same direction"
+        },
+        {
+          "key": "C",
+          "text": "E and V are both zero at P because it is halfway"
+        },
+        {
+          "key": "D",
+          "text": "V = 0 at P because the charges are equal"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "At the midpoint the two E vectors are equal, opposite, and cancel, so E = 0. Potentials add: each is k(4.0×10−6)/1.0 = 3.6×10^4 V, total 7.2×10^4 V. Equal like charges do not make V = 0; that would need opposite signs. At Q, both field arrows point to +x (away from both positives), so they add. E is therefore a minimum (zero) at P, not a maximum. Midpoint cancellation of E for like charges is a vector effect and does not null the scalar potential.",
+      "distractor_rationales": {
+        "C": "E = 0 at P, but V is the sum of two positive terms, 7.2 × 10^4 V.",
+        "D": "V = 0 on a perpendicular bisector of opposite charges, not like charges.",
+        "A": "The symmetric point P is where E cancels; Q is off to one side, where the arrows align."
+      },
+      "difficulty_est": 0.57
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t14",
+      "type": "discrete",
+      "stem": "A 12 V battery with internal resistance r = 1.0 Ω is connected to an external resistor R = 5.0 Ω. The current is I = emf / (R+r). Terminal voltage is V = I R = emf − I r. Power in R is I² R. Which set is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "I = 2.0 A; V = 12 V; P_R = 24 W"
+        },
+        {
+          "key": "B",
+          "text": "I = 12 A; V = 5.0 V"
+        },
+        {
+          "key": "C",
+          "text": "I = 2.0 A; V = 10 V; P_R = 20 W"
+        },
+        {
+          "key": "D",
+          "text": "I = 2.4 A; V = 12 V (internal resistance ignored)"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Total resistance 6.0 Ω, so I = 12/6.0 = 2.0 A. Terminal voltage is the drop across R: 2.0 × 5.0 = 10 V, equivalently 12 − 2.0 × 1.0 = 10 V. Power in R is 4.0 × 5.0 = 20 W. Ignoring r gives 2.4 A and a false 12 V at the terminals under load. Keeping I = 2.0 A but quoting V = 12 V forgets the internal drop. I = 12 A would be emf/r or emf with 1 Ω total. Loaded terminal voltage is always below emf when r > 0 and I > 0.",
+      "distractor_rationales": {
+        "D": "The 1.0 Ω internal resistance sits in series, so I is 2.0 A not 12/5 = 2.4 A, and V_terminal < 12 V.",
+        "A": "I = 2.0 A is right, but 2.0 A through r wastes 2.0 V, leaving 10 V at the terminals.",
+        "B": "12 A would require a 1.0 Ω total loop; the loop is 6.0 Ω."
+      },
+      "difficulty_est": 0.42
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t14",
+      "type": "discrete",
+      "stem": "Three 6.0 Ω resistors are combined. Network X is all three in series. Network Y is all three in parallel. Network Z is one resistor in series with a parallel pair of the other two. A 12 V ideal battery is applied to each network in turn. What are the three currents drawn from the battery?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "X: 6.0 A; Y: 0.67 A (series/parallel reversed)"
+        },
+        {
+          "key": "B",
+          "text": "All three draw 2.0 A, because each network still contains three 6 Ω resistors"
+        },
+        {
+          "key": "C",
+          "text": "X: 0.67 A; Y: 2.0 A; Z: 1.0 A"
+        },
+        {
+          "key": "D",
+          "text": "X: 0.67 A; Y: 6.0 A; Z: 1.33 A"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Series: Req = 18 Ω, I = 12/18 = 0.67 A. Parallel: 1/Req = 3/6.0, Req = 2.0 Ω, I = 12/2.0 = 6.0 A. For Z, the parallel pair is 3.0 Ω, plus 6.0 Ω in series gives 9.0 Ω, I = 12/9.0 = 1.33 A. Reversing series and parallel swaps 0.67 with 6.0. Identical resistor counts do not imply identical Req. A current of 2.0 A would be 12 V across a single 6 Ω resistor, not three in parallel. The three currents therefore rank Y > Z > X, matching decreasing equivalent resistance.",
+      "distractor_rationales": {
+        "A": "Series adds resistance (small current); parallel cuts resistance (large current).",
+        "B": "Series and parallel equivalents of three 6 Ω resistors are 18 Ω versus 2 Ω, not the same.",
+        "C": "Y draws 6.0 A, not 2.0 A; 2.0 A would be a single 6 Ω across 12 V."
+      },
+      "difficulty_est": 0.51
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t15",
+      "type": "discrete",
+      "stem": "Two 4.0 μF capacitors are available, plus a 12 V battery. Combination S is the pair in series; combination P is the pair in parallel. C_series−1 = C1−1 + C2−1; C_parallel = C1 + C2. Charge Q = C V and energy U = (1/2) C V², with V the battery voltage on the combination. Which values follow?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "S: 2.0 μF, Q = 24 μC, U = 144 μJ; P: 8.0 μF, Q = 96 μC, U = 576 μJ"
+        },
+        {
+          "key": "B",
+          "text": "S: 8.0 μF; P: 2.0 μF (formulae swapped)"
+        },
+        {
+          "key": "C",
+          "text": "S: 2.0 μF, Q = 24 μC, U = 144 μJ; P: 8.0 μF, Q = 24 μC (same charge as series)"
+        },
+        {
+          "key": "D",
+          "text": "Both combinations store 144 μJ, because the battery voltage is the same"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "Series capacitors share charge and add as reciprocals: 1/C = 1/4 + 1/4, C = 2.0 μF. Then Q = 2.0 μF × 12 V = 24 μC and U = 0.50 × 2.0×10−6 × 144 = 144 μJ. Parallel adds: C = 8.0 μF, Q = 96 μC, U = 0.50 × 8.0×10−6 × 144 = 576 μJ. Swapping series and parallel inverts both C and the energies. Parallel across the same battery stores four times the energy of the series pair, not the same charge and not the same U. Voltage equality does not equalise C.",
+      "distractor_rationales": {
+        "B": "Series combination is smaller than either capacitor (2.0 μF); parallel is larger (8.0 μF).",
+        "C": "The series numbers are right, but parallel Q = 8.0 μF × 12 V = 96 μC, four times the series charge.",
+        "D": "U ∝ C at fixed V, and C_P = 4 C_S, so the energies are 576 μJ versus 144 μJ."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t15",
+      "type": "discrete",
+      "stem": "An RC circuit has R = 2.0 MΩ and C = 2.0 μF, so τ = RC = 4.0 s. The capacitor starts uncharged and is connected to a 12 V battery at t = 0. Qualitatively, Vc(t) = V(1 − e−t/τ) and Ic(t) decays from V/R. Which snapshot is consistent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "τ = 4.0 s means the capacitor is fully charged at t = 4.0 s exactly (Vc = 12 V, Ic = 0)"
+        },
+        {
+          "key": "B",
+          "text": "At t = 0, Ic = 6.0 μA and Vc = 0; at t = 4.0 s, Vc ≈ 7.6 V (about 63% of 12 V) and Ic has fallen to ~37% of 6.0 μA"
+        },
+        {
+          "key": "C",
+          "text": "At t = 0, Vc = 12 V already, because the battery is connected"
+        },
+        {
+          "key": "D",
+          "text": "Ic is constant at 6.0 μA for all t, as in a resistor-only circuit"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Initially the uncharged capacitor behaves as a short, so Vc = 0 and Ic = 12 V / 2.0×10^6 Ω = 6.0 μA. After one time constant the exponential (1 − 1/e) ≈ 0.63, so Vc ≈ 0.63 × 12 ≈ 7.6 V and current is 1/e ≈ 0.37 of its initial value. The capacitor voltage cannot jump to 12 V at t = 0; charge takes time to arrive. Current cannot stay at 6.0 μA once Vc has risen. One τ is not complete charging; that is approached only as t → ∞ (about 5τ for practical purposes).",
+      "distractor_rationales": {
+        "C": "Voltage on C is zero until charge has flowed; t = 0 is the uncharged state.",
+        "D": "As C charges, the remaining voltage on R falls, so Ic decays.",
+        "A": "At t = τ, 1 − e−1 ≈ 0.63, not 1.00; fully charged is the t → ∞ limit."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t16",
+      "type": "discrete",
+      "stem": "A straight wire of length 0.50 m carries 2.0 A in a uniform B = 0.40 T. The force is F = B I L sin θ. Compute F at θ = 90° and at θ = 30° (sin 30° = 0.50). The direction at 90° is given by the right-hand rule (I along +x, B along +y). Which pair and direction follow?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0.20 N at 90°; 0.40 N at 30°"
+        },
+        {
+          "key": "B",
+          "text": "0.40 N at 90° along −z (left-hand rule on conventional current)"
+        },
+        {
+          "key": "C",
+          "text": "0.40 N at 90°; 0.20 N at 30°; force along +z if I is +x and B is +y"
+        },
+        {
+          "key": "D",
+          "text": "0.40 N at both angles"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "At 90°, F = 0.40 × 2.0 × 0.50 × 1 = 0.40 N. At 30°, sin θ = 0.50, so F = 0.20 N. The vector product î × ĵ = k̂, so I along +x and B along +y give F along +z for conventional current (right-hand rule). Angle independence is false. Swapping 0.40 and 0.20 inverts sin θ. A left-hand rule applied to conventional current would flip the direction to −z. Maximum force is the perpendicular case.",
+      "distractor_rationales": {
+        "D": "sin θ halves from 90° to 30°, so F must halve.",
+        "A": "sin 90° = 1 > sin 30°, so the larger force is the 90° case.",
+        "B": "I × B with I = x̂ and B = ŷ is +ẑ, not −ẑ. The left-hand rule is the wrong hand for conventional current."
+      },
+      "difficulty_est": 0.47
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t16",
+      "type": "discrete",
+      "stem": "An electron (q = −1.6 × 10−19 C, m = 9.1 × 10−31 kg) moves at 2.0 × 10^6 m s−1 perpendicular to B = 0.50 T. F = |q| v B, and the orbital radius is r = m v / (|q| B). What are F and r? (Use m ≈ 9.0 × 10−31 kg for rounding.)",
+      "choices": [
+        {
+          "key": "A",
+          "text": "F = 1.6 × 10−13 N; r = 2.3 × 10−2 m"
+        },
+        {
+          "key": "B",
+          "text": "F = 1.6 × 10−19 N; r = 2.3 × 10−5 m"
+        },
+        {
+          "key": "C",
+          "text": "F = 0 because a magnetic field never does work, so it never exerts a force"
+        },
+        {
+          "key": "D",
+          "text": "F = 1.6 × 10−13 N; r = 2.3 × 10−5 m"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "F = (1.6×10−19)(2.0×10^6)(0.50) = 1.6×10−13 N. Then r = (9.0×10−31 × 2.0×10^6) / (1.6×10−19 × 0.50) = 1.8×10−24 / 8.0×10−20 = 2.25×10−5 m ≈ 2.3×10−5 m. A millimetre-scale 10−2 m would need a much smaller B or larger v. Using |q| alone as the force ignores vB. Magnetic forces do no work because F is perpendicular to v, but the force itself is not zero; it only changes direction, producing circular motion.",
+      "distractor_rationales": {
+        "A": "The force is right, but r is 2.3 × 10−5 m, not 2.3 cm; the 10−31/10−19 ratio already supplies 10−12 before v/B.",
+        "B": "1.6 × 10−19 N is the charge’s magnitude written as a force, omitting v B = 1.0 × 10^6 T m s−1.",
+        "C": "No-work means ΔKE = 0, not F = 0; the centripetal magnetic force is 1.6 × 10−13 N."
+      },
+      "difficulty_est": 0.62
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t17",
+      "type": "discrete",
+      "stem": "A conducting rod of length ℓ = 0.20 m slides at 4.0 m s−1 on rails in B = 0.50 T, B perpendicular to the area. Motional emf ε = B ℓ v. The circuit resistance is 2.0 Ω. Induced current I = ε/R. The magnetic drag is F = B I ℓ. What are ε, I, and F?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "ε = 0.40 V; I = 0.20 A; F = 0.020 N opposing the motion (Lenz)"
+        },
+        {
+          "key": "B",
+          "text": "ε = 0.40 V; I = 0.20 A; F = 0, because magnetic fields do no work"
+        },
+        {
+          "key": "C",
+          "text": "ε = 4.0 V; I = 2.0 A; F = 0.20 N"
+        },
+        {
+          "key": "D",
+          "text": "ε = 0.40 V; I = 2.0 A (R omitted as 0.20 Ω); F = 0.20 N"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "ε = 0.50 × 0.20 × 4.0 = 0.40 V. I = 0.40/2.0 = 0.20 A. F = 0.50 × 0.20 × 0.20 = 0.020 N. Lenz’s law requires that force to oppose the change in flux, i.e. to drag against the imposed velocity, so a pulling agent must do mechanical work that becomes I²R heat. ‘Magnetic fields do no work’ refers to F·v on individual charges in the B field, not to the external agent. Dropping a factor of 10 in Bℓv gives 4.0 V. Using R = 0.20 Ω instead of 2.0 Ω inflates I tenfold.",
+      "distractor_rationales": {
+        "B": "The 0.40 V and 0.20 A are right, but the current-carrying rod in B feels 0.020 N opposing the motion; the hand pulling the rod does the work.",
+        "C": "ε = Bℓv = 0.40 V, not 4.0 V; the later I and F scale from that error.",
+        "D": "R is 2.0 Ω, so I = 0.20 A not 2.0 A; F then is 0.020 N."
+      },
+      "difficulty_est": 0.52
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t17",
+      "type": "discrete",
+      "stem": "A coil of N = 50 turns has flux changing from 0.080 Wb to 0.020 Wb in 0.10 s. Faraday: |ε| = N |ΔΦ|/Δt. A transformer with Np = 100 and Ns = 20 is fed with 240 V rms on the primary. Vs / Vp = Ns / Np. Which pair is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Coil emf = 30 V; Vs = 240 V because transformers cannot change voltage"
+        },
+        {
+          "key": "B",
+          "text": "Coil emf = 30 V; transformer Vs = 48 V"
+        },
+        {
+          "key": "C",
+          "text": "Coil emf = 0.60 V (N omitted); Vs = 48 V"
+        },
+        {
+          "key": "D",
+          "text": "Coil emf = 30 V; Vs = 1200 V (turns ratio inverted)"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "|ΔΦ| = 0.060 Wb in 0.10 s, so |dΦ/dt| = 0.60 V per turn and N × 0.60 = 30 V. The transformer steps down by 20/100 = 1/5, so 240 × 1/5 = 48 V. Omitting N leaves 0.60 V. Inverting the turns ratio would step up to 1200 V. Transformers exist precisely to change ac voltage in the Ns/Np ratio, so Vs is not stuck at 240 V. Lenz’s minus sign sets direction, not the magnitude asked here.",
+      "distractor_rationales": {
+        "C": "Faraday multiplies by the number of turns; 50 × 0.60 V = 30 V.",
+        "D": "The 30 V coil figure is right, but Ns < Np is a step-down, 48 V, not a step-up to 1200 V.",
+        "A": "Vs = Vp × Ns/Np = 48 V; a 1:1 transformer would be needed to keep 240 V."
+      },
+      "difficulty_est": 0.44
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t18",
+      "type": "discrete",
+      "stem": "Take c_water = 4.0 kJ kg−1 K−1. Two samples are heated 10 K:\n2.0 kg of water, and 2.0 kg of aluminium (c_Al = 0.90 kJ kg−1 K−1).\nQ = m c ΔT. Which heat comparison is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Aluminium requires more heat because metals feel hotter"
+        },
+        {
+          "key": "B",
+          "text": "Water requires 8.0 kJ; aluminium 18 kJ (c_water used as 0.40)"
+        },
+        {
+          "key": "C",
+          "text": "Water requires 80 kJ; aluminium requires 18 kJ"
+        },
+        {
+          "key": "D",
+          "text": "Both require 80 kJ because masses and ΔT match"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "Q_water = 2.0 × 4.0 × 10 = 80 kJ. Q_Al = 2.0 × 0.90 × 10 = 18 kJ. Specific heat, not mass or ΔT alone, distinguishes the samples: water’s large c stores more energy per kelvin. Equal mass and equal ΔT therefore do not equalise Q. Thermal conductivity (how hot metal feels) is not specific heat. Using c_water = 0.40 would undercount water by ten. The ratio 80:18 is exactly 4.0:0.90, the c ratio.",
+      "distractor_rationales": {
+        "D": "Q also contains c, which is 4.0 versus 0.90 kJ kg−1 K−1.",
+        "A": "Metals often feel hotter because they conduct, not because they have larger c; aluminium’s Q is the smaller one.",
+        "B": "c_water is 4.0 kJ kg−1 K−1 here, giving 80 kJ not 8.0 kJ."
+      },
+      "difficulty_est": 0.32
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t18",
+      "type": "discrete",
+      "stem": "In this problem take L_fusion(ice) = 400 kJ kg−1 and c_water = 4.0 kJ kg−1 K−1. 0.10 kg of ice at 0 °C is dropped into 0.20 kg of water at 50 °C in an insulating cup. Heat to melt all the ice is m L. Heat the water can supply if it cools to 0 °C is m c ΔT. What is the final equilibrium?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Final temperature 25 °C, the unweighted mean of 0 and 50"
+        },
+        {
+          "key": "B",
+          "text": "Some ice remains, because 400 kJ is needed and only 40 kJ is available"
+        },
+        {
+          "key": "C",
+          "text": "Final temperature 50 °C, because ice cannot change the water temperature"
+        },
+        {
+          "key": "D",
+          "text": "All ice melts and the mixture finishes at 0 °C, because 40 kJ is both the melt requirement and the cooling yield of the water down to 0 °C"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Melting 0.10 kg needs 0.10 × 400 = 40 kJ. Cooling 0.20 kg of water from 50 °C to 0 °C releases 0.20 × 4.0 × 50 = 40 kJ. The two energies match, so every gram of ice melts and the water is brought exactly to 0 °C, with no leftover heat to raise the 0.30 kg of liquid above 0 °C. A 25 °C mean ignores latent heat. Using L as 400 kJ without multiplying by 0.10 kg overstates the demand 10-fold. Ice at 0 °C certainly exchanges heat until the 40 kJ balance is reached.",
+      "distractor_rationales": {
+        "A": "The 50 °C water’s entire 40 kJ surplus is consumed as latent heat, leaving T = 0 °C, not an average of the starting temperatures.",
+        "B": "The 400 kJ kg−1 must be multiplied by 0.10 kg, giving 40 kJ, which is available.",
+        "C": "The water does cool; that cooling is exactly what melts the ice."
+      },
+      "difficulty_est": 0.56
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t19",
+      "type": "discrete",
+      "stem": "Use PV = n R T with R = 8.0 J mol−1 K−1. n = 2.0 mol, T = 300 K, V = 0.050 m³. Average translational KE per molecule is (3/2) k T. If T is doubled at constant V and n, what happens to P and to the average KE?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "P = 96 kPa initially; doubling T doubles both P and the average molecular KE"
+        },
+        {
+          "key": "B",
+          "text": "P = 96 kPa; doubling T doubles P but leaves KE unchanged"
+        },
+        {
+          "key": "C",
+          "text": "P = 9.6 kPa; doubling T has no effect at constant V"
+        },
+        {
+          "key": "D",
+          "text": "P = 96 kPa; doubling T doubles KE but halves P to keep PV = nRT"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "P = nRT/V = 2.0 × 8.0 × 300 / 0.050 = 4800 / 0.050 = 96 000 Pa = 96 kPa. Gay-Lussac / Charles in the form P ∝ T at fixed V, n, so 2T implies 2P. Kinetic theory identifies P with molecular KE density, and (3/2)kT itself is linear in T, so mean KE also doubles. A missed factor of 10 in V would give 9.6 kPa. Mean KE cannot stay fixed if T changes. P does not fall when T rises at constant V. The two statements (P and KE) therefore move together.",
+      "distractor_rationales": {
+        "B": "⟨KE⟩ = (3/2) k T must double when T doubles; that is the kinetic-theory definition of temperature here.",
+        "C": "V = 0.050 m³ already yields 96 kPa, and P ∝ T at constant V.",
+        "D": "PV = nRT at constant V means P rises with T, it does not fall."
+      },
+      "difficulty_est": 0.43
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t19",
+      "type": "discrete",
+      "stem": "rms speed is v_rms = √(3 R T / M). Two flasks of oxygen (same M):\nFlask A: 300 K\nFlask B: 1200 K\nA third flask C holds hydrogen at 300 K; M_H2 = M_O2 / 16. What are the rms-speed ratios vB/vA and vC/vA?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "All three rms speeds are equal because rms is a universal thermal speed"
+        },
+        {
+          "key": "B",
+          "text": "vB/vA = 2.0; vC/vA = 4.0"
+        },
+        {
+          "key": "C",
+          "text": "vB/vA = 4.0; vC/vA = 16"
+        },
+        {
+          "key": "D",
+          "text": "vB/vA = 2.0; vC/vA = 1/4"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "v_rms scales as √(T/M). Quadrupling T from 300 to 1200 K multiplies v_rms by 2, so vB/vA = 2. Hydrogen at the same T has M smaller by 16, so √(1/M) larger by 4, hence vC/vA = 4. Scaling as T or as M without the square root produces 4 and 16. Inverting the mass factor would make hydrogen slower. rms speed is not a constant; it is why H2 effuses faster and why hot molecules in a tail of the distribution escape a planet more easily.",
+      "distractor_rationales": {
+        "C": "The square root on T and on 1/M is required: √4 = 2 and √16 = 4, not 4 and 16.",
+        "D": "Hydrogen is lighter, so it is faster, not four times slower.",
+        "A": "v_rms depends on T and M, as the formula in the stem states."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t20",
+      "type": "discrete",
+      "stem": "g = 10 m s−2 and ρ_water = 1000 kg m−3. Gauge pressure at depth h is ρ g h. A cubical block of volume 2.0 × 10−3 m³ is fully submerged. Buoyant force F_B = ρ V g. The block weighs 30 N in air. What is the gauge pressure at 2.0 m depth, and what is the apparent weight of the submerged block?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "2.0 kPa; apparent weight 10 N"
+        },
+        {
+          "key": "B",
+          "text": "20 kPa; apparent weight −10 N (block shoots out of the water)"
+        },
+        {
+          "key": "C",
+          "text": "20 kPa; apparent weight 10 N"
+        },
+        {
+          "key": "D",
+          "text": "20 Pa; apparent weight 30 N (buoyancy omitted)"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "ρ g h = 1000 × 10 × 2.0 = 20 000 Pa = 20 kPa. F_B = 1000 × 2.0×10−3 × 10 = 20 N. Apparent weight = 30 − 20 = 10 N, still downward, so the block sinks if released (density above water). Using Pa instead of kPa drops three orders of magnitude. Omitting g or a factor of 10 in ρgh can give 2.0 kPa. A 20 N buoyancy smaller than the 30 N true weight cannot invert the net force. Archimedes’ principle is the 20 N upthrust from the displaced 2.0 litres.",
+      "distractor_rationales": {
+        "D": "20 000 Pa is 20 kPa, and the 20 N upthrust must be subtracted from 30 N.",
+        "A": "ρgh with g = 10 and ρ = 1000 already gives 20 kPa, not 2.0 kPa.",
+        "B": "Net force is 10 N down, not up; the block is denser than water."
+      },
+      "difficulty_est": 0.4
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t20",
+      "type": "discrete",
+      "stem": "Steady incompressible flow in a horizontal pipe: A1 = 4.0 cm², v1 = 2.0 m s−1, A2 = 1.0 cm². Continuity: A1 v1 = A2 v2. Bernoulli at equal height: P1 + (1/2) ρ v1² = P2 + (1/2) ρ v2² with ρ = 1000 kg m−3. What are v2 and P1 − P2?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "v2 = 0.50 m s−1; ΔP negative in the wide part"
+        },
+        {
+          "key": "B",
+          "text": "v2 = 8.0 m s−1; ΔP = 0 because the pipe is horizontal"
+        },
+        {
+          "key": "C",
+          "text": "v2 = 8.0 m s−1; ΔP = 32 kPa, using (1/2)ρ v2² only"
+        },
+        {
+          "key": "D",
+          "text": "v2 = 8.0 m s−1; ΔP = 30 kPa"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "Continuity: 4.0 × 2.0 = 1.0 × v2, so v2 = 8.0 m s−1. Then (1/2)ρ(v2² − v1²) = 500 × (64 − 4) = 500 × 60 = 30 000 Pa = 30 kPa, which is P1 − P2 (pressure lower in the narrow, fast section). Speed cannot fall in the constriction. Horizontality cancels the ρgh terms but not the dynamic-pressure difference. Using only v2² without subtracting v1² would give 32 kPa. This is the quantitative Venturi effect.",
+      "distractor_rationales": {
+        "A": "The narrow section is faster, not slower; A v is conserved, so v2 = 8.0 m s−1.",
+        "B": "v2 is right, but Bernoulli’s (1/2)ρv² terms still differ by 30 kPa when height is equal.",
+        "C": "The pressure drop is (1/2)ρ(v2² − v1²) = 30 kPa, not (1/2)ρ v2² = 32 kPa."
+      },
+      "difficulty_est": 0.54
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t21",
+      "type": "discrete",
+      "stem": "A sample of 800 nuclei has half-life 2.0 h. Remaining number N = N0 (1/2)^{t/T}. Activity A is proportional to N. Complete:\n\nTime (h) | N | relative A\n0 | 800 | 1.00\n2.0 | 400 | 0.50\n6.0 | ? | ?\n\nWhat belongs in the 6.0 h row?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "N = 100; relative A = 0.125"
+        },
+        {
+          "key": "B",
+          "text": "N = 200; relative A = 0.25"
+        },
+        {
+          "key": "C",
+          "text": "N = 100; relative A = 1.00, because activity is a constant for a given isotope"
+        },
+        {
+          "key": "D",
+          "text": "N = 0 after three half-lives"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "6.0 h is three half-lives, so N = 800 / 8 = 100. Activity tracks N, so it also falls to 1/8 = 0.125 of the t = 0 value. Two half-lives would leave 200 and 0.25, the 4.0 h row, not 6.0 h. Activity is not an immutable isotope property; it is λN and falls as the nuclei disappear. Exponential decay never strictly hits zero at a finite number of half-lives; 100 nuclei remain at 6.0 h on this accounting. The table’s 2.0 h row already illustrates the halving rule to be reapplied twice more.",
+      "distractor_rationales": {
+        "B": "N = 200 is the 4.0 h (two-half-life) value, not 6.0 h.",
+        "C": "N = 100 is right, but A ∝ N, so relative activity is 100/800 = 0.125, not 1.",
+        "D": "Three half-lives leave one-eighth, not zero; 100 nuclei are still there."
+      },
+      "difficulty_est": 0.35
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t21",
+      "type": "discrete",
+      "stem": "Decay constant λ = ln 2 / T½. Take ln 2 = 0.693. For T½ = 2.0 h, λ = 0.347 h−1. A = λ N. At t = 0, N = 800, so A0 = 0.347 × 800 ≈ 278 h−1 (decays per hour). After 2.0 h, what is A, and how many nuclei decay in a short 0.010 h interval right after t = 2.0 h if A is approximately constant over that interval?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A = 0 after one half-life"
+        },
+        {
+          "key": "B",
+          "text": "A ≈ 139 h−1; about 1.4 decays in 0.010 h"
+        },
+        {
+          "key": "C",
+          "text": "A ≈ 278 h−1 still; 2.8 decays"
+        },
+        {
+          "key": "D",
+          "text": "A ≈ 139 h−1; 1390 decays in 0.010 h"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "One half-life cuts N and therefore A in half: 139 h−1. In a 0.010 h window, decays ≈ A Δt = 139 × 0.010 ≈ 1.4. Activity is not still A0. Multiplying 139 by 10 h instead of 0.010 h inflates the count. Activity is halved, not destroyed, after one T½. The small-interval approximation A Δt is the definition of activity as a rate. Units of h−1 times hours cancel to a pure count of decay events.",
+      "distractor_rationales": {
+        "C": "After one half-life both N and A are half of the t = 0 values.",
+        "D": "139 h−1 × 0.010 h ≈ 1.4, not 1390; 1390 would be 139 × 10 h.",
+        "A": "Half the nuclei remain, so half the activity remains."
+      },
+      "difficulty_est": 0.58
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t22",
+      "type": "discrete",
+      "stem": "Take hc = 1240 eV nm. Light of wavelength 400 nm falls on a metal with work function φ = 2.0 eV. Photon energy E = hc/λ. Maximum kinetic energy of photoelectrons is K_max = E − φ, and the stopping potential satisfies e Vs = K_max. The threshold wavelength is λ0 = hc/φ. Which set is consistent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "E = 2.0 eV; K_max = 0; emission at every λ"
+        },
+        {
+          "key": "B",
+          "text": "E = 3.1 eV; K_max = 1.1 eV; λ0 = 400 nm, so 400 nm is already the threshold"
+        },
+        {
+          "key": "C",
+          "text": "E = 3.1 eV; K_max = 1.1 eV; Vs = 1.1 V; λ0 = 620 nm"
+        },
+        {
+          "key": "D",
+          "text": "E = 3.1 eV; K_max = 5.1 eV (adding φ); λ0 = 400 nm"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "E = 1240/400 = 3.1 eV. Then K_max = 3.1 − 2.0 = 1.1 eV, so Vs = 1.1 V. Threshold: λ0 = 1240/2.0 = 620 nm. Photons less energetic than 2.0 eV (λ > 620 nm) give no emission. Adding φ instead of subtracting would invent 5.1 eV electrons. E is not equal to φ at 400 nm. If 400 nm were threshold, φ would be 3.1 eV, contradicting the given 2.0 eV. Intensity does not appear because K_max is set by one photon’s leftover energy.",
+      "distractor_rationales": {
+        "D": "φ is subtracted, not added; leftover energy is 1.1 eV. Threshold is 620 nm, not the illuminating 400 nm.",
+        "A": "E = 3.1 eV at 400 nm, well above φ, so K_max is not zero and emission is not possible at every λ.",
+        "B": "K_max = 1.1 eV is right, but that leftover proves 400 nm is above threshold; λ0 is 620 nm."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t22",
+      "type": "discrete",
+      "stem": "In a photoelectric cell, 400 nm light of intensity I0 ejects electrons with K_max = 1.1 eV at a rate of 2.0 × 10^12 s−1 (when every absorbed photon liberates one electron). The intensity is then doubled to 2 I0 without changing wavelength. What happens to K_max and to the electron rate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "K_max doubles to 2.2 eV; the rate stays 2.0 × 10^12 s−1"
+        },
+        {
+          "key": "B",
+          "text": "K_max stays 1.1 eV; the rate is unchanged because one photon still has energy 3.1 eV"
+        },
+        {
+          "key": "C",
+          "text": "K_max and the rate both fall, because more photons crowd the surface"
+        },
+        {
+          "key": "D",
+          "text": "K_max stays 1.1 eV; the electron rate doubles to 4.0 × 10^12 s−1"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "K_max depends only on photon energy hc/λ minus φ, both unchanged when intensity changes at fixed λ, so K_max remains 1.1 eV. Doubling intensity doubles the photon arrival rate and therefore doubles the photoelectron rate to 4.0 × 10^12 s−1. Classical wave theory would have put the extra intensity into K_max; the photon picture does not. Keeping the rate fixed ignores that more photons arrive per second. Extra photons do not suppress emission; they increase the count of independent one-photon events.",
+      "distractor_rationales": {
+        "A": "Intensity is photon number per second, not photon energy; K_max is fixed by λ.",
+        "B": "Each photon’s energy is unchanged, but there are twice as many of them, so the electron rate doubles.",
+        "C": "Rate rises, and K_max is unchanged; crowding is not a stopping mechanism here."
+      },
+      "difficulty_est": 0.41
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t23",
+      "type": "discrete",
+      "stem": "Uranium-238 undergoes α decay: A decreases by 4 and Z by 2. Thorium-234 then emits a β− particle (a neutron becomes a proton: A unchanged, Z increases by 1). Starting from 238_92U, what are the nuclides after one α and then one β−?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "234_90Th then 234_91Pa"
+        },
+        {
+          "key": "B",
+          "text": "234_90Th then 234_89Ac (Z decreased by the β)"
+        },
+        {
+          "key": "C",
+          "text": "242_94Pu then 242_95Am"
+        },
+        {
+          "key": "D",
+          "text": "234_92U then 234_92U, because β restores the α loss"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "α emission removes 4 nucleons and 2 protons: 238−4 = 234, 92−2 = 90, which is thorium-234. β− emission keeps A = 234 and raises Z by 1 to 91, protactinium-234. β− does not lower Z; that would be β+ or electron capture. Adding an α to the parent would raise A, the opposite of decay. β− does not replace the two lost protons of the α, so Z does not return to 92. The (A,Z) bookkeeping is therefore unique: Th then Pa.",
+      "distractor_rationales": {
+        "B": "β− converts a neutron to a proton, so Z increases to 91, not decreases to 89.",
+        "C": "Decay products have smaller A, not larger; 242 would be a capture or fusion product.",
+        "D": "After the α, Z is 90; one β− reaches 91, not 92, and A remains 234, not 238."
+      },
+      "difficulty_est": 0.39
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t23",
+      "type": "discrete",
+      "stem": "In this problem take 1 u c² = 900 MeV. A fusion sketch is 2_1H + 3_1H → 4_2He + 1_0n. Masses: 2.014 u + 3.016 u = 5.030 u on the left; 4.002 u + 1.009 u = 5.011 u on the right. What is the mass defect and the energy released?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Defect 0; energy 0, because nucleon number 5 is conserved"
+        },
+        {
+          "key": "B",
+          "text": "Defect 0.019 u; energy ≈ 17 MeV"
+        },
+        {
+          "key": "C",
+          "text": "Defect 0.019 u; energy ≈ 0.019 MeV (c² omitted)"
+        },
+        {
+          "key": "D",
+          "text": "Defect 0.041 u (adding instead of subtracting); energy ≈ 37 MeV"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Mass defect = 5.030 − 5.011 = 0.019 u. Energy = 0.019 × 900 ≈ 17 MeV released, because the product nuclei sit in a deeper binding well. Omitting the 900 MeV u−1 conversion leaves a meaningless 0.019 MeV. Adding the masses as a ‘defect’ double-counts. Conserving nucleon number does not conserve mass; the 0.019 u is that relativistic mass difference. Fission and fusion both release energy when products have higher binding energy per nucleon than reactants.",
+      "distractor_rationales": {
+        "C": "Each unified mass unit corresponds to 900 MeV here, so 0.019 u is 17 MeV, not 0.019 MeV.",
+        "D": "Defect is left minus right, 0.019 u, not the sum 0.041 u.",
+        "A": "A is conserved at 5, but mass is not; the 0.019 u deficit is the 17 MeV."
+      },
+      "difficulty_est": 0.5
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t24",
+      "type": "discrete",
+      "stem": "Stokes’ drag is F = 6π η r v. Force has dimensions M L T−2, r is L, v is L T−1. What are the dimensions of viscosity η, and which of the following is dimensionless? (Reynolds number Re = ρ v L / η, with ρ = M L−3.)",
+      "choices": [
+        {
+          "key": "A",
+          "text": "η is dimensionless; Re has dimensions of η"
+        },
+        {
+          "key": "B",
+          "text": "η has dimensions M L−1 T−1; Re has dimensions of density"
+        },
+        {
+          "key": "C",
+          "text": "η has dimensions M L−1 T−1; Re is dimensionless"
+        },
+        {
+          "key": "D",
+          "text": "η has dimensions M L T−1; Re has dimensions of velocity"
+        }
+      ],
+      "correct_key": "C",
+      "explanation": "From F = η r v, ignoring the 6π, η = F / (r v) so [η] = (M L T−2) / (L · L T−1) = M L−1 T−1. Then Re = ρ v L / η has [ρ v L] = (M L−3)(L T−1)(L) = M L−1 T−1, which cancels [η], leaving a pure number. That is why Re can be used to compare flows of different size and speed. η is not dimensionless (oil and air have different SI values with units Pa s). Re is not a velocity or a density; those dimensions already cancelled. The 6π factor is a pure number and does not affect dimensions.",
+      "distractor_rationales": {
+        "D": "The extra L in the numerator of that option would be [F]/[v] without dividing by r.",
+        "A": "η has SI unit Pa s = kg m−1 s−1, so it is dimensional; Re is the dimensionless combination.",
+        "B": "The η dimensions are right, but Re is constructed precisely so density cancels."
+      },
+      "difficulty_est": 0.53
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t24",
+      "type": "discrete",
+      "stem": "A car’s speedometer reads 72 km h−1. Convert to m s−1 using 1 km = 1000 m and 1 h = 3600 s. A heater runs at 2.0 kW for 3.0 h. Energy in kWh is P × t, and 1 kWh = 3.6 × 10^6 J. Which pair is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "72 m s−1; 6.0 kWh = 6.0 J"
+        },
+        {
+          "key": "B",
+          "text": "2.0 m s−1; 5.0 kWh"
+        },
+        {
+          "key": "C",
+          "text": "20 m s−1; 6.0 kWh = 6.0 × 10^3 J"
+        },
+        {
+          "key": "D",
+          "text": "20 m s−1; 6.0 kWh = 2.16 × 10^7 J"
+        }
+      ],
+      "correct_key": "D",
+      "explanation": "72 km h−1 = 72 × 1000 / 3600 = 72 × 5/18 = 20 m s−1. Energy = 2.0 kW × 3.0 h = 6.0 kWh = 6.0 × 3.6×10^6 = 2.16×10^7 J. Leaving the speed as 72 mixes km/h with m/s. 6.0 J ignores the 3.6 MJ per kWh. 2.0 m s−1 would be 7.2 km/h. 6.0 × 10^3 J is 6.0 kJ, a kW·s style slip (2.0×10^3 W × 3 s) rather than 3 hours. Unit conversion is therefore two independent, both necessary, scalings.",
+      "distractor_rationales": {
+        "A": "72 is the km/h figure, not m/s; 6.0 kWh is millions of joules, not 6 J.",
+        "B": "72 × 1/36 = 2.0 would be an arithmetic error; energy is 2.0 × 3.0 = 6.0 kWh, not 5.0.",
+        "C": "The 20 m s−1 is right, but 1 kWh = 3.6 MJ, so 6.0 kWh is 2.16 × 10^7 J, not 6.0 kJ."
+      },
+      "difficulty_est": 0.37
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t25",
+      "type": "discrete",
+      "stem": "X-ray intensity follows I = I0 e−μx. The half-value layer satisfies μ x½ = ln 2 ≈ 0.69. A beam has μ = 0.10 cm−1 in soft tissue. What is x½, and what fraction of I0 remains after 6.9 cm?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "x½ ≈ 6.9 cm; after 6.9 cm, I / I0 = 1/2"
+        },
+        {
+          "key": "B",
+          "text": "x½ ≈ 0.10 cm; I / I0 = e−0.69 ≈ 1/2 after 0.10 cm"
+        },
+        {
+          "key": "C",
+          "text": "x½ ≈ 6.9 cm; after 6.9 cm, I = 0 because one HVL absorbs everything"
+        },
+        {
+          "key": "D",
+          "text": "x½ ≈ 69 cm; after 6.9 cm, I / I0 = 0.90"
+        }
+      ],
+      "correct_key": "A",
+      "explanation": "x½ = ln 2 / μ = 0.69 / 0.10 = 6.9 cm. By definition, one half-value layer leaves half the intensity, so 6.9 cm yields I/I0 = 1/2. The linear attenuation coefficient 0.10 cm−1 is not itself the HVL. One HVL does not zero the beam; it halves it (two HVLs would leave 1/4, and so on). Inverting μ without ln 2, or dropping a factor of ten, produces 69 cm and a 10% attenuation guess (e−0.1 ≈ 0.90 would be 1.0 cm of this tissue, not 6.9 cm). Exponential attenuation is therefore a repeated-halving process at the HVL scale.",
+      "distractor_rationales": {
+        "B": "0.10 cm−1 is μ, not x½; x½ = 0.69/μ = 6.9 cm.",
+        "C": "Half-value means half remains, not zero; the exponential never drops to exactly zero at finite x.",
+        "D": "69 cm would be 1/μ without the 0.10 placement; e−μx at 6.9 cm is e−0.69 = 1/2, not 0.90."
+      },
+      "difficulty_est": 0.48
+    },
+    {
+      "concept_id": "GAMSAT.S3.phys.t25",
+      "type": "discrete",
+      "stem": "A diagnostic ultrasound pulse travels in soft tissue at 1500 m s−1. An echo returns 2.0 × 10−4 s after emission. Depth of the reflector is v t / 2 because the pulse travels to the interface and back. PET annihilation photons each have energy 511 keV, equal to mec² for an electron. Which pairing is correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Reflector depth 0.15 mm; PET is unrelated to electron rest energy"
+        },
+        {
+          "key": "B",
+          "text": "Reflector depth 15 cm; each PET photon energy equals one electron rest energy"
+        },
+        {
+          "key": "C",
+          "text": "Reflector depth 30 cm (the two-way path used as depth); PET photons are 1022 keV each"
+        },
+        {
+          "key": "D",
+          "text": "Reflector depth 15 cm; PET photons are 511 MeV"
+        }
+      ],
+      "correct_key": "B",
+      "explanation": "Path length v t = 1500 × 2.0×10−4 = 0.30 m, so depth = 0.15 m = 15 cm. Forgetting the factor 1/2 reports the round-trip, 30 cm, as if it were depth. 511 keV (not 511 MeV and not 1022 keV per photon) is mec²; a pair of annihilation photons totals 1022 keV, but each photon carries 511 keV. Using 0.15 mm drops a factor of 1000 from 0.15 m. Range finding with ultrasound is therefore a timing problem, and PET coincidence imaging is a rest-energy problem; both belong in medical physics as given.",
+      "distractor_rationales": {
+        "C": "30 cm is the go-and-return distance; depth is half of that. Each annihilation photon is 511 keV, not 1022 keV.",
+        "D": "The 15 cm depth is right, but electron rest energy is 0.511 MeV = 511 keV, not 511 MeV.",
+        "A": "0.15 m is 15 cm, not 0.15 mm. PET 511 keV photons are exactly mec²."
+      },
+      "difficulty_est": 0.46
+    }
+  ]
+}
