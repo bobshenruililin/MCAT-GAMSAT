@@ -11,6 +11,29 @@ const HUNT_ERRORS = new Set(["trap", "content_gap"]);
 const WINDOW_MS = 14 * 24 * 60 * 60 * 1000;
 export const HUNT_TOPIC_CAP = 8;
 
+export type PriorMissRow = {
+  itemId: string;
+  sessionId: string;
+  correct: boolean;
+  demo: boolean;
+};
+
+/** Misses of this item in other, non-demo sessions. Does not name error class. */
+export function priorMissCount(
+  rows: PriorMissRow[],
+  itemId: string,
+  currentSessionId: string,
+): number {
+  let n = 0;
+  for (const row of rows) {
+    if (row.itemId !== itemId) continue;
+    if (row.demo) continue;
+    if (row.sessionId === currentSessionId) continue;
+    if (!row.correct) n += 1;
+  }
+  return n;
+}
+
 /**
  * Topics to hunt: an item missed ≥2 times with the last attempt still wrong,
  * or ≥2 trap/content_gap misses in the last 14 days. Demo attempts are ignored.

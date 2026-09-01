@@ -19,6 +19,7 @@ export type PlayerItem = {
   conceptId: string;
   passage: { title: string; body: string } | null;
   hunting?: boolean;
+  priorMisses?: number;
 };
 
 const ERROR_LABELS: Record<ErrorClass, string> = {
@@ -181,7 +182,16 @@ export function ItemPlayer({
             {item.type === "passage_question" ? "Passage question" : "Discrete"} ·{" "}
             {item.conceptId}
           </p>
-          {item.hunting ? (
+          {item.priorMisses && item.priorMisses > 0 ? (
+            <p
+              className="mt-2 rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-950"
+              data-testid="prior-miss-banner"
+            >
+              You missed this item {item.priorMisses}{" "}
+              {item.priorMisses === 1 ? "time" : "times"} before. It comes back until
+              it dies.
+            </p>
+          ) : item.hunting ? (
             <p
               className="mt-2 rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-950"
               data-testid="hunt-banner"

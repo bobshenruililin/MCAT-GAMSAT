@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { huntTopicIds, type HuntAttempt } from "./hunt";
+import { huntTopicIds, priorMissCount, type HuntAttempt } from "./hunt";
 import { assembleSession, type NewCandidate } from "./sessionAssembler";
 import { attempts, sessions } from "@/db/schema";
-import { createDailySession, huntTopicsFromDb } from "./sessionService";
+import { createDailySession, huntTopicsFromDb, priorMissesFromDb } from "./sessionService";
 import { getTodayStats } from "./today";
 import { insertDiscrete, insertTopicTree, tempMigratedDb } from "./testDb";
 
@@ -73,6 +73,24 @@ describe("huntTopicIds", () => {
       now,
     );
     expect(ids).toContain("t-trap");
+  });
+});
+
+describe("priorMissCount", () => {
+  it("counts real misses from other sessions and ignores demo", () => {
+    expect(
+      priorMissCount(
+        [
+          { itemId: "i1", sessionId: "old", correct: false, demo: false },
+          { itemId: "i1", sessionId: "old", correct: false, demo: false },
+          { itemId: "i1", sessionId: "demo", correct: false, demo: true },
+          { itemId: "i1", sessionId: "now", correct: false, demo: false },
+          { itemId: "i2", sessionId: "old", correct: false, demo: false },
+        ],
+        "i1",
+        "now",
+      ),
+    ).toBe(2);
   });
 });
 
@@ -161,6 +179,9 @@ describe("huntTopicsFromDb", () => {
       })
       .run();
     expect(huntTopicsFromDb(db, now)).toEqual(["MCAT.FC1.1B.t1"]);
+    expect(priorMissesFromDb(db, "hunt-seen", "later")).toBe(2);
+    expect(priorMissesFromDb(db, "hunt-seen", "real-s")).toBe(0);
+    expect(priorMissesFromDb(db, "heavy-seen", "later")).toBe(0);
     expect(getTodayStats(db, now).huntTopics.map((t) => t.id)).toEqual([
       "MCAT.FC1.1B.t1",
     ]);

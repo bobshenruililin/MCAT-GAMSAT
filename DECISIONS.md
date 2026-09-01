@@ -127,4 +127,9 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Cycle 1 hunted with new items only. A trap that FSRS already marked due could still wait behind an older unrelated due. Reordering dues is error-driven remediation; pulling future cards forward would be a hand-rolled scheduler.
 - Rejected: Overriding FSRS due dates; dropping non-hunt dues; a second session type for leeches.
 
+## 2026-09-01 — Returning misses are named without leaking the trap
+- Decision: Before reveal, if this item was missed in another non-demo session, show the miss count. Do not show prior error class or the correct key. Demo attempts do not count.
+- Rationale: The dream is that the trap comes back until it dies. Naming "you missed this before" raises care on retrieval. Naming "trap" before answer would leak the trick.
+- Rejected: Showing error class before reveal; counting demo:seed; a separate leech queue.
+
 

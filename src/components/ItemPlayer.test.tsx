@@ -37,7 +37,24 @@ describe("ItemPlayer hunt banner", () => {
       />,
     );
     expect(screen.getByTestId("hunt-banner")).toHaveTextContent(/hunting this node/i);
-    expect(screen.queryByTestId("hunt-banner")).not.toBeNull();
+  });
+
+  it("names a returning miss without leaking the error class", () => {
+    render(
+      <ItemPlayer
+        item={{ ...item, hunting: true, priorMisses: 2 }}
+        position={0}
+        remaining={1}
+        total={1}
+        onGrade={vi.fn()}
+        onCommit={vi.fn()}
+      />,
+    );
+    expect(screen.getByTestId("prior-miss-banner")).toHaveTextContent(
+      /missed this item 2 times before/i,
+    );
+    expect(screen.queryByTestId("hunt-banner")).toBeNull();
+    expect(screen.queryByText(/trap/i)).toBeNull();
   });
 });
 

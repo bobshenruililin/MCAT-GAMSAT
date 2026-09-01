@@ -19,7 +19,7 @@ import { toIso } from "./dates";
 import { masteryByNode } from "./mastery";
 import { ratingFromAttempt } from "./rating";
 import { getDueItems, schedule } from "./reviewEngine";
-import { huntTopicIds } from "./hunt";
+import { huntTopicIds, priorMissCount } from "./hunt";
 import { isDemoConfig } from "./demoSeed";
 import { maybeSyncScoreboard } from "./scoreboard";
 import {
@@ -78,6 +78,44 @@ export function huntTopicsFromDb(db: AppDb, now: Date): string[] {
       demo: demoIds.has(r.sessionId),
     })),
     now,
+  );
+}
+
+function demoSessionIds(db: AppDb): Set<string> {
+  return new Set(
+    db
+      .select({ id: sessions.id, config: sessions.config })
+      .from(sessions)
+      .all()
+      .filter((s) => isDemoConfig(s.config))
+      .map((s) => s.id),
+  );
+}
+
+export function priorMissesFromDb(
+  db: AppDb,
+  itemId: string,
+  currentSessionId: string,
+): number {
+  const demoIds = demoSessionIds(db);
+  const rows = db
+    .select({
+      itemId: attempts.itemId,
+      sessionId: attempts.sessionId,
+      correct: attempts.correct,
+    })
+    .from(attempts)
+    .where(eq(attempts.itemId, itemId))
+    .all();
+  return priorMissCount(
+    rows.map((r) => ({
+      itemId: r.itemId,
+      sessionId: r.sessionId,
+      correct: r.correct,
+      demo: demoIds.has(r.sessionId),
+    })),
+    itemId,
+    currentSessionId,
   );
 }
 
@@ -221,6 +259,7 @@ export type NextItemPublic = {
   skillTag: string | null;
   passage: PassagePublic | null;
   hunting: boolean;
+  priorMisses: number;
 };
 
 export function nextUnanswered(
@@ -298,6 +337,7 @@ export function nextUnanswered(
       skillTag: item.skillTag,
       passage,
       hunting: huntSet.has(item.conceptId),
+      priorMisses: priorMissesFromDb(db, item.id, sessionId),
     },
   };
 }
