@@ -107,4 +107,9 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Stretch asked for section budgets. These are minutes-per-section divided by typical question counts, for pacing feedback only.
 - Rejected: A single 95s line for every exam; claiming official ACER/AAMC scoring.
 
+## 2026-09-01 — Hunt fills new-item quota; FSRS due dates unchanged
+- Decision: Topics with a twice-missed still-wrong item, or ≥2 trap/content_gap misses in the last 14 days, rank first inside the existing daily `newCap`. Demo attempts (`config.demo=true`) are ignored. Same-card FSRS Again is untouched. Diagnostic sessions do not hunt.
+- Rationale: NORTH_STAR lists error-driven remediation. The dream requires a twice-missed trap to come back until it dies. Sister new items kill the node; FSRS already restudies the card. Overriding due dates would fight the scheduler we chose not to hand-roll.
+- Rejected: Changing FSRS due dates; a hunt queue outside `newCap`; hunting from demo:seed history; mixing overlay weight-0 topics into hunt ranking (they still fail `examWeight > 0`).
+
 

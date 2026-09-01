@@ -122,4 +122,18 @@ Three riskiest things to review:
 
 SCORE IMPACT: Charts let the human see calibration, pacing, and weak-node drift in one glance after a study week — but only real attempts raise score per hour; demo:seed is a display fixture, not practice.
 
+## DREAM cycle 1 — hunt classified misses (2026-09-01)
+
+Gap: every miss was named and classified, then dropped. FSRS Again restudies the same card; sister items from trap/gap/leech nodes never entered the new-item quota. Demo history would have poisoned hunt if counted.
+
+Shipped:
+- `huntTopicIds`: item missed ≥2 times and still wrong, or ≥2 `trap`/`content_gap` misses in 14 days. Demo attempts ignored. Cap 8 topics.
+- Daily assemble ranks hunt topics first inside existing `newCap` (then `(1-mastery)*exam_weight`). FSRS due dates unchanged.
+- Today lists Hunting nodes. Quiz player shows a hunt banner when the item's topic is hunted.
+- Tests: 49. `pnpm test`, typecheck, lint green.
+
+Failed: hunt is idle until real (non-demo) misses exist.
+
+SCORE IMPACT: Study hours after a trap or twice-miss now spend the new-item quota on that node until it recovers, instead of on highest-weight unseen CARS — more score per hour once the human actually misses and returns.
+
 

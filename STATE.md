@@ -1,9 +1,9 @@
 # STATE
 
-Phase: stretch after night-sprint-04 (cursor/night-sprint-04-3760)
-Study days logged: 0 (SCOREBOARD empty). App DB currently has [DEMO] 14-day simulation if demo:seed was run; not real study.
-Done: sprints 01–04; `pnpm demo:seed` (14 simulation sessions, marked, refuses real mix); Progress calibration + pacing + 14-day EWMA trend; Today streak, 7-day due forecast, weakest spotlight, DEMO banner; DEMO.md updated
-In flight: none
-Next: human review of QC ten; real study after `pnpm db:reset` + ingest (no demo:seed); do not set verified=true; do not copy demo attempts into SCOREBOARD.md
-Counts: taxonomy 376; items 315; verified 0; PLACEHOLDER 0. After demo:seed: 14 simulation sessions, 355 attempts (deterministic seed 20260901)
-Risks: demo history looks like a streak — banner is the guard; trend chart is EWMA correctness not full 0.6C+0.4R; pacing budgets are unofficial (B-010); bank still AI-unverified
+Phase: DREAM loop after night-sprint-04 (cursor/night-sprint-04-3760)
+Study days logged: 0 (SCOREBOARD empty). [DEMO] 14-day simulation is not study.
+Done: sprints 01–04; demo:seed + Progress charts + Today forecast/streak; DREAM cycle 1 hunt — twice-missed still-wrong items and ≥2 trap/content_gap misses in 14d rank first inside existing newCap; Today Hunting list; in-session hunt banner; demo attempts ignored; FSRS due dates unchanged
+In flight: DREAM loop continues — next unblocked gap is SCOREBOARD study-log sync from non-demo daily/diagnostic attempts (never official scores, never simulation)
+Next: cycle 2 scoreboard sync; then overconfidence note on conf≥4 miss; human QC of ten flags; real study after `pnpm db:reset` + ingest (no demo:seed); never verified=true without human
+Counts: taxonomy 376; items 315; verified 0; PLACEHOLDER 0. Tests 49. Hunt needs real misses to fire.
+Risks: demo streak is not study; bank AI-unverified; SCOREBOARD still 0 until a real session + sync; hunt does not resurrect overlay weight-0 topics (B-003)
