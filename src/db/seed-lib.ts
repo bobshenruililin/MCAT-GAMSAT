@@ -1,8 +1,8 @@
 import { readFileSync } from "node:fs";
-import { EXAMS, LEVELS, schema, type Exam, type Level } from "./schema";
+import type { AppDb } from "./client";
+import { EXAMS, LEVELS, type Exam, type Level } from "./schema";
 import { concepts } from "./schema";
 import { TAXONOMY_PATH } from "./paths";
-import type { BetterSQLite3Database } from "drizzle-orm/better-sqlite3";
 
 export type TaxonomyNode = {
   id: string;
@@ -153,7 +153,7 @@ export function printCounts(nodes: TaxonomyNode[]): void {
 }
 
 export function seedConcepts(
-  db: BetterSQLite3Database<typeof schema>,
+  db: AppDb,
   nodes: TaxonomyNode[],
 ): void {
   db.delete(concepts).run();
@@ -173,7 +173,7 @@ export function seedConcepts(
 }
 
 export function seedFromFile(
-  db: BetterSQLite3Database<typeof schema>,
+  db: AppDb,
   filePath = TAXONOMY_PATH,
 ): TaxonomyNode[] {
   const raw = readFileSync(filePath, "utf8");

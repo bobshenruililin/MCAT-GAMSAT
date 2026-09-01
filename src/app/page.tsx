@@ -1,7 +1,7 @@
 import { existsSync } from "node:fs";
 import { count } from "drizzle-orm";
 import { openDb } from "@/db/client";
-import { DB_PATH } from "@/db/paths";
+import { getDbPath } from "@/db/paths";
 import {
   attempts,
   concepts,
@@ -26,11 +26,11 @@ const TABLES = [
 ] as const;
 
 function loadHealth() {
-  if (!existsSync(DB_PATH)) {
+  if (!existsSync(getDbPath())) {
     return {
       ok: false as const,
       error: "database file missing — run pnpm db:migrate && pnpm seed",
-      path: DB_PATH,
+      path: getDbPath(),
       tables: [] as { name: string; rows: number }[],
     };
   }
@@ -41,12 +41,12 @@ function loadHealth() {
       rows: db.select({ n: count() }).from(table).get()?.n ?? 0,
     }));
     sqlite.close();
-    return { ok: true as const, error: null, path: DB_PATH, tables };
+    return { ok: true as const, error: null, path: getDbPath(), tables };
   } catch (err) {
     return {
       ok: false as const,
       error: err instanceof Error ? err.message : String(err),
-      path: DB_PATH,
+      path: getDbPath(),
       tables: [] as { name: string; rows: number }[],
     };
   }

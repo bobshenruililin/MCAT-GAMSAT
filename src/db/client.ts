@@ -1,18 +1,24 @@
 import { mkdirSync } from "node:fs";
+import path from "node:path";
 import Database from "better-sqlite3";
-import { drizzle } from "drizzle-orm/better-sqlite3";
+import { drizzle, type BetterSQLite3Database } from "drizzle-orm/better-sqlite3";
 import { schema } from "./schema";
-import { DATA_DIR, DB_PATH } from "./paths";
+import { getDbPath } from "./paths";
 
-export function openSqlite(dbPath: string = DB_PATH): Database.Database {
-  mkdirSync(DATA_DIR, { recursive: true });
+export type AppDb = BetterSQLite3Database<typeof schema>;
+
+export function openSqlite(dbPath: string = getDbPath()): Database.Database {
+  mkdirSync(path.dirname(dbPath), { recursive: true });
   const sqlite = new Database(dbPath);
   sqlite.pragma("journal_mode = WAL");
   sqlite.pragma("foreign_keys = ON");
   return sqlite;
 }
 
-export function openDb(dbPath: string = DB_PATH) {
+export function openDb(dbPath: string = getDbPath()): {
+  sqlite: Database.Database;
+  db: AppDb;
+} {
   const sqlite = openSqlite(dbPath);
   const db = drizzle(sqlite, { schema });
   return { sqlite, db };
