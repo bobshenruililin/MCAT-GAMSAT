@@ -257,6 +257,11 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Sitting is blocked on PATH, not on a missing formula. Newest prompt wins on scope.
 - Rejected: Upgrading Node; installing Homebrew again; Apple Silicon-only paths.
 
+## 2026-09-02 — Bootstrap migrates a fresh SQLite
+- Decision: Newest prompt: mac-setup and pnpm install succeeded; bootstrap died `no such table: concepts`. `pnpm bootstrap` now calls `migrateDb` before taxonomy seed. `pnpm db:migrate` remains valid. Sit after bootstrap, not instead of it.
+- Rationale: A first clone has no tables. Asking the human to remember migrate costs a study hour. Newest prompt wins on scope.
+- Rejected: Telling them to ignore the error and study an empty bank; requiring a second clone.
+
 
 
 

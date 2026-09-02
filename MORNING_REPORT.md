@@ -625,6 +625,23 @@ Three riskiest:
 
 SCORE IMPACT: The next study hour is `bash scripts/mac-setup.sh` then Continue on localhost — expected score still waits on sitting those hours.
 
+## Bootstrap needs migrate on a fresh Mac SQLite (2026-09-02)
+
+Question: good? mac-setup printed pnpm 10.33.3; install worked; bootstrap `no such table: concepts`; sit started compiling.
+
+Answer: Tools are good. The bank is not. Fresh `app.db` has no tables until migrate. `pnpm bootstrap` now runs migrate first. Ctrl+C sit if it is still building, migrate, capped bootstrap, sit again. cpu is arm64 with x86 Node (Rosetta) — later switch to ARM Node; do not block sitting.
+
+Shipped: `migrateDb` shared helper; bootstrap calls it; test that seed fails then succeeds after migrate. Tests 120.
+
+Failed: cannot Ctrl+C the user's `pnpm sit`.
+
+Three riskiest:
+1. Capped bootstrap still takes time and disk on the Mac.
+2. B-013 — live bank is unverified AI.
+3. Rosetta Node will keep the player slower than native ARM.
+
+SCORE IMPACT: The next study hour is blocked only on migrate+bootstrap finishing — expected score still waits on Continue after that.
+
 
 
 

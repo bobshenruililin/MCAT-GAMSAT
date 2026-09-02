@@ -1,8 +1,8 @@
-import { migrate } from "drizzle-orm/better-sqlite3/migrator";
 import { openDb } from "./client";
-import { getDbPath, MIGRATIONS_DIR } from "./paths";
+import { getDbPath } from "./paths";
+import { migrateDb } from "./migrate-lib";
 
 const { sqlite, db } = openDb();
-migrate(db, { migrationsFolder: MIGRATIONS_DIR });
+migrateDb(db);
 sqlite.close();
 console.log(`migrated ${getDbPath()}`);

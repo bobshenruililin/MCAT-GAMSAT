@@ -1,7 +1,7 @@
 import { existsSync, unlinkSync } from "node:fs";
-import { migrate } from "drizzle-orm/better-sqlite3/migrator";
 import { openDb } from "./client";
-import { getDbPath, MIGRATIONS_DIR } from "./paths";
+import { getDbPath } from "./paths";
+import { migrateDb } from "./migrate-lib";
 
 const dbPath = getDbPath();
 for (const suffix of ["", "-wal", "-shm"]) {
@@ -10,6 +10,6 @@ for (const suffix of ["", "-wal", "-shm"]) {
 }
 
 const { sqlite, db } = openDb();
-migrate(db, { migrationsFolder: MIGRATIONS_DIR });
+migrateDb(db);
 sqlite.close();
 console.log(`reset and migrated ${dbPath}`);

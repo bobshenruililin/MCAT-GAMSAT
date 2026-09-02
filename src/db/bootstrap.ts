@@ -2,6 +2,7 @@ import { count } from "drizzle-orm";
 import { openDb } from "./client";
 import { items } from "./schema";
 import { seedFromFile, printCounts, TaxonomyError } from "./seed-lib";
+import { migrateDb } from "./migrate-lib";
 import { ingestAllBatches } from "@/ingest/ingestAll";
 import { removeCoveredPlaceholders } from "@/ingest/ingest";
 import { emitFactoryBatches } from "@/factory/emit";
@@ -13,9 +14,11 @@ import { PATTERN_TARGET } from "@/patterns/generate";
  * Taxonomy + every real batch + 5000× factory bank.
  * Usage: pnpm db:reset && pnpm bootstrap
  * Cap volume with FACTORY_TARGET / PATTERN_TARGET if SQLite is too large.
+ * Creates tables if this is a fresh Mac clone (no separate migrate required).
  */
 try {
   const { sqlite, db } = openDb();
+  migrateDb(db);
   const nodes = seedFromFile(db);
   printCounts(nodes);
   sqlite.close();

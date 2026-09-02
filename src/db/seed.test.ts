@@ -14,6 +14,7 @@ import { drizzle } from "drizzle-orm/better-sqlite3";
 import { migrate } from "drizzle-orm/better-sqlite3/migrator";
 import { schema, concepts, items } from "./schema";
 import { MIGRATIONS_DIR, TAXONOMY_PATH } from "./paths";
+import { migrateDb } from "./migrate-lib";
 
 const HEADER = "AI-emitted, verify against official outline.";
 
@@ -95,6 +96,19 @@ describe("seed loader — valid", () => {
     migrate(db, { migrationsFolder: MIGRATIONS_DIR });
     seedFromFile(db, TAXONOMY_PATH);
     expect(db.select().from(items).all()).toHaveLength(0);
+    sqlite.close();
+  });
+
+  it("migrateDb creates concepts so a fresh file can seed without pnpm db:migrate first", () => {
+    const dir = mkdtempSync(path.join(tmpdir(), "mcat-migrate-first-"));
+    const dbPath = path.join(dir, "test.db");
+    const sqlite = new Database(dbPath);
+    sqlite.pragma("foreign_keys = ON");
+    const db = drizzle(sqlite, { schema });
+    expect(() => seedFromFile(db, TAXONOMY_PATH)).toThrow(/no such table: concepts/);
+    migrateDb(db);
+    seedFromFile(db, TAXONOMY_PATH);
+    expect(db.select().from(concepts).all().length).toBeGreaterThan(300);
     sqlite.close();
   });
 });
