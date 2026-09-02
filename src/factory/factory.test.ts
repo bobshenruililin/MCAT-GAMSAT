@@ -187,5 +187,10 @@ describe("score-max factory", () => {
     if (quant) {
       expect(quant.stem).toMatch(/^In experiment \d+/);
     }
+
+    for (const it of bank.items) {
+      const texts = it.choices.map((ch) => ch.text);
+      expect(new Set(texts).size, it.stem.slice(0, 80)).toBe(4);
+    }
   });
 });

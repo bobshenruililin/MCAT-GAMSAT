@@ -70,10 +70,10 @@ const kinematics: QuantFn = (topic, index) => {
       `${v} m s^{-1}`,
       [
         { text: `${u + a} m s^{-1}`, why: "Adds acceleration once instead of multiplying by time." },
-        { text: `${u * t + a} m s^{-1}`, why: "Mixes a displacement-like u t term into a speed equation." },
+        { text: `${u * t} m s^{-1}`, why: "Reports u t, a displacement-like product, as a speed." },
         { text: `${a * t} m s^{-1}`, why: "Drops the initial speed and reports only Δv." },
       ],
-      `Constant acceleration uses v = u + a t. Substituting the stem values gives v = ${u} + ${a}×${t} = ${v} m s^{-1}. The distractors drop u, add a only once, or smuggle a displacement product into a velocity equation. Units remain m s^{-1} because m s^{-2} times s is a speed.`,
+       `Constant acceleration uses v = u + a t. Substituting the stem values gives v = ${u} + ${a}×${t} = ${v} m s^{-1}. The distractors drop u, add a only once, or report the product u t as if it were a speed. Units remain m s^{-1} because m s^{-2} times s is a speed.`,
       0.28,
     );
   }

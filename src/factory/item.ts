@@ -52,6 +52,24 @@ function ensureExplain(text: string, salt: string): string {
 
 export type Distractor = { text: string; why: string };
 
+function distinctText(text: string, used: Set<string>): string {
+  if (!used.has(text)) return text;
+  const m = text.match(/^(-?\d+(?:\.\d+)?)([\s\S]*)$/);
+  if (m) {
+    const n = Number(m[1]);
+    const rest = m[2];
+    for (let k = 1; k <= 80; k++) {
+      const cand = `${Number.isInteger(n) ? n + k : round2(n + k)}${rest}`;
+      if (!used.has(cand)) return cand;
+    }
+  }
+  for (let k = 2; k <= 20; k++) {
+    const cand = `${text} — trap ${k}`;
+    if (!used.has(cand)) return cand;
+  }
+  return `${text} — unused`;
+}
+
 export function assembleItem(input: {
   conceptId: string;
   type: FactoryItem["type"];
@@ -68,12 +86,19 @@ export function assembleItem(input: {
   const slot = ((input.rotate % 4) + 4) % 4;
   const texts: string[] = new Array(4);
   const why: (string | null)[] = [null, null, null, null];
+  const used = new Set<string>([input.correct]);
   texts[slot] = input.correct;
   let d = 0;
   for (let i = 0; i < 4; i++) {
     if (i === slot) continue;
-    texts[i] = input.distractors[d].text;
-    why[i] = input.distractors[d].why;
+    const raw = input.distractors[d];
+    const text = distinctText(raw.text, used);
+    used.add(text);
+    texts[i] = text;
+    why[i] =
+      text === raw.text
+        ? raw.why
+        : `${raw.why} The numeric costume was shifted so it is not identical to the key.`;
     d += 1;
   }
   const correctKey = KEYS[slot] as Key;
