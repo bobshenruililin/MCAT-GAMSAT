@@ -232,6 +232,12 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: A student sitting Continue should not be able to tell they are inside a generator. Trust in content outranks volume. Newest prompt wins on scope.
 - Rejected: Another synonym pass on the same meta frames; rewriting hand items; auto-verify; keeping the preview batch “because it is only 18 rows” (those were the items sit-today actually served).
 
+## 2026-09-02 — Land #14–#16 by fast-forwarding main; Vite 5173 is safe to kill
+- Decision: Newest prompt: close Cursor; merge all PRs first. Fast-forward `main` to `cursor/item-quality-3760` (`d92afeb`). #14 and #15 are ancestors, so one push marks #14, #15, and #16 MERGED. The “Start Vite dev server on 5173” dialog is a leftover local terminal, not this app — Close Anyway.
+- Rationale: Same merge method as PRs #1–#13. This repo’s player is Next on 3000. Killing Vite does not kill the bank.
+- Rejected: Squashing (would orphan PR SHAs); merging #14–#16 as separate merge commits; telling the user to keep Vite running.
+
+
 
 
 

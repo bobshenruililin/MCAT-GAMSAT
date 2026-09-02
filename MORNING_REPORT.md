@@ -536,6 +536,21 @@ Three riskiest: B-013/B-018; outline-discrimination; demo attempts are not human
 
 SCORE IMPACT: The next study hour on localhost retrieves the new stems — expected score still waits on sitting and on official papers.
 
+## Landed #14–#16; Vite 5173 is not this app (2026-09-02)
+
+Question: can I close the Cursor dialog (Background terminal: Start Vite on 5173, 18h)? Merge all PRs first.
+
+Answer: Yes — Close Anyway. That Vite process is a leftover local Cursor terminal, not the study app. This repo is Next.js on port 3000 (`pnpm dev`). Fast-forwarded `main` to `d92afeb` so #14, #15, and #16 are MERGED. No open PRs.
+
+Shipped: `origin/main` = item-quality tip (atlas + lesson home + exam-prompt factory).
+
+Failed: cannot stop the user’s Mac Vite from this VM; they click Close Anyway locally.
+
+Three riskiest: B-013/B-018; Pages not enabled; closing Cursor does not wipe SQLite on the Mac unless that machine’s process held the only copy.
+
+SCORE IMPACT: Closing the IDE does not cost a study hour — the next retrieve is `pnpm dev` on :3000 after reopen.
+
+
 
 
 
