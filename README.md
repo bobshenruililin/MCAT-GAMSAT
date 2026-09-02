@@ -7,29 +7,21 @@ SCOREBOARD.md (also at `/scoreboard`), never in features shipped.
 
 ## Sit today
 
-First time on a Mac, Terminal does not have `pnpm` until you install Node
-(Cursor's Node is not on this PATH):
+Paste **one block**. Wait until it finishes. Do not type `y` on a new line —
+that is a new command. If brew asks `[y/n]`, press **n** (Node is already
+installed on this Mac). Intel Homebrew is `/usr/local`, not `/opt/homebrew`.
 
 ```bash
-xcode-select --install
-brew install node
-corepack enable
-corepack prepare pnpm@10.33.3 --activate
-```
-
-Apple Silicon, if `brew` is still not found:
-
-```bash
-eval "$(/opt/homebrew/bin/brew shellenv)"
-```
-
-If you already cloned, stay in **one** folder (`~/MCAT-GAMSAT`). Do not clone
-again inside it. Then:
-
-```bash
+cd ~/MCAT-GAMSAT
+git pull origin main
 bash scripts/mac-setup.sh
+```
+
+That script puts Homebrew on PATH and activates pnpm. It does not install or
+upgrade Node. Then, only after it prints a pnpm version:
+
+```bash
 pnpm install
-pnpm db:migrate
 FACTORY_TARGET=423500 PATTERN_TARGET=12000 pnpm bootstrap
 pnpm sit
 ```
@@ -98,9 +90,10 @@ Leave that terminal running. In **Safari or Chrome** (any window, not the
 Cursor Simple Browser) open **http://localhost:3000** and hit Continue.
 Closing Cursor does not stop the site unless you also stop that terminal.
 
-On an M3 Pro this local process is the fast path. `pnpm sit` skips Next dev
-compilation. Do not study inside Cursor Cloud — that VM is slower than the
-laptop. github.io is the door; the quiz is local SQLite.
+Paste one block and wait. Intel `brew` lives in `/usr/local` (not
+`/opt/homebrew`). If brew already has Node, skip `brew install node` — press
+**n** at `[y/n]`. `pnpm sit` skips Next dev compilation. github.io is the door;
+the quiz is local SQLite.
 
 ## Invariants the UI must keep
 

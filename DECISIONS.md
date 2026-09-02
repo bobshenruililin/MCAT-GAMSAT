@@ -252,6 +252,11 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: This repo's package manager is pnpm. Terminal is not Cursor. A second clone does not install tools. Newest prompt wins on scope (get the Mac sitting). NORTH_STAR wins on values (local, no hosted quiz).
 - Rejected: Switching the repo to npm; telling them to study in Cursor Cloud until pnpm exists; deleting the outer clone.
 
+## 2026-09-02 — Use existing Homebrew Node; Intel brew is /usr/local
+- Decision: Newest prompt: brew already has node 26.5.0; `[y/n]` upgrade prompt ate pasted commands; `/opt/homebrew` does not exist. Skip `brew install node`. Load `/usr/local/bin/brew` (Intel) or `/opt/homebrew/bin/brew` (Apple Silicon), add `brew --prefix node` to PATH, Corepack pnpm. One paste block. Press **n** at brew y/n.
+- Rationale: Sitting is blocked on PATH, not on a missing formula. Newest prompt wins on scope.
+- Rejected: Upgrading Node; installing Homebrew again; Apple Silicon-only paths.
+
 
 
 

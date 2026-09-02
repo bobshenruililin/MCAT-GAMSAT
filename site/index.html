@@ -85,17 +85,15 @@
           <li>To sit questions, run the app on your computer, then open <strong>http://localhost:3000</strong> in Safari or Chrome.</li>
           <li>Cursor is only an editor. Terminal + a normal browser is enough to study.</li>
           <li>GitHub Pages cannot run the player — it needs Node and SQLite on disk.</li>
-          <li>Mac: if Terminal says <code>pnpm: command not found</code>, install Node first. Cursor’s Node is not on this PATH. Do not clone the repo a second time inside itself.</li>
+          <li>Mac: if Terminal says <code>pnpm: command not found</code>, Node may already be installed — it is just not on PATH. Intel brew is <code>/usr/local</code>, not <code>/opt/homebrew</code>. Paste one block at a time. Do not type <code>y</code> on a fresh prompt. Do not clone the repo inside itself.</li>
           <li>Every card is a retrieve. Confidence 1–5 before the key is shown.</li>
           <li>Factory volume is unverified AI until a human or official paper says otherwise.</li>
         </ul>
-        <pre><code>xcode-select --install
-brew install node
-corepack enable
-corepack prepare pnpm@10.33.3 --activate
-
-git clone https://github.com/bobshenruililin/MCAT-GAMSAT.git
+        <pre><code>git clone https://github.com/bobshenruililin/MCAT-GAMSAT.git
 cd MCAT-GAMSAT
+git pull origin main
+bash scripts/mac-setup.sh
+
 pnpm install
 FACTORY_TARGET=423500 PATTERN_TARGET=12000 pnpm bootstrap
 pnpm sit</code></pre>

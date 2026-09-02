@@ -608,6 +608,23 @@ Three riskiest:
 
 SCORE IMPACT: The next study hour is unblocked once Node is on the Mac PATH — expected score still waits on sitting, not on another clone.
 
+## Brew already had Node; [y/n] swallowed the paste (2026-09-02)
+
+Question: help — git pull glued to Homebrew install; `/opt/homebrew` missing; `brew install node` asked y/n; typing `y` on a new line failed; pnpm still missing.
+
+Answer: Node 26.5.0 is already installed. Do not upgrade it. Intel brew is `/usr/local`, not `/opt/homebrew`. Paste one block. Put `brew --prefix node` on PATH, then Corepack pnpm. Nested clone already deleted.
+
+Shipped: `scripts/mac-setup.sh` loads Intel or Apple Silicon brew and the node keg; README/door: one block, press n at y/n.
+
+Failed: cannot type `y` into the user's brew prompt from here.
+
+Three riskiest:
+1. Node still not on PATH if brew prefix is unusual.
+2. B-013 — bootstrap still unverified AI and large.
+3. Homebrew warning that this Terminal is Intel, not Apple Silicon.
+
+SCORE IMPACT: The next study hour is `bash scripts/mac-setup.sh` then Continue on localhost — expected score still waits on sitting those hours.
+
 
 
 

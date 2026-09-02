@@ -1,5 +1,5 @@
 #!/bin/bash
-# First-time Mac tools for this repo. Run from the repo root:
+# First-time Mac tools. Run from the repo root, alone — wait for it to finish:
 #   bash scripts/mac-setup.sh
 set -euo pipefail
 
@@ -19,6 +19,24 @@ if [[ -d MCAT-GAMSAT && -f MCAT-GAMSAT/package.json ]]; then
   exit 1
 fi
 
+if [[ -x /usr/local/bin/brew ]]; then
+  eval "$(/usr/local/bin/brew shellenv)"
+elif [[ -x /opt/homebrew/bin/brew ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+if command -v brew >/dev/null 2>&1; then
+  export PATH="$(brew --prefix)/bin:${PATH}"
+  NODE_PREFIX="$(brew --prefix node 2>/dev/null || true)"
+  if [[ -n "${NODE_PREFIX}" && -x "${NODE_PREFIX}/bin/node" ]]; then
+    export PATH="${NODE_PREFIX}/bin:${PATH}"
+  fi
+fi
+
+echo "cpu $(uname -m)"
+echo "brew $(command -v brew || echo missing)"
+echo "node $(command -v node || echo missing) $(node -v 2>/dev/null || true)"
+
 if ! xcode-select -p >/dev/null 2>&1; then
   echo "Install Apple's command-line tools (a window may open), then re-run this script:"
   echo "  xcode-select --install"
@@ -26,18 +44,18 @@ if ! xcode-select -p >/dev/null 2>&1; then
 fi
 
 if ! command -v node >/dev/null 2>&1; then
-  echo "Node is not in this Terminal. Cursor's Node does not count."
-  echo "Install Homebrew if you do not have it, then:"
-  echo '  brew install node'
-  echo "If brew is not found after install (Apple Silicon):"
+  echo "Node is not on PATH. Cursor's Node does not count."
+  echo "Do not upgrade Node if brew says it is already installed."
+  echo "Put Homebrew on PATH (Intel is /usr/local, Apple Silicon is /opt/homebrew):"
+  echo '  eval "$(/usr/local/bin/brew shellenv)"'
   echo '  eval "$(/opt/homebrew/bin/brew shellenv)"'
+  echo "Then re-run: bash scripts/mac-setup.sh"
   exit 1
 fi
 
 MAJOR="$(node -p "process.versions.node.split('.')[0]")"
 if [[ "$MAJOR" -lt 20 ]]; then
   echo "Need Node 20+. This machine has $(node -v)."
-  echo "  brew install node"
   exit 1
 fi
 
@@ -49,7 +67,9 @@ else
   npm install -g pnpm@10.33.3
 fi
 
-echo "pnpm $(pnpm --version) ready. Next:"
+hash -r
+echo "pnpm $(command -v pnpm) $(pnpm --version)"
+echo "Next (wait — do not paste this into a y/n prompt):"
 echo "  pnpm install"
 echo "  FACTORY_TARGET=423500 PATTERN_TARGET=12000 pnpm bootstrap"
 echo "  pnpm sit"
