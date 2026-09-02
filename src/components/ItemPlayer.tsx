@@ -175,7 +175,7 @@ export function ItemPlayer({
 
       <div className="flex flex-col gap-6 md:flex-row">
         {item.passage ? (
-          <aside className="rounded-lg border border-zinc-200 bg-white p-4 md:w-1/2">
+          <aside className="rounded-2xl border border-[#e4ddd0] bg-[#fffdf6] p-4 md:w-1/2">
             <h2 className="text-sm font-semibold text-zinc-500">Passage</h2>
             <h3 className="mt-1 text-base font-medium">{item.passage.title}</h3>
             <p className="mt-3 whitespace-pre-wrap font-serif text-[16px] leading-7 text-zinc-800">
@@ -224,13 +224,13 @@ export function ItemPlayer({
                     disabled={revealed || busy}
                     onClick={() => setAnsweredKey(choice.key)}
                     className={[
-                      "flex w-full items-start gap-3 rounded-md border px-3 py-2.5 text-left text-sm",
+                      "flex w-full items-start gap-3 rounded-2xl border-2 px-4 py-3.5 text-left text-sm",
                       selected && !revealed
-                        ? "border-zinc-900 bg-zinc-100"
-                        : "border-zinc-200 bg-white",
+                        ? "border-[#2f6b4f] bg-[#d7eadc]"
+                        : "border-[#e4ddd0] bg-[#fffdf6]",
                       isCorrect ? "border-green-700 bg-green-50" : "",
                       isWrongPick ? "border-red-700 bg-red-50" : "",
-                      revealed || busy ? "cursor-default" : "hover:border-zinc-400",
+                      revealed || busy ? "cursor-default" : "hover:border-[#2f6b4f]",
                     ].join(" ")}
                   >
                     <span className="font-mono font-semibold">{choice.key}</span>
@@ -252,10 +252,10 @@ export function ItemPlayer({
                   disabled={revealed || busy}
                   onClick={() => setConfidence(n)}
                   className={[
-                    "h-10 w-10 rounded-md border text-sm font-medium",
+                    "h-11 w-11 rounded-full border-2 text-sm font-extrabold",
                     confidence === n
-                      ? "border-zinc-900 bg-zinc-900 text-white"
-                      : "border-zinc-300 bg-white",
+                      ? "border-[#2f6b4f] bg-[#2f6b4f] text-white"
+                      : "border-[#e4ddd0] bg-[#fffdf6]",
                   ].join(" ")}
                 >
                   {n}
@@ -271,14 +271,14 @@ export function ItemPlayer({
               data-testid="submit-answer"
               disabled={!submitReady || busy}
               onClick={() => void submit()}
-              className="mt-6 rounded-md bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white disabled:cursor-not-allowed disabled:bg-zinc-400"
+              className="mt-6 w-full rounded-[28px] bg-[#2f6b4f] px-4 py-3.5 text-base font-extrabold text-white shadow-[0_6px_0_#1f4a36] disabled:cursor-not-allowed disabled:bg-zinc-400 disabled:shadow-none sm:w-auto"
             >
               {busy ? "Checking…" : "Submit"}
             </button>
           ) : null}
 
           {revealed && grade ? (
-            <div className="mt-6 space-y-3 rounded-lg border border-zinc-200 bg-white p-4">
+            <div className="mt-6 space-y-3 rounded-2xl border border-[#e4ddd0] bg-[#fffdf6] p-4">
               <p
                 className={
                   grade.correct
@@ -355,7 +355,7 @@ export function ItemPlayer({
                 data-testid="next-item"
                 disabled={!nextReady || busy}
                 onClick={() => void next()}
-                className="rounded-md bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white disabled:cursor-not-allowed disabled:bg-zinc-400"
+                className="w-full rounded-[28px] bg-[#2f6b4f] px-4 py-3.5 text-base font-extrabold text-white shadow-[0_6px_0_#1f4a36] disabled:cursor-not-allowed disabled:bg-zinc-400 disabled:shadow-none sm:w-auto"
               >
                 {busy ? "Saving…" : "Next"}
               </button>

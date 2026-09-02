@@ -15,8 +15,15 @@ export function sessionModeLabel(mode: string, kind: string): string {
   return MODE_LABELS[mode] ?? MODE_LABELS[kind] ?? kind;
 }
 
-export function OpenSessions({ sessions }: { sessions: OpenSession[] }) {
-  if (sessions.length === 0) return null;
+export function OpenSessions({
+  sessions,
+  skipFirst = false,
+}: {
+  sessions: OpenSession[];
+  skipFirst?: boolean;
+}) {
+  const list = skipFirst ? sessions.slice(1) : sessions;
+  if (list.length === 0) return null;
   return (
     <section className="mt-6" data-testid="open-sessions">
       <h2 className="text-sm font-medium">Unfinished sittings</h2>
@@ -25,7 +32,7 @@ export function OpenSessions({ sessions }: { sessions: OpenSession[] }) {
         before you leave an item.
       </p>
       <ul className="mt-3 space-y-2">
-        {sessions.map((s) => (
+        {list.map((s) => (
           <li key={s.id}>
             <Link
               href={`/session/${s.id}`}

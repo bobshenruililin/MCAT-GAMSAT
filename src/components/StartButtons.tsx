@@ -27,8 +27,10 @@ type Busy =
 
 export function StartButtons({
   disabled,
+  hideDaily = false,
 }: {
   disabled: boolean;
+  hideDaily?: boolean;
 }) {
   const router = useRouter();
   const [busy, setBusy] = useState<Busy>(null);
@@ -123,15 +125,17 @@ export function StartButtons({
         ))}
       </div>
       <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-        <button
-          type="button"
-          data-testid="start-daily"
-          disabled={disabled || busy !== null}
-          onClick={() => void start("daily")}
-          className="rounded-md bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white disabled:cursor-not-allowed disabled:bg-zinc-400"
-        >
-          {busy === "daily" ? "Starting…" : "Start Session"}
-        </button>
+        {hideDaily ? null : (
+          <button
+            type="button"
+            data-testid="start-daily"
+            disabled={disabled || busy !== null}
+            onClick={() => void start("daily")}
+            className="rounded-2xl bg-[#2f6b4f] px-4 py-2.5 text-sm font-extrabold text-white shadow-[0_4px_0_#1f4a36] disabled:cursor-not-allowed disabled:bg-zinc-400 disabled:shadow-none"
+          >
+            {busy === "daily" ? "Starting…" : "Start Session"}
+          </button>
+        )}
         <button
           type="button"
           data-testid="start-mastery-check"

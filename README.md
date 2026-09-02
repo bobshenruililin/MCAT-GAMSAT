@@ -38,13 +38,22 @@ a percentile.
 
 | Route | What it is |
 | --- | --- |
-| `/` | Today — designed/live bank scale, due/new, Up Next, unfinished sittings, start daily / diagnostic / skill / mastery check / pattern entry / ladder / structure |
+| `/` | Lesson home — one Continue, 7-family path, Up Next. Bank/forecast/extra sittings behind details |
 | `/atlas` | Exam map — family → FC → category → topic, designed vs live bank, 18 past-paper moves |
 | `/session/[id]` | Retrieval player (confidence before reveal; error class on every miss) and session summary |
 | `/progress` | Taxonomy tree, weakest topics, calibration / pacing / trend |
 | `/write` | GAMSAT S2 timed studio (self-rubric, not an official score) |
 | `/scoreboard` | Official table from SCOREBOARD.md + live study log |
 | `/health` | SQLite path and row counts |
+
+## GitHub Pages door
+
+Static files in `site/` deploy from `main` via `.github/workflows/pages.yml`.
+Expected URL: https://bobshenruililin.github.io/MCAT-GAMSAT/
+
+That page cannot run the player (Node + SQLite). Clone, `pnpm bootstrap`, `pnpm
+dev`. Enable GitHub Pages (Actions source) once on the repo if the first deploy
+needs it.
 
 ## Invariants the UI must keep
 

@@ -456,5 +456,26 @@ Three riskiest:
 
 SCORE IMPACT: The next study hour can see the whole exam map and a half-million-item queue before the first retrieve — score still waits on sitting and on official papers.
 
+## Lesson home + GitHub Pages door (2026-09-02)
+
+Question: publish a git website; Today still feels like a database; want more Duolingo; bring UI designers; no cost to further expansion; YC would love.
+
+Answer: Static GitHub Pages door (`site/` + Actions). Local `/` is one Continue + family path from existing coverage. Sage player. No XP/hearts. No factory/taxonomy change. NORTH_STAR keeps sitting local (B-017).
+
+Shipped:
+- `site/index.html` + `.github/workflows/pages.yml` (path `site`, not `pages/` — Next Pages Router).
+- ContinueHero: unfinished sitting → Up Next skill → mixed daily. FamilyPath orbs. Bank/forecast/extra sittings in `<details>`.
+- ItemPlayer + shell cream/sage. Fraunces + Nunito. Testids preserved.
+- Tests for the door, ContinueHero, FamilyPath.
+
+Failed: cannot flip the GitHub Pages repo setting from here (`gh` read-only). Workflow is the publish mechanism.
+
+Three riskiest:
+1. B-017 — a public URL can be misread as a multi-user product.
+2. B-013 — live bank is still unverified AI.
+3. Enabling Pages is a one-time human action if the first workflow needs it.
+
+SCORE IMPACT: The next study hour starts on a lesson path instead of a stats console — expected score still waits on sitting those hours.
+
 
 

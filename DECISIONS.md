@@ -217,6 +217,12 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: NORTH_STAR wins on values (single user, no monetization, no polish beyond clarity). Newest prompt wins on scope: the map and the scale must be screenshotable. A 4.2M ingest is optional; a sit-able 436k live bank plus designed-capacity copy is enough to photograph the ambition honestly.
 - Rejected: Generating mockup images instead of the live app; raising factory to 10,000× without ingesting; a fourth taxonomy level in SQLite without human B-001; a SaaS landing page.
 
+## 2026-09-02 — Lesson home + GitHub Pages door; Duolingo interaction, not gamification
+- Decision: `/` is one Continue (unfinished sitting, else Up Next skill, else mixed daily) plus a 7-family path drawn from existing coverage. BankHero, due forecast, last-7-days, and extra sitting modes sit behind `<details>`. Player Continue chrome is sage on cream. GitHub Pages is a static door in `site/` (`pages/` would collide with Next). The player does not run on Pages. No XP, hearts, leagues, avatars, or hints. No factory, taxonomy, ingest, or schema change.
+- Rationale: Newest prompt: publish a git website; Today still feels like a database; want more Duolingo; UI craft; no cost to further expansion; YC would love. NORTH_STAR: retrieval, confidence-before-reveal, no other users. Newest prompt wins on scope (public door + lesson UI). NORTH_STAR wins on values (no fake company, no gamification that is rereading). Log B-017.
+- Rejected: Hosting Next+SQLite on Pages; a second study runtime; XP/streak leagues; coupling UI to bank expansion; putting static files in `pages/` (Next Pages Router); a Figma-only mock.
+
+
 
 
 

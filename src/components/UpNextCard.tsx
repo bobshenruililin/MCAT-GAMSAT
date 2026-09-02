@@ -8,9 +8,11 @@ import type { UpNextSkill } from "@/engine/upNext";
 export function UpNextCard({
   skill,
   disabled,
+  showCta = true,
 }: {
   skill: UpNextSkill;
   disabled: boolean;
+  showCta?: boolean;
 }) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
@@ -44,7 +46,7 @@ export function UpNextCard({
 
   return (
     <section
-      className="mt-6 rounded-lg border border-zinc-900 bg-white p-4"
+      className="mt-6 rounded-2xl border border-[#e4ddd0] bg-[#fffdf6] p-4"
       data-testid="up-next"
     >
       <p className="text-xs uppercase tracking-wide text-zinc-500">Up Next</p>
@@ -60,15 +62,17 @@ export function UpNextCard({
         {" · "}
         weight {skill.examWeight.toFixed(4)}
       </p>
-      <button
-        type="button"
-        data-testid="start-skill"
-        disabled={disabled || busy}
-        onClick={() => void start()}
-        className="mt-4 rounded-md bg-zinc-900 px-4 py-2.5 text-sm font-medium text-white disabled:cursor-not-allowed disabled:bg-zinc-400"
-      >
-        {busy ? "Starting…" : "Start skill session"}
-      </button>
+      {showCta ? (
+        <button
+          type="button"
+          data-testid="start-skill"
+          disabled={disabled || busy}
+          onClick={() => void start()}
+          className="mt-4 rounded-2xl bg-[#2f6b4f] px-4 py-2.5 text-sm font-extrabold text-white shadow-[0_4px_0_#1f4a36] disabled:cursor-not-allowed disabled:bg-zinc-400 disabled:shadow-none"
+        >
+          {busy ? "Starting…" : "Start skill session"}
+        </button>
+      ) : null}
       <p className="mt-2 text-xs text-zinc-500">
         Four items on this skill, interleaved with a contrast topic. No two
         consecutive same-topic items.

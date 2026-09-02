@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exam morning — MCAT &amp; GAMSAT retrieval</title>
+    <meta
+      name="description"
+      content="Local-first MCAT and GAMSAT retrieval. 4,355,847 designed items. Sitting happens on your machine, not on this page."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Nunito:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <p class="kicker">Exam morning</p>
+      <h1>The person walking into the room is the product.</h1>
+      <p class="lede">
+        One local retrieval instrument for the MCAT and GAMSAT. No accounts. No
+        cloud. No waitlist. This page is the door. The sitting is on your
+        machine.
+      </p>
+
+      <section class="stat" aria-label="Designed instrument">
+        <article>
+          <div class="n">4,355,847</div>
+          <p>Designed retrieval items (4,235,000 factory + 120,000 pattern drills + 847 hand). Never verified=true in software.</p>
+        </article>
+        <article>
+          <div class="n">7</div>
+          <p>Exam families: CARS, B/B, C/P, P/S, S1, S2, S3.</p>
+        </article>
+        <article>
+          <div class="n">18</div>
+          <p>Past-paper moves, retrieved as questions, not as notes.</p>
+        </article>
+      </section>
+
+      <section class="path" aria-label="Exam family path">
+        <div class="orb-row">
+          <div class="orb now">CARS</div>
+          <span>MCAT CARS</span>
+          <div class="stem" aria-hidden="true"></div>
+        </div>
+        <div class="orb-row">
+          <div class="orb">B/B</div>
+          <span>Bio/Biochem</span>
+          <div class="stem" aria-hidden="true"></div>
+        </div>
+        <div class="orb-row">
+          <div class="orb">C/P</div>
+          <span>Chem/Phys</span>
+          <div class="stem" aria-hidden="true"></div>
+        </div>
+        <div class="orb-row">
+          <div class="orb">P/S</div>
+          <span>Psych/Soc</span>
+          <div class="stem" aria-hidden="true"></div>
+        </div>
+        <div class="orb-row">
+          <div class="orb">S1</div>
+          <span>GAMSAT S1</span>
+          <div class="stem" aria-hidden="true"></div>
+        </div>
+        <div class="orb-row">
+          <div class="orb">S2</div>
+          <span>GAMSAT S2</span>
+          <div class="stem" aria-hidden="true"></div>
+        </div>
+        <div class="orb-row">
+          <div class="orb">S3</div>
+          <span>GAMSAT S3</span>
+        </div>
+      </section>
+
+      <section class="honesty">
+        <h2>Sit it locally</h2>
+        <ul>
+          <li>Every card is a retrieve. Confidence 1–5 before the key is shown.</li>
+          <li>GitHub Pages cannot run the player — it needs Node and SQLite on disk.</li>
+          <li>Factory volume is unverified AI until a human or official paper says otherwise.</li>
+        </ul>
+        <pre><code>git clone https://github.com/bobshenruililin/MCAT-GAMSAT.git
+cd MCAT-GAMSAT
+pnpm install
+pnpm bootstrap
+pnpm dev</code></pre>
+        <p class="lede">Then open http://localhost:3000 and hit Continue. Cap bootstrap with FACTORY_TARGET if the SQLite file would be too large.</p>
+        <a class="btn" href="https://github.com/bobshenruililin/MCAT-GAMSAT">Open the repo</a>
+      </section>
+
+      <p class="foot">
+        Single user. Success is SCOREBOARD.md — official AAMC/ACER percentiles —
+        never a feature list.
+        <a href="https://github.com/bobshenruililin/MCAT-GAMSAT">Source</a>
+      </p>
+    </main>
+  </body>
+</html>

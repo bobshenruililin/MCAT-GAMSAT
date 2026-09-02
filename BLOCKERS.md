@@ -50,6 +50,9 @@ Khan Academy often offers hints before the student commits an answer. NORTH_STAR
 ### B-016 — YC-demo screenshots vs NORTH_STAR non-goals
 Newest prompt asked for Y Combinator-grade screenshots/demos and ambitious question/knowledge targets. NORTH_STAR forbids other users, auth, cloud, monetization, and polish beyond clarity. v1 keeps the product single-user and local. The demo surfaces are Today/Atlas/Health showing designed capacity (4.235M factory + 120k patterns + 847 hand), a virtual four-layer exam map (family derived from ids; schema still three levels — B-001), and live SQLite counts. No waitlist, no fake users, never `verified=true`. Human: keep this split, or AMEND NORTH STAR if the product should become a company pitch.
 
+### B-017 — Public GitHub Pages door vs NORTH_STAR “no other users”
+Newest prompt asked to publish a git website. NORTH_STAR forbids other users, auth, cloud, and monetization. v1 ships a static landing in `site/` (designed bank, local clone commands) deployed by GitHub Actions Pages — not a study runtime, not accounts, not a waitlist. Sitting stays on localhost SQLite. Human: keep the door public, or take the workflow down.
+
 
 
 

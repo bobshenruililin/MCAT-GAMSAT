@@ -1,13 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f4f1ea;
-  --foreground: #18181b;
+  --background: #f7f3e8;
+  --foreground: #1c1917;
+  --lesson-sage: #2f6b4f;
+  --lesson-cream: #f7f3e8;
+  --lesson-paper: #fffdf6;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --font-sans: var(--font-nunito), ui-rounded, "Segoe UI", sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, "Times New Roman", serif;
 }
 
 body {
