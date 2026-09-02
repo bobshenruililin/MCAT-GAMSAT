@@ -227,6 +227,12 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Trust in content outranks volume. A 4.35M bank of meta-questions lowers expected score per hour. Newest prompt wins on scope (quality). NORTH_STAR wins on values (no auto-verify).
 - Rejected: Leaving the templates and only hiding them in the UI; deleting the factory; auto-verifying rewritten items; rewriting the 847 hand items (they were already exam-like).
 
+## 2026-09-02 — v1 label-swap was not enough; stems must be exam prompts
+- Decision: Newest prompt again: look with a fresh eye; they are still bad. v1 left topic titles in the stem, “is the idea that covers” in the options, S2 “which writing move (set N)”, CARS `(issue N)` / Seed in explanations, quant `(trial N)`, pattern “solved example of the move” / “booklet N”, and a committed preview batch of pack-0 / vignette-0 items. v2: stem presents observations or a Task/passage; options are accounts or construct names; delete `26-scoremax-preview.json`; keep hand 847; never verified=true; re-ingest the sit-able cap.
+- Rationale: A student sitting Continue should not be able to tell they are inside a generator. Trust in content outranks volume. Newest prompt wins on scope.
+- Rejected: Another synonym pass on the same meta frames; rewriting hand items; auto-verify; keeping the preview batch “because it is only 18 rows” (those were the items sit-today actually served).
+
+
 
 
 

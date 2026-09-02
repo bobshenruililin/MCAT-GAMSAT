@@ -10,15 +10,17 @@ describe("pattern generate", () => {
     const id = identifyItem(p, 0);
     const ap = applyItem(p, 1);
     expect(id.stem).toContain(p.exampleSetup);
-    expect(id.stem).toContain(p.exampleConclusion);
+    expect(id.stem).toMatch(/^Item 1\./);
+    expect(id.choices.map((c) => c.text)).toContain(p.exampleConclusion);
     expect(id.skill_tag).toBe(p.id);
     expect(ap.stem).toContain(p.exampleSetup);
-    expect(ap.stem).toContain("A solved example of the move");
+    expect(ap.stem).toMatch(/^Example:/);
+    expect(ap.stem).not.toMatch(/solved example of the move|booklet \d/);
     expect(ap.skill_tag).toBe(p.id);
     expect(wordCount(id.explanation)).toBeGreaterThanOrEqual(40);
     expect(wordCount(ap.explanation)).toBeGreaterThanOrEqual(40);
-    expect(id.explanation).toContain(`Pattern (${p.id}`);
-    expect(ap.explanation).toContain("Content grain");
+    expect(id.explanation).toContain(p.name);
+    expect(ap.explanation).toContain(p.name);
   });
 
   it("emits an ingest-valid ranked bank with unique stems", () => {

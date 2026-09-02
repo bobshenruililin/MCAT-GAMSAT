@@ -498,5 +498,30 @@ Three riskiest:
 
 SCORE IMPACT: The next study hour can retrieve on items that look like questions rather than item-writer notes — score still waits on sitting and on official papers.
 
+## Factory stems v2 — they were still notes after the label swap (2026-09-02)
+
+Question: look again with a fresh pair of eyes; the questions are still bad.
+
+Answer: Agreed. v1 had swapped `pack N` for `set N` and `vignette N` for `Participant N` while stems still named the topic and options still said “is the idea that covers.” Preview batch `26-scoremax-preview.json` was still serving Timed Task A pack 0. v2 makes the stem an exam prompt and deletes that preview.
+
+Shipped:
+- Conceptual: observations in the stem, topic title only in the options.
+- P/S: behaviour in the stem, “Which construct is illustrated?”, construct names as options.
+- S2: Task A/B, 30 minutes, three comments, which approach scores.
+- CARS: titled essay + vol./no. citation; no Seed confession; no issue N.
+- Quant: “In experiment N”, not “(trial N)”.
+- Pattern identify: mini-item + real options (not “name this move”).
+- Deleted `content/batches/26-scoremax-preview.json`. Tests 118.
+
+Failed: live SQLite not yet re-ingested (bootstrap next). Conceptual items are still outline-matching, not full AAMC labs.
+
+Three riskiest:
+1. B-013/B-018 — better prompts are not a percentile and not verified=true.
+2. Outline-discrimination is still not an AAMC passage.
+3. Sitting the old DB until bootstrap finishes would show the old stems.
+
+SCORE IMPACT: The next study hour can retrieve on prompts that look like questions — score still waits on sitting those hours and on official papers.
+
+
 
 

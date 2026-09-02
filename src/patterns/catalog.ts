@@ -4,6 +4,9 @@ import type { SectionFamily } from "@/engine/sectionBudget";
  * First-principles past-paper moves. Official papers are the only percentile
  * truth; these are original analogs of the *moves*, never cloned stems.
  * skill_tag on items uses `id`.
+ *
+ * exampleConclusion / exampleWrong are the answer key and traps for the
+ * mini-item in exampleSetup — written as exam options, not item-writer notes.
  */
 export type ExamPattern = {
   id: string;
@@ -13,6 +16,7 @@ export type ExamPattern = {
   topicId: string;
   exampleSetup: string;
   exampleConclusion: string;
+  exampleWrong: [string, string, string];
 };
 
 export const PATTERNS: ExamPattern[] = [
@@ -25,7 +29,12 @@ export const PATTERNS: ExamPattern[] = [
     exampleSetup:
       "A historian argues that archive catalogs are political because they decide which lives are searchable. She spends a paragraph on a torn shipping label.",
     exampleConclusion:
-      "The analog key is the catalog-as-politics claim, not the shipping label.",
+      "Catalogs are political because they decide which lives are searchable.",
+    exampleWrong: [
+      "The torn shipping label is the author’s main point.",
+      "The passage is primarily a biography of the historian.",
+      "Catalogs cannot affect whose lives are searchable.",
+    ],
   },
   {
     id: "PAT.CARS.concession_turn",
@@ -36,7 +45,12 @@ export const PATTERNS: ExamPattern[] = [
     exampleSetup:
       "A critic writes that the mural is technically dazzling, yet it treats the neighbourhood as scenery.",
     exampleConclusion:
-      "The analog key is the scenery objection, not the dazzling praise.",
+      "The author’s live claim is that the mural treats the neighbourhood as scenery.",
+    exampleWrong: [
+      "The author mainly praises the mural’s technique.",
+      "The author denies that the mural exists.",
+      "The author wants every mural banned.",
+    ],
   },
   {
     id: "PAT.CARS.weaken",
@@ -47,7 +61,12 @@ export const PATTERNS: ExamPattern[] = [
     exampleSetup:
       "An essay infers civic virtue from one town's high voter turnout.",
     exampleConclusion:
-      "The analog weakener is evidence that turnout there is mandatory, not a remark about weather.",
+      "Evidence that turnout there is mandatory would weaken the inference from turnout to civic virtue.",
+    exampleWrong: [
+      "A remark about the town’s weather would weaken the civic-virtue claim.",
+      "Civic virtue cannot be discussed in an essay.",
+      "High turnout already proves the author’s claim beyond challenge.",
+    ],
   },
   {
     id: "PAT.CARS.analogy",
@@ -58,7 +77,12 @@ export const PATTERNS: ExamPattern[] = [
     exampleSetup:
       "The author compares a footnote to a trapdoor: optional, easy to miss, load-bearing.",
     exampleConclusion:
-      "The analog map is optional-but-structural, not 'footnotes are doors'.",
+      "The shared relation is optional but structural, not a claim that footnotes are doors.",
+    exampleWrong: [
+      "Footnotes are literally doors.",
+      "Trapdoors cannot bear load, so the comparison fails.",
+      "The author is mainly describing carpentry.",
+    ],
   },
   {
     id: "PAT.CP.setup_equation",
@@ -68,8 +92,12 @@ export const PATTERNS: ExamPattern[] = [
     topicId: "MCAT.FC4.4B.t1",
     exampleSetup:
       "A 2 kg block is pulled with 10 N on a frictionless rail; find acceleration.",
-    exampleConclusion:
-      "The analog is a = F/m = 5 m/s², not 10×2.",
+    exampleConclusion: "Acceleration is F/m = 5 m/s².",
+    exampleWrong: [
+      "Acceleration is 10 × 2 = 20 m/s².",
+      "Acceleration is 10 m/s², ignoring mass.",
+      "Acceleration is 2 m/s², ignoring force.",
+    ],
   },
   {
     id: "PAT.CP.limiting_case",
@@ -79,8 +107,12 @@ export const PATTERNS: ExamPattern[] = [
     topicId: "MCAT.FC5.5B.t1",
     exampleSetup:
       "Resistance of two parallel resistors as R2 → ∞.",
-    exampleConclusion:
-      "The analog limit is R_eq → R1, not 0 and not infinity.",
+    exampleConclusion: "As R2 → ∞, Req → R1.",
+    exampleWrong: [
+      "Req → 0 Ω, as if the open branch were a short.",
+      "Req → ∞ Ω, as if both branches opened.",
+      "Req → 2 R1, adding the resistors as if they were in series.",
+    ],
   },
   {
     id: "PAT.BB.control",
@@ -91,7 +123,12 @@ export const PATTERNS: ExamPattern[] = [
     exampleSetup:
       "An enzyme assay adds inhibitor in one tube and buffer in the other, same substrate.",
     exampleConclusion:
-      "The analog control is the buffer tube, not a third tube with extra substrate.",
+      "The buffer tube is the control that isolates the inhibitor.",
+    exampleWrong: [
+      "A third tube with extra substrate is the better control.",
+      "The inhibitor tube is the control because it contains more reagents.",
+      "Enzyme assays cannot have controls.",
+    ],
   },
   {
     id: "PAT.BB.if_then",
@@ -101,8 +138,12 @@ export const PATTERNS: ExamPattern[] = [
     topicId: "MCAT.FC1.1D.t3",
     exampleSetup:
       "A pathway A→B→C is blocked at B→C.",
-    exampleConclusion:
-      "The analog is B accumulates, C drops — not A disappearing.",
+    exampleConclusion: "B accumulates and C falls.",
+    exampleWrong: [
+      "A must disappear.",
+      "C accumulates upstream of the block.",
+      "Every metabolite stays fixed.",
+    ],
   },
   {
     id: "PAT.PS.confound",
@@ -113,7 +154,12 @@ export const PATTERNS: ExamPattern[] = [
     exampleSetup:
       "A lab claims a drug raises alertness after testing only at 8 a.m. on coffee-drinkers.",
     exampleConclusion:
-      "The analog confound is caffeine/time of day, not 'alertness is wakefulness'.",
+      "Caffeine and time of day covary with the claimed drug effect.",
+    exampleWrong: [
+      "Alertness is just wakefulness restated.",
+      "Pills never work.",
+      "The lab needed a longer questionnaire, not a design fix.",
+    ],
   },
   {
     id: "PAT.PS.operdef",
@@ -124,7 +170,12 @@ export const PATTERNS: ExamPattern[] = [
     exampleSetup:
       "Stress was scored as salivary cortisol at 09:00.",
     exampleConclusion:
-      "The analog operationalization is the cortisol assay, not 'feeling overwhelmed'.",
+      "The operational definition is the 09:00 salivary cortisol assay.",
+    exampleWrong: [
+      "Stress means feeling overwhelmed.",
+      "Stress is a Freudian construct and cannot be measured.",
+      "Stress is the opposite of relaxation, so no assay is needed.",
+    ],
   },
   {
     id: "PAT.S1.competing",
@@ -135,7 +186,12 @@ export const PATTERNS: ExamPattern[] = [
     exampleSetup:
       "A letter praises a ferry for punctuality; a poem treats the same ferry as a floating waiting room.",
     exampleConclusion:
-      "The analog split is clock-time vs lived delay, not whether boats exist.",
+      "The texts split on clock-time versus lived delay, not on whether boats exist.",
+    exampleWrong: [
+      "Both texts deny that ferries exist.",
+      "The letter is objectively true and the poem is false.",
+      "Punctuality and waiting are the same criterion.",
+    ],
   },
   {
     id: "PAT.S1.tone",
@@ -146,7 +202,12 @@ export const PATTERNS: ExamPattern[] = [
     exampleSetup:
       "A narrator lists inherited coats with inventory calm, then calls one of them a borrowed life.",
     exampleConclusion:
-      "The analog tone turns from cataloguing to moral unease.",
+      "The tone turns from cataloguing to moral unease.",
+    exampleWrong: [
+      "Someone inherited several coats.",
+      "The narrator is literally a shopkeeper.",
+      "The piece has no stance, only objects.",
+    ],
   },
   {
     id: "PAT.S2.throughline",
@@ -157,7 +218,12 @@ export const PATTERNS: ExamPattern[] = [
     exampleSetup:
       "A draft quotes four prompt lines and never says what they jointly imply.",
     exampleConclusion:
-      "The analog defect is missing throughline, not missing adjectives.",
+      "The defect is a missing governing claim that the quoted lines would serve.",
+    exampleWrong: [
+      "The defect is missing adjectives.",
+      "The defect is quoting the prompt at all.",
+      "The defect is writing in English.",
+    ],
   },
   {
     id: "PAT.S3.table",
@@ -168,7 +234,12 @@ export const PATTERNS: ExamPattern[] = [
     exampleSetup:
       "A table shows frequency doubling while amplitude stays fixed.",
     exampleConclusion:
-      "The analog forbids any option that requires amplitude change.",
+      "Any claim that requires amplitude to have changed is forbidden by the table.",
+    exampleWrong: [
+      "Frequency cannot double in any table.",
+      "Amplitude must have changed if frequency changed.",
+      "The table cannot constrain a mechanism.",
+    ],
   },
   {
     id: "PAT.S3.proportion",
@@ -178,8 +249,12 @@ export const PATTERNS: ExamPattern[] = [
     topicId: "GAMSAT.S3.chem.t1",
     exampleSetup:
       "Concentration doubles at constant volume; moles?",
-    exampleConclusion:
-      "The analog is moles double, not stay fixed.",
+    exampleConclusion: "Moles of solute double, because n = cV and V is fixed.",
+    exampleWrong: [
+      "Moles stay fixed, as if concentration were independent of n.",
+      "Moles halve, inverting the proportion.",
+      "Moles quadruple, mixing a square law into a direct proportion.",
+    ],
   },
   {
     id: "PAT.S3.control_s3",
@@ -190,7 +265,12 @@ export const PATTERNS: ExamPattern[] = [
     exampleSetup:
       "Two models predict different pH optima for the same enzyme.",
     exampleConclusion:
-      "The analog next step is an activity-vs-pH curve, not a third identical replicate at one pH.",
+      "Measure activity across a pH range that can separate the two predicted optima.",
+    exampleWrong: [
+      "Run a third identical replicate at the same single pH.",
+      "Change the enzyme’s name in the lab book.",
+      "Stop; one pH point already decides both models.",
+    ],
   },
   {
     id: "PAT.CARS.except",
@@ -201,7 +281,12 @@ export const PATTERNS: ExamPattern[] = [
     exampleSetup:
       "A passage supports claims 1, 2, and 3 about a law; claim 4 is the author's joke.",
     exampleConclusion:
-      "The analog EXCEPT key is the joke, not one of the supported claims.",
+      "The author’s joke is the statement the passage does not support.",
+    exampleWrong: [
+      "Claim 1 is unsupported.",
+      "Claim 2 is unsupported.",
+      "A joke cannot appear in a CARS passage.",
+    ],
   },
   {
     id: "PAT.CP.units",
@@ -211,8 +296,12 @@ export const PATTERNS: ExamPattern[] = [
     topicId: "MCAT.FC4.4A.t1",
     exampleSetup:
       "A 50 cm string, formula wants metres, frequency from v/(2L).",
-    exampleConclusion:
-      "The analog uses L = 0.50 m, not 50.",
+    exampleConclusion: "Convert 50 cm to 0.50 m before using v/(2L).",
+    exampleWrong: [
+      "Use L = 50 in v/(2L).",
+      "Drop L from the formula.",
+      "Multiply v by L instead of dividing.",
+    ],
   },
 ];
 

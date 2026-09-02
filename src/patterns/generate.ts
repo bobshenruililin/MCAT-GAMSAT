@@ -1,4 +1,4 @@
-import { assembleItem, hashStr, mulberry, pick } from "@/factory/item";
+import { assembleItem } from "@/factory/item";
 import { wordCount } from "@/ingest/validate";
 import { PATTERNS, type ExamPattern } from "./catalog";
 import { defaultPatternId } from "./fromDesign";
@@ -6,43 +6,29 @@ import { buildApply } from "./instances";
 
 export const PATTERN_TARGET = 120_000;
 
-function padExplain(text: string, salt: string): string {
+function padExplain(text: string, extra: string): string {
   const base = text.trim();
   if (wordCount(base) >= 40) return base;
-  return `${base} The analog in the stem is a different instance of the same exam move; the keyed option is the only one that applies that move to the new numbers or new wording in this item (${salt}), not a restatement of the analog's nouns.`;
-}
-
-function foilPatterns(p: ExamPattern, rng: () => number): ExamPattern[] {
-  const others = PATTERNS.filter((x) => x.id !== p.id);
-  const out: ExamPattern[] = [];
-  const copy = [...others];
-  while (out.length < 3 && copy.length > 0) {
-    out.push(pick(copy, rng));
-    copy.splice(copy.indexOf(out[out.length - 1]), 1);
-  }
-  return out;
+  return `${base} ${extra} Neighbouring options copy a vivid detail, skip a conversion, or answer a different question than the one asked.`;
 }
 
 export function identifyItem(p: ExamPattern, index: number) {
-  const rng = mulberry(hashStr(`${p.id}:id:${index}`));
-  const foils = foilPatterns(p, rng);
   const stem =
-    `${p.exampleSetup} ${p.exampleConclusion} ` +
-    `A later item (booklet ${index + 1}) uses the same kind of move. Which description of that move is correct?`;
+    `Item ${index + 1}. ${p.exampleSetup} Which of the following is correct?`;
   const item = assembleItem({
     conceptId: p.topicId,
     type: "discrete",
     stem,
-    correct: `${p.name}: ${p.move}`,
+    correct: p.exampleConclusion,
     distractors: [
-      { text: `${foils[0].name}: ${foils[0].move}`, why: "That is a real exam move, but not the analog's move." },
-      { text: `${foils[1].name}: ${foils[1].move}`, why: "Wrong family of error — this analog is not that trap." },
-      { text: `${foils[2].name}: ${foils[2].move}`, why: "This move would answer a different past-paper genre." },
+      { text: p.exampleWrong[0], why: "That option names a detail, overread, or wrong relation, not the keyed account." },
+      { text: p.exampleWrong[1], why: "That option leaves the setup or answers a different question." },
+      { text: p.exampleWrong[2], why: "That option is a standard trap for this past-paper shape." },
     ],
     explanation: padExplain(
-      `Pattern (${p.id} — ${p.name}): ${p.move} Content grain (${p.topicId}): ${p.topicId}. ` +
-        `The analog's conclusion was ${p.exampleConclusion} The new stem is scored by naming that same move, not by copying analog nouns.`,
-      `${p.id}-${index}`,
+      `${p.exampleSetup} The correct account is: ${p.exampleConclusion} ` +
+        `That is the ${p.name} shape (${p.move}) tagged to ${p.topicId}.`,
+      `Item ${index + 1} only numbers this instance.`,
     ),
     difficulty: 0.2 + (index % 4) * 0.05,
     rotate: index,
@@ -58,8 +44,8 @@ export function applyItem(p: ExamPattern, index: number) {
   const difficulty = Math.min(0.95, 0.18 + rung * 0.08);
   const built = buildApply(p, index, rung);
   const stem =
-    `A solved example of the move: ${p.exampleSetup} ${p.exampleConclusion}\n\n` +
-    built.question;
+    `Example: ${p.exampleSetup} ${p.exampleConclusion}\n\n` +
+    `Item ${index + 1}. ${built.question}`;
   const item = assembleItem({
     conceptId: p.topicId,
     type: "discrete",
@@ -71,9 +57,9 @@ export function applyItem(p: ExamPattern, index: number) {
       { text: built.distractors[2], why: built.why[2] },
     ],
     explanation: padExplain(
-      `Pattern (${p.id} — ${p.name}): ${p.move} Content grain (${p.topicId}): ${p.topicId}. ` +
-        `Difficulty rung ${rung}. ${built.close} The analog is scaffolding; the key is the new instance.`,
-      `${p.id}-ap-${index}`,
+      `The example is scored by ${p.name}: ${p.move} ` +
+        `${built.close} Item ${index + 1} uses new nouns or numbers; do not copy the example's objects.`,
+      `Tagged to ${p.topicId}.`,
     ),
     difficulty,
     rotate: index + 1,

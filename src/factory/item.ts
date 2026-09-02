@@ -47,7 +47,7 @@ export function clamp01(n: number): number {
 function ensureExplain(text: string, salt: string): string {
   const trimmed = text.trim();
   if (wordCount(trimmed) >= 40) return trimmed;
-  return `${trimmed} The unique values in this stem (${salt}) pin down one key; the other options are the neighboring-outline or arithmetic traps this item is written to catch, not a second live answer.`;
+  return `${trimmed} Neighbouring options fail because they name a different relation, drop a required conversion, or contradict a number given in the stem (${salt}). Those traps are not a second live key.`;
 }
 
 export type Distractor = { text: string; why: string };

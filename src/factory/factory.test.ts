@@ -141,10 +141,16 @@ describe("score-max factory", () => {
 
   it("does not leak factory scaffolding into the stem or passage body", () => {
     const forbidden =
-      /pack \d|vignette \d|tested grain|this bank|cover story|productive retrieval|Entry — identify|\(run \d+\)|Seed \d+|as tagged in this bank|item-writer workshop|In passage \d/;
+      /pack \d|vignette \d|tested grain|this bank|cover story|productive retrieval|Entry — identify|\(run \d+\)|\(trial \d+\)|\(issue \d+\)|\(set \d+\)|Seed \d+|as tagged in this bank|item-writer workshop|In passage \d|idea that covers|craft grain|which writing move|solved example of the move|new cover for the same|booklet \d/;
+    const topics = loadWeightedTopics();
+    const byId = new Map(topics.map((t) => [t.id, t]));
     const bank = generateBank(900);
     for (const it of bank.items) {
       expect(it.stem, it.stem.slice(0, 160)).not.toMatch(forbidden);
+      expect(it.explanation).not.toMatch(/Seed \d+|tested grain|this bank/);
+      for (const ch of it.choices) {
+        expect(ch.text).not.toMatch(/is the idea that covers/i);
+      }
     }
     for (const p of bank.passages) {
       expect(p.body).not.toMatch(/Seed \d+ only changes/);
@@ -152,11 +158,34 @@ describe("score-max factory", () => {
       for (const q of p.questions) {
         expect(q.stem, q.stem.slice(0, 160)).not.toMatch(forbidden);
         expect(q.stem).not.toMatch(/Table \d+ is attached/);
+        expect(q.explanation).not.toMatch(/Seed \d+/);
       }
     }
     const s2 = bank.items.find((it) => it.concept_id.startsWith("GAMSAT.S2"));
     expect(s2).toBeTruthy();
-    expect(s2!.stem).toMatch(/Comments for a 30-minute Task/);
-    expect(s2!.stem).not.toMatch(/craft grain/);
+    expect(s2!.stem).toMatch(/Task [AB] — 30 minutes/);
+    expect(s2!.stem).not.toMatch(/craft grain|writing move/);
+
+    const conceptual = bank.items.find((it) => it.design.startsWith("conceptual"));
+    expect(conceptual).toBeTruthy();
+    const topic = byId.get(conceptual!.concept_id);
+    expect(topic).toBeTruthy();
+    if (topic && !topic.description.includes(topic.name)) {
+      expect(conceptual!.stem.includes(topic.name)).toBe(false);
+    }
+
+    const scene = bank.items.find((it) => it.design === "scenario.construct");
+    if (scene) {
+      const st = byId.get(scene.concept_id);
+      if (st && !st.description.includes(st.name)) {
+        expect(scene.stem.includes(st.name)).toBe(false);
+      }
+      expect(scene.stem).toMatch(/Which construct is illustrated\?/);
+    }
+
+    const quant = bank.items.find((it) => it.design.startsWith("kinematics") || it.design.startsWith("newton"));
+    if (quant) {
+      expect(quant.stem).toMatch(/^In experiment \d+/);
+    }
   });
 });

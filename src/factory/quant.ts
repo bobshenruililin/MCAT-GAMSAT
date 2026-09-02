@@ -32,9 +32,12 @@ function finish(
   explanation: string,
   difficulty: number,
 ): FactoryItem {
-  const tagged = stem.includes(`trial ${index + 1}`)
-    ? stem
-    : `${stem.replace(/\?$/, "")} (trial ${index + 1})`;
+  const core = stem.replace(/\?$/, "").trim().replace(/\.+$/, "");
+  const keepCase = /^[A-Z][0-9]/.test(core) || /^[A-Z]{2}/.test(core) || core.startsWith("Δ") || /^[a-z] = /.test(core);
+  const rest = keepCase ? core : `${core.charAt(0).toLowerCase()}${core.slice(1)}`;
+  const tagged = /^in experiment \d+/i.test(core)
+    ? core
+    : `In experiment ${index + 1}, ${rest}`;
   return assembleItem({
     conceptId: topic.id,
     type: "discrete",
@@ -470,7 +473,7 @@ const optics: QuantFn = (topic, index) => {
   const sin2 = round2(0.5 / nGlass);
   return finish(
     topic, index, "optics.snell-30",
-    `Air-to-glass, θ1 = 30°, n2 = ${nGlass.toFixed(2)} (item ${index}). Using n1 sin θ1 = n2 sin θ2 and sin 30° = 0.50, sin θ2 is`,
+    `Air-to-glass, θ1 = 30°, n2 = ${nGlass.toFixed(2)}. Using n1 sin θ1 = n2 sin θ2 and sin 30° = 0.50, sin θ2 is`,
     `${sin2}`,
     [
       { text: `0.50`, why: "Forgets to divide by n2." },
@@ -676,7 +679,7 @@ const work: QuantFn = (topic, index) => {
     [
       { text: `${F} W`, why: "Drops velocity." },
       { text: `${F / v} W`, why: "Divides instead of multiplying." },
-      { text: `${P} W`, why: "Uses an unrelated product from the seed." },
+      { text: `${P} W`, why: "Uses an unrelated product from a different setup." },
     ],
     `Power is P = F v = ${F}×${v} = ${F * v} W when F and v are parallel. Dividing F by v is not the mechanical-power identity.`,
     0.34,

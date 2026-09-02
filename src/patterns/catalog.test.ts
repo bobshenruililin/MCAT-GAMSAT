@@ -18,7 +18,8 @@ describe("pattern catalog", () => {
       expect(p.name.length).toBeGreaterThan(0);
       expect(p.move.length).toBeGreaterThan(20);
       expect(p.exampleSetup.length).toBeGreaterThan(20);
-      expect(p.exampleConclusion.length).toBeGreaterThan(10);
+      expect(p.exampleWrong).toHaveLength(3);
+      expect(p.exampleWrong[0].length).toBeGreaterThan(8);
       expect(topicIds.has(p.topicId)).toBe(true);
       expect(PATTERN_BY_ID[p.id]).toBe(p);
     }

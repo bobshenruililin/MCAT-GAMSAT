@@ -56,19 +56,15 @@ export function buildApply(p: ExamPattern, index: number, rung: number): ApplyBu
       return s3Next(index, rung);
     default:
       return {
-        question: `Case ${index + 1}: apply ${p.name} to a fresh original case in this family.`,
-        correct: `Apply ${p.name}: ${p.move}`,
-        distractors: [
-          "Copy the analog's objects and ignore the new constraints.",
-          "Abandon the move and guess from everyday language.",
-          "Substitute a neighbouring outline topic for this grain.",
-        ],
+        question: `A later ${p.family} item uses new nouns. Which option applies the same relation as the example?`,
+        correct: p.exampleConclusion,
+        distractors: [...p.exampleWrong],
         why: [
-          "That is rereading the analog.",
-          "Past-paper scoring is the move plus the new constraints.",
-          "Sibling substitution is a content-gap miss.",
+          "That copies objects from the example and ignores the new constraints.",
+          "That answers a different question than the one asked.",
+          "That is a neighbouring-outline trap, not this relation.",
         ],
-        close: `The analog's conclusion was ${p.exampleConclusion} Score the new instance with the same move.`,
+        close: `The example's correct account was: ${p.exampleConclusion} Score the new instance with the same relation.`,
       };
   }
 }
@@ -106,7 +102,7 @@ function carsMainPoint(index: number, rung: number): ApplyBuilt {
   ] as const;
   const c = pick(cases, index);
   return {
-    question: `Case ${index + 1}: ${c.stem} What is the main point of this new instance?`,
+    question: `${c.stem} What is the main point?`,
     correct: c.key,
     distractors: [c.detail, c.extra, c.stretch],
     why: [
@@ -114,7 +110,7 @@ function carsMainPoint(index: number, rung: number): ApplyBuilt {
       "Not in the instance; a topic-changer.",
       "Stronger than the author's live claim.",
     ],
-    close: "Retrieve the governing claim, not the vivid prop. The analog taught catalog-as-politics; this instance has a different noun set and the same move.",
+    close: "Retrieve the governing claim, not the vivid prop.",
   };
 }
 
@@ -144,7 +140,7 @@ function carsConcession(index: number, rung: number): ApplyBuilt {
   ] as const;
   const c = pick(cases, index);
   return {
-    question: `Case ${index + 1}: ${c.stem} After the turn, what is the author's live claim?`,
+    question: `${c.stem} After the turn, what is the author's live claim?`,
     correct: c.key,
     distractors: [c.foil, c.other, c.twist],
     why: [
@@ -182,7 +178,7 @@ function carsWeaken(index: number, rung: number): ApplyBuilt {
   ] as const;
   const c = pick(cases, index);
   return {
-    question: `Case ${index + 1}: ${c.stem} Which option most weakens the inference?`,
+    question: `${c.stem} Which option most weakens the inference?`,
     correct: c.key,
     distractors: [c.topic, c.insult, c.strengthen],
     why: [
@@ -213,7 +209,7 @@ function carsAnalogy(index: number, rung: number): ApplyBuilt {
   ] as const;
   const c = pick(cases, index);
   return {
-    question: `Case ${index + 1}: ${c.stem} Which option preserves the relation rather than the nouns?`,
+    question: `${c.stem} Which option preserves the relation rather than the nouns?`,
     correct: c.key,
     distractors: [c.nouns, c.reverse, c.identity],
     why: [
@@ -244,7 +240,7 @@ function carsExcept(index: number, rung: number): ApplyBuilt {
   ] as const;
   const c = pick(cases, index);
   return {
-    question: `Case ${index + 1}: ${c.stem} Which option is LEAST supported (EXCEPT)?`,
+    question: `${c.stem} Which option is LEAST supported (EXCEPT)?`,
     correct: c.key,
     distractors: [c.s1, c.s2, c.s3],
     why: [
@@ -262,7 +258,7 @@ function cpSetup(index: number, rung: number): ApplyBuilt {
   const a = F / m;
   const aTxt = Number.isInteger(a) ? String(a) : a.toFixed(2);
   return {
-    question: `Case ${index + 1}: a ${m} kg cart is pulled with ${F} N on a frictionless rail. Magnitude of acceleration?`,
+    question: `a ${m} kg cart is pulled with ${F} N on a frictionless rail. Magnitude of acceleration?`,
     correct: `${aTxt} m/s² (a = F/m)`,
     distractors: [
       `${F * m} m/s² (multiplied F by m)`,
@@ -281,7 +277,7 @@ function cpSetup(index: number, rung: number): ApplyBuilt {
 function cpLimit(index: number, rung: number): ApplyBuilt {
   const R1 = 3 + (index % 7);
   return {
-    question: `Case ${index + 1}: two resistors in parallel, R1 = ${R1} Ω and R2 → ∞. What happens to Req?`,
+    question: `two resistors in parallel, R1 = ${R1} Ω and R2 → ∞. What happens to Req?`,
     correct: `Req → ${R1} Ω (the infinite branch drops out)`,
     distractors: [
       "Req → 0 Ω (as if the open branch were a short)",
@@ -306,7 +302,7 @@ function cpUnits(index: number, rung: number): ApplyBuilt {
   const trap = v / (2 * Lcm);
   const trapTxt = Number.isInteger(trap) ? String(trap) : trap.toFixed(4);
   return {
-    question: `Case ${index + 1}: a string of length ${Lcm} cm, wave speed ${v} m/s, fundamental f = v/(2L) with L in metres. What is f?`,
+    question: `a string of length ${Lcm} cm, wave speed ${v} m/s, fundamental f = v/(2L) with L in metres. What is f?`,
     correct: `${fTxt} Hz (L = ${Lm} m)`,
     distractors: [
       `${trapTxt} Hz (used L = ${Lcm} instead of metres)`,
@@ -341,7 +337,7 @@ function bbControl(index: number, rung: number): ApplyBuilt {
   ] as const;
   const c = pick(cases, index);
   return {
-    question: `Case ${index + 1}: ${c.stem} What is the control?`,
+    question: `${c.stem} What is the control?`,
     correct: c.key,
     distractors: [c.foil, c.other, c.twist],
     why: [
@@ -384,7 +380,7 @@ function bbIfThen(index: number, rung: number): ApplyBuilt {
   };
   const m = map[blocked];
   return {
-    question: `Case ${index + 1}: linear pathway A→B→C→D is blocked at ${blocked}. What happens to the metabolites?`,
+    question: `linear pathway A→B→C→D is blocked at ${blocked}. What happens to the metabolites?`,
     correct: m.key,
     distractors: m.foils,
     why: [
@@ -415,7 +411,7 @@ function psConfound(index: number, rung: number): ApplyBuilt {
   ] as const;
   const c = pick(cases, index);
   return {
-    question: `Case ${index + 1}: ${c.stem} Which option names the confound?`,
+    question: `${c.stem} Which option names the confound?`,
     correct: c.key,
     distractors: [c.construct, c.insult, c.other],
     why: [
@@ -446,7 +442,7 @@ function psOperdef(index: number, rung: number): ApplyBuilt {
   ] as const;
   const c = pick(cases, index);
   return {
-    question: `Case ${index + 1}: ${c.stem} What is the operational definition?`,
+    question: `${c.stem} What is the operational definition?`,
     correct: c.key,
     distractors: [c.folk, c.theory, c.other],
     why: [
@@ -477,7 +473,7 @@ function s1Competing(index: number, rung: number): ApplyBuilt {
   ] as const;
   const c = pick(cases, index);
   return {
-    question: `Case ${index + 1}: ${c.stem} What is the competing-argument split?`,
+    question: `${c.stem} What is the competing-argument split?`,
     correct: c.key,
     distractors: [c.foil, c.other, c.twist],
     why: [
@@ -508,7 +504,7 @@ function s1Tone(index: number, rung: number): ApplyBuilt {
   ] as const;
   const c = pick(cases, index);
   return {
-    question: `Case ${index + 1}: ${c.stem} Which option names the tone rather than the plot?`,
+    question: `${c.stem} Which option names the tone rather than the plot?`,
     correct: c.key,
     distractors: [c.plot, c.extra, c.twist],
     why: [
@@ -539,7 +535,7 @@ function s2Throughline(index: number, rung: number): ApplyBuilt {
   ] as const;
   const c = pick(cases, index);
   return {
-    question: `Case ${index + 1}: ${c.stem} What is the craft defect?`,
+    question: `${c.stem} What is the craft defect?`,
     correct: c.key,
     distractors: [c.foil, c.other, c.twist],
     why: [
@@ -556,7 +552,7 @@ function s3Table(index: number, rung: number): ApplyBuilt {
   const f2 = 2 * f1;
   const A = 3 + (index % 4);
   return {
-    question: `Case ${index + 1}: a table lists trial 1 frequency ${f1} Hz amplitude ${A} mm; trial 2 frequency ${f2} Hz amplitude ${A} mm. Which claim is forbidden by the table?`,
+    question: `a table lists trial 1 frequency ${f1} Hz amplitude ${A} mm; trial 2 frequency ${f2} Hz amplitude ${A} mm. Which claim is forbidden by the table?`,
     correct: "Any option that requires amplitude to have changed between trials.",
     distractors: [
       "Frequency doubled while amplitude stayed fixed — allowed by the table.",
@@ -578,7 +574,7 @@ function s3Proportion(index: number, rung: number): ApplyBuilt {
   const c0Txt = c0.toFixed(1);
   const c1Txt = c1.toFixed(1);
   return {
-    question: `Case ${index + 1}: concentration rises from ${c0Txt} M to ${c1Txt} M at constant volume. What happens to moles of solute?`,
+    question: `concentration rises from ${c0Txt} M to ${c1Txt} M at constant volume. What happens to moles of solute?`,
     correct: "Moles double, because n = cV and V is fixed.",
     distractors: [
       "Moles stay fixed, as if concentration were independent of n.",
@@ -613,7 +609,7 @@ function s3Next(index: number, rung: number): ApplyBuilt {
   ] as const;
   const c = pick(cases, index);
   return {
-    question: `Case ${index + 1}: ${c.stem} What is the productive next measurement?`,
+    question: `${c.stem} What is the productive next measurement?`,
     correct: c.key,
     distractors: [c.foil, c.other, c.twist],
     why: [
