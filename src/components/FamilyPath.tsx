@@ -45,11 +45,11 @@ export function FamilyPath({
             data-testid={`family-orb-${family}`}
           >
             {i > 0 ? (
-              <div className="h-4 w-1 rounded-full bg-[#d7eadc]" aria-hidden="true" />
+              <div className="h-3 w-1 rounded-full bg-[#d7eadc] sm:h-4" aria-hidden="true" />
             ) : null}
             <div
               className={[
-                "relative grid h-[4.25rem] w-[4.25rem] place-items-center rounded-full border-[4px] text-sm font-extrabold",
+                "relative grid h-14 w-14 place-items-center rounded-full border-[4px] text-xs font-extrabold sm:h-[4.25rem] sm:w-[4.25rem] sm:text-sm",
                 current
                   ? "border-[#2f6b4f] bg-[#2f6b4f] text-[#fffdf6] shadow-[0_6px_0_#1f4a36]"
                   : "border-[#2f6b4f] bg-[#fffdf6] text-[#2f6b4f] shadow-[0_6px_0_#d7eadc]",

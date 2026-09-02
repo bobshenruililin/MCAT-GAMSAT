@@ -157,7 +157,7 @@ export function ItemPlayer({
   }, [item, revealed, answeredKey, confidence, grade, errorClass, busy, seconds]);
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-6">
+    <div className={`mx-auto px-4 py-6 ${item.passage ? "max-w-5xl" : "max-w-lg"}`}>
       <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2 text-sm text-zinc-600">
         <p>
           Item {position + 1} of {total}
