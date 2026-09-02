@@ -16,16 +16,17 @@ pnpm dev
 
 Open **http://localhost:3000**. Next 16 also allows `http://127.0.0.1:3000`.
 
-`pnpm bootstrap` loads taxonomy, the hand-authored batches, the 500× factory bank
-(423,500 extra items), and 12,000 past-paper pattern drills. That SQLite file is
-large. Smaller caps:
+`pnpm bootstrap` loads taxonomy, the hand-authored batches, the 5000× factory bank
+(4,235,000 extra items), and 120,000 past-paper pattern drills. That SQLite file is
+very large. Smaller caps:
 
 ```bash
 FACTORY_TARGET=0 pnpm bootstrap                 # hand bank + patterns only
 FACTORY_TARGET=84700 PATTERN_TARGET=2400 pnpm bootstrap   # previous 100× size
+FACTORY_TARGET=423500 PATTERN_TARGET=12000 pnpm bootstrap # previous 500× size
 ```
 
-Pattern volume defaults to 12000 (`PATTERN_TARGET`). Do not run `pnpm demo:seed`
+Pattern volume defaults to 120000 (`PATTERN_TARGET`). Do not run `pnpm demo:seed`
 if you are about to study — demo attempts are not study and must not be copied
 into SCOREBOARD.md. `pnpm db:reset` wipes the local database.
 

@@ -10,7 +10,7 @@ import { emitPatternBatches } from "@/patterns/emit";
 import { PATTERN_TARGET } from "@/patterns/generate";
 
 /**
- * Taxonomy + every real batch + 500× factory bank.
+ * Taxonomy + every real batch + 5000× factory bank.
  * Usage: pnpm db:reset && pnpm bootstrap
  * Cap volume with FACTORY_TARGET / PATTERN_TARGET if SQLite is too large.
  */

@@ -36,9 +36,9 @@ export type TopicNode = {
 };
 
 export const HAND_BANK = 847;
-export const TARGET_MULTIPLIER = 500;
-/** Additional ingest-valid items the factory must emit (500× the hand bank). */
+export const TARGET_MULTIPLIER = 5000;
+/** Additional ingest-valid items the factory must emit (5000× the hand bank). */
 export const FACTORY_TARGET = HAND_BANK * TARGET_MULTIPLIER;
-export const FLOOR_PER_TOPIC = 200;
+export const FLOOR_PER_TOPIC = 2000;
 export const KEYS = ["A", "B", "C", "D"] as const;
 export type Key = (typeof KEYS)[number];

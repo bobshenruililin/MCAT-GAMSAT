@@ -40,8 +40,8 @@ NORTH_STAR says studying means answering questions. S2 on the real paper is time
 ### B-012 — Section-track sessions defer other-section dues
 Today can start a CARS / B/B / C/P / P/S / S1 / S2 / S3 block. Due cards from other families wait until a Mixed session or a matching block. That matches exam-morning sitting; it can also let a neglected section’s FSRS due pile up. Human: confirm, or force Mixed to drain all dues first.
 
-### B-013 — 500× factory volume is still unverified AI
-The score-max factory emits 423,500 additional ingest-valid items (code-checked calculations, sibling-discrimination conceptuals, combinatorial CARS/S1 passages, S2 craft, experimental tables). Pattern drills default to 12,000. NORTH_STAR still forbids `verified=true` without a human or official anchor. Volume raises poison surface. Human: study a slice and QC; do not treat factory output as AAMC/ACER; optionally cap bootstrap with `FACTORY_TARGET` / `PATTERN_TARGET` if the SQLite file is too large for this machine. Cap `FACTORY_TARGET=84700` to keep the previous 100× size.
+### B-013 — 5000× factory volume is still unverified AI
+The score-max factory emits 4,235,000 additional ingest-valid items (code-checked calculations, sibling-discrimination conceptuals, combinatorial CARS/S1 passages, S2 craft, experimental tables). Pattern drills default to 120,000. NORTH_STAR still forbids `verified=true` without a human or official anchor. Volume raises poison surface. Human: study a slice and QC; do not treat factory output as AAMC/ACER; optionally cap bootstrap with `FACTORY_TARGET` / `PATTERN_TARGET` if the SQLite file is too large for this machine. Cap `FACTORY_TARGET=84700` for the previous 100× size, or `FACTORY_TARGET=423500 PATTERN_TARGET=12000` for the previous 500× size.
 
 ### B-014 — No pre-reveal hints (Khan conflict)
 Khan Academy often offers hints before the student commits an answer. NORTH_STAR requires confidence 1–5 before reveal; a hint is rereading and would leak the solution path. v1 refuses in-item hints, energy points, avatars, video-as-study, and classrooms. Human: keep this refusal, or name a hint format that cannot leak the key.

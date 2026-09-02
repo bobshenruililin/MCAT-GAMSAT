@@ -1,9 +1,12 @@
-import { readFileSync } from "node:fs";
+import { mkdtempSync, readFileSync, rmSync } from "node:fs";
+import { tmpdir } from "node:os";
+import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { TAXONOMY_PATH } from "@/db/paths";
 import { wordCount, validateIngestFile } from "@/ingest/validate";
 import { allocateByWeight, allocationSum } from "./allocate";
-import { generateBank, bankStats } from "./generate";
+import { emitFactoryBatches } from "./emit";
+import { generateBank, bankStats, fillTopic, countUnit } from "./generate";
 import { toIngestJson } from "./item";
 import { loadWeightedTopics } from "./taxonomy";
 import { FACTORY_TARGET, FLOOR_PER_TOPIC, HAND_BANK, TARGET_MULTIPLIER } from "./types";
@@ -20,10 +23,16 @@ function serialize(bank: ReturnType<typeof generateBank>): string {
   });
 }
 
+function ingestQuestionCount(file: string): number {
+  const result = validateIngestFile(readFileSync(file, "utf8"), TAXONOMY_PATH);
+  expect(result.rejected).toEqual([]);
+  return result.items.length + result.passages.reduce((s, p) => s + p.questions.length, 0);
+}
+
 describe("score-max factory", () => {
-  it("targets 500× the hand bank, allocated by exam_weight with a floor", () => {
+  it("targets 5000× the hand bank, allocated by exam_weight with a floor", () => {
     expect(HAND_BANK * TARGET_MULTIPLIER).toBe(FACTORY_TARGET);
-    expect(FACTORY_TARGET).toBe(423_500);
+    expect(FACTORY_TARGET).toBe(4_235_000);
     const topics = loadWeightedTopics();
     const alloc = allocateByWeight(topics);
     expect(allocationSum(alloc)).toBe(FACTORY_TARGET);
@@ -58,31 +67,33 @@ describe("score-max factory", () => {
     }
   });
 
-  it("emits exactly 500× questions for the full factory target", () => {
-    const bank = generateBank(FACTORY_TARGET);
-    expect(bankStats(bank).questions).toBe(FACTORY_TARGET);
+  it("keeps unique ingest-valid stems for one science topic at 12k (no 4.2M RAM bank)", () => {
+    const topics = loadWeightedTopics();
+    const topic = topics.find(
+      (t) =>
+        !t.id.startsWith("MCAT.CARS") &&
+        !t.id.startsWith("GAMSAT.S1") &&
+        !t.id.startsWith("GAMSAT.S2"),
+    );
+    expect(topic).toBeTruthy();
+    const part = fillTopic(topic!, 12_000);
+    expect(countUnit(part.items, part.passages)).toBe(12_000);
     const keys = [
-      ...bank.items.map((i) => `${i.concept_id}\n${i.stem}`),
-      ...bank.passages.flatMap((p) =>
-        p.questions.map((q) => `${q.concept_id}\n${q.stem}`),
-      ),
+      ...part.items.map((i) => `${i.concept_id}\n${i.stem}`),
+      ...part.passages.flatMap((p) => p.questions.map((q) => `${q.concept_id}\n${q.stem}`)),
     ];
     expect(new Set(keys).size).toBe(keys.length);
-
-    // One JSON.stringify of 423k items exceeds V8's max string length.
-    let validated = 0;
-    for (let i = 0; i < bank.items.length; i += 2000) {
+    for (let i = 0; i < part.items.length; i += 2000) {
       const result = validateIngestFile(
-        JSON.stringify({ items: bank.items.slice(i, i + 2000).map(toIngestJson) }),
+        JSON.stringify({ items: part.items.slice(i, i + 2000).map(toIngestJson) }),
         TAXONOMY_PATH,
       );
       expect(result.rejected).toEqual([]);
-      validated += result.items.length;
     }
-    for (let i = 0; i < bank.passages.length; i += 250) {
+    for (let i = 0; i < part.passages.length; i += 250) {
       const result = validateIngestFile(
         JSON.stringify({
-          passages: bank.passages.slice(i, i + 250).map((p) => ({
+          passages: part.passages.slice(i, i + 250).map((p) => ({
             concept_id: p.concept_id,
             title: p.title,
             body: p.body,
@@ -92,10 +103,21 @@ describe("score-max factory", () => {
         TAXONOMY_PATH,
       );
       expect(result.rejected).toEqual([]);
-      validated += result.passages.reduce((s, p) => s + p.questions.length, 0);
     }
-    expect(validated).toBe(FACTORY_TARGET);
-  }, 120_000);
+  });
+
+  it("streams emit to an exact target without holding a giant in-memory bank", () => {
+    const dir = mkdtempSync(path.join(tmpdir(), "factory-10x-"));
+    try {
+      const result = emitFactoryBatches(1_500, dir);
+      expect(result.questions).toBe(1_500);
+      expect(result.files.length).toBeGreaterThan(0);
+      const counted = result.files.reduce((s, f) => s + ingestQuestionCount(f), 0);
+      expect(counted).toBe(1_500);
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  });
 
   it("does not collide with the committed hand bank on a sampled factory slice", () => {
     const bank = generateBank(400);

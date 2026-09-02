@@ -1,33 +1,42 @@
-import { mkdirSync, writeFileSync } from "node:fs";
+import { mkdirSync, readdirSync, unlinkSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { toIngestJson } from "@/factory/item";
 import { generatePatternBank, PATTERN_TARGET, patternBankStats } from "./generate";
 
 const FACTORY_DIR = path.join(process.cwd(), "content", "batches", "factory");
+const CHUNK = 2000;
 
-function chunk<T>(arr: T[], size: number): T[][] {
-  const out: T[][] = [];
-  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
-  return out;
+function clearGenerated(dir: string): void {
+  mkdirSync(dir, { recursive: true });
+  for (const name of readdirSync(dir)) {
+    if (name.startsWith("92-pattern-drill-") || name === "PATTERN_MANIFEST.json") {
+      unlinkSync(path.join(dir, name));
+    }
+  }
 }
 
-export function emitPatternBatches(target = PATTERN_TARGET): {
+export function emitPatternBatches(
+  target = PATTERN_TARGET,
+  dir = FACTORY_DIR,
+): {
   files: string[];
   questions: number;
 } {
-  mkdirSync(FACTORY_DIR, { recursive: true });
+  mkdirSync(dir, { recursive: true });
+  clearGenerated(dir);
   const items = generatePatternBank(target);
   const stats = patternBankStats(items);
   const files: string[] = [];
-  chunk(items, 2000).forEach((part, i) => {
-    const name = `92-pattern-drill-${String(i).padStart(3, "0")}.json`;
-    const abs = path.join(FACTORY_DIR, name);
-    writeFileSync(abs, JSON.stringify({ items: part.map(toIngestJson) }, null, 2));
+  for (let i = 0; i < items.length; i += CHUNK) {
+    const part = items.slice(i, i + CHUNK);
+    const name = `92-pattern-drill-${String(i / CHUNK).padStart(4, "0")}.json`;
+    const abs = path.join(dir, name);
+    writeFileSync(abs, JSON.stringify({ items: part.map(toIngestJson) }));
     files.push(abs);
-  });
+  }
   writeFileSync(
-    path.join(FACTORY_DIR, "PATTERN_MANIFEST.json"),
-    JSON.stringify({ target, ...stats, files: files.map((f) => path.basename(f)) }, null, 2),
+    path.join(dir, "PATTERN_MANIFEST.json"),
+    JSON.stringify({ target, ...stats, files: files.map((f) => path.basename(f)) }),
   );
   return { files, questions: stats.n };
 }

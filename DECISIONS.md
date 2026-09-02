@@ -202,6 +202,11 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Newest prompt: finished the current questions; double or 5×. 5× is the volume that keeps retrieval going. Engine and UI unchanged. Uniqueness still comes from a run/instance index in the stem.
 - Rejected: Doubling only (narrower than the asked 5×); cloning the 847 hand items; auto-verify; a new generator architecture.
 
+## 2026-09-02 — 10× the generated bank again; stream emit; wipe study history not git
+- Decision: Newest prompt said 5× or 10× again — take 10×. `TARGET_MULTIPLIER` 500 → 5000 (`FACTORY_TARGET` 4,235,000). `FLOOR_PER_TOPIC` 200 → 2000. `PATTERN_TARGET` 12,000 → 120,000. `emitFactoryBatches` fills one topic, writes chunks, discards (no 4.2M in-memory bank; no one `JSON.stringify` of the whole set). Pad indices use `1_000_000_000 + n` so they cannot collide with real run indices. Tests prove allocation + a 12k per-topic slice + streamed emit of 1500; they do not generate 4.2M in Vitest. Study history is wiped with `pnpm db:reset` (attempts/FSRS/sessions). Git history and NORTH_STAR stay. Software still never sets `verified=true`. Caps remain `FACTORY_TARGET` / `PATTERN_TARGET`.
+- Rationale: The previous 500× queue can be finished again; 10× is the larger of the two asked multipliers. Holding 4.2M items in RAM already failed at 423k via V8 max string length. Wiping study history is the local ledger, not the repo.
+- Rejected: 5× only; wiping git history; generating the full 4.2M inside Vitest; auto-verify; a new generator architecture.
+
 
 
 

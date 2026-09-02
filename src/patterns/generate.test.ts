@@ -41,11 +41,11 @@ describe("pattern generate", () => {
     }
   });
 
-  it("keeps unique stems at the 5× pattern target", () => {
+  it("keeps unique stems at the 10× pattern target", () => {
     const items = generatePatternBank();
-    expect(items).toHaveLength(12_000);
-    expect(new Set(items.map((it) => it.stem)).size).toBe(12_000);
+    expect(items).toHaveLength(120_000);
+    expect(new Set(items.map((it) => it.stem)).size).toBe(120_000);
     const stats = patternBankStats(items);
     expect(stats.patterns).toBe(PATTERNS.length);
-  });
+  }, 60_000);
 });

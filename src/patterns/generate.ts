@@ -4,7 +4,7 @@ import { PATTERNS, type ExamPattern } from "./catalog";
 import { defaultPatternId } from "./fromDesign";
 import { buildApply } from "./instances";
 
-export const PATTERN_TARGET = 12_000;
+export const PATTERN_TARGET = 120_000;
 
 function padExplain(text: string, salt: string): string {
   const base = text.trim();

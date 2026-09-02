@@ -402,5 +402,26 @@ Three riskiest:
 
 SCORE IMPACT: The next study hours can retrieve on a 5× larger unseen queue instead of looping a finished 100× set — score still waits on sitting those hours and catching factory errors before they stick.
 
+## 10× generated bank again + wipe study history (2026-09-02)
+
+Question: wipe all history, 5× or 10× again, merge when done.
+
+Answer: Wipe local study history (`pnpm db:reset`), not git. 10× the generated volume from the 500× defaults. Hand-authored 847 stays. Factory 423,500 → 4,235,000 (weight-allocated, floor 2000/topic). Pattern drills 12,000 → 120,000. Emit streams per topic so the VM does not hold 4.2M items. Never `verified=true`.
+
+Shipped:
+- `TARGET_MULTIPLIER = 5000`, `FLOOR_PER_TOPIC = 2000`, `PATTERN_TARGET = 120_000`.
+- Stream `emitFactoryBatches`; clear leftover factory JSON on re-emit; compact JSON chunks.
+- README / bootstrap / B-013 / Today empty-bank copy. Caps for 100× and previous 500×.
+- Tests: allocation to 4,235,000; 900-sample ingest; 12k one-topic uniqueness; streamed emit of 1500. Pattern uniqueness at 120k. No in-memory 4.2M generate.
+
+Failed: did not ingest 4.2M into this VM's `app.db` (human bootstrap; disk/time). Templates still recycle cover stories.
+
+Three riskiest:
+1. B-013 poison surface is now ~10× the previous 500× factory.
+2. Default `pnpm bootstrap` SQLite is huge; machines that cannot take it must cap.
+3. Wiping the local DB does not create an official percentile.
+
+SCORE IMPACT: The next study hours start from a clean ledger on a 10× larger unseen queue — score still waits on sitting those hours and catching factory errors before they stick.
+
 
 

@@ -6,6 +6,9 @@ import { loadWeightedTopics } from "./taxonomy";
 import { FACTORY_TARGET, type FactoryBank, type FactoryItem, type FactoryPassage, type TopicNode } from "./types";
 import { s2Item, verbalPassage } from "./verbal";
 
+/** Pad indices sit far above any per-topic run index (largest topics are ~250k at 5000×). */
+export const PAD_INDEX_BASE = 1_000_000_000;
+
 function isVerbal(id: string): boolean {
   return id.startsWith("MCAT.CARS") || id.startsWith("GAMSAT.S1");
 }
@@ -18,11 +21,11 @@ function isPsych(id: string): boolean {
   return /^MCAT\.FC(6|7|8|9|10)/.test(id);
 }
 
-function countUnit(items: FactoryItem[], passages: FactoryPassage[]): number {
+export function countUnit(items: FactoryItem[], passages: FactoryPassage[]): number {
   return items.length + passages.reduce((s, p) => s + p.questions.length, 0);
 }
 
-function fillTopic(topic: TopicNode, n: number): { items: FactoryItem[]; passages: FactoryPassage[] } {
+export function fillTopic(topic: TopicNode, n: number): { items: FactoryItem[]; passages: FactoryPassage[] } {
   const items: FactoryItem[] = [];
   const passages: FactoryPassage[] = [];
   let made = 0;
@@ -51,12 +54,13 @@ function fillTopic(topic: TopicNode, n: number): { items: FactoryItem[]; passage
     if (i > n * 3) break;
   }
   while (made < n) {
-    items.push(conceptualItem(topic, 10_000 + made));
+    items.push(conceptualItem(topic, PAD_INDEX_BASE + made));
     made += 1;
   }
   return { items, passages };
 }
 
+/** In-memory bank for samples and tests. Full 5000× target must use `emitFactoryBatches`. */
 export function generateBank(target = FACTORY_TARGET): FactoryBank {
   const topics = loadWeightedTopics();
   const alloc = allocateByWeight(topics, target);
@@ -72,7 +76,7 @@ export function generateBank(target = FACTORY_TARGET): FactoryBank {
   if (total < target) {
     const pad = topics[0];
     while (countUnit(items, passages) < target) {
-      items.push(conceptualItem(pad, 50_000 + items.length));
+      items.push(conceptualItem(pad, PAD_INDEX_BASE + items.length));
     }
   }
   if (total > target) {
