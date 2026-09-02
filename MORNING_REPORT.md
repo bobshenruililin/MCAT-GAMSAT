@@ -591,6 +591,23 @@ Three riskiest:
 
 SCORE IMPACT: The next study hour on the M3 Pro starts on Continue instead of waiting on a 436k mastery scan — expected score still waits on sitting those hours.
 
+## Mac Terminal had git but not pnpm (2026-09-02)
+
+Question: clone on the Mac; `pnpm: command not found`; cloned a second time into a nested folder.
+
+Answer: Cursor's Node is not on Terminal PATH. Install Node (Homebrew) then Corepack pnpm 10.33.3. Use `~/MCAT-GAMSAT` only — delete `~/MCAT-GAMSAT/MCAT-GAMSAT`. Then `pnpm install` / capped bootstrap / `pnpm sit`.
+
+Shipped: `scripts/mac-setup.sh`; README + github.io door copy; tests 119.
+
+Failed: cannot install Homebrew on the user's Mac from this VM.
+
+Three riskiest:
+1. xcode-select / brew are GUI/password steps; sitting waits on them.
+2. B-013 — bootstrap still unverified AI.
+3. Nested clone leftover if they `cd` the wrong folder.
+
+SCORE IMPACT: The next study hour is unblocked once Node is on the Mac PATH — expected score still waits on sitting, not on another clone.
+
 
 
 

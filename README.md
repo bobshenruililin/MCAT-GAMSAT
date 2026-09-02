@@ -7,10 +7,30 @@ SCOREBOARD.md (also at `/scoreboard`), never in features shipped.
 
 ## Sit today
 
+First time on a Mac, Terminal does not have `pnpm` until you install Node
+(Cursor's Node is not on this PATH):
+
 ```bash
+xcode-select --install
+brew install node
+corepack enable
+corepack prepare pnpm@10.33.3 --activate
+```
+
+Apple Silicon, if `brew` is still not found:
+
+```bash
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+If you already cloned, stay in **one** folder (`~/MCAT-GAMSAT`). Do not clone
+again inside it. Then:
+
+```bash
+bash scripts/mac-setup.sh
 pnpm install
 pnpm db:migrate
-pnpm bootstrap
+FACTORY_TARGET=423500 PATTERN_TARGET=12000 pnpm bootstrap
 pnpm sit
 ```
 
@@ -68,8 +88,9 @@ Cursor is only an editor. Studying is Terminal + a browser.
 ```bash
 git clone https://github.com/bobshenruililin/MCAT-GAMSAT.git
 cd MCAT-GAMSAT
+bash scripts/mac-setup.sh
 pnpm install
-pnpm bootstrap
+FACTORY_TARGET=423500 PATTERN_TARGET=12000 pnpm bootstrap
 pnpm sit
 ```
 

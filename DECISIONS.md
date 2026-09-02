@@ -247,6 +247,11 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Home was ~20s on this VM against the 436k bank (per-item retrievability lookups). That taxes study hours even on an M3 Pro. Newest prompt wins on scope (make sitting fast locally). NORTH_STAR wins on values (no hosted player).
 - Rejected: Hosting the quiz on github.io; leaving the O(items) mastery loop because “M3 is fast”; telling the user to keep studying in Cursor Cloud.
 
+## 2026-09-02 — Mac sitting needs Node on Terminal PATH, not a second clone
+- Decision: Newest prompt: Mac clone, `pnpm: command not found`, then a nested `MCAT-GAMSAT/MCAT-GAMSAT`. Document Homebrew Node + Corepack pnpm 10.33.3. Add `scripts/mac-setup.sh`. Keep one clone folder. Sitting remains local `pnpm sit`.
+- Rationale: This repo's package manager is pnpm. Terminal is not Cursor. A second clone does not install tools. Newest prompt wins on scope (get the Mac sitting). NORTH_STAR wins on values (local, no hosted quiz).
+- Rejected: Switching the repo to npm; telling them to study in Cursor Cloud until pnpm exists; deleting the outer clone.
+
 
 
 

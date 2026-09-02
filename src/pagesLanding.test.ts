@@ -15,7 +15,9 @@ describe("GitHub Pages door", () => {
     expect(html).toMatch(/Exam morning/);
     expect(html).toContain(formatCount(AMBITION.totalDesignedItems));
     expect(html).toMatch(/pnpm bootstrap/);
-    expect(html).toMatch(/pnpm dev/);
+    expect(html).toMatch(/pnpm sit/);
+    expect(html).toMatch(/corepack prepare pnpm@10\.33\.3 --activate/);
+    expect(html).toMatch(/pnpm: command not found/);
     expect(html).toMatch(/git clone/);
     expect(html).toMatch(/GitHub Pages cannot run the player/);
     expect(html).toMatch(/http:\/\/localhost:3000/);
@@ -29,5 +31,8 @@ describe("GitHub Pages door", () => {
     expect(docsHtml).toBe(html);
     expect(docsCss).toBe(css);
     expect(readFileSync(path.join(root, "docs/.nojekyll"), "utf8")).toBe("");
+    expect(readFileSync(path.join(root, "scripts/mac-setup.sh"), "utf8")).toMatch(
+      /corepack prepare pnpm@10\.33\.3 --activate/,
+    );
   });
 });

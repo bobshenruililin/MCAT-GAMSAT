@@ -85,14 +85,20 @@
           <li>To sit questions, run the app on your computer, then open <strong>http://localhost:3000</strong> in Safari or Chrome.</li>
           <li>Cursor is only an editor. Terminal + a normal browser is enough to study.</li>
           <li>GitHub Pages cannot run the player — it needs Node and SQLite on disk.</li>
+          <li>Mac: if Terminal says <code>pnpm: command not found</code>, install Node first. Cursor’s Node is not on this PATH. Do not clone the repo a second time inside itself.</li>
           <li>Every card is a retrieve. Confidence 1–5 before the key is shown.</li>
           <li>Factory volume is unverified AI until a human or official paper says otherwise.</li>
         </ul>
-        <pre><code>git clone https://github.com/bobshenruililin/MCAT-GAMSAT.git
+        <pre><code>xcode-select --install
+brew install node
+corepack enable
+corepack prepare pnpm@10.33.3 --activate
+
+git clone https://github.com/bobshenruililin/MCAT-GAMSAT.git
 cd MCAT-GAMSAT
 pnpm install
-pnpm bootstrap
-pnpm dev</code></pre>
+FACTORY_TARGET=423500 PATTERN_TARGET=12000 pnpm bootstrap
+pnpm sit</code></pre>
         <p class="lede">
           Leave that terminal open. In Safari or Chrome go to
           http://localhost:3000 and hit Continue. Cap bootstrap with
