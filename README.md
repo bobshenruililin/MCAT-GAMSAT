@@ -46,14 +46,33 @@ a percentile.
 | `/scoreboard` | Official table from SCOREBOARD.md + live study log |
 | `/health` | SQLite path and row counts |
 
-## GitHub Pages door
+## Website (outside Cursor)
 
-Static files in `site/` deploy from `main` via `.github/workflows/pages.yml`.
-Expected URL: https://bobshenruililin.github.io/MCAT-GAMSAT/
+Public door: **https://bobshenruililin.github.io/MCAT-GAMSAT/**
 
-That page cannot run the player (Node + SQLite). Clone, `pnpm bootstrap`, `pnpm
-dev`. Enable GitHub Pages (Actions source) once on the repo if the first deploy
-needs it.
+That URL is a normal webpage. Open it in Safari or Chrome. You do not need
+Cursor to read it. It cannot run the quiz (GitHub Pages has no Node + SQLite).
+
+The repo Pages setting currently publishes **`main` `/docs`**. The same door
+lives in `docs/index.html` (with `.nojekyll`) so that setting serves a site.
+`site/` stays the GitHub Actions artifact if you later switch Pages source to
+**GitHub Actions**.
+
+## Sit on your computer (not in Cursor)
+
+Cursor is only an editor. Studying is Terminal + a browser.
+
+```bash
+git clone https://github.com/bobshenruililin/MCAT-GAMSAT.git
+cd MCAT-GAMSAT
+pnpm install
+pnpm bootstrap
+pnpm dev
+```
+
+Leave that terminal running. In **Safari or Chrome** (any window, not the
+Cursor Simple Browser) open **http://localhost:3000** and hit Continue.
+Closing Cursor does not stop the site unless you also stop that terminal.
 
 ## Invariants the UI must keep
 

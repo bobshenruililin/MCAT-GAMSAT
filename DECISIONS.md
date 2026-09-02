@@ -237,6 +237,11 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Same merge method as PRs #1–#13. This repo’s player is Next on 3000. Killing Vite does not kill the bank.
 - Rejected: Squashing (would orphan PR SHAs); merging #14–#16 as separate merge commits; telling the user to keep Vite running.
 
+## 2026-09-02 — Public door from docs/ to match enabled Pages source
+- Decision: Newest prompt: a website now; how to use it outside Cursor. Keep the static door (not the player) on github.io. Publish it from `docs/` because the repo Pages setting is already legacy `main` `/docs`, not GitHub Actions. Keep `site/` identical for a later Actions switch. Sitting remains `pnpm dev` → http://localhost:3000 in Safari/Chrome. Cursor is not part of the study loop.
+- Rationale: github.io was 404 with no `index.html` in `/docs`. `gh` cannot flip Pages source. Newest prompt wins on scope (public door that actually loads). NORTH_STAR wins on values (no hosted quiz, no other users).
+- Rejected: Hosting Next+SQLite on Pages; waiting for a human Pages-source flip before shipping a site; putting the player on github.io.
+
 
 
 

@@ -550,6 +550,26 @@ Three riskiest: B-013/B-018; Pages not enabled; closing Cursor does not wipe SQL
 
 SCORE IMPACT: Closing the IDE does not cost a study hour — the next retrieve is `pnpm dev` on :3000 after reopen.
 
+## Public door on /docs so github.io is a real website (2026-09-02)
+
+Question: can we do a website now; how do I use it outside Cursor?
+
+Answer: Yes. The public URL is a static door, not the quiz. Pages was already enabled as legacy `main` `/docs`, which 404'd because `/docs` had no `index.html`. Copy the door there. Study outside Cursor is Terminal + Safari/Chrome on http://localhost:3000 — Cursor is not required.
+
+Shipped:
+- `docs/index.html` + `docs/styles.css` + `docs/.nojekyll` matching `site/`.
+- README: public URL vs local sitting; Safari/Chrome, not Cursor.
+- Door copy: “Use it outside Cursor.” Tests keep `site/` and `docs/` identical. Tests 118.
+
+Failed: cannot switch Pages source to GitHub Actions (`gh` read-only). The Actions workflow will still fail until that setting changes. Legacy `/docs` is the live publish path.
+
+Three riskiest:
+1. B-017 — a public URL can be misread as a multi-user product.
+2. github.io can lag after the push to main.
+3. B-013 — sitting still needs a local bootstrap; the website is not the bank.
+
+SCORE IMPACT: The next study hour can start from a phone/laptop browser on the door, then a local `pnpm dev` — expected score still waits on sitting those hours.
+
 
 
 
