@@ -13,7 +13,7 @@ describe("pattern generate", () => {
     expect(id.stem).toContain(p.exampleConclusion);
     expect(id.skill_tag).toBe(p.id);
     expect(ap.stem).toContain(p.exampleSetup);
-    expect(ap.stem).toContain("New instance");
+    expect(ap.stem).toContain("A solved example of the move");
     expect(ap.skill_tag).toBe(p.id);
     expect(wordCount(id.explanation)).toBeGreaterThanOrEqual(40);
     expect(wordCount(ap.explanation)).toBeGreaterThanOrEqual(40);

@@ -1,9 +1,9 @@
 # STATE
 
-Phase: Lesson home + GitHub Pages door on top of YC-demo atlas
+Phase: Factory stem quality — exam-like language, not item-writer notes
 Study days logged: 0 human. Demo is not study. SCOREBOARD official table empty.
-Done: PRs #1–#13 on main. Atlas + BankHero on prior branch. This branch: `/` is one Continue + 7-family path; admin tables behind details; sage player; static `site/` + Pages workflow. Tests include Pages door + ContinueHero + FamilyPath.
-In flight: PR on `cursor/lesson-home-3760` (includes atlas commits from `cursor/yc-demo-3760`).
-Next: enable GitHub Pages (Actions source) on the repo so the first deploy publishes; human QC slice (B-013). Open: B-001–B-017.
-Counts: taxonomy 376 (290 weighted topics). Designed 847+4,235,000+120,000. Live this VM 436,347. Tests 117.
-Risks: B-013 unverified AI; B-016/B-017 public demo vs no-other-users; Pages does not run the player; sitting in the player will create attempts — do not copy them into SCOREBOARD.md as human study
+Done: PRs #1–#13 on main. Lesson home + Pages on `cursor/lesson-home-3760` (#15). This branch rewrites factory/pattern emitters so stems do not say pack/grain/bank/seed/run.
+In flight: `cursor/item-quality-3760`. Re-ingest FACTORY_TARGET=423500 PATTERN_TARGET=12000 after emit.
+Next: bootstrap the live cap; screenshot a sitting; human QC slice (B-013/B-018). Open: B-001–B-018.
+Counts: taxonomy 376 (290 weighted). Designed 4,355,847. Tests 118. Live bank still the old stems until bootstrap.
+Risks: rewritten factory is still unverified AI; uniqueness still uses case labels (Mutant N, issue N, trial N); conceptual items are still outline-discrimination, not full AAMC vignettes

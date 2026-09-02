@@ -1,6 +1,6 @@
 import { allocateByWeight } from "./allocate";
 import { conceptualItem, scenarioItem } from "./conceptual";
-import { experimentPassage } from "./experiment";
+import { experimentPassage, isKineticsTopic } from "./experiment";
 import { tryQuant } from "./quant";
 import { loadWeightedTopics } from "./taxonomy";
 import { FACTORY_TARGET, type FactoryBank, type FactoryItem, type FactoryPassage, type TopicNode } from "./types";
@@ -38,7 +38,7 @@ export function fillTopic(topic: TopicNode, n: number): { items: FactoryItem[]; 
     } else if (isS2(topic.id)) {
       items.push(s2Item(topic, i));
       made += 1;
-    } else if (!isPsych(topic.id) && i % 11 === 0 && remaining >= 4) {
+    } else if (!isPsych(topic.id) && isKineticsTopic(topic.id) && i % 11 === 0 && remaining >= 4) {
       passages.push(experimentPassage(topic, i));
       made += 4;
     } else if (isPsych(topic.id) && i % 2 === 0) {

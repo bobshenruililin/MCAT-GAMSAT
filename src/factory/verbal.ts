@@ -41,7 +41,7 @@ const TURNS = [
   "The turn is that slowness was never evenly distributed; some people were always rushed.",
 ];
 
-function passageBody(index: number, topicId: string): { title: string; body: string; scholar: string; arena: string; claim: string } {
+function passageBody(index: number, topicId: string): { title: string; body: string; scholar: string; arena: string; claim: string; year: number } {
   const rng = mulberry(hashStr(`${topicId}:p:${index}`));
   const scholar = pick(SCHOLARS, rng);
   const arena = pick(ARENAS, rng);
@@ -57,9 +57,12 @@ function passageBody(index: number, topicId: string): { title: string; body: str
     `The prose is dry rather than outraged; the heat is in what is treated as obvious. ` +
     `A late paragraph asks what would have to be true for the current procedure to be called fair, and then shows that those conditions are not met. ` +
     `The essay does not offer a slogan. It offers a test: if a practice cannot survive being described without its official adjectives, the adjectives were doing the work. ` +
-    `Readers who want a policy list will be disappointed; readers who want to see how a tone becomes a rule will not. ` +
-    `Seed ${index} only changes the proper names and the arena; the argumentative shape stays this concession-then-turn.`;
-  return { title, body, scholar, arena, claim };
+    `Readers who want a policy list will be disappointed; readers who want to see how a tone becomes a rule will not.`;
+  return { title, body, scholar, arena, claim, year };
+}
+
+function cite(ctx: ReturnType<typeof passageBody>, index: number): string {
+  return `${ctx.scholar}’s ${ctx.year} essay on ${ctx.arena} (issue ${index + 1})`;
 }
 
 function carsQuestion(
@@ -76,7 +79,7 @@ function carsQuestion(
   let design: string;
   if (id.endsWith("FND.t1") || id.includes("understand.t1")) {
     design = "verbal.main-idea";
-    stem = `In passage ${index}, the primary purpose is to`;
+    stem = `The primary purpose of ${cite(ctx, index)} is to`;
     correct = `show that an official style in ${ctx.arena} conceals a choice about who counts as a speaker`;
     d1 = `narrate ${ctx.scholar}'s biography as a model career`;
     d2 = `list regulations that should replace current practice in every jurisdiction`;
@@ -87,7 +90,7 @@ function carsQuestion(
     explain = `Main idea tracks the turn after the concession: standards exist, but they are being used to hide a choice about speakers in ${ctx.arena}. Biography, a universal policy list, and anti-standard populism are the usual CARS overreads. The proper names (${ctx.scholar}, seed ${index}) are cover, not the purpose.`;
   } else if (id.endsWith("FND.t2") || id.includes("understand.t3")) {
     design = "verbal.retrieval";
-    stem = `According to passage ${index}, the essay’s heat is located in`;
+    stem = `According to ${cite(ctx, index)}, the essay’s heat is located in`;
     correct = `what the prose treats as obvious`;
     d1 = `a slogan in the final sentence`;
     d2 = `a statistical appendix`;
@@ -98,7 +101,7 @@ function carsQuestion(
     explain = `Information retrieval: the passage states that the heat is in what is treated as obvious, and that the prose is dry. Slogan, appendix, and scandal are planted absences. Seed ${index} does not add those elements.`;
   } else if (id.endsWith("FND.t3") || id.includes("infer.t1") || id.includes("infer.t2")) {
     design = "verbal.inference";
-    stem = `Passage ${index} most strongly implies that official adjectives in ${ctx.arena} function as`;
+    stem = `${cite(ctx, index)} most strongly implies that official adjectives in ${ctx.arena} function as`;
     correct = `labour that the underlying practice cannot do on its own`;
     d1 = `proof that the practice is already fair`;
     d2 = `decorative Latin with no institutional effect`;
@@ -109,7 +112,7 @@ function carsQuestion(
     explain = `Inference from the test: if a practice cannot survive being described without official adjectives, the adjectives were doing the work. That is not a claim of fairness, decoration, or a publisher subplot. Index ${index} only relabels the arena.`;
   } else if (id.endsWith("FND.t4")) {
     design = "verbal.vocab";
-    stem = `In passage ${index}, “construction site” as applied to the archive most nearly means`;
+    stem = `In ${cite(ctx, index)}, “construction site” as applied to the archive most nearly means`;
     correct = `a place where what will count as the past is being assembled`;
     d1 = `a literal building project with cranes`;
     d2 = `a warehouse that stores finished, uncontroversial records`;
@@ -120,7 +123,7 @@ function carsQuestion(
     explain = `Vocabulary-in-context: the archive as construction site is opposed to warehouse. It means the past is assembled, not that there are cranes, and not a biographical aside. Seed ${index} does not change that contrast.`;
   } else if (id.endsWith("FND.t5") || id.includes("understand.t2")) {
     design = "verbal.paraphrase";
-    stem = `Passage ${index}: which option best paraphrases the author’s warning without adding a policy list?`;
+    stem = `${cite(ctx, index)}: which option best paraphrases the author’s warning without adding a policy list?`;
     correct = `If you cannot describe the practice without its official adjectives, those adjectives were doing the work`;
     d1 = `Every institution should be defunded immediately`;
     d2 = `${ctx.scholar} wants amateurs to replace experts`;
@@ -131,7 +134,7 @@ function carsQuestion(
     explain = `Paraphrase must stay inside the closing test. Defund, amateur takeover, and “tone never becomes a rule” all leave the passage. Seed ${index} is irrelevant to that constraint.`;
   } else if (id.includes("RWT.t1") || id.includes("argument.t1")) {
     design = "verbal.structure";
-    stem = `In passage ${index}, the concession paragraph functions primarily to`;
+    stem = `In ${cite(ctx, index)}, the concession paragraph functions primarily to`;
     correct = `acknowledge a fair point so the later turn cannot be dismissed as anti-standard`;
     d1 = `refute the rest of the essay in advance`;
     d2 = `introduce ${ctx.scholar}'s opponents by name`;
@@ -142,7 +145,7 @@ function carsQuestion(
     explain = `Integration of parts: concession-then-turn is the architecture. Granting that standards exist blocks the straw man “this author hates method.” It does not name opponents or smuggle a policy list. Index ${index}.`;
   } else if (id.includes("RWT.t2") || id.includes("argument.t2")) {
     design = "verbal.support";
-    stem = `Passage ${index}: which example is offered as support rather than as a slogan?`;
+    stem = `In ${cite(ctx, index)}, which example is offered as support rather than as a slogan?`;
     correct = `a mistranslated notice, a map that omits a creek, or a hiring rubric that scores “fit”`;
     d1 = `a call to abolish ${ctx.arena}`;
     d2 = `a table of p-values`;
@@ -153,7 +156,7 @@ function carsQuestion(
     explain = `Relevance/support: the passage names those three mundane examples as accumulation, not a slogan. The other options are absences. Seed ${index} only swaps arena and scholar.`;
   } else if (id.includes("RWT.t3") || id.includes("argument.t3")) {
     design = "verbal.logic";
-    stem = `Passage ${index}: the strongest description of the reasoning is`;
+    stem = `The strongest description of the reasoning in ${cite(ctx, index)} is`;
     correct = `concession, then a turn that reclassifies the conceded standard as a hiding-place`;
     d1 = `pure deduction from a mathematical axiom`;
     d2 = `a sequence of ad hominem attacks on ${ctx.scholar}`;
@@ -164,7 +167,7 @@ function carsQuestion(
     explain = `Logic/structure is concession-then-turn, not deduction, insult, or summary. That shape is independent of seed ${index}.`;
   } else if (id.includes("RWT.t4") || id.includes("tone")) {
     design = "verbal.tone";
-    stem = `The author’s tone in passage ${index} is best described as`;
+    stem = `The author’s tone in ${cite(ctx, index)} is best described as`;
     correct = `dry and diagnostic rather than outraged`;
     d1 = `celebratory toward current procedure`;
     d2 = `hysterical and slogan-driven`;
@@ -175,7 +178,7 @@ function carsQuestion(
     explain = `Tone: dry rather than outraged, heat in the obvious. Celebratory, hysterical, and sentimental contradict the stated style. Seed ${index} does not change the tone recipe.`;
   } else if (id.includes("RWT.t5") || id.includes("infer.t3")) {
     design = "verbal.consistency";
-    stem = `Passage ${index}: which statement would be internally inconsistent with the text as written?`;
+    stem = `Which statement would be internally inconsistent with ${cite(ctx, index)} as written?`;
     correct = `The official adjectives are idle decoration and the underlying practice is already fully fair`;
     d1 = `Standards can be legitimate and still be used to hide a choice`;
     d2 = `A policy catalogue is not the essay’s offering`;
@@ -186,7 +189,7 @@ function carsQuestion(
     explain = `Internal consistency: the idle-decoration-plus-already-fair package contradicts the test of the adjectives. The other three restatements are what the passage actually holds. Index ${index}.`;
   } else if (id.includes("RBT.t1") || id.includes("compare") || id.includes("humanities") || id.includes("social")) {
     design = "verbal.apply";
-    stem = `Passage ${index}: which new case is most analogous to the passage’s test?`;
+    stem = `Which new case is most analogous to the test in ${cite(ctx, index)}?`;
     correct = `A hospital checklist that cannot be described without the word “quality,” yet quality is never defined`;
     d1 = `A proof in Euclidean geometry that names every axiom`;
     d2 = `A recipe that lists oven temperature`;
@@ -197,7 +200,7 @@ function carsQuestion(
     explain = `Apply-to-new-context: the analog is a practice that depends on an undefined official word. Geometry and recipes are explicit; a prize is off-axis. Seed ${index} only changes names.`;
   } else if (id.includes("RBT.t2")) {
     design = "verbal.new-info";
-    stem = `Suppose a later historian shows that ${ctx.scholar} omitted a successful counterexample in ${ctx.arena} (passage ${index}). This information would`;
+    stem = `Suppose a later historian shows that ${ctx.scholar} omitted a successful counterexample in ${ctx.arena} (${cite(ctx, index)}). This information would`;
     correct = `weaken the reach of the examples without automatically falsifying the adjectives-do-the-work test`;
     d1 = `prove that every claim in the essay is false`;
     d2 = `have no possible bearing on any sentence`;
@@ -208,7 +211,7 @@ function carsQuestion(
     explain = `Incorporate-new-information: a missing counterexample nicks the examples, not necessarily the structural test. Global disproof and “no bearing” are the CARS poles to avoid. Index ${index}.`;
   } else if (id.includes("RBT.t3")) {
     design = "verbal.analogy";
-    stem = `In passage ${index}, the hiring rubric that scores “fit” is used as`;
+    stem = `In ${cite(ctx, index)}, the hiring rubric that scores “fit” is used as`;
     correct = `an ordinary institutional practice that smuggles a standard through an undefined word`;
     d1 = `proof that all hiring is illegal`;
     d2 = `a joke with no argumentative role`;
@@ -219,7 +222,7 @@ function carsQuestion(
     explain = `The “fit” rubric is a hypothetical-in-miniature: an undefined official word doing labour. It is not a joke, a legal conclusion, or an automation brief. Seed ${index}.`;
   } else if (id.includes("visual")) {
     design = "verbal.visual";
-    stem = `A cartoon in booklet ${index} shows a caption that says “neutral” under a scale whose weights are unlabeled. In the spirit of this passage, the cartoon is best read as`;
+    stem = `A cartoon printed with ${cite(ctx, index)} shows a caption that says “neutral” under a scale whose weights are unlabeled. The cartoon is best read as`;
     correct = `a picture of adjectives doing work that the underlying practice cannot do unaided`;
     d1 = `proof that cartoons cannot make arguments`;
     d2 = `a call to abolish captions`;
@@ -230,7 +233,7 @@ function carsQuestion(
     explain = `Visual/caption tension is the same grain as official adjectives. The unlabeled weights plus the word “neutral” is the test in picture form. Index ${index}.`;
   } else {
     design = "verbal.implication";
-    stem = `Passage ${index}’s closing attitude toward readers who want a policy list is`;
+    stem = `The closing attitude of ${cite(ctx, index)} toward readers who want a policy list is`;
     correct = `unapologetic refusal: the offering is a test, not a catalogue`;
     d1 = `a promise that the list appears in a sequel`;
     d2 = `contempt for anyone who works in ${ctx.arena}`;
@@ -283,12 +286,13 @@ const QUOTES = [
 export function s2Item(topic: TopicNode, index: number): FactoryItem {
   const rng = mulberry(hashStr(`${topic.id}:${index}:s2`));
   const q1 = pick(QUOTES, rng);
-  const q2 = pick(QUOTES, rng);
+  let q2 = pick(QUOTES, rng);
+  if (q2 === q1) q2 = pick(QUOTES.filter((q) => q !== q1), rng);
+  const task = topic.id.includes("task_b") ? "B" : "A";
   const stem =
-    `Timed Task ${topic.id.includes("task_b") ? "B" : "A"} pack ${index}: quotes include “${q1}” and “${q2}”. ` +
-    `For the craft grain ${topic.name}, which move raises expected mark rather than burning the 30 minutes?`;
-  const correct =
-    `${topic.name}: ${topic.description} Do that under time, with particular examples, without inventorying every quote.`;
+    `Comments for a 30-minute Task ${task} (set ${index + 1}): “${q1}” and “${q2}”. ` +
+    `Which writing move is most likely to raise the mark?`;
+  const correct = `${topic.description.replace(/\.$/, "")} — do that under time, with particular examples, without inventorying every quote.`;
   return assembleItem({
     conceptId: topic.id,
     type: "discrete",
@@ -300,10 +304,10 @@ export function s2Item(topic: TopicNode, index: number): FactoryItem {
       { text: "Spend the first twenty minutes outlining and the last two typing.", why: "Under time, an unused outline does not score." },
     ],
     explanation:
-      `GAMSAT S2 is production under a clock. The tagged grain is ${topic.name}: ${topic.description} ` +
-      `The productive move is a clear position or a precise personal scene that uses quotes as pressure, not a checklist. ` +
+      `GAMSAT S2 is production under a clock. The move that scores is: ${topic.description} ` +
+      `Use a clear position or a precise personal scene; quotes are pressure, not a checklist. ` +
       `Inventory, generic filler, and outline-without-prose are the three ways this hour fails to raise a mark. ` +
-      `Pack ${index} only swaps quote pairing (${q1} / ${q2}).`,
+      `Set ${index + 1} only swaps the quote pairing.`,
     difficulty: 0.4 + (index % 4) * 0.08,
     rotate: index % 4,
     design: "s2.craft",

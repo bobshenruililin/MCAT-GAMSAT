@@ -477,5 +477,26 @@ Three riskiest:
 
 SCORE IMPACT: The next study hour starts on a lesson path instead of a stats console — expected score still waits on sitting those hours.
 
+## Factory stems were not exam questions (2026-09-02)
+
+Question: the questions are of very bad quality; look back with a fresh pair of eyes.
+
+Answer: Agreed. Live bank fingerprints: 21k “pack N”, 39k “tested grain”, 23k “this bank”, 73k “(run N)”, CARS bodies that confess they are seeds. Hand 847 were already exam-like. Rewrote factory + pattern emitters. Still unverified AI (B-013, B-018).
+
+Shipped:
+- Conceptual/P/S/S2/CARS/quant/experiment/pattern stem language.
+- Kinetics tables only on enzyme/chem/bio topics.
+- Quality test forbidding the old fingerprints.
+- Tests 118.
+
+Failed: did not yet re-ingest the live SQLite (next). Conceptual items still discriminate outline descriptions rather than full AAMC labs.
+
+Three riskiest:
+1. B-013/B-018 — better English is not a percentile and not verified=true.
+2. Uniqueness still needs a case label (Mutant 18, issue 4, trial 7).
+3. Sitting the old DB until bootstrap finishes would show the bad stems.
+
+SCORE IMPACT: The next study hour can retrieve on items that look like questions rather than item-writer notes — score still waits on sitting and on official papers.
+
 
 

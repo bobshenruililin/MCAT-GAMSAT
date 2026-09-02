@@ -222,6 +222,12 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Newest prompt: publish a git website; Today still feels like a database; want more Duolingo; UI craft; no cost to further expansion; YC would love. NORTH_STAR: retrieval, confidence-before-reveal, no other users. Newest prompt wins on scope (public door + lesson UI). NORTH_STAR wins on values (no fake company, no gamification that is rereading). Log B-017.
 - Rejected: Hosting Next+SQLite on Pages; a second study runtime; XP/streak leagues; coupling UI to bank expansion; putting static files in `pages/` (Next Pages Router); a Figma-only mock.
 
+## 2026-09-02 — Factory stems must read as exam items, not as item-writer notes
+- Decision: Newest prompt: the questions are bad; look with a fresh eye. Conceptual/P/S/S2/CARS/pattern/quant/experiment emitters were leaking factory meta (`pack N`, `tested grain`, `this bank`, `Seed N only changes the names`, `(run N)`, `Entry — identify the move`). Rewrite stems and passage bodies to AAMC/ACER-like language. Kinetics tables only on enzyme/chem/bio topics, not on every science node. Keep analog-in-stem for pattern drills, without the “Entry — identify” wrapper. Software still never sets `verified=true`. Re-ingest the sit-able cap (423.5k factory + 12k patterns) so localhost is not still serving the old stems. Hand-authored 847 unchanged.
+- Rationale: Trust in content outranks volume. A 4.35M bank of meta-questions lowers expected score per hour. Newest prompt wins on scope (quality). NORTH_STAR wins on values (no auto-verify).
+- Rejected: Leaving the templates and only hiding them in the UI; deleting the factory; auto-verifying rewritten items; rewriting the 847 hand items (they were already exam-like).
+
+
 
 
 

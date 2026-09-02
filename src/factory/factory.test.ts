@@ -138,4 +138,25 @@ describe("score-max factory", () => {
       expect(factoryKeys.has(`${item.conceptId}\n${item.stem}`)).toBe(false);
     }
   });
+
+  it("does not leak factory scaffolding into the stem or passage body", () => {
+    const forbidden =
+      /pack \d|vignette \d|tested grain|this bank|cover story|productive retrieval|Entry — identify|\(run \d+\)|Seed \d+|as tagged in this bank|item-writer workshop|In passage \d/;
+    const bank = generateBank(900);
+    for (const it of bank.items) {
+      expect(it.stem, it.stem.slice(0, 160)).not.toMatch(forbidden);
+    }
+    for (const p of bank.passages) {
+      expect(p.body).not.toMatch(/Seed \d+ only changes/);
+      expect(p.body).not.toMatch(/argumentative shape stays this concession/);
+      for (const q of p.questions) {
+        expect(q.stem, q.stem.slice(0, 160)).not.toMatch(forbidden);
+        expect(q.stem).not.toMatch(/Table \d+ is attached/);
+      }
+    }
+    const s2 = bank.items.find((it) => it.concept_id.startsWith("GAMSAT.S2"));
+    expect(s2).toBeTruthy();
+    expect(s2!.stem).toMatch(/Comments for a 30-minute Task/);
+    expect(s2!.stem).not.toMatch(/craft grain/);
+  });
 });

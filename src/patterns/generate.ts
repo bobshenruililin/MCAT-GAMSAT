@@ -26,10 +26,9 @@ function foilPatterns(p: ExamPattern, rng: () => number): ExamPattern[] {
 export function identifyItem(p: ExamPattern, index: number) {
   const rng = mulberry(hashStr(`${p.id}:id:${index}`));
   const foils = foilPatterns(p, rng);
-  const setting = index % 2 === 0 ? "a fresh original stem" : "a new domain with the same relation";
   const stem =
-    `Entry — identify the move. Worked analog: ${p.exampleSetup} ${p.exampleConclusion} ` +
-    `Now ${setting} #${index} on the same exam family. Which move must you retrieve to score the new instance?`;
+    `${p.exampleSetup} ${p.exampleConclusion} ` +
+    `A later item (booklet ${index + 1}) uses the same kind of move. Which description of that move is correct?`;
   const item = assembleItem({
     conceptId: p.topicId,
     type: "discrete",
@@ -59,7 +58,7 @@ export function applyItem(p: ExamPattern, index: number) {
   const difficulty = Math.min(0.95, 0.18 + rung * 0.08);
   const built = buildApply(p, index, rung);
   const stem =
-    `Worked analog (do not re-answer it): ${p.exampleSetup} ${p.exampleConclusion} ` +
+    `A solved example of the move: ${p.exampleSetup} ${p.exampleConclusion}\n\n` +
     built.question;
   const item = assembleItem({
     conceptId: p.topicId,

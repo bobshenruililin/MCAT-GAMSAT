@@ -53,6 +53,9 @@ Newest prompt asked for Y Combinator-grade screenshots/demos and ambitious quest
 ### B-017 — Public GitHub Pages door vs NORTH_STAR “no other users”
 Newest prompt asked to publish a git website. NORTH_STAR forbids other users, auth, cloud, and monetization. v1 ships a static landing in `site/` (designed bank, local clone commands) deployed by GitHub Actions Pages — not a study runtime, not accounts, not a waitlist. Sitting stays on localhost SQLite. Human: keep the door public, or take the workflow down.
 
+### B-018 — Factory items were meta-questions, not exam questions
+Fresh look at the live bank: conceptual stems asked “which grain is tagged in this bank”; S2 said “Timed Task A pack 0 … craft grain”; CARS passages confessed “Seed N only changes the proper names”; P/S said “vignette N”; quant appended “(run N)”; experiment Q4 cited NORTH STAR. v1 rewrites those emitters so stems read as exam items (still unverified AI — B-013). Hand-authored 847 were already exam-like and were not rewritten. Human: QC a slice; volume is still not an official percentile.
+
 
 
 

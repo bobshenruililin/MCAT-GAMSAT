@@ -32,9 +32,9 @@ function finish(
   explanation: string,
   difficulty: number,
 ): FactoryItem {
-  const tagged = stem.includes(`run ${index}`)
+  const tagged = stem.includes(`trial ${index + 1}`)
     ? stem
-    : `${stem.replace(/\?$/, "")} (run ${index})`;
+    : `${stem.replace(/\?$/, "")} (trial ${index + 1})`;
   return assembleItem({
     conceptId: topic.id,
     type: "discrete",

@@ -12,72 +12,71 @@ const FRAMES = [
   "exception",
 ] as const;
 
-const SETTINGS = [
-  "a timed section block",
-  "a wet-lab notebook page",
-  "an OSCE-style stem",
-  "a first-year lecture clicker",
-  "a passage table footnote",
-  "a hallway argument between two students",
-  "a research-methods vignette",
-  "an item-writer workshop",
+const WHO = [
+  "An investigator",
+  "A clinician",
+  "A first-year student",
+  "A lab partner",
+  "A field observer",
 ];
 
-function siblingPool(topic: TopicNode): { id: string; name: string; description: string }[] {
-  const pool = [...topic.siblings];
-  if (pool.length < 3) {
-    pool.push(
-      { id: "foil.overlay", name: "unrelated overlay skill", description: "A weight-0 overlay (SIRS or rfd) that is not this content grain." },
-      { id: "foil.family", name: "a different exam family", description: "A node from another section of the outline, not this topic." },
-      { id: "foil.reread", name: "a notes-reread strategy", description: "Re-reading a summary instead of answering a tagged retrieval item." },
-    );
+function specimen(topic: TopicNode, index: number): string {
+  const n = index + 1;
+  if (/^MCAT\.FC(6|7|8|9|10)/.test(topic.id)) return `Participant ${n}`;
+  if (topic.id.startsWith("MCAT.FC4") || topic.id.startsWith("MCAT.FC5")) {
+    return `Compound ${n}`;
   }
-  return pool;
+  if (topic.id.startsWith("GAMSAT.S3")) return `Sample ${n}`;
+  return `Mutant ${n}`;
 }
 
-function frameStem(topic: TopicNode, index: number, frame: string, setting: string): string {
-  const salt = `#${index}`;
+function claim(name: string, description: string): string {
+  const d = description.replace(/\.$/, "");
+  return `${name} is the idea that covers ${d}.`;
+}
+
+function frameStem(topic: TopicNode, index: number, frame: string): string {
+  const spec = specimen(topic, index);
   switch (frame) {
     case "apply":
-      return `In ${setting}${salt}, a stem is built so that only the definition of ${topic.name} licenses the key. Which statement is the productive retrieval target?`;
+      return `Results from ${spec} make sense only if you have a correct account of ${topic.name}. Which account is correct?`;
     case "contrast":
-      return `Two nearby outline nodes are easy to swap. In ${setting}${salt}, which option correctly names ${topic.name} rather than a sibling?`;
+      return `Two nearby ideas are easy to swap when scoring ${spec}. Which statement correctly describes ${topic.name}?`;
     case "predict":
-      return `If the tested grain is ${topic.name}, which prediction should survive in ${setting}${salt}?`;
+      return `If ${topic.name} is the operative idea for ${spec}, which description should you use?`;
     case "confound":
-      return `An experiment write-up in ${setting}${salt} claims to isolate ${topic.name}. Which description actually matches that grain instead of a confound from a neighboring topic?`;
+      return `A write-up of ${spec} claims to isolate ${topic.name}. Which description actually matches that idea rather than a neighbor?`;
     case "definition":
-      return `Which option is the accurate capsule of ${topic.name} as tagged in this bank${salt}?`;
+      return `Which statement correctly describes ${topic.name}? Use it on ${spec}.`;
     case "transfer":
-      return `A new cover story in ${setting}${salt} still tests ${topic.name}. Which statement transfers the grain instead of a look-alike sibling?`;
+      return `${spec} is a new cover for the same idea. Which statement still describes ${topic.name}?`;
     case "exception":
-      return `Which statement correctly describes ${topic.name} and would falsify a sibling substitution in ${setting}${salt}?`;
+      return `Which statement about ${topic.name} would correctly score ${spec} and would be false of a neighboring idea?`;
     default:
-      return `Which option correctly identifies ${topic.name} (${topic.description}) as the tested grain${salt}?`;
+      return `Which statement correctly describes ${topic.name}, as needed to interpret ${spec}?`;
   }
 }
 
 export function conceptualItem(topic: TopicNode, index: number): FactoryItem {
   const rng = mulberry(hashStr(`${topic.id}:${index}:concept`));
   const frame = FRAMES[index % FRAMES.length];
-  const setting = SETTINGS[index % SETTINGS.length];
   const pool = siblingPool(topic);
   const traps = pickN(pool, 3, rng);
-  const correct = `${topic.name}: ${topic.description}`;
+  const spec = specimen(topic, index);
   const explain =
-    `${topic.name} is the tagged grain: ${topic.description} ` +
-    `The item is a discrimination drill — exam score is lost when a neighboring node is selected because it “sounds related.” ` +
-    `Siblings ${traps.map((t) => t.name).join("; ")} are live look-alikes, not second keys. ` +
-    `Frame ${frame} in ${setting} changes only the cover story (index ${index}), not the outline node.`;
+    `${topic.name} covers ${topic.description} ` +
+    `${spec} is just the case label; the keyed idea does not change. ` +
+    `The misses name neighboring ideas (${traps.map((t) => t.name).join("; ")}) that sound related on exam morning. ` +
+    `Pick the outline idea that actually licenses the key, not the famous neighbor.`;
   return assembleItem({
     conceptId: topic.id,
     type: "discrete",
-    stem: frameStem(topic, index, frame, setting),
-    correct,
+    stem: frameStem(topic, index, frame),
+    correct: claim(topic.name, topic.description),
     distractors: [
-      { text: `${traps[0].name}: ${traps[0].description}`, why: `That is ${traps[0].name}, a sibling or foil, not ${topic.name}.` },
-      { text: `${traps[1].name}: ${traps[1].description}`, why: `That is ${traps[1].name}, not the tagged node.` },
-      { text: `${traps[2].name}: ${traps[2].description}`, why: `That is ${traps[2].name}, a nearby-outline trap.` },
+      { text: claim(traps[0].name, traps[0].description), why: `That describes ${traps[0].name}, a neighbor, not ${topic.name}.` },
+      { text: claim(traps[1].name, traps[1].description), why: `That describes ${traps[1].name}, not ${topic.name}.` },
+      { text: claim(traps[2].name, traps[2].description), why: `That describes ${traps[2].name}, a nearby-outline trap.` },
     ],
     explanation: explain,
     difficulty: 0.35 + (index % 5) * 0.08,
@@ -87,32 +86,41 @@ export function conceptualItem(topic: TopicNode, index: number): FactoryItem {
   });
 }
 
-/** Psych/soc and similar: scenario that still discriminates the named construct. */
+function siblingPool(topic: TopicNode): { id: string; name: string; description: string }[] {
+  const pool = [...topic.siblings];
+  if (pool.length < 3) {
+    pool.push(
+      { id: "foil.overlay", name: "an overlay skill with no exam weight", description: "a SIRS or reasoning-from-data overlay that is not this content idea." },
+      { id: "foil.family", name: "a different exam family", description: "a node from another section of the outline, not this topic." },
+      { id: "foil.reread", name: "rereading a summary", description: "going back over notes instead of answering a tagged question." },
+    );
+  }
+  return pool;
+}
+
+/** Psych/soc: a short vignette that still discriminates the named construct. */
 export function scenarioItem(topic: TopicNode, index: number): FactoryItem {
   const rng = mulberry(hashStr(`${topic.id}:${index}:scene`));
-  const who = pick(
-    ["A first-year student", "A clinic observer", "A field ethnographer", "A trial subject", "A debate speaker"],
-    rng,
-  );
+  const who = pick(WHO, rng);
+  const spec = specimen(topic, index);
   const stem =
-    `${who} in vignette ${index} must choose the construct that matches ${topic.name}. ` +
-    `The behaviour in the stem is exactly the outline description, not a neighboring theory. Which label is correct?`;
+    `${who} writes up ${spec}. The behaviour in the write-up matches ${topic.name} and not a neighboring theory. Which label is correct?`;
   const pool = siblingPool(topic);
   const traps = pickN(pool, 3, rng);
   return assembleItem({
     conceptId: topic.id,
     type: "discrete",
     stem,
-    correct: `${topic.name} — ${topic.description}`,
+    correct: claim(topic.name, topic.description),
     distractors: traps.map((t) => ({
-      text: `${t.name} — ${t.description}`,
-      why: `${t.name} is the neighboring construct; the vignette was written to the ${topic.name} definition.`,
-    })) as [ { text: string; why: string }, { text: string; why: string }, { text: string; why: string } ],
+      text: claim(t.name, t.description),
+      why: `${t.name} is the neighboring construct; the write-up was built to the ${topic.name} definition.`,
+    })) as [{ text: string; why: string }, { text: string; why: string }, { text: string; why: string }],
     explanation:
-      `The vignette is a cover story for ${topic.name}: ${topic.description} ` +
-      `MCAT P/S and similar items are lost by picking a famous neighbor (the traps). ` +
-      `Index ${index} only changes who is speaking; the tagged node does not change. ` +
-      `This is retrieval of the outline grain, not a reread of a notes paragraph.`,
+      `${topic.name} covers ${topic.description} ` +
+      `P/S items are lost by picking a famous neighbor. ` +
+      `${spec} only names the case; the construct does not change. ` +
+      `This is retrieval of the idea, not a reread of a notes paragraph.`,
     difficulty: 0.42 + (index % 4) * 0.07,
     rotate: (index + hashStr(topic.id)) % 4,
     design: "scenario.construct",
