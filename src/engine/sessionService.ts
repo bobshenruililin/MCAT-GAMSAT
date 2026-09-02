@@ -1,4 +1,4 @@
-import { eq, isNull, like } from "drizzle-orm";
+import { and, eq, isNull, like } from "drizzle-orm";
 import type { AppDb } from "@/db/client";
 import {
   attempts,
@@ -37,7 +37,7 @@ import {
   type NewCandidate,
   type TaggedCandidate,
 } from "./sessionAssembler";
-import { matchesTrack, parseTrack, type SectionFamily } from "./sectionBudget";
+import { matchesTrack, parseTrack, sectionFamily, type SectionFamily } from "./sectionBudget";
 import { isPatternTag, PATTERNS, patternById } from "@/patterns/catalog";
 import {
   contrastPatternId,
@@ -258,6 +258,94 @@ function extraScheduledItems(
     .map((row) => ({ id: row.id, conceptId: row.conceptId }));
 }
 
+const NEW_TOPICS_PER_FAMILY = 8;
+const NEW_ITEMS_PER_TOPIC = 4;
+
+function loadNewCandidates(
+  db: AppDb,
+  seen: Set<string>,
+  track: SectionFamily | undefined,
+  applyTrack: boolean,
+  mastery: Record<string, number>,
+  huntIds: string[],
+  extraTopicIds: string[] = [],
+): NewCandidate[] {
+  const topicRows = db
+    .select({
+      id: concepts.id,
+      examWeight: concepts.examWeight,
+      level: concepts.level,
+    })
+    .from(concepts)
+    .all()
+    .filter(
+      (t) =>
+        t.level === "topic" &&
+        t.examWeight > 0 &&
+        (!applyTrack || matchesTrack(t.id, track)),
+    );
+
+  const byFamily = new Map<SectionFamily, typeof topicRows>();
+  for (const t of topicRows) {
+    const family = sectionFamily(t.id);
+    const list = byFamily.get(family) ?? [];
+    list.push(t);
+    byFamily.set(family, list);
+  }
+
+  const selected: typeof topicRows = [];
+  const taken = new Set<string>();
+  const take = (id: string) => {
+    const t = topicRows.find((x) => x.id === id);
+    if (t && !taken.has(t.id)) {
+      taken.add(t.id);
+      selected.push(t);
+    }
+  };
+  for (const id of extraTopicIds) take(id);
+  for (const id of huntIds) take(id);
+  if (topicRows.length <= 64) {
+    for (const t of topicRows) take(t.id);
+  } else {
+    for (const list of byFamily.values()) {
+      const ranked = [...list].sort((a, b) => {
+        const pa = (1 - (mastery[a.id] ?? 0.3)) * a.examWeight;
+        const pb = (1 - (mastery[b.id] ?? 0.3)) * b.examWeight;
+        return pb - pa || a.id.localeCompare(b.id);
+      });
+      for (const t of ranked.slice(0, NEW_TOPICS_PER_FAMILY)) take(t.id);
+    }
+  }
+
+  const picked: NewCandidate[] = [];
+  for (const topic of selected) {
+    const rows = db
+      .select({
+        id: items.id,
+        conceptId: items.conceptId,
+        examWeight: concepts.examWeight,
+        difficultyEst: items.difficultyEst,
+      })
+      .from(items)
+      .innerJoin(concepts, eq(concepts.id, items.conceptId))
+      .leftJoin(fsrsState, eq(fsrsState.itemId, items.id))
+      .where(and(eq(items.conceptId, topic.id), isNull(fsrsState.itemId)))
+      .limit(NEW_ITEMS_PER_TOPIC)
+      .all()
+      .filter((row) => !seen.has(row.id));
+    for (const row of rows) {
+      picked.push({
+        id: row.id,
+        conceptId: row.conceptId,
+        examWeight: row.examWeight,
+        mastery: mastery[row.conceptId] ?? 0.3,
+        difficultyEst: row.difficultyEst,
+      });
+    }
+  }
+  return picked;
+}
+
 function loadPatternPool(
   db: AppDb,
   track: SectionFamily | undefined,
@@ -338,35 +426,19 @@ export function createDailySession(
     .filter((d) => !applyTrack || matchesTrack(d.conceptId, track));
 
   const seen = new Set(due.map((d) => d.id));
-  const newRows = db
-    .select({
-      id: items.id,
-      conceptId: items.conceptId,
-      examWeight: concepts.examWeight,
-      difficultyEst: items.difficultyEst,
-      fsrsItemId: fsrsState.itemId,
-    })
-    .from(items)
-    .innerJoin(concepts, eq(concepts.id, items.conceptId))
-    .leftJoin(fsrsState, eq(fsrsState.itemId, items.id))
-    .where(isNull(fsrsState.itemId))
-    .all()
-    .filter(
-      (row) =>
-        !seen.has(row.id) && (!applyTrack || matchesTrack(row.conceptId, track)),
-    );
-
   const mastery = masteryByNode(db, now);
   const huntIds = huntTopicsFromDb(db, now).filter(
     (id) => !applyTrack || matchesTrack(id, track),
   );
-  const candidates: NewCandidate[] = newRows.map((row) => ({
-    id: row.id,
-    conceptId: row.conceptId,
-    examWeight: row.examWeight,
-    mastery: mastery[row.conceptId] ?? 0.3,
-    difficultyEst: row.difficultyEst,
-  }));
+  const candidates: NewCandidate[] = loadNewCandidates(
+    db,
+    seen,
+    track,
+    applyTrack,
+    mastery,
+    huntIds,
+    skillTopicId ? [skillTopicId] : [],
+  );
   const extraItems =
     sessionMode === "daily" ||
     sessionMode === "pattern_entry" ||
@@ -458,28 +530,35 @@ export function createDiagnosticSession(
   const { track: trackRaw, ...diagCaps } = caps;
   const track = parseTrack(trackRaw);
   const assembleConfig = { ...DEFAULT_DIAGNOSTIC_CONFIG, ...diagCaps };
-  const topicRows = db
-    .select({
-      id: items.id,
-      conceptId: items.conceptId,
-      parentId: concepts.parentId,
-    })
-    .from(items)
-    .innerJoin(concepts, eq(concepts.id, items.conceptId))
-    .all();
-  const categories = db.select().from(concepts).all();
-  const catById = new Map(categories.map((c) => [c.id, c]));
+  const allConcepts = db.select().from(concepts).all();
+  const catById = new Map(allConcepts.map((c) => [c.id, c]));
+  const categories = allConcepts.filter(
+    (c) =>
+      c.level === "category" &&
+      c.examWeight > 0 &&
+      matchesTrack(c.id, track),
+  );
 
   const diagnosticItems = [];
-  for (const row of topicRows) {
-    const cat = row.parentId ? catById.get(row.parentId) : undefined;
-    if (!cat || cat.level !== "category" || cat.examWeight <= 0) continue;
-    if (!matchesTrack(row.conceptId, track)) continue;
-    diagnosticItems.push({
-      id: row.id,
-      conceptId: row.conceptId,
-      categoryId: cat.id,
-    });
+  for (const cat of categories) {
+    const rows = db
+      .select({
+        id: items.id,
+        conceptId: items.conceptId,
+        parentId: concepts.parentId,
+      })
+      .from(items)
+      .innerJoin(concepts, eq(concepts.id, items.conceptId))
+      .where(eq(concepts.parentId, cat.id))
+      .limit(assembleConfig.perCategory)
+      .all();
+    for (const row of rows) {
+      diagnosticItems.push({
+        id: row.id,
+        conceptId: row.conceptId,
+        categoryId: cat.id,
+      });
+    }
   }
 
   const attemptRows = db

@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import type { AppDb } from "@/db/client";
 import { attempts, items, sessions } from "@/db/schema";
+import { inArray } from "drizzle-orm";
 import { getDbPath, SCOREBOARD_PATH } from "@/db/paths";
 import { masteryByNode } from "./mastery";
 
@@ -146,12 +147,15 @@ export function scoreboardStats(db: AppDb, now: Date): ScoreboardStats {
     if (!lastStudyDay || day > lastStudyDay) lastStudyDay = day;
   }
 
-  const itemRows = db.select({ id: items.id, conceptId: items.conceptId }).from(items).all();
-  const conceptByItem = new Map(itemRows.map((r) => [r.id, r.conceptId]));
   const topics = new Set<string>();
-  for (const row of attemptRows) {
-    const conceptId = conceptByItem.get(row.itemId);
-    if (conceptId) topics.add(conceptId);
+  const attemptedItemIds = [...new Set(attemptRows.map((a) => a.itemId))];
+  if (attemptedItemIds.length > 0) {
+    const topicRows = db
+      .select({ conceptId: items.conceptId })
+      .from(items)
+      .where(inArray(items.id, attemptedItemIds))
+      .all();
+    for (const row of topicRows) topics.add(row.conceptId);
   }
 
   let meanMastery: number | null = null;

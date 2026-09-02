@@ -1,9 +1,9 @@
 # STATE
 
-Phase: 10× generated bank is on main; local study history wiped
+Phase: YC-demo surfaces — atlas + designed bank scale; live SQLite is a 423.5k cap
 Study days logged: 0 human. Demo is not study. SCOREBOARD official table empty.
-Done: PRs #1–#12 on main. Factory default is HAND_BANK×5000 = 4,235,000; pattern drills 120,000; floor 2000/topic. Emit streams per topic (no 4.2M in-memory bank). This VM: `pnpm db:reset` (attempts/sessions/fsrs 0). Tests 109.
-In flight: none.
-Next: human — `pnpm db:reset && pnpm bootstrap` to ingest the 10× bank (very large SQLite). Cap `FACTORY_TARGET=84700 PATTERN_TARGET=2400` for 100×, or `423500`/`12000` for 500×. QC a slice (B-013). Sit official papers. Open: B-001–B-015.
-Counts: taxonomy 376 (290 weighted topics). Full bootstrap now ~847 hand + 4,235,000 factory + 120,000 pattern. verified=true 0.
-Risks: 4.35M unverified AI (B-013); templates still recycle cover stories with a run index; default bootstrap SQLite is huge; this VM did not ingest the full 4.2M
+Done: PRs #1–#13 on main. This branch: `/atlas` four-layer exam map, BankHero (designed 4,355,847 vs live), SQL counts so Today/Progress survive large banks, bounded new-item load. This VM ingested FACTORY_TARGET=423500 PATTERN_TARGET=12000 → **436,347** items, verified=true 0.
+In flight: screenshots/demo recordings of Today, Atlas, sitting, Health.
+Next: capture YC-grade artifacts; human may bootstrap full 4.2M or keep the 423.5k cap. QC slice (B-013). Open: B-001–B-016.
+Counts: taxonomy 376 (290 weighted topics). Designed 847+4,235,000+120,000. Live this VM 436,347. Tests 112.
+Risks: B-013 unverified AI; live bank is ~10% of designed; B-016 YC screenshots must not become a multi-user pitch; sitting in the player will create attempts — do not copy them into SCOREBOARD.md as human study

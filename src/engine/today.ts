@@ -1,4 +1,4 @@
-import { eq, isNull } from "drizzle-orm";
+import { count, eq, isNull } from "drizzle-orm";
 import type { AppDb } from "@/db/client";
 import { attempts, fsrsState, items } from "@/db/schema";
 import { getDueItems } from "./reviewEngine";
@@ -71,13 +71,14 @@ export function studyStreak(attemptDays: Set<string>, todayKey: string): number 
 
 export function getTodayStats(db: AppDb, now: Date): TodayStats {
   const dueCount = getDueItems(db, now, 100_000).length;
-  const itemCount = db.select({ id: items.id }).from(items).all().length;
-  const unseen = db
-    .select({ id: items.id })
-    .from(items)
-    .leftJoin(fsrsState, eq(fsrsState.itemId, items.id))
-    .where(isNull(fsrsState.itemId))
-    .all().length;
+  const itemCount = db.select({ n: count() }).from(items).get()?.n ?? 0;
+  const unseen =
+    db
+      .select({ n: count() })
+      .from(items)
+      .leftJoin(fsrsState, eq(fsrsState.itemId, items.id))
+      .where(isNull(fsrsState.itemId))
+      .get()?.n ?? 0;
 
   const last7Days: DayCount[] = [];
   for (let i = 6; i >= 0; i--) {

@@ -436,5 +436,25 @@ Three riskiest:
 
 SCORE IMPACT: The sitting path on `main` now has a 10× unseen queue and a clean local ledger — expected score still waits on the human opening localhost after bootstrap and answering items.
 
+## YC-demo atlas and designed scale (2026-09-02)
+
+Question: screenshots and demos that would get Y Combinator backing; if not there yet, keep running; set ambitious question and knowledge-structure targets.
+
+Answer: NORTH_STAR forbids a fake company (no users/cloud/monetization). The demo is the instrument: designed capacity **4,355,847** retrieval items (5000× factory + 120k patterns + 847 hand), 7 exam families, 4-layer map (family virtual; schema still 3 levels), 18 past-paper moves, verified=true stays 0. Live this VM: 436,347 (423.5k factory cap + 12k patterns) so screenshots show real scale, not an empty bank. SQL aggregations + bounded new-item fetch so Today/Start Session survive that size.
+
+Shipped:
+- `/atlas`, BankHero on Today/Health, header Atlas link.
+- `getBankScale` / `buildAtlas`. Progress item counts via GROUP BY. Session new-item load bounded on large banks.
+- Tests 112.
+
+Failed: did not ingest the full 4.2M (cap used for a sit-able demo DB). Did not invent users or a pitch deck.
+
+Three riskiest:
+1. B-013 — live 436k is still unverified AI.
+2. Designed 4.35M vs live ~10% can be misread as the product being unfinished rather than capped.
+3. Player attempts during demo recording are not human study.
+
+SCORE IMPACT: The next study hour can see the whole exam map and a half-million-item queue before the first retrieve — score still waits on sitting and on official papers.
+
 
 

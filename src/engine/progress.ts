@@ -1,5 +1,6 @@
 import type { AppDb } from "@/db/client";
 import { attempts, concepts, items } from "@/db/schema";
+import { count, eq } from "drizzle-orm";
 import { masteryByNode } from "./mastery";
 import type { ProgressNode } from "./progressTypes";
 import { COVERAGE_TRACKS, sectionFamily, type SectionFamily } from "./sectionBudget";
@@ -29,30 +30,24 @@ export type ProgressData = {
 export function getProgressData(db: AppDb, now: Date): ProgressData {
   const mastery = masteryByNode(db, now);
   const all = db.select().from(concepts).all();
-  const itemRows = db
-    .select({ id: items.id, conceptId: items.conceptId })
+  const itemCountRows = db
+    .select({ conceptId: items.conceptId, n: count() })
     .from(items)
+    .groupBy(items.conceptId)
     .all();
-  const itemsByTopic = new Map<string, string[]>();
-  for (const row of itemRows) {
-    const list = itemsByTopic.get(row.conceptId) ?? [];
-    list.push(row.id);
-    itemsByTopic.set(row.conceptId, list);
+  const itemsByTopic = new Map<string, number>();
+  for (const row of itemCountRows) {
+    itemsByTopic.set(row.conceptId, Number(row.n));
   }
-  const attemptRows = db
-    .select({ itemId: attempts.itemId })
+  const attemptCountRows = db
+    .select({ conceptId: items.conceptId, n: count() })
     .from(attempts)
+    .innerJoin(items, eq(attempts.itemId, items.id))
+    .groupBy(items.conceptId)
     .all();
-  const attemptByItem = new Map<string, number>();
-  for (const row of attemptRows) {
-    attemptByItem.set(row.itemId, (attemptByItem.get(row.itemId) ?? 0) + 1);
-  }
-
   const topicAttempts = new Map<string, number>();
-  for (const [topicId, itemIds] of itemsByTopic) {
-    let n = 0;
-    for (const id of itemIds) n += attemptByItem.get(id) ?? 0;
-    topicAttempts.set(topicId, n);
+  for (const row of attemptCountRows) {
+    topicAttempts.set(row.conceptId, Number(row.n));
   }
 
   const children = new Map<string | null, string[]>();
@@ -97,7 +92,7 @@ export function getProgressData(db: AppDb, now: Date): ProgressData {
       mastery: masteryValue,
       attempts: attemptCount,
       unseen: unseen(row.id),
-      itemCount: row.level === "topic" ? (itemsByTopic.get(row.id)?.length ?? 0) : 0,
+      itemCount: row.level === "topic" ? (itemsByTopic.get(row.id) ?? 0) : 0,
       masteryLevel: masteryLevel({ mastery: masteryValue, attempts: attemptCount }),
     };
   });
@@ -114,8 +109,20 @@ export function getProgressData(db: AppDb, now: Date): ProgressData {
     node.masteryLevel = masteryLevel({ mastery: node.mastery, attempts: n });
     return n;
   }
+  function addItems(id: string): number {
+    const node = byId.get(id);
+    if (!node) return 0;
+    if (node.level === "topic") return node.itemCount;
+    const kids = children.get(id) ?? [];
+    const n = kids.reduce((s, k) => s + addItems(k), 0);
+    node.itemCount = n;
+    return n;
+  }
   for (const n of nodes) {
-    if (n.parentId === null) addAttempts(n.id);
+    if (n.parentId === null) {
+      addAttempts(n.id);
+      addItems(n.id);
+    }
   }
 
   const topics = nodes
@@ -129,7 +136,7 @@ export function getProgressData(db: AppDb, now: Date): ProgressData {
     return {
       family,
       topics: track.length,
-      withItems: track.filter((t) => (itemsByTopic.get(t.id)?.length ?? 0) > 0).length,
+      withItems: track.filter((t) => (itemsByTopic.get(t.id) ?? 0) > 0).length,
       attempted: track.filter((t) => t.attempts > 0).length,
     };
   });

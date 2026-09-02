@@ -38,7 +38,8 @@ a percentile.
 
 | Route | What it is |
 | --- | --- |
-| `/` | Today — due/new, Up Next, unfinished sittings, start daily / diagnostic / skill / mastery check / pattern entry / ladder / structure |
+| `/` | Today — designed/live bank scale, due/new, Up Next, unfinished sittings, start daily / diagnostic / skill / mastery check / pattern entry / ladder / structure |
+| `/atlas` | Exam map — family → FC → category → topic, designed vs live bank, 18 past-paper moves |
 | `/session/[id]` | Retrieval player (confidence before reveal; error class on every miss) and session summary |
 | `/progress` | Taxonomy tree, weakest topics, calibration / pacing / trend |
 | `/write` | GAMSAT S2 timed studio (self-rubric, not an official score) |

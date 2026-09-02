@@ -5,7 +5,7 @@ export default function NotFound() {
     <main className="mx-auto max-w-lg px-4 py-16">
       <h1 className="font-serif text-2xl">Page not found</h1>
       <p className="mt-2 text-sm text-zinc-600">
-        That route is not a study surface. Today, Progress, S2 Writing, Health, and
+        That route is not a study surface. Today, Atlas, Progress, S2 Writing, Health, and
         Scoreboard are in the header.
       </p>
       <p className="mt-6">

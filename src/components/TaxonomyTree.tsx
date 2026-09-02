@@ -38,9 +38,12 @@ export function TaxonomyTree({ nodes }: { nodes: ProgressNode[] }) {
                 <span className="font-mono text-xs text-zinc-500">
                   {n.mastery.toFixed(2)}
                   {n.level === "topic" ? ` · ${n.masteryLevel}` : ""}
+                  {n.itemCount > 0 ? ` · ${n.itemCount}` : ""}
                 </span>
               ) : (
-                <span className="text-xs text-zinc-400">unseen</span>
+                <span className="text-xs text-zinc-400">
+                  unseen{n.itemCount > 0 ? ` · ${n.itemCount} items` : ""}
+                </span>
               )}
             </span>
           );

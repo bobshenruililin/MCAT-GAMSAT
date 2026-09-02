@@ -51,7 +51,11 @@ export default function ProgressPage() {
       <p className="mt-1 text-sm text-zinc-600">
         Gray dots are unseen (no attempts). Color runs red → green with mastery.
         Topic rows show Khan-like levels: unseen, struggling, familiar, proficient,
-        mastered.
+        mastered. Full exam map with designed capacity is on{" "}
+        <Link href="/atlas" className="underline">
+          Atlas
+        </Link>
+        .
       </p>
       <DemoBanner show={Boolean(loaded.insights?.demo)} />
       {loaded.error ? <p className="mt-4 text-sm text-red-700">{loaded.error}</p> : null}

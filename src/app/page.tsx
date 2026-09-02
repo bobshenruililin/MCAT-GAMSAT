@@ -2,11 +2,14 @@ import { existsSync } from "node:fs";
 import { openDb } from "@/db/client";
 import { getDbPath } from "@/db/paths";
 import { getTodayStats } from "@/engine/today";
+import { getBankScale } from "@/engine/bankScale";
 import { StartButtons } from "@/components/StartButtons";
 import { CoverageBars } from "@/components/CoverageBars";
 import { DemoBanner } from "@/components/DemoBanner";
 import { OpenSessions } from "@/components/OpenSessions";
 import { UpNextCard } from "@/components/UpNextCard";
+import { BankHero } from "@/components/BankHero";
+import Link from "next/link";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -17,18 +20,21 @@ function loadToday() {
       ok: false as const,
       error: "database file missing — run pnpm db:migrate && pnpm bootstrap",
       stats: null,
+      scale: null,
     };
   }
   try {
     const { sqlite, db } = openDb();
     const stats = getTodayStats(db, new Date());
+    const scale = getBankScale(db);
     sqlite.close();
-    return { ok: true as const, error: null, stats };
+    return { ok: true as const, error: null, stats, scale };
   } catch (err) {
     return {
       ok: false as const,
       error: err instanceof Error ? err.message : String(err),
       stats: null,
+      scale: null,
     };
   }
 }
@@ -39,13 +45,25 @@ export default function TodayPage() {
   const emptyBank = stats ? stats.itemCount === 0 : true;
 
   return (
-    <main className="mx-auto max-w-3xl px-4 py-8">
+    <main className="mx-auto max-w-5xl px-4 py-8">
       <h1 className="font-serif text-3xl tracking-tight">Today</h1>
       <p className="mt-1 text-sm text-zinc-600">
         Retrieval only. Confidence before reveal. The person walking into the room is the
         product. Past-paper moves are retrieved as questions (analog in the stem), then
         ranked drills, then a structure sitting that still interleaves.
       </p>
+      {today.scale ? (
+        <div className="mt-6">
+          <BankHero scale={today.scale} />
+          <p className="mt-2 text-sm text-zinc-600">
+            <Link href="/atlas" className="underline">
+              Exam atlas
+            </Link>
+            {" — "}
+            family → FC → category → topic, with live item counts and 18 past-paper moves.
+          </p>
+        </div>
+      ) : null}
       <DemoBanner show={Boolean(stats?.demo)} />
 
       {today.error ? (

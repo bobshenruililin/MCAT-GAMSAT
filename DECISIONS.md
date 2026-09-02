@@ -212,6 +212,11 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Newest prompt: merge when done. Same method as PRs #1–#10.
 - Rejected: Squashing (would orphan PR SHAs); merging #11 and #12 as separate merge commits.
 
+## 2026-09-02 — YC-demo is the instrument, not a multi-user company
+- Decision: Newest prompt asked for YC-grade screenshots/demos and ambitious question + knowledge-structure targets. Keep designed factory at 4,235,000 and patterns at 120,000. Add a visible four-layer exam atlas (family derived from ids; no schema fourth level — B-001). Show designed vs live counts. Ingest a 423,500 factory cap on this VM so the UI has real numbers. Do not add auth, waitlists, or fake users. Do not set verified=true. Log B-016.
+- Rationale: NORTH_STAR wins on values (single user, no monetization, no polish beyond clarity). Newest prompt wins on scope: the map and the scale must be screenshotable. A 4.2M ingest is optional; a sit-able 436k live bank plus designed-capacity copy is enough to photograph the ambition honestly.
+- Rejected: Generating mockup images instead of the live app; raising factory to 10,000× without ingesting; a fourth taxonomy level in SQLite without human B-001; a SaaS landing page.
+
 
 
 

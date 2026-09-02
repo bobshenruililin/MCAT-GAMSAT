@@ -1,5 +1,5 @@
 import { existsSync } from "node:fs";
-import { count, eq, like } from "drizzle-orm";
+import { count } from "drizzle-orm";
 import Link from "next/link";
 import { openDb } from "@/db/client";
 import { getDbPath } from "@/db/paths";
@@ -13,6 +13,8 @@ import {
   passages,
   sessions,
 } from "@/db/schema";
+import { getBankScale } from "@/engine/bankScale";
+import { BankHero } from "@/components/BankHero";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -35,8 +37,7 @@ function loadHealth() {
       error: "database file missing — run pnpm db:migrate && pnpm bootstrap",
       path: getDbPath(),
       tables: [] as { name: string; rows: number }[],
-      verified: 0,
-      patternItems: 0,
+      scale: null,
     };
   }
   try {
@@ -45,20 +46,16 @@ function loadHealth() {
       name,
       rows: db.select({ n: count() }).from(table).get()?.n ?? 0,
     }));
-    const verified =
-      db.select({ n: count() }).from(items).where(eq(items.verified, true)).get()?.n ?? 0;
-    const patternItems =
-      db.select({ n: count() }).from(items).where(like(items.skillTag, "PAT.%")).get()?.n ?? 0;
+    const scale = getBankScale(db);
     sqlite.close();
-    return { ok: true as const, error: null, path: getDbPath(), tables, verified, patternItems };
+    return { ok: true as const, error: null, path: getDbPath(), tables, scale };
   } catch (err) {
     return {
       ok: false as const,
       error: err instanceof Error ? err.message : String(err),
       path: getDbPath(),
       tables: [] as { name: string; rows: number }[],
-      verified: 0,
-      patternItems: 0,
+      scale: null,
     };
   }
 }
@@ -66,11 +63,13 @@ function loadHealth() {
 export default function HealthPage() {
   const health = loadHealth();
   const itemRows = health.tables.find((t) => t.name === "items")?.rows ?? 0;
+  const verified = health.scale?.verifiedTrue ?? 0;
+  const patternItems = health.scale?.patternItems ?? 0;
   return (
-    <main className="mx-auto max-w-xl p-8">
-      <h1 className="text-2xl font-semibold">MCAT-GAMSAT health</h1>
-      <p className="mt-2 text-sm text-zinc-600">{health.path}</p>
-      <p className="mt-4">
+    <main className="mx-auto max-w-3xl px-4 py-8">
+      <h1 className="font-serif text-3xl tracking-tight">Bank health</h1>
+      <p className="mt-2 font-mono text-xs text-zinc-500">{health.path}</p>
+      <p className="mt-3">
         DB:{" "}
         <span className={health.ok ? "font-medium text-green-700" : "font-medium text-red-700"}>
           {health.ok ? "connected" : "disconnected"}
@@ -82,16 +81,21 @@ export default function HealthPage() {
           Bank is empty. Run <span className="font-mono">pnpm bootstrap</span>.
         </p>
       ) : null}
+      {health.scale ? (
+        <div className="mt-6">
+          <BankHero scale={health.scale} />
+        </div>
+      ) : null}
       {health.ok ? (
-        <p className="mt-2 text-sm text-zinc-600">
+        <p className="mt-4 text-sm text-zinc-600">
           verified=true:{" "}
           <span className="font-mono" data-testid="verified-count">
-            {health.verified}
+            {verified}
           </span>
           {" · "}
           PAT.* items:{" "}
           <span className="font-mono" data-testid="pattern-count">
-            {health.patternItems}
+            {patternItems}
           </span>
         </p>
       ) : null}
@@ -107,7 +111,7 @@ export default function HealthPage() {
             {health.tables.map((row) => (
               <tr key={row.name} className="border-b border-zinc-200">
                 <td className="py-2 pr-4 font-mono">{row.name}</td>
-                <td className="py-2">{row.rows}</td>
+                <td className="py-2 tabular-nums">{row.rows}</td>
               </tr>
             ))}
           </tbody>
@@ -116,6 +120,10 @@ export default function HealthPage() {
       <p className="mt-6 text-sm">
         <Link href="/" className="underline">
           Today
+        </Link>
+        {" · "}
+        <Link href="/atlas" className="underline">
+          Atlas
         </Link>
       </p>
     </main>

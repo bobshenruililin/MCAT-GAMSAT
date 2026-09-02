@@ -47,7 +47,8 @@ The score-max factory emits 4,235,000 additional ingest-valid items (code-checke
 Khan Academy often offers hints before the student commits an answer. NORTH_STAR requires confidence 1–5 before reveal; a hint is rereading and would leak the solution path. v1 refuses in-item hints, energy points, avatars, video-as-study, and classrooms. Human: keep this refusal, or name a hint format that cannot leak the key.
 
 ### B-015 — True CARS consecutive-passage sitting vs interleave
-A real CARS/S1 paper is consecutive questions on one passage. NORTH_STAR forbids two consecutive same-topic items. v1 structure tests match sitting *coverage and section timing* (round-robin families, cap ~20, summary uses that family's seconds budget) and still run the existing interleave pass. They are not cloned AAMC/ACER papers and not same-topic bursts. Human: keep interleave on structure tests, or name a passage-locked sitting that still protects against rereading.
+### B-016 — YC-demo screenshots vs NORTH_STAR non-goals
+Newest prompt asked for Y Combinator-grade screenshots/demos and ambitious question/knowledge targets. NORTH_STAR forbids other users, auth, cloud, monetization, and polish beyond clarity. v1 keeps the product single-user and local. The demo surfaces are Today/Atlas/Health showing designed capacity (4.235M factory + 120k patterns + 847 hand), a virtual four-layer exam map (family derived from ids; schema still three levels — B-001), and live SQLite counts. No waitlist, no fake users, never `verified=true`. Human: keep this split, or AMEND NORTH STAR if the product should become a company pitch.
 
 
 
