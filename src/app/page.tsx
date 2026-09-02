@@ -147,7 +147,8 @@ export default function TodayPage() {
           {emptyBank ? (
             <p className="mt-3 text-sm text-zinc-600">
               Item bank is empty. Run <span className="font-mono">pnpm bootstrap</span>{" "}
-              (taxonomy + real batches, no PLACEHOLDER items). Cap factory volume with{" "}
+              (taxonomy + real batches, no PLACEHOLDER items). Default factory is 500×
+              and large; cap with{" "}
               <span className="font-mono">FACTORY_TARGET=0</span> if the SQLite file would
               be too large.
             </p>

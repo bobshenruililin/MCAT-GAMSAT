@@ -21,9 +21,9 @@ function serialize(bank: ReturnType<typeof generateBank>): string {
 }
 
 describe("score-max factory", () => {
-  it("targets 100× the hand bank, allocated by exam_weight with a floor", () => {
+  it("targets 500× the hand bank, allocated by exam_weight with a floor", () => {
     expect(HAND_BANK * TARGET_MULTIPLIER).toBe(FACTORY_TARGET);
-    expect(FACTORY_TARGET).toBe(84700);
+    expect(FACTORY_TARGET).toBe(423_500);
     const topics = loadWeightedTopics();
     const alloc = allocateByWeight(topics);
     expect(allocationSum(alloc)).toBe(FACTORY_TARGET);
@@ -58,7 +58,7 @@ describe("score-max factory", () => {
     }
   });
 
-  it("emits exactly 100× questions for the full factory target", () => {
+  it("emits exactly 500× questions for the full factory target", () => {
     const bank = generateBank(FACTORY_TARGET);
     expect(bankStats(bank).questions).toBe(FACTORY_TARGET);
     const keys = [

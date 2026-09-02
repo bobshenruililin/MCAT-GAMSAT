@@ -40,4 +40,12 @@ describe("pattern generate", () => {
       expect(row.skillTag?.startsWith("PAT.")).toBe(true);
     }
   });
+
+  it("keeps unique stems at the 5× pattern target", () => {
+    const items = generatePatternBank();
+    expect(items).toHaveLength(12_000);
+    expect(new Set(items.map((it) => it.stem)).size).toBe(12_000);
+    const stats = patternBankStats(items);
+    expect(stats.patterns).toBe(PATTERNS.length);
+  });
 });
