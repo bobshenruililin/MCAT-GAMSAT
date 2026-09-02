@@ -11,10 +11,13 @@ SCOREBOARD.md (also at `/scoreboard`), never in features shipped.
 pnpm install
 pnpm db:migrate
 pnpm bootstrap
-pnpm dev
+pnpm sit
 ```
 
-Open **http://localhost:3000**. Next 16 also allows `http://127.0.0.1:3000`.
+Open **http://localhost:3000** in Safari or Chrome (not Cursor). Next 16 also
+allows `http://127.0.0.1:3000`. `pnpm sit` is `build` then `start` — use
+`pnpm dev` only while editing. An M3 Pro running this locally is the study
+machine; Cursor Cloud is not.
 
 `pnpm bootstrap` loads taxonomy, the hand-authored batches, the 5000× factory bank
 (4,235,000 extra items), and 120,000 past-paper pattern drills. That SQLite file is
@@ -67,12 +70,16 @@ git clone https://github.com/bobshenruililin/MCAT-GAMSAT.git
 cd MCAT-GAMSAT
 pnpm install
 pnpm bootstrap
-pnpm dev
+pnpm sit
 ```
 
 Leave that terminal running. In **Safari or Chrome** (any window, not the
 Cursor Simple Browser) open **http://localhost:3000** and hit Continue.
 Closing Cursor does not stop the site unless you also stop that terminal.
+
+On an M3 Pro this local process is the fast path. `pnpm sit` skips Next dev
+compilation. Do not study inside Cursor Cloud — that VM is slower than the
+laptop. github.io is the door; the quiz is local SQLite.
 
 ## Invariants the UI must keep
 

@@ -1,7 +1,7 @@
 import { asc, eq } from "drizzle-orm";
 import type { AppDb } from "@/db/client";
-import { attempts, concepts, items, masteryPriors } from "@/db/schema";
-import { getRetrievability } from "./reviewEngine";
+import { attempts, concepts, items, masteryPriors, fsrsState } from "@/db/schema";
+import { retrievabilityFromRow } from "./reviewEngine";
 
 const ALPHA = 0.3;
 const UNSEEN = 0.3;
@@ -16,49 +16,19 @@ export function ewmaCorrectness(values: number[]): number {
   return c;
 }
 
-function topicMastery(
-  db: AppDb,
-  conceptId: string,
-  now: Date,
+function topicMasteryFrom(
+  correctness: number[],
+  retrievabilities: number[],
+  prior: number | undefined,
 ): number {
-  const itemRows = db
-    .select({ id: items.id })
-    .from(items)
-    .where(eq(items.conceptId, conceptId))
-    .all();
-  const itemIds = new Set(itemRows.map((r) => r.id));
-
-  const attemptRows = db
-    .select({
-      itemId: attempts.itemId,
-      correct: attempts.correct,
-      createdAt: attempts.createdAt,
-    })
-    .from(attempts)
-    .orderBy(asc(attempts.createdAt))
-    .all()
-    .filter((a) => itemIds.has(a.itemId));
-
-  const correctness = attemptRows.map((a) => (a.correct ? 1 : 0));
   const C = ewmaCorrectness(correctness);
-
-  const retrievabilities: number[] = [];
-  for (const item of itemRows) {
-    const r = getRetrievability(db, item.id, now);
-    if (r !== null) retrievabilities.push(r);
-  }
   const R =
     retrievabilities.length === 0
       ? UNSEEN
       : retrievabilities.reduce((s, n) => s + n, 0) / retrievabilities.length;
 
-  if (attemptRows.length === 0 && retrievabilities.length === 0) {
-    const prior = db
-      .select({ value: masteryPriors.value })
-      .from(masteryPriors)
-      .where(eq(masteryPriors.conceptId, conceptId))
-      .get();
-    return prior?.value ?? UNSEEN;
+  if (correctness.length === 0 && retrievabilities.length === 0) {
+    return prior ?? UNSEEN;
   }
   return 0.6 * C + 0.4 * R;
 }
@@ -111,11 +81,58 @@ export function masteryByNode(db: AppDb, now: Date): MasteryMap {
     childrenByParent.set(row.parentId, list);
   }
 
+  const correctnessByTopic = new Map<string, number[]>();
+  const attemptRows = db
+    .select({
+      conceptId: items.conceptId,
+      correct: attempts.correct,
+    })
+    .from(attempts)
+    .innerJoin(items, eq(attempts.itemId, items.id))
+    .orderBy(asc(attempts.createdAt))
+    .all();
+  for (const row of attemptRows) {
+    const list = correctnessByTopic.get(row.conceptId) ?? [];
+    list.push(row.correct ? 1 : 0);
+    correctnessByTopic.set(row.conceptId, list);
+  }
+
+  const retrievabilityByTopic = new Map<string, number[]>();
+  const fsrsRows = db
+    .select({
+      conceptId: items.conceptId,
+      stability: fsrsState.stability,
+      difficulty: fsrsState.difficulty,
+      dueAt: fsrsState.dueAt,
+      lastReviewAt: fsrsState.lastReviewAt,
+      reps: fsrsState.reps,
+      lapses: fsrsState.lapses,
+      state: fsrsState.state,
+      scheduledDays: fsrsState.scheduledDays,
+      learningSteps: fsrsState.learningSteps,
+    })
+    .from(fsrsState)
+    .innerJoin(items, eq(items.id, fsrsState.itemId))
+    .all();
+  for (const row of fsrsRows) {
+    const list = retrievabilityByTopic.get(row.conceptId) ?? [];
+    list.push(retrievabilityFromRow(row, now));
+    retrievabilityByTopic.set(row.conceptId, list);
+  }
+
+  const priorByTopic = new Map<string, number>();
+  for (const row of db.select().from(masteryPriors).all()) {
+    priorByTopic.set(row.conceptId, row.value);
+  }
+
   const topicScores: MasteryMap = {};
   for (const row of all) {
-    if (row.level === "topic") {
-      topicScores[row.id] = topicMastery(db, row.id, now);
-    }
+    if (row.level !== "topic") continue;
+    topicScores[row.id] = topicMasteryFrom(
+      correctnessByTopic.get(row.id) ?? [],
+      retrievabilityByTopic.get(row.id) ?? [],
+      priorByTopic.get(row.id),
+    );
   }
 
   const memo: MasteryMap = { ...topicScores };

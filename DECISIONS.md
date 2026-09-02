@@ -242,6 +242,11 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: github.io was 404 with no `index.html` in `/docs`. `gh` cannot flip Pages source. Newest prompt wins on scope (public door that actually loads). NORTH_STAR wins on values (no hosted quiz, no other users).
 - Rejected: Hosting Next+SQLite on Pages; waiting for a human Pages-source flip before shipping a site; putting the player on github.io.
 
+## 2026-09-02 — Sit on the Mac; batch mastery off the factory bank
+- Decision: Newest prompt: rendering is too slow; M3 Pro — run locally better? Yes. The study runtime is local Next + SQLite on the laptop (Safari/Chrome, `pnpm sit`). Cursor Cloud is an editor VM. Fix `masteryByNode` so it does not SELECT every factory item / FSRS row per topic on each home/Continue load. Unseen = item count − fsrs count.
+- Rationale: Home was ~20s on this VM against the 436k bank (per-item retrievability lookups). That taxes study hours even on an M3 Pro. Newest prompt wins on scope (make sitting fast locally). NORTH_STAR wins on values (no hosted player).
+- Rejected: Hosting the quiz on github.io; leaving the O(items) mastery loop because “M3 is fast”; telling the user to keep studying in Cursor Cloud.
+
 
 
 

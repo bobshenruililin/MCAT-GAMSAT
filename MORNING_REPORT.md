@@ -570,6 +570,27 @@ Three riskiest:
 
 SCORE IMPACT: The next study hour can start from a phone/laptop browser on the door, then a local `pnpm dev` — expected score still waits on sitting those hours.
 
+## Sit on the M3 Pro; home was scanning the factory bank (2026-09-02)
+
+Question: rendering is too slow; M3 Pro MacBook Pro — run locally better?
+
+Answer: Yes. Cursor Cloud is not the study machine. The quiz is local SQLite on the laptop, in Safari/Chrome. github.io is only the door. Also: lesson home called per-item FSRS lookups across the live bank (~436k), ~20s on this VM. Batched mastery/attempts/fsrs so Continue is ~0.2s here, faster on the M3.
+
+Shipped:
+- `masteryByNode` reads attempts + fsrs_state once, not once per topic/item.
+- Unseen count is item rows minus fsrs rows (no left join of 436k).
+- `pnpm sit` = production Next. README: Mac + Safari, not Cursor Cloud.
+- Tests 119.
+
+Failed: did not host the player on github.io (NORTH_STAR). BankHero COUNT on 436k is still ~160ms.
+
+Three riskiest:
+1. B-013/B-018 — a faster home is not a percentile.
+2. Local bootstrap on the Mac still needs disk for the SQLite file.
+3. `pnpm dev` first compile can still hitch; `pnpm sit` avoids that.
+
+SCORE IMPACT: The next study hour on the M3 Pro starts on Continue instead of waiting on a 436k mastery scan — expected score still waits on sitting those hours.
+
 
 
 

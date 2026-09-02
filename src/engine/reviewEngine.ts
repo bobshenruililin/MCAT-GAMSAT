@@ -122,6 +122,25 @@ export function getDueItems(db: AppDb, now: Date, limit: number): DueItem[] {
     .all();
 }
 
+export type FsrsRetrievabilityRow = {
+  stability: number;
+  difficulty: number;
+  dueAt: string;
+  lastReviewAt: string | null;
+  reps: number;
+  lapses: number;
+  state: FsrsCardState;
+  scheduledDays: number;
+  learningSteps: number;
+};
+
+export function retrievabilityFromRow(
+  row: FsrsRetrievabilityRow,
+  now: Date,
+): number {
+  return scheduler.get_retrievability(rowToCard(row), now, false);
+}
+
 /** Retrievability from ts-fsrs. null if the item has no fsrs_state row. */
 export function getRetrievability(
   db: AppDb,
@@ -130,6 +149,5 @@ export function getRetrievability(
 ): number | null {
   const row = db.select().from(fsrsState).where(eq(fsrsState.itemId, itemId)).get();
   if (!row) return null;
-  const card = rowToCard(row);
-  return scheduler.get_retrievability(card, now, false);
+  return retrievabilityFromRow(row, now);
 }

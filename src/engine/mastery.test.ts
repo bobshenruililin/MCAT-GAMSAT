@@ -58,4 +58,49 @@ describe("mastery", () => {
     expect(after["MCAT.FC1.1A"]).toBeLessThan(after["MCAT.FC1.1A.t1"]);
     close();
   });
+
+  it("does not scan a large unseen factory bank to score a topic", () => {
+    const { db, close } = tempMigratedDb();
+    insertTopicTree(db, ["MCAT.FC1.1A.t1", "MCAT.FC1.1A.t2"], 0.05);
+    for (let i = 0; i < 80; i++) {
+      insertDiscrete(db, `bulk-${i}`, "MCAT.FC1.1A.t1");
+    }
+    insertDiscrete(db, "b", "MCAT.FC1.1A.t2");
+    const now = new Date("2026-06-01T00:00:00.000Z");
+    const scores = masteryByNode(db, now);
+    expect(scores["MCAT.FC1.1A.t1"]).toBeCloseTo(0.3, 5);
+    expect(scores["MCAT.FC1.1A.t2"]).toBeCloseTo(0.3, 5);
+
+    db.insert(sessions)
+      .values({
+        id: "s1",
+        kind: "daily",
+        startedAt: now.toISOString(),
+        endedAt: null,
+        config: {},
+      })
+      .run();
+    schedule(db, "b", Rating.Easy, now);
+    db.insert(attempts)
+      .values({
+        id: "att-1",
+        itemId: "b",
+        sessionId: "s1",
+        answeredKey: "A",
+        correct: true,
+        confidence: 5,
+        seconds: 5,
+        errorClass: null,
+        createdAt: now.toISOString(),
+      })
+      .run();
+
+    const afterNow = new Date("2026-06-02T00:00:00.000Z");
+    const after = masteryByNode(db, afterNow);
+    const C = ewmaCorrectness([1]);
+    const R = getRetrievability(db, "b", afterNow);
+    expect(after["MCAT.FC1.1A.t1"]).toBeCloseTo(0.3, 5);
+    expect(after["MCAT.FC1.1A.t2"]).toBeCloseTo(0.6 * C + 0.4 * (R as number), 5);
+    close();
+  });
 });
