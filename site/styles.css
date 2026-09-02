@@ -64,6 +64,8 @@ h1.stem {
   font-weight: 800;
   letter-spacing: 0;
   line-height: 1.45;
+  width: auto;
+  height: auto;
 }
 
 .lede {
@@ -196,7 +198,7 @@ h1.stem {
   margin: 0.35rem 0 0;
 }
 
-.stem {
+.orb-stem {
   width: 4px;
   height: 1.15rem;
   background: var(--sage-soft);

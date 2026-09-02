@@ -211,8 +211,8 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
       const attempted = row?.attempted.size ?? 0;
       const fill = topics === 0 ? 0 : Math.round((100 * attempted) / topics);
       const current = open && sit?.track === family;
-      return `
-        ${i > 0 ? `<div class="stem" aria-hidden="true"></div>` : ""}
+          return `
+        ${i > 0 ? `<div class="orb-stem" aria-hidden="true"></div>` : ""}
         <button
           type="button"
           class="orb-btn ${current ? "now" : ""}"
