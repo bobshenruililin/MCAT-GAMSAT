@@ -197,6 +197,11 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Newest prompt was merge all PRs. The branches were already a single stack (1 → 63 commits). A fast-forward preserves every commit SHA so GitHub marks each PR MERGED without conflict resolution or squash rewriting.
 - Rejected: Merging each PR as a separate merge commit; squashing the stack (would orphan earlier PR SHAs); closing older PRs without landing their commits.
 
+## 2026-09-02 — 5× generated bank, not a second hand-authored set
+- Decision: `TARGET_MULTIPLIER` 100 → 500 (`FACTORY_TARGET` 423,500). `FLOOR_PER_TOPIC` 40 → 200. `PATTERN_TARGET` 2,400 → 12,000. Allocation still follows `exam_weight`. Software still never sets `verified=true`. Caps remain `FACTORY_TARGET` / `PATTERN_TARGET`.
+- Rationale: Newest prompt: finished the current questions; double or 5×. 5× is the volume that keeps retrieval going. Engine and UI unchanged. Uniqueness still comes from a run/instance index in the stem.
+- Rejected: Doubling only (narrower than the asked 5×); cloning the 847 hand items; auto-verify; a new generator architecture.
+
 
 
 

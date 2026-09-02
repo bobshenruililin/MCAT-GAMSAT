@@ -68,13 +68,34 @@ describe("score-max factory", () => {
       ),
     ];
     expect(new Set(keys).size).toBe(keys.length);
-    const result = validateIngestFile(serialize(bank), TAXONOMY_PATH);
-    expect(result.rejected).toEqual([]);
-    expect(
-      result.items.length +
-        result.passages.reduce((s, p) => s + p.questions.length, 0),
-    ).toBe(FACTORY_TARGET);
-  });
+
+    // One JSON.stringify of 423k items exceeds V8's max string length.
+    let validated = 0;
+    for (let i = 0; i < bank.items.length; i += 2000) {
+      const result = validateIngestFile(
+        JSON.stringify({ items: bank.items.slice(i, i + 2000).map(toIngestJson) }),
+        TAXONOMY_PATH,
+      );
+      expect(result.rejected).toEqual([]);
+      validated += result.items.length;
+    }
+    for (let i = 0; i < bank.passages.length; i += 250) {
+      const result = validateIngestFile(
+        JSON.stringify({
+          passages: bank.passages.slice(i, i + 250).map((p) => ({
+            concept_id: p.concept_id,
+            title: p.title,
+            body: p.body,
+            questions: p.questions.map(toIngestJson),
+          })),
+        }),
+        TAXONOMY_PATH,
+      );
+      expect(result.rejected).toEqual([]);
+      validated += result.passages.reduce((s, p) => s + p.questions.length, 0);
+    }
+    expect(validated).toBe(FACTORY_TARGET);
+  }, 120_000);
 
   it("does not collide with the committed hand bank on a sampled factory slice", () => {
     const bank = generateBank(400);

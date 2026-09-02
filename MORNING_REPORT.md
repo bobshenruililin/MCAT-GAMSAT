@@ -382,5 +382,25 @@ Three riskiest:
 
 SCORE IMPACT: The sitting path is now what `main` is — expected score still waits on the human opening localhost and answering items.
 
+## 5× generated bank (2026-09-02)
+
+Question: the current questions are finished; double them, or 5×?
+
+Answer: 5× the generated volume. Hand-authored 847 stays. Factory default 84,700 → 423,500 (weight-allocated, floor 200/topic). Pattern drills 2,400 → 12,000. Same emitters; stems already unique by run index. Never `verified=true`.
+
+Shipped:
+- `TARGET_MULTIPLIER = 500`, `FLOOR_PER_TOPIC = 200`, `PATTERN_TARGET = 12_000`.
+- README / bootstrap / B-013 / Today empty-bank copy. Caps: `FACTORY_TARGET=0` or `84700`/`2400` for old size.
+- Full-target test: 423,500 unique, ingest-valid in chunks (one JSON blob exceeds V8 string length). Tests 108.
+
+Failed: did not ingest 423k into this VM's `app.db` (human bootstrap). Templates still recycle cover stories.
+
+Three riskiest:
+1. B-013 poison surface is now ~5× larger.
+2. Default `pnpm bootstrap` SQLite is large; machines that cannot take it must cap.
+3. Finishing the bank again still is not an official percentile.
+
+SCORE IMPACT: The next study hours can retrieve on a 5× larger unseen queue instead of looping a finished 100× set — score still waits on sitting those hours and catching factory errors before they stick.
+
 
 
