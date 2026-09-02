@@ -522,6 +522,21 @@ Three riskiest:
 
 SCORE IMPACT: The next study hour can retrieve on prompts that look like questions — score still waits on sitting those hours and on official papers.
 
+## Live cap re-ingested after v2 (2026-09-02)
+
+Question: prove the sit-able SQLite is the new stems, not pack/vignette leftovers.
+
+Answer: `pnpm db:reset && FACTORY_TARGET=423500 PATTERN_TARGET=12000 pnpm bootstrap` → 436,294 items, verified=false. 0 Timed Task / craft grain / vignette / tested grain / this bank / Seed-confession. Continue served Task A comments, then a hand S2 structure item; kinematics `In experiment 1` has four distinct speeds.
+
+Shipped: live fingerprints above; unique-choice guard in assembleItem.
+
+Failed: conceptual factory is still outline-matching, not AAMC labs.
+
+Three riskiest: B-013/B-018; outline-discrimination; demo attempts are not human study.
+
+SCORE IMPACT: The next study hour on localhost retrieves the new stems — expected score still waits on sitting and on official papers.
+
+
 
 
 
