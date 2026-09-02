@@ -1,9 +1,9 @@
 # STATE
 
-Phase: Public door should serve from github.io via `docs/`.
+Phase: Public door is live on github.io. Safe to study outside Cursor.
 Study days logged: 0 human. Demo sittings are not study. SCOREBOARD official table empty.
-Done: PRs #1–#16 on main. This branch copies the Pages door to `docs/` so the already-on legacy Pages source (`main` `/docs`) is not a 404.
-In flight: land this branch so github.io rebuilds; optional human switch of Pages source to GitHub Actions.
-Next: sit real hours; official papers; human QC slice (B-013, B-018). Open: B-001–B-018.
+Done: PRs #1–#17 on main. https://bobshenruililin.github.io/MCAT-GAMSAT/ serves `docs/index.html` (legacy Pages `main` `/docs`). Same door in `site/` for a later Actions switch.
+In flight: none. Optional: human switches Pages source to GitHub Actions (B-017).
+Next: sit real hours in Safari/Chrome on http://localhost:3000 after `pnpm dev`. Official papers. Human QC slice (B-013, B-018). Open: B-001–B-018.
 Counts: taxonomy 376 (290 weighted). Designed 4,355,847. Live 436,294 on this VM, verified=0. Hand 847. Tests 118.
-Risks: factory still unverified AI; conceptual factory still outline-discrimination; github.io can lag a minute after push; Actions Pages workflow still fails until source is GitHub Actions.
+Risks: factory still unverified AI; conceptual factory still outline-discrimination; github.io is not the player (needs local Node + SQLite).
