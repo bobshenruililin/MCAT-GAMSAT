@@ -39,6 +39,9 @@ describe("section budgets", () => {
     expect(sectionFamily("MCAT.CARS.FND.t1")).toBe("MCAT CARS");
     expect(sectionBudgetSeconds("MCAT.CARS.FND.t1")).toBe(102);
     expect(sectionBudgetSeconds("MCAT.FC1.1A.t1")).toBe(95);
+    expect(sectionFamily("MCAT.FC1")).toBe("MCAT B/B");
+    expect(sectionFamily("MCAT.FC10")).toBe("MCAT P/S");
+    expect(sectionFamily("MCAT.FC10.10A.t1")).toBe("MCAT P/S");
     expect(sectionBudgetSeconds("GAMSAT.S3.phys.t26")).toBe(120);
     expect(sectionFamily("GAMSAT.S1.understand.t1")).toBe("GAMSAT S1");
     expect(sectionBudgetSeconds("GAMSAT.S1.understand.t1")).toBe(97);

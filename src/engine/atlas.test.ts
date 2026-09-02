@@ -55,6 +55,9 @@ describe("exam atlas", () => {
     expect(bb?.sectionCount).toBeGreaterThanOrEqual(1);
     expect(bb?.categoryCount).toBeGreaterThanOrEqual(1);
     expect(bb?.topicCount).toBeGreaterThan(10);
+    expect(bb?.sections.some((s) => s.id === "MCAT.FC10")).toBe(false);
+    const ps = atlas.families.find((f) => f.family === "MCAT P/S");
+    expect(ps?.sections.some((s) => s.id === "MCAT.FC10")).toBe(true);
     expect(cars?.topicCount).toBe(14);
     expect(s3?.topicCount).toBe(84);
     expect(cars?.itemCount).toBeGreaterThanOrEqual(1);

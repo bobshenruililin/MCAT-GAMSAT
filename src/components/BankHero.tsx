@@ -37,7 +37,7 @@ export function BankHero({ scale }: { scale: BankScale }) {
           <dt className="text-xs text-zinc-400">Past-paper moves</dt>
           <dd className="mt-1 text-2xl font-semibold tabular-nums">{formatCount(AMBITION.patternMoves)}</dd>
           <p className="mt-1 text-xs text-zinc-500">
-            {formatCount(scale.patternItems)} PAT.* items live
+            {formatCount(scale.designedPatterns)} drills at full bootstrap
           </p>
         </div>
         <div>

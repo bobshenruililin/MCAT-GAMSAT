@@ -93,10 +93,12 @@ export default function HealthPage() {
             {verified}
           </span>
           {" · "}
-          PAT.* items:{" "}
+          PAT.* skill tags:{" "}
           <span className="font-mono" data-testid="pattern-count">
             {patternItems}
           </span>
+          {" "}
+          (factory items inherit a default tag; dedicated drills are the 92-pattern files)
         </p>
       ) : null}
       {health.tables.length > 0 ? (

@@ -39,17 +39,13 @@ export function matchesTrack(conceptId: string, track?: SectionFamily): boolean 
 
 export function sectionFamily(conceptId: string): SectionFamily {
   if (conceptId.startsWith("MCAT.CARS")) return "MCAT CARS";
-  if (
-    conceptId.startsWith("MCAT.FC1") ||
-    conceptId.startsWith("MCAT.FC2") ||
-    conceptId.startsWith("MCAT.FC3")
-  ) {
-    return "MCAT B/B";
+  const fc = /^MCAT\.FC(\d+)(?:\.|$)/.exec(conceptId);
+  if (fc) {
+    const n = Number(fc[1]);
+    if (n === 1 || n === 2 || n === 3) return "MCAT B/B";
+    if (n === 4 || n === 5) return "MCAT C/P";
+    return "MCAT P/S";
   }
-  if (conceptId.startsWith("MCAT.FC4") || conceptId.startsWith("MCAT.FC5")) {
-    return "MCAT C/P";
-  }
-  if (conceptId.startsWith("MCAT.FC")) return "MCAT P/S";
   if (conceptId.startsWith("GAMSAT.S1")) return "GAMSAT S1";
   if (conceptId.startsWith("GAMSAT.S2")) return "GAMSAT S2";
   if (conceptId.startsWith("GAMSAT")) return "GAMSAT S3";

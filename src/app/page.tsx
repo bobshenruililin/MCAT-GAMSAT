@@ -93,7 +93,7 @@ export default function TodayPage() {
             </div>
             <div className="rounded-lg border border-zinc-200 bg-white p-4">
               <dt className="text-xs text-zinc-500">New items available</dt>
-              <dd className="mt-1 text-2xl font-semibold">{stats.newAvailable}</dd>
+              <dd className="mt-1 text-2xl font-semibold tabular-nums">{stats.newAvailable.toLocaleString("en-US")}</dd>
             </div>
             <div className="rounded-lg border border-zinc-200 bg-white p-4">
               <dt className="text-xs text-zinc-500">Streak</dt>
