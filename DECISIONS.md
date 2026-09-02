@@ -262,6 +262,11 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: A first clone has no tables. Asking the human to remember migrate costs a study hour. Newest prompt wins on scope.
 - Rejected: Telling them to ignore the error and study an empty bank; requiring a second clone.
 
+## 2026-09-02 — Website-only player on GitHub Pages
+- Decision: Newest prompt: too slow/static; website-only product; buttons must work; SpaceXAI-level. github.io is the study surface: Continue and family orbs start a retrieve in the tab. Bank is the hand-authored 847 as `docs/bank.json`. Scheduler is ts-fsrs. Ledger is localStorage on this device. No auth, no other users, never verified=true. Confidence 1–5 before reveal; miss needs an error class. Factory 4.3M remains optional local SQLite (it made sitting slow). Log B-019. Previous decision that Pages cannot run the player is superseded on scope.
+- Rationale: Clone/bootstrap/Rosetta Node blocked the study hour. Newest prompt wins on scope (the URL is the product). NORTH_STAR wins on values (single user, retrieval invariants, no monetization). Feature litmus: a click that starts a retrieve raises expected score per hour; a brochure does not.
+- Rejected: Keeping a static door that tells them to `pnpm sit`; hosting Next+SQLite in the cloud; shipping 4.3M JSON to Pages; adding accounts.
+
 
 
 

@@ -19,7 +19,8 @@
     "demo:seed": "tsx src/db/demoSeed.ts",
     "scoreboard:sync": "tsx src/db/scoreboardSync.ts",
     "factory:emit": "tsx src/factory/emit.ts",
-    "patterns:emit": "tsx src/patterns/emit.ts"
+    "patterns:emit": "tsx src/patterns/emit.ts",
+    "web:build": "tsx scripts/build-web.ts"
   },
   "dependencies": {
     "better-sqlite3": "^12.4.1",
@@ -39,6 +40,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "drizzle-kit": "^0.31.4",
+    "esbuild": "^0.28.2",
     "eslint": "^9",
     "eslint-config-next": "16.3.4",
     "jsdom": "^30.0.1",

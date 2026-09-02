@@ -1,9 +1,9 @@
 # STATE
 
-Phase: Mac has pnpm. Bootstrap failed (no concepts table). Sit may still be compiling.
-Study days logged: 0 human. Demo sittings are not study. SCOREBOARD official table empty.
-Done: PRs #1–#19 on main. Mac-setup printed pnpm 10.33.3. This branch: `pnpm bootstrap` runs migrate first.
-In flight: land bootstrap-migrate; human Ctrl+C sit if running, migrate, capped bootstrap, sit again.
-Next: Safari http://localhost:3000 Continue. Later: native ARM Node (Rosetta x86 Node is why Next warned). Official papers. QC (B-013, B-018). Open: B-001–B-018.
-Counts: taxonomy 376 (290 weighted). Designed 4,355,847. Live 436,294 on this VM, verified=0. Hand 847. Tests 120.
-Risks: factory still unverified AI; capped bootstrap is large/slow; x86 Node on arm64 Mac.
+Phase: Website-only player on github.io. Continue and family orbs start sittings in the tab.
+Study days logged: 0 human. Browser ledger is study if the human sits it; demo SQLite is not.
+Done: PRs #1–#19 on main. This branch: `docs/` is the product (847 hand items, localStorage, ts-fsrs), not a brochure.
+In flight: land on main so Pages rebuilds; prove Continue on the live URL.
+Next: human sits https://bobshenruililin.github.io/MCAT-GAMSAT/ in Safari. Official papers. QC (B-013, B-018, B-019). Open: B-001–B-019.
+Counts: taxonomy 376 (290 weighted). Designed 4,355,847. Website bank 847 hand. Live SQLite 436,294 on this VM, verified=0. Tests 126.
+Risks: factory still unverified AI; website is hand-only (B-019); localStorage is this-browser not SCOREBOARD.md.

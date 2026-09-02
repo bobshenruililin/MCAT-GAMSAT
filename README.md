@@ -61,17 +61,22 @@ a percentile.
 | `/scoreboard` | Official table from SCOREBOARD.md + live study log |
 | `/health` | SQLite path and row counts |
 
-## Website (outside Cursor)
+## Website (the product)
 
-Public door: **https://bobshenruililin.github.io/MCAT-GAMSAT/**
+**https://bobshenruililin.github.io/MCAT-GAMSAT/**
 
-That URL is a normal webpage. Open it in Safari or Chrome. You do not need
-Cursor to read it. It cannot run the quiz (GitHub Pages has no Node + SQLite).
+Open in Safari or Chrome. Click **Continue** or a family orb. That is the
+sitting. Ledger is `localStorage` on this device. No clone, no Node, no Cursor.
 
-The repo Pages setting currently publishes **`main` `/docs`**. The same door
-lives in `docs/index.html` (with `.nojekyll`) so that setting serves a site.
-`site/` stays the GitHub Actions artifact if you later switch Pages source to
-**GitHub Actions**.
+The public site ships the hand-authored bank (847 items). Factory millions stay
+optional local SQLite — they made Continue slow. Software still never sets
+`verified=true`.
+
+Rebuild the site: `pnpm web:build`. GitHub Pages publishes `main` `/docs`.
+
+## Optional local factory (not required to sit)
+
+The Next.js app on localhost still exists for the 4.3M factory bank.
 
 ## Sit on your computer (not in Cursor)
 

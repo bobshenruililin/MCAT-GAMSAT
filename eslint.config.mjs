@@ -14,6 +14,8 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     "drizzle/**",
     "coverage/**",
+    "docs/app.js",
+    "site/app.js",
   ]),
 ]);
 

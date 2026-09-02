@@ -642,6 +642,26 @@ Three riskiest:
 
 SCORE IMPACT: The next study hour is blocked only on migrate+bootstrap finishing — expected score still waits on Continue after that.
 
+## Website-only product; buttons must sit (2026-09-02)
+
+Question: too slow and static; website-only; clicking buttons does not work; SpaceXAI-level site.
+
+Answer: github.io was a brochure (orbs were not buttons; sitting needed Node). Newest prompt wins on scope: the public URL is the player. NORTH_STAR wins on values: no accounts, no other users, confidence before reveal, never verified=true. Hand 847 in the tab. Factory 4.3M stays optional local SQLite (B-019).
+
+Shipped:
+- `docs/` SPA: Continue + family orbs start sittings; player gates; ts-fsrs; localStorage.
+- `pnpm web:build` → `bank.json` (847) + `app.js`.
+- Tests 126, including jsdom Continue-without-confidence.
+
+Failed: live github.io proof waits on landing this branch (Pages is `main` `/docs`).
+
+Three riskiest:
+1. B-019 — website is not the 4.3M factory.
+2. B-013/B-018 — hand items are still not official percentiles.
+3. localStorage is not SCOREBOARD.md.
+
+SCORE IMPACT: The next study hour can start on github.io without bootstrap — expected score still waits on sitting those hours.
+
 
 
 
