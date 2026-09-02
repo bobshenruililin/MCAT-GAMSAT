@@ -207,6 +207,11 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: The previous 500× queue can be finished again; 10× is the larger of the two asked multipliers. Holding 4.2M items in RAM already failed at 423k via V8 max string length. Wiping study history is the local ledger, not the repo.
 - Rejected: 5× only; wiping git history; generating the full 4.2M inside Vitest; auto-verify; a new generator architecture.
 
+## 2026-09-02 — Land 5× and 10× by fast-forwarding main
+- Decision: Fast-forward `main` to `cursor/bank-10x-3760` (`5dbea3a`). PR #11 (5×) is an ancestor, so one push marks #11 and #12 MERGED.
+- Rationale: Newest prompt: merge when done. Same method as PRs #1–#10.
+- Rejected: Squashing (would orphan PR SHAs); merging #11 and #12 as separate merge commits.
+
 
 
 

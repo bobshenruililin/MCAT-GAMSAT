@@ -423,5 +423,18 @@ Three riskiest:
 
 SCORE IMPACT: The next study hours start from a clean ledger on a 10× larger unseen queue — score still waits on sitting those hours and catching factory errors before they stick.
 
+## Merge 5× + 10× onto main (2026-09-02)
+
+Stacked PRs #11 (5×) and #12 (10×) were one ancestry. Fast-forwarded `main` `deb3283..5dbea3a`. GitHub marked both MERGED. Local study DB reset this session (attempts/sessions/FSRS 0). Tests 109.
+
+Failed: did not ingest 4.2M items on this VM.
+
+Three riskiest:
+1. B-013 — 4.2M factory + 120k pattern items are still unverified AI.
+2. Default bootstrap SQLite is huge; cap or the disk fills.
+3. Human still has not sat — volume is not a percentile.
+
+SCORE IMPACT: The sitting path on `main` now has a 10× unseen queue and a clean local ledger — expected score still waits on the human opening localhost after bootstrap and answering items.
+
 
 
