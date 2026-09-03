@@ -63,6 +63,9 @@ Newest prompt: website-only, buttons work, sitting must be fast. GitHub Pages ca
 ### B-018 — Factory items were meta-questions, not exam questions
 Fresh look at the live bank: conceptual stems asked “which grain is tagged in this bank”; S2 said “Timed Task A pack 0 … craft grain”; CARS passages confessed “Seed N only changes the proper names”; P/S said “vignette N”; quant appended “(run N)”; experiment Q4 cited NORTH STAR. v1 swapped those labels. v2 (this session) rewrote the generators so the stem is an exam prompt: science stems present observations without the topic title; P/S stems ask which construct is illustrated; S2 is a 30-minute Task with comments; CARS cites a titled essay; quant leads with “In experiment N”; pattern identify is a mini-item with real options. Deleted `26-scoremax-preview.json` (old pack/vignette leftovers). Hand-authored 847 unchanged. Still unverified AI (B-013). Human: QC a slice; volume is still not an official percentile.
 
+### B-020 — Peer ideas from the 2026 OSS/commercial landscape
+Search (2026-09-03) is in `docs/SIMILAR_PROJECTS.md`. Closest OSS cousins: OpenMCAT (local MCAT player, SIRS, mistake types, CARS deleted), ReadyMCAT (Anki fork, teach-on-miss, points-at-stake = exam_weight × weakness), Open-MCAT (1,274 original items, no FSRS yet), gamsat-trainer (56 GAMSAT items, SM2). The stack that is actually used is still AAMC/ACER + Anki/AnKing + UWorld/Jack Westin. Shared remaining holes: unverified AI banks, CARS/S1, S2 marking, fake percentiles. Tempting builds that fail the feature litmus unless the human says otherwise: teach-on-miss ladders, Anki export, MKit-style AAMC spoiler-safe re-sit, more factory volume. Human: ignore, or name one peer idea that raises score per hour this month.
+
 
 
 

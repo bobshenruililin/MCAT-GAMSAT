@@ -662,6 +662,23 @@ Three riskiest:
 
 SCORE IMPACT: The next study hour can start on github.io without bootstrap — expected score still waits on sitting those hours.
 
+## Similar projects on public GitHub (2026-09-03)
+
+Question: search extensively for similar public repos that are maintained and doing well; analyze remaining shortcomings.
+
+Answer: No widely used OSS product does MCAT+GAMSAT retrieval with FSRS, confidence, and honest official scores. The stack that is doing well is Anki/FSRS (30k + 11.7k AnkiDroid), AnKing MCAT on AnkiHub, AAMC, UWorld, Jack Westin, and ACER + GradReady/Fraser’s for GAMSAT. Direct OSS MCAT apps are 2026 one-author projects: OpenMCAT (active Aug 2026, 1 star, CARS removed, GPT banks), ReadyMCAT (Anki fork, 1,075 cited items, teach-on-miss, 0 stars), Open-MCAT (1,274 original items, no FSRS). GAMSAT OSS is empty except a 56-item SM2 trainer.
+
+Shipped: `docs/SIMILAR_PROJECTS.md`; B-020. No product code.
+
+Failed: GitHub code search rate-limited after the repo sweep; commercial products have no public source to inspect.
+
+Three riskiest:
+1. Treating OpenMCAT/ReadyMCAT volume or AI generation as a model — they share B-013.
+2. Inventing scaled scores like collingeorge/MCAT — NORTH_STAR forbids it.
+3. Research displacing the empty SCOREBOARD.
+
+SCORE IMPACT: This session does not raise score per study hour; it stops building a peer’s features and leaves the next hour for sitting github.io / official papers.
+
 
 
 
