@@ -713,6 +713,23 @@ Three riskiest:
 
 SCORE IMPACT: Choosing a sitting surface is now a real screenshot choice, not a mockup; score still waits on sitting.
 
+## Extra High sign-off (2026-09-04)
+
+Question: independent Grok 4.6 Extra High must agree on total comprehensive coverage and 5 stars.
+
+Answer: Coverage auditor: COVERAGE PASS, AGREE_COMPREHENSIVE yes, 5466 items, 290/290 ≥8, verified=true 0. Product auditor: STARS 5/5, AGREE_FIVE yes (live Chrome PNGs, distinct ladders, honest Pages, SVG graphs, rotated keys, NOTICE.md).
+
+Shipped: PR #23 with live `docs/mode-previews/`.
+
+Failed: SCOREBOARD still 0 study days (not a coverage/5-star fail).
+
+Three riskiest:
+1. Unverified peer/AI volume after merge to github.io.
+2. CARS/S1/S2 thinner than P/S (honest hole, not a fail).
+3. License mix — personal study only.
+
+SCORE IMPACT: Coverage of every weighted topic is sit-able; expected official score still waits on sitting and papers.
+
 
 
 
