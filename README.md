@@ -72,7 +72,10 @@ The public site ships the merged sit-able bank (5,466 items: hand + peer
 originals + depth fill so every weighted topic has ≥8). Factory millions stay
 optional local SQLite — they made Continue slow. Software still never sets
 `verified=true`. Choose a home layout at `#/modes` (orbs, catalog, formats,
-ladders). Coverage graphs live at `#/graphs`.
+ladders). Coverage graphs live at `#/graphs`. The four mode
+thumbnails on `#/modes` are live Chrome captures of this player
+(`docs/mode-previews/`), not mockups. Recapture with
+`python3 -m http.server 4173` in `docs/` then `pnpm web:shots`.
 
 This branch’s player is what `pnpm web:build` writes to `docs/`. GitHub Pages
 publishes `main` `/docs` after merge. Until then, sit this folder locally

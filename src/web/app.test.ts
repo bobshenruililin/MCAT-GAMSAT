@@ -64,6 +64,7 @@ function click(testId: string): void {
 describe("website player", () => {
   afterEach(() => {
     window.location.hash = "";
+    window.history.replaceState({}, "", "/");
     document.body.innerHTML = "";
   });
 
@@ -116,6 +117,29 @@ describe("website player", () => {
     click("mode-ladders");
     expect(root.querySelector("[data-testid=ladders-board]")).toBeTruthy();
     expect(root.querySelector("[data-testid=ladder-sirs]")).toBeTruthy();
+    mounted.destroy();
+  });
+
+  it("query mode=catalog opens the family table", () => {
+    const root = document.createElement("div");
+    document.body.appendChild(root);
+    window.location.hash = "";
+    window.history.replaceState({}, "", "/?mode=catalog");
+    const mounted = mountApp(root, { bank, storage: memoryStorage() });
+    expect(root.querySelector("[data-testid=family-catalog]")).toBeTruthy();
+    mounted.destroy();
+  });
+
+  it("query mode=ladders and view=graphs skip the hash", () => {
+    const root = document.createElement("div");
+    document.body.appendChild(root);
+    window.history.replaceState({}, "", "/?mode=ladders");
+    let mounted = mountApp(root, { bank, storage: memoryStorage() });
+    expect(root.querySelector("[data-testid=ladders-board]")).toBeTruthy();
+    mounted.destroy();
+    window.history.replaceState({}, "", "/?view=graphs");
+    mounted = mountApp(root, { bank, storage: memoryStorage() });
+    expect(root.querySelector("[data-testid=graph-family]")).toBeTruthy();
     mounted.destroy();
   });
 });

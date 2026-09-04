@@ -696,6 +696,23 @@ Three riskiest:
 
 SCORE IMPACT: The next study hour can retrieve across every weighted topic instead of a 2-item floor — expected score still waits on sitting and on official papers.
 
+## Live Chrome mode screenshots (2026-09-04)
+
+Question: Extra High refused 5 stars because `#/modes` PNGs were GenerateImage mockups (C2PA, invented copy).
+
+Answer: Replaced `docs/mode-previews/*.png` with headless Chrome captures of the running player (`?mode=` / `?view=`). Catalog matches live family counts. Ladders shows SIRS 297, teach-on-miss 1,237, and CARS–S3 orbs. Graphs are SVG bars. Recapture: `pnpm web:shots`.
+
+Shipped: live PNGs, `scripts/screenshot-modes.ts`, query-param routes for shots.
+
+Failed: Extra High re-review still required; SCOREBOARD still 0.
+
+Three riskiest:
+1. github.io stays 847 until this branch merges.
+2. Nested `#/modes` previews are PNGs, so they lag until `pnpm web:shots`.
+3. Unverified peer/AI volume on the sit-able bank.
+
+SCORE IMPACT: Choosing a sitting surface is now a real screenshot choice, not a mockup; score still waits on sitting.
+
 
 
 

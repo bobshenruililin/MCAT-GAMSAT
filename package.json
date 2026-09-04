@@ -21,7 +21,8 @@
     "factory:emit": "tsx src/factory/emit.ts",
     "peers:emit": "tsx src/peers/emit.ts",
     "patterns:emit": "tsx src/patterns/emit.ts",
-    "web:build": "tsx scripts/build-web.ts"
+    "web:build": "tsx scripts/build-web.ts",
+    "web:shots": "tsx scripts/screenshot-modes.ts"
   },
   "dependencies": {
     "better-sqlite3": "^12.4.1",

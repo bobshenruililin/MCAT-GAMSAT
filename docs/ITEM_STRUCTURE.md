@@ -38,6 +38,8 @@ Stored in `localStorage` key `exam-morning-mode-v1`:
 1. **Orbs** — family path (default).
 2. **Catalog** — table of families with item counts.
 3. **Formats** — Discrete / Passage / S2 tiles.
-4. **Ladders** — prefer `teach_on_miss` and SIRS-tagged items.
+4. **Ladders** — SIRS + teach-on-miss tiles plus family orbs. Prefer tagged items, then still interleave.
 
 Graphs live at `#/graphs` (code-drawn SVG bars: family, origin, depth, landscape).
+
+Live Chrome screenshots of each home (and the graphs page) live in `docs/mode-previews/`. Recapture: `pnpm web:shots`.

@@ -72,10 +72,18 @@ function routeFromHash(): "home" | "sit" | "done" | "graphs" | "modes" {
   if (h.startsWith("/done")) return "done";
   if (h.startsWith("/graphs")) return "graphs";
   if (h.startsWith("/modes")) return "modes";
+  const view = new URLSearchParams(window.location.search).get("view");
+  if (view === "graphs") return "graphs";
+  if (view === "modes") return "modes";
   return "home";
 }
 
 function readMode(storage: Storage): UiMode {
+  const q = new URLSearchParams(window.location.search).get("mode");
+  if (q === "catalog" || q === "formats" || q === "ladders" || q === "orbs") {
+    storage.setItem(MODE_KEY, q);
+    return q;
+  }
   const raw = storage.getItem(MODE_KEY);
   if (raw === "catalog" || raw === "formats" || raw === "ladders" || raw === "orbs") return raw;
   return "orbs";
@@ -223,10 +231,11 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
   }
 
   function navHtml(active: string): string {
+    const here = window.location.pathname;
     const links = [
-      ["#/", "Sit", "home"],
-      ["#/graphs", "Graphs", "graphs"],
-      ["#/modes", "Modes", "modes"],
+      [`${here}#/`, "Sit", "home"],
+      [`${here}#/graphs`, "Graphs", "graphs"],
+      [`${here}#/modes`, "Modes", "modes"],
     ];
     return `<nav class="nav" aria-label="Instrument">
       ${links
@@ -439,19 +448,19 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
         <p class="hint">The four layouts below are the same instrument. Tap a tile, then Sit.</p>
         <section class="previews" data-testid="mode-previews">
           <figure>
-            <img src="./mode-previews/mode-orbs.png" alt="Orbs home: Continue and a vertical CARS to S3 path" width="390" height="844" />
+            <img src="./mode-previews/mode-orbs.png" alt="Live Chrome capture of orbs home: Continue and CARS–S3 path" />
             <figcaption>Orbs</figcaption>
           </figure>
           <figure>
-            <img src="./mode-previews/mode-catalog.png" alt="Catalog home: family table with item counts" width="390" height="844" />
+            <img src="./mode-previews/mode-catalog.png" alt="Live Chrome capture of catalog home: family table with item counts" />
             <figcaption>Catalog</figcaption>
           </figure>
           <figure>
-            <img src="./mode-previews/mode-formats.png" alt="Formats home: Discrete, Passage, and S2 tiles" width="390" height="844" />
+            <img src="./mode-previews/mode-formats.png" alt="Live Chrome capture of formats home: Discrete, Passage, and S2 tiles" />
             <figcaption>Formats</figcaption>
           </figure>
           <figure>
-            <img src="./mode-previews/mode-ladders.png" alt="Ladders home: SIRS and teach-on-miss rungs plus family orbs" width="390" height="844" />
+            <img src="./mode-previews/mode-ladders.png" alt="Live Chrome capture of ladders home: SIRS, teach-on-miss, and family orbs" />
             <figcaption>Ladders</figcaption>
           </figure>
         </section>
