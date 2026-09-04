@@ -679,6 +679,24 @@ Three riskiest:
 
 SCORE IMPACT: This session does not raise score per study hour; it stops building a peer’s features and leaves the next hour for sitting github.io / official papers.
 
+## Largest sit-able bank + modes + graphs (2026-09-04)
+
+Question: gather all legally usable peer questions; largest bank; best structure; mode screenshots; graphs; independent Grok 4.6 Extra High must agree on comprehensive coverage and 5 stars.
+
+Answer: Converted four public original banks (Open-MCAT, OpenMCAT, ReadyMCAT, gamsat-trainer) plus depth fill. Website bank **5466** items; **290/290** weighted topics at ≥8. Structure stays SCHEMA; takeaway/SIRS/attribution folded in. Four home modes (orbs, catalog, formats, ladders) and `#/graphs` (family, origin, depth, landscape). Never verified=true. Not AAMC/ACER percentiles.
+
+Shipped: `src/peers/*`, `docs/ITEM_STRUCTURE.md`, `docs/CONTENT_SOURCES.md`, batches `30–33` + `40–41`, player graphs/modes, `docs/bank.json` 5466.
+
+Failed: independent Extra High review still required before calling the goal complete; SCOREBOARD still 0 study days.
+
+Three riskiest:
+1. Unverified peer/AI volume (B-013) is now on github.io, not only in SQLite.
+2. 8.2MB `bank.json` parse time on a phone.
+3. License mix (CC BY-NC, CC BY-SA, AGPL) — personal study only.
+
+SCORE IMPACT: The next study hour can retrieve across every weighted topic instead of a 2-item floor — expected score still waits on sitting and on official papers.
+
+
 
 
 

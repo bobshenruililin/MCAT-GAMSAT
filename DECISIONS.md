@@ -272,6 +272,12 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: NORTH_STAR: study hours beat feature velocity; official AAMC/ACER remain the only percentiles. The search shows no maintained dual-exam OSS product; the industry’s remaining holes (AI item poison, CARS/S1, S2, fake scores) are already this repo’s blockers. Building a peer’s UI would displace sitting.
 - Rejected: Forking Anki; adding a 118–132 estimator; generating more factory items to “match UWorld volume”; importing third-party qbank SQLite files.
 
+## 2026-09-04 — Largest sit-able bank; structure from peers; modes + graphs
+- Decision: Newest prompt: gather peer questions, largest sit-able bank, learn best structure, mode screenshots, graphs; do not stop until independent Grok 4.6 Extra High agrees on comprehensive coverage and 5 stars. Convert Open-MCAT / OpenMCAT / ReadyMCAT / gamsat-trainer through ingest schema into numbered batches; depth-fill every weighted topic to 8; ship 5466 on the website player. Keep SCHEMA (A–D, ≥40-word explanation, three distractor rationales, never verified=true). Fold takeaway + SIRS skill_tag + attribution into existing fields. Teach-on-miss is a chooser mode, not consecutive same-topic. HAND_BANK stays 847 for factory 5000× math. B-019 website-is-847 superseded on scope.
+- Rationale: Newest prompt wins on scope. NORTH_STAR wins on values (retrieval, confidence, interleave, no fake percentiles, no pirated AAMC/UWorld). Feature litmus: more tagged exam-style retrieves per hour on github.io.
+- Rejected: Shipping factory millions as JSON; fake 118–132 scores; `verified=true`; copying MileDown/AAMC/ACER/UWorld stems; forcing teach ladders that break interleave.
+
+
 
 
 

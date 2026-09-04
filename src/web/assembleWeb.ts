@@ -1,16 +1,46 @@
 import { assembleSession, interleaveItems } from "@/engine/sessionAssembler";
 import type { SectionFamily } from "@/engine/sectionBudget";
 import { isDue } from "./schedule";
-import type { Ledger, WebItem } from "./types";
+import type { Ledger, UiMode, WebItem } from "./types";
 import { WEB_SIT } from "./types";
+
+export type SitFilter = {
+  track?: SectionFamily;
+  mode?: UiMode;
+  format?: "discrete" | "passage" | "s2";
+};
+
+function tagged(item: WebItem): boolean {
+  const tag = item.skillTag ?? "";
+  return tag === "teach_on_miss" || tag.startsWith("SIRS");
+}
+
+export function filterPool(items: WebItem[], filter: SitFilter = {}): WebItem[] {
+  let pool = filter.track ? items.filter((it) => it.family === filter.track) : items;
+  if (filter.format === "discrete") {
+    pool = pool.filter((it) => it.type === "discrete" && !it.conceptId.startsWith("GAMSAT.S2"));
+  } else if (filter.format === "passage") {
+    pool = pool.filter((it) => it.type === "passage_question");
+  } else if (filter.format === "s2") {
+    pool = pool.filter((it) => it.conceptId.startsWith("GAMSAT.S2"));
+  }
+  if (filter.mode === "ladders") {
+    const prefer = pool.filter(tagged);
+    if (prefer.length >= WEB_SIT.newCap || (prefer.length > 0 && prefer.length >= pool.length / 2)) {
+      pool = prefer;
+    }
+  }
+  return pool;
+}
 
 export function sittingItemIds(
   items: WebItem[],
   ledger: Ledger,
   track: SectionFamily | undefined,
   now: Date,
+  filter: SitFilter = {},
 ): string[] {
-  const pool = track ? items.filter((it) => it.family === track) : items;
+  const pool = filterPool(items, { ...filter, track: filter.track ?? track });
   const due = [];
   const news = [];
 

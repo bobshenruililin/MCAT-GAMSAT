@@ -55,7 +55,8 @@ Newest prompt asked to publish a git website. NORTH_STAR forbids other users, au
 
 v2: the repo Pages setting is already on, but as legacy `main` + `/docs`, not GitHub Actions. The Actions workflow therefore fails (`configure-pages` needs Actions as the source). The same door is also in `docs/index.html` + `docs/.nojekyll` so the existing setting can serve a website. Human: keep `/docs`, or switch Settings → Pages → Source to GitHub Actions.
 
-v3: newest prompt asked for a website-only product because clone/bootstrap/localhost was too slow and the github.io orbs did not click. v3 ships the player on Pages (hand bank + localStorage + ts-fsrs). Still no accounts. Human: keep the public player, or revert to a door.
+v4: newest prompt asked for the largest legally usable question bank on the sit-able website, plus structure, mode screenshots, and graphs. v4 compiles peer originals + depth fill into `docs/bank.json` (5466). Factory 4.3M still stays off Pages. Human: keep this merged bank, or cap Pages at a named smaller set.
+
 
 ### B-019 — Website bank is the hand 847, not the 4.3M factory
 Newest prompt: website-only, buttons work, sitting must be fast. GitHub Pages cannot host 4.3M SQLite items. The public player loads `docs/bank.json` from the numbered hand batches. Factory volume remains the optional local engine. Human: keep the website on the hand bank, or name a static cap to compile in.

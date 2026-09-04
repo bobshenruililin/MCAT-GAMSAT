@@ -6,10 +6,11 @@ import {
   canSubmit,
 } from "@/engine/quizGate";
 import { COVERAGE_TRACKS, type SectionFamily } from "@/engine/sectionBudget";
-import { sittingItemIds, familyCounts } from "./assembleWeb";
+import { sittingItemIds, familyCounts, type SitFilter } from "./assembleWeb";
 import { loadLedger, saveLedger } from "./ledger";
 import { scheduleAttempt } from "./schedule";
-import type { OpenSitting, WebBank, WebItem } from "./types";
+import type { OpenSitting, UiMode, WebBank, WebItem } from "./types";
+import { MODE_KEY, UI_MODES } from "./types";
 
 const SHORT: Record<string, string> = {
   "MCAT CARS": "CARS",
@@ -65,11 +66,19 @@ function freshPlayer(): Player {
   };
 }
 
-function routeFromHash(): "home" | "sit" | "done" {
+function routeFromHash(): "home" | "sit" | "done" | "graphs" | "modes" {
   const h = (window.location.hash || "#/").replace(/^#/, "");
   if (h.startsWith("/sit")) return "sit";
   if (h.startsWith("/done")) return "done";
+  if (h.startsWith("/graphs")) return "graphs";
+  if (h.startsWith("/modes")) return "modes";
   return "home";
+}
+
+function readMode(storage: Storage): UiMode {
+  const raw = storage.getItem(MODE_KEY);
+  if (raw === "catalog" || raw === "formats" || raw === "ladders" || raw === "orbs") return raw;
+  return "orbs";
 }
 
 export type MountOpts = {
@@ -81,6 +90,8 @@ export type MountOpts = {
 export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => void } {
   const byId = new Map(opts.bank.items.map((it) => [it.id, it]));
   const ledger = loadLedger(opts.storage);
+  let mode = readMode(opts.storage);
+  let format: SitFilter["format"];
   let player = freshPlayer();
   let timer: number | null = null;
 
@@ -106,7 +117,8 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
     return id ? byId.get(id) ?? null : null;
   }
 
-  function startSitting(track?: SectionFamily, resumeIfOpen = false): void {
+  function startSitting(track?: SectionFamily, resumeIfOpen = false, nextFormat?: SitFilter["format"]): void {
+    if (nextFormat) format = nextFormat;
     const sit = ledger.session;
     const open = Boolean(sit && sit.cursor < sit.itemIds.length);
     if (open && sit && (resumeIfOpen || (track && sit.track === track))) {
@@ -114,7 +126,11 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
       go("#/sit");
       return;
     }
-    const ids = sittingItemIds(opts.bank.items, ledger, track, now());
+    const ids = sittingItemIds(opts.bank.items, ledger, track, now(), {
+      track,
+      mode,
+      format,
+    });
     if (ids.length === 0) return;
     ledger.session = {
       id: newId(),
@@ -192,6 +208,41 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
     draw();
   }
 
+  function navHtml(active: string): string {
+    const links = [
+      ["#/", "Sit", "home"],
+      ["#/graphs", "Graphs", "graphs"],
+      ["#/modes", "Modes", "modes"],
+    ];
+    return `<nav class="nav" aria-label="Instrument">
+      ${links
+        .map(
+          ([href, label, id]) =>
+            `<a href="${href}" class="${active === id ? "on" : ""}" data-testid="nav-${id}">${label}</a>`,
+        )
+        .join("")}
+    </nav>`;
+  }
+
+  function barRows(
+    rows: { label: string; value: number }[],
+    testId: string,
+  ): string {
+    const max = Math.max(1, ...rows.map((r) => r.value));
+    return `<div class="chart" data-testid="${esc(testId)}">
+      ${rows
+        .map((r) => {
+          const pct = Math.round((100 * r.value) / max);
+          return `<div class="bar-row">
+            <span class="bar-label">${esc(r.label)}</span>
+            <span class="bar"><span style="width:${pct}%"></span></span>
+            <span class="bar-n">${r.value.toLocaleString("en-US")}</span>
+          </div>`;
+        })
+        .join("")}
+    </div>`;
+  }
+
   function homeHtml(): string {
     const sit = ledger.session;
     const counts = familyCounts(opts.bank.items, ledger);
@@ -203,7 +254,10 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
     const continueSub =
       open && sit
         ? `${sit.track === "mixed" ? "Mixed" : SHORT[sit.track] ?? sit.track} sitting`
-        : "Mixed retrieval · this browser";
+        : mode === "ladders"
+          ? "Ladders · SIRS / teach-on-miss preferred"
+          : "Mixed retrieval · this browser";
+    const cov = opts.bank.coverage;
 
     const orbs = COVERAGE_TRACKS.map((family, i) => {
       const row = counts.get(family);
@@ -211,7 +265,7 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
       const attempted = row?.attempted.size ?? 0;
       const fill = topics === 0 ? 0 : Math.round((100 * attempted) / topics);
       const current = open && sit?.track === family;
-          return `
+      return `
         ${i > 0 ? `<div class="orb-stem" aria-hidden="true"></div>` : ""}
         <button
           type="button"
@@ -227,29 +281,124 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
         </button>`;
     }).join("");
 
+    const catalog = `<table class="catalog" data-testid="family-catalog">
+      <thead><tr><th>Family</th><th>Items</th><th>Topics touched</th></tr></thead>
+      <tbody>
+        ${COVERAGE_TRACKS.map((family) => {
+          const row = counts.get(family);
+          return `<tr>
+            <td><button type="button" class="text-btn" data-track="${esc(family)}" data-testid="family-orb-${esc(family)}">${esc(family)}</button></td>
+            <td>${(row?.items ?? 0).toLocaleString("en-US")}</td>
+            <td>${row?.topics.size ?? 0}</td>
+          </tr>`;
+        }).join("")}
+      </tbody>
+    </table>`;
+
+    const formats = `<section class="tiles" data-testid="format-tiles">
+      <button type="button" class="tile" data-format="discrete" data-testid="format-discrete">
+        <span class="tile-title">Discrete</span>
+        <span class="tile-sub">Four-choice science and CARS without a passage pane</span>
+      </button>
+      <button type="button" class="tile" data-format="passage" data-testid="format-passage">
+        <span class="tile-title">Passage</span>
+        <span class="tile-sub">CARS / S1 / experiment sets</span>
+      </button>
+      <button type="button" class="tile" data-format="s2" data-testid="format-s2">
+        <span class="tile-title">S2 craft</span>
+        <span class="tile-sub">Quote-set MCQs — not an ACER mark</span>
+      </button>
+    </section>`;
+
+    const picker =
+      mode === "catalog" ? catalog : mode === "formats" ? formats : `<section class="path" aria-label="Exam family path" data-testid="family-path">${orbs}</section>`;
+
     return `
       <main class="wrap">
-        <p class="kicker">Exam morning</p>
+        ${navHtml("home")}
+        <p class="kicker">Exam morning · ${esc(mode)}</p>
         <h1>The person walking into the room is the product.</h1>
         <p class="lede">
-          Website-only retrieval. ${opts.bank.itemCount.toLocaleString("en-US")} hand-authored
-          items run in this tab. No accounts. Ledger stays on this device.
-          Never verified=true in software.
+          Website-only retrieval. ${opts.bank.itemCount.toLocaleString("en-US")} sit-able
+          items run in this tab
+          ${cov ? ` · ${cov.topicsAtOrAboveFloor}/${cov.weightedTopicCount} weighted topics at ≥${cov.depthFloor}` : ""}.
+          No accounts. Ledger stays on this device. Never verified=true in software.
         </p>
         <button type="button" class="continue" data-testid="continue" ${opts.bank.itemCount === 0 ? "disabled" : ""}>
           <span class="continue-title">${esc(continueLabel)}</span>
           <span class="continue-sub">${esc(continueSub)}</span>
         </button>
-        <p class="hint">Click an orb to sit that family. Keys later: A–D, 1–5, Enter.</p>
-        <section class="path" aria-label="Exam family path" data-testid="family-path">
-          ${orbs}
-        </section>
+        <p class="hint">${mode === "formats" ? "Pick a format tile or Continue for mixed." : "Click a family to sit that slice. Keys later: A–D, 1–5, Enter."}</p>
+        ${picker}
         <p class="foot" data-testid="ledger-line">
           ${answered} retrieve${answered === 1 ? "" : "s"} on this device
           ${answered ? ` · ${hits}/${answered} correct` : ""}.
-          Factory millions stay optional local SQLite — they made sitting slow.
+          Peer rows are attributed in the explanation. Factory millions stay optional local SQLite.
           <a href="https://github.com/bobshenruililin/MCAT-GAMSAT">Source</a>
         </p>
+      </main>`;
+  }
+
+  function graphsHtml(): string {
+    const cov = opts.bank.coverage;
+    if (!cov) {
+      return `<main class="wrap">${navHtml("graphs")}<p class="lede">Coverage was not baked into this bank.json.</p></main>`;
+    }
+    return `
+      <main class="wrap wide">
+        ${navHtml("graphs")}
+        <p class="kicker">Coverage</p>
+        <h1>${cov.itemCount.toLocaleString("en-US")} sit-able items</h1>
+        <p class="lede">
+          ${cov.topicsAtOrAboveFloor}/${cov.weightedTopicCount} weighted topics at ≥${cov.depthFloor} items.
+          Not a percentile. Official AAMC/ACER scores live only in SCOREBOARD.md.
+        </p>
+        <h2 class="chart-title">Items by exam family</h2>
+        ${barRows(
+          cov.byFamily.map((r) => ({ label: SHORT[r.family] ?? r.family, value: r.items })),
+          "graph-family",
+        )}
+        <h2 class="chart-title">Origin of this website bank</h2>
+        ${barRows(
+          [
+            { label: "Hand", value: cov.origin.hand },
+            { label: "Peer", value: cov.origin.peer },
+            { label: "Depth fill", value: cov.origin.depth },
+          ],
+          "graph-origin",
+        )}
+        <h2 class="chart-title">Weighted topics by depth</h2>
+        ${barRows(
+          cov.depthBuckets.map((b) => ({ label: b.label, value: b.topics })),
+          "graph-depth",
+        )}
+        <h2 class="chart-title">Public OSS banks vs this site</h2>
+        ${barRows(
+          cov.landscape.map((p) => ({ label: p.name, value: p.items })),
+          "graph-landscape",
+        )}
+      </main>`;
+  }
+
+  function modesHtml(): string {
+    return `
+      <main class="wrap">
+        ${navHtml("modes")}
+        <p class="kicker">Choose a sitting surface</p>
+        <h1>Four ways to start a retrieve</h1>
+        <p class="lede">
+          Same bank, same confidence gate, same interleave. Pick the home layout you will actually click.
+          Stored in this browser only.
+        </p>
+        <section class="tiles" data-testid="mode-tiles">
+          ${UI_MODES.map(
+            (m) => `<button type="button" class="tile ${mode === m.id ? "on" : ""}" data-mode="${m.id}" data-testid="mode-${m.id}">
+              <span class="tile-title">${esc(m.title)}</span>
+              <span class="tile-sub">${esc(m.blurb)}</span>
+            </button>`,
+          ).join("")}
+        </section>
+        <p class="hint">Screenshots of these four layouts are in the PR so you can choose without sitting first.</p>
       </main>`;
   }
 
@@ -351,7 +500,7 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
         <div class="stage">
           ${passage}
           <section>
-            <p class="eyebrow">${item.type === "passage_question" ? "Passage question" : "Discrete"} · ${esc(item.conceptId)}</p>
+            <p class="eyebrow">${item.type === "passage_question" ? "Passage question" : "Discrete"} · ${esc(item.conceptId)}${item.skillTag ? ` · ${esc(item.skillTag)}` : ""}</p>
             <h1 class="stem">${esc(item.stem)}</h1>
             <ul class="choices">${choices}</ul>
             <p class="eyebrow">Confidence — required before reveal</p>
@@ -389,7 +538,22 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
     root.querySelectorAll<HTMLButtonElement>("[data-track]").forEach((btn) => {
       btn.addEventListener("click", () => {
         const track = btn.dataset.track as SectionFamily;
+        format = undefined;
         startSitting(track);
+      });
+    });
+    root.querySelectorAll<HTMLButtonElement>("[data-format]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const next = btn.dataset.format as SitFilter["format"];
+        startSitting(undefined, false, next);
+      });
+    });
+    root.querySelectorAll<HTMLButtonElement>("[data-mode]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const next = btn.dataset.mode as UiMode;
+        mode = next;
+        opts.storage.setItem(MODE_KEY, next);
+        go("#/");
       });
     });
   }
@@ -478,6 +642,15 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
       root.innerHTML = doneHtml();
       bindHome();
       root.querySelector("[data-testid=leave-session]")?.addEventListener("click", () => go("#/"));
+      return;
+    }
+    if (route === "graphs") {
+      root.innerHTML = graphsHtml();
+      return;
+    }
+    if (route === "modes") {
+      root.innerHTML = modesHtml();
+      bindHome();
       return;
     }
     root.innerHTML = homeHtml();

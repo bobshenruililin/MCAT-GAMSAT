@@ -19,6 +19,7 @@
     "demo:seed": "tsx src/db/demoSeed.ts",
     "scoreboard:sync": "tsx src/db/scoreboardSync.ts",
     "factory:emit": "tsx src/factory/emit.ts",
+    "peers:emit": "tsx src/peers/emit.ts",
     "patterns:emit": "tsx src/patterns/emit.ts",
     "web:build": "tsx scripts/build-web.ts"
   },
