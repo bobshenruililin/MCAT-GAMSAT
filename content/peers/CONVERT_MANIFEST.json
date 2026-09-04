@@ -1,0 +1,24 @@
+{
+  "openMcat": {
+    "questions": 1294,
+    "skipped": 0
+  },
+  "openmcat": {
+    "questions": 297,
+    "skipped": 3
+  },
+  "gamsat": {
+    "questions": 80,
+    "skipped": 0
+  },
+  "readymcat": {
+    "questions": 2348,
+    "skipped": 3
+  },
+  "depth": {
+    "questions": 600
+  },
+  "totalNew": 4619,
+  "skipped": 6,
+  "sitableDepth": 8
+}

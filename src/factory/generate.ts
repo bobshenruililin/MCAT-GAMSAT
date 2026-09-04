@@ -25,11 +25,16 @@ export function countUnit(items: FactoryItem[], passages: FactoryPassage[]): num
   return items.length + passages.reduce((s, p) => s + p.questions.length, 0);
 }
 
-export function fillTopic(topic: TopicNode, n: number): { items: FactoryItem[]; passages: FactoryPassage[] } {
+export function fillTopic(
+  topic: TopicNode,
+  n: number,
+  startIndex = 0,
+): { items: FactoryItem[]; passages: FactoryPassage[] } {
   const items: FactoryItem[] = [];
   const passages: FactoryPassage[] = [];
   let made = 0;
-  let i = 0;
+  let i = startIndex;
+  const stop = startIndex + Math.max(n * 3, n + 8);
   while (made < n) {
     const remaining = n - made;
     if (isVerbal(topic.id)) {
@@ -51,10 +56,10 @@ export function fillTopic(topic: TopicNode, n: number): { items: FactoryItem[]; 
       made += 1;
     }
     i += 1;
-    if (i > n * 3) break;
+    if (i > stop) break;
   }
   while (made < n) {
-    items.push(conceptualItem(topic, PAD_INDEX_BASE + made));
+    items.push(conceptualItem(topic, PAD_INDEX_BASE + startIndex + made));
     made += 1;
   }
   return { items, passages };

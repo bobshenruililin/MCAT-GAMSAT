@@ -21,6 +21,8 @@ function item(partial: Partial<WebItem> & { id: string; conceptId: string }): We
     examWeight: 0.01,
     passage: null,
     verified: false,
+    skillTag: null,
+    origin: "hand",
     ...partial,
   };
 }
@@ -48,5 +50,28 @@ describe("sittingItemIds", () => {
     ];
     const ids = sittingItemIds(items, emptyLedger(), "MCAT CARS", new Date());
     expect(ids).toEqual(["cars1"]);
+  });
+
+  it("ladders mode prefers SIRS-tagged items when enough exist", () => {
+    const items = [
+      item({ id: "plain", conceptId: "MCAT.FC1.1A.t1" }),
+      item({
+        id: "sirs",
+        conceptId: "MCAT.FC4.4A.t4",
+        family: "MCAT C/P",
+        skillTag: "SIRS2",
+      }),
+      item({
+        id: "teach",
+        conceptId: "MCAT.FC1.1A.t2",
+        skillTag: "teach_on_miss",
+      }),
+    ];
+    const ids = sittingItemIds(items, emptyLedger(), undefined, new Date(), {
+      mode: "ladders",
+    });
+    expect(ids).toContain("sirs");
+    expect(ids).toContain("teach");
+    expect(ids).not.toContain("plain");
   });
 });

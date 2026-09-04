@@ -28,6 +28,7 @@ describe("website-only GitHub Pages product", () => {
       items: { verified: boolean }[];
     };
     expect(bank.itemCount).toBeGreaterThan(800);
+    expect(bank.itemCount).toBeGreaterThanOrEqual(2320);
     expect(bank.items.every((it) => it.verified === false)).toBe(true);
   });
 });

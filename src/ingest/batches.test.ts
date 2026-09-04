@@ -77,4 +77,32 @@ describe("exam bank files", () => {
     }
     expect(seen.size).toBeGreaterThanOrEqual(847);
   });
+
+  it("covers every exam_weight > 0 topic with at least 8 sit-able items", () => {
+    const nodes = validateTaxonomy(
+      parseTaxonomyJson(readFileSync(TAXONOMY_PATH, "utf8"), TAXONOMY_PATH),
+      TAXONOMY_PATH,
+    );
+    const weighted = nodes.filter((n) => n.level === "topic" && n.exam_weight > 0);
+    const counts = new Map<string, number>();
+    const files = readdirSync(BATCH_DIR)
+      .filter((name) => /^\d+-.*\.json$/.test(name))
+      .sort();
+    for (const name of files) {
+      const result = validateIngestFile(
+        readFileSync(path.join(BATCH_DIR, name), "utf8"),
+        TAXONOMY_PATH,
+      );
+      for (const item of result.items) {
+        counts.set(item.conceptId, (counts.get(item.conceptId) ?? 0) + 1);
+      }
+      for (const p of result.passages) {
+        for (const q of p.questions) {
+          counts.set(q.conceptId, (counts.get(q.conceptId) ?? 0) + 1);
+        }
+      }
+    }
+    const thin = weighted.filter((t) => (counts.get(t.id) ?? 0) < 8).map((t) => t.id);
+    expect(thin).toEqual([]);
+  });
 });

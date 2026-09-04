@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync, copyFileSync } from "node:fs";
+import { mkdirSync, writeFileSync, copyFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 import * as esbuild from "esbuild";
 import { exportWebBank } from "../src/web/exportBank";
@@ -28,6 +28,16 @@ async function main(): Promise<void> {
   copyFileSync(path.join(docs, "app.js"), path.join(site, "app.js"));
   copyFileSync(path.join(docs, "index.html"), path.join(site, "index.html"));
   copyFileSync(path.join(docs, "styles.css"), path.join(site, "styles.css"));
+  const previews = path.join(docs, "mode-previews");
+  mkdirSync(path.join(site, "mode-previews"), { recursive: true });
+  try {
+    for (const name of readdirSync(previews)) {
+      if (!name.endsWith(".png")) continue;
+      copyFileSync(path.join(previews, name), path.join(site, "mode-previews", name));
+    }
+  } catch {
+    /* previews optional until generated */
+  }
   console.log(`web bank ${bank.itemCount} items`);
 }
 

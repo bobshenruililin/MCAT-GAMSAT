@@ -35,10 +35,13 @@ export type TopicNode = {
   siblings: { id: string; name: string; description: string }[];
 };
 
+/** Original authored baseline. Factory 5000× still multiplies this, not the merged sit-able bank. */
 export const HAND_BANK = 847;
 export const TARGET_MULTIPLIER = 5000;
 /** Additional ingest-valid items the factory must emit (5000× the hand bank). */
 export const FACTORY_TARGET = HAND_BANK * TARGET_MULTIPLIER;
 export const FLOOR_PER_TOPIC = 2000;
+/** Comprehensive sit-able floor: every exam_weight > 0 topic in the website bank. */
+export const SITABLE_DEPTH = 8;
 export const KEYS = ["A", "B", "C", "D"] as const;
 export type Key = (typeof KEYS)[number];

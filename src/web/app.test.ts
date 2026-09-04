@@ -25,6 +25,8 @@ function item(id: string, conceptId: string, family: WebItem["family"]): WebItem
     examWeight: 0.02,
     passage: null,
     verified: false,
+    skillTag: null,
+    origin: "hand",
   };
 }
 
@@ -37,6 +39,20 @@ const bank: WebBank = {
     item("bb-1", "MCAT.FC1.1A.t1", "MCAT B/B"),
     item("cp-1", "MCAT.FC5.5A.t1", "MCAT C/P"),
   ],
+  coverage: {
+    weightedTopicCount: 3,
+    depthFloor: 8,
+    topicsAtOrAboveFloor: 0,
+    itemCount: 3,
+    byFamily: [
+      { family: "MCAT CARS", items: 1, topics: 1 },
+      { family: "MCAT B/B", items: 1, topics: 1 },
+      { family: "MCAT C/P", items: 1, topics: 1 },
+    ],
+    origin: { hand: 3, peer: 0, depth: 0 },
+    depthBuckets: [{ label: "8", topics: 0 }],
+    landscape: [{ name: "This site (sit-able)", items: 3 }],
+  },
 };
 
 function click(testId: string): void {
@@ -48,6 +64,7 @@ function click(testId: string): void {
 describe("website player", () => {
   afterEach(() => {
     window.location.hash = "";
+    window.history.replaceState({}, "", "/");
     document.body.innerHTML = "";
   });
 
@@ -79,6 +96,50 @@ describe("website player", () => {
     click("family-orb-MCAT CARS");
     expect(window.location.hash).toBe("#/sit");
     expect(root.querySelector("h1.stem")?.textContent).toBe("Stem for cars-1");
+    mounted.destroy();
+  });
+
+  it("graphs route renders family bars and modes can be chosen", () => {
+    const root = document.createElement("div");
+    document.body.appendChild(root);
+    const storage = memoryStorage();
+    const mounted = mountApp(root, { bank, storage });
+    window.location.hash = "#/graphs";
+    window.dispatchEvent(new HashChangeEvent("hashchange"));
+    expect(root.querySelector("[data-testid=graph-family]")).toBeTruthy();
+    window.location.hash = "#/modes";
+    window.dispatchEvent(new HashChangeEvent("hashchange"));
+    click("mode-catalog");
+    expect(window.location.hash).toBe("#/");
+    expect(root.querySelector("[data-testid=family-catalog]")).toBeTruthy();
+    window.location.hash = "#/modes";
+    window.dispatchEvent(new HashChangeEvent("hashchange"));
+    click("mode-ladders");
+    expect(root.querySelector("[data-testid=ladders-board]")).toBeTruthy();
+    expect(root.querySelector("[data-testid=ladder-sirs]")).toBeTruthy();
+    mounted.destroy();
+  });
+
+  it("query mode=catalog opens the family table", () => {
+    const root = document.createElement("div");
+    document.body.appendChild(root);
+    window.location.hash = "";
+    window.history.replaceState({}, "", "/?mode=catalog");
+    const mounted = mountApp(root, { bank, storage: memoryStorage() });
+    expect(root.querySelector("[data-testid=family-catalog]")).toBeTruthy();
+    mounted.destroy();
+  });
+
+  it("query mode=ladders and view=graphs skip the hash", () => {
+    const root = document.createElement("div");
+    document.body.appendChild(root);
+    window.history.replaceState({}, "", "/?mode=ladders");
+    let mounted = mountApp(root, { bank, storage: memoryStorage() });
+    expect(root.querySelector("[data-testid=ladders-board]")).toBeTruthy();
+    mounted.destroy();
+    window.history.replaceState({}, "", "/?view=graphs");
+    mounted = mountApp(root, { bank, storage: memoryStorage() });
+    expect(root.querySelector("[data-testid=graph-family]")).toBeTruthy();
     mounted.destroy();
   });
 });
