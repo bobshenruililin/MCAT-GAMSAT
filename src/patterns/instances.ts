@@ -16,44 +16,44 @@ function pick<T>(arr: readonly T[], index: number): T {
  * New instance of the same exam move. The catalog analog stays in the stem
  * as scaffolding; this is the item that must be scored.
  */
-export function buildApply(p: ExamPattern, index: number, rung: number): ApplyBuilt {
+export function buildApply(p: ExamPattern, index: number): ApplyBuilt {
   switch (p.id) {
     case "PAT.CARS.main_point":
-      return carsMainPoint(index, rung);
+      return carsMainPoint(index);
     case "PAT.CARS.concession_turn":
-      return carsConcession(index, rung);
+      return carsConcession(index);
     case "PAT.CARS.weaken":
-      return carsWeaken(index, rung);
+      return carsWeaken(index);
     case "PAT.CARS.analogy":
-      return carsAnalogy(index, rung);
+      return carsAnalogy(index);
     case "PAT.CARS.except":
-      return carsExcept(index, rung);
+      return carsExcept(index);
     case "PAT.CP.setup_equation":
-      return cpSetup(index, rung);
+      return cpSetup(index);
     case "PAT.CP.limiting_case":
-      return cpLimit(index, rung);
+      return cpLimit(index);
     case "PAT.CP.units":
-      return cpUnits(index, rung);
+      return cpUnits(index);
     case "PAT.BB.control":
-      return bbControl(index, rung);
+      return bbControl(index);
     case "PAT.BB.if_then":
-      return bbIfThen(index, rung);
+      return bbIfThen(index);
     case "PAT.PS.confound":
-      return psConfound(index, rung);
+      return psConfound(index);
     case "PAT.PS.operdef":
-      return psOperdef(index, rung);
+      return psOperdef(index);
     case "PAT.S1.competing":
-      return s1Competing(index, rung);
+      return s1Competing(index);
     case "PAT.S1.tone":
-      return s1Tone(index, rung);
+      return s1Tone(index);
     case "PAT.S2.throughline":
-      return s2Throughline(index, rung);
+      return s2Throughline(index);
     case "PAT.S3.table":
-      return s3Table(index, rung);
+      return s3Table(index);
     case "PAT.S3.proportion":
-      return s3Proportion(index, rung);
+      return s3Proportion(index);
     case "PAT.S3.control_s3":
-      return s3Next(index, rung);
+      return s3Next(index);
     default:
       return {
         question: `A later ${p.family} item uses new nouns. Which option applies the same relation as the example?`,
@@ -69,7 +69,7 @@ export function buildApply(p: ExamPattern, index: number, rung: number): ApplyBu
   }
 }
 
-function carsMainPoint(index: number, rung: number): ApplyBuilt {
+function carsMainPoint(index: number): ApplyBuilt {
   const cases = [
     {
       stem: "A botanist argues that seed banks are a form of forgetting because they freeze a species out of its habitat. She lingers on a rusted filing cabinet in the corridor.",
@@ -114,7 +114,7 @@ function carsMainPoint(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function carsConcession(index: number, rung: number): ApplyBuilt {
+function carsConcession(index: number): ApplyBuilt {
   const cases = [
     {
       stem: "The reviewer writes that the documentary is meticulously sourced, yet it treats the village as a backdrop for the filmmaker's grief.",
@@ -152,7 +152,7 @@ function carsConcession(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function carsWeaken(index: number, rung: number): ApplyBuilt {
+function carsWeaken(index: number): ApplyBuilt {
   const cases = [
     {
       stem: "An op-ed infers that a library is 'the civic heart' solely from a Saturday queue for tax forms.",
@@ -190,7 +190,7 @@ function carsWeaken(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function carsAnalogy(index: number, rung: number): ApplyBuilt {
+function carsAnalogy(index: number): ApplyBuilt {
   const cases = [
     {
       stem: "The author compares a municipal footnote to a trapdoor: optional to notice, load-bearing if you step through.",
@@ -221,7 +221,7 @@ function carsAnalogy(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function carsExcept(index: number, rung: number): ApplyBuilt {
+function carsExcept(index: number): ApplyBuilt {
   const cases = [
     {
       stem: "A passage supports that a by-law is (1) older than the mall, (2) enforced at dusk, and (3) aimed at buskers. The author jokes that pigeons are the only remaining public.",
@@ -252,7 +252,7 @@ function carsExcept(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function cpSetup(index: number, rung: number): ApplyBuilt {
+function cpSetup(index: number): ApplyBuilt {
   const m = 2 + (index % 6);
   const F = 8 + (index % 9);
   const a = F / m;
@@ -274,7 +274,7 @@ function cpSetup(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function cpLimit(index: number, rung: number): ApplyBuilt {
+function cpLimit(index: number): ApplyBuilt {
   const R1 = 3 + (index % 7);
   return {
     question: `two resistors in parallel, R1 = ${R1} Ω and R2 → ∞. What happens to Req?`,
@@ -293,7 +293,7 @@ function cpLimit(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function cpUnits(index: number, rung: number): ApplyBuilt {
+function cpUnits(index: number): ApplyBuilt {
   const Lcm = 40 + (index % 8) * 5;
   const Lm = Lcm / 100;
   const v = 20 + (index % 10);
@@ -318,7 +318,7 @@ function cpUnits(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function bbControl(index: number, rung: number): ApplyBuilt {
+function bbControl(index: number): ApplyBuilt {
   const cases = [
     {
       stem: "An enzyme assay adds inhibitor in tube 1 and the same volume of buffer in tube 2; substrate, pH, and temperature match.",
@@ -349,7 +349,7 @@ function bbControl(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function bbIfThen(index: number, rung: number): ApplyBuilt {
+function bbIfThen(index: number): ApplyBuilt {
   const steps = ["A→B", "B→C", "C→D"] as const;
   const blocked = pick(steps, index);
   const map: Record<(typeof steps)[number], { key: string; foils: [string, string, string] }> = {
@@ -392,7 +392,7 @@ function bbIfThen(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function psConfound(index: number, rung: number): ApplyBuilt {
+function psConfound(index: number): ApplyBuilt {
   const cases = [
     {
       stem: "A lab claims a pill raises alertness after testing only at 08:00 in habitual coffee-drinkers who were not asked to abstain.",
@@ -423,7 +423,7 @@ function psConfound(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function psOperdef(index: number, rung: number): ApplyBuilt {
+function psOperdef(index: number): ApplyBuilt {
   const cases = [
     {
       stem: "Stress in the methods section is scored as salivary cortisol at 09:00.",
@@ -454,7 +454,7 @@ function psOperdef(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function s1Competing(index: number, rung: number): ApplyBuilt {
+function s1Competing(index: number): ApplyBuilt {
   const cases = [
     {
       stem: "A letter praises a ferry for punctuality; a poem treats the same ferry as a floating waiting room.",
@@ -485,7 +485,7 @@ function s1Competing(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function s1Tone(index: number, rung: number): ApplyBuilt {
+function s1Tone(index: number): ApplyBuilt {
   const cases = [
     {
       stem: "A narrator lists inherited coats with inventory calm, then calls one of them a borrowed life.",
@@ -516,7 +516,7 @@ function s1Tone(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function s2Throughline(index: number, rung: number): ApplyBuilt {
+function s2Throughline(index: number): ApplyBuilt {
   const cases = [
     {
       stem: `A Task A draft on "ambition" quotes four prompt lines, then lists the writer's hobbies, and never says what the quotes jointly imply.`,
@@ -547,7 +547,7 @@ function s2Throughline(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function s3Table(index: number, rung: number): ApplyBuilt {
+function s3Table(index: number): ApplyBuilt {
   const f1 = 100 + (index % 5) * 20;
   const f2 = 2 * f1;
   const A = 3 + (index % 4);
@@ -568,7 +568,7 @@ function s3Table(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function s3Proportion(index: number, rung: number): ApplyBuilt {
+function s3Proportion(index: number): ApplyBuilt {
   const c0 = 0.1 + (index % 5) * 0.1;
   const c1 = 2 * c0;
   const c0Txt = c0.toFixed(1);
@@ -590,7 +590,7 @@ function s3Proportion(index: number, rung: number): ApplyBuilt {
   };
 }
 
-function s3Next(index: number, rung: number): ApplyBuilt {
+function s3Next(index: number): ApplyBuilt {
   const cases = [
     {
       stem: "Two models remain: model P predicts enzyme activity peaks at pH 5, model Q at pH 8. One replicate at pH 7 is already in the table.",

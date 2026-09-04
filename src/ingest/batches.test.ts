@@ -1,17 +1,14 @@
-import { readdirSync, readFileSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { TAXONOMY_PATH } from "@/db/paths";
-import { validateIngestFile } from "./validate";
 import { parseTaxonomyJson, validateTaxonomy } from "@/db/seed-lib";
-
-const BATCH_DIR = path.join(process.cwd(), "content", "batches");
+import { BATCH_DIR, listNumberedBatchNames } from "./batchFiles";
+import { validateIngestFile } from "./validate";
 
 describe("exam bank files", () => {
   it("every numbered batch passes ingest schema with no rejects", () => {
-    const files = readdirSync(BATCH_DIR)
-      .filter((name) => /^\d+-.*\.json$/.test(name))
-      .sort();
+    const files = listNumberedBatchNames();
     expect(files.length).toBeGreaterThanOrEqual(8);
     let passed = 0;
     for (const name of files) {
@@ -36,9 +33,7 @@ describe("exam bank files", () => {
     );
     const weighted = nodes.filter((n) => n.level === "topic" && n.exam_weight > 0);
     const covered = new Set<string>();
-    const files = readdirSync(BATCH_DIR)
-      .filter((name) => /^\d+-.*\.json$/.test(name))
-      .sort();
+    const files = listNumberedBatchNames();
     for (const name of files) {
       const result = validateIngestFile(
         readFileSync(path.join(BATCH_DIR, name), "utf8"),
@@ -55,9 +50,7 @@ describe("exam bank files", () => {
 
   it("has unique concept+stem pairs so ingest does not skip duplicates", () => {
     const seen = new Map<string, string>();
-    const files = readdirSync(BATCH_DIR)
-      .filter((name) => /^\d+-.*\.json$/.test(name))
-      .sort();
+    const files = listNumberedBatchNames();
     for (const name of files) {
       const result = validateIngestFile(
         readFileSync(path.join(BATCH_DIR, name), "utf8"),
@@ -85,9 +78,7 @@ describe("exam bank files", () => {
     );
     const weighted = nodes.filter((n) => n.level === "topic" && n.exam_weight > 0);
     const counts = new Map<string, number>();
-    const files = readdirSync(BATCH_DIR)
-      .filter((name) => /^\d+-.*\.json$/.test(name))
-      .sort();
+    const files = listNumberedBatchNames();
     for (const name of files) {
       const result = validateIngestFile(
         readFileSync(path.join(BATCH_DIR, name), "utf8"),

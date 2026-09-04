@@ -730,6 +730,23 @@ Three riskiest:
 
 SCORE IMPACT: Coverage of every weighted topic is sit-able; expected official score still waits on sitting and papers.
 
+## Cleanup and directions (2026-09-04)
+
+Question: repo will get messy; clean when necessary; overview the whole project and directions from here.
+
+Answer: Dual runtimes stay (website 5466 vs optional Next/factory). Cleanup was the contradictory sit path, dead CSS that crushed the sit header, three batch listers, landscape 300/74 vs converted 297/80, unused pattern `rung`, stale DEMO 847, empty B-015. Map: `docs/OVERVIEW.md`. Direction: sit + QC, not more volume.
+
+Shipped: README website-first; `docs/OVERVIEW.md`; `content/batches/README.md`; shared `listNumberedBatch*`; CONVERT_MANIFEST landscape.
+
+Failed: SCOREBOARD still 0; github.io still 847 until the bank PR merges.
+
+Three riskiest:
+1. Sitting still displaced if someone runs default 4.3M bootstrap (README now warns).
+2. Unverified peer/depth on Pages after merge.
+3. B-017 Pages source still `/docs` vs Actions `site/`.
+
+SCORE IMPACT: The next hour is a retrieve in `docs/`, not a factory emit.
+
 
 
 

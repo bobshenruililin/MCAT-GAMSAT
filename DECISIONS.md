@@ -277,6 +277,12 @@ Append-only. Date, decision, rationale, rejected alternatives. Never edited.
 - Rationale: Newest prompt wins on scope. NORTH_STAR wins on values (retrieval, confidence, interleave, no fake percentiles, no pirated AAMC/UWorld). Feature litmus: more tagged exam-style retrieves per hour on github.io.
 - Rejected: Shipping factory millions as JSON; fake 118–132 scores; `verified=true`; copying MileDown/AAMC/ACER/UWorld stems; forcing teach ladders that break interleave.
 
+## 2026-09-04 — Cleanup without shrinking the sit-able product
+- Decision: Newest prompt: the repo will get messy; clean when necessary; overview the project and directions. Keep dual runtimes (static `docs/` player vs optional Next/SQLite). Do not delete factory, peer extracts, or `site/` copies. Fix the actual mess: README website-first (stop leading with factory bootstrap), landscape graph from CONVERT_MANIFEST (297/80 not 300/74), one numbered-batch lister, dead CSS that overwrote sit-header `.bar`, unused pattern `rung` lint, stale DEMO 847-only bootstrap copy, empty B-015. Write `docs/OVERVIEW.md` as the map. Direction from here is sit + QC, not more volume.
+- Rationale: NORTH_STAR: study hours beat feature velocity. Newest scope: website 5466 is the product. Cleaning contradictory docs is score-per-hour (stops people waiting on 4.3M bootstrap). Dual stack is a human fork (B-017), not agent deletion.
+- Rejected: Deleting Next.js; merging `docs/` and `site/` into one tree; filling unused batch numbers 11 and 15; multiplying factory by 5466; trimming MORNING_REPORT (append-only).
+
+
 
 
 

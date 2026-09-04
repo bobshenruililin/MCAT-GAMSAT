@@ -15,5 +15,7 @@ describe("exportWebBank", () => {
     expect(bank.coverage.weightedTopicCount).toBe(290);
     expect(bank.coverage.origin.peer).toBeGreaterThan(1000);
     expect(bank.coverage.landscape[0]?.items).toBe(bank.itemCount);
+    const openmcat = bank.coverage.landscape.find((p) => p.name.startsWith("OpenMCAT"));
+    expect(openmcat?.items).toBe(297);
   });
 });

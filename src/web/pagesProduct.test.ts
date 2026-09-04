@@ -17,6 +17,7 @@ describe("website-only GitHub Pages product", () => {
     expect(html).not.toMatch(/pnpm bootstrap/);
     expect(css).toMatch(/#2f6b4f/);
     expect(css).toMatch(/\.continue/);
+    expect(css).not.toMatch(/\.bar-row/);
     expect(wf).toMatch(/path: site/);
     expect(siteHtml).toBe(html);
     expect(existsSync(path.join(root, "docs/app.js"))).toBe(true);

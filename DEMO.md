@@ -9,15 +9,21 @@ Bank is `ai_generated` / `verified=false`. This is not official AAMC/ACER conten
 Charts need a 14-day history. From a clean tree:
 
 ```bash
-pnpm db:reset && pnpm bootstrap
+pnpm db:reset && FACTORY_TARGET=0 pnpm bootstrap
 # optional display fixture only:
 pnpm demo:seed
 pnpm dev
 ```
 
-`pnpm bootstrap` seeds taxonomy and ingests every numbered batch. It does **not** insert PLACEHOLDER items. Expect on the order of **847** items, **25** passages, **0** verified.
+`pnpm bootstrap` seeds taxonomy and ingests every numbered batch (hand + peer +
+depth fill → **5,466** items on a `FACTORY_TARGET=0` run). It does **not** insert
+PLACEHOLDER items. Factory/pattern caps add unverified volume on top. `verified`
+stays 0.
 
-To study for real: `pnpm db:reset && pnpm bootstrap` and skip `demo:seed`.
+The **website product** is the static player in `docs/` (same 5,466, no SQLite).
+This file is the optional Next.js walk.
+
+To study for real on Next: `pnpm db:reset && FACTORY_TARGET=0 pnpm bootstrap` and skip `demo:seed`. Prefer the website player in `docs/` if you only need to retrieve.
 
 `demo:seed` still writes **14** marked simulation sessions. Attempt count follows the live bank and FSRS fixture; it is not a study total. Health will show `verified = 0` and a DEMO banner on Today/Progress.
 

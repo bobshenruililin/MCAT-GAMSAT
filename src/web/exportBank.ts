@@ -1,22 +1,13 @@
-import { readdirSync, readFileSync } from "node:fs";
-import path from "node:path";
+import { readFileSync } from "node:fs";
 import { TAXONOMY_PATH } from "@/db/paths";
 import { parseTaxonomyJson, validateTaxonomy } from "@/db/seed-lib";
 import { sectionFamily } from "@/engine/sectionBudget";
+import { listNumberedBatchFiles } from "@/ingest/batchFiles";
 import { validateIngestFile, type ValidatedItem } from "@/ingest/validate";
 import { originFromFilename } from "@/peers/emit";
 import { buildCoverage } from "./coverage";
 import { webItemId } from "./ids";
 import type { WebBank, WebItem, WebOrigin } from "./types";
-
-const BATCH_DIR = path.join(process.cwd(), "content", "batches");
-
-export function listHandBatchFiles(): string[] {
-  return readdirSync(BATCH_DIR)
-    .filter((name) => /^\d+-.*\.json$/.test(name))
-    .sort()
-    .map((name) => path.join(BATCH_DIR, name));
-}
 
 function topicWeights(taxonomyPath = TAXONOMY_PATH): Map<string, number> {
   const nodes = validateTaxonomy(
@@ -61,7 +52,7 @@ export function exportWebBank(taxonomyPath = TAXONOMY_PATH): WebBank {
   const seen = new Set<string>();
   const items: WebItem[] = [];
 
-  for (const file of listHandBatchFiles()) {
+  for (const file of listNumberedBatchFiles()) {
     const origin = originFromFilename(file);
     const raw = readFileSync(file, "utf8");
     const parsed = validateIngestFile(raw, taxonomyPath);

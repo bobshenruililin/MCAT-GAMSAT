@@ -3,7 +3,7 @@ import { TAXONOMY_PATH } from "@/db/paths";
 import { parseTaxonomyJson, validateTaxonomy } from "@/db/seed-lib";
 import { COVERAGE_TRACKS, sectionFamily, type SectionFamily } from "@/engine/sectionBudget";
 import { SITABLE_DEPTH } from "@/factory/types";
-import { LANDSCAPE_PEERS } from "@/peers/maps";
+import { landscapePeers } from "@/peers/maps";
 import type { WebCoverage, WebItem, WebOrigin } from "./types";
 
 export function buildCoverage(
@@ -64,7 +64,7 @@ export function buildCoverage(
     depthBuckets,
     landscape: [
       { name: "This site (sit-able)", items: items.length },
-      ...LANDSCAPE_PEERS.map((p) => ({ name: p.name, items: p.items })),
+      ...landscapePeers().map((p) => ({ name: p.name, items: p.items })),
     ],
   };
 }
