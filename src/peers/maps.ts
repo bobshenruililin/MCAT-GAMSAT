@@ -90,7 +90,7 @@ export const ATTR = {
 
 export const LANDSCAPE_PEERS = [
   { name: "Open-MCAT", items: 1294 },
-  { name: "ReadyMCAT scored", items: 1112 },
+  { name: "ReadyMCAT converted", items: 2348 },
   { name: "OpenMCAT", items: 300 },
   { name: "gamsat-trainer", items: 74 },
 ] as const;

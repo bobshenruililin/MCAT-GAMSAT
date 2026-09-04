@@ -92,6 +92,7 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
   const ledger = loadLedger(opts.storage);
   let mode = readMode(opts.storage);
   let format: SitFilter["format"];
+  let skill: SitFilter["skill"];
   let player = freshPlayer();
   let timer: number | null = null;
 
@@ -117,8 +118,20 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
     return id ? byId.get(id) ?? null : null;
   }
 
-  function startSitting(track?: SectionFamily, resumeIfOpen = false, nextFormat?: SitFilter["format"]): void {
-    if (nextFormat) format = nextFormat;
+  function startSitting(
+    track?: SectionFamily,
+    resumeIfOpen = false,
+    nextFormat?: SitFilter["format"],
+    nextSkill?: SitFilter["skill"],
+  ): void {
+    if (nextFormat) {
+      format = nextFormat;
+      skill = undefined;
+    }
+    if (nextSkill) {
+      skill = nextSkill;
+      format = undefined;
+    }
     const sit = ledger.session;
     const open = Boolean(sit && sit.cursor < sit.itemIds.length);
     if (open && sit && (resumeIfOpen || (track && sit.track === track))) {
@@ -130,6 +143,7 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
       track,
       mode,
       format,
+      skill,
     });
     if (ids.length === 0) return;
     ledger.session = {
@@ -229,18 +243,19 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
     testId: string,
   ): string {
     const max = Math.max(1, ...rows.map((r) => r.value));
-    return `<div class="chart" data-testid="${esc(testId)}">
+    const rowH = 28;
+    const height = rows.length * rowH + 4;
+    return `<svg class="chart-svg" data-testid="${esc(testId)}" viewBox="0 0 640 ${height}" role="img" aria-label="${esc(testId)}">
       ${rows
-        .map((r) => {
-          const pct = Math.round((100 * r.value) / max);
-          return `<div class="bar-row">
-            <span class="bar-label">${esc(r.label)}</span>
-            <span class="bar"><span style="width:${pct}%"></span></span>
-            <span class="bar-n">${r.value.toLocaleString("en-US")}</span>
-          </div>`;
+        .map((r, i) => {
+          const barW = Math.max(4, Math.round((400 * r.value) / max));
+          const y = i * rowH;
+          return `<text x="0" y="${y + 16}" class="svg-label">${esc(r.label)}</text>
+            <rect x="150" y="${y + 4}" width="${barW}" height="16" rx="8" fill="#2f6b4f"></rect>
+            <text x="640" y="${y + 16}" text-anchor="end" class="svg-n">${r.value.toLocaleString("en-US")}</text>`;
         })
         .join("")}
-    </div>`;
+    </svg>`;
   }
 
   function homeHtml(): string {
@@ -310,8 +325,31 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
       </button>
     </section>`;
 
+    const sirsN = opts.bank.items.filter((it) => (it.skillTag ?? "").startsWith("SIRS")).length;
+    const teachN = opts.bank.items.filter((it) => it.skillTag === "teach_on_miss").length;
+    const ladders = `<section class="ladders" data-testid="ladders-board">
+      <p class="hint">Ladders prefer tagged items, then still interleave topics. Pick a rung or a family.</p>
+      <div class="tiles compact">
+        <button type="button" class="tile" data-skill="SIRS" data-testid="ladder-sirs">
+          <span class="tile-title">SIRS 1–4</span>
+          <span class="tile-sub">${sirsN.toLocaleString("en-US")} tagged science-inquiry items</span>
+        </button>
+        <button type="button" class="tile" data-skill="teach_on_miss" data-testid="ladder-teach">
+          <span class="tile-title">Teach-on-miss</span>
+          <span class="tile-sub">${teachN.toLocaleString("en-US")} ReadyMCAT ladder rungs</span>
+        </button>
+      </div>
+      <section class="path" aria-label="Exam family path" data-testid="family-path">${orbs}</section>
+    </section>`;
+
     const picker =
-      mode === "catalog" ? catalog : mode === "formats" ? formats : `<section class="path" aria-label="Exam family path" data-testid="family-path">${orbs}</section>`;
+      mode === "catalog"
+        ? catalog
+        : mode === "formats"
+          ? formats
+          : mode === "ladders"
+            ? ladders
+            : `<section class="path" aria-label="Exam family path" data-testid="family-path">${orbs}</section>`;
 
     return `
       <main class="wrap">
@@ -398,7 +436,25 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
             </button>`,
           ).join("")}
         </section>
-        <p class="hint">Screenshots of these four layouts are in the PR so you can choose without sitting first.</p>
+        <p class="hint">The four layouts below are the same instrument. Tap a tile, then Sit.</p>
+        <section class="previews" data-testid="mode-previews">
+          <figure>
+            <img src="./mode-previews/mode-orbs.png" alt="Orbs home: Continue and a vertical CARS to S3 path" width="390" height="844" />
+            <figcaption>Orbs</figcaption>
+          </figure>
+          <figure>
+            <img src="./mode-previews/mode-catalog.png" alt="Catalog home: family table with item counts" width="390" height="844" />
+            <figcaption>Catalog</figcaption>
+          </figure>
+          <figure>
+            <img src="./mode-previews/mode-formats.png" alt="Formats home: Discrete, Passage, and S2 tiles" width="390" height="844" />
+            <figcaption>Formats</figcaption>
+          </figure>
+          <figure>
+            <img src="./mode-previews/mode-ladders.png" alt="Ladders home: SIRS and teach-on-miss rungs plus family orbs" width="390" height="844" />
+            <figcaption>Ladders</figcaption>
+          </figure>
+        </section>
       </main>`;
   }
 
@@ -546,6 +602,12 @@ export function mountApp(root: HTMLElement, opts: MountOpts): { destroy: () => v
       btn.addEventListener("click", () => {
         const next = btn.dataset.format as SitFilter["format"];
         startSitting(undefined, false, next);
+      });
+    });
+    root.querySelectorAll<HTMLButtonElement>("[data-skill]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const next = btn.dataset.skill as SitFilter["skill"];
+        startSitting(undefined, false, undefined, next);
       });
     });
     root.querySelectorAll<HTMLButtonElement>("[data-mode]").forEach((btn) => {

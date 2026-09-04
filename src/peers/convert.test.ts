@@ -94,9 +94,14 @@ describe("peer mapping", () => {
     );
     expect(bank.items[0]?.concept_id).toBe("MCAT.FC4.4A.t4");
     expect(bank.items[0]?.skill_tag).toBe("SIRS2");
-    expect(bank.items[0]?.correct_key).toBe("C");
-    expect(
-      Object.keys(bank.items[0]?.distractor_rationales as Record<string, string>).sort(),
-    ).toEqual(["A", "B", "D"]);
+    const item = bank.items[0] as {
+      correct_key: string;
+      choices: { key: string; text: string }[];
+      distractor_rationales: Record<string, string>;
+    };
+    const keyed = item.choices.find((c) => c.key === item.correct_key);
+    expect(keyed?.text).toBe("74 J");
+    expect(Object.keys(item.distractor_rationales)).not.toContain(item.correct_key);
+    expect(Object.keys(item.distractor_rationales)).toHaveLength(3);
   });
 });

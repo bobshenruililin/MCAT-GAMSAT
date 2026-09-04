@@ -516,3 +516,42 @@ h1.stem {
   padding: 0.55rem 0.4rem;
   border-bottom: 1px solid var(--line);
 }
+
+.chart-svg {
+  width: 100%;
+  height: auto;
+  margin: 0.4rem 0 0.8rem;
+  font-family: Nunito, ui-rounded, "Segoe UI", sans-serif;
+  font-size: 12px;
+}
+
+.svg-label {
+  font-weight: 800;
+  fill: var(--ink);
+}
+
+.svg-n {
+  fill: var(--muted);
+}
+
+.tiles.compact {
+  margin-top: 0.75rem;
+}
+
+.previews {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.previews img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  border: 1px solid var(--line);
+}
+
+.previews figcaption {
+  font-weight: 800;
+  margin-top: 0.35rem;
+}

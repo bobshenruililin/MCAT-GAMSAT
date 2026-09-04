@@ -68,11 +68,17 @@ a percentile.
 Open in Safari or Chrome. Click **Continue** or a family orb. That is the
 sitting. Ledger is `localStorage` on this device. No clone, no Node, no Cursor.
 
-The public site ships the hand-authored bank (847 items). Factory millions stay
+The public site ships the merged sit-able bank (5,466 items: hand + peer
+originals + depth fill so every weighted topic has ≥8). Factory millions stay
 optional local SQLite — they made Continue slow. Software still never sets
-`verified=true`.
+`verified=true`. Choose a home layout at `#/modes` (orbs, catalog, formats,
+ladders). Coverage graphs live at `#/graphs`.
 
-Rebuild the site: `pnpm web:build`. GitHub Pages publishes `main` `/docs`.
+This branch’s player is what `pnpm web:build` writes to `docs/`. GitHub Pages
+publishes `main` `/docs` after merge. Until then, sit this folder locally
+(`python3 -m http.server` in `docs/`) or the PR preview.
+
+Rebuild the site: `pnpm web:build`.
 
 ## Optional local factory (not required to sit)
 

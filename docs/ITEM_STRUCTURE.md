@@ -40,4 +40,4 @@ Stored in `localStorage` key `exam-morning-mode-v1`:
 3. **Formats** — Discrete / Passage / S2 tiles.
 4. **Ladders** — prefer `teach_on_miss` and SIRS-tagged items.
 
-Graphs live at `#/graphs` (code-drawn SVG, not a screenshot of a spreadsheet).
+Graphs live at `#/graphs` (code-drawn SVG bars: family, origin, depth, landscape).

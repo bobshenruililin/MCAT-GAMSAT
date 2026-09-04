@@ -7,9 +7,10 @@ import {
   difficultyFrom,
   distractorsFor,
   formatTable,
-  numericFoils,
   padExplanation,
+  rotateChoices,
   stripHtml,
+  threeFoils,
   type Key,
 } from "./text";
 
@@ -61,10 +62,25 @@ function itemRow(input: {
 }): Record<string, unknown> | null {
   if (input.texts.length !== 4) return null;
   if (input.correctIndex < 0 || input.correctIndex > 3) return null;
-  const choices = choicesFromTexts(input.texts) as IngestChoice[];
-  const correctKey = KEYS[input.correctIndex] as Key;
-  const explanation = padExplanation(input.explanationParts, input.attribution);
+  const placed = rotateChoices(input.texts, input.correctIndex, stripHtml(input.stem));
+  const choices = choicesFromTexts(placed.texts) as IngestChoice[];
+  const correctKey = KEYS[placed.correctIndex] as Key;
   const why = input.why ?? [];
+  const rotatedWhy: (string | undefined)[] = [undefined, undefined, undefined, undefined];
+  if (why.length === 4) {
+    const mapping = [0, 1, 2, 3];
+    const correctFrom = input.correctIndex;
+    const othersFrom = mapping.filter((i) => i !== correctFrom);
+    let o = 0;
+    for (let i = 0; i < 4; i++) {
+      if (i === placed.correctIndex) rotatedWhy[i] = why[correctFrom];
+      else {
+        rotatedWhy[i] = why[othersFrom[o]];
+        o += 1;
+      }
+    }
+  }
+  const explanation = padExplanation(input.explanationParts, input.attribution);
   const row: Record<string, unknown> = {
     concept_id: input.conceptId,
     type: input.type,
@@ -74,7 +90,7 @@ function itemRow(input: {
     explanation,
     distractor_rationales: distractorsFor(
       correctKey,
-      why,
+      rotatedWhy,
       "This option names a different relation or drops a constraint in the stem.",
     ),
     difficulty_est: difficultyFrom(input.difficulty),
@@ -349,8 +365,7 @@ export function convertGamsat(
         skipped += 1;
         continue;
       }
-      const foils = numericFoils(correct);
-      while (foils.length < 3) foils.push(`Not ${correct} (trap ${foils.length + 1})`);
+      const foils = threeFoils(correct);
       texts = [correct, foils[0], foils[1], foils[2]];
       correctIndex = 0;
     }
@@ -621,13 +636,8 @@ export function convertReadymcat(
       continue;
     }
     const pool = (foilsByCat.get(cat) ?? []).filter((a) => a !== correct);
-    const foils = [...pool, ...numericFoils(correct), "Cannot be determined from the given information", "None of the named species", "Zero in the ideal case"];
-    const uniqueFoils: string[] = [];
-    for (const f of foils) {
-      if (f !== correct && !uniqueFoils.includes(f)) uniqueFoils.push(f);
-      if (uniqueFoils.length >= 3) break;
-    }
-    while (uniqueFoils.length < 3) uniqueFoils.push(`Not ${correct} (foil ${uniqueFoils.length})`);
+    const foils = threeFoils(correct, pool);
+    const uniqueFoils = foils.slice(0, 3);
     const conceptId = assign.pickAamc(cat, `${q.subtopic ?? ""} ${q.prompt ?? ""}`);
     const converted = itemRow({
       conceptId,

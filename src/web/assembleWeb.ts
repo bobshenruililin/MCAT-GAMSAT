@@ -8,6 +8,7 @@ export type SitFilter = {
   track?: SectionFamily;
   mode?: UiMode;
   format?: "discrete" | "passage" | "s2";
+  skill?: "SIRS" | "teach_on_miss";
 };
 
 function tagged(item: WebItem): boolean {
@@ -23,6 +24,11 @@ export function filterPool(items: WebItem[], filter: SitFilter = {}): WebItem[] 
     pool = pool.filter((it) => it.type === "passage_question");
   } else if (filter.format === "s2") {
     pool = pool.filter((it) => it.conceptId.startsWith("GAMSAT.S2"));
+  }
+  if (filter.skill === "SIRS") {
+    pool = pool.filter((it) => (it.skillTag ?? "").startsWith("SIRS"));
+  } else if (filter.skill === "teach_on_miss") {
+    pool = pool.filter((it) => it.skillTag === "teach_on_miss");
   }
   if (filter.mode === "ladders") {
     const prefer = pool.filter(tagged);

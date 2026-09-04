@@ -112,6 +112,45 @@ export function formatTable(table: {
   return [caption, columns.join(" | "), ...rows].filter(Boolean).join("\n");
 }
 
+export function rotateChoices(
+  texts: string[],
+  correctIndex: number,
+  salt: string,
+): { texts: string[]; correctIndex: number } {
+  const correct = texts[correctIndex] ?? texts[0];
+  const others = texts.filter((_, i) => i !== correctIndex);
+  let h = 2166136261;
+  for (let i = 0; i < salt.length; i++) h = Math.imul(h ^ salt.charCodeAt(i), 16777619);
+  const slot = (h >>> 0) % 4;
+  const out: string[] = new Array(4);
+  let o = 0;
+  for (let i = 0; i < 4; i++) {
+    if (i === slot) out[i] = correct;
+    else {
+      out[i] = others[o] ?? `Unspecified option ${i}`;
+      o += 1;
+    }
+  }
+  return { texts: out, correctIndex: slot };
+}
+
+export function threeFoils(correct: string, extras: string[] = []): string[] {
+  const pool: string[] = [...numericFoils(correct)];
+  for (const extra of extras) {
+    const t = stripHtml(extra).trim();
+    if (t && t !== correct && !pool.includes(t)) pool.push(t);
+  }
+  for (const g of [
+    "Cannot be determined from the information given",
+    "Zero in the ideal limiting case",
+    "The reciprocal of that quantity",
+    "An order-of-magnitude larger value",
+  ]) {
+    if (g !== correct && !pool.includes(g)) pool.push(g);
+  }
+  return pool.slice(0, 3);
+}
+
 export function numericFoils(correct: string): string[] {
   const m = correct.trim().match(/^(-?\d+(?:\.\d+)?)(.*)$/);
   if (!m) return [];

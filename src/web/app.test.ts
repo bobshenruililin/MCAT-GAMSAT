@@ -111,6 +111,11 @@ describe("website player", () => {
     click("mode-catalog");
     expect(window.location.hash).toBe("#/");
     expect(root.querySelector("[data-testid=family-catalog]")).toBeTruthy();
+    window.location.hash = "#/modes";
+    window.dispatchEvent(new HashChangeEvent("hashchange"));
+    click("mode-ladders");
+    expect(root.querySelector("[data-testid=ladders-board]")).toBeTruthy();
+    expect(root.querySelector("[data-testid=ladder-sirs]")).toBeTruthy();
     mounted.destroy();
   });
 });
