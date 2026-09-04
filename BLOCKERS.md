@@ -47,6 +47,8 @@ The score-max factory emits 4,235,000 additional ingest-valid items (code-checke
 Khan Academy often offers hints before the student commits an answer. NORTH_STAR requires confidence 1–5 before reveal; a hint is rereading and would leak the solution path. v1 refuses in-item hints, energy points, avatars, video-as-study, and classrooms. Human: keep this refusal, or name a hint format that cannot leak the key.
 
 ### B-015 — True CARS consecutive-passage sitting vs interleave
+Real CARS/S1 is several questions on one passage in a row. NORTH_STAR interleave forbids two consecutive same-topic items. Structure sittings and the website player still interleave. Human: allow consecutive questions that share a passage (even if they share a topic), or keep interleave and accept that sittings are not paper-shaped.
+
 ### B-016 — YC-demo screenshots vs NORTH_STAR non-goals
 Newest prompt asked for Y Combinator-grade screenshots/demos and ambitious question/knowledge targets. NORTH_STAR forbids other users, auth, cloud, monetization, and polish beyond clarity. v1 keeps the product single-user and local. The demo surfaces are Today/Atlas/Health showing designed capacity (4.235M factory + 120k patterns + 847 hand), a virtual four-layer exam map (family derived from ids; schema still three levels — B-001), and live SQLite counts. No waitlist, no fake users, never `verified=true`. Human: keep this split, or AMEND NORTH STAR if the product should become a company pitch.
 
@@ -57,9 +59,13 @@ v2: the repo Pages setting is already on, but as legacy `main` + `/docs`, not Gi
 
 v4: newest prompt asked for the largest legally usable question bank on the sit-able website, plus structure, mode screenshots, and graphs. v4 compiles peer originals + depth fill into `docs/bank.json` (5466). Factory 4.3M still stays off Pages. Human: keep this merged bank, or cap Pages at a named smaller set.
 
+v5: the public URL **is** the player (Continue in the tab). Repo Pages source is still legacy `main` `/docs`. The Actions workflow deploys `site/` and will fail until Settings → Pages → Source is GitHub Actions. Human: keep `/docs`, or switch to Actions.
+
 
 ### B-019 — Website bank is the hand 847, not the 4.3M factory
-Newest prompt: website-only, buttons work, sitting must be fast. GitHub Pages cannot host 4.3M SQLite items. The public player loads `docs/bank.json` from the numbered hand batches. Factory volume remains the optional local engine. Human: keep the website on the hand bank, or name a static cap to compile in.
+Newest prompt: website-only, buttons work, sitting must be fast. GitHub Pages cannot host 4.3M SQLite items. The public player loads `docs/bank.json` from the numbered batches. Factory volume remains the optional local engine. Human: keep the website on the numbered sit-able bank, or name a static cap to compile in.
+
+v2: website bank is **5466** (hand 847 + peer 4019 + depth 600), not 847. Title is historical. `HAND_BANK` stays 847 for factory 5000× only. Factory still off Pages.
 
 ### B-018 — Factory items were meta-questions, not exam questions
 Fresh look at the live bank: conceptual stems asked “which grain is tagged in this bank”; S2 said “Timed Task A pack 0 … craft grain”; CARS passages confessed “Seed N only changes the proper names”; P/S said “vignette N”; quant appended “(run N)”; experiment Q4 cited NORTH STAR. v1 swapped those labels. v2 (this session) rewrote the generators so the stem is an exam prompt: science stems present observations without the topic title; P/S stems ask which construct is illustrated; S2 is a 30-minute Task with comments; CARS cites a titled essay; quant leads with “In experiment N”; pattern identify is a mini-item with real options. Deleted `26-scoremax-preview.json` (old pack/vignette leftovers). Hand-authored 847 unchanged. Still unverified AI (B-013). Human: QC a slice; volume is still not an official percentile.

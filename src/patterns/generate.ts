@@ -42,7 +42,7 @@ export function identifyItem(p: ExamPattern, index: number) {
 export function applyItem(p: ExamPattern, index: number) {
   const rung = index % 10;
   const difficulty = Math.min(0.95, 0.18 + rung * 0.08);
-  const built = buildApply(p, index, rung);
+  const built = buildApply(p, index);
   const stem =
     `Example: ${p.exampleSetup} ${p.exampleConclusion}\n\n` +
     `Item ${index + 1}. ${built.question}`;

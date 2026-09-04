@@ -1,3 +1,6 @@
+import { readFileSync } from "node:fs";
+import path from "node:path";
+
 /** OpenMCAT `testedTopicIds` → this taxonomy topic. */
 export const OPENMCAT_TOPIC: Record<string, string> = {
   cp_work: "MCAT.FC4.4A.t4",
@@ -88,9 +91,22 @@ export const ATTR = {
   gamsat: "Source: gamsat-trainer original practice (not ACER). Unverified.",
 } as const;
 
-export const LANDSCAPE_PEERS = [
-  { name: "Open-MCAT", items: 1294 },
-  { name: "ReadyMCAT converted", items: 2348 },
-  { name: "OpenMCAT", items: 300 },
-  { name: "gamsat-trainer", items: 74 },
-] as const;
+type ConvertManifest = {
+  openMcat: { questions: number };
+  openmcat: { questions: number };
+  gamsat: { questions: number };
+  readymcat: { questions: number };
+};
+
+/** Sit-able peer counts in this repo, not upstream totals. */
+export function landscapePeers(): { name: string; items: number }[] {
+  const raw = JSON.parse(
+    readFileSync(path.join(process.cwd(), "content/peers/CONVERT_MANIFEST.json"), "utf8"),
+  ) as ConvertManifest;
+  return [
+    { name: "Open-MCAT (in this site)", items: raw.openMcat.questions },
+    { name: "ReadyMCAT (in this site)", items: raw.readymcat.questions },
+    { name: "OpenMCAT (in this site)", items: raw.openmcat.questions },
+    { name: "gamsat-trainer (in this site)", items: raw.gamsat.questions },
+  ];
+}

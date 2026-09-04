@@ -1,10 +1,11 @@
-import { mkdirSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, unlinkSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { TAXONOMY_PATH } from "@/db/paths";
 import { fillTopic } from "@/factory/generate";
 import { toIngestJson } from "@/factory/item";
 import { loadWeightedTopics } from "@/factory/taxonomy";
 import { SITABLE_DEPTH } from "@/factory/types";
+import { BATCH_DIR, listNumberedBatchNames } from "@/ingest/batchFiles";
 import { validateIngestFile } from "@/ingest/validate";
 import { loadTopics } from "./assign";
 import {
@@ -19,7 +20,6 @@ import {
 } from "./convert";
 
 export const PEER_DIR = path.join(process.cwd(), "content", "peers");
-export const BATCH_DIR = path.join(process.cwd(), "content", "batches");
 
 const GENERATED = [
   "30-peer-open-mcat.json",
@@ -37,19 +37,13 @@ export function originFromFilename(name: string): "hand" | "peer" | "depth" {
   return "hand";
 }
 
-function numberedBatches(): string[] {
-  return readdirSync(BATCH_DIR)
-    .filter((name) => /^\d+-.*\.json$/.test(name))
-    .sort();
-}
-
 export function loadExistingCounts(taxonomyPath = TAXONOMY_PATH): {
   counts: Map<string, number>;
   seen: ReturnType<typeof emptySeen>;
 } {
   const counts = new Map<string, number>();
   const seen = emptySeen();
-  for (const name of numberedBatches()) {
+  for (const name of listNumberedBatchNames()) {
     if (GENERATED.includes(name)) continue;
     const result = validateIngestFile(readFileSync(path.join(BATCH_DIR, name), "utf8"), taxonomyPath);
     const rows = [...result.items, ...result.passages.flatMap((p) => p.questions)];
